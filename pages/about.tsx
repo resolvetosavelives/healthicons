@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import { TopBar } from '../components/TopBar';
 
 export default function About() {
@@ -11,10 +11,8 @@ export default function About() {
 
       <TopBar />
       <main>
-        <h1 className="title">
-          About
-        </h1>
+        <h1 className="title">About</h1>
       </main>
     </div>
-  )
+  );
 }
