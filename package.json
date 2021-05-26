@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint '{components,lib,pages}/**/*.{js,jsx,ts,tsx}'",
-    "lint:style": "stylelint '{components,styles}/**/*.css'"
+    "lint": "eslint '{src/components,src/lib,src/pages}/**/*.{js,jsx,ts,tsx}'",
+    "lint:style": "stylelint '{src,styles}/**/*.css'"
   },
   "dependencies": {
     "next": "^10.0.0",
