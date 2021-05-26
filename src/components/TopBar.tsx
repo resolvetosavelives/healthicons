@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from './TopBar.module.css';
 
 export function TopBar() {
-  return (
+return (
     <div className={styles.topBar}>
       <Link href="/">
         <a className={styles.title}>Health Icons</a>
