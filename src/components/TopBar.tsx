@@ -18,7 +18,7 @@ export function TopBar() {
           href="https://github.com/resolvetosavelives/healthicons"
           className={styles.link}
         >
-          Github
+          GitHub
         </a>
         <Link href="/about">
           <a className={styles.link}>About</a>
