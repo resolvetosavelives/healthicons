@@ -1,0 +1,71 @@
+:root {
+  --text-color: #222;
+  --secondary-text-color: #666;
+  --body-font-family: merriweather, sans-serif;
+  --ui-font-family: 'Source Sans Pro', serif;
+  --mono-font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo',
+    monospace;
+  --column-width: 44rem;
+  --column-gutter-width: 2rem;
+  --vertical-spacing: 1.5rem;
+  --primary-grid: 1fr minmax(2rem, var(--column-gutter-width))
+    minmax(auto, var(--column-width)) minmax(2rem, var(--column-gutter-width))
+    1fr;
+}
+
+@media (min-width: 44rem) {
+  :root {
+    --column-gutter-width: 8rem;
+  }
+}
+
+html,
+body {
+  padding: 1rem;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  min-width: 320px;
+  font-family: var(--body-font-family);
+  background: #fff;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+#__next {
+  min-height: 100%;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: underline;
+  color: var(--text-color);
+  text-decoration-color: #999;
+}
+
+a:visited {
+  color: var(--text-color);
+}
+
+a:hover,
+a:active {
+  color: #000;
+  text-decoration-color: var(--text-color);
+}
+
+a:focus-visible {
+  outline: 4px solid var(--text-color);
+  background: var(--text-color);
+  color: #fff;
+}

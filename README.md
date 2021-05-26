@@ -1,2 +1,1 @@
-# healthicons
-A collection of open source icons for public health projects.
+This is a starter template for [Learn Next.js](https://nextjs.org/learn).
