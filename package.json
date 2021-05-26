@@ -1,7 +1,8 @@
 {
-  "name": "learn-starter",
+  "name": "health-icons",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
