@@ -1,0 +1,17 @@
+.topBar {
+  padding: 0 0 1rem 0;
+  display: flex;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.links {
+  margin-left: auto;
+}
+
+.link {
+  display: inline-block;
+  padding: 0 0 0 2rem;
+}
