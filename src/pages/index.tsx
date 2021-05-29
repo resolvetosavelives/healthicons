@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
+import { IconTile } from '../components/IconTile';
 import styles from './index.module.css';
 
 import { getCategoriesAndIcons, Category } from '../lib/icons';
@@ -32,10 +33,11 @@ export default function Home({ categories }: HomeProps) {
             <CategoryHeading key={category.title}>
               {category.title}
             </CategoryHeading>
-
-            {category.icons.map((icon) => (
-              <h4 key={icon.title}>{icon.title}</h4>
-            ))}
+            <div className={styles.iconGrid}>
+              {category.icons.map((icon) => (
+                <IconTile key={icon.title} icon={icon} />
+              ))}
+            </div>
           </>
         ))}
       </main>
