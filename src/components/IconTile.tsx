@@ -6,6 +6,7 @@ import { Icon } from '../lib/icons';
 
 interface IconTileProps {
   icon: Icon;
+  visible: boolean;
 }
 
 export function IconTile(props: IconTileProps) {

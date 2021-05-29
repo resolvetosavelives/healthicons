@@ -57,23 +57,22 @@ export default function Home({ categories }: HomeProps) {
             onChange={(e) => setQuery(e.target.value)}
           />
         </label>
-        {!query
-          ? categories.map((category) => (
-              <div key={category.title}>
-                <CategoryHeading key={category.title}>
-                  {category.title}
-                </CategoryHeading>
-                <div className={styles.iconGrid}>
-                  {category.icons.map((icon) => (
-                    <IconTile key={icon.title} icon={icon} />
-                  ))}
-                </div>
-              </div>
-            ))
-          : iconsToRender.length > 0 &&
-            iconsToRender.map((icon) => (
-              <IconTile key={icon.title} icon={icon} />
-            ))}
+        {categories.map((category) => (
+          <div key={category.title}>
+            <CategoryHeading key={category.title}>
+              {category.title}
+            </CategoryHeading>
+            <div className={styles.iconGrid}>
+              {category.icons.map((icon) => (
+                <IconTile
+                  key={icon.title}
+                  icon={icon}
+                  visible={!query || iconsToRender.includes(icon)}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
       </main>
       <footer>
         All icons are licensed under an open source{' '}
