@@ -36,7 +36,7 @@ async function getIcons(dirName: string): Promise<Icon[]> {
   const fileNames = await fs.readdir(dirPath);
   return await Promise.all(
     fileNames.map(async (fileName) => {
-      const fullPath = path.join(ICONS_DIRECTORY, dirName, fileName);
+      const fullPath = path.join(dirName, fileName);
       return {
         title: fileName.replace(/\.[^/.]+$/, ''),
         path: fullPath

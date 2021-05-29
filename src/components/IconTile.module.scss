@@ -1,0 +1,28 @@
+.iconTile {
+  padding: 1rem;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  grid-gap: 1rem;
+  text-align: center;
+  border-radius: 0.25rem;
+
+  &:hover {
+    box-shadow: 0 0 0 1px var(--secondary-accent);
+  }
+}
+
+.iconVariations {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+
+  svg {
+    margin: auto;
+    height: 3rem;
+    width: 3rem;
+  }
+}
