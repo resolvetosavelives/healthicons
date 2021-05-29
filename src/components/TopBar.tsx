@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './TopBar.module.css';
+import styles from './TopBar.module.scss';
 
 export function TopBar() {
   return (

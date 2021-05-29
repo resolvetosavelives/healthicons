@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { TopBar } from '../components/TopBar';
+import { CategoryHeading } from '../components/CategoryHeading';
 import styles from './index.module.css';
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
             give credit and you can edit the icons however you want.
           </h3>
         </div>
+        <CategoryHeading>Category</CategoryHeading>
       </main>
     </div>
   );

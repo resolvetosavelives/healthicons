@@ -1,0 +1,25 @@
+.categoryHeading {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.categoryHeading::before,
+.categoryHeading::after {
+  display: block;
+  content: ' ';
+  flex: 1 0 auto;
+  height: 2px;
+  border-radius: 2px;
+  background: #dbe7f2;
+  min-width: 2rem;
+}
+
+.categoryHeading::before {
+  margin-right: 2rem;
+}
+
+.categoryHeading::after {
+  margin-left: 2rem;
+}
