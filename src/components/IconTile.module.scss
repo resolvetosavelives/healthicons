@@ -4,7 +4,8 @@
 }
 
 .iconItem {
-  margin: 32px 0;
+  margin: 0 8px 32px 8px;
+  width: 100px;
 }
 
 .iconThumb {
@@ -19,7 +20,7 @@
 }
 
 .iconItem:hover .iconThumb {
-  border-color: #ddd;
+  border-color: var(--link-decoration-color);
   opacity: 1;
 }
 
@@ -36,8 +37,9 @@
 .iconTitle {
   font-size: 13px;
   color: #ccc;
-  max-width: 100px;
+  width: 100%;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0 auto;
+  text-align: center;
 }

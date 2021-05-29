@@ -3,8 +3,11 @@
   display: flex;
 }
 
-.title {
+.title, .title:visited {
   font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: -0.3rem;
+  text-decoration: none !important;
 }
 
 .links {
@@ -13,5 +16,13 @@
 
 .link {
   display: inline-block;
-  padding: 0 0 0 2rem;
+  margin: 0 0 0 2rem;
+}
+
+.buttonLink {
+  background: var(--link-color);
+  color: #fff !important;
+  margin: 0 0 0 2rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 3px;
 }
