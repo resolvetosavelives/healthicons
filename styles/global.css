@@ -3,7 +3,7 @@
   --secondary-text-color: rgba(0, 0, 0, 0.7);
   --link-color: #0080ff;
   --link-decoration-color: rgba(0, 128, 255, 0.3);
-  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  --font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
     'Liberation Sans', sans-serif;
 }
 
