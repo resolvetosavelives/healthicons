@@ -28,7 +28,7 @@ export default function About() {
               we will do our best to respond.
             </p>
 
-            <h2>How to contribute</h2>
+            <h2 id="contribute">How to contribute</h2>
             <p>
               Join our open Slack channel by emailing{' '}
               <a href="mailto:contact@healthicons.org">
@@ -76,7 +76,7 @@ export default function About() {
               DEALINGS IN THE SOFTWARE.
             </p>
 
-            <h2>Code of conduct</h2>
+            <h2 id="conduct">Code of conduct</h2>
 
             <p>
               In the interest of fostering an open and welcoming environment, we
@@ -183,7 +183,7 @@ export default function About() {
           </div>
 
           <div className="contentSide">
-            <h2>Contributors</h2>
+            <h2 id="contributors">Contributors</h2>
             <div>
               <a href="https://twitter.com/b0urnvita">Agrata Patel</a>
             </div>
