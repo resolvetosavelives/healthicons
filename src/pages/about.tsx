@@ -15,7 +15,7 @@ export default function About() {
         <div className="contentContainer">
           <div className="contentMain">
             <h1 className="title">About</h1>
-            <p>Health Icons is a volunteer effort to create a 'global good' of useful icons for health projects all over the world. We intend that these icons are available in the public domain for use in any type of project.</p>
+            <p>Health Icons is a volunteer effort to create a 'global good' of useful icons for health projects all over the world. We intend that these icons are available in the public domain for use in any type of project. The project is hosted by the public health not-for-profit <a href="https://resolvetosavelives.org">Resolve to Save Lives</a> as an expression of the openness of the project.</p>
             <p>Need an icon for your project? Submit a request through Github and we will do our best to respond.</p>
 
             <h2>How to contribute</h2>
