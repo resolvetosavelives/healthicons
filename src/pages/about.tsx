@@ -243,6 +243,8 @@ export default function About() {
             <div>
               <a href="https://twitter.com/yug_design">Yugandhar Bhamare</a>
             </div>
+            <h2 class="mt-3" name="credit">Credit</h2>
+            <p>Some of these icons are based on open source icons in <a href="https://dhis2.org/">DHIS2</a> and from <a href="https://medic.org/">Medic.org</a>. Thanks!</p>
           </div>
         </div>
       </main>
