@@ -37,7 +37,7 @@
 }
 
 .IconItem:hover .IconTitle {
-  color: #666;
+  color:  var(--link-color);
   transition: color ease-in-out 0.4s;
 }
 

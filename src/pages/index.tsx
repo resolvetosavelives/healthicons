@@ -1,13 +1,14 @@
 import Head from 'next/head';
 import { TopBar } from '../components/TopBar';
 import { IconList } from '../components/IconList';
+import { IconModal } from '../components/IconModal';
 import styles from './index.module.css';
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Health Icons</title>
+        <title>Health icons</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -24,6 +25,7 @@ export default function Home() {
 
       <IconList />
 
+      <IconModal />
     </div>
   );
 }

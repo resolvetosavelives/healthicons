@@ -5,7 +5,7 @@ export function TopBar() {
   return (
     <div className={styles.topBar}>
       <Link href="/">
-        <a className={styles.title}>Health Icons</a>
+        <a className={styles.title}>Health icons</a>
       </Link>
       <div className={styles.links}>
         <Link href="/request">

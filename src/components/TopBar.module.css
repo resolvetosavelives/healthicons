@@ -3,8 +3,11 @@
   display: flex;
 }
 
-.title {
+.title, .title:visited {
   font-weight: bold;
+  color:  var(--text-color);
+  font-size: 22px;
+  margin-top: -4px;
 }
 
 .links {
