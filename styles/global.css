@@ -96,5 +96,20 @@ h3 {
 }
 
 .contentSide div {
-  margin: 0.75rem 0;
+  margin: 20px 0;
+  padding-top: 10px;
+  position: relative;
+  padding-left: 56px;
+}
+
+.contentSide div:before {
+  content: ".";
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 100px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  color: rgba(255,255,255,0);
 }

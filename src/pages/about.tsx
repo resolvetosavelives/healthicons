@@ -18,6 +18,10 @@ export default function About() {
             <p>Health Icons is a volunteer effort to create a 'global good' of useful icons for health projects all over the world. We intend that these icons are available in the public domain for use in any type of project.</p>
             <p>Need an icon for your project? Submit a request through Github and we will do our best to respond.</p>
 
+            <h2>How to contribute</h2>
+            <p>Join our open Slack channel by emailing <a href="mailto:contact@healthicons.org">contact@healthicons.org</a></p>
+            <p>Browse the <a href="https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3">Figma</a> and contribute icons in the "New icons" section. Please read the code of conduct (below) and the styleguide (in the Figma) carefully before contributing.</p>
+
             <h2 id="license">License</h2>
             <p>MIT License</p>
 
