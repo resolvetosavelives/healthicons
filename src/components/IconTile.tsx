@@ -10,22 +10,33 @@ interface IconTileProps {
 
 export function IconTile(props: IconTileProps) {
   return (
-    <div className={styles.iconTile}>
-      <div className={styles.iconVariations}>
-        <img
-          src={`icons/svg/filled/${props.icon.path}`}
-          width="48"
-          height="48"
-          alt=""
-        />
-        <img
-          src={`icons/svg/outline/${props.icon.path}`}
-          width="48"
-          height="48"
-          alt=""
-        />
+    <div className={styles.iconGroup}>
+      <div className={styles.iconItem}>
+        <div className={styles.iconThumb}>
+          <img
+            src={`icons/svg/filled/${props.icon.path}`}
+            width="48"
+            height="48"
+            alt="{props.icon.title} filled icon"
+          />
+        </div>
+        <div className={styles.iconTitle}>
+          {props.icon.title}
+        </div>
       </div>
-      <div className={styles.iconTileLabel}>{props.icon.title}</div>
+      <div className={styles.iconItem}>
+        <div className={styles.iconThumb}>
+          <img
+            src={`icons/svg/outline/${props.icon.path}`}
+            width="48"
+            height="48"
+            alt="{props.icon.title} outline icon"
+          />
+        </div>
+        <div className={styles.iconTitle}>
+          {props.icon.title}
+        </div>
+      </div>
     </div>
   );
 }

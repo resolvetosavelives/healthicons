@@ -1,28 +1,43 @@
-.iconTile {
-  padding: 1rem;
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  justify-content: center;
-  grid-gap: 1rem;
+.iconGroup {
   text-align: center;
-  border-radius: 0.25rem;
-
-  &:hover {
-    box-shadow: 0 0 0 1px var(--secondary-accent);
-  }
+  margin: 32px 0;
 }
 
-.iconVariations {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+.iconItem {
+  margin: 32px 0;
+}
 
-  svg {
-    margin: auto;
-    height: 3rem;
-    width: 3rem;
-  }
+.iconThumb {
+  width: 68px;
+  height: 68px;
+  padding: 16px;
+  margin: 8px auto;
+  border: 1px solid rgba(255,255,255,0);
+  border-radius: 5px;
+  opacity: 0.8;
+  transition: border-color ease-in-out 0.4s, opacity ease-in-out 0.4s;
+}
+
+.iconItem:hover .iconThumb {
+  border-color: #ddd;
+  opacity: 1;
+}
+
+.iconItem:hover .iconTitle {
+  color:  var(--link-color);
+  transition: color ease-in-out 0.4s;
+}
+
+.iconThumb img {
+  width: 36px;
+  height: 36px;
+}
+
+.iconTitle {
+  font-size: 13px;
+  color: #ccc;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
 }
