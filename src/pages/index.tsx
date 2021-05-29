@@ -28,9 +28,15 @@ export default function Home({ categories }: HomeProps) {
           </h3>
         </div>
         {categories.map((category) => (
-          <CategoryHeading key={category.title}>
-            {category.title}
-          </CategoryHeading>
+          <>
+            <CategoryHeading key={category.title}>
+              {category.title}
+            </CategoryHeading>
+
+            {category.icons.map((icon) => (
+              <h4 key={icon.title}>{icon.title}</h4>
+            ))}
+          </>
         ))}
       </main>
     </div>
