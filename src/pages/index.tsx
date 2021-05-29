@@ -15,29 +15,21 @@ interface HomeProps {
 export default function Home({ categories }: HomeProps) {
   const [query, setQuery] = useState<string>();
 
-  const categoriesToRender = useMemo(() => {
-    const filteredCategories: Category[] = [];
+  const iconsToRender = useMemo(() => {
+    const filteredIcons: Icon[] = [];
     if (!query) {
-      return categories;
+      return filteredIcons;
     }
     const lowerCaseQuery = query.toLowerCase();
 
     categories.forEach((category) => {
-      const matchedIcons: Icon[] = [];
-
       category.icons.forEach((icon) => {
         if (icon.title.toLowerCase().includes(lowerCaseQuery)) {
-          matchedIcons.push(icon);
+          filteredIcons.push(icon);
         }
       });
-
-      if (matchedIcons.length > 0) {
-        const filteredCategory = category;
-        filteredCategory.icons = matchedIcons;
-        filteredCategories.push(filteredCategory);
-      }
     });
-    return filteredCategories;
+    return filteredIcons;
   }, [query, categories]);
 
   return (
@@ -65,19 +57,23 @@ export default function Home({ categories }: HomeProps) {
             onChange={(e) => setQuery(e.target.value)}
           />
         </label>
-
-        {categoriesToRender.map((category, index) => (
-          <div key={index}>
-            <CategoryHeading key={category.title}>
-              {category.title}
-            </CategoryHeading>
-            <div className={styles.iconGrid}>
-              {category.icons.map((icon) => (
-                <IconTile key={icon.title} icon={icon} />
-              ))}
-            </div>
-          </div>
-        ))}
+        {!query
+          ? categories.map((category) => (
+              <div key={category.title}>
+                <CategoryHeading key={category.title}>
+                  {category.title}
+                </CategoryHeading>
+                <div className={styles.iconGrid}>
+                  {category.icons.map((icon) => (
+                    <IconTile key={icon.title} icon={icon} />
+                  ))}
+                </div>
+              </div>
+            ))
+          : iconsToRender.length > 0 &&
+            iconsToRender.map((icon) => (
+              <IconTile key={icon.title} icon={icon} />
+            ))}
       </main>
       <footer>
         All icons are licensed under an open source{' '}
