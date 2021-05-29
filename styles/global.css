@@ -1,16 +1,10 @@
 :root {
-  --text-color: #222;
-  --secondary-text-color: #666;
-  --body-font-family: merriweather, sans-serif;
-  --ui-font-family: 'Source Sans Pro', serif;
-  --mono-font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo',
-    monospace;
-  --column-width: 44rem;
-  --column-gutter-width: 2rem;
-  --vertical-spacing: 1.5rem;
-  --primary-grid: 1fr minmax(2rem, var(--column-gutter-width))
-    minmax(auto, var(--column-width)) minmax(2rem, var(--column-gutter-width))
-    1fr;
+  --text-color: hsl(172, 89%, 14%);
+  --secondary-text-color: rgba(0, 0, 0, 0.7);
+  --link-color: #0080ff;
+  --link-decoration-color: rgba(0, 128, 255, 0.3);
+  --font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
+    'Liberation Sans', sans-serif;
 }
 
 @media (min-width: 44rem) {
@@ -36,7 +30,9 @@ html {
 body {
   min-height: 100%;
   min-width: 320px;
-  font-family: var(--body-font-family);
+  max-width: 80rem;
+  margin: 0 auto;
+  font-family: var(--font-family);
   background: #fff;
   color: var(--text-color);
   line-height: 1.6;
@@ -50,12 +46,8 @@ a,
 a:link,
 a:visited {
   text-decoration: underline;
-  color: var(--text-color);
-  text-decoration-color: #999;
-}
-
-a:visited {
-  color: var(--text-color);
+  color: var(--link-color);
+  text-decoration-color: var(--link-decoration-color);
 }
 
 a:hover,
