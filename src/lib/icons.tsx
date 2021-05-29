@@ -1,7 +1,13 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 
-const ICONS_DIRECTORY = path.join(process.cwd(), 'public', 'icons');
+const ICONS_DIRECTORY = path.join(
+  process.cwd(),
+  'public',
+  'icons',
+  'svg',
+  'filled'
+);
 
 export interface Category {
   title: string;
