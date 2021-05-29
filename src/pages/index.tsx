@@ -24,7 +24,8 @@ export default function Home({ categories }: HomeProps) {
         <div className={styles.box}>
           <h1>Free, open source health icons</h1>
           <h3>
-            Free for use in your next commerical or personal project.<br />
+            Free for use in your next commerical or personal project.
+            <br />
             Editing is ok. Republishing is ok. No need to give credit.
           </h3>
         </div>
@@ -42,7 +43,10 @@ export default function Home({ categories }: HomeProps) {
         ))}
       </main>
       <footer>
-        All icons are licensed under an open source <a href="/about#license" className={styles.link}>MIT License</a>
+        All icons are licensed under an open source{' '}
+        <a href="/about#license" className={styles.link}>
+          MIT License
+        </a>
       </footer>
     </div>
   );

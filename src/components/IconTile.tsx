@@ -20,9 +20,7 @@ export function IconTile(props: IconTileProps) {
             alt="{props.icon.title} filled icon"
           />
         </div>
-        <div className={styles.iconTitle}>
-          {props.icon.title}
-        </div>
+        <div className={styles.iconTitle}>{props.icon.title}</div>
       </div>
       <div className={styles.iconItem}>
         <div className={styles.iconThumb}>
@@ -33,9 +31,7 @@ export function IconTile(props: IconTileProps) {
             alt="{props.icon.title} outline icon"
           />
         </div>
-        <div className={styles.iconTitle}>
-          {props.icon.title}
-        </div>
+        <div className={styles.iconTitle}>{props.icon.title}</div>
       </div>
     </div>
   );

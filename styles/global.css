@@ -1,9 +1,9 @@
 :root {
   --text-color: hsl(172, 89%, 14%);
   --secondary-text-color: rgba(0, 0, 0, 0.7);
-  --link-color: rgba(102,102,255,1);
-  --link-color-dark: rgba(9,9,80,1);
-  --link-decoration-color: rgba(102,102,255,0.3);
+  --link-color: rgba(102, 102, 255, 1);
+  --link-color-dark: rgba(9, 9, 80, 1);
+  --link-decoration-color: rgba(102, 102, 255, 0.3);
   --font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
     'Liberation Sans', sans-serif;
 }
@@ -90,7 +90,7 @@ h3 {
 
 .contentSide {
   width: 40%;
-  background: #E9FDFA;
+  background: #e9fdfa;
   padding: 1.5rem 2.5rem;
   border-radius: 10px;
 }
@@ -102,8 +102,8 @@ h3 {
   padding-left: 56px;
 }
 
-.contentSide div:before {
-  content: ".";
+.contentSide div::before {
+  content: '.';
   width: 40px;
   height: 40px;
   background: #fff;
@@ -111,5 +111,5 @@ h3 {
   position: absolute;
   left: 0;
   top: 4px;
-  color: rgba(255,255,255,0);
+  color: rgba(255, 255, 255, 0);
 }
