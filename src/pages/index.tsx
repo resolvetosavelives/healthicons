@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
+import { IconTile } from '../components/IconTile';
 import styles from './index.module.css';
 
 export default function Home() {
@@ -21,6 +22,13 @@ export default function Home() {
           </h3>
         </div>
         <CategoryHeading>Category</CategoryHeading>
+        <div className={styles.iconGrid}>
+          <IconTile />
+          <IconTile />
+          <IconTile />
+          <IconTile />
+          <IconTile />
+        </div>
       </main>
     </div>
   );
