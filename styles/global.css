@@ -42,6 +42,11 @@ body {
   line-height: 1.6;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 #__next {
   min-height: 100%;
 }

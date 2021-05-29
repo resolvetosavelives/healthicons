@@ -1,0 +1,56 @@
+.IconList h2 {
+  padding: 64px 0 0 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  clear: both;
+  text-align: left;
+}
+
+.IconCategory {
+  margin: 48px;
+}
+
+.IconGroup {
+  float: left;
+  width: 120px;
+  text-align: center;
+  margin: 32px 0;
+}
+
+.IconItem {
+  margin: 32px 0;
+}
+
+.IconThumb {
+  width: 68px;
+  height: 68px;
+  padding: 16px;
+  margin: 8px auto;
+  border: 1px solid rgba(255,255,255,0);
+  border-radius: 5px;
+  transition: border-color ease-in-out 0.4s;
+}
+
+.IconItem:hover .IconThumb {
+  border-color: #ddd;
+}
+
+.IconItem:hover .IconTitle {
+  color: #666;
+  transition: color ease-in-out 0.4s;
+}
+
+.IconThumb img {
+  width: 36px;
+  height: 36px;
+}
+
+.IconTitle {
+  font-size: 13px;
+  color: #ccc;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+}

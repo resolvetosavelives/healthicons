@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { TopBar } from '../components/TopBar';
+import { IconList } from '../components/IconList';
 import styles from './index.module.css';
 
 export default function Home() {
@@ -13,13 +14,16 @@ export default function Home() {
       <TopBar />
       <main>
         <div className={styles.box}>
-          <h1>Free, open source health icons available for any use</h1>
+          <h1>Free, open source health icons</h1>
           <h3>
-            Use for your next commerical or personal project. You don’t need to
-            give credit and you can edit the icons however you want.
+            Use for your next commerical or personal project.<br />
+            Editing is fine. No credit required. Public domain. Truly free to use.
           </h3>
         </div>
       </main>
+
+      <IconList />
+
     </div>
   );
 }
