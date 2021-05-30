@@ -28,6 +28,16 @@
   opacity: 1;
 }
 
+.iconTitle {
+  font-size: 0.8rem;
+  color: #ccc;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
 .iconItem:hover .iconTitle {
   color: var(--link-color);
   transition: color ease-in-out 0.4s;
@@ -38,12 +48,3 @@
   height: 36px;
 }
 
-.iconTitle {
-  font-size: 0.8rem;
-  color: #ccc;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: center;
-}
