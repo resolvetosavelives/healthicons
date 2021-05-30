@@ -12,6 +12,7 @@ export function IconTileModal(props: IconTileModalProps) {
   return (
     <ReactModal
       isOpen={props.isOpen}
+      className="iconTileModal"
       overlayClassName="modal__overlay"
       bodyOpenClassName="modal--open"
       onRequestClose={props.onClose}
