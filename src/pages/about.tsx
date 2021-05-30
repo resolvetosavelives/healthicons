@@ -8,7 +8,7 @@ export default function About() {
         <title>About Health Icons</title>
         <link rel="icon" href="/favicon.ico" />
 
-        <meta property="og:site_name" content="About Health icons" />
+        <meta property="og:site_name" content="Health icons" />
         <meta property="og:title" content="About Health icons" />
         <meta
           property="og:description"
