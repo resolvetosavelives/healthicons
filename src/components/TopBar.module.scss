@@ -29,11 +29,18 @@
   margin: 0 0 0 2rem;
 }
 
-.buttonLink {
-  background: var(--link-color) url(/ui/folder-download-line-white.svg) 20px 50% no-repeat;
+.buttonLink,
+.buttonLink:link {
+  background: var(--link-color) url(/ui/folder-download-line-white.svg) 20px 50%
+    no-repeat;
   background-size: 18px;
-  color: #fff !important;
+  color: #fff;
   margin: 0 0 0 2rem;
   padding: 0.6rem 30px 0.6rem 50px;
   border-radius: 3px;
+
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 0 0 2px var(--link-decoration-color);
+  }
 }
