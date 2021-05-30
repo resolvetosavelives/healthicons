@@ -5,6 +5,7 @@ import ReactModal from 'react-modal';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
 import { IconTile } from '../components/IconTile';
+import { IconTileModal } from '../components/IconTileModal';
 import styles from './index.module.scss';
 
 import { getCategoriesAndIcons, Category, Icon } from '../lib/icons';
@@ -35,6 +36,9 @@ export default function Home({ categories }: HomeProps) {
     return filteredIcons;
   }, [query, categories]);
 
+  // required to apply the aria-hidden attribute when a modal opens
+  ReactModal.setAppElement('#main');
+
   return (
     <div className="container">
       <Head>
@@ -43,7 +47,7 @@ export default function Home({ categories }: HomeProps) {
       </Head>
 
       <TopBar />
-      <main>
+      <main id="main">
         <div className={styles.box}>
           <h1>Free, open source health icons</h1>
           <h3>
@@ -84,45 +88,15 @@ export default function Home({ categories }: HomeProps) {
             </div>
           </div>
         ))}
-        <ReactModal isOpen={modalIcon !== undefined}>
-          {modalIcon !== undefined && (
-            <>
-              <button
-                onClick={() => {
-                  setModalIcon(undefined);
-                }}
-              >
-                Close
-              </button>
-              <div>{modalIcon.title}</div>
-              <a
-                href={`icons/svg/filled/${modalIcon.path}`}
-                download={modalIcon.fileName}
-              >
-                <img
-                  src={`icons/svg/filled/${modalIcon.path}`}
-                  width="48"
-                  height="48"
-                  alt={`${modalIcon.title} outline icon`}
-                />
-                <span>Download SVG</span>
-              </a>
-              <a
-                href={`icons/svg/outline/${modalIcon.path}`}
-                download={modalIcon.fileName}
-              >
-                <img
-                  src={`icons/svg/outline/${modalIcon.path}`}
-                  width="48"
-                  height="48"
-                  alt={`${modalIcon.title} outline icon`}
-                />
-
-                <span>Download SVG</span>
-              </a>
-            </>
-          )}
-        </ReactModal>
+        {modalIcon && (
+          <IconTileModal
+            icon={modalIcon}
+            isOpen={modalIcon !== undefined}
+            onClose={() => {
+              setModalIcon(undefined);
+            }}
+          />
+        )}
       </main>
       <footer>
         All icons are licensed under an open source{' '}
