@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-import ReactModal from 'react-modal';
+// import ReactModal from 'react-modal';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
 import { IconTile } from '../components/IconTile';
