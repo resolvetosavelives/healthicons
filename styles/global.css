@@ -129,3 +129,35 @@ h3 {
   top: 4px;
   color: rgba(255, 255, 255, 0);
 }
+
+.iconTileModal {
+  position: fixed;
+  top: auto;
+  left: 50%;
+  right: auto;
+  bottom: 0;
+  height: auto;
+  max-height: 100%;
+  width: 60rem;
+  max-width: calc(100% - 2rem);
+  transform: translate(-50%, 4rem);
+  padding: 2rem;
+  transition: all ease-in-out 500ms;
+  border-radius: 0.5rem 0.5rem 0 0;
+  opacity: 0;
+  background-color: #fff;
+  border: 2px solid var(--link-color);
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.1), 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.iconTileModal.ReactModal__Content--after-open {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  transition: all ease-out 200ms;
+}
+
+.iconTileModal.ReactModal__Content--before-close {
+  transform: translate(-50%, 4rem);
+  transition: all ease-in 200ms;
+  opacity: 0;
+}
