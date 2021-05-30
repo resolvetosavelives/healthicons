@@ -8,6 +8,7 @@ import classnames from 'classnames';
 interface IconTileProps {
   icon: Icon;
   visible: boolean;
+  onClick: () => void;
 }
 
 export function IconTile(props: IconTileProps) {
@@ -16,7 +17,7 @@ export function IconTile(props: IconTileProps) {
   });
 
   return (
-    <div className={classes}>
+    <div className={classes} onClick={props.onClick}>
       <div className={styles.iconItem}>
         <div className={styles.iconThumb}>
           <img
