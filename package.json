@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "deploy": "gh-pages -d out --repo git@github.com:resolvetosavelives/healthicons.git",
+    "deploy": "gh-pages -d out",
     "start": "next start",
     "lint": "eslint '{src/components,src/lib,src/pages}/**/*.{js,jsx,ts,tsx}'",
     "lint:style": "stylelint '{src,styles}/**/*.css'"
