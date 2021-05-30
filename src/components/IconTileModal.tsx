@@ -12,7 +12,6 @@ export function IconTileModal(props: IconTileModalProps) {
   return (
     <ReactModal
       isOpen={props.isOpen}
-      overlayClassName="modal__overlay"
       bodyOpenClassName="modal--open"
       onRequestClose={props.onClose}
       className={styles.modalContainer}
@@ -28,6 +27,7 @@ export function IconTileModal(props: IconTileModalProps) {
           className={styles.modalImage}
           width="96"
           height="96"
+          alt=""
         />
         <div className={styles.modalLabel}>Filename</div>
         <div className={styles.modalTitle}>{props.icon.title}</div>
@@ -49,7 +49,9 @@ export function IconTileModal(props: IconTileModalProps) {
           </a>
         </div>
         <div className={styles.modalLabel}>Tags</div>
-        <div className={styles.modalTags}><span>Coming soon...</span></div>
+        <div className={styles.modalTags}>
+          <span>Coming soon...</span>
+        </div>
       </>
     </ReactModal>
   );
