@@ -39,7 +39,7 @@ export default function Home({ categories }: HomeProps) {
     <div className="container">
       <Head>
         <title>Health Icons</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
 
         <meta property="og:site_name" content="Health icons" />
         <meta property="og:title" content="Health icons" />
