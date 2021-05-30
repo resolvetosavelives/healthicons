@@ -34,10 +34,12 @@ export default function About() {
       </Head>
 
       <TopBar />
-      <main>
+      <main id="main">
         <div className="contentContainer">
           <div className="contentMain">
-            <h1 className="title">About</h1>
+            <h1 id="about" className="title">
+              About
+            </h1>
             <p>
               Health Icons is a volunteer effort to create a 'global good' of
               useful icons for health projects all over the world. We intend
@@ -48,11 +50,14 @@ export default function About() {
               as an expression of the openness of the project.
             </p>
             <p>
-              Need an icon for your project? Submit a request through Github and
-              we will do our best to respond.
+              Need an icon for your project?{' '}
+              <a href="https://github.com/resolvetosavelives/healthicons#icon-requests">
+                Submit a request through GitHub
+              </a>{' '}
+              and we will do our best to respond.
             </p>
 
-            <h2 name="contribute">How to contribute</h2>
+            <h2 id="contribute">How to contribute</h2>
             <p>
               Join our open Slack channel by emailing{' '}
               <a href="mailto:contact@healthicons.org">
@@ -69,7 +74,7 @@ export default function About() {
               carefully before contributing.
             </p>
 
-            <h2 name="license">License</h2>
+            <h2 id="license">License</h2>
             <p>MIT License</p>
 
             <p>Copyright (c) 2021 Resolve to Save Lives</p>
@@ -100,7 +105,7 @@ export default function About() {
               DEALINGS IN THE SOFTWARE.
             </p>
 
-            <h2 name="conduct">Code of conduct</h2>
+            <h2 id="conduct">Code of conduct</h2>
 
             <p>
               In the interest of fostering an open and welcoming environment, we
@@ -207,7 +212,7 @@ export default function About() {
           </div>
 
           <div className="contentSide">
-            <h2 name="contributors">Contributors</h2>
+            <h2 id="contributors">Contributors</h2>
             <div>
               <a href="https://twitter.com/b0urnvita">Agrata Patel</a>
             </div>
@@ -267,7 +272,7 @@ export default function About() {
             <div>
               <a href="https://twitter.com/yug_design">Yugandhar Bhamare</a>
             </div>
-            <h2 class="mt-3" name="credit">
+            <h2 className="mt-3" id="credit">
               Credit
             </h2>
             <p>
