@@ -2,31 +2,32 @@
   display: grid;
   grid-template-columns: minmax(max-content, 1fr) max-content max-content;
   grid-template-rows: auto auto;
-  gap: 2em 2em;
+  gap: 1em 1em;
   grid-template-areas:
     'title-area desktop-links-area download-area'
     'mobile-links-area mobile-links-area mobile-links-area';
   margin-bottom: 1rem;
+  align-items: center;
 }
 
 .topbarDownload {
   grid-area: download-area;
 }
 
-.topbarTitle {
+.topbarTitle a {
   font-weight: bold;
-  font-size: 1.3rem;
-  margin-top: -0.3rem;
+  display: inline-block;
   background: url(/health-icons-logo.svg) 0 50% no-repeat;
   background-size: 24px;
-  padding-left: 36px;
+  padding-left: 32px;
+  min-height: 1.3rem;
 
-  & a:link,
-  & a:visited {
+  &:link,
+  &:visited {
     text-decoration: none;
   }
 
-  & a:hover {
+  &:hover {
     text-decoration: underline;
     text-decoration-color: var(--link-decoration-color);
   }
@@ -43,14 +44,19 @@
   justify-content: space-around;
 }
 
-.buttonLink,
-.buttonLink:link {
-  background: var(--link-color) url(/ui/folder-download-line-white.svg) 20px 50%
+.buttonLink {
+  background: var(--link-color) url(/ui/folder-download-line-white.svg) 0.75rem 50%
     no-repeat;
+  display: inline-block;
   background-size: 18px;
   color: #fff;
-  padding: 0.6rem 30px 0.6rem 50px;
+  padding: 0.6rem 1rem 0.6rem 2.25rem;
   border-radius: 3px;
+  font-size: 0.8rem;
+
+  &:link {
+    color: #fff;
+  }
 
   &:hover {
     text-decoration: none;
@@ -59,7 +65,21 @@
 }
 
 @media (min-width: 48rem) {
+  .topBar {
+    gap: 0 2em;
+  }
+
+  .buttonLink {
+    padding: 0.6rem 30px 0.6rem 50px;
+    font-size: 0.8rem;
+    background-position: 1.25rem 50%;
+  }
+
   .topbarLinks {
     grid-area: desktop-links-area;
+  }
+
+  .topbarTitle {
+    font-size: 1.3rem;
   }
 }

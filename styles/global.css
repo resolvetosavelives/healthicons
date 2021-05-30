@@ -16,7 +16,7 @@
 
 html,
 body {
-  padding: 1rem;
+  padding: 0;
   margin: 0;
 }
 
@@ -30,6 +30,7 @@ html {
 
 body {
   min-height: 100%;
+  padding: 1rem;
   min-width: 320px;
   max-width: 100rem;
   margin: 0 auto;
@@ -37,6 +38,12 @@ body {
   background: #fff;
   color: var(--text-color);
   line-height: 1.6;
+}
+
+@media (min-width: 48rem) {
+  body {
+    padding: 2rem;
+  }
 }
 
 footer {
