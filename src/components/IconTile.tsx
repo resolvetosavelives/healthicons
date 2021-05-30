@@ -17,7 +17,7 @@ export function IconTile(props: IconTileProps) {
             src={`icons/svg/filled/${props.icon.path}`}
             width="48"
             height="48"
-            alt="{props.icon.title} filled icon"
+            alt={`${props.icon.title} outline icon`}
           />
         </div>
         <div className={styles.iconTitle}>{props.icon.title}</div>
@@ -28,7 +28,7 @@ export function IconTile(props: IconTileProps) {
             src={`icons/svg/outline/${props.icon.path}`}
             width="48"
             height="48"
-            alt="{props.icon.title} outline icon"
+            alt={`${props.icon.title} outline icon`}
           />
         </div>
         <div className={styles.iconTitle}>{props.icon.title}</div>

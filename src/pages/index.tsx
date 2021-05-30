@@ -68,13 +68,13 @@ export default function Home({ categories }: HomeProps) {
                 src={`icons/svg/filled/${modalIcon.path}`}
                 width="48"
                 height="48"
-                alt="{props.icon.title} filled icon"
+                alt={`${modalIcon.title} outline icon`}
               />
               <img
                 src={`icons/svg/outline/${modalIcon.path}`}
                 width="48"
                 height="48"
-                alt="{props.icon.title} outline icon"
+                alt={`${modalIcon.title} outline icon`}
               />
             </>
           )}
