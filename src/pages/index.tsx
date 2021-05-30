@@ -72,17 +72,14 @@ export default function Home({ categories }: HomeProps) {
             )}
             <div className={styles.iconGrid}>
               {category.icons.map((icon) => (
-                <div
+                <IconTile
                   key={icon.title}
+                  icon={icon}
+                  visible={!query || iconsToRender.includes(icon)}
                   onClick={() => {
                     setModalIcon(icon);
                   }}
-                >
-                  <IconTile
-                    icon={icon}
-                    visible={!query || iconsToRender.includes(icon)}
-                  />
-                </div>
+                />
               ))}
             </div>
           </div>
