@@ -1,5 +1,8 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
+import { useState } from 'react';
+import ReactModal from 'react-modal';
+import { Icon } from '../lib/icons';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
 import { IconTile } from '../components/IconTile';
@@ -12,6 +15,8 @@ interface HomeProps {
 }
 
 export default function Home({ categories }: HomeProps) {
+  const [modalIcon, setModalIcon] = useState<Icon>(undefined);
+
   return (
     <div className="container">
       <Head>
@@ -36,11 +41,44 @@ export default function Home({ categories }: HomeProps) {
             </CategoryHeading>
             <div className={styles.iconGrid}>
               {category.icons.map((icon) => (
-                <IconTile key={icon.title} icon={icon} />
+                <div
+                  key={icon.title}
+                  onClick={() => {
+                    setModalIcon(icon);
+                  }}
+                >
+                  <IconTile icon={icon} />
+                </div>
               ))}
             </div>
           </>
         ))}
+        <ReactModal isOpen={modalIcon !== undefined}>
+          {modalIcon !== undefined && (
+            <>
+              <button
+                onClick={() => {
+                  setModalIcon(undefined);
+                }}
+              >
+                Close
+              </button>
+              <div>{modalIcon.title}</div>
+              <img
+                src={`icons/svg/filled/${modalIcon.path}`}
+                width="48"
+                height="48"
+                alt="{props.icon.title} filled icon"
+              />
+              <img
+                src={`icons/svg/outline/${modalIcon.path}`}
+                width="48"
+                height="48"
+                alt="{props.icon.title} outline icon"
+              />
+            </>
+          )}
+        </ReactModal>
       </main>
       <footer>
         All icons are licensed under an open source{' '}
