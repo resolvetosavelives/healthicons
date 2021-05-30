@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-// import ReactModal from 'react-modal';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
 import { IconTile } from '../components/IconTile';
@@ -35,10 +34,6 @@ export default function Home({ categories }: HomeProps) {
     });
     return filteredIcons;
   }, [query, categories]);
-
-  // TODO: figure out how to correctly do this
-  // required to apply the aria-hidden attribute when a modal opens
-  //ReactModal.setAppElement('#main');
 
   return (
     <div className="container">

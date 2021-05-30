@@ -8,9 +8,12 @@ export function TopBar() {
         <a className={styles.title}>Health icons</a>
       </Link>
       <div className={styles.links}>
-        <Link href="/request">
-          <a className={styles.link}>Request an icon</a>
-        </Link>
+        <a
+          href="https://github.com/resolvetosavelives/healthicons#icon-requests"
+          className={styles.link}
+        >
+          Request an icon
+        </a>
         <a
           href="https://github.com/resolvetosavelives/healthicons"
           className={styles.link}

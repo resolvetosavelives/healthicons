@@ -14,7 +14,7 @@ Info goes here
 
 ### Icon Requests
 
-If you want an icon we don't currently have, please create an Issue on Github using the title "Icon Request: [name of icon]" and we’ll do our best to help you out.
+If you want an icon we don't currently have, please create an [Issue on GitHub](https://github.com/resolvetosavelives/healthicons/issues) using the title "Icon Request: [name of icon]" and we’ll do our best to help you out.
 
 ## Installation
 

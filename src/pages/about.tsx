@@ -34,7 +34,7 @@ export default function About() {
       </Head>
 
       <TopBar />
-      <main>
+      <main id="main">
         <div className="contentContainer">
           <div className="contentMain">
             <h1 className="title">About</h1>
