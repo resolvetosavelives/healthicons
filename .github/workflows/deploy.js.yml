@@ -20,5 +20,9 @@ jobs:
         run: yarn install
       - name: Build my App
         run: yarn build && yarn export && touch ./out/.nojekyll
-      - name: Deploy 🚀
-        run: yarn deploy
+       - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: out
