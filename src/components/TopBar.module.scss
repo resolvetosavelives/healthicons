@@ -1,32 +1,46 @@
 .topBar {
-  padding: 0 0 1rem 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) max-content max-content;
+  grid-template-rows: auto auto;
+  gap: 2em 2em;
+  grid-template-areas:
+    'title-area desktop-links-area download-area'
+    'mobile-links-area mobile-links-area mobile-links-area';
+  margin-bottom: 1rem;
 }
 
-.title,
-.title:link,
-.title:visited {
+.topbarDownload {
+  grid-area: download-area;
+}
+
+.topbarTitle {
   font-weight: bold;
   font-size: 1.3rem;
   margin-top: -0.3rem;
-  text-decoration: none;
   background: url(/health-icons-logo.svg) 0 50% no-repeat;
   background-size: 24px;
   padding-left: 36px;
+
+  & a:link,
+  & a:visited {
+    text-decoration: none;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--link-decoration-color);
+  }
 }
 
-.title:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--link-decoration-color);
-}
-
-.links {
-  margin-left: auto;
-}
-
-.link {
-  display: inline-block;
-  margin: 0 0 0 2rem;
+.topbarLinks {
+  grid-area: mobile-links-area;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  justify-content: space-around;
 }
 
 .buttonLink,
@@ -35,12 +49,19 @@
     no-repeat;
   background-size: 18px;
   color: #fff;
-  margin: 0 0 0 2rem;
   padding: 0.6rem 30px 0.6rem 50px;
   border-radius: 3px;
 
   &:hover {
     text-decoration: none;
     box-shadow: 0 0 0 2px var(--link-decoration-color);
+  }
+}
+
+@media (min-width: 48rem) {
+
+
+  .topbarLinks {
+    grid-area: desktop-links-area;
   }
 }
