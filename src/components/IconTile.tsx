@@ -1,6 +1,8 @@
+import classnames from 'classnames';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import styles from './IconTile.module.scss';
 import { Icon } from '../lib/icons';
-import classnames from 'classnames';
 
 interface IconTileProps {
   icon: Icon;
@@ -17,11 +19,12 @@ export function IconTile(props: IconTileProps) {
     <div className={classes} onClick={props.onClick}>
       <div className={styles.iconItem}>
         <div className={styles.iconThumb}>
-          <img
+          <LazyLoadImage
             src={`icons/svg/filled/${props.icon.path}`}
             width="48"
             height="48"
             alt={`${props.icon.title} outline icon`}
+            effect="blur"
           />
         </div>
         <div className={styles.iconTitle}>{props.icon.title}</div>
