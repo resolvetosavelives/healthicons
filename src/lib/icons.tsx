@@ -16,6 +16,7 @@ export interface Category {
 
 export interface Icon {
   title: string;
+  fileName: string;
   path: string;
 }
 
@@ -39,6 +40,7 @@ async function getIcons(dirName: string): Promise<Icon[]> {
       const fullPath = path.join(dirName, fileName);
       return {
         title: fileName.replace(/\.[^/.]+$/, ''),
+        fileName,
         path: fullPath
       };
     })

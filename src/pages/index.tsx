@@ -64,18 +64,31 @@ export default function Home({ categories }: HomeProps) {
                 Close
               </button>
               <div>{modalIcon.title}</div>
-              <img
-                src={`icons/svg/filled/${modalIcon.path}`}
-                width="48"
-                height="48"
-                alt={`${modalIcon.title} outline icon`}
-              />
-              <img
-                src={`icons/svg/outline/${modalIcon.path}`}
-                width="48"
-                height="48"
-                alt={`${modalIcon.title} outline icon`}
-              />
+              <a
+                href={`icons/svg/filled/${modalIcon.path}`}
+                download={modalIcon.fileName}
+              >
+                <img
+                  src={`icons/svg/filled/${modalIcon.path}`}
+                  width="48"
+                  height="48"
+                  alt={`${modalIcon.title} outline icon`}
+                />
+                <span>Download SVG</span>
+              </a>
+              <a
+                href={`icons/svg/outline/${modalIcon.path}`}
+                download={modalIcon.fileName}
+              >
+                <img
+                  src={`icons/svg/outline/${modalIcon.path}`}
+                  width="48"
+                  height="48"
+                  alt={`${modalIcon.title} outline icon`}
+                />
+
+                <span>Download SVG</span>
+              </a>
             </>
           )}
         </ReactModal>
