@@ -59,9 +59,14 @@ export default function Home({ categories }: HomeProps) {
         </label>
         {categories.map((category) => (
           <div key={category.title}>
-            <CategoryHeading key={category.title}>
-              {category.title}
-            </CategoryHeading>
+            {(!query ||
+              category.icons.some((icon) => {
+                return iconsToRender.includes(icon);
+              })) && (
+              <CategoryHeading key={category.title}>
+                {category.title}
+              </CategoryHeading>
+            )}
             <div className={styles.iconGrid}>
               {category.icons.map((icon) => (
                 <IconTile
