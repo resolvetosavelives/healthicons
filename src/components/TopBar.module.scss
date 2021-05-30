@@ -1,32 +1,85 @@
 .topBar {
-  padding: 0 0 1rem 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) max-content max-content;
+  grid-template-rows: auto auto;
+  gap: 1em 1em;
+  grid-template-areas:
+    'title-area desktop-links-area download-area'
+    'mobile-links-area mobile-links-area mobile-links-area';
+  margin-bottom: 1rem;
+  align-items: center;
 }
 
-.title, .title:visited {
+.topbarDownload {
+  grid-area: download-area;
+}
+
+.topbarTitle a {
   font-weight: bold;
-  font-size: 1.3rem;
-  margin-top: -0.3rem;
-  text-decoration: none !important;
+  display: inline-block;
   background: url(/health-icons-logo.svg) 0 50% no-repeat;
   background-size: 24px;
-  padding-left: 36px;
+  padding-left: 32px;
+  min-height: 1.3rem;
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--link-decoration-color);
+  }
 }
 
-.links {
-  margin-left: auto;
-}
-
-.link {
-  display: inline-block;
-  margin: 0 0 0 2rem;
+.topbarLinks {
+  grid-area: mobile-links-area;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  justify-content: space-around;
 }
 
 .buttonLink {
-  background: var(--link-color) url(/ui/folder-download-line-white.svg) 20px 50% no-repeat;
+  background: var(--link-color) url(/ui/folder-download-line-white.svg) 0.75rem
+    50% no-repeat;
+  display: inline-block;
   background-size: 18px;
-  color: #fff !important;
-  margin: 0 0 0 2rem;
-  padding: 0.6rem 30px 0.6rem 50px;
+  color: #fff;
+  padding: 0.6rem 1rem 0.6rem 2.25rem;
   border-radius: 3px;
+  font-size: 0.8rem;
+
+  &:link {
+    color: #fff;
+  }
+
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 0 0 2px var(--link-decoration-color);
+  }
+}
+
+@media (min-width: 48rem) {
+  .topBar {
+    gap: 0 2em;
+  }
+
+  .buttonLink {
+    padding: 0.6rem 30px 0.6rem 50px;
+    font-size: 0.8rem;
+    background-position: 1.25rem 50%;
+  }
+
+  .topbarLinks {
+    grid-area: desktop-links-area;
+  }
+
+  .topbarTitle {
+    font-size: 1.3rem;
+  }
 }
