@@ -8,6 +8,9 @@
   font-size: 1.3rem;
   margin-top: -0.3rem;
   text-decoration: none !important;
+  background: url(/health-icons-logo.svg) 0 50% no-repeat;
+  background-size: 24px;
+  padding-left: 36px;
 }
 
 .links {
@@ -20,9 +23,10 @@
 }
 
 .buttonLink {
-  background: var(--link-color);
+  background: var(--link-color) url(/ui/folder-download-line-white.svg) 20px 50% no-repeat;
+  background-size: 18px;
   color: #fff !important;
   margin: 0 0 0 2rem;
-  padding: 0.6rem 1.3rem;
+  padding: 0.6rem 30px 0.6rem 50px;
   border-radius: 3px;
 }

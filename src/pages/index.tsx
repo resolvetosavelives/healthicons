@@ -36,7 +36,7 @@ export default function Home({ categories }: HomeProps) {
     <div className="container">
       <Head>
         <title>Health Icons</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <TopBar />
@@ -53,7 +53,7 @@ export default function Home({ categories }: HomeProps) {
           <input
             type="text"
             className={styles.filterBoxInput}
-            placeholder="Find Icons"
+            placeholder="Search for icons..."
             onChange={(e) => setQuery(e.target.value)}
           />
         </label>

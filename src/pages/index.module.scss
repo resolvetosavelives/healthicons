@@ -19,6 +19,19 @@
 }
 
 .filterBoxInput {
-  width: 100%;
-  font-size: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 1rem 1rem 1rem 50px;
+  background: #fff url(/ui/search-2-line.svg) 1rem 50% no-repeat;
+  background-size: 20px;
+  border: 1px solid var(--link-decoration-color);
+  border-radius: 5px;
+  position: relative;
+  top: -60px;
+
+  &:focus {
+    border-color:  var(--link-color);
+    outline: none;
+  }
 }
