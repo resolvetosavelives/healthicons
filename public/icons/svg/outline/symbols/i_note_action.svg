@@ -1,5 +1,5 @@
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="9.03564" y="5.18945" width="26" height="34" rx="3" fill="#82FF9D" stroke="#333333" stroke-width="2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 4.18945H12.0356C9.82651 4.18945 8.03564 5.98031 8.03564 8.18945V36.1895C8.03564 38.3986 9.82651 40.1895 12.0356 40.1895H32.0356C34.2448 40.1895 36.0356 38.3986 36.0356 36.1895V8.18945C36.0356 5.98031 34.2448 4.18945 32.0356 4.18945H30V4.5V5.50082V6.18945H32.0356C33.1402 6.18945 34.0356 7.08488 34.0356 8.18945V36.1895C34.0356 37.294 33.1402 38.1895 32.0356 38.1895H12.0356C10.9311 38.1895 10.0356 37.294 10.0356 36.1895V8.18945C10.0356 7.08488 10.9311 6.18945 12.0356 6.18945H14V5.50082V4.5V4.18945ZM19 6.18945H25V5.50082V4.5V4.18945H19V4.5V5.50082V6.18945Z" fill="#333333"/>
 <line x1="15" y1="15" x2="29" y2="15" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
 <line x1="15.0355" y1="20.1895" x2="29.0355" y2="20.1895" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
 <line x1="15.0355" y1="25.1895" x2="29.0355" y2="25.1895" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
@@ -10,8 +10,6 @@
 <path d="M42 10H40C38.8954 10 38 10.8954 38 12V16H44V12C44 10.8954 43.1046 10 42 10Z"/>
 </mask>
 <path d="M44 16V18H46V16H44ZM38 16H36V18H38V16ZM40 12H42V8H40V12ZM42 12V16H46V12H42ZM44 14H38V18H44V14ZM40 16V12H36V16H40ZM42 12H46C46 9.79086 44.2091 8 42 8V12ZM40 8C37.7909 8 36 9.79086 36 12H40V12V8Z" fill="#333333" mask="url(#path-8-inside-1)"/>
-<line x1="27.5" y1="4.5" x2="27.5" y2="5.50082" stroke="#82FF9D" stroke-width="5" stroke-linecap="square"/>
 <line x1="27.5" y1="3.5" x2="27.5" y2="6.50082" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
-<line x1="16.5" y1="4.5" x2="16.5" y2="5.50082" stroke="#82FF9D" stroke-width="5" stroke-linecap="square"/>
 <line x1="16.5085" y1="3.5" x2="16.5085" y2="6.50082" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
 </svg>

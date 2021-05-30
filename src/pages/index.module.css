@@ -1,5 +1,5 @@
 .box {
-  background: #f5fdfc;
+  background: #e9fdfa;
   padding: 4rem;
   border-radius: 1rem;
   text-align: center;
@@ -7,7 +7,7 @@
 
 .iconGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 12rem);
-  justify-content: center;
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, 4rem);
+  justify-content: left;
+  grid-gap: 3rem;
 }

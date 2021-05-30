@@ -22,10 +22,11 @@ export default function Home({ categories }: HomeProps) {
       <TopBar />
       <main>
         <div className={styles.box}>
-          <h1>Free, open source health icons available for any use</h1>
+          <h1>Free, open source health icons</h1>
           <h3>
-            Use for your next commerical or personal project. You don’t need to
-            give credit and you can edit the icons however you want.
+            Free for use in your next commerical or personal project.
+            <br />
+            Editing is ok. Republishing is ok. No need to give credit.
           </h3>
         </div>
         {categories.map((category) => (
@@ -41,6 +42,12 @@ export default function Home({ categories }: HomeProps) {
           </>
         ))}
       </main>
+      <footer>
+        All icons are licensed under an open source{' '}
+        <a href="/about#license" className={styles.link}>
+          MIT License
+        </a>
+      </footer>
     </div>
   );
 }
