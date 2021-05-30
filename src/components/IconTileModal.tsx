@@ -15,34 +15,34 @@ export function IconTileModal(props: IconTileModalProps) {
       overlayClassName="modal__overlay"
       bodyOpenClassName="modal--open"
       onRequestClose={props.onClose}
+      className={styles.modalContainer}
+      overlayClassName={styles.modalBody}
+      closeTimeoutMS={200}
     >
       <>
-        <button onClick={props.onClose}>Close</button>
+        <button onClick={props.onClose} className={styles.modalClose}>
+          Close
+        </button>
+        <img
+          src={`icons/svg/filled/${props.icon.path}`}
+          className={styles.modalImage}
+          width="96"
+          height="96"
+        />
         <div className={styles.iconTitle}>{props.icon.title}</div>
-        <a
-          href={`icons/svg/filled/${props.icon.path}`}
-          download={props.icon.fileName}
-        >
-          <img
-            src={`icons/svg/filled/${props.icon.path}`}
-            width="48"
-            height="48"
-            alt={`${props.icon.title} outline icon`}
-          />
-          <span>Download SVG</span>
-        </a>
         <a
           href={`icons/svg/outline/${props.icon.path}`}
           download={props.icon.fileName}
+          className={styles.modalButton}
         >
-          <img
-            src={`icons/svg/outline/${props.icon.path}`}
-            width="48"
-            height="48"
-            alt={`${props.icon.title} outline icon`}
-          />
-
-          <span>Download SVG</span>
+          <span>SVG</span>
+        </a>
+        <a
+          href={`icons/png/outline/${props.icon.path}`}
+          download={props.icon.fileName}
+          className={styles.modalButton}
+        >
+          <span>PNG</span>
         </a>
       </>
     </ReactModal>

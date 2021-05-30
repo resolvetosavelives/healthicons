@@ -1,3 +1,44 @@
+.modalContainer {
+  background: white;
+  width: 50%;
+  top: 30%;
+  left: 25%;
+  position: fixed;
+  padding: 4rem 2rem 5rem 180px;
+  border-radius: 5px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+.modalClose {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  color: var(--link-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.modalImage {
+  position: absolute;
+  left: 56px;
+  top: 4rem;
+}
+
+.modalButton {
+  background: var(--link-color) url(/ui/download-2-line-white.svg) 20px 50%
+    no-repeat;
+  background-size: 18px;
+  color: #fff !important;
+  margin: 2rem 1rem 0 0;
+  padding: 0.6rem 30px 0.6rem 50px;
+  border-radius: 3px;
+}
+
 .iconTitle {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 2rem 0;
 }
