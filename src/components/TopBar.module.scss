@@ -53,6 +53,7 @@
   padding: 0.6rem 1rem 0.6rem 2.25rem;
   border-radius: 3px;
   font-size: 0.8rem;
+  transition: background-color ease-in-out 0.3s;
 
   &:link {
     color: #fff;
@@ -61,6 +62,7 @@
   &:hover {
     text-decoration: none;
     box-shadow: 0 0 0 2px var(--link-decoration-color);
+    background-color: var(--link-color-dark);
   }
 }
 

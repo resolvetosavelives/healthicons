@@ -1,10 +1,10 @@
 .modalContainer {
   background: white;
-  width: 50%;
+  width: 40%;
   top: 30%;
-  left: 25%;
+  left: 30%;
   position: fixed;
-  padding: 4rem 2rem 5rem 180px;
+  padding: 4rem 2rem 4rem 180px;
   border-radius: 5px;
   box-shadow: 0 0 0 10px var(--link-decoration-color);
   border: 1px solid var(--link-color);
@@ -12,20 +12,37 @@
 
 .modalClose {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 20px;
+  right: 24px;
   background: none;
   border: none;
   text-transform: uppercase;
   color: var(--link-color);
-  font-size: 0.8rem;
+  font-size: 2rem;
   font-weight: bold;
+
+  &:hover {
+    color: var(--link-color-dark);
+    cursor: pointer;
+  }
+}
+
+.modalLabel {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #999;
+  letter-spacing: 0.1rem;
+  margin: 0 0 0.2rem 0;
 }
 
 .modalImage {
   position: absolute;
   left: 56px;
   top: 4rem;
+}
+
+.modalButtons {
+  margin: 0 0 3rem 0;
 }
 
 .modalButton {
@@ -36,10 +53,26 @@
   margin: 2rem 1rem 0 0;
   padding: 0.6rem 30px 0.6rem 50px;
   border-radius: 3px;
+  transition: background-color ease-in-out 0.3s;
+
+  &:hover {
+    background-color: var(--link-color-dark);
+    text-decoration: none;
+  }
 }
 
-.iconTitle {
-  font-size: 2rem;
+.modalTitle {
+  font-size: 1.4rem;
   font-weight: bold;
   margin: 0 0 2rem 0;
+}
+
+.modalTags span {
+  background: var(--link-decoration-color);
+  color: var(--link-color);
+  margin: 0.2rem 0.2rem 0.2rem 0;
+  padding: 0.2rem 1rem;
+  border-radius: 100px;
+  display: inline-block;
+  font-size: 0.8rem;
 }
