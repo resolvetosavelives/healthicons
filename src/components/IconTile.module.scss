@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .iconGroup {
   text-align: center;
   margin: 32px 0;
@@ -13,7 +17,7 @@
   height: 68px;
   padding: 16px;
   margin: 8px auto;
-  border: 1px solid rgba(255,255,255,0);
+  border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 5px;
   opacity: 0.8;
   transition: border-color ease-in-out 0.4s, opacity ease-in-out 0.4s;
@@ -25,7 +29,7 @@
 }
 
 .iconItem:hover .iconTitle {
-  color:  var(--link-color);
+  color: var(--link-color);
   transition: color ease-in-out 0.4s;
 }
 

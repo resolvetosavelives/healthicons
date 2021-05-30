@@ -1,16 +1,22 @@
 import styles from './IconTile.module.scss';
 import { Icon } from '../lib/icons';
+import classnames from 'classnames';
 
 // TODO: replace placeholder icons
 // import { ReactComponent as DoctorFemale } from '../../public/icons/humans/doctor_female_positive.svg';
 
 interface IconTileProps {
   icon: Icon;
+  visible: boolean;
 }
 
 export function IconTile(props: IconTileProps) {
+  const classes = classnames(styles.iconGroup, {
+    [styles.hidden]: !props.visible
+  });
+
   return (
-    <div className={styles.iconGroup}>
+    <div className={classes}>
       <div className={styles.iconItem}>
         <div className={styles.iconThumb}>
           <img

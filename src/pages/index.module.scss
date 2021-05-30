@@ -11,3 +11,14 @@
   justify-content: left;
   grid-gap: 3rem;
 }
+
+.filterBox {
+  display: flex;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.filterBoxInput {
+  width: 100%;
+  font-size: 1.5rem;
+}

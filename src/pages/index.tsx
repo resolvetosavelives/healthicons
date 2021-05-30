@@ -1,17 +1,37 @@
+import { useState, useMemo } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
 import { IconTile } from '../components/IconTile';
-import styles from './index.module.css';
+import styles from './index.module.scss';
 
-import { getCategoriesAndIcons, Category } from '../lib/icons';
+import { getCategoriesAndIcons, Category, Icon } from '../lib/icons';
 
 interface HomeProps {
   categories: Category[];
 }
 
 export default function Home({ categories }: HomeProps) {
+  const [query, setQuery] = useState<string>();
+
+  const iconsToRender = useMemo(() => {
+    const filteredIcons: Icon[] = [];
+    if (!query) {
+      return filteredIcons;
+    }
+    const lowerCaseQuery = query.toLowerCase();
+
+    categories.forEach((category) => {
+      category.icons.forEach((icon) => {
+        if (icon.title.toLowerCase().includes(lowerCaseQuery)) {
+          filteredIcons.push(icon);
+        }
+      });
+    });
+    return filteredIcons;
+  }, [query, categories]);
+
   return (
     <div className="container">
       <Head>
@@ -29,17 +49,34 @@ export default function Home({ categories }: HomeProps) {
             Editing is ok. Republishing is ok. No need to give credit.
           </h3>
         </div>
+        <label className={styles.filterBox}>
+          <input
+            type="text"
+            className={styles.filterBoxInput}
+            placeholder="Find Icons"
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </label>
         {categories.map((category) => (
-          <>
-            <CategoryHeading key={category.title}>
-              {category.title}
-            </CategoryHeading>
+          <div key={category.title}>
+            {(!query ||
+              category.icons.some((icon) => {
+                return iconsToRender.includes(icon);
+              })) && (
+              <CategoryHeading key={category.title}>
+                {category.title}
+              </CategoryHeading>
+            )}
             <div className={styles.iconGrid}>
               {category.icons.map((icon) => (
-                <IconTile key={icon.title} icon={icon} />
+                <IconTile
+                  key={icon.title}
+                  icon={icon}
+                  visible={!query || iconsToRender.includes(icon)}
+                />
               ))}
             </div>
-          </>
+          </div>
         ))}
       </main>
       <footer>
