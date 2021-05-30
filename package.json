@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
+    "deploy": "gh-pages -d out --repo git@github.com:resolvetosavelives/healthicons.git",
     "start": "next start",
     "lint": "eslint '{src/components,src/lib,src/pages}/**/*.{js,jsx,ts,tsx}'",
     "lint:style": "stylelint '{src,styles}/**/*.css'"
@@ -35,6 +37,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.3",
     "eslint-plugin-react-hooks": "^4.1.2",
+    "gh-pages": "^3.2.0",
     "prettier": "^2.1.2",
     "stylelint": "^13.7.2",
     "stylelint-config-css-modules": "^2.2.0",

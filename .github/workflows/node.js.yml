@@ -13,11 +13,36 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
       - name: Use Node.js 14.x
         uses: actions/setup-node@v2
         with:
           node-version: 14.x
-      - run: yarn install
-      - run: yarn lint
-      - run: yarn lint:style
+      - name: Installing packages
+        run: yarn install
+      - name: Linting code
+        run: yarn lint
+      - name: Linting styles
+        run: yarn lint:style
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14.x"
+      - name: Installing packages
+        run: yarn install
+      - name: Build my App
+        run: yarn build && yarn export && touch ./out/.nojekyll
+      - name: Deploy 🚀
+        run: yarn deploy
