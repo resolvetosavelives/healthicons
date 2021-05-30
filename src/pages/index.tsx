@@ -36,8 +36,9 @@ export default function Home({ categories }: HomeProps) {
     return filteredIcons;
   }, [query, categories]);
 
+  // TODO: figure out how to correctly do this
   // required to apply the aria-hidden attribute when a modal opens
-  ReactModal.setAppElement('#main');
+  //ReactModal.setAppElement('#main');
 
   return (
     <div className="container">
