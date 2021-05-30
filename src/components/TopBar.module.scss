@@ -3,14 +3,21 @@
   display: flex;
 }
 
-.title, .title:visited {
+.title,
+.title:link,
+.title:visited {
   font-weight: bold;
   font-size: 1.3rem;
   margin-top: -0.3rem;
-  text-decoration: none !important;
+  text-decoration: none;
   background: url(/health-icons-logo.svg) 0 50% no-repeat;
   background-size: 24px;
   padding-left: 36px;
+}
+
+.title:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--link-decoration-color);
 }
 
 .links {
