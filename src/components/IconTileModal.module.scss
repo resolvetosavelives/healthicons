@@ -6,7 +6,8 @@
   position: fixed;
   padding: 4rem 2rem 5rem 180px;
   border-radius: 5px;
-  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 10px var(--link-decoration-color);
+  border: 1px solid var(--link-color);
 }
 
 .modalClose {
