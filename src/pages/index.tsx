@@ -1,9 +1,7 @@
 import { useState, useMemo } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
-import { useState } from 'react';
 import ReactModal from 'react-modal';
-import { Icon } from '../lib/icons';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
 import { IconTile } from '../components/IconTile';
@@ -16,7 +14,6 @@ interface HomeProps {
 }
 
 export default function Home({ categories }: HomeProps) {
-
   const [modalIcon, setModalIcon] = useState<Icon>(undefined);
 
   const [query, setQuery] = useState<string>();
@@ -75,14 +72,16 @@ export default function Home({ categories }: HomeProps) {
             )}
             <div className={styles.iconGrid}>
               {category.icons.map((icon) => (
-
                 <div
                   key={icon.title}
                   onClick={() => {
                     setModalIcon(icon);
                   }}
                 >
-                  <IconTile icon={icon} />
+                  <IconTile
+                    icon={icon}
+                    visible={!query || iconsToRender.includes(icon)}
+                  />
                 </div>
               ))}
             </div>
