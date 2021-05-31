@@ -3,6 +3,6 @@
 <path d="M27 17L33 17" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
 <path d="M24 36V44" stroke="#333333" stroke-width="2"/>
 <path d="M18 39H30" stroke="#333333" stroke-width="2"/>
-<path d="M11 30.0001C17.5999 29.7252 22.475 31.2598 28 28.0001C33.525 24.7404 37 30.0001 37 30.0001" stroke="#333333" stroke-width="2"/>
+<path d="M11 30C17.5999 29.7251 22.475 31.2597 28 28C33.525 24.7403 37 30 37 30" stroke="#333333" stroke-width="2"/>
 <rect x="15" y="11" width="8" height="12" rx="4" stroke="#333333" stroke-width="2"/>
 </svg>
