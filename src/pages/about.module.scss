@@ -1,11 +1,9 @@
 .avatarImage {
+  display: block;
+  position: absolute;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-
-  position: absolute;
   left: 0;
   top: 4px;
-  color: rgba(255, 255, 255, 0);
-  display: block;
+  border-radius: 50%;
 }
