@@ -1,10 +1,10 @@
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
-import { Icon, IconType } from '../lib/icons';
+import { Icon } from '../lib/icons';
 
 interface IconTileModalProps {
   icon: Icon;
-  iconType: IconType;
+  iconType: string;
   isOpen: boolean;
   onClose: () => void;
 }
