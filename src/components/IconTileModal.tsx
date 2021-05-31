@@ -46,7 +46,14 @@ export function IconTileModal(props: IconTileModalProps) {
             download={`${props.icon.fileName}.png`}
             className={styles.modalButton}
           >
-            <span>PNG</span>
+            <span>48px PNG</span>
+          </a>
+          <a
+            href={`icons/png/${props.iconType}/${props.icon.path}/${props.icon.fileName}@2x.png`}
+            download={`${props.icon.fileName}@2x.png`}
+            className={styles.modalButton}
+          >
+            <span>96px PNG</span>
           </a>
         </div>
         <div className={styles.modalLabel}>Tags</div>

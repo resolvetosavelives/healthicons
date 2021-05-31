@@ -14,22 +14,25 @@
   grid-area: download-area;
 }
 
-.topbarTitle a {
-  font-weight: bold;
-  display: inline-block;
-  background: url(/health-icons-logo.svg) 0 50% no-repeat;
-  background-size: 24px;
-  padding-left: 32px;
-  min-height: 1.3rem;
+.topbarTitle {
+  a {
+    font-weight: bold;
+    display: inline-block;
+    background: url(/health-icons-logo.svg) 0 50% no-repeat;
+    background-size: 24px;
+    padding-left: 32px;
+    min-height: 1.3rem;
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
 
-  &:link,
-  &:visited {
-    text-decoration: none;
-  }
-
-  &:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--link-decoration-color);
+    sup {
+      font-size: 0.8rem;
+      font-weight: normal;
+      margin-left: 0.2rem;
+      letter-spacing: 0.1rem;
+    }
   }
 }
 
