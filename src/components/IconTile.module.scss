@@ -2,50 +2,74 @@
   display: none;
 }
 
+.iconGrid {
+  background: red;
+}
+
 .iconGroup {
   text-align: center;
   margin: 1rem 0;
 }
 
 .iconItem {
-  margin: 0 8px 32px 8px;
+  margin: 0 2rem 2rem 0;
   width: 100px;
   border: 0;
   background: transparent;
 }
 
 .iconThumb {
-  width: 68px;
-  height: 68px;
+  width: 96px;
+  height: 96px;
   padding: 16px;
   margin: 8px auto;
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 5px;
   opacity: 0.8;
-  transition: border-color ease-in-out 0.4s, opacity ease-in-out 0.4s;
+  transition: border-color ease-in-out 0.2s, opacity ease-in-out 0.2s;
+
+  img {
+    width: 56px;
+    height: 56px;
+  }
 }
 
-.iconItem:hover .iconThumb {
-  border-color: var(--link-decoration-color);
-  opacity: 1;
-}
+.iconItem:hover {
+  cursor: pointer;
 
-.iconItem:hover .iconTitle {
-  color: var(--link-color);
-  transition: color ease-in-out 0.4s;
-}
+  .iconThumb {
+    border-color: var(--link-decoration-color);
+    opacity: 1;
+  }
 
-.iconThumb img {
-  width: 36px;
-  height: 36px;
+  .iconTitle {
+    color: var(--link-color);
+    transition: color ease-in-out 0.4s;
+  }
+
 }
 
 .iconTitle {
   font-size: 0.8rem;
-  color: #ccc;
+  color: rgba(134,134,155,0.6);
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
+}
+
+@media (min-width: 48rem) {
+
+  .iconThumb {
+    width: 84px;
+    height: 84px;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+
+  }
+
 }

@@ -1,8 +1,27 @@
 .box {
-  background: #e9fdfa;
-  padding: 4rem;
-  border-radius: 1rem;
+  background: #7a76de url(/gradient.jpg) no-repeat;
+  background-size: cover;
+  padding: 2rem 2rem 4rem 2rem;
   text-align: center;
+  margin: 0 -1rem;
+
+  h1 {
+    font-size: 1.75rem;
+    opacity: 1;
+    color: #fff;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1rem;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    font-weight: 500;
+  }
+
+  span {
+    display: inline;
+  }
 }
 
 .iconGrid {
@@ -10,16 +29,17 @@
   grid-template-columns: repeat(auto-fit, 4rem);
   justify-content: left;
   grid-gap: 3rem;
+  padding-right: 1rem;
 }
 
 .filterBox {
   display: flex;
-  margin: 1rem;
+  margin: 1rem 1rem -3rem 1rem;
   padding: 1rem;
 }
 
 .filterBoxInput {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   font-size: 1rem;
   padding: 1rem 1rem 1rem 50px;
@@ -34,4 +54,36 @@
     border-color:  var(--link-color);
     outline: none;
   }
+}
+
+@media (min-width: 48rem) {
+
+  .box {
+    padding: 4rem 4rem 5rem 4rem;
+    border-radius: 0.5rem;
+    margin: 0;
+    background-image: url(/gradient-icons.png), url(/gradient.jpg) ;
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      margin-top: -0.5rem;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  .filterBoxInput {
+    width: 80%;
+  }
+
+  .filterBox {
+    margin: 1rem 1rem -2.5rem 1rem;
+  }
+
 }

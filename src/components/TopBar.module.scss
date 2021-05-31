@@ -35,13 +35,27 @@
 
 .topbarLinks {
   grid-area: mobile-links-area;
-  margin: 0;
-  padding: 0;
+  margin: 0 -1rem -1rem -1rem;
+  padding: 1rem;
   list-style-type: none;
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 2rem;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 1rem;
+  background: none;
+  font-size: 0.8rem;
+  border-top: 1px solid var(--link-decoration-color);
+
+  img {
+    vertical-align: middle;
+    margin-top: -2px;
+    opacity: 0.6;
+    width: 20px;
+  }
+
+  a:hover img {
+    opacity: 1;
+  }
 }
 
 .buttonLink {
@@ -50,10 +64,11 @@
   display: inline-block;
   background-size: 18px;
   color: #fff;
+  font-weight: bold;
   padding: 0.6rem 1rem 0.6rem 2.25rem;
   border-radius: 3px;
   font-size: 0.8rem;
-  transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.15s;
 
   &:link {
     color: #fff;
@@ -61,7 +76,6 @@
 
   &:hover {
     text-decoration: none;
-    box-shadow: 0 0 0 2px var(--link-decoration-color);
     background-color: var(--link-color-dark);
   }
 }
@@ -79,6 +93,13 @@
 
   .topbarLinks {
     grid-area: desktop-links-area;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border-top: none;
+    font-size: 1rem;
+    grid-gap: 1rem;
+    justify-content: space-around;
   }
 
   .topbarTitle {

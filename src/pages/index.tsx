@@ -76,7 +76,7 @@ export default function Home({ categories }: HomeProps) {
           <h1>Free, open source health icons</h1>
           <h3>
             Free for use in your next commerical or personal project.
-            <br />
+            <span> </span>
             Editing is ok. Republishing is ok. No need to give credit.
           </h3>
         </div>
