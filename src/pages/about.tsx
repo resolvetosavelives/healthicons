@@ -17,7 +17,7 @@ export default function About() {
     {
       name: 'Bryn Jackson',
       link: 'https://twitter.com/@superbryntendo',
-      avatar: 'https://unavatar.now.sh/twitter/@superbryntendo'
+      avatar: 'https://unavatar.now.sh/twitter/superbryntendo'
     },
     {
       name: 'Daniel Burka',
@@ -81,8 +81,8 @@ export default function About() {
     },
     {
       name: 'Rama Krushna',
-      link: 'https://twitter.com/rama__krushna',
-      avatar: 'https://unavatar.now.sh/twitter/rama__krushna'
+      link: 'https://twitter.com/rama_krushna',
+      avatar: 'https://unavatar.now.sh/twitter/rama_krushna'
     },
     {
       name: 'Rohan Pal',
