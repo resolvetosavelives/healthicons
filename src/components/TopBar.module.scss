@@ -35,13 +35,26 @@
 
 .topbarLinks {
   grid-area: mobile-links-area;
-  margin: 0;
-  padding: 0;
+  margin: 0 -1rem -1rem -1rem;
+  padding: 1rem;
   list-style-type: none;
   display: grid;
   grid-auto-flow: column;
   grid-gap: 2rem;
   justify-content: space-around;
+  background: none;
+  border-top: 1px solid  var(--link-decoration-color);
+
+  img {
+    vertical-align: middle;
+    margin-top: -2px;
+    opacity: 0.6;
+    width: 20px;
+  }
+
+  &:hover img {
+    opacity: 1;
+  }
 }
 
 .buttonLink {
@@ -79,6 +92,10 @@
 
   .topbarLinks {
     grid-area: desktop-links-area;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border-top: none;
   }
 
   .topbarTitle {

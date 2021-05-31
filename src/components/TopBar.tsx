@@ -15,7 +15,7 @@ export function TopBar() {
             href="https://github.com/resolvetosavelives/healthicons#icon-requests"
             className={styles.link}
           >
-            Request an icon
+            <img src="/ui/question-line.svg" alt="" /> Request an icon
           </a>
         </li>
         <li>
@@ -23,12 +23,12 @@ export function TopBar() {
             href="https://github.com/resolvetosavelives/healthicons"
             className={styles.link}
           >
-            GitHub
+            <img src="/ui/github-fill.svg" alt="" /> GitHub
           </a>
         </li>
         <li>
           <Link href="/about">
-            <a className={styles.link}>About</a>
+            <a className={styles.link}><img src="/ui/information-line.svg" alt="" /> About</a>
           </Link>
         </li>
       </ul>

@@ -59,15 +59,13 @@ footer {
 a,
 a:link,
 a:visited {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--link-color);
-  text-decoration-color: var(--link-decoration-color);
 }
 
 a:hover,
 a:active {
   color: #000;
-  text-decoration-color: var(--text-color);
 }
 
 a:focus-visible {
@@ -98,13 +96,15 @@ h3 {
 }
 
 .contentContainer {
-  display: flex;
-  margin: 4rem 0;
+  display: block;
 }
 
 .contentMain {
-  width: 50%;
-  margin-right: 10%;
+  width: auto;
+}
+
+.contentMain h1 {
+  margin-top: 2em;
 }
 
 .contentMain h2 {
@@ -112,10 +112,7 @@ h3 {
 }
 
 .contentSide {
-  width: 40%;
-  background: #e9fdfa;
-  padding: 1.5rem 2.5rem;
-  border-radius: 10px;
+  width: auto;
 }
 
 .contentSide div {
@@ -129,10 +126,39 @@ h3 {
   content: '.';
   width: 40px;
   height: 40px;
-  background: #fff;
+  background: rgba(102, 102, 255, 1);
   border-radius: 100px;
   position: absolute;
   left: 0;
   top: 4px;
   color: rgba(255, 255, 255, 0);
+}
+
+@media (min-width: 48rem) {
+
+  .contentMain h1 {
+    margin-top: 0;
+  }
+
+  .contentContainer {
+    display: flex;
+    margin: 4rem 0;
+  }
+
+  .contentMain {
+    width: 50%;
+    margin-right: 10%;
+  }
+
+  .contentSide {
+    width: 40%;
+    background: #EBECFF;
+    padding: 1.5rem 2.5rem;
+    border-radius: 10px;
+  }
+
+  .contentSide div::before {
+    background: rgba(102, 102, 255, 0.2);
+  }
+
 }
