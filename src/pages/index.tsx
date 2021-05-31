@@ -7,11 +7,11 @@ import { IconTile } from '../components/IconTile';
 import { IconTileModal } from '../components/IconTileModal';
 import styles from './index.module.scss';
 
-import { getCategoriesAndIcons, Category, Icon, IconType } from '../lib/icons';
+import { getCategoriesAndIcons, Category, Icon } from '../lib/icons';
 
 interface ModalIcon {
   icon: Icon;
-  iconType: IconType;
+  iconType: string;
 }
 
 interface HomeProps {
@@ -104,7 +104,7 @@ export default function Home({ categories }: HomeProps) {
                   key={icon.title}
                   icon={icon}
                   visible={!query || iconsToRender.includes(icon)}
-                  onClick={(iconType: IconType) => {
+                  onClick={(iconType: string) => {
                     setModalIcon({ icon, iconType });
                   }}
                 />
