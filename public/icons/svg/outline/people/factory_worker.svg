@@ -6,8 +6,8 @@
 <line x1="13.2622" y1="10.8184" x2="13.2622" y2="14.2729" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
 <line x1="18.0437" y1="9" x2="18.0437" y2="12.4545" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
 <line x1="22.8252" y1="10.8184" x2="22.8252" y2="14.2729" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
-<path d="M9.39337 16.1816C0.786739 23.4544 35.2133 23.4544 26.6066 16.1816" stroke="#333333" stroke-width="2"/>
-<path d="M25.6504 20.7275C25.6504 24.7442 22.2252 28.0003 18.0001 28.0003C13.7749 28.0003 10.3497 24.7442 10.3497 20.7275" stroke="#333333" stroke-width="2"/>
+<path d="M9.39337 16.1818C0.786739 23.4546 35.2133 23.4546 26.6066 16.1818" stroke="#333333" stroke-width="2"/>
+<path d="M25.6503 20.7275C25.6503 24.7442 22.2251 28.0003 17.9999 28.0003C13.7748 28.0003 10.3496 24.7442 10.3496 20.7275" stroke="#333333" stroke-width="2"/>
 <path d="M32 19V5H35V12L40 8V12L45 8V12V19H32Z" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
 <rect x="35" y="14" width="2" height="2" rx="0.4" fill="#333333"/>
 <rect x="40" y="14" width="2" height="2" rx="0.4" fill="#333333"/>

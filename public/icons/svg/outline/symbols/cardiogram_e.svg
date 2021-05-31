@@ -5,8 +5,8 @@
 </mask>
 <path d="M43 19V21H45V19H43ZM37 19H35V21H37V19ZM39 15H41V11H39V15ZM41 15V19H45V15H41ZM43 17H37V21H43V17ZM39 19V15H35V19H39ZM41 15H45C45 12.7909 43.2091 11 41 11V15ZM39 11C36.7909 11 35 12.7909 35 15H39V15V11Z" fill="#333333" mask="url(#path-2-inside-1)"/>
 <rect x="7" y="8" width="26" height="34" rx="3" stroke="#333333" stroke-width="2"/>
-<rect x="14" y="5" width="12" height="6" rx="2" fill="#82FF9D" stroke="#333333" stroke-width="2"/>
-<path d="M7.29299 21.9884H14.2175L16.7175 17.5439L18.7175 24.5439L22.2175 20.0439H27.2175" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+<rect x="14" y="5" width="12" height="6" rx="2" fill="white" stroke="#333333" stroke-width="2"/>
+<path d="M7.29299 21.9886H14.2175L16.7175 17.5442L18.7175 24.5442L22.2175 20.0442H27.2175" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
 <line x1="12" y1="31" x2="28" y2="31" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
 <line x1="15" y1="36" x2="25" y2="36" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
 </svg>

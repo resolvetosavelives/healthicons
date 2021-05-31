@@ -29,7 +29,7 @@
 <rect x="37.8125" y="19.0625" width="3.375" height="3.375" rx="1" stroke="#333333" stroke-width="3.375" mask="url(#path-10-inside-6)"/>
 <rect x="27" y="8.25" width="16" height="16" rx="1" stroke="#333333" stroke-width="2"/>
 <path d="M27 9.25C27 8.69772 27.4477 8.25 28 8.25H42C42.5523 8.25 43 8.69771 43 9.25V11.4375C43 11.9898 42.5523 12.4375 42 12.4375H28C27.4477 12.4375 27 11.9898 27 11.4375V9.25Z" fill="#333333" stroke="#333333" stroke-width="2"/>
-<rect x="31.0625" y="5" width="1.125" height="4.5" rx="0.5625" fill="#82FF9D"/>
-<rect x="40.0625" y="5" width="1.125" height="4.5" rx="0.5625" fill="#82FF9D"/>
+<rect x="31.0625" y="5" width="1.125" height="4.5" rx="0.5625" fill="white"/>
+<rect x="40.0625" y="5" width="1.125" height="4.5" rx="0.5625" fill="white"/>
 <line x1="26.5625" y1="12.4375" x2="43.4375" y2="12.4375" stroke="#333333" stroke-width="2"/>
 </svg>
