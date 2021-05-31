@@ -122,18 +122,6 @@ h3 {
   padding-left: 56px;
 }
 
-.contentSide div::before {
-  content: '.';
-  width: 40px;
-  height: 40px;
-  background: rgba(102, 102, 255, 1);
-  border-radius: 100px;
-  position: absolute;
-  left: 0;
-  top: 4px;
-  color: rgba(255, 255, 255, 0);
-}
-
 @media (min-width: 48rem) {
   .contentMain h1 {
     margin-top: 0;
@@ -154,9 +142,5 @@ h3 {
     background: #ebecff;
     padding: 1.5rem 2.5rem;
     border-radius: 10px;
-  }
-
-  .contentSide div::before {
-    background: rgba(102, 102, 255, 0.2);
   }
 }
