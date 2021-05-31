@@ -7,7 +7,7 @@ import { Icon } from '../lib/icons';
 interface IconTileProps {
   icon: Icon;
   visible: boolean;
-  onClick: () => void;
+  onClick: (type: string) => void;
 }
 
 export function IconTile(props: IconTileProps) {
@@ -16,11 +16,16 @@ export function IconTile(props: IconTileProps) {
   });
 
   return (
-    <div className={classes} onClick={props.onClick}>
-      <div className={styles.iconItem}>
+    <div className={classes}>
+      <div
+        className={styles.iconItem}
+        onClick={() => {
+          props.onClick.call(this, 'filled');
+        }}
+      >
         <div className={styles.iconThumb}>
           <LazyLoadImage
-            src={`icons/svg/filled/${props.icon.path}`}
+            src={`icons/svg/filled/${props.icon.path}/${props.icon.fileName}.svg`}
             width="48"
             height="48"
             alt={`${props.icon.title} outline icon`}
@@ -30,9 +35,14 @@ export function IconTile(props: IconTileProps) {
         <div className={styles.iconTitle}>{props.icon.title}</div>
       </div>
       <div className={styles.iconItem}>
-        <div className={styles.iconThumb}>
+        <div
+          className={styles.iconThumb}
+          onClick={() => {
+            props.onClick.call(this, 'outline');
+          }}
+        >
           <img
-            src={`icons/svg/outline/${props.icon.path}`}
+            src={`icons/svg/outline/${props.icon.path}/${props.icon.fileName}.svg`}
             width="48"
             height="48"
             alt={`${props.icon.title} outline icon`}

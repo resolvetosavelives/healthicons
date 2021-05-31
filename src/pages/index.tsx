@@ -7,15 +7,19 @@ import { IconTile } from '../components/IconTile';
 import { IconTileModal } from '../components/IconTileModal';
 import styles from './index.module.scss';
 
-import { getCategoriesAndIcons, Category, Icon } from '../lib/icons';
+import { getCategoriesAndIcons, Category, Icon, IconType } from '../lib/icons';
+
+interface ModalIcon {
+  icon: Icon;
+  iconType: IconType;
+}
 
 interface HomeProps {
   categories: Category[];
 }
 
 export default function Home({ categories }: HomeProps) {
-  const [modalIcon, setModalIcon] = useState<Icon>(undefined);
-
+  const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
   const [query, setQuery] = useState<string>();
 
   const iconsToRender = useMemo(() => {
@@ -100,8 +104,8 @@ export default function Home({ categories }: HomeProps) {
                   key={icon.title}
                   icon={icon}
                   visible={!query || iconsToRender.includes(icon)}
-                  onClick={() => {
-                    setModalIcon(icon);
+                  onClick={(iconType: IconType) => {
+                    setModalIcon({ icon, iconType });
                   }}
                 />
               ))}
@@ -110,7 +114,8 @@ export default function Home({ categories }: HomeProps) {
         ))}
         {modalIcon && (
           <IconTileModal
-            icon={modalIcon}
+            icon={modalIcon.icon}
+            iconType={modalIcon.iconType}
             isOpen={modalIcon !== undefined}
             onClose={() => {
               setModalIcon(undefined);

@@ -1,9 +1,10 @@
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
-import { Icon } from '../lib/icons';
+import { Icon, IconType } from '../lib/icons';
 
 interface IconTileModalProps {
   icon: Icon;
+  iconType: IconType;
   isOpen: boolean;
   onClose: () => void;
 }
@@ -23,7 +24,7 @@ export function IconTileModal(props: IconTileModalProps) {
           ×
         </button>
         <img
-          src={`icons/svg/filled/${props.icon.path}`}
+          src={`icons/svg/${props.iconType}/${props.icon.path}/${props.icon.fileName}.svg`}
           className={styles.modalImage}
           width="96"
           height="96"
@@ -34,15 +35,15 @@ export function IconTileModal(props: IconTileModalProps) {
 
         <div className={styles.modalButtons}>
           <a
-            href={`icons/svg/outline/${props.icon.path}`}
-            download={props.icon.fileName}
+            href={`icons/svg/${props.iconType}/${props.icon.path}/${props.icon.fileName}.svg`}
+            download={`${props.icon.fileName}.svg`}
             className={styles.modalButton}
           >
             <span>SVG</span>
           </a>
           <a
-            href={`icons/png/outline/${props.icon.path}`}
-            download={props.icon.fileName}
+            href={`icons/png/${props.iconType}/${props.icon.path}/${props.icon.fileName}.png`}
+            download={`${props.icon.fileName}.png`}
             className={styles.modalButton}
           >
             <span>PNG</span>
