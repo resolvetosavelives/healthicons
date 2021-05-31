@@ -1,7 +1,106 @@
 import Head from 'next/head';
 import { TopBar } from '../components/TopBar';
+import styles from './about.module.scss';
 
 export default function About() {
+  const contributors = [
+    {
+      name: 'Agrata Patel',
+      link: 'https://twitter.com/b0urnvita',
+      avatar: 'https://unavatar.now.sh/twitter/b0urnvita'
+    },
+    {
+      name: 'Andy Ngo',
+      link: 'https://twitter.com/andyngo',
+      avatar: 'https://unavatar.now.sh/twitter/andyngo'
+    },
+    {
+      name: 'Bryn Jackson',
+      link: 'https://twitter.com/@superbryntendo',
+      avatar: 'https://unavatar.now.sh/twitter/@superbryntendo'
+    },
+    {
+      name: 'Daniel Burka',
+      link: 'https://twitter.com/dburka',
+      avatar: 'https://unavatar.now.sh/twitter/dburka'
+    },
+    {
+      name: 'Gregory Schmidt',
+      link: 'https://twitter.com/_GregSchmidt',
+      avatar: 'https://unavatar.now.sh/twitter/_GregSchmidt'
+    },
+    {
+      name: 'Julia Parchimowicz',
+      link: 'https://twitter.com/its_badjuju',
+      avatar: 'https://unavatar.now.sh/twitter/its_badjuju'
+    },
+    {
+      name: 'Jemis Mali',
+      link: 'https://twitter.com/jemismali',
+      avatar: 'https://unavatar.now.sh/twitter/jemismali'
+    },
+    {
+      name: 'Jordan Stephensen',
+      link: 'https://twitter.com/jwstephensen',
+      avatar: 'https://unavatar.now.sh/twitter/jwstephensen'
+    },
+    {
+      name: 'Lina Wang',
+      link: 'https://twitter.com/linafab',
+      avatar: 'https://unavatar.now.sh/twitter/linafab'
+    },
+    {
+      name: 'Mario Rocchi',
+      link: 'https://twitter.com/mario_rocchi',
+      avatar: 'https://unavatar.now.sh/twitter/mario_rocchi'
+    },
+    {
+      name: 'Mayank Dhawan',
+      link: 'https://twitter.com/mayankd',
+      avatar: 'https://unavatar.now.sh/twitter/mayankd'
+    },
+    {
+      name: 'Megha Chandrashekar',
+      link: 'https://twitter.com/meghacshekhar',
+      avatar: 'https://unavatar.now.sh/twitter/meghacshekhar'
+    },
+    {
+      name: 'Michael Gauthier',
+      link: 'https://twitter.com/hypertextmike',
+      avatar: 'https://unavatar.now.sh/twitter/hypertextmike'
+    },
+    {
+      name: 'Nick Burka',
+      link: 'https://twitter.com/nickburka',
+      avatar: 'https://unavatar.now.sh/twitter/nickburka'
+    },
+    {
+      name: 'Parth Kapadia',
+      link: 'https://twitter.com/parthk',
+      avatar: 'https://unavatar.now.sh/twitter/parthk'
+    },
+    {
+      name: 'Rama Krushna',
+      link: 'https://twitter.com/rama__krushna',
+      avatar: 'https://unavatar.now.sh/twitter/rama__krushna'
+    },
+    {
+      name: 'Rohan Pal',
+      link: 'https://twitter.com/rohanpaldesign',
+      avatar: 'https://unavatar.now.sh/twitter/rohanpaldesign'
+    },
+    {
+      name: 'Steven Garrity',
+      link: 'https://twitter.com/sgarrity',
+      avatar: 'https://unavatar.now.sh/twitter/sgarrity'
+    },
+    {
+      name: 'Yugandhar Bhamare',
+      link: 'https://twitter.com/yug_design',
+      avatar: 'https://unavatar.now.sh/twitter/yug_design'
+    }
+  ];
+
   return (
     <div className="container">
       <Head>
@@ -213,65 +312,19 @@ export default function About() {
 
           <div className="contentSide">
             <h2 id="contributors">Contributors</h2>
-            <div>
-              <a href="https://twitter.com/b0urnvita">Agrata Patel</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/andyngo">Andy Ngo</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/@superbryntendo">Bryn Jackson</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/dburka">Daniel Burka</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/_GregSchmidt">Gregory Schmidt</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/its_badjuju">Julia Parchimowicz</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/jemismali">Jemis Mali</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/jwstephensen">Jordan Stephensen</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/linafab">Lina Wang</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/mario_rocchi">Mario Rocchi</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/mayankd">Mayank Dhawan</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/meghacshekhar">
-                Megha Chandrashekar
-              </a>
-            </div>
-            <div>
-              <a href="https://twitter.com/hypertextmike">Michael Gauthier</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/nickburka">Nick Burka</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/parthk">Parth Kapadia</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/rama__krushna">Rama Krushna</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/rohanpaldesign">Rohan Pal</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/sgarrity">Steven Garrity</a>
-            </div>
-            <div>
-              <a href="https://twitter.com/yug_design">Yugandhar Bhamare</a>
-            </div>
+            {contributors.map((contributor, index) => (
+              <div key={index}>
+                <a href={contributor.link}>
+                  <img
+                    src={contributor.avatar}
+                    alt={`Avatar of ${contributor.name}`}
+                    className={styles.avatarImage}
+                  />
+                  {contributor.name}
+                </a>
+              </div>
+            ))}
+
             <h2 className="mt-3" id="credit">
               Credit
             </h2>
