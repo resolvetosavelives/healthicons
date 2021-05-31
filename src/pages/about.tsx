@@ -46,12 +46,12 @@ export default function About() {
               that these icons are available in the public domain for use in any
               type of project. The project is hosted by the public health
               not-for-profit{' '}
-              <a href="https://resolvetosavelives.org">Resolve to Save Lives</a>{' '}
+              <a href="https://resolvetosavelives.org" target="_blank" rel="noopener noreferrer">Resolve to Save Lives</a>{' '}
               as an expression of the openness of the project.
             </p>
             <p>
               Need an icon for your project?{' '}
-              <a href="https://github.com/resolvetosavelives/healthicons#icon-requests">
+              <a href="https://github.com/resolvetosavelives/healthicons#icon-requests" target="_blank" rel="noopener noreferrer">
                 Submit a request through GitHub
               </a>{' '}
               and we will do our best to respond.
@@ -66,7 +66,7 @@ export default function About() {
             </p>
             <p>
               Browse the{' '}
-              <a href="https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3">
+              <a href="https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3" target="_blank" rel="noopener noreferrer">
                 Figma
               </a>{' '}
               and contribute icons in the "New icons" section. Please read the
@@ -203,82 +203,82 @@ export default function About() {
             <p>
               This Code of Conduct is adapted from the Contributor Covenant,
               version 1.4,{' '}
-              <a href="https://www.contributor-covenant.org/version/1/4/code-of-conduct.html">
+              <a href="https://www.contributor-covenant.org/version/1/4/code-of-conduct.html" target="_blank" rel="noopener noreferrer">
                 available here
               </a>
               . For answers to common questions about this code of conduct, see{' '}
-              <a href="https://www.contributor-covenant.org/faq">this FAQ</a>.
+              <a href="https://www.contributor-covenant.org/faq" target="_blank" rel="noopener noreferrer">this FAQ</a>.
             </p>
           </div>
 
           <div className="contentSide">
             <h2 id="contributors">Contributors</h2>
             <div>
-              <a href="https://twitter.com/b0urnvita">Agrata Patel</a>
+              <a href="https://twitter.com/b0urnvita" target="_blank" rel="noopener noreferrer">Agrata Patel</a>
             </div>
             <div>
-              <a href="https://twitter.com/andyngo">Andy Ngo</a>
+              <a href="https://twitter.com/andyngo" target="_blank" rel="noopener noreferrer">Andy Ngo</a>
             </div>
             <div>
-              <a href="https://twitter.com/@superbryntendo">Bryn Jackson</a>
+              <a href="https://twitter.com/@superbryntendo" target="_blank" rel="noopener noreferrer">Bryn Jackson</a>
             </div>
             <div>
-              <a href="https://twitter.com/dburka">Daniel Burka</a>
+              <a href="https://twitter.com/dburka" target="_blank" rel="noopener noreferrer">Daniel Burka</a>
             </div>
             <div>
-              <a href="https://twitter.com/_GregSchmidt">Gregory Schmidt</a>
+              <a href="https://twitter.com/_GregSchmidt" target="_blank" rel="noopener noreferrer">Gregory Schmidt</a>
             </div>
             <div>
-              <a href="https://twitter.com/its_badjuju">Julia Parchimowicz</a>
+              <a href="https://twitter.com/its_badjuju" target="_blank" rel="noopener noreferrer">Julia Parchimowicz</a>
             </div>
             <div>
-              <a href="https://twitter.com/jemismali">Jemis Mali</a>
+              <a href="https://twitter.com/jemismali" target="_blank" rel="noopener noreferrer">Jemis Mali</a>
             </div>
             <div>
-              <a href="https://twitter.com/jwstephensen">Jordan Stephensen</a>
+              <a href="https://twitter.com/jwstephensen" target="_blank" rel="noopener noreferrer">Jordan Stephensen</a>
             </div>
             <div>
-              <a href="https://twitter.com/linafab">Lina Wang</a>
+              <a href="https://twitter.com/linafab" target="_blank" rel="noopener noreferrer">Lina Wang</a>
             </div>
             <div>
-              <a href="https://twitter.com/mario_rocchi">Mario Rocchi</a>
+              <a href="https://twitter.com/mario_rocchi" target="_blank" rel="noopener noreferrer">Mario Rocchi</a>
             </div>
             <div>
-              <a href="https://twitter.com/mayankd">Mayank Dhawan</a>
+              <a href="https://twitter.com/mayankd" target="_blank" rel="noopener noreferrer">Mayank Dhawan</a>
             </div>
             <div>
-              <a href="https://twitter.com/meghacshekhar">
+              <a href="https://twitter.com/meghacshekhar" target="_blank" rel="noopener noreferrer">
                 Megha Chandrashekar
               </a>
             </div>
             <div>
-              <a href="https://twitter.com/hypertextmike">Michael Gauthier</a>
+              <a href="https://twitter.com/hypertextmike" target="_blank" rel="noopener noreferrer">Michael Gauthier</a>
             </div>
             <div>
-              <a href="https://twitter.com/nickburka">Nick Burka</a>
+              <a href="https://twitter.com/nickburka" target="_blank" rel="noopener noreferrer">Nick Burka</a>
             </div>
             <div>
-              <a href="https://twitter.com/parthk">Parth Kapadia</a>
+              <a href="https://twitter.com/parthk" target="_blank" rel="noopener noreferrer">Parth Kapadia</a>
             </div>
             <div>
-              <a href="https://twitter.com/rama__krushna">Rama Krushna</a>
+              <a href="https://twitter.com/rama__krushna" target="_blank" rel="noopener noreferrer">Rama Krushna</a>
             </div>
             <div>
-              <a href="https://twitter.com/rohanpaldesign">Rohan Pal</a>
+              <a href="https://twitter.com/rohanpaldesign" target="_blank" rel="noopener noreferrer">Rohan Pal</a>
             </div>
             <div>
-              <a href="https://twitter.com/sgarrity">Steven Garrity</a>
+              <a href="https://twitter.com/sgarrity" target="_blank" rel="noopener noreferrer">Steven Garrity</a>
             </div>
             <div>
-              <a href="https://twitter.com/yug_design">Yugandhar Bhamare</a>
+              <a href="https://twitter.com/yug_design" target="_blank" rel="noopener noreferrer">Yugandhar Bhamare</a>
             </div>
             <h2 className="mt-3" id="credit">
               Credit
             </h2>
             <p>
               Some of these icons are based on open source icons in{' '}
-              <a href="https://dhis2.org/">DHIS2</a> and from{' '}
-              <a href="https://medic.org/">Medic.org</a>. Thanks!
+              <a href="https://dhis2.org/" target="_blank" rel="noopener noreferrer">DHIS2</a> and from{' '}
+              <a href="https://medic.org/" target="_blank" rel="noopener noreferrer">Medic.org</a>. Thanks!
             </p>
           </div>
         </div>

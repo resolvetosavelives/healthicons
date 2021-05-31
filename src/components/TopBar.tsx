@@ -13,6 +13,8 @@ export function TopBar() {
         <li>
           <a
             href="https://github.com/resolvetosavelives/healthicons#icon-requests"
+            target="_blank" 
+            rel="noopener noreferrer"
             className={styles.link}
           >
             Request an icon
@@ -21,6 +23,8 @@ export function TopBar() {
         <li>
           <a
             href="https://github.com/resolvetosavelives/healthicons"
+            target="_blank" 
+            rel="noopener noreferrer"
             className={styles.link}
           >
             GitHub
