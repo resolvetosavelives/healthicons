@@ -43,7 +43,7 @@
 }
 
 .modalButtons {
-  margin: 0 0 3rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .modalButton {
@@ -51,11 +51,13 @@
     no-repeat;
   background-size: 18px;
   color: #fff !important;
-  margin: 2rem 1rem 0 0;
-  padding: 0.6rem 30px 0.6rem 50px;
+  margin: 0 1rem 1rem 0;
+  padding: 0.6rem 20px 0.6rem 46px;
   border-radius: 3px;
   font-weight: bold;
   transition: background-color ease-in-out 0.15s;
+  white-space: nowrap;
+  display: inline-block;
 
   &:hover {
     background-color: var(--link-color-dark);
@@ -80,7 +82,6 @@
 }
 
 @media (min-width: 48rem) {
-
   .modalContainer {
     background: white;
     width: 60%;
@@ -96,5 +97,4 @@
     margin: 0;
     width: 96px;
   }
-
 }
