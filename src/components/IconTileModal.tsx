@@ -1,9 +1,10 @@
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
-import { Icon } from '../lib/icons';
+import { Icon, IconType } from '../lib/icons';
 
 interface IconTileModalProps {
   icon: Icon;
+  iconType: IconType;
   isOpen: boolean;
   onClose: () => void;
 }
@@ -12,38 +13,46 @@ export function IconTileModal(props: IconTileModalProps) {
   return (
     <ReactModal
       isOpen={props.isOpen}
-      overlayClassName="modal__overlay"
       bodyOpenClassName="modal--open"
       onRequestClose={props.onClose}
+      className={styles.modalContainer}
+      overlayClassName={styles.modalBody}
+      closeTimeoutMS={200}
     >
       <>
-        <button onClick={props.onClose}>Close</button>
-        <div className={styles.iconTitle}>{props.icon.title}</div>
-        <a
-          href={`icons/svg/filled/${props.icon.path}`}
-          download={props.icon.fileName}
-        >
-          <img
-            src={`icons/svg/filled/${props.icon.path}`}
-            width="48"
-            height="48"
-            alt={`${props.icon.title} outline icon`}
-          />
-          <span>Download SVG</span>
-        </a>
-        <a
-          href={`icons/svg/outline/${props.icon.path}`}
-          download={props.icon.fileName}
-        >
-          <img
-            src={`icons/svg/outline/${props.icon.path}`}
-            width="48"
-            height="48"
-            alt={`${props.icon.title} outline icon`}
-          />
+        <button onClick={props.onClose} className={styles.modalClose}>
+          ×
+        </button>
+        <img
+          src={`icons/svg/${props.iconType}/${props.icon.path}/${props.icon.fileName}.svg`}
+          className={styles.modalImage}
+          width="96"
+          height="96"
+          alt=""
+        />
+        <div className={styles.modalLabel}>Filename</div>
+        <div className={styles.modalTitle}>{props.icon.title}</div>
 
-          <span>Download SVG</span>
-        </a>
+        <div className={styles.modalButtons}>
+          <a
+            href={`icons/svg/${props.iconType}/${props.icon.path}/${props.icon.fileName}.svg`}
+            download={`${props.icon.fileName}.svg`}
+            className={styles.modalButton}
+          >
+            <span>SVG</span>
+          </a>
+          <a
+            href={`icons/png/${props.iconType}/${props.icon.path}/${props.icon.fileName}.png`}
+            download={`${props.icon.fileName}.png`}
+            className={styles.modalButton}
+          >
+            <span>PNG</span>
+          </a>
+        </div>
+        <div className={styles.modalLabel}>Tags</div>
+        <div className={styles.modalTags}>
+          <span>Coming soon...</span>
+        </div>
       </>
     </ReactModal>
   );
