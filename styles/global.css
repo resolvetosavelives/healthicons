@@ -135,7 +135,6 @@ h3 {
 }
 
 @media (min-width: 48rem) {
-
   .contentMain h1 {
     margin-top: 0;
   }
@@ -152,7 +151,7 @@ h3 {
 
   .contentSide {
     width: 40%;
-    background: #EBECFF;
+    background: #ebecff;
     padding: 1.5rem 2.5rem;
     border-radius: 10px;
   }
@@ -160,5 +159,4 @@ h3 {
   .contentSide div::before {
     background: rgba(102, 102, 255, 0.2);
   }
-
 }

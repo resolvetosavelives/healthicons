@@ -40,11 +40,11 @@
   list-style-type: none;
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 2rem;
-  justify-content: space-around;
+  justify-content: flex-start;
+  gap: 1rem;
   background: none;
   font-size: 0.8rem;
-  border-top: 1px solid  var(--link-decoration-color);
+  border-top: 1px solid var(--link-decoration-color);
 
   img {
     vertical-align: middle;
@@ -76,7 +76,6 @@
 
   &:hover {
     text-decoration: none;
-    box-shadow: 0 0 0 2px var(--link-decoration-color);
     background-color: var(--link-color-dark);
   }
 }
@@ -99,6 +98,8 @@
     padding: 0;
     border-top: none;
     font-size: 1rem;
+    grid-gap: 1rem;
+    justify-content: space-around;
   }
 
   .topbarTitle {
