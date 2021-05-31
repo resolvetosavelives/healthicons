@@ -1,10 +1,10 @@
 .modalContainer {
   background: white;
-  width: 40%;
-  top: 30%;
-  left: 30%;
+  width: 90%;
+  top: 5%;
+  left: 5%;
   position: fixed;
-  padding: 4rem 2rem 4rem 180px;
+  padding: 4rem 2rem 4rem 2rem;
   border-radius: 5px;
   box-shadow: 0 0 0 10px var(--link-decoration-color);
   border: 1px solid var(--link-color);
@@ -36,9 +36,10 @@
 }
 
 .modalImage {
-  position: absolute;
-  left: 56px;
-  top: 4rem;
+  position: relative;
+  margin: -1.5rem 0 2rem 0;
+  width: 140px;
+  height: auto;
 }
 
 .modalButtons {
@@ -53,6 +54,7 @@
   margin: 2rem 1rem 0 0;
   padding: 0.6rem 30px 0.6rem 50px;
   border-radius: 3px;
+  font-weight: bold;
   transition: background-color ease-in-out 0.15s;
 
   &:hover {
@@ -75,4 +77,24 @@
   border-radius: 100px;
   display: inline-block;
   font-size: 0.8rem;
+}
+
+@media (min-width: 48rem) {
+
+  .modalContainer {
+    background: white;
+    width: 60%;
+    top: 30%;
+    left: 20%;
+    padding: 4rem 2rem 4rem 180px;
+  }
+
+  .modalImage {
+    position: absolute;
+    left: 56px;
+    top: 4rem;
+    margin: 0;
+    width: 96px;
+  }
+
 }
