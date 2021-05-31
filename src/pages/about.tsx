@@ -101,6 +101,11 @@ export default function About() {
     }
   ];
 
+  // make sure they're alphabetical
+  contributors.sort((c1, c2) => {
+    return c1.name.toLowerCase() > c2.name.toLowerCase() ? 1 : -1;
+  });
+
   return (
     <div className="container">
       <Head>
