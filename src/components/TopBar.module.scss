@@ -43,6 +43,7 @@
   grid-gap: 2rem;
   justify-content: space-around;
   background: none;
+  font-size: 0.8rem;
   border-top: 1px solid  var(--link-decoration-color);
 
   img {
@@ -52,7 +53,7 @@
     width: 20px;
   }
 
-  &:hover img {
+  a:hover img {
     opacity: 1;
   }
 }
@@ -66,7 +67,7 @@
   padding: 0.6rem 1rem 0.6rem 2.25rem;
   border-radius: 3px;
   font-size: 0.8rem;
-  transition: background-color ease-in-out 0.3s;
+  transition: background-color ease-in-out 0.15s;
 
   &:link {
     color: #fff;
@@ -96,6 +97,7 @@
     margin: 0;
     padding: 0;
     border-top: none;
+    font-size: 1rem;
   }
 
   .topbarTitle {

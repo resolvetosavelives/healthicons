@@ -24,7 +24,7 @@
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 5px;
   opacity: 0.8;
-  transition: border-color ease-in-out 0.4s, opacity ease-in-out 0.4s;
+  transition: border-color ease-in-out 0.2s, opacity ease-in-out 0.2s;
 
   img {
     width: 56px;
@@ -32,14 +32,19 @@
   }
 }
 
-.iconItem:hover .iconThumb {
-  border-color: var(--link-decoration-color);
-  opacity: 1;
-}
+.iconItem:hover {
+  cursor: pointer;
 
-.iconItem:hover .iconTitle {
-  color: var(--link-color);
-  transition: color ease-in-out 0.4s;
+  .iconThumb {
+    border-color: var(--link-decoration-color);
+    opacity: 1;
+  }
+
+  .iconTitle {
+    color: var(--link-color);
+    transition: color ease-in-out 0.4s;
+  }
+
 }
 
 .iconTitle {

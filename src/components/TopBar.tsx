@@ -28,7 +28,9 @@ export function TopBar() {
         </li>
         <li>
           <Link href="/about">
-            <a className={styles.link}><img src="/ui/information-line.svg" alt="" /> About</a>
+            <a className={styles.link}>
+              <img src="/ui/information-line.svg" alt="" /> About
+            </a>
           </Link>
         </li>
       </ul>
