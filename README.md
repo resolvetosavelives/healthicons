@@ -28,7 +28,7 @@ We’d love for you to join our team of volunteer designers and developers!
 
 Join our open Slack channel by emailing [contact@healthicons.org](mailto:contact@healthicons.org)
 
-Browse the [Figma](https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3) and contribute icons in the "New icons" section. Please read the code of conduct ([below](https://github.com/resolvetosavelives/healthicons#codeofconduct)) and the styleguide (in the Figma) carefully before contributing.
+Browse the [Figma](https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3) and contribute icons in the "New icons" section. Please read the code of conduct ([below](https://github.com/resolvetosavelives/healthicons##code-of-conduct)) and the styleguide (in the Figma) carefully before contributing.
 
 ## Code of Conduct
 
