@@ -17,7 +17,7 @@ export function IconTile(props: IconTileProps) {
 
   return (
     <div className={classes}>
-      <div
+      <button
         className={styles.iconItem}
         onClick={() => {
           props.onClick.call(this, 'filled');
@@ -33,14 +33,14 @@ export function IconTile(props: IconTileProps) {
           />
         </div>
         <div className={styles.iconTitle}>{props.icon.title}</div>
-      </div>
-      <div className={styles.iconItem}>
-        <div
-          className={styles.iconThumb}
-          onClick={() => {
-            props.onClick.call(this, 'outline');
-          }}
-        >
+      </button>
+      <button
+        className={styles.iconItem}
+        onClick={() => {
+          props.onClick.call(this, 'outline');
+        }}
+      >
+        <div className={styles.iconThumb}>
           <img
             src={`icons/svg/outline/${props.icon.path}/${props.icon.fileName}.svg`}
             width="48"
@@ -49,7 +49,7 @@ export function IconTile(props: IconTileProps) {
           />
         </div>
         <div className={styles.iconTitle}>{props.icon.title}</div>
-      </div>
+      </button>
     </div>
   );
 }
