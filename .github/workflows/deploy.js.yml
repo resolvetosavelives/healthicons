@@ -1,6 +1,6 @@
 # This workflow deploys to gh-pages
 
-name: Node.js CI
+name: Deploy to Prod
 
 on:
   push:
