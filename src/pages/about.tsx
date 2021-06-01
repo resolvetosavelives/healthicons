@@ -152,16 +152,18 @@ export default function About() {
         <div className="contentContainer">
           <div className="contentMain">
             <h1 id="about" className="title">
-              About
+              About this project
             </h1>
+            <p className="contentIntro">
+              Health Icons is a volunteer effort to create a 'global good' for
+              health projects all over the world. These icons are available in
+              the public domain for use in any type of project.
+            </p>
             <p>
-              Health Icons is a volunteer effort to create a 'global good' of
-              useful icons for health projects all over the world. We intend
-              that these icons are available in the public domain for use in any
-              type of project. The project is hosted by the public health
-              not-for-profit{' '}
+              The project is hosted by the public health not-for-profit{' '}
               <a href="https://resolvetosavelives.org">Resolve to Save Lives</a>{' '}
-              as an expression of the openness of the project.
+              as an expression of our committment to offer the icons for free,
+              forever.
             </p>
             <p>
               Need an icon for your project?{' '}
@@ -173,12 +175,16 @@ export default function About() {
 
             <h2 id="contribute">How to contribute</h2>
             <p>
+              <strong>Get in touch:</strong>
+              <br />
               Join our open Slack channel by emailing{' '}
               <a href="mailto:contact@healthicons.org">
                 contact@healthicons.org
               </a>
             </p>
             <p>
+              <strong>Contribute icons:</strong>
+              <br />
               Browse the{' '}
               <a href="https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3">
                 Figma
@@ -189,35 +195,38 @@ export default function About() {
             </p>
 
             <h2 id="license">License</h2>
-            <p>MIT License</p>
+            <div className="codeBlock">
+              <p>MIT License</p>
 
-            <p>Copyright (c) 2021 Resolve to Save Lives</p>
+              <p>Copyright (c) 2021 Resolve to Save Lives</p>
 
-            <p>
-              Permission is hereby granted, free of charge, to any person
-              obtaining a copy of this software and associated documentation
-              files (the "Software"), to deal in the Software without
-              restriction, including without limitation the rights to use, copy,
-              modify, merge, publish, distribute, sublicense, and/or sell copies
-              of the Software, and to permit persons to whom the Software is
-              furnished to do so, subject to the following conditions:
-            </p>
+              <p>
+                Permission is hereby granted, free of charge, to any person
+                obtaining a copy of this software and associated documentation
+                files (the "Software"), to deal in the Software without
+                restriction, including without limitation the rights to use,
+                copy, modify, merge, publish, distribute, sublicense, and/or
+                sell copies of the Software, and to permit persons to whom the
+                Software is furnished to do so, subject to the following
+                conditions:
+              </p>
 
-            <p>
-              The above copyright notice and this permission notice shall be
-              included in all copies or substantial portions of the Software.
-            </p>
+              <p>
+                The above copyright notice and this permission notice shall be
+                included in all copies or substantial portions of the Software.
+              </p>
 
-            <p>
-              THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-              EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-              MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-              NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-              HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-              WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-              OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-              DEALINGS IN THE SOFTWARE.
-            </p>
+              <p>
+                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+                OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+                NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+                HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+                WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+                FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+                OTHER DEALINGS IN THE SOFTWARE.
+              </p>
+            </div>
 
             <h2 id="conduct">Code of conduct</h2>
 
@@ -326,27 +335,30 @@ export default function About() {
           </div>
 
           <div className="contentSide">
-            <h2 id="contributors">Contributors</h2>
-            {contributors.map((contributor, index) => (
-              <div key={index}>
-                <a href={contributor.link}>
-                  <img
-                    src={contributor.avatar}
-                    alt={`Avatar of ${contributor.name}`}
-                    className={styles.avatarImage}
-                  />
-                  {contributor.name}
-                </a>
-              </div>
-            ))}
-
+            <div className="contentFeature">
+              <h2 id="contributors">Volunteer contributors</h2>
+              {contributors.map((contributor, index) => (
+                <div key={index} className="contributorItem">
+                  <a href={contributor.link}>
+                    <img
+                      src={contributor.avatar}
+                      alt={`Avatar of ${contributor.name}`}
+                      className={styles.avatarImage}
+                    />
+                    {contributor.name}
+                  </a>
+                </div>
+              ))}
+            </div>
             <h2 className="mt-3" id="credit">
-              Credit
+              Credit &amp; inspiration
             </h2>
             <p>
               Some of these icons are based on open source icons in{' '}
               <a href="https://dhis2.org/">DHIS2</a> and from{' '}
-              <a href="https://medic.org/">Medic.org</a>. Thanks!
+              <a href="https://medic.org/">Medic.org</a>. We also took
+              inspiration from the excellent open source{' '}
+              <a href="https://remixicon.com">Remix Icon</a> collection. Thanks!
             </p>
           </div>
         </div>
