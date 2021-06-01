@@ -8,7 +8,11 @@ Use for your next commercial or personal project. You don’t need to give credi
 
 ## Usage
 
-Health Icons is a volunteer effort to create a ‘global good’ of useful icons for health projects all over the world. We intend that these icons are available in the public domain for use in any type of project. The project is hosted by the public health not-for-profit [Resolve to Save Lives](https://resolvetosavelives.org) as an expression of the openness of the project.
+Health Icons is a volunteer effort to create a 'global good' for
+health projects all over the world. These icons are available in
+the public domain for use in any type of project.
+
+The project is hosted by the public health not-for-profit [Resolve to Save Lives](https://resolvetosavelives.org) as an expression of our committment to offer the icons for free, forever.
 
 ### Accessing Icons
 
@@ -26,7 +30,11 @@ Need an icon for your project? Submit a request with an [Issue on GitHub](https:
 
 We’d love for you to join our team of volunteer designers and developers!
 
+### Get in touch
+
 Join our open Slack channel by emailing [contact@healthicons.org](mailto:contact@healthicons.org)
+
+### Contribute icons
 
 Browse the [Figma](https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3) and contribute icons in the "New icons" section. Please read the code of conduct ([below](https://github.com/resolvetosavelives/healthicons#code-of-conduct)) and the styleguide (in the Figma) carefully before contributing.
 
@@ -72,7 +80,7 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 This Code of Conduct is adapted from the Contributor Covenant, version 1.4, [available here](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html). For answers to common questions about this code of conduct, see [this FAQ](https://www.contributor-covenant.org/faq).
 
-## Installing the website
+## Installing and running the website locally
 
 This project uses [Next.js](https://nextjs.org).
 
@@ -80,7 +88,7 @@ This project uses [Next.js](https://nextjs.org).
 2. Run `yarn install`
 3. Run `yarn dev`
 
-## License
+## MIT License
 
 Copyright © 2021 Resolve to Save Lives
 
