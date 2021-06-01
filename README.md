@@ -4,7 +4,7 @@
 
 ### Free, open source health icons available for any use
 
-Use for your next commerical or personal project. You don’t need to give credit and you can edit the icons however you want.
+Use for your next commercial or personal project. You don’t need to give credit and you can edit the icons however you want.
 
 ## Usage
 

@@ -49,7 +49,7 @@ export default function Home({ categories }: HomeProps) {
         <meta property="og:title" content="Health icons" />
         <meta
           property="og:description"
-          content="Free, open source health icons. Use in your next commerical or personal project. Editing is ok. Republishing is ok. No need to give credit."
+          content="Free, open source health icons. Use in your next commercial or personal project. Editing is ok. Republishing is ok. No need to give credit."
         />
         <meta property="og:url" content="http://healthicons.org/" />
         <meta
@@ -75,7 +75,7 @@ export default function Home({ categories }: HomeProps) {
         <div className={styles.box}>
           <h1>Free, open source health icons</h1>
           <h3>
-            Free for use in your next commerical or personal project.
+            Free for use in your next commercial or personal project.
             <span> </span>
             Editing is ok. Republishing is ok. No need to give credit.
           </h3>
