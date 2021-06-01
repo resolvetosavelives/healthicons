@@ -121,7 +121,7 @@ export default function About() {
         <meta property="og:title" content="About Health icons" />
         <meta
           property="og:description"
-          content="Free, open source health icons. Use in your next commerical or personal project. Editing is ok. Republishing is ok. No need to give credit."
+          content="Free, open source health icons. Use in your next commercial or personal project. Editing is ok. Republishing is ok. No need to give credit."
         />
         <meta property="og:url" content="http://healthicons.org/about" />
         <meta
