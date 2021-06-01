@@ -155,7 +155,7 @@ export default function About() {
               About this project
             </h1>
             <p className={styles.contentIntro}>
-              Health Icons is a volunteer effort to create a 'global good' for
+              Health Icons is a volunteer effort to create a ‘global good’ for
               health projects all over the world. These icons are available in
               the public domain for use in any type of project.
             </p>
