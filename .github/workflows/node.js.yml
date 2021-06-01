@@ -25,3 +25,5 @@ jobs:
         run: yarn lint
       - name: Linting styles
         run: yarn lint:style
+      - name: Validating TypeScript
+        run: yarn tsc --noEmit
