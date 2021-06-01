@@ -15,7 +15,7 @@ Health Icons is a volunteer effort to create a ‘global good’ of useful icons
 Icons are available in several formats and in a few ways:
 
 - All icons are produced in "outline", "filled", and "negative" styles
-- Wach icon is available in SVG and in PNG (48px and @2x 96px)
+- Each icon is available in SVG and in PNG (48px and 96px)
 - Icons can be downloaded individually via [our website](https://healthicons.org), downloaded together in [a ZIP file](https://healthicons.org/icons.zip), or accessed under the [public/icons](https://github.com/resolvetosavelives/healthicons/tree/main/public/icons) folder in this GitHub project.
 
 ### Icon Requests
