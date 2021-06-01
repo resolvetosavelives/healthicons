@@ -41,11 +41,12 @@ export function IconTile(props: IconTileProps) {
         }}
       >
         <div className={styles.iconThumb}>
-          <img
+          <LazyLoadImage
             src={`icons/svg/outline/${props.icon.path}/${props.icon.fileName}.svg`}
             width="48"
             height="48"
             alt={`${props.icon.title} outline icon`}
+            effect="blur"
           />
         </div>
         <div className={styles.iconTitle}>{props.icon.title}</div>
