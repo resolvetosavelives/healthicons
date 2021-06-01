@@ -39,6 +39,10 @@ export default function Home({ categories }: HomeProps) {
     return filteredIcons;
   }, [query, categories]);
 
+  const totalIconCount = categories.flatMap((category) => {
+    return category.icons;
+  }).length;
+
   return (
     <div className="container">
       <Head>
@@ -84,7 +88,7 @@ export default function Home({ categories }: HomeProps) {
           <input
             type="text"
             className={styles.filterBoxInput}
-            placeholder="Search for icons..."
+            placeholder={`Search ${totalIconCount} Icons...`}
             onChange={(e) => setQuery(e.target.value)}
           />
         </label>
