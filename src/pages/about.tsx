@@ -20,6 +20,11 @@ export default function About() {
       avatar: 'https://unavatar.now.sh/twitter/superbryntendo'
     },
     {
+      name: 'Clara Campos',
+      link: 'https://github.com/clara-campos',
+      avatar: 'https://unavatar.now.sh/github/clara-campos'
+    },
+    {
       name: 'Daniel Burka',
       link: 'https://twitter.com/dburka',
       avatar: 'https://unavatar.now.sh/twitter/dburka'
