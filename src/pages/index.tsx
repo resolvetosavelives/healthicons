@@ -88,7 +88,7 @@ export default function Home({ categories }: HomeProps) {
           <input
             type="text"
             className={styles.filterBoxInput}
-            placeholder={`Search ${totalIconCount} Icons...`}
+            placeholder={`Search ${totalIconCount} Icons…`}
             onChange={(e) => setQuery(e.target.value)}
           />
         </label>
