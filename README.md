@@ -8,9 +8,7 @@ Use for your next commercial or personal project. You don’t need to give credi
 
 ## Usage
 
-Health Icons is a volunteer effort to create a 'global good' for
-health projects all over the world. These icons are available in
-the public domain for use in any type of project.
+Health Icons is a volunteer effort to create a 'global good' for health projects all over the world. These icons are available in the public domain for use in any type of project.
 
 The project is hosted by the public health not-for-profit [Resolve to Save Lives](https://resolvetosavelives.org) as an expression of our committment to offer the icons for free, forever.
 
