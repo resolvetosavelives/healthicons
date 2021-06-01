@@ -1,6 +1,6 @@
 ![Health Icons Promo Graphic](https://github.com/resolvetosavelives/healthicons/blob/main/public/og_image.png?raw=true)
 
-# Health Icons
+# Health Icons: [healthicons.org](https://healthicons.org)
 
 ### Free, open source health icons available for any use
 
