@@ -39,9 +39,9 @@ export default function Home({ categories }: HomeProps) {
     return filteredIcons;
   }, [query, categories]);
 
-  const totalIconCount = categories.flatMap((category) => {
-    return category.icons;
-  }).length;
+  const totalIconCount = categories.reduce((counter, category) => {
+    return counter + category.icons.length;
+  }, 0);
 
   return (
     <div className="container">
