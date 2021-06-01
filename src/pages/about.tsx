@@ -85,6 +85,11 @@ export default function About() {
       avatar: 'https://unavatar.now.sh/twitter/rama_krushna'
     },
     {
+      name: 'Ranit Das',
+      link: 'https://twitter.com/dasranit12',
+      avatar: 'https://unavatar.now.sh/twitter/dasranit12'
+    },
+    {
       name: 'Rohan Pal',
       link: 'https://twitter.com/rohanpaldesign',
       avatar: 'https://unavatar.now.sh/twitter/rohanpaldesign'
