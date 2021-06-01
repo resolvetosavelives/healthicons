@@ -149,12 +149,12 @@ export default function About() {
 
       <TopBar />
       <main id="main">
-        <div className="contentContainer">
-          <div className="contentMain">
+        <div className={styles.contentContainer}>
+          <div className={styles.contentMain}>
             <h1 id="about" className="title">
               About this project
             </h1>
-            <p className="contentIntro">
+            <p className={styles.contentIntro}>
               Health Icons is a volunteer effort to create a 'global good' for
               health projects all over the world. These icons are available in
               the public domain for use in any type of project.
@@ -195,7 +195,7 @@ export default function About() {
             </p>
 
             <h2 id="license">License</h2>
-            <div className="codeBlock">
+            <div className={styles.codeBlock}>
               <p>MIT License</p>
 
               <p>Copyright (c) 2021 Resolve to Save Lives</p>
@@ -334,11 +334,11 @@ export default function About() {
             </p>
           </div>
 
-          <div className="contentSide">
-            <div className="contentFeature">
-              <h2 id="contributors">Volunteer contributors</h2>
+          <div className={styles.contentSide}>
+            <div className={styles.contentFeature}>
+              <h2 id={styles.contributors}>Volunteer contributors</h2>
               {contributors.map((contributor, index) => (
-                <div key={index} className="contributorItem">
+                <div key={index} className={styles.contributorItem}>
                   <a href={contributor.link}>
                     <img
                       src={contributor.avatar}
