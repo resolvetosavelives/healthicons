@@ -81,8 +81,8 @@ export default function About() {
     },
     {
       name: 'Rama Krushna',
-      link: 'https://twitter.com/rama_krushna',
-      avatar: 'https://unavatar.now.sh/twitter/rama_krushna'
+      link: 'https://twitter.com/rkdotdesign',
+      avatar: 'https://unavatar.now.sh/twitter/rkdotdesign'
     },
     {
       name: 'Ranit Das',
