@@ -89,6 +89,11 @@ h3 {
   line-height: 1.7;
 }
 
+h6 {
+  font-size: 1rem;
+  margin: 0 0 0.2rem 0;
+}
+
 footer {
   margin: 4rem 0;
   padding: 2rem 0;
