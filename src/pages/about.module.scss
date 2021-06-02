@@ -47,30 +47,26 @@
   border-radius: 10px;
 }
 
-.aboutDev {
-  background: url(/ui/code.svg) no-repeat;
-}
-
-.aboutContact {
-  background: url(/ui/slack.svg) no-repeat;
-}
-
-.aboutDraw {
-  background: url(/ui/figma.svg) no-repeat;
-}
-
-.aboutDev,
-.aboutContact,
-.aboutDraw {
+.aboutBullet {
   padding: 1rem 0 0 48px;
-  background-repeat: no-repeat;
-  background-position: 0 1.5rem;
-  background-size: 28px auto;
+  margin-top: 1rem;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 1.3rem;
+    left: 0;
+    opacity: 0.5;
+  }
+
+  p {
+    margin: 0;
+  }
 }
 
 @media (min-width: 48rem) {
   .contentMain h1 {
-    margin-top: 0;
+    margin-top: 1.3rem;
   }
 
   .contentContainer {
