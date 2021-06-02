@@ -47,6 +47,27 @@
   border-radius: 10px;
 }
 
+.aboutDev {
+  background: url(/ui/code.svg) no-repeat;
+}
+
+.aboutContact {
+  background: url(/ui/slack.svg) no-repeat;
+}
+
+.aboutDraw {
+  background: url(/ui/figma.svg) no-repeat;
+}
+
+.aboutDev,
+.aboutContact,
+.aboutDraw {
+  padding: 1rem 0 0 48px;
+  background-repeat: none;
+  background-position: 0 1.5rem;
+  background-size: 28px auto;
+}
+
 @media (min-width: 48rem) {
   .contentMain h1 {
     margin-top: 0;

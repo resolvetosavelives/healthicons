@@ -174,16 +174,16 @@ export default function About() {
             </p>
 
             <h2 id="contribute">How to contribute</h2>
-            <p>
-              <strong>Get in touch:</strong>
+            <p className={styles.aboutContact}>
+              <strong>Get in touch</strong>
               <br />
               Join our open Slack channel by emailing{' '}
               <a href="mailto:contact@healthicons.org">
                 contact@healthicons.org
               </a>
             </p>
-            <p>
-              <strong>Contribute icons:</strong>
+            <p className={styles.aboutDraw}>
+              <strong>Contribute icons</strong>
               <br />
               Browse the{' '}
               <a href="https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3">
@@ -192,6 +192,15 @@ export default function About() {
               and contribute icons in the "New icons" section. Please read the
               code of conduct (below) and the styleguide (in the Figma)
               carefully before contributing.
+            </p>
+            <p className={styles.aboutDev}>
+              <strong>Improve the website</strong>
+              <br />
+              Developers can browse the{' '}
+              <a href="https://github.com/resolvetosavelives/healthicons/issues">
+                issues on Github
+              </a>{' '}
+              and pick up projects to improve this website.
             </p>
 
             <h2 id="license">License</h2>
