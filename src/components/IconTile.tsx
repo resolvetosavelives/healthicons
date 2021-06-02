@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import 'react-lazy-load-image-component/src/effects/opacity.css';
 import styles from './IconTile.module.scss';
 import { Icon } from '../lib/icons';
 
@@ -29,7 +29,7 @@ export function IconTile(props: IconTileProps) {
             width="48"
             height="48"
             alt={`${props.icon.title} outline icon`}
-            effect="blur"
+            effect="opacity"
           />
         </div>
         <div className={styles.iconTitle}>{props.icon.title}</div>
@@ -46,7 +46,7 @@ export function IconTile(props: IconTileProps) {
             width="48"
             height="48"
             alt={`${props.icon.title} outline icon`}
-            effect="blur"
+            effect="opacity"
           />
         </div>
         <div className={styles.iconTitle}>{props.icon.title}</div>
