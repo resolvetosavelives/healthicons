@@ -27,3 +27,5 @@ jobs:
         run: yarn lint:style
       - name: Validating TypeScript
         run: yarn tsc --noEmit
+      - name: Running Tests
+        run: yarn test

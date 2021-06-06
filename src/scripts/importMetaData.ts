@@ -23,7 +23,7 @@ function getMetadataFromDescription(name: string, description: string) {
   const metaData = description.match(metadataRegex);
   return metaData && metaData.length > 2
     ? {
-        title: metaData[1],
+        title: metaData[1].trim(),
         tags: metaData[2]
           .split(',')
           .map((tag) => tag.trim())

@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
+import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
 import { IconTile } from '../components/IconTile';
@@ -27,14 +28,14 @@ export default function Home({ categories }: HomeProps) {
     if (!query) {
       return filteredIcons;
     }
-    const lowerCaseQuery = query.toLowerCase();
 
     categories.forEach((category) => {
       category.icons.forEach((icon) => {
         if (
-          icon.title.toLowerCase().includes(lowerCaseQuery) ||
-          icon.tags.join(', ').toLowerCase().includes(lowerCaseQuery) ||
-          category.title.includes(lowerCaseQuery)
+          searchKeywords(
+            query,
+            icon.tags.concat([icon.title, category.title]).join(', ')
+          )
         ) {
           filteredIcons.push(icon);
         }
