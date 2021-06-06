@@ -24,7 +24,7 @@ function getMetadataFromDescription(name: string, description: string) {
   return metaData && metaData.length > 2
     ? {
         title: metaData[1],
-        tags: metaData[2].split(',').map((s) => s.trim())
+        tags: metaData[2].split(',').map((tag) => tag.trim())
       }
     : {
         title: startCase(name),
@@ -33,7 +33,7 @@ function getMetadataFromDescription(name: string, description: string) {
 }
 
 client.file(figmaFilename).then(({ data }) => {
-  const metaData = [];
+  const metaDataArray = [];
 
   // look for icon components in: "export" with name "/filled/{category}/{name}_positive"
   data.document.children.map((child) => {
@@ -45,15 +45,15 @@ client.file(figmaFilename).then(({ data }) => {
         ) {
           const idMatch = component.name.match(filenameRegex);
           if (idMatch) {
-            const m = getMetadataFromDescription(
+            const metaData = getMetadataFromDescription(
               idMatch[1],
               data.components[component.id].description
             );
 
-            metaData.push({
+            metaDataArray.push({
               id: idMatch[1],
-              title: m.title,
-              tags: m.tags
+              title: metaData.title,
+              tags: metaData.tags
             });
           } else {
             console.log(`Incorrect id: ${component.name}`);
@@ -68,6 +68,6 @@ client.file(figmaFilename).then(({ data }) => {
 
   fs.writeFile(
     `${ICONS_PATH}/meta-data.json`,
-    JSON.stringify(metaData, null, ' ')
+    JSON.stringify(metaDataArray, null, ' ')
   );
 });
