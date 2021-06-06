@@ -83,6 +83,11 @@ export default function RequestIcon() {
                   height="227"
                 />
               </p>
+              <p>
+                Thanks!
+                <br />
+                Dr. B, PhD
+              </p>
             </div>
           </div>
         </div>
