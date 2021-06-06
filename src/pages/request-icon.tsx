@@ -49,10 +49,10 @@ export default function RequestIcon() {
               and we will do our best to respond.
             </p>
             <p>
-              <strong>Important</strong>: Provide as much detail as you can to
-              help us design the icon. Including examples of similar icons,
-              photos, diagrams, or as much detail and description as possible
-              helps a lot.
+              <strong>Important</strong>: Please provide as much detail as you
+              can to help us design the icon. Including examples of similar
+              icons, photos, diagrams, or as much detail and description as
+              possible helps us create the best icon possible.
             </p>
             <h3>Example Icon Request</h3>
             <div className={styles.example}>
