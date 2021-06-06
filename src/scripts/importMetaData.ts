@@ -1,16 +1,17 @@
+import config from '../config';
 import * as Figma from 'figma-js';
 import { promises as fs } from 'fs';
 import startCase from 'lodash.startcase';
 import path from 'path';
 
-if (!process.env.FIGMA_FILENAME || !process.env.FIGMA_PERSONAL_ACCESS_TOKEN) {
+if (!config.figma.filename || !config.figma.personalAccessToken) {
   throw new Error(
     'You must have .env.local with FIGMA_PERSONAL_ACCESS_TOKEN and FIGMA_FILENAME'
   );
 }
 
-const figmaPersonalAccessToken = process.env.FIGMA_PERSONAL_ACCESS_TOKEN;
-const figmaFilename = process.env.FIGMA_FILENAME;
+const figmaPersonalAccessToken = config.figma.personalAccessToken;
+const figmaFilename = config.figma.filename;
 
 const client = Figma.Client({ personalAccessToken: figmaPersonalAccessToken });
 const filenameRegex = /([^//]*)_positive$/;
