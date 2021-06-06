@@ -3,30 +3,37 @@
   "id": "2g",
   "title": "2G",
   "tags": [
-   "phone",
-   "network",
-   "connection",
-   "speed",
    "bandwidth",
-   "dhis2:2g"
+   "connection",
+   "dhis2:2g",
+   "network",
+   "phone",
+   "speed"
   ]
  },
  {
   "id": "3g",
   "title": "3G",
   "tags": [
-   "phone",
-   "network",
-   "connection",
-   "speed",
    "bandwidth",
-   "dhis2:3g"
+   "connection",
+   "dhis2:3g",
+   "network",
+   "phone",
+   "speed"
   ]
  },
  {
   "id": "4x4",
-  "title": "4 X 4",
-  "tags": []
+  "title": "SUV",
+  "tags": [
+   "4x4",
+   "4×4",
+   "Off-Road",
+   "Sport Utility Vehicle",
+   "Truck",
+   "dhis2:4x4"
+  ]
  },
  {
   "id": "agriculture",
@@ -60,20 +67,28 @@
  },
  {
   "id": "basic_motorcycle",
-  "title": "Basic Motorcycle",
-  "tags": []
+  "title": "Motorcycle",
+  "tags": [
+   "Dirtbike dhis2:motorcycle",
+   "Motorbike"
+  ]
  },
  {
   "id": "bike",
-  "title": "Bike",
-  "tags": []
+  "title": "Bicycle",
+  "tags": [
+   "Bike",
+   "City Bike",
+   "Mountain Bike",
+   "dhis2:bike"
+  ]
  },
  {
   "id": "blood_a_n",
   "title": "Blood Type A-",
   "tags": [
-   "Blood",
    "A Negative",
+   "Blood",
    "dhis2:blood_a_n"
   ]
  },
@@ -81,8 +96,8 @@
   "id": "blood_a_p",
   "title": "Blood Type A+",
   "tags": [
-   "Blood",
    "A Positive",
+   "Blood",
    "dhis2:blood_a_p"
   ]
  },
@@ -90,8 +105,8 @@
   "id": "blood_ab_n",
   "title": "Blood Type AB-",
   "tags": [
-   "Blood",
    "AB Negative",
+   "Blood",
    "dhis2:blood_ab_n"
   ]
  },
@@ -99,8 +114,8 @@
   "id": "blood_ab_p",
   "title": "Blood Type AB+",
   "tags": [
-   "Blood",
    "AB Positive",
+   "Blood",
    "dhis2:blood_ab_p"
   ]
  },
@@ -108,8 +123,8 @@
   "id": "blood_b_n",
   "title": "Blood Type B-",
   "tags": [
-   "Blood",
    "B Negative",
+   "Blood",
    "dhis2:blood_b_n"
   ]
  },
@@ -117,8 +132,8 @@
   "id": "blood_b_p",
   "title": "Blood Type B+",
   "tags": [
-   "Blood",
    "B Positve",
+   "Blood",
    "dhis2:blood_b_p"
   ]
  },
@@ -255,8 +270,14 @@
  },
  {
   "id": "cross_country_motorcycle",
-  "title": "Cross Country Motorcycle",
-  "tags": []
+  "title": "Off-road Motorcycle",
+  "tags": [
+   "Cross Country",
+   "Dirt Bike",
+   "Motorbike",
+   "Motorcycle",
+   "dhis2:cross_country_motorcycle"
+  ]
  },
  {
   "id": "default",
@@ -427,10 +448,10 @@
   "id": "church",
   "title": "Church",
   "tags": [
-   "religion",
-   "worship",
    "christian",
-   "dhis2:church"
+   "dhis2:church",
+   "religion",
+   "worship"
   ]
  },
  {
@@ -506,7 +527,12 @@
  {
   "id": "helicopter",
   "title": "Helicopter",
-  "tags": []
+  "tags": [
+   "chopper",
+   "dhis2:helicopter",
+   "medevac",
+   "medivac"
+  ]
  },
  {
   "id": "happy",
@@ -547,23 +573,23 @@
   "id": "high_bars",
   "title": "High Bars",
   "tags": [
-   "phone",
-   "network",
    "connection",
-   "speed",
+   "dhis2:high_bars",
    "fast",
-   "dhis2:high_bars"
+   "network",
+   "phone",
+   "speed"
   ]
  },
  {
   "id": "medium_bars",
   "title": "Medium Bars",
   "tags": [
-   "phone",
-   "network",
    "connection",
-   "speed",
-   "dhis2:medium_bars"
+   "dhis2:medium_bars",
+   "network",
+   "phone",
+   "speed"
   ]
  },
  {
@@ -600,12 +626,12 @@
   "id": "low_bars",
   "title": "Low Bars",
   "tags": [
-   "phone",
-   "network",
    "connection",
-   "speed",
+   "dhis2:low_bars",
+   "network",
+   "phone",
    "slow",
-   "dhis2:low_bars"
+   "speed"
   ]
  },
  {
@@ -632,24 +658,24 @@
   "id": "network_4g",
   "title": "4G",
   "tags": [
-   "phone",
-   "network",
-   "connection",
-   "speed",
    "bandwidth",
-   "dhis2:4g"
+   "connection",
+   "dhis2:4g",
+   "network",
+   "phone",
+   "speed"
   ]
  },
  {
   "id": "network_5g",
   "title": "5G",
   "tags": [
-   "phone",
-   "network",
-   "connection",
-   "speed",
    "bandwidth",
-   "dhis2:5g"
+   "connection",
+   "dhis2:5g",
+   "network",
+   "phone",
+   "speed"
   ]
  },
  {
@@ -679,8 +705,17 @@
  },
  {
   "id": "small_plane",
-  "title": "Small Plane",
-  "tags": []
+  "title": "Small Airplane",
+  "tags": [
+   "Airplane",
+   "Airport",
+   "Plane",
+   "Prop Plane",
+   "Propeller",
+   "Small Plane",
+   "Wings",
+   "dhis2:small_plane"
+  ]
  },
  {
   "id": "positive",
@@ -690,7 +725,14 @@
  {
   "id": "war",
   "title": "War",
-  "tags": []
+  "tags": [
+   "Armored Vehicle",
+   "Cannon",
+   "Gun",
+   "Military",
+   "Tank",
+   "dhis2:war"
+  ]
  },
  {
   "id": "money_bag",
@@ -806,10 +848,10 @@
   "id": "city",
   "title": "City",
   "tags": [
+   "dhis2:city",
    "metro",
    "metropolis",
-   "urban",
-   "dhis2:city"
+   "urban"
   ]
  },
  {
@@ -961,8 +1003,8 @@
   "id": "home",
   "title": "Home",
   "tags": [
-   "house",
-   "dhis2:home"
+   "dhis2:home",
+   "house"
   ]
  },
  {
@@ -1048,7 +1090,12 @@
  {
   "id": "machinery",
   "title": "Machinery",
-  "tags": []
+  "tags": [
+   "Digger",
+   "Equipment",
+   "Front-end Loader",
+   "dhis2:machinery"
+  ]
  },
  {
   "id": "pave_road",
@@ -1057,8 +1104,12 @@
  },
  {
   "id": "vespa_motorcycle",
-  "title": "Vespa Motorcycle",
-  "tags": []
+  "title": "Motor Scooter",
+  "tags": [
+   "Motorbike",
+   "Motorcycle",
+   "dhis2:vespa_motorcycle"
+  ]
  },
  {
   "id": "travel",
@@ -1069,20 +1120,20 @@
   "id": "palm_branches_roof",
   "title": "Home with Roof Made of Palm Branches",
   "tags": [
-   "hut",
-   "house",
    "building",
-   "dhis2:palm_branches_roof"
+   "dhis2:palm_branches_roof",
+   "house",
+   "hut"
   ]
  },
  {
   "id": "proper_roof",
   "title": "Home with Proper Roof",
   "tags": [
-   "hut",
-   "house",
    "building",
-   "dhis2:proper_roof"
+   "dhis2:proper_roof",
+   "house",
+   "hut"
   ]
  },
  {
@@ -1138,12 +1189,25 @@
  {
   "id": "ambulance",
   "title": "Ambulance",
-  "tags": []
+  "tags": [
+   "Cross",
+   "Emergency",
+   "Red Cross",
+   "Siren",
+   "Truck",
+   "dhis2:ambulance"
+  ]
  },
  {
   "id": "mobile_clinic",
   "title": "Mobile Clinic",
-  "tags": []
+  "tags": [
+   "Ambulance",
+   "Cross",
+   "Red Cross",
+   "Truck",
+   "dhis2:mobile_clinic"
+  ]
  },
  {
   "id": "social_distancing",

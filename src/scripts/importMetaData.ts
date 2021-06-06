@@ -24,7 +24,10 @@ function getMetadataFromDescription(name: string, description: string) {
   return metaData && metaData.length > 2
     ? {
         title: metaData[1],
-        tags: metaData[2].split(',').map((tag) => tag.trim())
+        tags: metaData[2]
+          .split(',')
+          .map((tag) => tag.trim())
+          .sort()
       }
     : {
         title: startCase(name),
