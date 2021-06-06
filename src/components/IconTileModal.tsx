@@ -30,7 +30,7 @@ export function IconTileModal(props: IconTileModalProps) {
           height="96"
           alt=""
         />
-        <div className={styles.modalLabel}>Filename</div>
+        <div className={styles.modalLabel}>Icon</div>
         <div className={styles.modalTitle}>{props.icon.title}</div>
 
         <div className={styles.modalButtons}>
@@ -58,7 +58,9 @@ export function IconTileModal(props: IconTileModalProps) {
         </div>
         <div className={styles.modalLabel}>Tags</div>
         <div className={styles.modalTags}>
-          <span>Coming soon...</span>
+          {props.icon.tags.map((tag) => (
+            <span key={tag}>{tag}</span>
+          ))}
         </div>
       </>
     </ReactModal>

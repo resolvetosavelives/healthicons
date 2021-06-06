@@ -31,7 +31,10 @@ export default function Home({ categories }: HomeProps) {
 
     categories.forEach((category) => {
       category.icons.forEach((icon) => {
-        if (icon.title.toLowerCase().includes(lowerCaseQuery)) {
+        if (
+          icon.title.toLowerCase().includes(lowerCaseQuery) ||
+          icon.tags.join(', ').toLowerCase().includes(lowerCaseQuery)
+        ) {
           filteredIcons.push(icon);
         }
       });
