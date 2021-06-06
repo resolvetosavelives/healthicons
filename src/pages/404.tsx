@@ -4,7 +4,7 @@ import styles from './404.module.scss';
 
 export default function RequestIcon() {
   const icons = [
-    'outline/people/sad.svg',
+    'outline/people/fever.svg',
     'filled/people/diarrhea.svg',
     'filled/symbols/hazardous.svg'
   ];
