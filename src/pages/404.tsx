@@ -27,8 +27,8 @@ export default function RequestIcon() {
             src={`/icons/svg/${icon}`}
             className={styles.alertIcon}
             alt="Alert Icon"
-            width="50%"
-            height="50%"
+            width="500px"
+            height="500px"
           />
           <h1 className={styles.pageTitle}>Page not found</h1>
         </div>
