@@ -33,7 +33,8 @@ export default function Home({ categories }: HomeProps) {
       category.icons.forEach((icon) => {
         if (
           icon.title.toLowerCase().includes(lowerCaseQuery) ||
-          icon.tags.join(', ').toLowerCase().includes(lowerCaseQuery)
+          icon.tags.join(', ').toLowerCase().includes(lowerCaseQuery) ||
+          category.title.includes(lowerCaseQuery)
         ) {
           filteredIcons.push(icon);
         }
