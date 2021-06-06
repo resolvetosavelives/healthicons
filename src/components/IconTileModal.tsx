@@ -56,12 +56,16 @@ export function IconTileModal(props: IconTileModalProps) {
             <span>96px PNG</span>
           </a>
         </div>
-        <div className={styles.modalLabel}>Tags</div>
-        <div className={styles.modalTags}>
-          {props.icon.tags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
-        </div>
+        {props.icon.tags.length > 0 && (
+          <>
+            <div className={styles.modalLabel}>Tags</div>
+            <div className={styles.modalTags}>
+              {props.icon.tags.map((tag) => (
+                <span key={tag}>{tag}</span>
+              ))}
+            </div>
+          </>
+        )}
       </>
     </ReactModal>
   );
