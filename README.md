@@ -22,7 +22,7 @@ Icons are available in several formats and in a few ways:
 
 ### Icon Requests
 
-Need an icon for your project? Submit a request with an [Issue on GitHub](https://github.com/resolvetosavelives/healthicons/issues) using the title `"Icon Request: [name of icon]"` and we will do our best to respond.
+Need an icon for your project? Submit a request with an [Issue on GitHub](https://github.com/resolvetosavelives/healthicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=Icon+Request%3A+%5Bname+of+icon%5D) using the title `"Icon Request: [name of icon]"` and we will do our best to respond.
 
 ## How to contribute
 
