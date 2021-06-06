@@ -4,10 +4,9 @@ import startCase from 'lodash.startcase';
 import path from 'path';
 
 if (!process.env.FIGMA_FILENAME || !process.env.FIGMA_PERSONAL_ACCESS_TOKEN) {
-  console.log(
+  throw new Error(
     'You must have .env.local with FIGMA_PERSONAL_ACCESS_TOKEN and FIGMA_FILENAME'
   );
-  process.exit();
 }
 
 const figmaPersonalAccessToken = process.env.FIGMA_PERSONAL_ACCESS_TOKEN;
