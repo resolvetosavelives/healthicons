@@ -35,7 +35,8 @@ function getMetadataFromDescription(name: string, description: string) {
 client.file(figmaFilename).then(({ data }) => {
   const metaDataArray = [];
 
-  // look for icon components in: "export" with name "/filled/{category}/{name}_positive"
+  // look for icon components on the page "export"
+  // with names that match the pattern: filled/{category}/{name}_positive
   data.document.children.map((child) => {
     if (child.type === 'CANVAS' && child.name === 'export') {
       child.children.map((component) => {
