@@ -28,4 +28,4 @@ jobs:
       - name: Validating TypeScript
         run: yarn tsc --noEmit
       - name: Running Tests
-        run: yarn test
+        run: yarn test:ci
