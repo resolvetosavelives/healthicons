@@ -13,12 +13,18 @@ export function TopBar() {
       </div>
       <ul className={styles.topbarLinks}>
         <li>
-          <a
-            href="https://github.com/resolvetosavelives/healthicons#icon-requests"
-            className={styles.link}
-          >
-            <img src="/ui/question-line.svg" alt="" /> Request an icon
-          </a>
+          <Link href="/about">
+            <a className={styles.link}>
+              <img src="/ui/information-line.svg" alt="" /> About
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/request-icon">
+            <a className={styles.link}>
+              <img src="/ui/question-line.svg" alt="" /> Request an Icon
+            </a>
+          </Link>
         </li>
         <li>
           <a
@@ -27,13 +33,6 @@ export function TopBar() {
           >
             <img src="/ui/github-fill.svg" alt="" /> GitHub
           </a>
-        </li>
-        <li>
-          <Link href="/about">
-            <a className={styles.link}>
-              <img src="/ui/information-line.svg" alt="" /> About
-            </a>
-          </Link>
         </li>
       </ul>
       <div className={styles.topbarDownload}>
