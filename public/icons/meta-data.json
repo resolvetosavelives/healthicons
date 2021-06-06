@@ -48,7 +48,11 @@
  {
   "id": "alert_circle",
   "title": "Alert Circle",
-  "tags": []
+  "tags": [
+   "Exclamation Point",
+   "Warning",
+   "dhis2:alert_circle"
+  ]
  },
  {
   "id": "alert",
@@ -250,8 +254,16 @@
  },
  {
   "id": "contact_support",
-  "title": "Contact Support",
-  "tags": []
+  "title": "Support",
+  "tags": [
+   "Chat",
+   "Contact",
+   "FAQ",
+   "Help",
+   "Question Mark",
+   "Speech Bubble",
+   "dhis2:contact_support"
+  ]
  },
  {
   "id": "contraceptive_voucher",
@@ -296,8 +308,13 @@
  },
  {
   "id": "communication",
-  "title": "Communication",
-  "tags": []
+  "title": "Chat",
+  "tags": [
+   "Communication",
+   "Message",
+   "Speech Bubble",
+   "dhis2:communication"
+  ]
  },
  {
   "id": "group_discussion_meeting",
@@ -496,8 +513,12 @@
  },
  {
   "id": "dhis2_logo",
-  "title": "Dhis 2 Logo",
-  "tags": []
+  "title": "DHIS2 Logo",
+  "tags": [
+   "Layers",
+   "Squares",
+   "dhis2:dhis2_logo"
+  ]
  },
  {
   "id": "polygon",
@@ -517,7 +538,14 @@
  {
   "id": "hazardous",
   "title": "Hazardous",
-  "tags": []
+  "tags": [
+   "Alert",
+   "Danger",
+   "Radiation",
+   "Radioactive",
+   "Warning",
+   "dhis2:hazardous"
+  ]
  },
  {
   "id": "alert_triangle",
@@ -642,17 +670,38 @@
  {
   "id": "medium_level",
   "title": "Medium Level",
-  "tags": []
+  "tags": [
+   "Half",
+   "Measure",
+   "Meter",
+   "Mid",
+   "Speedometer",
+   "dhis2:medium_level"
+  ]
  },
  {
   "id": "high_level",
   "title": "High Level",
-  "tags": []
+  "tags": [
+   "Fast",
+   "Full",
+   "Measure",
+   "Meter",
+   "Speedometer",
+   "dhis2:high_level"
+  ]
  },
  {
   "id": "low_level",
   "title": "Low Level",
-  "tags": []
+  "tags": [
+   "Empty",
+   "Measure",
+   "Meter",
+   "Slow",
+   "Speedometer",
+   "dhis2:low_level"
+  ]
  },
  {
   "id": "ok",
@@ -1001,8 +1050,15 @@
  },
  {
   "id": "question_circle",
-  "title": "Question Circle",
-  "tags": []
+  "title": "Question",
+  "tags": [
+   "Alert",
+   "Ask",
+   "FAQ",
+   "Help",
+   "Question Cirlce",
+   "dhis2:question_circle"
+  ]
  },
  {
   "id": "question_triangle",
@@ -1227,7 +1283,14 @@
  {
   "id": "social_distancing",
   "title": "Social Distancing",
-  "tags": []
+  "tags": [
+   "Apart",
+   "Arrows",
+   "Between",
+   "Social Distance",
+   "Space",
+   "dhis2:social_distancing"
+  ]
  },
  {
   "id": "tac",
