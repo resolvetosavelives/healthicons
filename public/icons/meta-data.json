@@ -56,8 +56,14 @@
  },
  {
   "id": "alert",
-  "title": "Alert",
-  "tags": []
+  "title": "Exclamation",
+  "tags": [
+   "Alert",
+   "Exclamation Mark",
+   "Exclamation Point",
+   "Warning",
+   "dhis2:alert"
+  ]
  },
  {
   "id": "ambulatory_clinic",
@@ -343,13 +349,25 @@
  },
  {
   "id": "heart_cardiogram",
-  "title": "Heart Cardiogram",
-  "tags": []
+  "title": "Cardiogram",
+  "tags": [
+   "Cardiology",
+   "ECG",
+   "EKG",
+   "Electrocardiogram",
+   "Heart",
+   "Monitor",
+   "dhis2:heart_cardiogram"
+  ]
  },
  {
   "id": "heart",
   "title": "Heart",
-  "tags": []
+  "tags": [
+   "Cardiology",
+   "Like dhis2:heart",
+   "Love"
+  ]
  },
  {
   "id": "hospitalized",
@@ -523,7 +541,13 @@
  {
   "id": "polygon",
   "title": "Polygon",
-  "tags": []
+  "tags": [
+   "Design",
+   "Nodes",
+   "Pentagon",
+   "Shape",
+   "dhis2:polygon"
+  ]
  },
  {
   "id": "drone",
@@ -533,7 +557,13 @@
  {
   "id": "electricity",
   "title": "Electricity",
-  "tags": []
+  "tags": [
+   "Bulb",
+   "Light bulb",
+   "Lightning",
+   "Zap",
+   "dhis2:electricity"
+  ]
  },
  {
   "id": "hazardous",
@@ -549,8 +579,14 @@
  },
  {
   "id": "alert_triangle",
-  "title": "Alert Triangle",
-  "tags": []
+  "title": "Warning Triangle",
+  "tags": [
+   "Alert",
+   "Exclamation Mark",
+   "Exclamation Point",
+   "Triangle",
+   "dhis2:alert_triangle"
+  ]
  },
  {
   "id": "fever",
@@ -774,7 +810,13 @@
  {
   "id": "positive",
   "title": "Positive",
-  "tags": []
+  "tags": [
+   "Add",
+   "Circle",
+   "Create",
+   "Plus",
+   "dhis2:positive"
+  ]
  },
  {
   "id": "war",
@@ -881,7 +923,15 @@
  {
   "id": "no",
   "title": "No",
-  "tags": []
+  "tags": [
+   "Cancel",
+   "Circle",
+   "Delete",
+   "Denied",
+   "Stop",
+   "X",
+   "dhis2:no"
+  ]
  },
  {
   "id": "stethoscope",
@@ -930,13 +980,27 @@
  },
  {
   "id": "yes",
-  "title": "Yes",
-  "tags": []
+  "title": "Checkmark",
+  "tags": [
+   "Approved",
+   "Circle",
+   "Success",
+   "Yes",
+   "dhis2:yes"
+  ]
  },
  {
   "id": "negative",
   "title": "Negative",
-  "tags": []
+  "tags": [
+   "Circle",
+   "Delete",
+   "Minus",
+   "No Entry",
+   "Remove",
+   "Subtract",
+   "dhis2:negative"
+  ]
  },
  {
   "id": "i_exam_multiple_choice",
@@ -1046,7 +1110,12 @@
  {
   "id": "question",
   "title": "Question",
-  "tags": []
+  "tags": [
+   "FAQ",
+   "Help",
+   "Question Mark",
+   "dhis2:question"
+  ]
  },
  {
   "id": "question_circle",
@@ -1063,7 +1132,13 @@
  {
   "id": "question_triangle",
   "title": "Question Triangle",
-  "tags": []
+  "tags": [
+   "Alert",
+   "FAQ",
+   "Question Mark",
+   "Triangle",
+   "dhis2:question_triangle"
+  ]
  },
  {
   "id": "home",
@@ -1670,7 +1745,13 @@
  {
   "id": "donkey",
   "title": "Donkey",
-  "tags": []
+  "tags": [
+   "Animal",
+   "Ass",
+   "Farm",
+   "Mule",
+   "dhis2:donkey"
+  ]
  },
  {
   "id": "mosquito",
