@@ -97,20 +97,16 @@ export default function Home({ categories }: HomeProps) {
             onChange={(e) => setQuery(e.target.value)}
           />
         </label>
-        {categories.map((category) => (
-          <div key={category.title}>
+        {categories.map((category, categoryIndex) => (
+          <div key={categoryIndex}>
             {(!query ||
               category.icons.some((icon) => {
                 return iconsToRender.includes(icon);
-              })) && (
-              <CategoryHeading key={category.title}>
-                {category.title}
-              </CategoryHeading>
-            )}
+              })) && <CategoryHeading>{category.title}</CategoryHeading>}
             <div className={styles.iconGrid}>
-              {category.icons.map((icon) => (
+              {category.icons.map((icon, iconIndex) => (
                 <IconTile
-                  key={icon.title}
+                  key={iconIndex}
                   icon={icon}
                   visible={!query || iconsToRender.includes(icon)}
                   onClick={(iconType: string) => {

@@ -41,11 +41,11 @@ async function getIcons(dirName: string): Promise<Icon[]> {
     fileNames.map(async (fileName) => {
       const id = fileName.replace(/\.[^/.]+$/, '');
 
-      const md = metaData.find((m) => m.id === id);
+      const currentFileMetaData = metaData.find((m) => m.id === id);
 
       return {
-        title: md && md.title ? md.title : fileName.replace(/\.[^/.]+$/, ''),
-        tags: md && md.tags ? md.tags : [],
+        title: currentFileMetaData?.title || fileName.replace(/\.[^/.]+$/, ''),
+        tags: currentFileMetaData?.tags || [],
         fileName: fileName.replace(/\.[^/.]+$/, ''),
         path: dirName
       };
