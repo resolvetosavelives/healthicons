@@ -1,0 +1,35 @@
+.contentContainer {
+  display: block;
+}
+
+.contentMain {
+  width: auto;
+}
+
+.contentIntro {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.contentMain h1 {
+  margin-top: 2em;
+}
+
+.example {
+  border: 1rem solid #eee;
+  padding: 2rem;
+}
+
+.exampleTitle {
+  margin-top: 0;
+}
+
+@media (min-width: 48rem) {
+  .contentMain h1 {
+    margin-top: 1.3rem;
+  }
+
+  .contentContainer {
+    max-width: 700px;
+  }
+}

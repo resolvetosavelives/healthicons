@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import { TopBar } from '../components/TopBar';
 import styles from './about.module.scss';
 
@@ -167,10 +168,8 @@ export default function About() {
             </p>
             <p>
               Need an icon for your project?{' '}
-              <a href="https://github.com/resolvetosavelives/healthicons#icon-requests">
-                Submit a request through GitHub
-              </a>{' '}
-              and we will do our best to respond.
+              <Link href="/request-icon">Submit a request</Link> and we will do
+              our best to respond.
             </p>
 
             <h2 id="contribute">How to contribute</h2>
