@@ -1,0 +1,1781 @@
+[
+ {
+  "id": "2g",
+  "title": "2G",
+  "tags": [
+   "bandwidth",
+   "connection",
+   "dhis2:2g",
+   "network",
+   "phone",
+   "speed"
+  ]
+ },
+ {
+  "id": "3g",
+  "title": "3G",
+  "tags": [
+   "bandwidth",
+   "connection",
+   "dhis2:3g",
+   "network",
+   "phone",
+   "speed"
+  ]
+ },
+ {
+  "id": "4x4",
+  "title": "SUV",
+  "tags": [
+   "4x4",
+   "4×4",
+   "Off-Road",
+   "Sport Utility Vehicle",
+   "Truck",
+   "dhis2:4x4"
+  ]
+ },
+ {
+  "id": "agriculture",
+  "title": "Agriculture",
+  "tags": []
+ },
+ {
+  "id": "agriculture_worker",
+  "title": "Agriculture Worker",
+  "tags": []
+ },
+ {
+  "id": "alert_circle",
+  "title": "Alert Circle",
+  "tags": [
+   "Exclamation Point",
+   "Warning",
+   "dhis2:alert_circle"
+  ]
+ },
+ {
+  "id": "alert",
+  "title": "Exclamation",
+  "tags": [
+   "Alert",
+   "Exclamation Mark",
+   "Exclamation Point",
+   "Warning",
+   "dhis2:alert"
+  ]
+ },
+ {
+  "id": "ambulatory_clinic",
+  "title": "Ambulatory Clinic",
+  "tags": []
+ },
+ {
+  "id": "ancv",
+  "title": "Ancv",
+  "tags": []
+ },
+ {
+  "id": "basic_motorcycle",
+  "title": "Motorcycle",
+  "tags": [
+   "Dirtbike dhis2:motorcycle",
+   "Motorbike"
+  ]
+ },
+ {
+  "id": "bike",
+  "title": "Bicycle",
+  "tags": [
+   "Bike",
+   "City Bike",
+   "Mountain Bike",
+   "dhis2:bike"
+  ]
+ },
+ {
+  "id": "blood_a_n",
+  "title": "Blood Type A-",
+  "tags": [
+   "A Negative",
+   "Blood",
+   "dhis2:blood_a_n"
+  ]
+ },
+ {
+  "id": "blood_a_p",
+  "title": "Blood Type A+",
+  "tags": [
+   "A Positive",
+   "Blood",
+   "dhis2:blood_a_p"
+  ]
+ },
+ {
+  "id": "blood_ab_n",
+  "title": "Blood Type AB-",
+  "tags": [
+   "AB Negative",
+   "Blood",
+   "dhis2:blood_ab_n"
+  ]
+ },
+ {
+  "id": "blood_ab_p",
+  "title": "Blood Type AB+",
+  "tags": [
+   "AB Positive",
+   "Blood",
+   "dhis2:blood_ab_p"
+  ]
+ },
+ {
+  "id": "blood_b_n",
+  "title": "Blood Type B-",
+  "tags": [
+   "B Negative",
+   "Blood",
+   "dhis2:blood_b_n"
+  ]
+ },
+ {
+  "id": "blood_b_p",
+  "title": "Blood Type B+",
+  "tags": [
+   "B Positve",
+   "Blood",
+   "dhis2:blood_b_p"
+  ]
+ },
+ {
+  "id": "blood_o_n",
+  "title": "Blood Type O-",
+  "tags": [
+   "Blood",
+   "O Negative",
+   "dhis2:blood_o_n"
+  ]
+ },
+ {
+  "id": "blood_o_p",
+  "title": "Blood Type O+",
+  "tags": [
+   "Blood",
+   "O Positive",
+   "dhis2:blood_o_p"
+  ]
+ },
+ {
+  "id": "blood_pressure_2",
+  "title": "Blood Pressure 2",
+  "tags": []
+ },
+ {
+  "id": "blood_pressure_monitor",
+  "title": "Blood Pressure Monitor",
+  "tags": []
+ },
+ {
+  "id": "blood_pressure",
+  "title": "Blood Pressure",
+  "tags": []
+ },
+ {
+  "id": "blood_rh_n",
+  "title": "Blood Type RH-",
+  "tags": [
+   "Blood",
+   "RH Negative",
+   "dhis2:blood_rh_n"
+  ]
+ },
+ {
+  "id": "blood_rh_p",
+  "title": "Blood Type RH+",
+  "tags": [
+   "Blood",
+   "RH Positive",
+   "dhis2:blood_rh_p"
+  ]
+ },
+ {
+  "id": "calendar",
+  "title": "Calendar",
+  "tags": []
+ },
+ {
+  "id": "cardiogram_e",
+  "title": "Cardiogram E",
+  "tags": []
+ },
+ {
+  "id": "cardiogram",
+  "title": "Cardiogram",
+  "tags": []
+ },
+ {
+  "id": "child_care",
+  "title": "Child Care",
+  "tags": []
+ },
+ {
+  "id": "chills",
+  "title": "Chills",
+  "tags": []
+ },
+ {
+  "id": "city_worker",
+  "title": "City Worker",
+  "tags": []
+ },
+ {
+  "id": "clean_hands",
+  "title": "Clean Hands",
+  "tags": []
+ },
+ {
+  "id": "clinical_f",
+  "title": "Clinical F",
+  "tags": []
+ },
+ {
+  "id": "clinical_fe",
+  "title": "Clinical Fe",
+  "tags": []
+ },
+ {
+  "id": "cold_chain",
+  "title": "Cold Chain",
+  "tags": []
+ },
+ {
+  "id": "cone_test_on_nets",
+  "title": "Cone Test On Nets",
+  "tags": []
+ },
+ {
+  "id": "cone_test_on_walls",
+  "title": "Cone Test On Walls",
+  "tags": []
+ },
+ {
+  "id": "contact_support",
+  "title": "Support",
+  "tags": [
+   "Chat",
+   "Contact",
+   "FAQ",
+   "Help",
+   "Question Mark",
+   "Speech Bubble",
+   "dhis2:contact_support"
+  ]
+ },
+ {
+  "id": "contraceptive_voucher",
+  "title": "Contraceptive Voucher",
+  "tags": []
+ },
+ {
+  "id": "copper_iud",
+  "title": "Copper Iud",
+  "tags": []
+ },
+ {
+  "id": "coughing",
+  "title": "Coughing",
+  "tags": []
+ },
+ {
+  "id": "cross_country_motorcycle",
+  "title": "Off-road Motorcycle",
+  "tags": [
+   "Cross Country",
+   "Dirt Bike",
+   "Motorbike",
+   "Motorcycle",
+   "dhis2:cross_country_motorcycle"
+  ]
+ },
+ {
+  "id": "default",
+  "title": "Default",
+  "tags": []
+ },
+ {
+  "id": "female_condom",
+  "title": "Female Condom",
+  "tags": []
+ },
+ {
+  "id": "forum",
+  "title": "Forum",
+  "tags": []
+ },
+ {
+  "id": "communication",
+  "title": "Chat",
+  "tags": [
+   "Communication",
+   "Message",
+   "Speech Bubble",
+   "dhis2:communication"
+  ]
+ },
+ {
+  "id": "group_discussion_meeting",
+  "title": "Group Discussion Meeting",
+  "tags": []
+ },
+ {
+  "id": "group_discussion_meetingx3",
+  "title": "Group Discussion Meetingx 3",
+  "tags": []
+ },
+ {
+  "id": "headache",
+  "title": "Headache",
+  "tags": []
+ },
+ {
+  "id": "sweating",
+  "title": "Sweating",
+  "tags": []
+ },
+ {
+  "id": "health_worker_form",
+  "title": "Health Worker Form",
+  "tags": []
+ },
+ {
+  "id": "heart_cardiogram",
+  "title": "Cardiogram",
+  "tags": [
+   "Cardiology",
+   "ECG",
+   "EKG",
+   "Electrocardiogram",
+   "Heart",
+   "Monitor",
+   "dhis2:heart_cardiogram"
+  ]
+ },
+ {
+  "id": "heart",
+  "title": "Heart",
+  "tags": [
+   "Cardiology",
+   "Like dhis2:heart",
+   "Love"
+  ]
+ },
+ {
+  "id": "hospitalized",
+  "title": "Hospitalized",
+  "tags": []
+ },
+ {
+  "id": "i_groups_perspective_crowd",
+  "title": "I Groups Perspective Crowd",
+  "tags": []
+ },
+ {
+  "id": "i_training_class",
+  "title": "I Training Class",
+  "tags": []
+ },
+ {
+  "id": "i_utensils",
+  "title": "I Utensils",
+  "tags": []
+ },
+ {
+  "id": "information_campaign",
+  "title": "Information Campaign",
+  "tags": []
+ },
+ {
+  "id": "inpatient",
+  "title": "Inpatient",
+  "tags": []
+ },
+ {
+  "id": "letrina",
+  "title": "Letrina",
+  "tags": []
+ },
+ {
+  "id": "malaria_pf_microscope",
+  "title": "Malaria Pf Microscope",
+  "tags": []
+ },
+ {
+  "id": "malaria_pv_microscope",
+  "title": "Malaria Pv Microscope",
+  "tags": []
+ },
+ {
+  "id": "medicines",
+  "title": "Medicines",
+  "tags": []
+ },
+ {
+  "id": "mental_disorders",
+  "title": "Mental Disorders",
+  "tags": []
+ },
+ {
+  "id": "miner_worker",
+  "title": "Miner Worker",
+  "tags": []
+ },
+ {
+  "id": "msm",
+  "title": "Msm",
+  "tags": []
+ },
+ {
+  "id": "neurology",
+  "title": "Neurology",
+  "tags": []
+ },
+ {
+  "id": "pregnant",
+  "title": "Pregnant",
+  "tags": []
+ },
+ {
+  "id": "refused",
+  "title": "Refused",
+  "tags": []
+ },
+ {
+  "id": "sayana_press",
+  "title": "Sayana Press",
+  "tags": []
+ },
+ {
+  "id": "vomiting",
+  "title": "Vomiting",
+  "tags": []
+ },
+ {
+  "id": "wash_hands",
+  "title": "Wash Hands",
+  "tags": []
+ },
+ {
+  "id": "water_sanitation",
+  "title": "Water Sanitation",
+  "tags": []
+ },
+ {
+  "id": "baby_male_0306m",
+  "title": "Baby Male 0306 M",
+  "tags": []
+ },
+ {
+  "id": "forest_persons",
+  "title": "Forest Persons",
+  "tags": []
+ },
+ {
+  "id": "forest",
+  "title": "Forest",
+  "tags": []
+ },
+ {
+  "id": "church",
+  "title": "Church",
+  "tags": [
+   "christian",
+   "dhis2:church",
+   "religion",
+   "worship"
+  ]
+ },
+ {
+  "id": "doctor_female",
+  "title": "Doctor Female",
+  "tags": []
+ },
+ {
+  "id": "doctor_male",
+  "title": "Doctor Male",
+  "tags": []
+ },
+ {
+  "id": "doctor",
+  "title": "Doctor",
+  "tags": []
+ },
+ {
+  "id": "domestic_worker",
+  "title": "Domestic Worker",
+  "tags": []
+ },
+ {
+  "id": "magnifying_glass",
+  "title": "Magnifying Glass",
+  "tags": []
+ },
+ {
+  "id": "coins",
+  "title": "Coins",
+  "tags": []
+ },
+ {
+  "id": "contraceptive_diaphragm",
+  "title": "Contraceptive Diaphragm",
+  "tags": []
+ },
+ {
+  "id": "dhis2_logo",
+  "title": "DHIS2 Logo",
+  "tags": [
+   "Layers",
+   "Squares",
+   "dhis2:dhis2_logo"
+  ]
+ },
+ {
+  "id": "polygon",
+  "title": "Polygon",
+  "tags": [
+   "Design",
+   "Nodes",
+   "Pentagon",
+   "Shape",
+   "dhis2:polygon"
+  ]
+ },
+ {
+  "id": "drone",
+  "title": "Drone",
+  "tags": []
+ },
+ {
+  "id": "electricity",
+  "title": "Electricity",
+  "tags": [
+   "Bulb",
+   "Light bulb",
+   "Lightning",
+   "Zap",
+   "dhis2:electricity"
+  ]
+ },
+ {
+  "id": "hazardous",
+  "title": "Hazardous",
+  "tags": [
+   "Alert",
+   "Danger",
+   "Radiation",
+   "Radioactive",
+   "Warning",
+   "dhis2:hazardous"
+  ]
+ },
+ {
+  "id": "alert_triangle",
+  "title": "Warning Triangle",
+  "tags": [
+   "Alert",
+   "Exclamation Mark",
+   "Exclamation Point",
+   "Triangle",
+   "dhis2:alert_triangle"
+  ]
+ },
+ {
+  "id": "fever",
+  "title": "Fever",
+  "tags": []
+ },
+ {
+  "id": "helicopter",
+  "title": "Helicopter",
+  "tags": [
+   "chopper",
+   "dhis2:helicopter",
+   "medevac",
+   "medivac"
+  ]
+ },
+ {
+  "id": "happy",
+  "title": "Happy",
+  "tags": []
+ },
+ {
+  "id": "i_certificate_paper",
+  "title": "I Certificate Paper",
+  "tags": []
+ },
+ {
+  "id": "i_documents_accepted",
+  "title": "I Documents Accepted",
+  "tags": []
+ },
+ {
+  "id": "i_documents_denied",
+  "title": "I Documents Denied",
+  "tags": []
+ },
+ {
+  "id": "hot_meal",
+  "title": "Hot Meal",
+  "tags": []
+ },
+ {
+  "id": "i_exam_qualification",
+  "title": "I Exam Qualification",
+  "tags": []
+ },
+ {
+  "id": "implant",
+  "title": "Implant",
+  "tags": []
+ },
+ {
+  "id": "high_bars",
+  "title": "High Bars",
+  "tags": [
+   "connection",
+   "dhis2:high_bars",
+   "fast",
+   "network",
+   "phone",
+   "speed"
+  ]
+ },
+ {
+  "id": "medium_bars",
+  "title": "Medium Bars",
+  "tags": [
+   "connection",
+   "dhis2:medium_bars",
+   "network",
+   "phone",
+   "speed"
+  ]
+ },
+ {
+  "id": "justice",
+  "title": "Justice",
+  "tags": []
+ },
+ {
+  "id": "info",
+  "title": "Info",
+  "tags": []
+ },
+ {
+  "id": "circle_large",
+  "title": "Circle Large",
+  "tags": []
+ },
+ {
+  "id": "circle_medium",
+  "title": "Circle Medium",
+  "tags": []
+ },
+ {
+  "id": "circle_small",
+  "title": "Circle Small",
+  "tags": []
+ },
+ {
+  "id": "llin",
+  "title": "Llin",
+  "tags": []
+ },
+ {
+  "id": "low_bars",
+  "title": "Low Bars",
+  "tags": [
+   "connection",
+   "dhis2:low_bars",
+   "network",
+   "phone",
+   "slow",
+   "speed"
+  ]
+ },
+ {
+  "id": "medium_level",
+  "title": "Medium Level",
+  "tags": [
+   "Half",
+   "Measure",
+   "Meter",
+   "Mid",
+   "Speedometer",
+   "dhis2:medium_level"
+  ]
+ },
+ {
+  "id": "high_level",
+  "title": "High Level",
+  "tags": [
+   "Fast",
+   "Full",
+   "Measure",
+   "Meter",
+   "Speedometer",
+   "dhis2:high_level"
+  ]
+ },
+ {
+  "id": "low_level",
+  "title": "Low Level",
+  "tags": [
+   "Empty",
+   "Measure",
+   "Meter",
+   "Slow",
+   "Speedometer",
+   "dhis2:low_level"
+  ]
+ },
+ {
+  "id": "ok",
+  "title": "Ok",
+  "tags": []
+ },
+ {
+  "id": "network_4g",
+  "title": "4G",
+  "tags": [
+   "bandwidth",
+   "connection",
+   "dhis2:4g",
+   "network",
+   "phone",
+   "speed"
+  ]
+ },
+ {
+  "id": "network_5g",
+  "title": "5G",
+  "tags": [
+   "bandwidth",
+   "connection",
+   "dhis2:5g",
+   "network",
+   "phone",
+   "speed"
+  ]
+ },
+ {
+  "id": "pill_1",
+  "title": "Pill 1",
+  "tags": []
+ },
+ {
+  "id": "pills_2",
+  "title": "Pills 2",
+  "tags": []
+ },
+ {
+  "id": "pills_3",
+  "title": "Pills 3",
+  "tags": []
+ },
+ {
+  "id": "pills_4",
+  "title": "Pills 4",
+  "tags": []
+ },
+ {
+  "id": "sanitizer",
+  "title": "Sanitizer",
+  "tags": []
+ },
+ {
+  "id": "small_plane",
+  "title": "Small Airplane",
+  "tags": [
+   "Airplane",
+   "Airport",
+   "Plane",
+   "Prop Plane",
+   "Propeller",
+   "Small Plane",
+   "Wings",
+   "dhis2:small_plane"
+  ]
+ },
+ {
+  "id": "positive",
+  "title": "Positive",
+  "tags": [
+   "Add",
+   "Circle",
+   "Create",
+   "Plus",
+   "dhis2:positive"
+  ]
+ },
+ {
+  "id": "war",
+  "title": "War",
+  "tags": [
+   "Armored Vehicle",
+   "Cannon",
+   "Gun",
+   "Military",
+   "Tank",
+   "dhis2:war"
+  ]
+ },
+ {
+  "id": "money_bag",
+  "title": "Money Bag",
+  "tags": []
+ },
+ {
+  "id": "neutral",
+  "title": "Neutral",
+  "tags": []
+ },
+ {
+  "id": "not_ok",
+  "title": "Not Ok",
+  "tags": []
+ },
+ {
+  "id": "virus",
+  "title": "Virus",
+  "tags": []
+ },
+ {
+  "id": "phone",
+  "title": "Phone",
+  "tags": []
+ },
+ {
+  "id": "baby_female_0306m",
+  "title": "Baby Female 0306 M",
+  "tags": []
+ },
+ {
+  "id": "blister_pills_oval_x1",
+  "title": "Blister Pills Oval X 1",
+  "tags": []
+ },
+ {
+  "id": "blister_pills_oval_x4",
+  "title": "Blister Pills Oval X 4",
+  "tags": []
+ },
+ {
+  "id": "blister_pills_oval_x14",
+  "title": "Blister Pills Oval X 14",
+  "tags": []
+ },
+ {
+  "id": "blister_pills_oval_x16",
+  "title": "Blister Pills Oval X 16",
+  "tags": []
+ },
+ {
+  "id": "blister_pills_round_x1",
+  "title": "Blister Pills Round X 1",
+  "tags": []
+ },
+ {
+  "id": "blister_pills_round_x4",
+  "title": "Blister Pills Round X 4",
+  "tags": []
+ },
+ {
+  "id": "blister_pills_round_x14",
+  "title": "Blister Pills Round X 14",
+  "tags": []
+ },
+ {
+  "id": "blister_pills_round_x16",
+  "title": "Blister Pills Round X 16",
+  "tags": []
+ },
+ {
+  "id": "credit_card",
+  "title": "Credit Card",
+  "tags": []
+ },
+ {
+  "id": "health_worker",
+  "title": "Health Worker",
+  "tags": []
+ },
+ {
+  "id": "mask",
+  "title": "Mask",
+  "tags": []
+ },
+ {
+  "id": "iud",
+  "title": "Iud",
+  "tags": []
+ },
+ {
+  "id": "no",
+  "title": "No",
+  "tags": [
+   "Cancel",
+   "Circle",
+   "Delete",
+   "Denied",
+   "Stop",
+   "X",
+   "dhis2:no"
+  ]
+ },
+ {
+  "id": "stethoscope",
+  "title": "Stethoscope",
+  "tags": []
+ },
+ {
+  "id": "microscope",
+  "title": "Microscope",
+  "tags": []
+ },
+ {
+  "id": "sexual_reproductive_health",
+  "title": "Sexual Reproductive Health",
+  "tags": []
+ },
+ {
+  "id": "city",
+  "title": "City",
+  "tags": [
+   "dhis2:city",
+   "metro",
+   "metropolis",
+   "urban"
+  ]
+ },
+ {
+  "id": "peace",
+  "title": "Peace",
+  "tags": []
+ },
+ {
+  "id": "clinical_a",
+  "title": "Clinical A",
+  "tags": []
+ },
+ {
+  "id": "male_condom",
+  "title": "Male Condom",
+  "tags": []
+ },
+ {
+  "id": "i_note_action",
+  "title": "I Note Action",
+  "tags": []
+ },
+ {
+  "id": "yes",
+  "title": "Checkmark",
+  "tags": [
+   "Approved",
+   "Circle",
+   "Success",
+   "Yes",
+   "dhis2:yes"
+  ]
+ },
+ {
+  "id": "negative",
+  "title": "Negative",
+  "tags": [
+   "Circle",
+   "Delete",
+   "Minus",
+   "No Entry",
+   "Remove",
+   "Subtract",
+   "dhis2:negative"
+  ]
+ },
+ {
+  "id": "i_exam_multiple_choice",
+  "title": "I Exam Multiple Choice",
+  "tags": []
+ },
+ {
+  "id": "i_schedule_school_date_time",
+  "title": "I Schedule School Date Time",
+  "tags": []
+ },
+ {
+  "id": "weight",
+  "title": "Weight",
+  "tags": []
+ },
+ {
+  "id": "syringe",
+  "title": "Syringe",
+  "tags": []
+ },
+ {
+  "id": "market_stall",
+  "title": "Market Stall",
+  "tags": []
+ },
+ {
+  "id": "hospital",
+  "title": "Hospital",
+  "tags": []
+ },
+ {
+  "id": "diarrhea",
+  "title": "Diarrhea",
+  "tags": []
+ },
+ {
+  "id": "square_large",
+  "title": "Square Large",
+  "tags": []
+ },
+ {
+  "id": "square_medium",
+  "title": "Square Medium",
+  "tags": []
+ },
+ {
+  "id": "square_small",
+  "title": "Square Small",
+  "tags": []
+ },
+ {
+  "id": "star_large",
+  "title": "Star Large",
+  "tags": []
+ },
+ {
+  "id": "star_medium",
+  "title": "Star Medium",
+  "tags": []
+ },
+ {
+  "id": "star_small",
+  "title": "Star Small",
+  "tags": []
+ },
+ {
+  "id": "sad",
+  "title": "Sad",
+  "tags": []
+ },
+ {
+  "id": "fetus",
+  "title": "Fetus",
+  "tags": []
+ },
+ {
+  "id": "pregnant_32w",
+  "title": "Pregnant 32 W",
+  "tags": []
+ },
+ {
+  "id": "pregnant_0812w",
+  "title": "Pregnant 0812 W",
+  "tags": []
+ },
+ {
+  "id": "pregnant_2426w",
+  "title": "Pregnant 2426 W",
+  "tags": []
+ },
+ {
+  "id": "pregnant_3638w",
+  "title": "Pregnant 3638 W",
+  "tags": []
+ },
+ {
+  "id": "odontology_implant",
+  "title": "Odontology Implant",
+  "tags": []
+ },
+ {
+  "id": "odontology",
+  "title": "Odontology",
+  "tags": []
+ },
+ {
+  "id": "question",
+  "title": "Question",
+  "tags": [
+   "FAQ",
+   "Help",
+   "Question Mark",
+   "dhis2:question"
+  ]
+ },
+ {
+  "id": "question_circle",
+  "title": "Question",
+  "tags": [
+   "Alert",
+   "Ask",
+   "FAQ",
+   "Help",
+   "Question Cirlce",
+   "dhis2:question_circle"
+  ]
+ },
+ {
+  "id": "question_triangle",
+  "title": "Question Triangle",
+  "tags": [
+   "Alert",
+   "FAQ",
+   "Question Mark",
+   "Triangle",
+   "dhis2:question_triangle"
+  ]
+ },
+ {
+  "id": "home",
+  "title": "Home",
+  "tags": [
+   "dhis2:home",
+   "house"
+  ]
+ },
+ {
+  "id": "contraceptive_injection",
+  "title": "Contraceptive Injection",
+  "tags": []
+ },
+ {
+  "id": "contraceptive_patch",
+  "title": "Contraceptive Patch",
+  "tags": []
+ },
+ {
+  "id": "person",
+  "title": "Person",
+  "tags": []
+ },
+ {
+  "id": "triangle_small",
+  "title": "Triangle Small",
+  "tags": []
+ },
+ {
+  "id": "triangle_medium",
+  "title": "Triangle Medium",
+  "tags": []
+ },
+ {
+  "id": "triangle_large",
+  "title": "Triangle Large",
+  "tags": []
+ },
+ {
+  "id": "chills_fever",
+  "title": "Chills Fever",
+  "tags": []
+ },
+ {
+  "id": "construction",
+  "title": "Construction",
+  "tags": []
+ },
+ {
+  "id": "intensity_concentration_bioassays",
+  "title": "Intensity Concentration Bioassays",
+  "tags": []
+ },
+ {
+  "id": "observation",
+  "title": "Observation",
+  "tags": []
+ },
+ {
+  "id": "rural_post",
+  "title": "Rural Post",
+  "tags": []
+ },
+ {
+  "id": "malaria_negative_microscope",
+  "title": "Malaria Negative Microscope",
+  "tags": []
+ },
+ {
+  "id": "hiv_self_test",
+  "title": "Hiv Self Test",
+  "tags": []
+ },
+ {
+  "id": "malaria_mixed_microscope",
+  "title": "Malaria Mixed Microscope",
+  "tags": []
+ },
+ {
+  "id": "water_treatment",
+  "title": "Water Treatment",
+  "tags": []
+ },
+ {
+  "id": "treated_water",
+  "title": "Treated Water",
+  "tags": []
+ },
+ {
+  "id": "machinery",
+  "title": "Machinery",
+  "tags": [
+   "Digger",
+   "Equipment",
+   "Front-end Loader",
+   "dhis2:machinery"
+  ]
+ },
+ {
+  "id": "pave_road",
+  "title": "Pave Road",
+  "tags": []
+ },
+ {
+  "id": "vespa_motorcycle",
+  "title": "Motor Scooter",
+  "tags": [
+   "Motorbike",
+   "Motorcycle",
+   "dhis2:vespa_motorcycle"
+  ]
+ },
+ {
+  "id": "travel",
+  "title": "Travel",
+  "tags": []
+ },
+ {
+  "id": "palm_branches_roof",
+  "title": "Home with Roof Made of Palm Branches",
+  "tags": [
+   "building",
+   "dhis2:palm_branches_roof",
+   "house",
+   "hut"
+  ]
+ },
+ {
+  "id": "proper_roof",
+  "title": "Home with Proper Roof",
+  "tags": [
+   "building",
+   "dhis2:proper_roof",
+   "house",
+   "hut"
+  ]
+ },
+ {
+  "id": "tb",
+  "title": "Tb",
+  "tags": []
+ },
+ {
+  "id": "hiv_ind",
+  "title": "Hiv Ind",
+  "tags": []
+ },
+ {
+  "id": "hiv_neg",
+  "title": "Hiv Neg",
+  "tags": []
+ },
+ {
+  "id": "ribbon",
+  "title": "Ribbon",
+  "tags": []
+ },
+ {
+  "id": "hiv_pos",
+  "title": "Hiv Pos",
+  "tags": []
+ },
+ {
+  "id": "eco_care",
+  "title": "Eco Care",
+  "tags": []
+ },
+ {
+  "id": "emergency_post",
+  "title": "Emergency Post",
+  "tags": []
+ },
+ {
+  "id": "stop",
+  "title": "Stop",
+  "tags": []
+ },
+ {
+  "id": "imm",
+  "title": "Imm",
+  "tags": []
+ },
+ {
+  "id": "expectorate",
+  "title": "Expectorate",
+  "tags": []
+ },
+ {
+  "id": "fever",
+  "title": "Fever",
+  "tags": []
+ },
+ {
+  "id": "ambulance",
+  "title": "Ambulance",
+  "tags": [
+   "Cross",
+   "Emergency",
+   "Red Cross",
+   "Siren",
+   "Truck",
+   "dhis2:ambulance"
+  ]
+ },
+ {
+  "id": "mobile_clinic",
+  "title": "Mobile Clinic",
+  "tags": [
+   "Ambulance",
+   "Cross",
+   "Red Cross",
+   "Truck",
+   "dhis2:mobile_clinic"
+  ]
+ },
+ {
+  "id": "social_distancing",
+  "title": "Social Distancing",
+  "tags": [
+   "Apart",
+   "Arrows",
+   "Between",
+   "Social Distance",
+   "Space",
+   "dhis2:social_distancing"
+  ]
+ },
+ {
+  "id": "tac",
+  "title": "Tac",
+  "tags": []
+ },
+ {
+  "id": "discriminating_concentration_bioassays",
+  "title": "Discriminating Concentration Bioassays",
+  "tags": []
+ },
+ {
+  "id": "running_water",
+  "title": "Running Water",
+  "tags": []
+ },
+ {
+  "id": "oral_contraception_pillsx21",
+  "title": "Oral Contraception Pillsx 21",
+  "tags": []
+ },
+ {
+  "id": "oral_contraception_pillsx28",
+  "title": "Oral Contraception Pillsx 28",
+  "tags": []
+ },
+ {
+  "id": "un_pave_road",
+  "title": "Un Pave Road",
+  "tags": []
+ },
+ {
+  "id": "symptom",
+  "title": "Symptom",
+  "tags": []
+ },
+ {
+  "id": "cervical_cancer",
+  "title": "Cervical Cancer",
+  "tags": []
+ },
+ {
+  "id": "female_sex_worker",
+  "title": "Female Sex Worker",
+  "tags": []
+ },
+ {
+  "id": "male_sex_worker",
+  "title": "Male Sex Worker",
+  "tags": []
+ },
+ {
+  "id": "cholera",
+  "title": "Cholera",
+  "tags": []
+ },
+ {
+  "id": "people",
+  "title": "People",
+  "tags": []
+ },
+ {
+  "id": "truck_driver",
+  "title": "Truck Driver",
+  "tags": []
+ },
+ {
+  "id": "officer",
+  "title": "Officer",
+  "tags": []
+ },
+ {
+  "id": "security_worker",
+  "title": "Security Worker",
+  "tags": []
+ },
+ {
+  "id": "nurse",
+  "title": "Nurse",
+  "tags": []
+ },
+ {
+  "id": "construction_worker",
+  "title": "Construction Worker",
+  "tags": []
+ },
+ {
+  "id": "factory_worker",
+  "title": "Factory Worker",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_neg_invalid_rectangular",
+  "title": "Rdt Result Neg Invalid Rectangular",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_neg_invalid",
+  "title": "Rdt Result Neg Invalid",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_no_test",
+  "title": "Rdt Result No Test",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_pv",
+  "title": "Rdt Result Pv",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_mixed",
+  "title": "Rdt Result Mixed",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_mixed",
+  "title": "Rdt Result Mixed",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_pf_invalid",
+  "title": "Rdt Result Pf Invalid",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_neg",
+  "title": "Rdt Result Neg",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_mixed",
+  "title": "Rdt Result Mixed",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_mixed_invalid",
+  "title": "Rdt Result Mixed Invalid",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_mixed_invalid_rectangular",
+  "title": "Rdt Result Mixed Invalid Rectangular",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_pv_rectangular",
+  "title": "Rdt Result Pv Rectangular",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_pv_invalid_rectangular",
+  "title": "Rdt Result Pv Invalid Rectangular",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_pf_rectangular",
+  "title": "Rdt Result Pf Rectangular",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_pf_invalid_rectangular",
+  "title": "Rdt Result Pf Invalid Rectangular",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_neg_rectangular",
+  "title": "Rdt Result Neg Rectangular",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_mixed_rectangular",
+  "title": "Rdt Result Mixed Rectangular",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_invalid",
+  "title": "Rdt Result Invalid",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_positive",
+  "title": "Rdt Result Positive",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_negative",
+  "title": "Rdt Result Negative",
+  "tags": []
+ },
+ {
+  "id": "megaphone",
+  "title": "Megaphone",
+  "tags": []
+ },
+ {
+  "id": "boy_0105y",
+  "title": "Boy 0105 Y",
+  "tags": []
+ },
+ {
+  "id": "boy_1015y",
+  "title": "Boy 1015 Y",
+  "tags": []
+ },
+ {
+  "id": "child_program",
+  "title": "Child Program",
+  "tags": []
+ },
+ {
+  "id": "elderly",
+  "title": "Elderly",
+  "tags": []
+ },
+ {
+  "id": "girl_0105y",
+  "title": "Girl 0105 Y",
+  "tags": []
+ },
+ {
+  "id": "girl_1015y",
+  "title": "Girl 1015 Y",
+  "tags": []
+ },
+ {
+  "id": "lactation",
+  "title": "Lactation",
+  "tags": []
+ },
+ {
+  "id": "rmnh",
+  "title": "Rmnh",
+  "tags": []
+ },
+ {
+  "id": "male_and_female",
+  "title": "Male And Female",
+  "tags": []
+ },
+ {
+  "id": "female_and_male",
+  "title": "Female And Male",
+  "tags": []
+ },
+ {
+  "id": "man",
+  "title": "Man",
+  "tags": []
+ },
+ {
+  "id": "old_man",
+  "title": "Old Man",
+  "tags": []
+ },
+ {
+  "id": "old_woman",
+  "title": "Old Woman",
+  "tags": []
+ },
+ {
+  "id": "transgender",
+  "title": "Transgender",
+  "tags": []
+ },
+ {
+  "id": "woman",
+  "title": "Woman",
+  "tags": []
+ },
+ {
+  "id": "young_people",
+  "title": "Young People",
+  "tags": []
+ },
+ {
+  "id": "outpatient",
+  "title": "Outpatient",
+  "tags": []
+ },
+ {
+  "id": "malaria_testing",
+  "title": "Malaria Testing",
+  "tags": []
+ },
+ {
+  "id": "surgical_sterilization",
+  "title": "Surgical Sterilization",
+  "tags": []
+ },
+ {
+  "id": "pwid",
+  "title": "Pwid",
+  "tags": []
+ },
+ {
+  "id": "bills",
+  "title": "Bills",
+  "tags": []
+ },
+ {
+  "id": "family_planning",
+  "title": "Family Planning",
+  "tags": []
+ },
+ {
+  "id": "underweight",
+  "title": "Underweight",
+  "tags": []
+ },
+ {
+  "id": "overweight",
+  "title": "Overweight",
+  "tags": []
+ },
+ {
+  "id": "referral",
+  "title": "Referral",
+  "tags": []
+ },
+ {
+  "id": "provider_fst",
+  "title": "Provider Fst",
+  "tags": []
+ },
+ {
+  "id": "rdt_result_out_stock",
+  "title": "Rdt Result Out Stock",
+  "tags": []
+ },
+ {
+  "id": "baby_male_0203m",
+  "title": "Baby Male 0203 M",
+  "tags": []
+ },
+ {
+  "id": "plantation_worker",
+  "title": "Plantation Worker",
+  "tags": []
+ },
+ {
+  "id": "synergist_insecticide_bioassays",
+  "title": "Synergist Insecticide Bioassays",
+  "tags": []
+ },
+ {
+  "id": "measles",
+  "title": "Measles",
+  "tags": []
+ },
+ {
+  "id": "traumatism",
+  "title": "Traumatism",
+  "tags": []
+ },
+ {
+  "id": "hormonal_ring",
+  "title": "Hormonal Ring",
+  "tags": []
+ },
+ {
+  "id": "hpv",
+  "title": "Hpv",
+  "tags": []
+ },
+ {
+  "id": "vih",
+  "title": "Vih",
+  "tags": []
+ },
+ {
+  "id": "breeding_sites",
+  "title": "Breeding Sites",
+  "tags": []
+ },
+ {
+  "id": "donkey",
+  "title": "Donkey",
+  "tags": [
+   "Animal",
+   "Ass",
+   "Farm",
+   "Mule",
+   "dhis2:donkey"
+  ]
+ },
+ {
+  "id": "mosquito",
+  "title": "Mosquito",
+  "tags": []
+ },
+ {
+  "id": "malaria_outbreak",
+  "title": "Malaria Outbreak",
+  "tags": []
+ },
+ {
+  "id": "insecticide_resistance",
+  "title": "Insecticide Resistance",
+  "tags": []
+ },
+ {
+  "id": "mosquito_collection",
+  "title": "Mosquito Collection",
+  "tags": []
+ },
+ {
+  "id": "stock_out",
+  "title": "Stock Out",
+  "tags": []
+ }
+]
