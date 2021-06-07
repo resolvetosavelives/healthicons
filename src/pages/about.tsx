@@ -51,6 +51,11 @@ export default function About() {
       avatar: 'https://unavatar.now.sh/twitter/jwstephensen'
     },
     {
+      name: 'Kirill Golubev',
+      link: 'https://github.com/ArGeoph',
+      avatar: 'https://unavatar.now.sh/github/ArGeoph'
+    },
+    {
       name: 'Lina Wang',
       link: 'https://twitter.com/linafab',
       avatar: 'https://unavatar.now.sh/twitter/linafab'

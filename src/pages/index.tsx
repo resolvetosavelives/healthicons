@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
+import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
 import { IconTile } from '../components/IconTile';
@@ -27,11 +28,15 @@ export default function Home({ categories }: HomeProps) {
     if (!query) {
       return filteredIcons;
     }
-    const lowerCaseQuery = query.toLowerCase();
 
     categories.forEach((category) => {
       category.icons.forEach((icon) => {
-        if (icon.title.toLowerCase().includes(lowerCaseQuery)) {
+        if (
+          searchKeywords(
+            query,
+            icon.tags.concat([icon.title, category.title]).join(', ')
+          )
+        ) {
           filteredIcons.push(icon);
         }
       });
@@ -92,20 +97,16 @@ export default function Home({ categories }: HomeProps) {
             onChange={(e) => setQuery(e.target.value)}
           />
         </label>
-        {categories.map((category) => (
-          <div key={category.title}>
+        {categories.map((category, categoryIndex) => (
+          <div key={categoryIndex}>
             {(!query ||
               category.icons.some((icon) => {
                 return iconsToRender.includes(icon);
-              })) && (
-              <CategoryHeading key={category.title}>
-                {category.title}
-              </CategoryHeading>
-            )}
+              })) && <CategoryHeading>{category.title}</CategoryHeading>}
             <div className={styles.iconGrid}>
-              {category.icons.map((icon) => (
+              {category.icons.map((icon, iconIndex) => (
                 <IconTile
-                  key={icon.title}
+                  key={iconIndex}
                   icon={icon}
                   visible={!query || iconsToRender.includes(icon)}
                   onClick={(iconType: string) => {

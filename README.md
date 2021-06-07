@@ -86,6 +86,15 @@ This project uses [Next.js](https://nextjs.org).
 2. Run `yarn install`
 3. Run `yarn dev`
 
+### Importing icon meta-data
+
+To update the `public/icons/meta-data.json` file to the latest meta-data from Figma:
+
+1. Copy `.env.example` to `.env.local`
+2. Go to your account settings on (figma.com)[https://www.figma.com] and generate a new access token under "Personal access tokens" and copy it to your clipboard.
+3. In `.env.local`, add `FIGMA_PERSONAL_ACCESS_TOKEN="{token-goes-here}"`
+4. Run `yarn import-meta-data`
+
 ## MIT License
 
 Copyright © 2021 Resolve to Save Lives
