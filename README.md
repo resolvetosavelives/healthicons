@@ -53,9 +53,9 @@ Each icon should have a title and tags which are added in the “Description” 
 
 **More details:**
 
-- the icon titles should be in [Title Case](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case) with each word capitalized
-- the tags are essentially synonyms or important related words that would help someone find the icon. They could also be alternative uses of the icon, the way a donkey could represent “farm”. If someone searches “blood” or “positive” they’ll see any icons that are tagged with those words.
-- the `dhis2:` formatted tag is a special tag reserved for icons that are in the [DHIS2 icon set](https://github.com/dhis2/dhis2-icons). This tag should exactly match whatever DHIS2 names this icon.
+- Icon titles should be in [Title Case](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case) with each word capitalized
+- Tags are essentially synonyms or important related words that would help someone find the icon. They could also be alternative uses of the icon, the way a donkey could represent “farm”. If someone searches “blood” or “positive” they’ll see any icons that are tagged with those words. Tags should also be Title Case.
+- The `dhis2:` formatted tag is a special tag reserved for icons that are in the [DHIS2 icon set](https://github.com/dhis2/dhis2-icons). This tag should exactly match whatever DHIS2 names this icon.
 
 ## Code of Conduct
 
