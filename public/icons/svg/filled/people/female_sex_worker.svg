@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 9C15 11.2091 13.2091 13 11 13C8.79087 13 7.00001 11.2091 7.00001 9C7.00001 6.79086 8.79087 5 11 5C13.2091 5 15 6.79086 15 9ZM5.4358 32H6.99989L7.84707 42.1661C7.93345 43.2027 8.79998 44 9.84016 44H12.1596C13.1998 44 14.0663 43.2027 14.1527 42.1661L14.9999 32H16.5639C18.4177 32 18.7225 30.3354 18.4177 28.5068L16.4177 16.5068C16.1766 15.0602 14.925 14 13.4585 14H8.54128C7.07476 14 5.82319 15.0602 5.58209 16.5068L3.58209 28.5068C3.27733 30.3354 3.58198 32 5.4358 32Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26 11C26 8.79086 27.7909 7 30 7H34C36.2091 7 38 8.79086 38 11H36C36 9.89543 35.1046 9 34 9H30C28.8954 9 28 9.89543 28 11C28 12.1046 28.8954 13 30 13H34C36.2091 13 38 14.7909 38 17C38 19.2091 36.2091 21 34 21H30C27.7909 21 26 19.2091 26 17H28C28 18.1046 28.8954 19 30 19H34C35.1046 19 36 18.1046 36 17C36 15.8954 35.1046 15 34 15H30C27.7909 15 26 13.2091 26 11Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M31 23L31 5H33L33 23H31Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 36C20 34.3431 21.3431 33 23 33H41C42.6569 33 44 34.3431 44 36V41H20V36ZM23 35C22.4477 35 22 35.4477 22 36V39H42V36C42 35.4477 41.5523 35 41 35H23Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 44L20 40H22V44H20Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M42 44L42 40H44V44H42Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39 33L39 27L41 27L41 33L39 33Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28 33L28 29L30 29L30 33L28 33Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M34 33L34 29L36 29L36 33L34 33Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23 33L23 27L25 27L25 33L23 33Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40 30L24 30L24 28L40 28L40 30Z" fill="#333333"/>
+</svg>
