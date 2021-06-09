@@ -22,7 +22,7 @@ export function TopBar() {
         <li>
           <Link href="/request-icon">
             <a className={styles.link}>
-              <img src="/ui/question-line.svg" alt="" /> Request an Icon
+              <img src="/ui/question-line.svg" alt="" /> Request an icon
             </a>
           </Link>
         </li>

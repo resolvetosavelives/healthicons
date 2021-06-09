@@ -16,14 +16,6 @@
   width: auto;
 }
 
-.contentMain h1 {
-  margin-top: 2em;
-}
-
-.contentMain h2 {
-  margin-top: 4rem;
-}
-
 .contentSide {
   width: auto;
 }
@@ -65,10 +57,6 @@
 }
 
 @media (min-width: 48rem) {
-  .contentMain h1 {
-    margin-top: 1.3rem;
-  }
-
   .contentContainer {
     display: flex;
     margin: 4rem 0;

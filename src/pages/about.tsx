@@ -157,7 +157,7 @@ export default function About() {
       <main id="main">
         <div className={styles.contentContainer}>
           <div className={styles.contentMain}>
-            <h1 id="about" className="title">
+            <h1 id="about" className="mt-2">
               About this project
             </h1>
             <p className={styles.contentIntro}>
@@ -355,7 +355,9 @@ export default function About() {
 
           <div className={styles.contentSide}>
             <div className={styles.contentFeature}>
-              <h2 id={styles.contributors}>Volunteer contributors</h2>
+              <h2 id={styles.contributors} className="mt-1">
+                Volunteer contributors
+              </h2>
               {contributors.map((contributor, index) => (
                 <div key={index} className={styles.contributorItem}>
                   <a href={contributor.link}>
