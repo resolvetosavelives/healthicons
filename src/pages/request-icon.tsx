@@ -74,7 +74,7 @@ export default function RequestIcon() {
                 it's not just a tube?
               </p>
               <p>Some examples I've seen:</p>
-              <p class="mt-2">
+              <p className="mt-2">
                 <img
                   src="/request-icon/stent-example1.png"
                   alt="Example Stent 1"

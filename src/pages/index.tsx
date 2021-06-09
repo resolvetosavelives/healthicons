@@ -82,7 +82,7 @@ export default function Home({ categories }: HomeProps) {
       <TopBar />
       <main id="main">
         <div className={styles.box}>
-          <h1 class="mt-2">Free, open source health icons</h1>
+          <h1 className="mt-2">Free, open source health icons</h1>
           <h3>
             Free for use in your next commercial or personal project.
             <span> </span>
