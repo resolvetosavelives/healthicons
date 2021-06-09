@@ -11,13 +11,12 @@
   margin-bottom: 2rem;
 }
 
-.contentMain h1 {
-  margin-top: 2em;
-}
-
 .example {
   border: 1rem solid #eee;
   padding: 2rem;
+  margin: 3rem 0;
+  font-family: monospace;
+  font-size: 0.9rem;
 }
 
 .exampleTitle {
@@ -25,10 +24,6 @@
 }
 
 @media (min-width: 48rem) {
-  .contentMain h1 {
-    margin-top: 1.3rem;
-  }
-
   .contentContainer {
     max-width: 700px;
   }
