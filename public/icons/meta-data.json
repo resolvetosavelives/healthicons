@@ -1,26 +1,31 @@
 [
  {
+  "id": "megaphone",
+  "title": "Megaphone",
+  "tags": []
+ },
+ {
   "id": "2g",
   "title": "2G",
   "tags": [
-   "bandwidth",
-   "connection",
-   "dhis2:2g",
-   "network",
-   "phone",
-   "speed"
+   "Bandwidth",
+   "Connection",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:2g"
   ]
  },
  {
   "id": "3g",
   "title": "3G",
   "tags": [
-   "bandwidth",
-   "connection",
-   "dhis2:3g",
-   "network",
-   "phone",
-   "speed"
+   "Bandwidth",
+   "Connection",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:3g"
   ]
  },
  {
@@ -42,8 +47,13 @@
  },
  {
   "id": "agriculture_worker",
-  "title": "Agriculture Worker",
-  "tags": []
+  "title": "Farmer",
+  "tags": [
+   "Agricultural Worker",
+   "Farmhand",
+   "Pitchfork",
+   "dhis2:agricultural_worker"
+  ]
  },
  {
   "id": "alert_circle",
@@ -56,19 +66,24 @@
  },
  {
   "id": "alert",
-  "title": "Exclamation",
+  "title": "Warning",
   "tags": [
    "Alert",
    "Exclamation Mark",
    "Exclamation Point",
-   "Warning",
    "dhis2:alert"
   ]
  },
  {
   "id": "ambulatory_clinic",
-  "title": "Ambulatory Clinic",
-  "tags": []
+  "title": "Clinic",
+  "tags": [
+   "Ambulatory Clinic",
+   "Hospital",
+   "Office",
+   "Small Hospital",
+   "dhis2:ambulatory_clinic"
+  ]
  },
  {
   "id": "ancv",
@@ -142,7 +157,7 @@
   "id": "blood_b_p",
   "title": "Blood Type B+",
   "tags": [
-   "B Positve",
+   "B Positive",
    "Blood",
    "dhis2:blood_b_p"
   ]
@@ -221,7 +236,14 @@
  {
   "id": "chills",
   "title": "Chills",
-  "tags": []
+  "tags": [
+   "Cold",
+   "Freezing",
+   "Hypothermia",
+   "Person",
+   "Shake",
+   "dhis2:chills"
+  ]
  },
  {
   "id": "city_worker",
@@ -401,8 +423,27 @@
  },
  {
   "id": "letrina",
-  "title": "Letrina",
-  "tags": []
+  "title": "Outhouse",
+  "tags": [
+   "Bathroom",
+   "Biffy",
+   "Bog",
+   "Crapper",
+   "Dunny",
+   "Honey Bucket",
+   "John",
+   "Kybo",
+   "Latrine",
+   "Long Drop",
+   "Outdoor Toilet",
+   "Portaloo",
+   "Privy",
+   "Thunderbox",
+   "Toilet",
+   "WC",
+   "Water Closet",
+   "dhis2:letrina"
+  ]
  },
  {
   "id": "malaria_pf_microscope",
@@ -435,6 +476,11 @@
   "tags": []
  },
  {
+  "id": "nausea",
+  "title": "Nausea",
+  "tags": []
+ },
+ {
   "id": "neurology",
   "title": "Neurology",
   "tags": []
@@ -446,8 +492,15 @@
  },
  {
   "id": "refused",
-  "title": "Refused",
-  "tags": []
+  "title": "Hand",
+  "tags": [
+   "Fingers",
+   "Five",
+   "Palm",
+   "Refused",
+   "Stop",
+   "dhis2:refused"
+  ]
  },
  {
   "id": "sayana_press",
@@ -455,9 +508,26 @@
   "tags": []
  },
  {
+  "id": "spraying",
+  "title": "Spraying",
+  "tags": []
+ },
+ {
+  "id": "sti",
+  "title": "Sti",
+  "tags": []
+ },
+ {
   "id": "vomiting",
   "title": "Vomiting",
-  "tags": []
+  "tags": [
+   "Gastro",
+   "Sick",
+   "Spew",
+   "Stomach Flu",
+   "Throw Up",
+   "dhis2:vomiting"
+  ]
  },
  {
   "id": "wash_hands",
@@ -470,39 +540,74 @@
   "tags": []
  },
  {
-  "id": "baby_male_0306m",
-  "title": "Baby Male 0306 M",
+  "id": "wold_care",
+  "title": "Wold Care",
   "tags": []
  },
  {
+  "id": "baby_male_0306m",
+  "title": "Baby",
+  "tags": [
+   "Boy",
+   "Crawl",
+   "Diaper",
+   "Girl",
+   "dhis2:baby_male"
+  ]
+ },
+ {
   "id": "forest_persons",
-  "title": "Forest Persons",
-  "tags": []
+  "title": "Person in Forest",
+  "tags": [
+   "Nature",
+   "Person",
+   "Tree",
+   "Walking",
+   "dhis2:forest_persons"
+  ]
  },
  {
   "id": "forest",
   "title": "Forest",
-  "tags": []
+  "tags": [
+   "Nature",
+   "Park",
+   "Trees",
+   "dhis2:forest"
+  ]
  },
  {
   "id": "church",
   "title": "Church",
   "tags": [
-   "christian",
-   "dhis2:church",
-   "religion",
-   "worship"
+   "Christian",
+   "House of Worship",
+   "Religion",
+   "Worship",
+   "dhis2:church"
   ]
  },
  {
   "id": "doctor_female",
-  "title": "Doctor Female",
-  "tags": []
+  "title": "Female Doctor",
+  "tags": [
+   "Doctor",
+   "MD",
+   "Stethoscope",
+   "Woman",
+   "dhis2:doctor_female"
+  ]
  },
  {
   "id": "doctor_male",
-  "title": "Doctor Male",
-  "tags": []
+  "title": "Male Doctor",
+  "tags": [
+   "Doctor",
+   "MD",
+   "Man",
+   "Stethoscope",
+   "dhis2:doctor_female"
+  ]
  },
  {
   "id": "doctor",
@@ -512,7 +617,12 @@
  {
   "id": "domestic_worker",
   "title": "Domestic Worker",
-  "tags": []
+  "tags": [
+   "Cleaner",
+   "Labor",
+   "Plumber",
+   "dhis2:domestic_worker"
+  ]
  },
  {
   "id": "magnifying_glass",
@@ -597,16 +707,23 @@
   "id": "helicopter",
   "title": "Helicopter",
   "tags": [
-   "chopper",
-   "dhis2:helicopter",
-   "medevac",
-   "medivac"
+   "Chopper",
+   "Medevac",
+   "Medivac",
+   "dhis2:helicopter"
   ]
  },
  {
   "id": "happy",
   "title": "Happy",
-  "tags": []
+  "tags": [
+   "Content",
+   "Face",
+   "Joy",
+   "Laugh",
+   "Smile",
+   "dhis2:happy"
+  ]
  },
  {
   "id": "i_certificate_paper",
@@ -642,23 +759,24 @@
   "id": "high_bars",
   "title": "High Bars",
   "tags": [
-   "connection",
-   "dhis2:high_bars",
-   "fast",
-   "network",
-   "phone",
-   "speed"
+   "Connection",
+   "Fast",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:high_bars"
   ]
  },
  {
   "id": "medium_bars",
   "title": "Medium Bars",
   "tags": [
-   "connection",
-   "dhis2:medium_bars",
-   "network",
-   "phone",
-   "speed"
+   "Connection",
+   "Medium",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:medium_bars"
   ]
  },
  {
@@ -695,18 +813,19 @@
   "id": "low_bars",
   "title": "Low Bars",
   "tags": [
-   "connection",
-   "dhis2:low_bars",
-   "network",
-   "phone",
-   "slow",
-   "speed"
+   "Connection",
+   "Network",
+   "Phone",
+   "Slow",
+   "Speed",
+   "dhis2:low_bars"
   ]
  },
  {
   "id": "medium_level",
   "title": "Medium Level",
   "tags": [
+   "Gauge",
    "Half",
    "Measure",
    "Meter",
@@ -721,6 +840,7 @@
   "tags": [
    "Fast",
    "Full",
+   "Gauge",
    "Measure",
    "Meter",
    "Speedometer",
@@ -732,6 +852,7 @@
   "title": "Low Level",
   "tags": [
    "Empty",
+   "Gauge",
    "Measure",
    "Meter",
    "Slow",
@@ -741,31 +862,39 @@
  },
  {
   "id": "ok",
-  "title": "Ok",
-  "tags": []
+  "title": "Smile",
+  "tags": [
+   "Face",
+   "Happy",
+   "OK",
+   "Okay",
+   "Smile",
+   "dhis2:ok"
+  ]
  },
  {
   "id": "network_4g",
   "title": "4G",
   "tags": [
-   "bandwidth",
-   "connection",
-   "dhis2:4g",
-   "network",
-   "phone",
-   "speed"
+   "Bandwidth",
+   "Connection",
+   "LTE",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:4g"
   ]
  },
  {
   "id": "network_5g",
   "title": "5G",
   "tags": [
-   "bandwidth",
-   "connection",
-   "dhis2:5g",
-   "network",
-   "phone",
-   "speed"
+   "Bandwidth",
+   "Connection",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:5g"
   ]
  },
  {
@@ -809,12 +938,12 @@
  },
  {
   "id": "positive",
-  "title": "Positive",
+  "title": "Plus",
   "tags": [
    "Add",
    "Circle",
    "Create",
-   "Plus",
+   "Positive",
    "dhis2:positive"
   ]
  },
@@ -857,8 +986,13 @@
  },
  {
   "id": "baby_female_0306m",
-  "title": "Baby Female 0306 M",
-  "tags": []
+  "title": "Baby Girl",
+  "tags": [
+   "Crawl",
+   "Diaper",
+   "Female",
+   "dhis2:baby_female"
+  ]
  },
  {
   "id": "blister_pills_oval_x1",
@@ -952,10 +1086,13 @@
   "id": "city",
   "title": "City",
   "tags": [
-   "dhis2:city",
-   "metro",
-   "metropolis",
-   "urban"
+   "Buildings",
+   "Downtown",
+   "Highrise",
+   "Metro",
+   "Metropolis",
+   "Urban",
+   "dhis2:city"
   ]
  },
  {
@@ -992,15 +1129,7 @@
  {
   "id": "negative",
   "title": "Negative",
-  "tags": [
-   "Circle",
-   "Delete",
-   "Minus",
-   "No Entry",
-   "Remove",
-   "Subtract",
-   "dhis2:negative"
-  ]
+  "tags": []
  },
  {
   "id": "i_exam_multiple_choice",
@@ -1025,12 +1154,23 @@
  {
   "id": "market_stall",
   "title": "Market Stall",
-  "tags": []
+  "tags": [
+   "Awning",
+   "Shack",
+   "Shop",
+   "Stall",
+   "dhis2:market_stall"
+  ]
  },
  {
   "id": "hospital",
   "title": "Hospital",
-  "tags": []
+  "tags": [
+   "Clinic",
+   "Large Hospital",
+   "Urban Hospital",
+   "dhis2:hospital"
+  ]
  },
  {
   "id": "diarrhea",
@@ -1075,7 +1215,13 @@
  {
   "id": "fetus",
   "title": "Fetus",
-  "tags": []
+  "tags": [
+   "Baby",
+   "Placenta",
+   "Prenatal",
+   "Umbilical Cord",
+   "dhis2:fetus"
+  ]
  },
  {
   "id": "pregnant_32w",
@@ -1119,13 +1265,13 @@
  },
  {
   "id": "question_circle",
-  "title": "Question",
+  "title": "Question Circle",
   "tags": [
    "Alert",
    "Ask",
    "FAQ",
    "Help",
-   "Question Cirlce",
+   "Question",
    "dhis2:question_circle"
   ]
  },
@@ -1144,8 +1290,10 @@
   "id": "home",
   "title": "Home",
   "tags": [
-   "dhis2:home",
-   "house"
+   "Door",
+   "House",
+   "Roof",
+   "dhis2:home"
   ]
  },
  {
@@ -1161,7 +1309,13 @@
  {
   "id": "person",
   "title": "Person",
-  "tags": []
+  "tags": [
+   "Adult",
+   "Man",
+   "Parent",
+   "Woman",
+   "dhis2:person"
+  ]
  },
  {
   "id": "triangle_small",
@@ -1180,8 +1334,17 @@
  },
  {
   "id": "chills_fever",
-  "title": "Chills Fever",
-  "tags": []
+  "title": "Fever",
+  "tags": [
+   "Chills",
+   "Cold",
+   "Hot",
+   "Person",
+   "Shaking",
+   "Sick",
+   "Temperature",
+   "dhis2:chills_fever"
+  ]
  },
  {
   "id": "construction",
@@ -1200,8 +1363,13 @@
  },
  {
   "id": "rural_post",
-  "title": "Rural Post",
-  "tags": []
+  "title": "Rural Clinic",
+  "tags": [
+   "Hospital",
+   "Rural Post",
+   "Small Hospital",
+   "dhis2:rural_post"
+  ]
  },
  {
   "id": "malaria_negative_microscope",
@@ -1261,20 +1429,20 @@
   "id": "palm_branches_roof",
   "title": "Home with Roof Made of Palm Branches",
   "tags": [
-   "building",
-   "dhis2:palm_branches_roof",
-   "house",
-   "hut"
+   "Building",
+   "House",
+   "Hut",
+   "dhis2:palm_branches_roof"
   ]
  },
  {
   "id": "proper_roof",
   "title": "Home with Proper Roof",
   "tags": [
-   "building",
-   "dhis2:proper_roof",
-   "house",
-   "hut"
+   "Building",
+   "House",
+   "Hut",
+   "dhis2:proper_roof"
   ]
  },
  {
@@ -1309,8 +1477,14 @@
  },
  {
   "id": "emergency_post",
-  "title": "Emergency Post",
-  "tags": []
+  "title": "Field Hospital",
+  "tags": [
+   "Cross",
+   "Emergency Post",
+   "Tent",
+   "War Hospital",
+   "dhis2:emergency_post"
+  ]
  },
  {
   "id": "stop",
@@ -1425,7 +1599,12 @@
  {
   "id": "people",
   "title": "People",
-  "tags": []
+  "tags": [
+   "Parent",
+   "Person",
+   "Two People",
+   "dhis2:people"
+  ]
  },
  {
   "id": "truck_driver",
@@ -1555,11 +1734,6 @@
  {
   "id": "rdt_result_negative",
   "title": "Rdt Result Negative",
-  "tags": []
- },
- {
-  "id": "megaphone",
-  "title": "Megaphone",
   "tags": []
  },
  {
@@ -1698,6 +1872,11 @@
   "tags": []
  },
  {
+  "id": "stock_out",
+  "title": "Stock Out",
+  "tags": []
+ },
+ {
   "id": "baby_male_0203m",
   "title": "Baby Male 0203 M",
   "tags": []
@@ -1774,8 +1953,108 @@
   "tags": []
  },
  {
-  "id": "stock_out",
-  "title": "Stock Out",
+  "id": "ppe_gown",
+  "title": "Ppe Gown",
+  "tags": []
+ },
+ {
+  "id": "ppe_gloves",
+  "title": "Ppe Gloves",
+  "tags": []
+ },
+ {
+  "id": "ppe_mask_n95",
+  "title": "Ppe Mask N 95",
+  "tags": []
+ },
+ {
+  "id": "ppe_gown",
+  "title": "Ppe Gown",
+  "tags": []
+ },
+ {
+  "id": "ppe_face_mask",
+  "title": "Ppe Face Mask",
+  "tags": []
+ },
+ {
+  "id": "award_trophy",
+  "title": "Award Trophy",
+  "tags": []
+ },
+ {
+  "id": "award_ribbon",
+  "title": "Award Ribbon",
+  "tags": []
+ },
+ {
+  "id": "geo_location",
+  "title": "Geo Location",
+  "tags": []
+ },
+ {
+  "id": "death",
+  "title": "Death",
+  "tags": []
+ },
+ {
+  "id": "death_alt",
+  "title": "Death Alt",
+  "tags": []
+ },
+ {
+  "id": "death_alt2",
+  "title": "Death Alt 2",
+  "tags": []
+ },
+ {
+  "id": "child_cognition",
+  "title": "Child Cognition",
+  "tags": []
+ },
+ {
+  "id": "outbreak",
+  "title": "Outbreak",
+  "tags": []
+ },
+ {
+  "id": "nutrition",
+  "title": "Nutrition",
+  "tags": []
+ },
+ {
+  "id": "diabetes",
+  "title": "Diabetes",
+  "tags": []
+ },
+ {
+  "id": "diabetes_measure",
+  "title": "Diabetes Measure",
+  "tags": []
+ },
+ {
+  "id": "pneumonia",
+  "title": "Pneumonia",
+  "tags": []
+ },
+ {
+  "id": "thermometer",
+  "title": "Thermometer",
+  "tags": []
+ },
+ {
+  "id": "mobile",
+  "title": "Mobile",
+  "tags": []
+ },
+ {
+  "id": "lungs",
+  "title": "Lungs",
+  "tags": []
+ },
+ {
+  "id": "kidneys",
+  "title": "Kidneys",
   "tags": []
  }
 ]
