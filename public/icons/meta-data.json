@@ -249,8 +249,9 @@
   "title": "Blood Type RH-",
   "tags": [
    "Blood",
+   "Hematology",
    "Negative",
-   "RH Hematology",
+   "RH",
    "dhis2:blood_rh_n"
   ]
  },
@@ -725,10 +726,11 @@
   "id": "miner_worker",
   "title": "Miner",
   "tags": [
-   "dhis2:miner_worker",
-   "industry",
-   "miner",
-   "worker"
+   "Helmet",
+   "Industry",
+   "Miner",
+   "Worker",
+   "dhis2:miner_worker"
   ]
  },
  {
@@ -2169,11 +2171,11 @@
   "title": "HIV Self Test",
   "tags": [
    "AIDS",
+   "Blood",
+   "Diagnostic",
    "HIV",
-   "blood",
-   "dhis2:hiv_self_test",
-   "diagnostic",
-   "hand"
+   "Hand",
+   "dhis2:hiv_self_test"
   ]
  },
  {
@@ -2784,11 +2786,11 @@
   "id": "boy_0105y",
   "title": "Boy 1-5 Years",
   "tags": [
-   "boy",
-   "child",
-   "dhis2:boy_0105y",
-   "male",
-   "toddler"
+   "Boy",
+   "Child",
+   "Male",
+   "Toddler",
+   "dhis2:boy_0105y"
   ]
  },
  {
@@ -2836,48 +2838,50 @@
   "id": "girl_0105y",
   "title": "Girl 1-5 Years",
   "tags": [
-   "child",
-   "dhis2:girl_0105y",
-   "female",
-   "girl",
-   "toddler"
+   "Child",
+   "Female",
+   "Girl",
+   "Toddler",
+   "dhis2:girl_0105y"
   ]
  },
  {
   "id": "girl_1015y",
   "title": "Girl 10-15 Years",
   "tags": [
-   "child",
-   "dhis2:girl_1015y",
-   "female",
-   "girl",
-   "teen"
+   "Child",
+   "Female",
+   "Girl",
+   "Teen",
+   "dhis2:girl_1015y"
   ]
  },
  {
   "id": "lactation",
   "title": "Nursing Mother",
   "tags": [
+   "Baby",
+   "Breast",
+   "Lactation",
+   "Milk",
+   "Mother",
+   "Nursing",
    "Postnatal",
-   "dhis2:lactation",
-   "lactation",
-   "milk",
-   "mother",
-   "nursing",
-   "pregnant"
+   "Pregnant",
+   "dhis2:lactation"
   ]
  },
  {
   "id": "rmnh",
   "title": "Reproductive Maternal and Newborn Health",
   "tags": [
+   "Antenatal",
+   "Baby",
+   "Child",
+   "Mother",
    "Postnatal",
-   "antenatal",
-   "baby",
-   "child",
-   "dhis2:rmnh",
-   "mother",
-   "rmnh"
+   "RMNH",
+   "dhis2:rmnh"
   ]
  },
  {
@@ -3130,11 +3134,12 @@
   "id": "plantation_worker",
   "title": "Plantation Worker",
   "tags": [
-   "agriculture",
-   "dhis2:plantation_worker",
-   "farmer",
-   "plantation",
-   "worker"
+   "Agriculture",
+   "Farmer",
+   "Pitchfork",
+   "Plantation",
+   "Worker",
+   "dhis2:plantation_worker"
   ]
  },
  {
@@ -3299,8 +3304,9 @@
   "title": "Trophy",
   "tags": [
    "Prize",
-   "Success   dhis2:award_trophy",
-   "Trophy"
+   "Success",
+   "Trophy",
+   "dhis2:award_trophy"
   ]
  },
  {
