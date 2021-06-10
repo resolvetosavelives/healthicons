@@ -49,12 +49,13 @@
   "id": "agriculture",
   "title": "Agriculture",
   "tags": [
-   "dhis2:agriculture",
-   "environment",
-   "hands",
-   "leaf",
-   "plant",
-   "seed"
+   "Ecology",
+   "Environment",
+   "Hands",
+   "Leaf",
+   "Plant",
+   "Seed",
+   "dhis2:agriculture"
   ]
  },
  {
@@ -266,26 +267,41 @@
  {
   "id": "calendar",
   "title": "Calendar",
-  "tags": []
+  "tags": [
+   "Appointment",
+   "Cal",
+   "Event",
+   "dhis2:calendar"
+  ]
  },
  {
   "id": "cardiogram_e",
-  "title": "Cardiogram E",
-  "tags": []
+  "title": "Cardiogram Edit",
+  "tags": [
+   "Cardiology",
+   "Heart",
+   "Heartbeat",
+   "dhis2:cardiogram_e"
+  ]
  },
  {
   "id": "cardiogram",
   "title": "Cardiogram",
-  "tags": []
+  "tags": [
+   "Cardiology",
+   "Heart",
+   "Heartbeat",
+   "dhis2:cardiogram"
+  ]
  },
  {
   "id": "child_care",
   "title": "Child care",
   "tags": [
-   "baby",
-   "childcare",
-   "dhis2:child_care",
-   "parent"
+   "Baby",
+   "Childcare",
+   "Parent",
+   "dhis2:child_care"
   ]
  },
  {
@@ -305,11 +321,11 @@
   "id": "city_worker",
   "title": "Business Person",
   "tags": [
-   "business",
-   "dhis2:city_worker",
-   "official",
-   "suit",
-   "worker"
+   "Business",
+   "Official",
+   "Suit",
+   "Worker",
+   "dhis2:city_worker"
   ]
  },
  {
@@ -326,13 +342,27 @@
  },
  {
   "id": "clinical_f",
-  "title": "Clinical F",
-  "tags": []
+  "title": "Clinical Document",
+  "tags": [
+   "Clinical Note",
+   "Doctor Note",
+   "Document",
+   "Note",
+   "Paper",
+   "dhis2:clinical_f"
+  ]
  },
  {
   "id": "clinical_fe",
-  "title": "Clinical Fe",
-  "tags": []
+  "title": "Clinical Record",
+  "tags": [
+   "Clinical Note",
+   "Doctor Note",
+   "Document",
+   "Note",
+   "Paper",
+   "dhis2:clinical_fe"
+  ]
  },
  {
   "id": "cold_chain",
@@ -382,8 +412,13 @@
  },
  {
   "id": "contraceptive_voucher",
-  "title": "Contraceptive Voucher",
-  "tags": []
+  "title": "Contraceptive",
+  "tags": [
+   "Condom",
+   "Contraception",
+   "Sperm",
+   "dhis2:contraceptive_voucher"
+  ]
  },
  {
   "id": "copper_iud",
@@ -400,13 +435,13 @@
   "id": "coughing",
   "title": "Coughing",
   "tags": [
+   "Aerosol",
+   "Cough",
+   "Expectorate",
+   "Mouth",
+   "Sneeze",
    "Symptom",
-   "aerosol",
-   "cough",
-   "dhis2:coughing",
-   "expectorate",
-   "mouth",
-   "sneeze"
+   "dhis2:coughing"
   ]
  },
  {
@@ -422,8 +457,13 @@
  },
  {
   "id": "default",
-  "title": "Default",
-  "tags": []
+  "title": "Document Edit",
+  "tags": [
+   "Document",
+   "Paper",
+   "Test",
+   "dhis2:default"
+  ]
  },
  {
   "id": "female_condom",
@@ -439,13 +479,13 @@
   "id": "forum",
   "title": "Chat",
   "tags": [
-   "chat",
-   "dhis2:forum",
-   "discussion",
-   "forum",
-   "meeting",
-   "people",
-   "speech"
+   "Chat",
+   "Discussion",
+   "Forum",
+   "Meeting",
+   "People",
+   "Speech",
+   "dhis2:forum"
   ]
  },
  {
@@ -462,55 +502,63 @@
   "id": "group_discussion_meeting",
   "title": "Discussion",
   "tags": [
-   "chat",
-   "dhis2:discussion_meeting",
-   "discussion",
-   "forum",
-   "meeting",
-   "people",
-   "speech"
+   "Chat",
+   "Discussion",
+   "Forum",
+   "Meeting",
+   "People",
+   "Speech",
+   "dhis2:discussion_meeting"
   ]
  },
  {
   "id": "group_discussion_meetingx3",
   "title": "Group Discussion",
   "tags": [
-   "chat",
-   "dhis2:group_discussion_meetingx3",
-   "discussion",
-   "forum",
-   "meeting",
-   "people",
-   "speech"
+   "Chat",
+   "Discussion",
+   "Forum",
+   "Meeting",
+   "People",
+   "Speech",
+   "dhis2:group_discussion_meetingx3"
   ]
  },
  {
   "id": "headache",
   "title": "Headache",
   "tags": [
-   "headache",
-   "illness",
-   "person",
-   "sick",
-   "symptom dhis2:headache"
+   "Headache",
+   "Illness",
+   "Person",
+   "Sick",
+   "Symptom dhis2:headache"
   ]
  },
  {
   "id": "sweating",
   "title": "Sweating",
   "tags": [
-   "fever",
-   "illness",
-   "person",
-   "sick",
-   "symptom dhis2:sweating",
-   "temperature"
+   "Fever",
+   "Illness",
+   "Person",
+   "Sick",
+   "Symptom dhis2:sweating",
+   "Temperature"
   ]
  },
  {
   "id": "health_worker_form",
   "title": "Health Worker Form",
-  "tags": []
+  "tags": [
+   "Doctor",
+   "Document",
+   "Nurse",
+   "Paper",
+   "Patient",
+   "Test",
+   "dhis2:health_worker_form"
+  ]
  },
  {
   "id": "heart_cardiogram",
@@ -770,15 +818,15 @@
   "id": "sti",
   "title": "Sexually Transmitted Infection",
   "tags": [
+   "Disease",
+   "Illness",
+   "Person",
    "STD",
    "STI",
-   "disease",
-   "illness",
-   "person",
-   "sex",
-   "sexual",
-   "sick",
-   "symptom dhis2:sti"
+   "Sex",
+   "Sexual",
+   "Sick",
+   "Symptom dhis2:sti"
   ]
  },
  {
@@ -902,7 +950,13 @@
  {
   "id": "doctor",
   "title": "Doctor",
-  "tags": []
+  "tags": [
+   "Healthcare Worker",
+   "Medical Officer",
+   "Stethoscope",
+   "Worker",
+   "dhis2:doctor"
+  ]
  },
  {
   "id": "domestic_worker",
@@ -1045,18 +1099,33 @@
  },
  {
   "id": "i_certificate_paper",
-  "title": "I Certificate Paper",
-  "tags": []
+  "title": "Certificate",
+  "tags": [
+   "Document",
+   "Paper",
+   "Test",
+   "dhis2:i_certificate"
+  ]
  },
  {
   "id": "i_documents_accepted",
-  "title": "I Documents Accepted",
-  "tags": []
+  "title": "Approved Document",
+  "tags": [
+   "Document",
+   "Paper",
+   "Test",
+   "dhis2:i_documents_accepted"
+  ]
  },
  {
   "id": "i_documents_denied",
-  "title": "I Documents Denied",
-  "tags": []
+  "title": "Denied Document",
+  "tags": [
+   "Document",
+   "Paper",
+   "Test",
+   "dhis2:i_documents_denied"
+  ]
  },
  {
   "id": "hot_meal",
@@ -1069,8 +1138,14 @@
  },
  {
   "id": "i_exam_qualification",
-  "title": "I Exam Qualification",
-  "tags": []
+  "title": "Exam",
+  "tags": [
+   "A",
+   "Class",
+   "Mark",
+   "Test",
+   "dhis2:I_exam_qualification"
+  ]
  },
  {
   "id": "implant",
@@ -1594,6 +1669,17 @@
   ]
  },
  {
+  "id": "microscope",
+  "title": "Microscope",
+  "tags": [
+   "Diagnostic",
+   "Lab",
+   "Magnify",
+   "Microscope",
+   "dhis2:microscope"
+  ]
+ },
+ {
   "id": "sexual_reproductive_health",
   "title": "Sexual Reproductive Health",
   "tags": []
@@ -1639,8 +1725,13 @@
  },
  {
   "id": "i_note_action",
-  "title": "I Note Action",
-  "tags": []
+  "title": "Notes",
+  "tags": [
+   "Class",
+   "Paper",
+   "Test",
+   "dhis2:i_note_action"
+  ]
  },
  {
   "id": "yes",
@@ -1660,13 +1751,26 @@
  },
  {
   "id": "i_exam_multiple_choice",
-  "title": "I Exam Multiple Choice",
-  "tags": []
+  "title": "Exam Multiple-Choice",
+  "tags": [
+   "Document",
+   "Exam",
+   "Note",
+   "Paper",
+   "Test",
+   "dhis2:i_exam_multiple_choice"
+  ]
  },
  {
   "id": "i_schedule_school_date_time",
-  "title": "I Schedule School Date Time",
-  "tags": []
+  "title": "Calendar Schedule",
+  "tags": [
+   "Appointment",
+   "Cal",
+   "Event",
+   "Time",
+   "dhis2:i_schedule_school_date_time"
+  ]
  },
  {
   "id": "weight",
@@ -1808,9 +1912,10 @@
   "id": "fetus",
   "title": "Fetus",
   "tags": [
+   "ANC",
+   "Antenatal",
    "Baby",
    "Placenta",
-   "Prenatal",
    "Umbilical Cord",
    "dhis2:fetus"
   ]
@@ -1820,11 +1925,11 @@
   "title": "32 Weeks Pregnant",
   "tags": [
    "ANC",
+   "Antenatal",
    "Mother",
    "Person",
    "Pregnancy",
    "Woman",
-   "antenatal",
    "dhis2:pregnant_32w"
   ]
  },
@@ -1833,11 +1938,11 @@
   "title": "8-12 Weeks Pregnant",
   "tags": [
    "ANC",
+   "Antenatal",
    "Mother",
    "Person",
    "Pregnancy",
    "Woman",
-   "antenatal",
    "dhis2:pregnant_0812w"
   ]
  },
@@ -1846,11 +1951,11 @@
   "title": "24-26 Weeks Pregnant",
   "tags": [
    "ANC",
+   "Antenatal",
    "Mother",
    "Person",
    "Pregnancy",
    "Woman",
-   "antenatal",
    "dhis2:pregnant_2426w"
   ]
  },
@@ -1859,11 +1964,11 @@
   "title": "36-38 Weeks Pregnant",
   "tags": [
    "ANC",
+   "Antenatal",
    "Mother",
    "Person",
    "Pregnancy",
    "Woman",
-   "antenatal",
    "dhis2:pregnant_3638w"
   ]
  },
@@ -1953,12 +2058,12 @@
   "title": "Person",
   "tags": [
    "Adult",
+   "Avatar",
    "Man",
    "Parent",
+   "User",
    "Woman",
-   "avatar",
-   "dhis2:person",
-   "user"
+   "dhis2:person"
   ]
  },
  {
@@ -2192,8 +2297,15 @@
  },
  {
   "id": "eco_care",
-  "title": "Eco Care",
-  "tags": []
+  "title": "Ecology",
+  "tags": [
+   "Earth",
+   "Environment",
+   "Environmentalism",
+   "Heart",
+   "Plant",
+   "dhis2:eco_care"
+  ]
  },
  {
   "id": "emergency_post",
@@ -2343,7 +2455,12 @@
  {
   "id": "cervical_cancer",
   "title": "Cervical Cancer",
-  "tags": []
+  "tags": [
+   "Cancer",
+   "Cervix",
+   "Woman",
+   "dhis2:cervical_cancer"
+  ]
  },
  {
   "id": "female_sex_worker",
@@ -2371,18 +2488,25 @@
  {
   "id": "cholera",
   "title": "Cholera",
-  "tags": []
+  "tags": [
+   "Disease",
+   "Tap",
+   "Water",
+   "Water Borne Disease",
+   "dhis2:cholera"
+  ]
  },
  {
   "id": "people",
   "title": "People",
   "tags": [
+   "Avatars",
+   "Group",
    "Parent",
    "Person",
    "Two People",
-   "dhis2:people",
-   "group",
-   "users"
+   "Users",
+   "dhis2:people"
   ]
  },
  {
@@ -2958,13 +3082,20 @@
    "Admission",
    "Entrance",
    "Hospital",
+   "Transfer",
    "dhis2:referral"
   ]
  },
  {
   "id": "provider_fst",
-  "title": "Provider Fst",
-  "tags": []
+  "title": "Referral Alt",
+  "tags": [
+   "Admission",
+   "Connect",
+   "Hospital",
+   "Transfer",
+   "dhis2:provider_fst"
+  ]
  },
  {
   "id": "rdt_result_out_stock",
@@ -3100,8 +3231,11 @@
  },
  {
   "id": "insecticide_resistance",
-  "title": "Insecticide Resistance",
-  "tags": []
+  "title": "Insecticide Resistant",
+  "tags": [
+   "Mosquito",
+   "dhis2:insecticide_resistance"
+  ]
  },
  {
   "id": "mosquito_collection",
@@ -3195,17 +3329,34 @@
  {
   "id": "death",
   "title": "Death",
-  "tags": []
+  "tags": [
+   "Casket",
+   "Dead",
+   "Death",
+   "Died",
+   "Skull"
+  ]
  },
  {
   "id": "death_alt",
   "title": "Death Alt",
-  "tags": []
+  "tags": [
+   "Casket",
+   "Dead",
+   "Death",
+   "Died",
+   "Skull"
+  ]
  },
  {
   "id": "death_alt2",
   "title": "Death Alt 2",
-  "tags": []
+  "tags": [
+   "Casket",
+   "Dead",
+   "Death",
+   "Died"
+  ]
  },
  {
   "id": "child_cognition",
@@ -3224,12 +3375,27 @@
  {
   "id": "outbreak",
   "title": "Outbreak",
-  "tags": []
+  "tags": [
+   "Disease",
+   "Infectious",
+   "Outbreak",
+   "Toxic",
+   "dhis2:outbreak"
+  ]
  },
  {
   "id": "nutrition",
   "title": "Nutrition",
-  "tags": []
+  "tags": [
+   "Apple",
+   "Carrot",
+   "Diet",
+   "Food",
+   "Fruit",
+   "Healthy",
+   "Vegetables",
+   "dhis2:nutrition"
+  ]
  },
  {
   "id": "diabetes",
@@ -3246,17 +3412,23 @@
  {
   "id": "diabetes_measure",
   "title": "Diabetes Measure",
-  "tags": []
+  "tags": [
+   "Blood Sugar",
+   "DM",
+   "Diabetes",
+   "Strip",
+   "dhis2:diabetes_measure"
+  ]
  },
  {
   "id": "pneumonia",
   "title": "Pneumonia",
   "tags": [
-   "dhis2:pneumonia",
-   "lung",
-   "lungs",
-   "organ",
-   "pneumonia"
+   "Lung",
+   "Lungs",
+   "Organ",
+   "Pneumonia",
+   "dhis2:pneumonia"
   ]
  },
  {
