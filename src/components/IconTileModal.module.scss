@@ -4,10 +4,16 @@
   top: 5%;
   left: 5%;
   position: fixed;
-  padding: 4rem 2rem 4rem 2rem;
   border-radius: 5px;
   box-shadow: 0 0 0 10px var(--link-decoration-color);
   border: 1px solid var(--link-color);
+}
+
+.modalWrapper {
+  overflow: scroll;
+  position: relative;
+  max-height: 550px;
+  padding: 4rem 2rem;
 }
 
 .modalClose {
@@ -93,12 +99,19 @@
 }
 
 @media (min-width: 48rem) {
+  .modalWrapper {
+    max-height: none;
+  }
+
   .modalContainer {
     background: white;
     width: 60%;
-    top: 30%;
+    top: 16%;
     left: 20%;
-    padding: 4rem 2rem 4rem 180px;
+  }
+
+  .modalWrapper {
+    padding-left: 180px;
   }
 
   .modalImage {
