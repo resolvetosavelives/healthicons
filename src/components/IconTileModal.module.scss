@@ -71,6 +71,17 @@
   margin: 0 0 2rem 0;
 }
 
+.modalLicense {
+  img {
+    float: right;
+    margin: 0 1rem;
+  }
+}
+
+.modalTags {
+  margin: 0 0 2rem 0;
+}
+
 .modalTags span {
   background: var(--link-decoration-color);
   color: var(--link-color);

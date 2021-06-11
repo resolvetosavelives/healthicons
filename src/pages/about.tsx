@@ -213,7 +213,35 @@ export default function About() {
               <img src="/ui/code.svg" width="32" height="32" alt="" />
             </div>
 
-            <h2 id="license">License</h2>
+            <h2 id="license">Icons license</h2>
+            <div className={styles.codeBlock}>
+              <p>CC0 License</p>
+              <p>
+                To the extent possible under law,
+                <a rel="dct:publisher" href="https://healthicons.org">
+                  <span property="dct:title"> Health Icons </span>
+                </a>
+                has waived all copyright and related or neighboring rights to
+                icons available at
+                <span property="dct:title"> Health Icons</span>.
+                <br />
+                <a
+                  rel="license"
+                  href="http://creativecommons.org/publicdomain/zero/1.0/"
+                >
+                  <img
+                    className={styles.aboutLicense}
+                    src="http://i.creativecommons.org/p/zero/1.0/88x31.png"
+                    alt="CC0"
+                  />
+                </a>
+              </p>
+            </div>
+            <h2 id="weblicense">Website license</h2>
+            <p>
+              The code for this website is available for anyone to use for any
+              type of project.
+            </p>
             <div className={styles.codeBlock}>
               <p>MIT License</p>
 
