@@ -36,6 +36,28 @@ Join our open Slack channel by emailing [contact@healthicons.org](mailto:contact
 
 Browse the [Figma](https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3) and contribute icons in the "New icons" section. Please read the code of conduct ([below](https://github.com/resolvetosavelives/healthicons#code-of-conduct)) and the styleguide (in the Figma) carefully before contributing.
 
+## Icon Guidelines
+
+### Icon Title and Tags in Figma
+
+Each icon should have a title and tags which are added in the “Description” field in Figma. The format is:
+`{title} [{tag1}, {tag2}, {tag3}…, dhis2:{tag}]`
+
+**Some examples:**
+
+`donkey` icon:  
+`Donkey [Animal, Ass, Farm, Mule, dhis2:donkey]`
+
+`blood_rh_p` icon:  
+`Blood Type RH+ [Blood, RH Positive, dhis2:blood_rh_p]`
+
+**More details:**
+
+- The “Description” only needs to go on the “filled” version of the icon in Figma
+- Icon titles should be in [Title Case](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case) with each word capitalized
+- Tags are essentially synonyms or important related words that would help someone find the icon. They could also be alternative uses of the icon, the way a donkey could represent “farm”. If someone searches “blood” or “positive” they’ll see any icons that are tagged with those words. Tags should also be Title Case.
+- The `dhis2:` formatted tag is a special tag reserved for icons that are in the [DHIS2 icon set](https://github.com/dhis2/dhis2-icons). This tag should exactly match whatever DHIS2 names this icon.
+
 ## Code of Conduct
 
 In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
