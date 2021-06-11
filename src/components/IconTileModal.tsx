@@ -67,6 +67,24 @@ export function IconTileModal(props: IconTileModalProps) {
           </>
         )}
       </>
+      <div className={styles.modalLabel}>License</div>
+      <p className={styles.modalLicense}>
+        <a
+          rel="license"
+          href="http://creativecommons.org/publicdomain/zero/1.0/"
+        >
+          <img
+            src="http://i.creativecommons.org/p/zero/1.0/88x31.png"
+            alt="CC0"
+          />
+        </a>
+        To the extent possible under law,
+        <a rel="dct:publisher" href="https://healthicons.org">
+          <span property="dct:title"> Health Icons </span>
+        </a>
+        has waived all copyright and related or neighboring rights to available
+        icons.
+      </p>
     </ReactModal>
   );
 }
