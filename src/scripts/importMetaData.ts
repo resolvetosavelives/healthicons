@@ -14,7 +14,7 @@ const figmaPersonalAccessToken = config.figma.personalAccessToken;
 const figmaFilename = config.figma.filename;
 
 const client = Figma.Client({ personalAccessToken: figmaPersonalAccessToken });
-const filenameRegex = /([^//]*)_positive$/;
+const filenameRegex = /([^//]*)\/([^//]*)\/(.*)_(.*)$/;
 const metadataRegex = /([^/[]*) \[(.*)\]$/;
 
 const ICONS_PATH = path.join(process.cwd(), 'public', 'icons');
@@ -43,24 +43,38 @@ client.file(figmaFilename).then(({ data }) => {
   data.document.children.map((child) => {
     if (child.type === 'CANVAS' && child.name === 'export') {
       child.children.map((component) => {
-        if (
-          component.type === 'COMPONENT' &&
-          component.name.match(/^filled\//)
-        ) {
-          const idMatch = component.name.match(filenameRegex);
-          if (idMatch) {
+        if (component.type === 'COMPONENT' && component.name) {
+          const matches = component.name.match(filenameRegex);
+          if (!matches) {
+            console.log(`Incorrect id: ${component.name}`);
+            return component;
+          }
+
+          const [, style, category, name, suffix] = matches;
+
+          // validate component names
+          if (
+            (style === 'filled' && suffix !== 'positive') ||
+            (style === 'outline' && suffix !== 'outline') ||
+            (style === 'negative' && suffix !== 'negative')
+          ) {
+            console.log(`Incorrect id: ${component.name}`);
+            return component;
+          }
+
+          if (style === 'filled') {
             const metaData = getMetadataFromDescription(
-              idMatch[1],
+              name,
               data.components[component.id].description
             );
 
             metaDataArray.push({
-              id: idMatch[1],
-              title: metaData.title,
-              tags: metaData.tags
+              id: name,
+              category,
+              path: `${category}/${name}`,
+              tags: metaData.tags,
+              title: metaData.title
             });
-          } else {
-            console.log(`Incorrect id: ${component.name}`);
           }
         }
 
