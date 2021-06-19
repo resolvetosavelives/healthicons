@@ -14,7 +14,7 @@ const figmaPersonalAccessToken = config.figma.personalAccessToken;
 const figmaFilename = config.figma.filename;
 
 const client = Figma.Client({ personalAccessToken: figmaPersonalAccessToken });
-const filenameRegex = /([^//]*)\/([^//]*)\/(.*)_(.*)$/;
+const filenameRegex = /([^//]*)\/([^//]*)\/(.*)$/;
 const metadataRegex = /([^/[]*) \[(.*)\]$/;
 
 const ICONS_PATH = path.join(process.cwd(), 'public', 'icons');
@@ -38,10 +38,10 @@ function getMetadataFromDescription(name: string, description: string) {
 client.file(figmaFilename).then(({ data }) => {
   const metaDataArray = [];
 
-  // look for icon components on the page "export"
-  // with names that match the pattern: filled/{category}/{name}_positive
+  // look for icon components on the page "EXPORT"
+  // with names that match the pattern: filled/{category}/{name}
   data.document.children.map((child) => {
-    if (child.type === 'CANVAS' && child.name === 'export') {
+    if (child.type === 'CANVAS' && child.name.trim() === 'EXPORT') {
       child.children.map((component) => {
         if (component.type === 'COMPONENT' && component.name) {
           const matches = component.name.match(filenameRegex);
@@ -50,17 +50,7 @@ client.file(figmaFilename).then(({ data }) => {
             return component;
           }
 
-          const [, style, category, name, suffix] = matches;
-
-          // validate component names
-          if (
-            (style === 'filled' && suffix !== 'positive') ||
-            (style === 'outline' && suffix !== 'outline') ||
-            (style === 'negative' && suffix !== 'negative')
-          ) {
-            console.log(`Incorrect id: ${component.name}`);
-            return component;
-          }
+          const [, style, category, name] = matches;
 
           if (style === 'filled') {
             const metaData = getMetadataFromDescription(
