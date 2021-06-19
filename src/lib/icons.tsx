@@ -44,9 +44,9 @@ async function getIcons(dirName: string): Promise<Icon[]> {
       const currentFileMetaData = metaData.find((m) => m.id === id);
 
       return {
-        title: currentFileMetaData?.title || fileName.replace(/\.[^/.]+$/, ''),
+        title: currentFileMetaData?.title || id,
         tags: currentFileMetaData?.tags || [],
-        fileName: fileName.replace(/\.[^/.]+$/, ''),
+        fileName: id,
         path: dirName
       };
     })
