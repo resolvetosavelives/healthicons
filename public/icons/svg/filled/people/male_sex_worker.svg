@@ -1,0 +1,14 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26 11C26 8.79086 27.7909 7 30 7H34C36.2091 7 38 8.79086 38 11H36C36 9.89543 35.1046 9 34 9H30C28.8954 9 28 9.89543 28 11C28 12.1046 28.8954 13 30 13H34C36.2091 13 38 14.7909 38 17C38 19.2091 36.2091 21 34 21H30C27.7909 21 26 19.2091 26 17H28C28 18.1046 28.8954 19 30 19H34C35.1046 19 36 18.1046 36 17C36 15.8954 35.1046 15 34 15H30C27.7909 15 26 13.2091 26 11Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M31 23L31 5H33L33 23H31Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 36C20 34.3431 21.3431 33 23 33H41C42.6569 33 44 34.3431 44 36V41H20V36ZM23 35C22.4477 35 22 35.4477 22 36V39H42V36C42 35.4477 41.5523 35 41 35H23Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 44L20 40H22V44H20Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M42 44L42 40H44V44H42Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39 33L39 27L41 27L41 33L39 33Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28 33L28 29L30 29L30 33L28 33Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M34 33L34 29L36 29L36 33L34 33Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23 33L23 27L25 27L25 33L23 33Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40 30L24 30L24 28L40 28L40 30Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11 13C13.2091 13 15 11.2091 15 9C15 6.79086 13.2091 5 11 5C8.79086 5 7 6.79086 7 9C7 11.2091 8.79086 13 11 13Z" fill="#333333"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.00003 28H6.45906C4.63341 28 3.23103 26.383 3.48921 24.5757L4.63207 16.5757C4.8432 15.0978 6.10897 14 7.60192 14H14.3981C15.8911 14 17.1569 15.0978 17.368 16.5757L18.5109 24.5757C18.769 26.383 17.3666 28 15.541 28H15L14.1172 42.1248C14.0514 43.1788 13.1773 44 12.1211 44H9.87893C8.82281 44 7.94871 43.1788 7.88283 42.1248L7.00003 28Z" fill="#333333"/>
+</svg>
