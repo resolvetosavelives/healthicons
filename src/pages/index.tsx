@@ -18,10 +18,9 @@ interface ModalIcon {
 
 interface HomeProps {
   categories: Category[];
-  iconId: string;
 }
 
-export default function Home({ categories, iconId }: HomeProps) {
+export default function Home({ categories }: HomeProps) {
   const router = useRouter();
 
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
@@ -179,8 +178,7 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const categories = await getCategoriesAndIcons();
   return {
     props: {
-      categories,
-      iconId: null
+      categories
     }
   };
 };
