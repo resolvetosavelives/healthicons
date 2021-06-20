@@ -61,8 +61,6 @@ export default function Home({ categories, iconId }: HomeProps) {
 
       if (currentIcon) {
         setModalIcon({ icon: currentIcon, iconType: iconMatch[1] });
-      } else {
-        setModalIcon(undefined);
       }
     } else {
       setModalIcon(undefined);
