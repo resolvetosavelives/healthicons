@@ -1,6 +1,7 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
+import { useRouter } from 'next/router';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
@@ -17,9 +18,12 @@ interface ModalIcon {
 
 interface HomeProps {
   categories: Category[];
+  iconId: string;
 }
 
-export default function Home({ categories }: HomeProps) {
+export default function Home({ categories, iconId }: HomeProps) {
+  const router = useRouter();
+
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
   const [query, setQuery] = useState<string>();
 
@@ -48,33 +52,61 @@ export default function Home({ categories }: HomeProps) {
     return counter + category.icons.length;
   }, 0);
 
+  useEffect(() => {
+    const iconMatch = router.asPath.match(/\/#icon\/(filled|outline)\/(.*)/i);
+    if (iconMatch) {
+      const currentIcon = categories
+        .flatMap((category) => category.icons)
+        .find((icon) => icon.fileName === iconMatch[2]);
+
+      if (currentIcon) {
+        setModalIcon({ icon: currentIcon, iconType: iconMatch[1] });
+      }
+    }
+  }, [router.asPath, categories]);
+
+  const pageTitle = modalIcon
+    ? `Health icons: ${modalIcon.icon.title}`
+    : 'Health icons';
+
+  const ogUrl = modalIcon
+    ? `https://healthicons.org/#icon/${modalIcon.iconType}/${modalIcon.icon.fileName}`
+    : 'https://healthicons.org';
+
+  const ogImagePath = modalIcon
+    ? `icons/png/${modalIcon.iconType}/${modalIcon.icon.path}/${modalIcon.icon.fileName}@2x.png`
+    : 'og_image.png';
+
+  const ogImageWidth = modalIcon ? '96' : '1280';
+  const ogImageHeight = modalIcon ? '96' : '640';
+
   return (
     <div className="container">
       <Head>
-        <title>Health Icons</title>
+        <title>{pageTitle}</title>
         <link rel="icon" href="/favicon.ico" />
 
         <meta property="og:site_name" content="Health icons" />
-        <meta property="og:title" content="Health icons" />
+        <meta property="og:title" content={pageTitle} />
         <meta
           property="og:description"
           content="Free, open source health icons. Use in your next commercial or personal project. Editing is ok. Republishing is ok. No need to give credit."
         />
-        <meta property="og:url" content="http://healthicons.org/" />
+        <meta property="og:url" content={ogUrl} />
         <meta
           property="og:image"
-          content="http://healthicons.org/og_image.png"
+          content={`http://healthicons.org/${ogImagePath}`}
         />
         <meta
           property="og:image:secure_url"
-          content="https://healthicons.org/og_image.png"
+          content={`https://healthicons.org/${ogImagePath}`}
         />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="640" />
+        <meta property="og:image:width" content={ogImageWidth} />
+        <meta property="og:image:height" content={ogImageHeight} />
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
-          content="https://healthicons.org/og_image.png"
+          content={`https://healthicons.org/${ogImagePath}`}
         />
         <meta property="twitter:site" content="@health_icons" />
       </Head>
@@ -111,6 +143,8 @@ export default function Home({ categories }: HomeProps) {
                   visible={!query || iconsToRender.includes(icon)}
                   onClick={(iconType: string) => {
                     setModalIcon({ icon, iconType });
+                    const id = `icon/${iconType}/${icon.fileName}`;
+                    router.push(`/#${id}`);
                   }}
                 />
               ))}
@@ -124,6 +158,7 @@ export default function Home({ categories }: HomeProps) {
             isOpen={modalIcon !== undefined}
             onClose={() => {
               setModalIcon(undefined);
+              router.push('/');
             }}
           />
         )}
@@ -142,7 +177,8 @@ export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const categories = await getCategoriesAndIcons();
   return {
     props: {
-      categories
+      categories,
+      iconId: null
     }
   };
 };
