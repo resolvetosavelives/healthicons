@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
+import classnames from 'classnames';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from '../components/TopBar';
 import { CategoryHeading } from '../components/CategoryHeading';
@@ -22,6 +23,8 @@ interface HomeProps {
 export default function Home({ categories }: HomeProps) {
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
   const [query, setQuery] = useState<string>();
+  const [iconStyle, setIconStyle] =
+    useState<'outline' | 'filled' | 'all'>('all');
 
   const iconsToRender = useMemo(() => {
     const filteredIcons: Icon[] = [];
@@ -97,6 +100,59 @@ export default function Home({ categories }: HomeProps) {
             onChange={(e) => setQuery(e.target.value)}
           />
         </label>
+
+        <div>
+          Icon Styles
+          <button
+            className={classnames(styles.styleToggle, {
+              [styles.styleToggleSelected]: iconStyle === 'all'
+            })}
+            onClick={() => {
+              setIconStyle('all');
+            }}
+          >
+            <img
+              src="/icons/svg/negative/shapes/circle_large.svg"
+              width="20"
+              height="20"
+              alt=""
+            />
+            All
+          </button>
+          <button
+            className={classnames(styles.styleToggle, {
+              [styles.styleToggleSelected]: iconStyle === 'filled'
+            })}
+            onClick={() => {
+              setIconStyle('filled');
+            }}
+          >
+            <img
+              src="/icons/svg/filled/shapes/circle_large.svg"
+              width="20"
+              height="20"
+              alt=""
+            />
+            Filled
+          </button>
+          <button
+            className={classnames(styles.styleToggle, {
+              [styles.styleToggleSelected]: iconStyle === 'outline'
+            })}
+            onClick={() => {
+              setIconStyle('outline');
+            }}
+          >
+            <img
+              src="/icons/svg/outline/shapes/circle_large.svg"
+              width="20"
+              height="20"
+              alt=""
+            />
+            Outline
+          </button>
+        </div>
+
         {categories.map((category, categoryIndex) => (
           <div key={categoryIndex}>
             {(!query ||
@@ -108,6 +164,7 @@ export default function Home({ categories }: HomeProps) {
                 <IconTile
                   key={iconIndex}
                   icon={icon}
+                  iconStyle={iconStyle}
                   visible={!query || iconsToRender.includes(icon)}
                   onClick={(iconType: string) => {
                     setModalIcon({ icon, iconType });
