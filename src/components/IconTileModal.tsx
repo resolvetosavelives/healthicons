@@ -65,6 +65,8 @@ export function IconTileModal(props: IconTileModalProps) {
             </>
           )}
         </>
+        <div className={styles.modalLabel}>Filename</div>
+        <p className={styles.filename}>{props.icon.fileName}</p>
         <div className={styles.modalLabel}>License</div>
         <p className={styles.modalLicense}>
           <a
