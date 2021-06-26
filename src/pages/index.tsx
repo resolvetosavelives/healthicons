@@ -101,8 +101,7 @@ export default function Home({ categories }: HomeProps) {
           />
         </label>
 
-        <div>
-          Icon Styles
+        <div className={styles.styleToggleContainer}>
           <button
             className={classnames(styles.styleToggle, {
               [styles.styleToggleSelected]: iconStyle === 'all'
@@ -112,7 +111,7 @@ export default function Home({ categories }: HomeProps) {
             }}
           >
             <img
-              src="/icons/svg/negative/shapes/circle_large.svg"
+              src="/icons/svg/outline/symbols/yes.svg"
               width="20"
               height="20"
               alt=""
@@ -128,7 +127,7 @@ export default function Home({ categories }: HomeProps) {
             }}
           >
             <img
-              src="/icons/svg/filled/shapes/circle_large.svg"
+              src="/icons/svg/outline/symbols/yes.svg"
               width="20"
               height="20"
               alt=""
@@ -144,7 +143,7 @@ export default function Home({ categories }: HomeProps) {
             }}
           >
             <img
-              src="/icons/svg/outline/shapes/circle_large.svg"
+              src="/icons/svg/outline/symbols/yes.svg"
               width="20"
               height="20"
               alt=""
