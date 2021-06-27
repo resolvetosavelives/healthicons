@@ -82,6 +82,41 @@
   }
 
   .filterBox {
-    margin: 1rem 1rem -2.5rem 1rem;
+    margin: 1rem 1rem -3.5rem 1rem;
+  }
+}
+
+.styleToggleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.styleToggle {
+  background: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  border: 1px solid var(--link-decoration-color);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 7rem;
+  position: relative;
+
+  img {
+    transition: opacity 0.2s;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+}
+
+.styleToggleSelected {
+  border-color: var(--link-color);
+  img {
+    opacity: 1;
   }
 }
