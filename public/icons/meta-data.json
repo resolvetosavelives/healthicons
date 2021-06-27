@@ -133,12 +133,26 @@
   "tags": [
    "4x4",
    "4×4",
+   "Jeep",
    "Off-Road",
    "Sport Utility Vehicle",
    "Truck",
    "dhis2:4x4"
   ],
   "title": "SUV"
+ },
+ {
+  "id": "drone",
+  "category": "vehicles",
+  "path": "vehicles/drone",
+  "tags": [
+   "Aircraft",
+   "Autonomous Flying Vehicle",
+   "Drone",
+   "Flight",
+   "dhis2:drone"
+  ],
+  "title": "Drone"
  },
  {
   "id": "triangle_small",
@@ -392,16 +406,16 @@
   "title": "Hospital"
  },
  {
-  "id": "home",
+  "id": "home_alt",
   "category": "places",
-  "path": "places/home",
+  "path": "places/home_alt",
   "tags": [
    "Door",
    "House",
    "Roof",
    "dhis2:home"
   ],
-  "title": "Home"
+  "title": "Home ALT"
  },
  {
   "id": "forest_persons",
@@ -801,15 +815,25 @@
   "id": "oral_contraception_pillsx28",
   "category": "medications",
   "path": "medications/oral_contraception_pillsx28",
-  "tags": [],
-  "title": "Oral Contraception Pillsx 28"
+  "tags": [
+   "Birth Control Pills",
+   "Contraception",
+   "Female Contraception",
+   "dhis2:oral_contraception_pillsx28"
+  ],
+  "title": "Oral Contraceptive 28"
  },
  {
   "id": "oral_contraception_pillsx21",
   "category": "medications",
   "path": "medications/oral_contraception_pillsx21",
-  "tags": [],
-  "title": "Oral Contraception Pillsx 21"
+  "tags": [
+   "Birth Control Pills",
+   "Contraception",
+   "Female Contraception",
+   "dhis2:oral_contraception_pillsx21"
+  ],
+  "title": "Oral Contraceptive 21"
  },
  {
   "id": "medicines",
@@ -1162,31 +1186,31 @@
    "Testing",
    "dhis2:rdt_result_mixed"
   ],
-  "title": "Rapid Diagnostic Testing Result Mixed"
+  "title": "Rapid Diagnostic Testing Result Mixed Positve"
  },
  {
-  "id": "rdt_result_mixed",
+  "id": "rdt_result_pv_invalid",
   "category": "diagnostics",
-  "path": "diagnostics/rdt_result_mixed",
+  "path": "diagnostics/rdt_result_pv_invalid",
   "tags": [
    "Diagnostic",
    "RDT",
    "Testing",
-   "dhis2:rdt_result_mixed"
+   "dhis2:rdt_result_pv_invalid"
   ],
-  "title": "Rapid Diagnostic Testing Result Mixed"
+  "title": "Rapid Diagnostic Testing Result Invalid"
  },
  {
-  "id": "rdt_result_mixed",
+  "id": "rdt_result_pf",
   "category": "diagnostics",
-  "path": "diagnostics/rdt_result_mixed",
+  "path": "diagnostics/rdt_result_pf",
   "tags": [
    "Diagnostic",
    "RDT",
    "Testing",
-   "dhis2:rdt_result_mixed"
+   "dhis2:rdt_result_pf"
   ],
-  "title": "Rapid Diagnostic Testing Mixed"
+  "title": "Rapid Diagnostic Testing PF"
  },
  {
   "id": "rdt_result_invalid",
@@ -1709,19 +1733,6 @@
    "dhis2:family_planning"
   ],
   "title": "Family Planning"
- },
- {
-  "id": "drone",
-  "category": "devices",
-  "path": "devices/drone",
-  "tags": [
-   "Aircraft",
-   "Autonomous Flying Vehicle",
-   "Drone",
-   "Flight",
-   "dhis2:drone"
-  ],
-  "title": "Drone"
  },
  {
   "id": "discriminating_concentration_bioassays",
@@ -2615,29 +2626,48 @@
   "id": "hospital_symbol",
   "category": "symbols",
   "path": "symbols/hospital_symbol",
-  "tags": [],
+  "tags": [
+   "Building",
+   "Clinic",
+   "H",
+   "Hospital",
+   "Sign",
+   "Symbol"
+  ],
   "title": "Hospital Symbol"
  },
  {
   "id": "hiv_pos",
   "category": "symbols",
   "path": "symbols/hiv_pos",
-  "tags": [],
-  "title": "Hiv Pos"
+  "tags": [
+   "AIDS",
+   "HIV",
+   "dhis2:hiv_pos"
+  ],
+  "title": "HIV Positive"
  },
  {
   "id": "hiv_neg",
   "category": "symbols",
   "path": "symbols/hiv_neg",
-  "tags": [],
-  "title": "Hiv Neg"
+  "tags": [
+   "AIDS",
+   "HIV",
+   "dhis2:hiv_neg"
+  ],
+  "title": "HIV Negative"
  },
  {
   "id": "hiv_ind",
   "category": "symbols",
   "path": "symbols/hiv_ind",
-  "tags": [],
-  "title": "Hiv Ind"
+  "tags": [
+   "AIDS",
+   "HIV",
+   "dhis2:hiv_ind"
+  ],
+  "title": "HIV Inconclusive"
  },
  {
   "id": "high_level",
@@ -2675,8 +2705,10 @@
   "path": "symbols/heart",
   "tags": [
    "Cardiology",
-   "Like dhis2:heart",
-   "Love"
+   "Favorite",
+   "Like",
+   "Love",
+   "dhis2:heart"
   ],
   "title": "Heart"
  },
@@ -2736,6 +2768,20 @@
    "dhis2:geo_location"
   ],
   "title": "Location"
+ },
+ {
+  "id": "exercise",
+  "category": "symbols",
+  "path": "symbols/exercise",
+  "tags": [
+   "Fitness",
+   "Strong",
+   "Weightlifting",
+   "Weights",
+   "Wellness",
+   "dhis2:exercise"
+  ],
+  "title": "Exercise"
  },
  {
   "id": "electricity",
@@ -2896,8 +2942,13 @@
   "id": "community_meeting",
   "category": "symbols",
   "path": "symbols/community_meeting",
-  "tags": [],
-  "title": "Community Meeting"
+  "tags": [
+   "Group",
+   "Meditation",
+   "Tree",
+   "dhis2:community_meeting"
+  ],
+  "title": "Outdoor Meeting"
  },
  {
   "id": "communication",
@@ -2992,7 +3043,13 @@
   "id": "cannabis",
   "category": "symbols",
   "path": "symbols/cannabis",
-  "tags": [],
+  "tags": [
+   "CDB",
+   "Hemp",
+   "Marijuana",
+   "Wacky Tobaccy",
+   "Weed"
+  ],
   "title": "Cannabis"
  },
  {
@@ -3728,7 +3785,7 @@
    "Symbol",
    "dhis2:man"
   ],
-  "title": "Man"
+  "title": "Person"
  },
  {
   "id": "male_sex_worker",
@@ -3808,7 +3865,12 @@
   "id": "health_worker",
   "category": "people",
   "path": "people/health_worker",
-  "tags": [],
+  "tags": [
+   "Doctor",
+   "Health Provider",
+   "Nurse",
+   "dhis2:health_worker"
+  ],
   "title": "Health Worker"
  },
  {
@@ -4079,14 +4141,21 @@
   "id": "diabetes",
   "category": "people",
   "path": "people/diabetes",
-  "tags": [],
+  "tags": [
+   "Blood",
+   "Blood Test Hand"
+  ],
   "title": "Diabetes"
  },
  {
   "id": "deaf",
   "category": "people",
   "path": "people/deaf",
-  "tags": [],
+  "tags": [
+   "Ear",
+   "Hearing",
+   "Hearing Impaired"
+  ],
   "title": "Deaf"
  },
  {
@@ -4183,10 +4252,13 @@
   "tags": [
    "Boy",
    "Child",
+   "Child Program",
+   "Family",
    "Female",
    "Girl",
    "Kids",
    "Male",
+   "Siblings",
    "Young",
    "Youth",
    "dhis2:child_program"
@@ -4232,7 +4304,7 @@
    "Teen",
    "dhis2:boy_1015y"
   ],
-  "title": "Boy 10-15 Years"
+  "title": "Child 10-15 Years"
  },
  {
   "id": "boy_0105y",
@@ -4245,7 +4317,7 @@
    "Toddler",
    "dhis2:boy_0105y"
   ],
-  "title": "Boy 1-5 Years"
+  "title": "Child 1-5 Years"
  },
  {
   "id": "baby_male_0306m",
@@ -4291,7 +4363,10 @@
   "id": "asthma",
   "category": "people",
   "path": "people/asthma",
-  "tags": [],
+  "tags": [
+   "Inhaler",
+   "Mouth"
+  ],
   "title": "Asthma"
  },
  {
@@ -4311,7 +4386,11 @@
   "id": "allergies",
   "category": "people",
   "path": "people/allergies",
-  "tags": [],
+  "tags": [
+   "Hand",
+   "Rash",
+   "dhis2:allergies"
+  ],
   "title": "Allergies"
  },
  {
@@ -4340,5 +4419,916 @@
    "dhis2:agriculture"
   ],
   "title": "Agriculture"
+ },
+ {
+  "id": "spreadsheets",
+  "category": "objects",
+  "path": "objects/spreadsheets",
+  "tags": [],
+  "title": "Spreadsheets"
+ },
+ {
+  "id": "desktop_app",
+  "category": "objects",
+  "path": "objects/desktop_app",
+  "tags": [],
+  "title": "Desktop App"
+ },
+ {
+  "id": "village",
+  "category": "places",
+  "path": "places/village",
+  "tags": [],
+  "title": "Village"
+ },
+ {
+  "id": "ministry_of_health",
+  "category": "places",
+  "path": "places/ministry_of_health",
+  "tags": [],
+  "title": "Ministry Of Health"
+ },
+ {
+  "id": "home",
+  "category": "places",
+  "path": "places/home",
+  "tags": [
+   "Accommodation",
+   "Door",
+   "House",
+   "Roof"
+  ],
+  "title": "Home"
+ },
+ {
+  "id": "call_centre",
+  "category": "people",
+  "path": "people/call_centre",
+  "tags": [
+   "Headset",
+   "Help",
+   "Phone",
+   "Talking"
+  ],
+  "title": "Call Center"
+ },
+ {
+  "id": "excel_logo",
+  "category": "symbols",
+  "path": "symbols/excel_logo",
+  "tags": [],
+  "title": "Excel Logo"
+ },
+ {
+  "id": "openMRS_logo",
+  "category": "symbols",
+  "path": "symbols/openMRS_logo",
+  "tags": [],
+  "title": "Open MRS Logo"
+ },
+ {
+  "id": "wheelchair_alt",
+  "category": "devices",
+  "path": "devices/wheelchair_alt",
+  "tags": [],
+  "title": "Wheelchair Alt"
+ },
+ {
+  "id": "intravenous_bag",
+  "category": "devices",
+  "path": "devices/intravenous_bag",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Drip",
+   "IV",
+   "Liquid"
+  ],
+  "title": "Intravenous Bag"
+ },
+ {
+  "id": "A",
+  "category": "typography",
+  "path": "typography/A",
+  "tags": [
+   "Letter"
+  ],
+  "title": "A"
+ },
+ {
+  "id": "B",
+  "category": "typography",
+  "path": "typography/B",
+  "tags": [
+   "Letter"
+  ],
+  "title": "B"
+ },
+ {
+  "id": "C",
+  "category": "typography",
+  "path": "typography/C",
+  "tags": [
+   "Letter"
+  ],
+  "title": "C"
+ },
+ {
+  "id": "D",
+  "category": "typography",
+  "path": "typography/D",
+  "tags": [
+   "Letter"
+  ],
+  "title": "D"
+ },
+ {
+  "id": "E",
+  "category": "typography",
+  "path": "typography/E",
+  "tags": [
+   "Letter"
+  ],
+  "title": "E"
+ },
+ {
+  "id": "F",
+  "category": "typography",
+  "path": "typography/F",
+  "tags": [
+   "Letter"
+  ],
+  "title": "F"
+ },
+ {
+  "id": "G",
+  "category": "typography",
+  "path": "typography/G",
+  "tags": [
+   "Letter"
+  ],
+  "title": "G"
+ },
+ {
+  "id": "H",
+  "category": "typography",
+  "path": "typography/H",
+  "tags": [
+   "Letter"
+  ],
+  "title": "H"
+ },
+ {
+  "id": "I",
+  "category": "typography",
+  "path": "typography/I",
+  "tags": [
+   "Letter"
+  ],
+  "title": "I"
+ },
+ {
+  "id": "J",
+  "category": "typography",
+  "path": "typography/J",
+  "tags": [
+   "Letter"
+  ],
+  "title": "J"
+ },
+ {
+  "id": "K",
+  "category": "typography",
+  "path": "typography/K",
+  "tags": [
+   "Letter"
+  ],
+  "title": "K"
+ },
+ {
+  "id": "L",
+  "category": "typography",
+  "path": "typography/L",
+  "tags": [
+   "Letter"
+  ],
+  "title": "L"
+ },
+ {
+  "id": "M",
+  "category": "typography",
+  "path": "typography/M",
+  "tags": [
+   "Letter"
+  ],
+  "title": "M"
+ },
+ {
+  "id": "N",
+  "category": "typography",
+  "path": "typography/N",
+  "tags": [
+   "Letter"
+  ],
+  "title": "N"
+ },
+ {
+  "id": "O",
+  "category": "typography",
+  "path": "typography/O",
+  "tags": [
+   "Letter"
+  ],
+  "title": "O"
+ },
+ {
+  "id": "P",
+  "category": "typography",
+  "path": "typography/P",
+  "tags": [
+   "Letter"
+  ],
+  "title": "P"
+ },
+ {
+  "id": "Q",
+  "category": "typography",
+  "path": "typography/Q",
+  "tags": [
+   "Letter"
+  ],
+  "title": "Q"
+ },
+ {
+  "id": "R",
+  "category": "typography",
+  "path": "typography/R",
+  "tags": [
+   "Letter"
+  ],
+  "title": "R"
+ },
+ {
+  "id": "S",
+  "category": "typography",
+  "path": "typography/S",
+  "tags": [
+   "Letter"
+  ],
+  "title": "S"
+ },
+ {
+  "id": "T",
+  "category": "typography",
+  "path": "typography/T",
+  "tags": [
+   "Letter"
+  ],
+  "title": "T"
+ },
+ {
+  "id": "U",
+  "category": "typography",
+  "path": "typography/U",
+  "tags": [
+   "Letter"
+  ],
+  "title": "U"
+ },
+ {
+  "id": "V",
+  "category": "typography",
+  "path": "typography/V",
+  "tags": [
+   "Letter"
+  ],
+  "title": "V"
+ },
+ {
+  "id": "W",
+  "category": "typography",
+  "path": "typography/W",
+  "tags": [
+   "Letter"
+  ],
+  "title": "W"
+ },
+ {
+  "id": "X",
+  "category": "typography",
+  "path": "typography/X",
+  "tags": [
+   "Letter"
+  ],
+  "title": "X"
+ },
+ {
+  "id": "Y",
+  "category": "typography",
+  "path": "typography/Y",
+  "tags": [
+   "Letter"
+  ],
+  "title": "Y"
+ },
+ {
+  "id": "Z",
+  "category": "typography",
+  "path": "typography/Z",
+  "tags": [
+   "Letter"
+  ],
+  "title": "Z"
+ },
+ {
+  "id": "!",
+  "category": "typography",
+  "path": "typography/!",
+  "tags": [
+   "Attention",
+   "Letter",
+   "Punctuation"
+  ],
+  "title": "Exclamation Point"
+ },
+ {
+  "id": "question_mark",
+  "category": "typography",
+  "path": "typography/question_mark",
+  "tags": [
+   "Help",
+   "Letter",
+   "Punctuation",
+   "Question"
+  ],
+  "title": "Question mark"
+ },
+ {
+  "id": "dollar",
+  "category": "typography",
+  "path": "typography/dollar",
+  "tags": [
+   "Currency",
+   "Dollar",
+   "Finance",
+   "Letter",
+   "Money"
+  ],
+  "title": "Dollar sign"
+ },
+ {
+  "id": "ghana",
+  "category": "typography",
+  "path": "typography/ghana",
+  "tags": [
+   "Currency",
+   "Finance",
+   "Ghana",
+   "Letter",
+   "Money"
+  ],
+  "title": "Cedi"
+ },
+ {
+  "id": "yen",
+  "category": "typography",
+  "path": "typography/yen",
+  "tags": [
+   "Currency",
+   "Finance",
+   "Japan",
+   "Letter",
+   "Money"
+  ],
+  "title": "Yen"
+ },
+ {
+  "id": "rupee",
+  "category": "typography",
+  "path": "typography/rupee",
+  "tags": [
+   "Currency",
+   "Finance",
+   "India",
+   "Letter",
+   "Money"
+  ],
+  "title": "Rupee"
+ },
+ {
+  "id": "accident_and_emergency",
+  "category": "specialties",
+  "path": "specialties/accident_and_emergency",
+  "tags": [
+   "Ambulance",
+   "Critical Care",
+   "Department",
+   "Emergency",
+   "Light",
+   "Speciality"
+  ],
+  "title": "Accident and Emergency"
+ },
+ {
+  "id": "admissions",
+  "category": "specialties",
+  "path": "specialties/admissions",
+  "tags": [
+   "Admissions",
+   "Department",
+   "Door",
+   "Entrance",
+   "OPD",
+   "Open",
+   "Outpatient",
+   "Registration",
+   "Speciality"
+  ],
+  "title": "Admissions"
+ },
+ {
+  "id": "coronary_care_unit",
+  "category": "specialties",
+  "path": "specialties/coronary_care_unit",
+  "tags": [
+   "Cardiology",
+   "Coronary Care",
+   "Department",
+   "Heart",
+   "Pulse",
+   "Speciality"
+  ],
+  "title": "Coronary Care"
+ },
+ {
+  "id": "critical_care",
+  "category": "specialties",
+  "path": "specialties/critical_care",
+  "tags": [
+   "Critical Care",
+   "Department",
+   "Emergency",
+   "Heartbeat",
+   "ICU",
+   "Intensive Care Unit",
+   "Monitor",
+   "NICU",
+   "Pulse",
+   "Speciality"
+  ],
+  "title": "Critical Care"
+ },
+ {
+  "id": "discharge_lounge",
+  "category": "specialties",
+  "path": "specialties/discharge_lounge",
+  "tags": [
+   "Chair",
+   "Department",
+   "Discharge",
+   "Exit",
+   "Leave",
+   "Lounge",
+   "Speciality"
+  ],
+  "title": "Discharge Lounge"
+ },
+ {
+  "id": "cardiology",
+  "category": "specialties",
+  "path": "specialties/cardiology",
+  "tags": [
+   "Cardiologist",
+   "Coronary Care",
+   "Department",
+   "Heart",
+   "Organ",
+   "Speciality"
+  ],
+  "title": "Cardiology"
+ },
+ {
+  "id": "ear",
+  "category": "body",
+  "path": "body/ear",
+  "tags": [
+   "Auditory",
+   "ENT",
+   "Eardrum",
+   "Listen",
+   "Organ",
+   "Sound"
+  ],
+  "title": "Ear"
+ },
+ {
+  "id": "hematology",
+  "category": "specialties",
+  "path": "specialties/hematology",
+  "tags": [
+   "Blood",
+   "Department",
+   "Speciality"
+  ],
+  "title": "Hematology"
+ },
+ {
+  "id": "nephrology",
+  "category": "specialties",
+  "path": "specialties/nephrology",
+  "tags": [
+   "Department",
+   "Kidneys",
+   "Speciality"
+  ],
+  "title": "Nephrology"
+ },
+ {
+  "id": "obstetricsmonia",
+  "category": "specialties",
+  "path": "specialties/obstetricsmonia",
+  "tags": [
+   "Baby",
+   "Birth",
+   "Childbirth",
+   "Department",
+   "Gynecology",
+   "Obgyn",
+   "Obstetrics",
+   "Speciality"
+  ],
+  "title": "Obstetricsmonia"
+ },
+ {
+  "id": "opthalmology",
+  "category": "specialties",
+  "path": "specialties/opthalmology",
+  "tags": [
+   "Department",
+   "Eye",
+   "Sight",
+   "Speciality",
+   "Vision"
+  ],
+  "title": "Opthalmology"
+ },
+ {
+  "id": "respirology",
+  "category": "specialties",
+  "path": "specialties/respirology",
+  "tags": [
+   "Breathing",
+   "Department",
+   "Lungs",
+   "Pulmonary",
+   "Specialty"
+  ],
+  "title": "Respirology"
+ },
+ {
+  "id": "psychology",
+  "category": "specialties",
+  "path": "specialties/psychology",
+  "tags": [
+   "Brain",
+   "Department",
+   "Psych",
+   "Psychiatry",
+   "Specialty"
+  ],
+  "title": "Psychology"
+ },
+ {
+  "id": "medical_records",
+  "category": "specialties",
+  "path": "specialties/medical_records",
+  "tags": [
+   "Chart",
+   "Department",
+   "Library",
+   "PHI",
+   "Patient Chart",
+   "Records",
+   "Speciality"
+  ],
+  "title": "Medical Records"
+ },
+ {
+  "id": "oncology",
+  "category": "specialties",
+  "path": "specialties/oncology",
+  "tags": [
+   "Cancer",
+   "Chemotherapy",
+   "Department",
+   "Speciality"
+  ],
+  "title": "Oncology"
+ },
+ {
+  "id": "orthopaedics",
+  "category": "specialties",
+  "path": "specialties/orthopaedics",
+  "tags": [
+   "Bones",
+   "Department",
+   "Joints",
+   "Ortho",
+   "Spine"
+  ],
+  "title": "Orthopaedics"
+ },
+ {
+  "id": "radiology",
+  "category": "specialties",
+  "path": "specialties/radiology",
+  "tags": [
+   "Department",
+   "Radiology",
+   "Specialty",
+   "Xray"
+  ],
+  "title": "Radiology"
+ },
+ {
+  "id": "speech_language_therapy",
+  "category": "specialties",
+  "path": "specialties/speech_language_therapy",
+  "tags": [
+   "Department",
+   "Language",
+   "Pathology",
+   "SLP",
+   "Specialty",
+   "Speech",
+   "Therapy"
+  ],
+  "title": "Speech Language Therapy"
+ },
+ {
+  "id": "gynecology",
+  "category": "specialties",
+  "path": "specialties/gynecology",
+  "tags": [
+   "Department",
+   "Female",
+   "Reproduction",
+   "Sex Organs",
+   "Speciality",
+   "Uterus",
+   "Woman Health",
+   "Womens Health"
+  ],
+  "title": "Gynecology"
+ },
+ {
+  "id": "gastroenterology",
+  "category": "specialties",
+  "path": "specialties/gastroenterology",
+  "tags": [
+   "Department",
+   "GI",
+   "Speciality",
+   "Stomach"
+  ],
+  "title": "Gastroenterology"
+ },
+ {
+  "id": "finance_dept",
+  "category": "specialties",
+  "path": "specialties/finance_dept",
+  "tags": [
+   "Accounting",
+   "Cashier",
+   "Department",
+   "Finance",
+   "Heart",
+   "Payments",
+   "Speciality"
+  ],
+  "title": "Finance"
+ },
+ {
+  "id": "hematology_laboratory",
+  "category": "specialties",
+  "path": "specialties/hematology_laboratory",
+  "tags": [
+   "Blood",
+   "Department",
+   "Lab",
+   "Laboratory",
+   "Speciality"
+  ],
+  "title": "Hematology Lab"
+ },
+ {
+  "id": "human_resoruces",
+  "category": "specialties",
+  "path": "specialties/human_resoruces",
+  "tags": [
+   "Department",
+   "Group",
+   "HR",
+   "Hiring",
+   "People",
+   "Speciality",
+   "Team"
+  ],
+  "title": "Human Resources"
+ },
+ {
+  "id": "0",
+  "category": "typography",
+  "path": "typography/0",
+  "tags": [
+   "Number",
+   "Zero"
+  ],
+  "title": "0"
+ },
+ {
+  "id": "1",
+  "category": "typography",
+  "path": "typography/1",
+  "tags": [
+   "Number",
+   "One"
+  ],
+  "title": "1"
+ },
+ {
+  "id": "2",
+  "category": "typography",
+  "path": "typography/2",
+  "tags": [
+   "Number",
+   "Two"
+  ],
+  "title": "2"
+ },
+ {
+  "id": "3",
+  "category": "typography",
+  "path": "typography/3",
+  "tags": [
+   "Number",
+   "Three"
+  ],
+  "title": "3"
+ },
+ {
+  "id": "4",
+  "category": "typography",
+  "path": "typography/4",
+  "tags": [
+   "Four",
+   "Number"
+  ],
+  "title": "4"
+ },
+ {
+  "id": "5",
+  "category": "typography",
+  "path": "typography/5",
+  "tags": [
+   "Five",
+   "Number"
+  ],
+  "title": "5"
+ },
+ {
+  "id": "6",
+  "category": "typography",
+  "path": "typography/6",
+  "tags": [
+   "Number",
+   "Six"
+  ],
+  "title": "6"
+ },
+ {
+  "id": "7",
+  "category": "typography",
+  "path": "typography/7",
+  "tags": [
+   "Number",
+   "Seven"
+  ],
+  "title": "7"
+ },
+ {
+  "id": "8",
+  "category": "typography",
+  "path": "typography/8",
+  "tags": [
+   "Eight",
+   "Number"
+  ],
+  "title": "8"
+ },
+ {
+  "id": "9",
+  "category": "typography",
+  "path": "typography/9",
+  "tags": [
+   "Nine",
+   "Number"
+  ],
+  "title": "9"
+ },
+ {
+  "id": "female_reproductive_system",
+  "category": "body",
+  "path": "body/female_reproductive_system",
+  "tags": [
+   "Gynecology",
+   "Health",
+   "Organ",
+   "Ovary",
+   "Uterus",
+   "Vagina",
+   "Woman"
+  ],
+  "title": "Female Reproductive System"
+ },
+ {
+  "id": "spine",
+  "category": "body",
+  "path": "body/spine",
+  "tags": [
+   "Back",
+   "Organ",
+   "Spinal Cord",
+   "Vertebrae"
+  ],
+  "title": "Spine"
+ },
+ {
+  "id": "entry_positive",
+  "category": "symbols",
+  "path": "symbols/entry_positive",
+  "tags": [
+   "Doorway",
+   "Entrance",
+   "Login",
+   "Open",
+   "Open Door",
+   "Sign in"
+  ],
+  "title": "Entry"
+ },
+ {
+  "id": "health",
+  "category": "symbols",
+  "path": "symbols/health",
+  "tags": [
+   "Cross",
+   "Hospital",
+   "Medicine",
+   "Protect",
+   "Symbol"
+  ],
+  "title": "Health Shield"
+ },
+ {
+  "id": "health",
+  "category": "symbols",
+  "path": "symbols/health",
+  "tags": [
+   "Cross",
+   "Hospital",
+   "Medicine",
+   "Symbol"
+  ],
+  "title": "Health"
+ },
+ {
+  "id": "health_literacy",
+  "category": "symbols",
+  "path": "symbols/health_literacy",
+  "tags": [
+   "Book",
+   "Document",
+   "Library",
+   "Medicine",
+   "Symbol"
+  ],
+  "title": "Health Literacy"
+ },
+ {
+  "id": "register_book",
+  "category": "symbols",
+  "path": "symbols/register_book",
+  "tags": [
+   "Book",
+   "Document",
+   "Documentation",
+   "Health Record",
+   "Library",
+   "Medicine",
+   "Registry",
+   "Symbol"
+  ],
+  "title": "Health Register Book"
  }
 ]
