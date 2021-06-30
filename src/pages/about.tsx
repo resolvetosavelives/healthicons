@@ -117,7 +117,7 @@ export default function About() {
     },
     {
       name: 'Komal Khandelwal',
-      link: 'https://mobile.twitter.com/k4komaaaal',
+      link: 'https://twitter.com/k4komaaaal',
       avatar: 'https://unavatar.now.sh/twitter/k4komaaaal'
     },
     {
