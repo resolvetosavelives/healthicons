@@ -67,8 +67,8 @@ export default function About() {
     },
     {
       name: 'Mayank Dhawan',
-      link: 'https://twitter.com/mayankd',
-      avatar: 'https://unavatar.now.sh/twitter/mayankd'
+      link: 'https://twitter.com/mayankd_',
+      avatar: 'https://unavatar.now.sh/twitter/mayankd_'
     },
     {
       name: 'Megha Chandrashekar',
@@ -114,6 +114,21 @@ export default function About() {
       name: 'Yugandhar Bhamare',
       link: 'https://twitter.com/yug_design',
       avatar: 'https://unavatar.now.sh/twitter/yug_design'
+    },
+    {
+      name: 'Komal Khandelwal',
+      link: 'https://twitter.com/k4komaaaal',
+      avatar: 'https://unavatar.now.sh/twitter/k4komaaaal'
+    },
+    {
+      name: 'Hetal Rathi',
+      link: 'https://twitter.com/_hetalrathi',
+      avatar: 'https://unavatar.now.sh/twitter/_hetalrathi'
+    },
+    {
+      name: 'Tekeste Kidanu',
+      link: 'https://twitter.com/tkmadeit',
+      avatar: 'https://unavatar.now.sh/twitter/tkmadeit'
     }
   ];
 
