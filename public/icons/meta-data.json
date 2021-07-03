@@ -2008,6 +2008,18 @@
   "title": "Blood Type A-"
  },
  {
+  "id": "blood_bag",
+  "category": "blood",
+  "path": "blood/blood_bag",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion"
+  ],
+  "title": "Blood Bag"
+ },
+ {
   "id": "heart",
   "category": "body",
   "path": "body/heart",
@@ -2174,14 +2186,26 @@
   "id": "tally",
   "category": "symbols",
   "path": "symbols/tally",
-  "tags": [],
+  "tags": [
+   "Add",
+   "Addition",
+   "Count",
+   "Math",
+   "Register"
+  ],
   "title": "Tally"
  },
  {
   "id": "stop",
   "category": "symbols",
   "path": "symbols/stop",
-  "tags": [],
+  "tags": [
+   "Fingers",
+   "Halt",
+   "Hand",
+   "Warning",
+   "dhis2:stop"
+  ],
   "title": "Stop"
  },
  {
@@ -4476,15 +4500,24 @@
   "id": "excel_logo",
   "category": "symbols",
   "path": "symbols/excel_logo",
-  "tags": [],
-  "title": "Excel Logo"
+  "tags": [
+   "Document",
+   "Logo",
+   "Spreadsheet"
+  ],
+  "title": "Excel"
  },
  {
   "id": "openMRS_logo",
   "category": "symbols",
   "path": "symbols/openMRS_logo",
-  "tags": [],
-  "title": "Open MRS Logo"
+  "tags": [
+   "EHR",
+   "EMR",
+   "Logo",
+   "Open Medical Records System"
+  ],
+  "title": "OpenMRS"
  },
  {
   "id": "wheelchair_alt",
@@ -5264,9 +5297,9 @@
   "title": "Spine"
  },
  {
-  "id": "entry_positive",
+  "id": "entry",
   "category": "symbols",
-  "path": "symbols/entry_positive",
+  "path": "symbols/entry",
   "tags": [
    "Doorway",
    "Entrance",
