@@ -319,42 +319,6 @@
   "title": "Circle Large"
  },
  {
-  "id": "rural_post",
-  "category": "places",
-  "path": "places/rural_post",
-  "tags": [
-   "Hospital",
-   "Rural Post",
-   "Small Hospital",
-   "dhis2:rural_post"
-  ],
-  "title": "Rural Clinic"
- },
- {
-  "id": "proper_roof",
-  "category": "places",
-  "path": "places/proper_roof",
-  "tags": [
-   "Building",
-   "House",
-   "Hut",
-   "dhis2:proper_roof"
-  ],
-  "title": "Home with Proper Roof"
- },
- {
-  "id": "palm_branches_roof",
-  "category": "places",
-  "path": "places/palm_branches_roof",
-  "tags": [
-   "Building",
-   "House",
-   "Hut",
-   "dhis2:palm_branches_roof"
-  ],
-  "title": "Home with Roof Made of Palm Branches"
- },
- {
   "id": "market_stall",
   "category": "places",
   "path": "places/market_stall",
@@ -366,32 +330,6 @@
    "dhis2:market_stall"
   ],
   "title": "Market Stall"
- },
- {
-  "id": "letrina",
-  "category": "places",
-  "path": "places/letrina",
-  "tags": [
-   "Bathroom",
-   "Biffy",
-   "Bog",
-   "Crapper",
-   "Dunny",
-   "Honey Bucket",
-   "John",
-   "Kybo",
-   "Latrine",
-   "Long Drop",
-   "Outdoor Toilet",
-   "Portaloo",
-   "Privy",
-   "Thunderbox",
-   "Toilet",
-   "WC",
-   "Water Closet",
-   "dhis2:letrina"
-  ],
-  "title": "Outhouse"
  },
  {
   "id": "hospital",
@@ -445,19 +383,6 @@
   "title": "Forest"
  },
  {
-  "id": "emergency_post",
-  "category": "places",
-  "path": "places/emergency_post",
-  "tags": [
-   "Cross",
-   "Emergency Post",
-   "Tent",
-   "War Hospital",
-   "dhis2:emergency_post"
-  ],
-  "title": "Field Hospital"
- },
- {
   "id": "city",
   "category": "places",
   "path": "places/city",
@@ -484,19 +409,6 @@
    "dhis2:church"
   ],
   "title": "Church"
- },
- {
-  "id": "ambulatory_clinic",
-  "category": "places",
-  "path": "places/ambulatory_clinic",
-  "tags": [
-   "Ambulatory Clinic",
-   "Hospital",
-   "Office",
-   "Small Hospital",
-   "dhis2:ambulatory_clinic"
-  ],
-  "title": "Clinic"
  },
  {
   "id": "virus",
@@ -1868,146 +1780,6 @@
   "title": "Hypertension"
  },
  {
-  "id": "blood_rh_p",
-  "category": "blood",
-  "path": "blood/blood_rh_p",
-  "tags": [
-   "Bag",
-   "Blood",
-   "Hematology",
-   "RH Positive",
-   "Transfusion",
-   "dhis2:blood_rh_p"
-  ],
-  "title": "Blood Type RH+"
- },
- {
-  "id": "blood_rh_n",
-  "category": "blood",
-  "path": "blood/blood_rh_n",
-  "tags": [
-   "Bag",
-   "Blood",
-   "Hematology",
-   "RH Negative",
-   "Transfusion",
-   "dhis2:blood_rh_n"
-  ],
-  "title": "Blood Type RH-"
- },
- {
-  "id": "blood_o_p",
-  "category": "blood",
-  "path": "blood/blood_o_p",
-  "tags": [
-   "Bag",
-   "Blood",
-   "Hematology",
-   "O Positive",
-   "Transfusion",
-   "dhis2:blood_o_p"
-  ],
-  "title": "Blood Type O+"
- },
- {
-  "id": "blood_o_n",
-  "category": "blood",
-  "path": "blood/blood_o_n",
-  "tags": [
-   "Bag",
-   "Blood",
-   "Hematology",
-   "O Negative",
-   "Transfusion",
-   "dhis2:blood_o_n"
-  ],
-  "title": "Blood Type O-"
- },
- {
-  "id": "blood_b_p",
-  "category": "blood",
-  "path": "blood/blood_b_p",
-  "tags": [
-   "B Positive",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_b_p"
-  ],
-  "title": "Blood Type B+"
- },
- {
-  "id": "blood_b_n",
-  "category": "blood",
-  "path": "blood/blood_b_n",
-  "tags": [
-   "B Negative",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_b_n"
-  ],
-  "title": "Blood Type B-"
- },
- {
-  "id": "blood_ab_p",
-  "category": "blood",
-  "path": "blood/blood_ab_p",
-  "tags": [
-   "AB Positive",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_ab_p"
-  ],
-  "title": "Blood Type AB+"
- },
- {
-  "id": "blood_ab_n",
-  "category": "blood",
-  "path": "blood/blood_ab_n",
-  "tags": [
-   "AB Negative",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_ab_n"
-  ],
-  "title": "Blood Type AB-"
- },
- {
-  "id": "blood_a_p",
-  "category": "blood",
-  "path": "blood/blood_a_p",
-  "tags": [
-   "A Positive",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_a_p"
-  ],
-  "title": "Blood Type A+"
- },
- {
-  "id": "blood_a_n",
-  "category": "blood",
-  "path": "blood/blood_a_n",
-  "tags": [
-   "A Negative",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_a_n"
-  ],
-  "title": "Blood Type A-"
- },
- {
   "id": "blood_bag",
   "category": "blood",
   "path": "blood/blood_bag",
@@ -3238,23 +3010,6 @@
   "title": "Wash Hands"
  },
  {
-  "id": "vomiting",
-  "category": "people",
-  "path": "people/vomiting",
-  "tags": [
-   "Gastro",
-   "Nausea",
-   "Person",
-   "Sick",
-   "Spew",
-   "Stomach Flu",
-   "Symptom",
-   "Throw Up",
-   "dhis2:vomiting"
-  ],
-  "title": "Vomiting"
- },
- {
   "id": "underweight",
   "category": "people",
   "path": "people/underweight",
@@ -3267,22 +3022,6 @@
    "dhis2:underweight"
   ],
   "title": "Underweight"
- },
- {
-  "id": "truck_driver",
-  "category": "people",
-  "path": "people/truck_driver",
-  "tags": [
-   "Driver",
-   "Lorry",
-   "Road",
-   "Truck",
-   "Vehicle",
-   "Wheel",
-   "Worker",
-   "dhis2:truck_driver"
-  ],
-  "title": "Truck Driver"
  },
  {
   "id": "travel",
@@ -3395,18 +3134,6 @@
    "dhis2:spraying"
   ],
   "title": "Spraying"
- },
- {
-  "id": "security_worker",
-  "category": "people",
-  "path": "people/security_worker",
-  "tags": [
-   "Guard",
-   "Prison",
-   "Worker",
-   "dhis2:security_worker"
-  ],
-  "title": "Security Worker"
  },
  {
   "id": "sad",
@@ -3672,35 +3399,6 @@
   "title": "Smile"
  },
  {
-  "id": "officer",
-  "category": "people",
-  "path": "people/officer",
-  "tags": [
-   "Cop",
-   "Detective",
-   "Guard",
-   "Police",
-   "Worker",
-   "dhis2:officer"
-  ],
-  "title": "Police Officer"
- },
- {
-  "id": "nurse",
-  "category": "people",
-  "path": "people/nurse",
-  "tags": [
-   "HCW",
-   "Healthcare Worker",
-   "Hospital Staff",
-   "Nurse",
-   "Staff Nurse",
-   "Worker",
-   "dhis2:nurse"
-  ],
-  "title": "Nurse"
- },
- {
   "id": "not_ok",
   "category": "people",
   "path": "people/not_ok",
@@ -3871,21 +3569,6 @@
   "title": "Training"
  },
  {
-  "id": "i_groups_perspective_crowd",
-  "category": "people",
-  "path": "people/i_groups_perspective_crowd",
-  "tags": [
-   "Community",
-   "Crowd",
-   "Group",
-   "Person",
-   "Three People",
-   "Users",
-   "dhis2:i_groups_perspective_crowd"
-  ],
-  "title": "Group"
- },
- {
   "id": "health_worker",
   "category": "people",
   "path": "people/health_worker",
@@ -4053,19 +3736,6 @@
   "title": "Female and Male"
  },
  {
-  "id": "factory_worker",
-  "category": "people",
-  "path": "people/factory_worker",
-  "tags": [
-   "Factory",
-   "Helmet",
-   "Plant",
-   "Worker",
-   "dhis2:factory_worker"
-  ],
-  "title": "Factory Worker"
- },
- {
   "id": "expectorate",
   "category": "people",
   "path": "people/expectorate",
@@ -4196,19 +3866,6 @@
    "dhis2:coughing"
   ],
   "title": "Coughing"
- },
- {
-  "id": "construction_worker",
-  "category": "people",
-  "path": "people/construction_worker",
-  "tags": [
-   "Builder",
-   "Construction",
-   "Helmet",
-   "Worker",
-   "dhis2:construction_worker"
-  ],
-  "title": "Construction Worker"
  },
  {
   "id": "clean_hands",
@@ -5363,5 +5020,437 @@
    "Symbol"
   ],
   "title": "Health Register Book"
+ },
+ {
+  "id": "blood_a_n",
+  "category": "blood",
+  "path": "blood/blood_a_n",
+  "tags": [
+   "A Negative",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_a_n"
+  ],
+  "title": "Blood Type A-"
+ },
+ {
+  "id": "blood_a_p",
+  "category": "blood",
+  "path": "blood/blood_a_p",
+  "tags": [
+   "A Positive",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_a_p"
+  ],
+  "title": "Blood Type A+"
+ },
+ {
+  "id": "blood_ab_n",
+  "category": "blood",
+  "path": "blood/blood_ab_n",
+  "tags": [
+   "AB Negative",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_ab_n"
+  ],
+  "title": "Blood Type AB-"
+ },
+ {
+  "id": "blood_ab_p",
+  "category": "blood",
+  "path": "blood/blood_ab_p",
+  "tags": [
+   "AB Positive",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_ab_p"
+  ],
+  "title": "Blood Type AB+"
+ },
+ {
+  "id": "blood_b_n",
+  "category": "blood",
+  "path": "blood/blood_b_n",
+  "tags": [
+   "B Negative",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_b_n"
+  ],
+  "title": "Blood Type B-"
+ },
+ {
+  "id": "blood_b_p",
+  "category": "blood",
+  "path": "blood/blood_b_p",
+  "tags": [
+   "B Positive",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_b_p"
+  ],
+  "title": "Blood Type B+"
+ },
+ {
+  "id": "blood_o_n",
+  "category": "blood",
+  "path": "blood/blood_o_n",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Hematology",
+   "O Negative",
+   "Transfusion",
+   "dhis2:blood_o_n"
+  ],
+  "title": "Blood Type O-"
+ },
+ {
+  "id": "blood_o_p",
+  "category": "blood",
+  "path": "blood/blood_o_p",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Hematology",
+   "O Positive",
+   "Transfusion",
+   "dhis2:blood_o_p"
+  ],
+  "title": "Blood Type O+"
+ },
+ {
+  "id": "blood_rh_n",
+  "category": "blood",
+  "path": "blood/blood_rh_n",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Hematology",
+   "RH Negative",
+   "Transfusion",
+   "dhis2:blood_rh_n"
+  ],
+  "title": "Blood Type RH-"
+ },
+ {
+  "id": "blood_rh_p",
+  "category": "blood",
+  "path": "blood/blood_rh_p",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Hematology",
+   "RH Positive",
+   "Transfusion",
+   "dhis2:blood_rh_p"
+  ],
+  "title": "Blood Type RH+"
+ },
+ {
+  "id": "i_groups_perspective_crowd",
+  "category": "people",
+  "path": "people/i_groups_perspective_crowd",
+  "tags": [
+   "Community",
+   "Crowd",
+   "Group",
+   "Person",
+   "Three People",
+   "Users",
+   "dhis2:i_groups_perspective_crowd"
+  ],
+  "title": "Group"
+ },
+ {
+  "id": "vomiting",
+  "category": "people",
+  "path": "people/vomiting",
+  "tags": [
+   "Gastro",
+   "Nausea",
+   "Person",
+   "Sick",
+   "Spew",
+   "Stomach Flu",
+   "Symptom",
+   "Throw Up",
+   "dhis2:vomiting"
+  ],
+  "title": "Vomiting"
+ },
+ {
+  "id": "nurse",
+  "category": "people",
+  "path": "people/nurse",
+  "tags": [
+   "HCW",
+   "Healthcare Worker",
+   "Hospital Staff",
+   "Nurse",
+   "Staff Nurse",
+   "Worker",
+   "dhis2:nurse"
+  ],
+  "title": "Nurse"
+ },
+ {
+  "id": "military_worker",
+  "category": "people",
+  "path": "people/military_worker",
+  "tags": [
+   "Armed Services",
+   "Army",
+   "Gun",
+   "Helmet",
+   "Soldier",
+   "Uniform",
+   "dhis2:military_worker"
+  ],
+  "title": "Military Personnel"
+ },
+ {
+  "id": "prisoner",
+  "category": "people",
+  "path": "people/prisoner",
+  "tags": [
+   "Detainee",
+   "Incarceration",
+   "Inmate",
+   "Prison",
+   "dhis2:prisoner"
+  ],
+  "title": "Prisoner"
+ },
+ {
+  "id": "truck_driver",
+  "category": "people",
+  "path": "people/truck_driver",
+  "tags": [
+   "Driver",
+   "Lorry",
+   "Road",
+   "Truck",
+   "Vehicle",
+   "Wheel",
+   "Worker",
+   "dhis2:truck_driver"
+  ],
+  "title": "Truck Driver"
+ },
+ {
+  "id": "factory_worker",
+  "category": "people",
+  "path": "people/factory_worker",
+  "tags": [
+   "Factory",
+   "Helmet",
+   "Plant",
+   "Worker",
+   "dhis2:factory_worker"
+  ],
+  "title": "Factory Worker"
+ },
+ {
+  "id": "security_worker",
+  "category": "people",
+  "path": "people/security_worker",
+  "tags": [
+   "Guard",
+   "Officer",
+   "Prison",
+   "Worker",
+   "dhis2:security_worker"
+  ],
+  "title": "Security Worker"
+ },
+ {
+  "id": "officer",
+  "category": "people",
+  "path": "people/officer",
+  "tags": [
+   "Cop",
+   "Detective",
+   "Guard",
+   "Police",
+   "Worker",
+   "dhis2:officer"
+  ],
+  "title": "Police Officer"
+ },
+ {
+  "id": "construction_worker",
+  "category": "people",
+  "path": "people/construction_worker",
+  "tags": [
+   "Builder",
+   "Construction",
+   "Helmet",
+   "Worker",
+   "dhis2:construction_worker"
+  ],
+  "title": "Construction Worker"
+ },
+ {
+  "id": "palm_branches_roof",
+  "category": "places",
+  "path": "places/palm_branches_roof",
+  "tags": [
+   "Building",
+   "House",
+   "Hut",
+   "dhis2:palm_branches_roof"
+  ],
+  "title": "Home with Roof Made of Palm Branches"
+ },
+ {
+  "id": "proper_roof",
+  "category": "places",
+  "path": "places/proper_roof",
+  "tags": [
+   "Building",
+   "House",
+   "Hut",
+   "dhis2:proper_roof"
+  ],
+  "title": "Home with Proper Roof"
+ },
+ {
+  "id": "letrina",
+  "category": "places",
+  "path": "places/letrina",
+  "tags": [
+   "Bathroom",
+   "Biffy",
+   "Bog",
+   "Crapper",
+   "Dunny",
+   "Honey Bucket",
+   "John",
+   "Kybo",
+   "Latrine",
+   "Long Drop",
+   "Outdoor Toilet",
+   "Portaloo",
+   "Privy",
+   "Thunderbox",
+   "Toilet",
+   "WC",
+   "Water Closet",
+   "dhis2:letrina"
+  ],
+  "title": "Latrine"
+ },
+ {
+  "id": "letrina_alt",
+  "category": "places",
+  "path": "places/letrina_alt",
+  "tags": [
+   "Bathroom",
+   "Biffy",
+   "Bog",
+   "Crapper",
+   "Dunny",
+   "Honey Bucket",
+   "John",
+   "Kybo",
+   "Latrine",
+   "Long Drop",
+   "Outdoor Toilet",
+   "Portaloo",
+   "Privy",
+   "Thunderbox",
+   "Toilet",
+   "WC",
+   "Water Closet"
+  ],
+  "title": "Latrine ALT"
+ },
+ {
+  "id": "temple",
+  "category": "places",
+  "path": "places/temple",
+  "tags": [
+   "House of Worship",
+   "Religion",
+   "Worship"
+  ],
+  "title": "Temple"
+ },
+ {
+  "id": "temple",
+  "category": "places",
+  "path": "places/temple",
+  "tags": [
+   "House of Worship",
+   "Religion",
+   "Worship"
+  ],
+  "title": "Temple ALT"
+ },
+ {
+  "id": "mosque",
+  "category": "places",
+  "path": "places/mosque",
+  "tags": [
+   "House of Worship",
+   "Islam",
+   "Muslim",
+   "Religion",
+   "Worship"
+  ],
+  "title": "Mosque"
+ },
+ {
+  "id": "emergency_post",
+  "category": "places",
+  "path": "places/emergency_post",
+  "tags": [
+   "Cross",
+   "Emergency Post",
+   "Tent",
+   "War Hospital",
+   "dhis2:emergency_post"
+  ],
+  "title": "Field Hospital"
+ },
+ {
+  "id": "rural_post",
+  "category": "places",
+  "path": "places/rural_post",
+  "tags": [
+   "Hospital",
+   "Rural Post",
+   "Small Hospital",
+   "dhis2:rural_post"
+  ],
+  "title": "Rural Clinic"
+ },
+ {
+  "id": "ambulatory_clinic",
+  "category": "places",
+  "path": "places/ambulatory_clinic",
+  "tags": [
+   "Ambulatory Clinic",
+   "Hospital",
+   "Office",
+   "Small Hospital",
+   "dhis2:ambulatory_clinic"
+  ],
+  "title": "Clinic"
  }
 ]
