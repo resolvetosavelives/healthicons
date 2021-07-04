@@ -5022,6 +5022,69 @@
   "title": "Health Register Book"
  },
  {
+  "id": "chart_bar",
+  "category": "symbols",
+  "path": "symbols/chart_bar",
+  "tags": [
+   "Bar Chart",
+   "Data",
+   "Graph",
+   "Visualization"
+  ],
+  "title": "Chart Bars"
+ },
+ {
+  "id": "chart_bar_stacked",
+  "category": "symbols",
+  "path": "symbols/chart_bar_stacked",
+  "tags": [
+   "Bar Chart",
+   "Data",
+   "Graph",
+   "Visualization"
+  ],
+  "title": "Chart Split Bars"
+ },
+ {
+  "id": "chart_line",
+  "category": "symbols",
+  "path": "symbols/chart_line",
+  "tags": [
+   "Data",
+   "Graph",
+   "Line Chart",
+   "Node",
+   "Visualization"
+  ],
+  "title": "Chart Line"
+ },
+ {
+  "id": "chart_line_stacked",
+  "category": "symbols",
+  "path": "symbols/chart_line_stacked",
+  "tags": [
+   "Data",
+   "Graph",
+   "Line Chart",
+   "Node",
+   "Visualization"
+  ],
+  "title": "Chart Double Line"
+ },
+ {
+  "id": "chart_pie",
+  "category": "symbols",
+  "path": "symbols/chart_pie",
+  "tags": [
+   "Data",
+   "Graph",
+   "Node",
+   "Pie Chart",
+   "Visualization"
+  ],
+  "title": "Chart Pie"
+ },
+ {
   "id": "blood_a_n",
   "category": "blood",
   "path": "blood/blood_a_n",
