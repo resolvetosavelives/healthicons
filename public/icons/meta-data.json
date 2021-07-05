@@ -2206,8 +2206,16 @@
   "id": "negative",
   "category": "symbols",
   "path": "symbols/negative",
-  "tags": [],
-  "title": "Negative"
+  "tags": [
+   "Circle",
+   "Delete",
+   "Negative",
+   "No Entry",
+   "Remove",
+   "Subtract",
+   "dhis2:negative"
+  ],
+  "title": "Minus"
  },
  {
   "id": "mosquito",
@@ -4028,29 +4036,55 @@
   "id": "spreadsheets",
   "category": "objects",
   "path": "objects/spreadsheets",
-  "tags": [],
-  "title": "Spreadsheets"
+  "tags": [
+   "Calculation",
+   "Data",
+   "Excel",
+   "Sheets"
+  ],
+  "title": "Spreadsheet"
  },
  {
   "id": "desktop_app",
   "category": "objects",
   "path": "objects/desktop_app",
-  "tags": [],
+  "tags": [
+   "Computer",
+   "Desktop",
+   "Icons",
+   "MacOS",
+   "Monitor",
+   "Operating System",
+   "Windows"
+  ],
   "title": "Desktop App"
  },
  {
   "id": "village",
   "category": "places",
   "path": "places/village",
-  "tags": [],
+  "tags": [
+   "Camp",
+   "Houses",
+   "Huts",
+   "Tents",
+   "Town",
+   "dhis2:village"
+  ],
   "title": "Village"
  },
  {
   "id": "ministry_of_health",
   "category": "places",
   "path": "places/ministry_of_health",
-  "tags": [],
-  "title": "Ministry Of Health"
+  "tags": [
+   "Government",
+   "Hospital",
+   "Office",
+   "Official",
+   "dhis2:ministry_of_health"
+  ],
+  "title": "Ministry of Health"
  },
  {
   "id": "home",
@@ -4103,8 +4137,10 @@
   "id": "wheelchair_alt",
   "category": "devices",
   "path": "devices/wheelchair_alt",
-  "tags": [],
-  "title": "Wheelchair Alt"
+  "tags": [
+   "Transport"
+  ],
+  "title": "Wheelchair ALT"
  },
  {
   "id": "intravenous_bag",

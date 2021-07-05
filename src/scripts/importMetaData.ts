@@ -19,8 +19,16 @@ const metadataRegex = /([^/[]*) \[(.*)\]$/;
 
 const ICONS_PATH = path.join(process.cwd(), 'public', 'icons');
 
+const allComponents = [];
+
 function getMetadataFromDescription(name: string, description: string) {
-  const metaData = description.match(metadataRegex);
+  const metaData = description.trim().match(metadataRegex);
+  if (!metaData || metaData.length < 3) {
+    console.log(
+      `Missing or incorrectly formatted title/tags for component: ${name}. Found: ${description}`
+    );
+  }
+
   return metaData && metaData.length > 2
     ? {
         title: metaData[1].trim(),
@@ -33,6 +41,26 @@ function getMetadataFromDescription(name: string, description: string) {
         title: startCase(name),
         tags: []
       };
+}
+
+function verifyStyleExists(components, name, style) {
+  if (
+    !components.some((c) => {
+      return c.name === name && c.style === style;
+    })
+  ) {
+    console.log(`Missing ${style} version of: ${name}`);
+  }
+}
+
+function verifyNameIsUnique(components, category, name) {
+  const matches = components.filter((c) => {
+    return c.name === name && c.category === category && c.style === 'filled';
+  });
+
+  if (matches.length !== 1) {
+    console.log(`More than one component is named: ${name}`);
+  }
 }
 
 client.file(figmaFilename).then(({ data }) => {
@@ -54,27 +82,45 @@ client.file(figmaFilename).then(({ data }) => {
           }
 
           const [, style, category, name] = matches;
+          const description = data.components[component.id].description;
 
-          if (style === 'filled') {
-            const metaData = getMetadataFromDescription(
-              name,
-              data.components[component.id].description
-            );
-
-            metaDataArray.push({
-              id: name,
-              category,
-              path: `${category}/${name}`,
-              tags: metaData.tags,
-              title: metaData.title
-            });
-          }
+          allComponents.push({
+            style,
+            category,
+            name,
+            description
+          });
         }
 
         return component;
       });
     }
     return child;
+  });
+
+  allComponents.map((component) => {
+    if (component.style === 'filled') {
+      verifyStyleExists(allComponents, component.name, 'outline');
+      verifyStyleExists(allComponents, component.name, 'negative');
+      verifyNameIsUnique(allComponents, component.category, component.name);
+
+      const metaData = getMetadataFromDescription(
+        component.name,
+        component.description
+      );
+
+      metaDataArray.push({
+        id: component.name,
+        category: component.category,
+        path: `${component.category}/${component.name}`,
+        tags: metaData.tags,
+        title: metaData.title
+      });
+    } else {
+      verifyStyleExists(allComponents, component.name, 'filled');
+    }
+
+    return component;
   });
 
   fs.writeFile(
