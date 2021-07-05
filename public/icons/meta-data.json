@@ -1917,32 +1917,6 @@
   "title": "Checkmark"
  },
  {
-  "id": "water_treatment",
-  "category": "symbols",
-  "path": "symbols/water_treatment",
-  "tags": [
-   "Arrows",
-   "Drop",
-   "Water",
-   "dhis2:water_treatment"
-  ],
-  "title": "Water Treatment"
- },
- {
-  "id": "vih",
-  "category": "symbols",
-  "path": "symbols/vih",
-  "tags": [
-   "AIDS",
-   "HIV",
-   "Infection",
-   "Infectious Disease",
-   "Virus",
-   "dhis2:vih"
-  ],
-  "title": "HIV"
- },
- {
   "id": "un_paved_road",
   "category": "symbols",
   "path": "symbols/un_paved_road",
@@ -1981,60 +1955,61 @@
   "title": "Stop"
  },
  {
-  "id": "social_distancing",
-  "category": "symbols",
-  "path": "symbols/social_distancing",
-  "tags": [
-   "Apart",
-   "Arrows",
-   "Between",
-   "Social Distance",
-   "Space",
-   "dhis2:social_distancing"
-  ],
-  "title": "Social Distancing"
- },
- {
   "id": "smoking_cessation",
   "category": "symbols",
   "path": "symbols/smoking_cessation",
-  "tags": [],
-  "title": "Smoking Cessation"
+  "tags": [
+   "Banned",
+   "Smoking",
+   "Tobacco"
+  ],
+  "title": "No Smoking"
  },
  {
   "id": "smoking",
   "category": "symbols",
   "path": "symbols/smoking",
-  "tags": [],
+  "tags": [
+   "Smoking",
+   "Tobacco"
+  ],
   "title": "Smoking"
- },
- {
-  "id": "sexual_reproductive_health",
-  "category": "symbols",
-  "path": "symbols/sexual_reproductive_health",
-  "tags": [],
-  "title": "Sexual Reproductive Health"
  },
  {
   "id": "rx",
   "category": "symbols",
   "path": "symbols/rx",
-  "tags": [],
-  "title": "Rx"
+  "tags": [
+   "Medication",
+   "Pharmacy",
+   "Rx",
+   "Script"
+  ],
+  "title": "Prescription Alt"
  },
  {
   "id": "running_water_alt",
   "category": "symbols",
   "path": "symbols/running_water_alt",
-  "tags": [],
-  "title": "Running Water Alt"
+  "tags": [
+   "Appliance",
+   "Plumbing",
+   "Running Water",
+   "Water"
+  ],
+  "title": "Water Tap"
  },
  {
   "id": "ribbon",
   "category": "symbols",
   "path": "symbols/ribbon",
-  "tags": [],
-  "title": "Ribbon"
+  "tags": [
+   "AIDS",
+   "Campaign",
+   "Cancer",
+   "HIV"
+  ],
+  "title": "HIV"
  },
  {
   "id": "referral",
@@ -2105,8 +2080,13 @@
   "id": "prescription_document",
   "category": "symbols",
   "path": "symbols/prescription_document",
-  "tags": [],
-  "title": "Prescription Document"
+  "tags": [
+   "Medication",
+   "Pharmacy",
+   "Rx",
+   "Script"
+  ],
+  "title": "Prescription"
  },
  {
   "id": "positive",
@@ -2138,21 +2118,33 @@
   "id": "poison",
   "category": "symbols",
   "path": "symbols/poison",
-  "tags": [],
+  "tags": [
+   "Bottle",
+   "Toxic",
+   "Toxin",
+   "dhis2:poison"
+  ],
   "title": "Poison"
  },
  {
   "id": "peace",
   "category": "symbols",
   "path": "symbols/peace",
-  "tags": [],
+  "tags": [
+   "Symbol",
+   "dhis2:peace"
+  ],
   "title": "Peace"
  },
  {
   "id": "paved_road_alt",
   "category": "symbols",
   "path": "symbols/paved_road_alt",
-  "tags": [],
+  "tags": [
+   "Curve",
+   "Road",
+   "dhis2:paved_road_alt"
+  ],
   "title": "Paved Road Alt"
  },
  {
@@ -2221,7 +2213,13 @@
   "id": "mosquito",
   "category": "symbols",
   "path": "symbols/mosquito",
-  "tags": [],
+  "tags": [
+   "Animal",
+   "Disease",
+   "Insect",
+   "Malaria",
+   "dhis2:mosquito"
+  ],
   "title": "Mosquito"
  },
  {
@@ -2255,14 +2253,26 @@
   "id": "medical_advice",
   "category": "symbols",
   "path": "symbols/medical_advice",
-  "tags": [],
-  "title": "Medical Advice"
+  "tags": [
+   "Advice",
+   "Call Center",
+   "Information",
+   "Phone",
+   "Phone line",
+   "dhis2:medical_advice"
+  ],
+  "title": "Medical Advice Hotline"
  },
  {
   "id": "malaria_outbreak",
   "category": "symbols",
   "path": "symbols/malaria_outbreak",
-  "tags": [],
+  "tags": [
+   "Malaria",
+   "Mosquito",
+   "Outbreak",
+   "dhis2:malaria_outbreak"
+  ],
   "title": "Malaria Outbreak"
  },
  {
@@ -2307,40 +2317,23 @@
   "id": "info",
   "category": "symbols",
   "path": "symbols/info",
-  "tags": [],
+  "tags": [
+   "About",
+   "Circle",
+   "Information",
+   "dhis2:info"
+  ],
   "title": "Info"
  },
  {
   "id": "imm",
   "category": "symbols",
   "path": "symbols/imm",
-  "tags": [],
-  "title": "Imm"
- },
- {
-  "id": "i_schedule_school_date_time",
-  "category": "symbols",
-  "path": "symbols/i_schedule_school_date_time",
   "tags": [
-   "Appointment",
-   "Cal",
-   "Event",
-   "Time",
-   "dhis2:i_schedule_school_date_time"
+   "IMM",
+   "dhis2:imm"
   ],
-  "title": "Calendar Schedule"
- },
- {
-  "id": "i_note_action",
-  "category": "symbols",
-  "path": "symbols/i_note_action",
-  "tags": [
-   "Class",
-   "Paper",
-   "Test",
-   "dhis2:i_note_action"
-  ],
-  "title": "Notes"
+  "title": "IMM"
  },
  {
   "id": "i_exam_qualification",
@@ -2354,20 +2347,6 @@
    "dhis2:I_exam_qualification"
   ],
   "title": "Exam"
- },
- {
-  "id": "i_exam_multiple_choice",
-  "category": "symbols",
-  "path": "symbols/i_exam_multiple_choice",
-  "tags": [
-   "Document",
-   "Exam",
-   "Note",
-   "Paper",
-   "Test",
-   "dhis2:i_exam_multiple_choice"
-  ],
-  "title": "Exam Multiple-Choice"
  },
  {
   "id": "i_documents_denied",
@@ -2392,31 +2371,6 @@
    "dhis2:i_documents_accepted"
   ],
   "title": "Approved Document"
- },
- {
-  "id": "i_certificate_paper",
-  "category": "symbols",
-  "path": "symbols/i_certificate_paper",
-  "tags": [
-   "Document",
-   "Paper",
-   "Test",
-   "dhis2:i_certificate"
-  ],
-  "title": "Certificate"
- },
- {
-  "id": "hpv",
-  "category": "symbols",
-  "path": "symbols/hpv",
-  "tags": [
-   "Human Papillomavirus",
-   "Infection",
-   "Infectious Disease",
-   "Virus",
-   "dhis2:vih"
-  ],
-  "title": "HPV"
  },
  {
   "id": "hospital_symbol",
@@ -2509,32 +2463,28 @@
   "title": "Heart"
  },
  {
-  "id": "health_worker_form",
-  "category": "symbols",
-  "path": "symbols/health_worker_form",
-  "tags": [
-   "Doctor",
-   "Document",
-   "Nurse",
-   "Paper",
-   "Patient",
-   "Test",
-   "dhis2:health_worker_form"
-  ],
-  "title": "Health Worker Form"
- },
- {
   "id": "health_data_sync",
   "category": "symbols",
   "path": "symbols/health_data_sync",
-  "tags": [],
+  "tags": [
+   "Data flow",
+   "Flow",
+   "Synchronization",
+   "dhis2:health_data_sync"
+  ],
   "title": "Health Data Sync"
  },
  {
   "id": "health_data_security",
   "category": "symbols",
   "path": "symbols/health_data_security",
-  "tags": [],
+  "tags": [
+   "Locked",
+   "Operations",
+   "Secops",
+   "Secure",
+   "dhis2:health_data_security"
+  ],
   "title": "Health Data Security"
  },
  {
@@ -2658,18 +2608,6 @@
   "title": "DHIS2 Logo"
  },
  {
-  "id": "default",
-  "category": "symbols",
-  "path": "symbols/default",
-  "tags": [
-   "Document",
-   "Paper",
-   "Test",
-   "dhis2:default"
-  ],
-  "title": "Document Edit"
- },
- {
   "id": "death_alt2",
   "category": "symbols",
   "path": "symbols/death_alt2",
@@ -2718,21 +2656,6 @@
    "dhis2:contraceptive_voucher"
   ],
   "title": "Contraceptive"
- },
- {
-  "id": "contact_support",
-  "category": "symbols",
-  "path": "symbols/contact_support",
-  "tags": [
-   "Chat",
-   "Contact",
-   "FAQ",
-   "Help",
-   "Question Mark",
-   "Speech Bubble",
-   "dhis2:contact_support"
-  ],
-  "title": "Support"
  },
  {
   "id": "community_meeting",
@@ -2861,18 +2784,18 @@
   "title": "Calendar"
  },
  {
-  "id": "breeding_sites",
-  "category": "symbols",
-  "path": "symbols/breeding_sites",
-  "tags": [],
-  "title": "Breeding Sites"
- },
- {
   "id": "book",
   "category": "symbols",
   "path": "symbols/book",
-  "tags": [],
-  "title": "Book"
+  "tags": [
+   "Book",
+   "Dictionary",
+   "Guide",
+   "Records",
+   "Textbook",
+   "dhis2:book"
+  ],
+  "title": "Medical Book"
  },
  {
   "id": "award_trophy",
@@ -5455,15 +5378,15 @@
   "title": "Temple"
  },
  {
-  "id": "temple",
+  "id": "temple_alt",
   "category": "places",
-  "path": "places/temple",
+  "path": "places/temple_alt",
   "tags": [
    "House of Worship",
    "Religion",
    "Worship"
   ],
-  "title": "Temple ALT"
+  "title": "Temple Alt"
  },
  {
   "id": "mosque",
@@ -5515,5 +5438,177 @@
    "dhis2:ambulatory_clinic"
   ],
   "title": "Clinic"
+ },
+ {
+  "id": "contact_support",
+  "category": "symbols",
+  "path": "symbols/contact_support",
+  "tags": [
+   "Chat",
+   "Contact",
+   "FAQ",
+   "Help",
+   "Question Mark",
+   "Speech Bubble",
+   "dhis2:contact_support"
+  ],
+  "title": "Support"
+ },
+ {
+  "id": "i_note_action",
+  "category": "symbols",
+  "path": "symbols/i_note_action",
+  "tags": [
+   "Class",
+   "Paper",
+   "Test",
+   "dhis2:i_note_action"
+  ],
+  "title": "Notes"
+ },
+ {
+  "id": "i_certificate_paper",
+  "category": "symbols",
+  "path": "symbols/i_certificate_paper",
+  "tags": [
+   "Document",
+   "Paper",
+   "Test",
+   "dhis2:i_certificate"
+  ],
+  "title": "Certificate"
+ },
+ {
+  "id": "breeding_sites",
+  "category": "symbols",
+  "path": "symbols/breeding_sites",
+  "tags": [
+   "Disease",
+   "Eggs",
+   "Larva",
+   "dhis2:breeding_sites"
+  ],
+  "title": "Breeding Sites"
+ },
+ {
+  "id": "health_worker_form",
+  "category": "symbols",
+  "path": "symbols/health_worker_form",
+  "tags": [
+   "Doctor",
+   "Document",
+   "Nurse",
+   "Paper",
+   "Patient",
+   "Test",
+   "dhis2:health_worker_form"
+  ],
+  "title": "Health Worker Form"
+ },
+ {
+  "id": "sexual_reproductive_health",
+  "category": "symbols",
+  "path": "symbols/sexual_reproductive_health",
+  "tags": [
+   "Female",
+   "Gender",
+   "Male",
+   "Sex",
+   "Symbols",
+   "dhis2:sexual_reproductive_health"
+  ],
+  "title": "Gender Symbols"
+ },
+ {
+  "id": "hpv",
+  "category": "symbols",
+  "path": "symbols/hpv",
+  "tags": [
+   "Human Papillomavirus",
+   "Infection",
+   "Infectious Disease",
+   "Virus",
+   "dhis2:vih"
+  ],
+  "title": "HPV"
+ },
+ {
+  "id": "vih",
+  "category": "symbols",
+  "path": "symbols/vih",
+  "tags": [
+   "AIDS",
+   "HIV",
+   "Infection",
+   "Infectious Disease",
+   "Virus",
+   "dhis2:vih"
+  ],
+  "title": "HIV"
+ },
+ {
+  "id": "water_treatment",
+  "category": "symbols",
+  "path": "symbols/water_treatment",
+  "tags": [
+   "Arrows",
+   "Drop",
+   "Water",
+   "dhis2:water_treatment"
+  ],
+  "title": "Water Treatment"
+ },
+ {
+  "id": "social_distancing",
+  "category": "symbols",
+  "path": "symbols/social_distancing",
+  "tags": [
+   "Apart",
+   "Arrows",
+   "Between",
+   "Social Distance",
+   "Space",
+   "dhis2:social_distancing"
+  ],
+  "title": "Social Distancing"
+ },
+ {
+  "id": "default",
+  "category": "symbols",
+  "path": "symbols/default",
+  "tags": [
+   "Document",
+   "Paper",
+   "Test",
+   "dhis2:default"
+  ],
+  "title": "Document Edit"
+ },
+ {
+  "id": "i_exam_multiple_choice",
+  "category": "symbols",
+  "path": "symbols/i_exam_multiple_choice",
+  "tags": [
+   "Document",
+   "Exam",
+   "Note",
+   "Paper",
+   "Test",
+   "dhis2:i_exam_multiple_choice"
+  ],
+  "title": "Exam Multiple-Choice"
+ },
+ {
+  "id": "i_schedule_school_date_time",
+  "category": "symbols",
+  "path": "symbols/i_schedule_school_date_time",
+  "tags": [
+   "Appointment",
+   "Cal",
+   "Event",
+   "Time",
+   "dhis2:i_schedule_school_date_time"
+  ],
+  "title": "Calendar Schedule"
  }
 ]
