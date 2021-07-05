@@ -24,7 +24,7 @@ export interface Icon {
 
 export async function getCategoriesAndIcons(): Promise<Category[]> {
   const dirNames = await fs.readdir(ICONS_DIRECTORY);
-  return await Promise.all(
+  const categories = await Promise.all(
     dirNames.map(async (dirName) => {
       return {
         title: dirName,
@@ -32,12 +32,16 @@ export async function getCategoriesAndIcons(): Promise<Category[]> {
       };
     })
   );
+
+  return categories.sort((c1, c2) => {
+    return c1.title.toLowerCase() > c2.title.toLowerCase() ? 1 : -1;
+  });
 }
 
 async function getIcons(dirName: string): Promise<Icon[]> {
   const dirPath = path.join(ICONS_DIRECTORY, dirName);
   const fileNames = await fs.readdir(dirPath);
-  return await Promise.all(
+  const icons = await Promise.all(
     fileNames.map(async (fileName) => {
       const id = fileName.replace(/\.[^/.]+$/, '');
 
@@ -51,4 +55,8 @@ async function getIcons(dirName: string): Promise<Icon[]> {
       };
     })
   );
+
+  return icons.sort((i1, i2) => {
+    return i1.title.toLowerCase() > i2.title.toLowerCase() ? 1 : -1;
+  });
 }
