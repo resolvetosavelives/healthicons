@@ -319,42 +319,6 @@
   "title": "Circle Large"
  },
  {
-  "id": "rural_post",
-  "category": "places",
-  "path": "places/rural_post",
-  "tags": [
-   "Hospital",
-   "Rural Post",
-   "Small Hospital",
-   "dhis2:rural_post"
-  ],
-  "title": "Rural Clinic"
- },
- {
-  "id": "proper_roof",
-  "category": "places",
-  "path": "places/proper_roof",
-  "tags": [
-   "Building",
-   "House",
-   "Hut",
-   "dhis2:proper_roof"
-  ],
-  "title": "Home with Proper Roof"
- },
- {
-  "id": "palm_branches_roof",
-  "category": "places",
-  "path": "places/palm_branches_roof",
-  "tags": [
-   "Building",
-   "House",
-   "Hut",
-   "dhis2:palm_branches_roof"
-  ],
-  "title": "Home with Roof Made of Palm Branches"
- },
- {
   "id": "market_stall",
   "category": "places",
   "path": "places/market_stall",
@@ -366,32 +330,6 @@
    "dhis2:market_stall"
   ],
   "title": "Market Stall"
- },
- {
-  "id": "letrina",
-  "category": "places",
-  "path": "places/letrina",
-  "tags": [
-   "Bathroom",
-   "Biffy",
-   "Bog",
-   "Crapper",
-   "Dunny",
-   "Honey Bucket",
-   "John",
-   "Kybo",
-   "Latrine",
-   "Long Drop",
-   "Outdoor Toilet",
-   "Portaloo",
-   "Privy",
-   "Thunderbox",
-   "Toilet",
-   "WC",
-   "Water Closet",
-   "dhis2:letrina"
-  ],
-  "title": "Outhouse"
  },
  {
   "id": "hospital",
@@ -445,19 +383,6 @@
   "title": "Forest"
  },
  {
-  "id": "emergency_post",
-  "category": "places",
-  "path": "places/emergency_post",
-  "tags": [
-   "Cross",
-   "Emergency Post",
-   "Tent",
-   "War Hospital",
-   "dhis2:emergency_post"
-  ],
-  "title": "Field Hospital"
- },
- {
   "id": "city",
   "category": "places",
   "path": "places/city",
@@ -484,19 +409,6 @@
    "dhis2:church"
   ],
   "title": "Church"
- },
- {
-  "id": "ambulatory_clinic",
-  "category": "places",
-  "path": "places/ambulatory_clinic",
-  "tags": [
-   "Ambulatory Clinic",
-   "Hospital",
-   "Office",
-   "Small Hospital",
-   "dhis2:ambulatory_clinic"
-  ],
-  "title": "Clinic"
  },
  {
   "id": "virus",
@@ -1868,144 +1780,16 @@
   "title": "Hypertension"
  },
  {
-  "id": "blood_rh_p",
+  "id": "blood_bag",
   "category": "blood",
-  "path": "blood/blood_rh_p",
+  "path": "blood/blood_bag",
   "tags": [
    "Bag",
    "Blood",
    "Hematology",
-   "RH Positive",
-   "Transfusion",
-   "dhis2:blood_rh_p"
+   "Transfusion"
   ],
-  "title": "Blood Type RH+"
- },
- {
-  "id": "blood_rh_n",
-  "category": "blood",
-  "path": "blood/blood_rh_n",
-  "tags": [
-   "Bag",
-   "Blood",
-   "Hematology",
-   "RH Negative",
-   "Transfusion",
-   "dhis2:blood_rh_n"
-  ],
-  "title": "Blood Type RH-"
- },
- {
-  "id": "blood_o_p",
-  "category": "blood",
-  "path": "blood/blood_o_p",
-  "tags": [
-   "Bag",
-   "Blood",
-   "Hematology",
-   "O Positive",
-   "Transfusion",
-   "dhis2:blood_o_p"
-  ],
-  "title": "Blood Type O+"
- },
- {
-  "id": "blood_o_n",
-  "category": "blood",
-  "path": "blood/blood_o_n",
-  "tags": [
-   "Bag",
-   "Blood",
-   "Hematology",
-   "O Negative",
-   "Transfusion",
-   "dhis2:blood_o_n"
-  ],
-  "title": "Blood Type O-"
- },
- {
-  "id": "blood_b_p",
-  "category": "blood",
-  "path": "blood/blood_b_p",
-  "tags": [
-   "B Positive",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_b_p"
-  ],
-  "title": "Blood Type B+"
- },
- {
-  "id": "blood_b_n",
-  "category": "blood",
-  "path": "blood/blood_b_n",
-  "tags": [
-   "B Negative",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_b_n"
-  ],
-  "title": "Blood Type B-"
- },
- {
-  "id": "blood_ab_p",
-  "category": "blood",
-  "path": "blood/blood_ab_p",
-  "tags": [
-   "AB Positive",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_ab_p"
-  ],
-  "title": "Blood Type AB+"
- },
- {
-  "id": "blood_ab_n",
-  "category": "blood",
-  "path": "blood/blood_ab_n",
-  "tags": [
-   "AB Negative",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_ab_n"
-  ],
-  "title": "Blood Type AB-"
- },
- {
-  "id": "blood_a_p",
-  "category": "blood",
-  "path": "blood/blood_a_p",
-  "tags": [
-   "A Positive",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_a_p"
-  ],
-  "title": "Blood Type A+"
- },
- {
-  "id": "blood_a_n",
-  "category": "blood",
-  "path": "blood/blood_a_n",
-  "tags": [
-   "A Negative",
-   "Bag",
-   "Blood",
-   "Hematology",
-   "Transfusion",
-   "dhis2:blood_a_n"
-  ],
-  "title": "Blood Type A-"
+  "title": "Blood Bag"
  },
  {
   "id": "heart",
@@ -2133,32 +1917,6 @@
   "title": "Checkmark"
  },
  {
-  "id": "water_treatment",
-  "category": "symbols",
-  "path": "symbols/water_treatment",
-  "tags": [
-   "Arrows",
-   "Drop",
-   "Water",
-   "dhis2:water_treatment"
-  ],
-  "title": "Water Treatment"
- },
- {
-  "id": "vih",
-  "category": "symbols",
-  "path": "symbols/vih",
-  "tags": [
-   "AIDS",
-   "HIV",
-   "Infection",
-   "Infectious Disease",
-   "Virus",
-   "dhis2:vih"
-  ],
-  "title": "HIV"
- },
- {
   "id": "un_paved_road",
   "category": "symbols",
   "path": "symbols/un_paved_road",
@@ -2174,71 +1932,84 @@
   "id": "tally",
   "category": "symbols",
   "path": "symbols/tally",
-  "tags": [],
+  "tags": [
+   "Add",
+   "Addition",
+   "Count",
+   "Math",
+   "Register"
+  ],
   "title": "Tally"
  },
  {
   "id": "stop",
   "category": "symbols",
   "path": "symbols/stop",
-  "tags": [],
-  "title": "Stop"
- },
- {
-  "id": "social_distancing",
-  "category": "symbols",
-  "path": "symbols/social_distancing",
   "tags": [
-   "Apart",
-   "Arrows",
-   "Between",
-   "Social Distance",
-   "Space",
-   "dhis2:social_distancing"
+   "Fingers",
+   "Halt",
+   "Hand",
+   "Warning",
+   "dhis2:stop"
   ],
-  "title": "Social Distancing"
+  "title": "Stop"
  },
  {
   "id": "smoking_cessation",
   "category": "symbols",
   "path": "symbols/smoking_cessation",
-  "tags": [],
-  "title": "Smoking Cessation"
+  "tags": [
+   "Banned",
+   "Smoking",
+   "Tobacco"
+  ],
+  "title": "No Smoking"
  },
  {
   "id": "smoking",
   "category": "symbols",
   "path": "symbols/smoking",
-  "tags": [],
+  "tags": [
+   "Smoking",
+   "Tobacco"
+  ],
   "title": "Smoking"
- },
- {
-  "id": "sexual_reproductive_health",
-  "category": "symbols",
-  "path": "symbols/sexual_reproductive_health",
-  "tags": [],
-  "title": "Sexual Reproductive Health"
  },
  {
   "id": "rx",
   "category": "symbols",
   "path": "symbols/rx",
-  "tags": [],
-  "title": "Rx"
+  "tags": [
+   "Medication",
+   "Pharmacy",
+   "Rx",
+   "Script"
+  ],
+  "title": "Prescription Alt"
  },
  {
   "id": "running_water_alt",
   "category": "symbols",
   "path": "symbols/running_water_alt",
-  "tags": [],
-  "title": "Running Water Alt"
+  "tags": [
+   "Appliance",
+   "Plumbing",
+   "Running Water",
+   "Water"
+  ],
+  "title": "Water Tap"
  },
  {
   "id": "ribbon",
   "category": "symbols",
   "path": "symbols/ribbon",
-  "tags": [],
-  "title": "Ribbon"
+  "tags": [
+   "AIDS",
+   "Campaign",
+   "Cancer",
+   "HIV"
+  ],
+  "title": "HIV"
  },
  {
   "id": "referral",
@@ -2309,8 +2080,13 @@
   "id": "prescription_document",
   "category": "symbols",
   "path": "symbols/prescription_document",
-  "tags": [],
-  "title": "Prescription Document"
+  "tags": [
+   "Medication",
+   "Pharmacy",
+   "Rx",
+   "Script"
+  ],
+  "title": "Prescription"
  },
  {
   "id": "positive",
@@ -2342,21 +2118,33 @@
   "id": "poison",
   "category": "symbols",
   "path": "symbols/poison",
-  "tags": [],
+  "tags": [
+   "Bottle",
+   "Toxic",
+   "Toxin",
+   "dhis2:poison"
+  ],
   "title": "Poison"
  },
  {
   "id": "peace",
   "category": "symbols",
   "path": "symbols/peace",
-  "tags": [],
+  "tags": [
+   "Symbol",
+   "dhis2:peace"
+  ],
   "title": "Peace"
  },
  {
   "id": "paved_road_alt",
   "category": "symbols",
   "path": "symbols/paved_road_alt",
-  "tags": [],
+  "tags": [
+   "Curve",
+   "Road",
+   "dhis2:paved_road_alt"
+  ],
   "title": "Paved Road Alt"
  },
  {
@@ -2425,7 +2213,13 @@
   "id": "mosquito",
   "category": "symbols",
   "path": "symbols/mosquito",
-  "tags": [],
+  "tags": [
+   "Animal",
+   "Disease",
+   "Insect",
+   "Malaria",
+   "dhis2:mosquito"
+  ],
   "title": "Mosquito"
  },
  {
@@ -2459,14 +2253,26 @@
   "id": "medical_advice",
   "category": "symbols",
   "path": "symbols/medical_advice",
-  "tags": [],
-  "title": "Medical Advice"
+  "tags": [
+   "Advice",
+   "Call Center",
+   "Information",
+   "Phone",
+   "Phone line",
+   "dhis2:medical_advice"
+  ],
+  "title": "Medical Advice Hotline"
  },
  {
   "id": "malaria_outbreak",
   "category": "symbols",
   "path": "symbols/malaria_outbreak",
-  "tags": [],
+  "tags": [
+   "Malaria",
+   "Mosquito",
+   "Outbreak",
+   "dhis2:malaria_outbreak"
+  ],
   "title": "Malaria Outbreak"
  },
  {
@@ -2511,40 +2317,23 @@
   "id": "info",
   "category": "symbols",
   "path": "symbols/info",
-  "tags": [],
+  "tags": [
+   "About",
+   "Circle",
+   "Information",
+   "dhis2:info"
+  ],
   "title": "Info"
  },
  {
   "id": "imm",
   "category": "symbols",
   "path": "symbols/imm",
-  "tags": [],
-  "title": "Imm"
- },
- {
-  "id": "i_schedule_school_date_time",
-  "category": "symbols",
-  "path": "symbols/i_schedule_school_date_time",
   "tags": [
-   "Appointment",
-   "Cal",
-   "Event",
-   "Time",
-   "dhis2:i_schedule_school_date_time"
+   "IMM",
+   "dhis2:imm"
   ],
-  "title": "Calendar Schedule"
- },
- {
-  "id": "i_note_action",
-  "category": "symbols",
-  "path": "symbols/i_note_action",
-  "tags": [
-   "Class",
-   "Paper",
-   "Test",
-   "dhis2:i_note_action"
-  ],
-  "title": "Notes"
+  "title": "IMM"
  },
  {
   "id": "i_exam_qualification",
@@ -2558,20 +2347,6 @@
    "dhis2:I_exam_qualification"
   ],
   "title": "Exam"
- },
- {
-  "id": "i_exam_multiple_choice",
-  "category": "symbols",
-  "path": "symbols/i_exam_multiple_choice",
-  "tags": [
-   "Document",
-   "Exam",
-   "Note",
-   "Paper",
-   "Test",
-   "dhis2:i_exam_multiple_choice"
-  ],
-  "title": "Exam Multiple-Choice"
  },
  {
   "id": "i_documents_denied",
@@ -2596,31 +2371,6 @@
    "dhis2:i_documents_accepted"
   ],
   "title": "Approved Document"
- },
- {
-  "id": "i_certificate_paper",
-  "category": "symbols",
-  "path": "symbols/i_certificate_paper",
-  "tags": [
-   "Document",
-   "Paper",
-   "Test",
-   "dhis2:i_certificate"
-  ],
-  "title": "Certificate"
- },
- {
-  "id": "hpv",
-  "category": "symbols",
-  "path": "symbols/hpv",
-  "tags": [
-   "Human Papillomavirus",
-   "Infection",
-   "Infectious Disease",
-   "Virus",
-   "dhis2:vih"
-  ],
-  "title": "HPV"
  },
  {
   "id": "hospital_symbol",
@@ -2713,32 +2463,28 @@
   "title": "Heart"
  },
  {
-  "id": "health_worker_form",
-  "category": "symbols",
-  "path": "symbols/health_worker_form",
-  "tags": [
-   "Doctor",
-   "Document",
-   "Nurse",
-   "Paper",
-   "Patient",
-   "Test",
-   "dhis2:health_worker_form"
-  ],
-  "title": "Health Worker Form"
- },
- {
   "id": "health_data_sync",
   "category": "symbols",
   "path": "symbols/health_data_sync",
-  "tags": [],
+  "tags": [
+   "Data flow",
+   "Flow",
+   "Synchronization",
+   "dhis2:health_data_sync"
+  ],
   "title": "Health Data Sync"
  },
  {
   "id": "health_data_security",
   "category": "symbols",
   "path": "symbols/health_data_security",
-  "tags": [],
+  "tags": [
+   "Locked",
+   "Operations",
+   "Secops",
+   "Secure",
+   "dhis2:health_data_security"
+  ],
   "title": "Health Data Security"
  },
  {
@@ -2862,18 +2608,6 @@
   "title": "DHIS2 Logo"
  },
  {
-  "id": "default",
-  "category": "symbols",
-  "path": "symbols/default",
-  "tags": [
-   "Document",
-   "Paper",
-   "Test",
-   "dhis2:default"
-  ],
-  "title": "Document Edit"
- },
- {
   "id": "death_alt2",
   "category": "symbols",
   "path": "symbols/death_alt2",
@@ -2922,21 +2656,6 @@
    "dhis2:contraceptive_voucher"
   ],
   "title": "Contraceptive"
- },
- {
-  "id": "contact_support",
-  "category": "symbols",
-  "path": "symbols/contact_support",
-  "tags": [
-   "Chat",
-   "Contact",
-   "FAQ",
-   "Help",
-   "Question Mark",
-   "Speech Bubble",
-   "dhis2:contact_support"
-  ],
-  "title": "Support"
  },
  {
   "id": "community_meeting",
@@ -3065,18 +2784,18 @@
   "title": "Calendar"
  },
  {
-  "id": "breeding_sites",
-  "category": "symbols",
-  "path": "symbols/breeding_sites",
-  "tags": [],
-  "title": "Breeding Sites"
- },
- {
   "id": "book",
   "category": "symbols",
   "path": "symbols/book",
-  "tags": [],
-  "title": "Book"
+  "tags": [
+   "Book",
+   "Dictionary",
+   "Guide",
+   "Records",
+   "Textbook",
+   "dhis2:book"
+  ],
+  "title": "Medical Book"
  },
  {
   "id": "award_trophy",
@@ -3214,23 +2933,6 @@
   "title": "Wash Hands"
  },
  {
-  "id": "vomiting",
-  "category": "people",
-  "path": "people/vomiting",
-  "tags": [
-   "Gastro",
-   "Nausea",
-   "Person",
-   "Sick",
-   "Spew",
-   "Stomach Flu",
-   "Symptom",
-   "Throw Up",
-   "dhis2:vomiting"
-  ],
-  "title": "Vomiting"
- },
- {
   "id": "underweight",
   "category": "people",
   "path": "people/underweight",
@@ -3243,22 +2945,6 @@
    "dhis2:underweight"
   ],
   "title": "Underweight"
- },
- {
-  "id": "truck_driver",
-  "category": "people",
-  "path": "people/truck_driver",
-  "tags": [
-   "Driver",
-   "Lorry",
-   "Road",
-   "Truck",
-   "Vehicle",
-   "Wheel",
-   "Worker",
-   "dhis2:truck_driver"
-  ],
-  "title": "Truck Driver"
  },
  {
   "id": "travel",
@@ -3371,18 +3057,6 @@
    "dhis2:spraying"
   ],
   "title": "Spraying"
- },
- {
-  "id": "security_worker",
-  "category": "people",
-  "path": "people/security_worker",
-  "tags": [
-   "Guard",
-   "Prison",
-   "Worker",
-   "dhis2:security_worker"
-  ],
-  "title": "Security Worker"
  },
  {
   "id": "sad",
@@ -3648,35 +3322,6 @@
   "title": "Smile"
  },
  {
-  "id": "officer",
-  "category": "people",
-  "path": "people/officer",
-  "tags": [
-   "Cop",
-   "Detective",
-   "Guard",
-   "Police",
-   "Worker",
-   "dhis2:officer"
-  ],
-  "title": "Police Officer"
- },
- {
-  "id": "nurse",
-  "category": "people",
-  "path": "people/nurse",
-  "tags": [
-   "HCW",
-   "Healthcare Worker",
-   "Hospital Staff",
-   "Nurse",
-   "Staff Nurse",
-   "Worker",
-   "dhis2:nurse"
-  ],
-  "title": "Nurse"
- },
- {
   "id": "not_ok",
   "category": "people",
   "path": "people/not_ok",
@@ -3847,21 +3492,6 @@
   "title": "Training"
  },
  {
-  "id": "i_groups_perspective_crowd",
-  "category": "people",
-  "path": "people/i_groups_perspective_crowd",
-  "tags": [
-   "Community",
-   "Crowd",
-   "Group",
-   "Person",
-   "Three People",
-   "Users",
-   "dhis2:i_groups_perspective_crowd"
-  ],
-  "title": "Group"
- },
- {
   "id": "health_worker",
   "category": "people",
   "path": "people/health_worker",
@@ -4029,19 +3659,6 @@
   "title": "Female and Male"
  },
  {
-  "id": "factory_worker",
-  "category": "people",
-  "path": "people/factory_worker",
-  "tags": [
-   "Factory",
-   "Helmet",
-   "Plant",
-   "Worker",
-   "dhis2:factory_worker"
-  ],
-  "title": "Factory Worker"
- },
- {
   "id": "expectorate",
   "category": "people",
   "path": "people/expectorate",
@@ -4172,19 +3789,6 @@
    "dhis2:coughing"
   ],
   "title": "Coughing"
- },
- {
-  "id": "construction_worker",
-  "category": "people",
-  "path": "people/construction_worker",
-  "tags": [
-   "Builder",
-   "Construction",
-   "Helmet",
-   "Worker",
-   "dhis2:construction_worker"
-  ],
-  "title": "Construction Worker"
  },
  {
   "id": "clean_hands",
@@ -4476,15 +4080,24 @@
   "id": "excel_logo",
   "category": "symbols",
   "path": "symbols/excel_logo",
-  "tags": [],
-  "title": "Excel Logo"
+  "tags": [
+   "Document",
+   "Logo",
+   "Spreadsheet"
+  ],
+  "title": "Excel"
  },
  {
   "id": "openMRS_logo",
   "category": "symbols",
   "path": "symbols/openMRS_logo",
-  "tags": [],
-  "title": "Open MRS Logo"
+  "tags": [
+   "EHR",
+   "EMR",
+   "Logo",
+   "Open Medical Records System"
+  ],
+  "title": "OpenMRS"
  },
  {
   "id": "wheelchair_alt",
@@ -5264,9 +4877,9 @@
   "title": "Spine"
  },
  {
-  "id": "entry_positive",
+  "id": "entry",
   "category": "symbols",
-  "path": "symbols/entry_positive",
+  "path": "symbols/entry",
   "tags": [
    "Doorway",
    "Entrance",
@@ -5330,5 +4943,672 @@
    "Symbol"
   ],
   "title": "Health Register Book"
+ },
+ {
+  "id": "chart_bar",
+  "category": "symbols",
+  "path": "symbols/chart_bar",
+  "tags": [
+   "Bar Chart",
+   "Data",
+   "Graph",
+   "Visualization"
+  ],
+  "title": "Chart Bars"
+ },
+ {
+  "id": "chart_bar_stacked",
+  "category": "symbols",
+  "path": "symbols/chart_bar_stacked",
+  "tags": [
+   "Bar Chart",
+   "Data",
+   "Graph",
+   "Visualization"
+  ],
+  "title": "Chart Split Bars"
+ },
+ {
+  "id": "chart_line",
+  "category": "symbols",
+  "path": "symbols/chart_line",
+  "tags": [
+   "Data",
+   "Graph",
+   "Line Chart",
+   "Node",
+   "Visualization"
+  ],
+  "title": "Chart Line"
+ },
+ {
+  "id": "chart_line_stacked",
+  "category": "symbols",
+  "path": "symbols/chart_line_stacked",
+  "tags": [
+   "Data",
+   "Graph",
+   "Line Chart",
+   "Node",
+   "Visualization"
+  ],
+  "title": "Chart Double Line"
+ },
+ {
+  "id": "chart_pie",
+  "category": "symbols",
+  "path": "symbols/chart_pie",
+  "tags": [
+   "Data",
+   "Graph",
+   "Node",
+   "Pie Chart",
+   "Visualization"
+  ],
+  "title": "Chart Pie"
+ },
+ {
+  "id": "blood_a_n",
+  "category": "blood",
+  "path": "blood/blood_a_n",
+  "tags": [
+   "A Negative",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_a_n"
+  ],
+  "title": "Blood Type A-"
+ },
+ {
+  "id": "blood_a_p",
+  "category": "blood",
+  "path": "blood/blood_a_p",
+  "tags": [
+   "A Positive",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_a_p"
+  ],
+  "title": "Blood Type A+"
+ },
+ {
+  "id": "blood_ab_n",
+  "category": "blood",
+  "path": "blood/blood_ab_n",
+  "tags": [
+   "AB Negative",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_ab_n"
+  ],
+  "title": "Blood Type AB-"
+ },
+ {
+  "id": "blood_ab_p",
+  "category": "blood",
+  "path": "blood/blood_ab_p",
+  "tags": [
+   "AB Positive",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_ab_p"
+  ],
+  "title": "Blood Type AB+"
+ },
+ {
+  "id": "blood_b_n",
+  "category": "blood",
+  "path": "blood/blood_b_n",
+  "tags": [
+   "B Negative",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_b_n"
+  ],
+  "title": "Blood Type B-"
+ },
+ {
+  "id": "blood_b_p",
+  "category": "blood",
+  "path": "blood/blood_b_p",
+  "tags": [
+   "B Positive",
+   "Bag",
+   "Blood",
+   "Hematology",
+   "Transfusion",
+   "dhis2:blood_b_p"
+  ],
+  "title": "Blood Type B+"
+ },
+ {
+  "id": "blood_o_n",
+  "category": "blood",
+  "path": "blood/blood_o_n",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Hematology",
+   "O Negative",
+   "Transfusion",
+   "dhis2:blood_o_n"
+  ],
+  "title": "Blood Type O-"
+ },
+ {
+  "id": "blood_o_p",
+  "category": "blood",
+  "path": "blood/blood_o_p",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Hematology",
+   "O Positive",
+   "Transfusion",
+   "dhis2:blood_o_p"
+  ],
+  "title": "Blood Type O+"
+ },
+ {
+  "id": "blood_rh_n",
+  "category": "blood",
+  "path": "blood/blood_rh_n",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Hematology",
+   "RH Negative",
+   "Transfusion",
+   "dhis2:blood_rh_n"
+  ],
+  "title": "Blood Type RH-"
+ },
+ {
+  "id": "blood_rh_p",
+  "category": "blood",
+  "path": "blood/blood_rh_p",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Hematology",
+   "RH Positive",
+   "Transfusion",
+   "dhis2:blood_rh_p"
+  ],
+  "title": "Blood Type RH+"
+ },
+ {
+  "id": "i_groups_perspective_crowd",
+  "category": "people",
+  "path": "people/i_groups_perspective_crowd",
+  "tags": [
+   "Community",
+   "Crowd",
+   "Group",
+   "Person",
+   "Three People",
+   "Users",
+   "dhis2:i_groups_perspective_crowd"
+  ],
+  "title": "Group"
+ },
+ {
+  "id": "vomiting",
+  "category": "people",
+  "path": "people/vomiting",
+  "tags": [
+   "Gastro",
+   "Nausea",
+   "Person",
+   "Sick",
+   "Spew",
+   "Stomach Flu",
+   "Symptom",
+   "Throw Up",
+   "dhis2:vomiting"
+  ],
+  "title": "Vomiting"
+ },
+ {
+  "id": "nurse",
+  "category": "people",
+  "path": "people/nurse",
+  "tags": [
+   "HCW",
+   "Healthcare Worker",
+   "Hospital Staff",
+   "Nurse",
+   "Staff Nurse",
+   "Worker",
+   "dhis2:nurse"
+  ],
+  "title": "Nurse"
+ },
+ {
+  "id": "military_worker",
+  "category": "people",
+  "path": "people/military_worker",
+  "tags": [
+   "Armed Services",
+   "Army",
+   "Gun",
+   "Helmet",
+   "Soldier",
+   "Uniform",
+   "dhis2:military_worker"
+  ],
+  "title": "Military Personnel"
+ },
+ {
+  "id": "prisoner",
+  "category": "people",
+  "path": "people/prisoner",
+  "tags": [
+   "Detainee",
+   "Incarceration",
+   "Inmate",
+   "Prison",
+   "dhis2:prisoner"
+  ],
+  "title": "Prisoner"
+ },
+ {
+  "id": "truck_driver",
+  "category": "people",
+  "path": "people/truck_driver",
+  "tags": [
+   "Driver",
+   "Lorry",
+   "Road",
+   "Truck",
+   "Vehicle",
+   "Wheel",
+   "Worker",
+   "dhis2:truck_driver"
+  ],
+  "title": "Truck Driver"
+ },
+ {
+  "id": "factory_worker",
+  "category": "people",
+  "path": "people/factory_worker",
+  "tags": [
+   "Factory",
+   "Helmet",
+   "Plant",
+   "Worker",
+   "dhis2:factory_worker"
+  ],
+  "title": "Factory Worker"
+ },
+ {
+  "id": "security_worker",
+  "category": "people",
+  "path": "people/security_worker",
+  "tags": [
+   "Guard",
+   "Officer",
+   "Prison",
+   "Worker",
+   "dhis2:security_worker"
+  ],
+  "title": "Security Worker"
+ },
+ {
+  "id": "officer",
+  "category": "people",
+  "path": "people/officer",
+  "tags": [
+   "Cop",
+   "Detective",
+   "Guard",
+   "Police",
+   "Worker",
+   "dhis2:officer"
+  ],
+  "title": "Police Officer"
+ },
+ {
+  "id": "construction_worker",
+  "category": "people",
+  "path": "people/construction_worker",
+  "tags": [
+   "Builder",
+   "Construction",
+   "Helmet",
+   "Worker",
+   "dhis2:construction_worker"
+  ],
+  "title": "Construction Worker"
+ },
+ {
+  "id": "palm_branches_roof",
+  "category": "places",
+  "path": "places/palm_branches_roof",
+  "tags": [
+   "Building",
+   "House",
+   "Hut",
+   "dhis2:palm_branches_roof"
+  ],
+  "title": "Home with Roof Made of Palm Branches"
+ },
+ {
+  "id": "proper_roof",
+  "category": "places",
+  "path": "places/proper_roof",
+  "tags": [
+   "Building",
+   "House",
+   "Hut",
+   "dhis2:proper_roof"
+  ],
+  "title": "Home with Proper Roof"
+ },
+ {
+  "id": "letrina",
+  "category": "places",
+  "path": "places/letrina",
+  "tags": [
+   "Bathroom",
+   "Biffy",
+   "Bog",
+   "Crapper",
+   "Dunny",
+   "Honey Bucket",
+   "John",
+   "Kybo",
+   "Latrine",
+   "Long Drop",
+   "Outdoor Toilet",
+   "Portaloo",
+   "Privy",
+   "Thunderbox",
+   "Toilet",
+   "WC",
+   "Water Closet",
+   "dhis2:letrina"
+  ],
+  "title": "Latrine"
+ },
+ {
+  "id": "letrina_alt",
+  "category": "places",
+  "path": "places/letrina_alt",
+  "tags": [
+   "Bathroom",
+   "Biffy",
+   "Bog",
+   "Crapper",
+   "Dunny",
+   "Honey Bucket",
+   "John",
+   "Kybo",
+   "Latrine",
+   "Long Drop",
+   "Outdoor Toilet",
+   "Portaloo",
+   "Privy",
+   "Thunderbox",
+   "Toilet",
+   "WC",
+   "Water Closet"
+  ],
+  "title": "Latrine ALT"
+ },
+ {
+  "id": "temple",
+  "category": "places",
+  "path": "places/temple",
+  "tags": [
+   "House of Worship",
+   "Religion",
+   "Worship"
+  ],
+  "title": "Temple"
+ },
+ {
+  "id": "temple_alt",
+  "category": "places",
+  "path": "places/temple_alt",
+  "tags": [
+   "House of Worship",
+   "Religion",
+   "Worship"
+  ],
+  "title": "Temple Alt"
+ },
+ {
+  "id": "mosque",
+  "category": "places",
+  "path": "places/mosque",
+  "tags": [
+   "House of Worship",
+   "Islam",
+   "Muslim",
+   "Religion",
+   "Worship"
+  ],
+  "title": "Mosque"
+ },
+ {
+  "id": "emergency_post",
+  "category": "places",
+  "path": "places/emergency_post",
+  "tags": [
+   "Cross",
+   "Emergency Post",
+   "Tent",
+   "War Hospital",
+   "dhis2:emergency_post"
+  ],
+  "title": "Field Hospital"
+ },
+ {
+  "id": "rural_post",
+  "category": "places",
+  "path": "places/rural_post",
+  "tags": [
+   "Hospital",
+   "Rural Post",
+   "Small Hospital",
+   "dhis2:rural_post"
+  ],
+  "title": "Rural Clinic"
+ },
+ {
+  "id": "ambulatory_clinic",
+  "category": "places",
+  "path": "places/ambulatory_clinic",
+  "tags": [
+   "Ambulatory Clinic",
+   "Hospital",
+   "Office",
+   "Small Hospital",
+   "dhis2:ambulatory_clinic"
+  ],
+  "title": "Clinic"
+ },
+ {
+  "id": "contact_support",
+  "category": "symbols",
+  "path": "symbols/contact_support",
+  "tags": [
+   "Chat",
+   "Contact",
+   "FAQ",
+   "Help",
+   "Question Mark",
+   "Speech Bubble",
+   "dhis2:contact_support"
+  ],
+  "title": "Support"
+ },
+ {
+  "id": "i_note_action",
+  "category": "symbols",
+  "path": "symbols/i_note_action",
+  "tags": [
+   "Class",
+   "Paper",
+   "Test",
+   "dhis2:i_note_action"
+  ],
+  "title": "Notes"
+ },
+ {
+  "id": "i_certificate_paper",
+  "category": "symbols",
+  "path": "symbols/i_certificate_paper",
+  "tags": [
+   "Document",
+   "Paper",
+   "Test",
+   "dhis2:i_certificate"
+  ],
+  "title": "Certificate"
+ },
+ {
+  "id": "breeding_sites",
+  "category": "symbols",
+  "path": "symbols/breeding_sites",
+  "tags": [
+   "Disease",
+   "Eggs",
+   "Larva",
+   "dhis2:breeding_sites"
+  ],
+  "title": "Breeding Sites"
+ },
+ {
+  "id": "health_worker_form",
+  "category": "symbols",
+  "path": "symbols/health_worker_form",
+  "tags": [
+   "Doctor",
+   "Document",
+   "Nurse",
+   "Paper",
+   "Patient",
+   "Test",
+   "dhis2:health_worker_form"
+  ],
+  "title": "Health Worker Form"
+ },
+ {
+  "id": "sexual_reproductive_health",
+  "category": "symbols",
+  "path": "symbols/sexual_reproductive_health",
+  "tags": [
+   "Female",
+   "Gender",
+   "Male",
+   "Sex",
+   "Symbols",
+   "dhis2:sexual_reproductive_health"
+  ],
+  "title": "Gender Symbols"
+ },
+ {
+  "id": "hpv",
+  "category": "symbols",
+  "path": "symbols/hpv",
+  "tags": [
+   "Human Papillomavirus",
+   "Infection",
+   "Infectious Disease",
+   "Virus",
+   "dhis2:vih"
+  ],
+  "title": "HPV"
+ },
+ {
+  "id": "vih",
+  "category": "symbols",
+  "path": "symbols/vih",
+  "tags": [
+   "AIDS",
+   "HIV",
+   "Infection",
+   "Infectious Disease",
+   "Virus",
+   "dhis2:vih"
+  ],
+  "title": "HIV"
+ },
+ {
+  "id": "water_treatment",
+  "category": "symbols",
+  "path": "symbols/water_treatment",
+  "tags": [
+   "Arrows",
+   "Drop",
+   "Water",
+   "dhis2:water_treatment"
+  ],
+  "title": "Water Treatment"
+ },
+ {
+  "id": "social_distancing",
+  "category": "symbols",
+  "path": "symbols/social_distancing",
+  "tags": [
+   "Apart",
+   "Arrows",
+   "Between",
+   "Social Distance",
+   "Space",
+   "dhis2:social_distancing"
+  ],
+  "title": "Social Distancing"
+ },
+ {
+  "id": "default",
+  "category": "symbols",
+  "path": "symbols/default",
+  "tags": [
+   "Document",
+   "Paper",
+   "Test",
+   "dhis2:default"
+  ],
+  "title": "Document Edit"
+ },
+ {
+  "id": "i_exam_multiple_choice",
+  "category": "symbols",
+  "path": "symbols/i_exam_multiple_choice",
+  "tags": [
+   "Document",
+   "Exam",
+   "Note",
+   "Paper",
+   "Test",
+   "dhis2:i_exam_multiple_choice"
+  ],
+  "title": "Exam Multiple-Choice"
+ },
+ {
+  "id": "i_schedule_school_date_time",
+  "category": "symbols",
+  "path": "symbols/i_schedule_school_date_time",
+  "tags": [
+   "Appointment",
+   "Cal",
+   "Event",
+   "Time",
+   "dhis2:i_schedule_school_date_time"
+  ],
+  "title": "Calendar Schedule"
  }
 ]
