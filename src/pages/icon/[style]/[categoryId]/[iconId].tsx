@@ -1,12 +1,14 @@
+import { useRouter } from 'next/router';
+import HeadTags from '../../../../components/HeadTags';
 import IconGrid from '../../../../components/IconGrid';
 
 import { getCategoriesAndIcons, Category } from '../../../../lib/icons';
 
 interface IconPageProps {
   categories: Category[];
-  iconId?: string;
+  iconId: string;
   style: 'outline' | 'filled';
-  categoryId?: string;
+  categoryId: string;
 }
 
 export default function IconPage({
@@ -15,13 +17,22 @@ export default function IconPage({
   style,
   categories
 }: IconPageProps) {
+  const router = useRouter();
+
+  const icon = categories
+    .flatMap((category) => category.icons)
+    .find((i) => i.fileName === iconId && i.path === categoryId);
+
   return (
-    <IconGrid
-      categories={categories}
-      iconId={iconId}
-      categoryId={categoryId}
-      style={style}
-    />
+    <>
+      <HeadTags title={`Icon: ${icon.title}`} path={router.asPath} />
+      <IconGrid
+        categories={categories}
+        iconId={iconId}
+        categoryId={categoryId}
+        style={style}
+      />
+    </>
   );
 }
 
@@ -39,13 +50,11 @@ export async function getStaticPaths() {
   });
 
   const allPaths = [];
-  allIcons.forEach((icon) => {
-    allPaths.push({
-      params: { style: 'filled', categoryId: icon.path, iconId: icon.fileName }
-    });
-
-    allPaths.push({
-      params: { style: 'outline', categoryId: icon.path, iconId: icon.fileName }
+  ['filled', 'outline'].forEach((style) => {
+    allIcons.forEach((icon) => {
+      allPaths.push({
+        params: { style, categoryId: icon.path, iconId: icon.fileName }
+      });
     });
   });
 

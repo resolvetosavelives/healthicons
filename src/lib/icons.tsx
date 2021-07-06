@@ -60,3 +60,7 @@ async function getIcons(dirName: string): Promise<Icon[]> {
     return i1.title.toLowerCase() > i2.title.toLowerCase() ? 1 : -1;
   });
 }
+
+export function findIconTest() {
+  return 'hello';
+}

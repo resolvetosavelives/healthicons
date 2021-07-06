@@ -1,5 +1,4 @@
 import { useState, useMemo } from 'react';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
 import classnames from 'classnames';
 import { searchKeywords } from '../lib/searchKeywords';
@@ -80,35 +79,6 @@ export default function IconGrid({
 
   return (
     <div className="container">
-      <Head>
-        <title>Health Icons</title>
-        <link rel="icon" href="/favicon.ico" />
-
-        <meta property="og:site_name" content="Health icons" />
-        <meta property="og:title" content="Health icons" />
-        <meta
-          property="og:description"
-          content="Free, open source health icons. Use in your next commercial or personal project. Editing is ok. Republishing is ok. No need to give credit."
-        />
-        <meta property="og:url" content="http://healthicons.org/" />
-        <meta
-          property="og:image"
-          content="http://healthicons.org/og_image.png"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://healthicons.org/og_image.png"
-        />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="640" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:image"
-          content="https://healthicons.org/og_image.png"
-        />
-        <meta property="twitter:site" content="@health_icons" />
-      </Head>
-
       <TopBar />
       <main id="main">
         <div className={styles.box}>

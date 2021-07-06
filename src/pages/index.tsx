@@ -1,3 +1,4 @@
+import HeadTags from '../components/HeadTags';
 import IconGrid from '../components/IconGrid';
 import { GetStaticProps } from 'next';
 
@@ -8,7 +9,12 @@ interface HomeProps {
 }
 
 export default function Home({ categories }: HomeProps) {
-  return <IconGrid categories={categories} />;
+  return (
+    <>
+      <HeadTags />
+      <IconGrid categories={categories} />
+    </>
+  );
 }
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
