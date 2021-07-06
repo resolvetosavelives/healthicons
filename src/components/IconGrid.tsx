@@ -1,6 +1,9 @@
 import { useState, useMemo } from 'react';
 import { useRouter } from 'next/router';
+import { useSelector, useDispatch } from 'react-redux';
 import classnames from 'classnames';
+import { RootState } from '../store';
+import { setStyle, setKeywords } from '../store/search';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
 import { CategoryHeading } from './CategoryHeading';
@@ -28,11 +31,14 @@ export default function IconGrid({
   style,
   categories
 }: IconGridProps) {
+  const dispatch = useDispatch();
+  const searchKeywordsValue = useSelector(
+    (state: RootState) => state.search.keywords
+  );
+  const searchStyleValue = useSelector(
+    (state: RootState) => state.search.style
+  );
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
-  const [query, setQuery] = useState<string>();
-  const [iconStyle, setIconStyle] =
-    useState<'outline' | 'filled' | 'all'>('all');
-
   const router = useRouter();
 
   useMemo(() => {
@@ -54,7 +60,7 @@ export default function IconGrid({
 
   const iconsToRender = useMemo(() => {
     const filteredIcons: Icon[] = [];
-    if (!query) {
+    if (!searchKeywordsValue) {
       return filteredIcons;
     }
 
@@ -62,7 +68,7 @@ export default function IconGrid({
       category.icons.forEach((icon) => {
         if (
           searchKeywords(
-            query,
+            searchKeywordsValue,
             icon.tags.concat([icon.title, category.title]).join(', ')
           )
         ) {
@@ -71,7 +77,7 @@ export default function IconGrid({
       });
     });
     return filteredIcons;
-  }, [query, categories]);
+  }, [searchKeywordsValue, categories]);
 
   const totalIconCount = categories.reduce((counter, category) => {
     return counter + category.icons.length;
@@ -91,20 +97,21 @@ export default function IconGrid({
         </div>
         <label className={styles.filterBox}>
           <input
+            value={searchKeywordsValue}
             type="text"
             className={styles.filterBoxInput}
             placeholder={`Search ${totalIconCount * 2} icons…`}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => dispatch(setKeywords(e.target.value))}
           />
         </label>
 
         <div className={styles.styleToggleContainer}>
           <button
             className={classnames(styles.styleToggle, {
-              [styles.styleToggleSelected]: iconStyle === 'all'
+              [styles.styleToggleSelected]: searchStyleValue === 'all'
             })}
             onClick={() => {
-              setIconStyle('all');
+              dispatch(setStyle('all'));
             }}
           >
             <img
@@ -117,10 +124,10 @@ export default function IconGrid({
           </button>
           <button
             className={classnames(styles.styleToggle, {
-              [styles.styleToggleSelected]: iconStyle === 'filled'
+              [styles.styleToggleSelected]: searchStyleValue === 'filled'
             })}
             onClick={() => {
-              setIconStyle('filled');
+              dispatch(setStyle('filled'));
             }}
           >
             <img
@@ -133,10 +140,10 @@ export default function IconGrid({
           </button>
           <button
             className={classnames(styles.styleToggle, {
-              [styles.styleToggleSelected]: iconStyle === 'outline'
+              [styles.styleToggleSelected]: searchStyleValue === 'outline'
             })}
             onClick={() => {
-              setIconStyle('outline');
+              dispatch(setStyle('outline'));
             }}
           >
             <img
@@ -151,7 +158,7 @@ export default function IconGrid({
 
         {categories.map((category, categoryIndex) => (
           <div key={categoryIndex}>
-            {(!query ||
+            {(!searchKeywordsValue ||
               category.icons.some((icon) => {
                 return iconsToRender.includes(icon);
               })) && <CategoryHeading>{category.title}</CategoryHeading>}
@@ -160,14 +167,15 @@ export default function IconGrid({
                 <IconTile
                   key={iconIndex}
                   icon={icon}
-                  iconStyle={iconStyle}
-                  visible={!query || iconsToRender.includes(icon)}
+                  iconStyle={searchStyleValue}
+                  visible={!searchKeywordsValue || iconsToRender.includes(icon)}
                   onClick={(iconType: string) => {
                     router.push(
                       `/icon/${iconType}/${icon.path}/${icon.fileName}`,
                       undefined,
                       {
-                        shallow: true
+                        shallow: true,
+                        scroll: false
                       }
                     );
                   }}
@@ -183,7 +191,8 @@ export default function IconGrid({
             isOpen={modalIcon !== undefined}
             onClose={() => {
               router.push('/', undefined, {
-                shallow: true
+                shallow: true,
+                scroll: false
               });
             }}
           />

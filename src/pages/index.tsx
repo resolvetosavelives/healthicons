@@ -1,7 +1,6 @@
 import HeadTags from '../components/HeadTags';
 import IconGrid from '../components/IconGrid';
 import { GetStaticProps } from 'next';
-
 import { getCategoriesAndIcons, Category } from '../lib/icons';
 
 interface HomeProps {
