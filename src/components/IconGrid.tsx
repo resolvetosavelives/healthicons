@@ -48,7 +48,7 @@ export default function IconGrid({
 
     categories.forEach((category) => {
       category.icons.forEach((icon) => {
-        if (icon.fileName === iconId && icon.path === categoryId) {
+        if (icon.iconId === iconId && icon.categoryId === categoryId) {
           setModalIcon({
             icon,
             iconType: style
@@ -171,7 +171,7 @@ export default function IconGrid({
                   visible={!searchKeywordsValue || iconsToRender.includes(icon)}
                   onClick={(iconType: string) => {
                     router.push(
-                      `/icon/${iconType}/${icon.path}/${icon.fileName}`,
+                      `/icon/${iconType}/${icon.categoryId}/${icon.iconId}`,
                       undefined,
                       {
                         shallow: true,

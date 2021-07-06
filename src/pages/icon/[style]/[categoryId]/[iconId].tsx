@@ -21,7 +21,7 @@ export default function IconPage({
 
   const icon = categories
     .flatMap((category) => category.icons)
-    .find((i) => i.fileName === iconId && i.path === categoryId);
+    .find((i) => i.iconId === iconId && i.categoryId === categoryId);
 
   return (
     <>
@@ -53,7 +53,7 @@ export async function getStaticPaths() {
   ['filled', 'outline'].forEach((style) => {
     allIcons.forEach((icon) => {
       allPaths.push({
-        params: { style, categoryId: icon.path, iconId: icon.fileName }
+        params: { style, categoryId: icon.categoryId, iconId: icon.iconId }
       });
     });
   });
