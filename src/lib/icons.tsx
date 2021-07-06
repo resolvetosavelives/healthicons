@@ -16,9 +16,9 @@ export interface Category {
 }
 
 export interface Icon {
+  id: string;
+  category: string;
   title: string;
-  iconId: string;
-  categoryId: string;
   tags: string[];
 }
 
@@ -50,8 +50,8 @@ async function getIcons(dirName: string): Promise<Icon[]> {
       return {
         title: currentFileMetaData?.title || id,
         tags: currentFileMetaData?.tags || [],
-        iconId: id,
-        categoryId: dirName
+        id,
+        category: dirName
       };
     })
   );

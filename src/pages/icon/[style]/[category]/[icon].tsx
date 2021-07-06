@@ -6,41 +6,34 @@ import { getCategoriesAndIcons, Category } from '../../../../lib/icons';
 
 interface IconPageProps {
   categories: Category[];
-  iconId: string;
+  icon: string;
   style: 'outline' | 'filled';
-  categoryId: string;
+  category: string;
 }
 
 export default function IconPage({
-  iconId,
-  categoryId,
+  icon,
+  category,
   style,
   categories
 }: IconPageProps) {
   const router = useRouter();
 
-  const icon = categories
-    .flatMap((category) => category.icons)
-    .find((i) => i.iconId === iconId && i.categoryId === categoryId);
+  const iconObj = categories
+    .flatMap((c) => c.icons)
+    .find((i) => i.id === icon && i.category === category);
 
   return (
     <>
-      <HeadTags title={`Icon: ${icon.title}`} path={router.asPath} />
-      <IconGrid
-        categories={categories}
-        iconId={iconId}
-        categoryId={categoryId}
-        style={style}
-      />
+      <HeadTags title={`Icon: ${iconObj.title}`} path={router.asPath} />
+      <IconGrid categories={categories} icon={iconObj} style={style} />
     </>
   );
 }
 
-export async function getStaticProps({
-  params: { iconId, categoryId, style }
-}) {
+export async function getStaticProps({ params: { icon, category, style } }) {
   const categories = await getCategoriesAndIcons();
-  return { props: { iconId, categoryId, style, categories } };
+  return { props: { icon, category, style, categories } };
 }
 
 export async function getStaticPaths() {
@@ -53,7 +46,7 @@ export async function getStaticPaths() {
   ['filled', 'outline'].forEach((style) => {
     allIcons.forEach((icon) => {
       allPaths.push({
-        params: { style, categoryId: icon.categoryId, iconId: icon.iconId }
+        params: { style, category: icon.category, icon: icon.id }
       });
     });
   });

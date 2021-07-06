@@ -20,17 +20,11 @@ interface ModalIcon {
 
 interface IconGridProps {
   categories: Category[];
-  iconId?: string;
+  icon?: Icon;
   style?: 'outline' | 'filled';
-  categoryId?: string;
 }
 
-export default function IconGrid({
-  iconId,
-  categoryId,
-  style,
-  categories
-}: IconGridProps) {
+export default function IconGrid({ icon, style, categories }: IconGridProps) {
   const dispatch = useDispatch();
   const searchKeywordsValue = useSelector(
     (state: RootState) => state.search.keywords
@@ -42,21 +36,16 @@ export default function IconGrid({
   const router = useRouter();
 
   useMemo(() => {
-    if (!iconId) {
+    console.log(icon);
+    if (icon && style) {
+      setModalIcon({
+        icon,
+        iconType: style
+      });
+    } else {
       setModalIcon(undefined);
     }
-
-    categories.forEach((category) => {
-      category.icons.forEach((icon) => {
-        if (icon.iconId === iconId && icon.categoryId === categoryId) {
-          setModalIcon({
-            icon,
-            iconType: style
-          });
-        }
-      });
-    });
-  }, [categories, categoryId, iconId, style]);
+  }, [icon, style]);
 
   const iconsToRender = useMemo(() => {
     const filteredIcons: Icon[] = [];
@@ -64,23 +53,23 @@ export default function IconGrid({
       return filteredIcons;
     }
 
-    categories.forEach((category) => {
-      category.icons.forEach((icon) => {
+    categories.forEach((c) => {
+      c.icons.forEach((i) => {
         if (
           searchKeywords(
             searchKeywordsValue,
-            icon.tags.concat([icon.title, category.title]).join(', ')
+            i.tags.concat([i.title, c.title]).join(', ')
           )
         ) {
-          filteredIcons.push(icon);
+          filteredIcons.push(i);
         }
       });
     });
     return filteredIcons;
   }, [searchKeywordsValue, categories]);
 
-  const totalIconCount = categories.reduce((counter, category) => {
-    return counter + category.icons.length;
+  const totalIconCount = categories.reduce((counter, c) => {
+    return counter + c.icons.length;
   }, 0);
 
   return (
@@ -156,22 +145,22 @@ export default function IconGrid({
           </button>
         </div>
 
-        {categories.map((category, categoryIndex) => (
+        {categories.map((c, categoryIndex) => (
           <div key={categoryIndex}>
             {(!searchKeywordsValue ||
-              category.icons.some((icon) => {
-                return iconsToRender.includes(icon);
-              })) && <CategoryHeading>{category.title}</CategoryHeading>}
+              c.icons.some((i) => {
+                return iconsToRender.includes(i);
+              })) && <CategoryHeading>{c.title}</CategoryHeading>}
             <div className={styles.iconGrid}>
-              {category.icons.map((icon, iconIndex) => (
+              {c.icons.map((i, iconIndex) => (
                 <IconTile
                   key={iconIndex}
-                  icon={icon}
+                  icon={i}
                   iconStyle={searchStyleValue}
-                  visible={!searchKeywordsValue || iconsToRender.includes(icon)}
+                  visible={!searchKeywordsValue || iconsToRender.includes(i)}
                   onClick={(iconType: string) => {
                     router.push(
-                      `/icon/${iconType}/${icon.categoryId}/${icon.iconId}`,
+                      `/icon/${iconType}/${i.category}/${i.id}`,
                       undefined,
                       {
                         shallow: true,
