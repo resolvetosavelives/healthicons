@@ -36,7 +36,6 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
   const router = useRouter();
 
   useMemo(() => {
-    console.log(icon);
     if (icon && style) {
       setModalIcon({
         icon,
