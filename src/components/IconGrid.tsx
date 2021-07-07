@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useSelector, useDispatch } from 'react-redux';
 import classnames from 'classnames';
@@ -45,6 +45,23 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
       setModalIcon(undefined);
     }
   }, [icon, style]);
+
+  // if the path changes (by using the back/forward buttons), open or close the modal based on the path
+  useEffect(() => {
+    const parts = router.asPath.split('/');
+    if (parts.length === 5) {
+      const [, , iconStyle, iconCategory, iconId] = parts;
+      const foundIcon = categories
+        .flatMap((c) => c.icons)
+        .find((i) => i.category === iconCategory && i.id === iconId);
+
+      if (foundIcon) {
+        setModalIcon({ icon: foundIcon, iconType: iconStyle });
+      }
+    } else {
+      setModalIcon(undefined);
+    }
+  }, [categories, router.asPath]);
 
   const iconsToRender = useMemo(() => {
     const filteredIcons: Icon[] = [];
@@ -158,14 +175,17 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
                   iconStyle={searchStyleValue}
                   visible={!searchKeywordsValue || iconsToRender.includes(i)}
                   onClick={(iconType: string) => {
+                    // uses the "as" property instead of the "url" to keep the route from changing which causes all of the icons to re-render each time. See the useEffect() above that captures the back/forward buttons to handle the URL changes
                     router.push(
+                      '/',
                       `/icon/${iconType}/${i.category}/${i.id}`,
-                      undefined,
                       {
                         shallow: true,
                         scroll: false
                       }
                     );
+
+                    setModalIcon({ icon: i, iconType });
                   }}
                 />
               ))}
@@ -182,6 +202,8 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
                 shallow: true,
                 scroll: false
               });
+
+              setModalIcon(undefined);
             }}
           />
         )}
