@@ -22,7 +22,7 @@ export function IconTileModal(props: IconTileModalProps) {
       <div className={styles.modalWrapper}>
         <>
           <img
-            src={`icons/svg/${props.iconType}/${props.icon.path}/${props.icon.fileName}.svg`}
+            src={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
             className={styles.modalImage}
             width="96"
             height="96"
@@ -33,22 +33,22 @@ export function IconTileModal(props: IconTileModalProps) {
 
           <div className={styles.modalButtons}>
             <a
-              href={`icons/svg/${props.iconType}/${props.icon.path}/${props.icon.fileName}.svg`}
-              download={`${props.icon.fileName}.svg`}
+              href={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
+              download={`${props.icon.id}.svg`}
               className={styles.modalButton}
             >
               <span>SVG</span>
             </a>
             <a
-              href={`icons/png/${props.iconType}/${props.icon.path}/${props.icon.fileName}.png`}
-              download={`${props.icon.fileName}.png`}
+              href={`/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}.png`}
+              download={`${props.icon.id}.png`}
               className={styles.modalButton}
             >
               <span>48px PNG</span>
             </a>
             <a
-              href={`icons/png/${props.iconType}/${props.icon.path}/${props.icon.fileName}@2x.png`}
-              download={`${props.icon.fileName}@2x.png`}
+              href={`/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}@2x.png`}
+              download={`${props.icon.id}@2x.png`}
               className={styles.modalButton}
             >
               <span>96px PNG</span>
@@ -66,7 +66,7 @@ export function IconTileModal(props: IconTileModalProps) {
           )}
         </>
         <div className={styles.modalLabel}>Filename</div>
-        <p className={styles.filename}>{props.icon.fileName}</p>
+        <p className={styles.filename}>{props.icon.id}</p>
         <div className={styles.modalLabel}>License</div>
         <p className={styles.modalLicense}>
           <a

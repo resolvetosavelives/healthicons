@@ -16,9 +16,9 @@ export interface Category {
 }
 
 export interface Icon {
+  id: string;
+  category: string;
   title: string;
-  fileName: string;
-  path: string;
   tags: string[];
 }
 
@@ -50,8 +50,8 @@ async function getIcons(dirName: string): Promise<Icon[]> {
       return {
         title: currentFileMetaData?.title || id,
         tags: currentFileMetaData?.tags || [],
-        fileName: id,
-        path: dirName
+        id,
+        category: dirName
       };
     })
   );
@@ -59,4 +59,8 @@ async function getIcons(dirName: string): Promise<Icon[]> {
   return icons.sort((i1, i2) => {
     return i1.title.toLowerCase() > i2.title.toLowerCase() ? 1 : -1;
   });
+}
+
+export function findIconTest() {
+  return 'hello';
 }

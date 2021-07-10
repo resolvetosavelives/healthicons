@@ -27,7 +27,7 @@ export function IconTile(props: IconTileProps) {
         >
           <div className={styles.iconThumb}>
             <LazyLoadImage
-              src={`icons/svg/filled/${props.icon.path}/${props.icon.fileName}.svg`}
+              src={`/icons/svg/filled/${props.icon.category}/${props.icon.id}.svg`}
               width="48"
               height="48"
               alt={`${props.icon.title} outline icon`}
@@ -46,7 +46,7 @@ export function IconTile(props: IconTileProps) {
         >
           <div className={styles.iconThumb}>
             <LazyLoadImage
-              src={`icons/svg/outline/${props.icon.path}/${props.icon.fileName}.svg`}
+              src={`/icons/svg/outline/${props.icon.category}/${props.icon.id}.svg`}
               width="48"
               height="48"
               alt={`${props.icon.title} outline icon`}
