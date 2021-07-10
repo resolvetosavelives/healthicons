@@ -28,7 +28,7 @@ export default function IconPage({
       <HeadTags
         title={`Icon: ${iconObj.title}`}
         path={router.asPath}
-        image={`/og-icon-images/${iconObj.category}/${iconObj.id}.png`}
+        image={`og-icon-images/${iconObj.category}/${iconObj.id}.png`}
       />
       <IconGrid categories={categories} icon={iconObj} style={style} />
     </>
