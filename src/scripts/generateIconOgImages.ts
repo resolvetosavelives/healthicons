@@ -39,12 +39,12 @@ async function processIcons() {
 }
 
 async function createComposite(icon: Icon) {
-  const svgPath = `${PUBLIC_PATH}/icons/svg/filled/${icon.path}/${icon.fileName}.svg`;
+  const svgPath = `${PUBLIC_PATH}/icons/svg/filled/${icon.category}/${icon.id}.svg`;
   const iconSvg = readFileSync(svgPath)
     .toString()
     .replace(/#333333/gi, BLUE);
 
-  const outputDir = `${PUBLIC_PATH}/og-icon-images/${icon.path}`;
+  const outputDir = `${PUBLIC_PATH}/og-icon-images/${icon.category}`;
   mkdirp.sync(outputDir);
 
   const titleSvg = textToSVG.getSVG(`Icon: ${icon.title}`, textToSVGOptions);
@@ -72,7 +72,7 @@ async function createComposite(icon: Icon) {
       { input: iconImage, top: 10, left: 0 }
     ])
     .png()
-    .toFile(`${outputDir}/${icon.fileName}.png`);
+    .toFile(`${outputDir}/${icon.id}.png`);
 }
 
 processIcons();

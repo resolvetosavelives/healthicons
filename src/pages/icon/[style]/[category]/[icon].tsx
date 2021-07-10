@@ -25,7 +25,11 @@ export default function IconPage({
 
   return (
     <>
-      <HeadTags title={`Icon: ${iconObj.title}`} path={router.asPath} />
+      <HeadTags
+        title={`Icon: ${iconObj.title}`}
+        path={router.asPath}
+        image={`/og-icon-images/${iconObj.category}/${iconObj.id}.png`}
+      />
       <IconGrid categories={categories} icon={iconObj} style={style} />
     </>
   );
