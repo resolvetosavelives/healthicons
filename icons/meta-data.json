@@ -433,19 +433,6 @@
   "title": "Stock Out"
  },
  {
-  "id": "running_water",
-  "category": "objects",
-  "path": "objects/running_water",
-  "tags": [
-   "Clean Water",
-   "Drinking Water",
-   "Running Water",
-   "Sanitation",
-   "dhis2:running_water"
-  ],
-  "title": "Water Tap"
- },
- {
   "id": "rdt_result_out_stock",
   "category": "objects",
   "path": "objects/rdt_result_out_stock",
@@ -455,18 +442,6 @@
    "dhis2:rdt_result_out_stock"
   ],
   "title": "RDT Stock Out"
- },
- {
-  "id": "phone",
-  "category": "objects",
-  "path": "objects/phone",
-  "tags": [
-   "Call",
-   "Communication",
-   "Telephone",
-   "dhis2:phone"
-  ],
-  "title": "Phone"
  },
  {
   "id": "money_bag",
@@ -481,18 +456,6 @@
   "title": "Money Bag"
  },
  {
-  "id": "justice",
-  "category": "objects",
-  "path": "objects/justice",
-  "tags": [
-   "Law",
-   "Legal",
-   "Scales",
-   "dhis2:justice"
-  ],
-  "title": "Justice"
- },
- {
   "id": "i_utensils",
   "category": "objects",
   "path": "objects/i_utensils",
@@ -501,44 +464,6 @@
    "dhis2:i_utensils"
   ],
   "title": "Utensils"
- },
- {
-  "id": "hot_meal",
-  "category": "objects",
-  "path": "objects/hot_meal",
-  "tags": [
-   "Food",
-   "Meal",
-   "dhis2:hot_meal"
-  ],
-  "title": "Hot Meal"
- },
- {
-  "id": "credit_card",
-  "category": "objects",
-  "path": "objects/credit_card",
-  "tags": [
-   "Currency",
-   "Mastercard",
-   "Money",
-   "Payment",
-   "Visa",
-   "dhis2:credit_card"
-  ],
-  "title": "Credit Card"
- },
- {
-  "id": "construction",
-  "category": "objects",
-  "path": "objects/construction",
-  "tags": [
-   "Build",
-   "Construction",
-   "Settings",
-   "Tool",
-   "dhis2:construction"
-  ],
-  "title": "Hammer"
  },
  {
   "id": "coins",
@@ -4940,16 +4865,16 @@
   "title": "Health Shield"
  },
  {
-  "id": "health",
+  "id": "health_alt",
   "category": "symbols",
-  "path": "symbols/health",
+  "path": "symbols/health_alt",
   "tags": [
    "Cross",
    "Hospital",
    "Medicine",
    "Symbol"
   ],
-  "title": "Health"
+  "title": "Health ALT"
  },
  {
   "id": "health_literacy",
@@ -5646,5 +5571,80 @@
    "dhis2:i_schedule_school_date_time"
   ],
   "title": "Calendar Schedule"
+ },
+ {
+  "id": "hot_meal",
+  "category": "objects",
+  "path": "objects/hot_meal",
+  "tags": [
+   "Food",
+   "Meal",
+   "dhis2:hot_meal"
+  ],
+  "title": "Hot Meal"
+ },
+ {
+  "id": "justice",
+  "category": "objects",
+  "path": "objects/justice",
+  "tags": [
+   "Law",
+   "Legal",
+   "Scales",
+   "dhis2:justice"
+  ],
+  "title": "Justice"
+ },
+ {
+  "id": "phone",
+  "category": "objects",
+  "path": "objects/phone",
+  "tags": [
+   "Call",
+   "Communication",
+   "Telephone",
+   "dhis2:phone"
+  ],
+  "title": "Phone"
+ },
+ {
+  "id": "credit_card",
+  "category": "objects",
+  "path": "objects/credit_card",
+  "tags": [
+   "Currency",
+   "Mastercard",
+   "Money",
+   "Payment",
+   "Visa",
+   "dhis2:credit_card"
+  ],
+  "title": "Credit Card"
+ },
+ {
+  "id": "construction",
+  "category": "objects",
+  "path": "objects/construction",
+  "tags": [
+   "Build",
+   "Construction",
+   "Settings",
+   "Tool",
+   "dhis2:construction"
+  ],
+  "title": "Hammer"
+ },
+ {
+  "id": "running_water",
+  "category": "objects",
+  "path": "objects/running_water",
+  "tags": [
+   "Clean Water",
+   "Drinking Water",
+   "Running Water",
+   "Sanitation",
+   "dhis2:running_water"
+  ],
+  "title": "Water Tap"
  }
 ]
