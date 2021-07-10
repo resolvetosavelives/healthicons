@@ -3,6 +3,7 @@ import * as Figma from 'figma-js';
 import { promises as fs } from 'fs';
 import startCase from 'lodash.startcase';
 import path from 'path';
+import cliProgress from 'cli-progress';
 
 if (!config.figma.filename || !config.figma.personalAccessToken) {
   throw new Error(
@@ -25,7 +26,7 @@ function getMetadataFromDescription(name: string, description: string) {
   const metaData = description.trim().match(metadataRegex);
   if (!metaData || metaData.length < 3) {
     console.log(
-      `Missing or incorrectly formatted title/tags for component: ${name}. Found: ${description}`
+      ` ⚠️ Missing or incorrectly formatted title/tags for component: ${name}. Found: ${description}`
     );
   }
 
@@ -49,7 +50,7 @@ function verifyStyleExists(components, name, style) {
       return c.name === name && c.style === style;
     })
   ) {
-    console.log(`Missing ${style} version of: ${name}`);
+    console.log(` ⚠️ Missing ${style} version of: ${name}`);
   }
 }
 
@@ -59,15 +60,17 @@ function verifyNameIsUnique(components, category, name) {
   });
 
   if (matches.length !== 1) {
-    console.log(`More than one component is named: ${name}`);
+    console.log(` ⚠️ More than one component is named: ${name}`);
   }
 }
 
+console.log('🔎 Reading data from Figma');
 client.file(figmaFilename).then(({ data }) => {
   const metaDataArray = [];
 
   // look for icon components on the page "Export"
   // with names that match the pattern: filled/{category}/{name}
+  console.log(' 🏭 Validating & processing icons');
   data.document.children.map((child) => {
     if (
       child.type === 'CANVAS' &&
@@ -77,7 +80,7 @@ client.file(figmaFilename).then(({ data }) => {
         if (component.type === 'COMPONENT' && component.name) {
           const matches = component.name.match(filenameRegex);
           if (!matches) {
-            console.log(`Incorrect id: ${component.name}`);
+            console.log(` ⚠️ incorrect id: ${component.name}`);
             return component;
           }
 
@@ -123,6 +126,7 @@ client.file(figmaFilename).then(({ data }) => {
     return component;
   });
 
+  console.log(' 💾 Writing JSON file');
   fs.writeFile(
     `${ICONS_PATH}/meta-data.json`,
     JSON.stringify(metaDataArray, null, ' ')
