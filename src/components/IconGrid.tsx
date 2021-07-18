@@ -7,6 +7,7 @@ import { setStyle, setKeywords } from '../store/search';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
 import { CategoryHeading } from './CategoryHeading';
+import { CategoryDropdown } from './CategoryDropdown';
 import { IconTile } from './IconTile';
 import { IconTileModal } from './IconTileModal';
 import styles from '../pages/index.module.scss';
@@ -32,6 +33,10 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
   const searchStyleValue = useSelector(
     (state: RootState) => state.search.style
   );
+  const searchCategoryValue = useSelector(
+    (state: RootState) => state.search.category
+  );
+  const isFiltered = searchKeywordsValue || searchCategoryValue;
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
   const router = useRouter();
 
@@ -64,25 +69,28 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
   }, [categories, router.asPath]);
 
   const iconsToRender = useMemo(() => {
-    const filteredIcons: Icon[] = [];
-    if (!searchKeywordsValue) {
+    if (isFiltered) {
+      const filteredIcons: Icon[] = [];
+      const filteredCategories = searchCategoryValue
+        ? categories.filter((c) => c.title === searchCategoryValue)
+        : categories;
+
+      filteredCategories.forEach((c) => {
+        c.icons.forEach((i) => {
+          if (
+            searchKeywords(
+              searchKeywordsValue,
+              i.tags.concat([i.title, c.title]).join(', ')
+            )
+          ) {
+            filteredIcons.push(i);
+          }
+        });
+      });
       return filteredIcons;
     }
-
-    categories.forEach((c) => {
-      c.icons.forEach((i) => {
-        if (
-          searchKeywords(
-            searchKeywordsValue,
-            i.tags.concat([i.title, c.title]).join(', ')
-          )
-        ) {
-          filteredIcons.push(i);
-        }
-      });
-    });
-    return filteredIcons;
-  }, [searchKeywordsValue, categories]);
+    return [];
+  }, [searchKeywordsValue, searchCategoryValue, categories]);
 
   const totalIconCount = categories.reduce((counter, c) => {
     return counter + c.icons.length;
@@ -100,15 +108,18 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
             Editing is ok. Republishing is ok. No need to give credit.
           </h3>
         </div>
-        <label className={styles.filterBox}>
-          <input
-            value={searchKeywordsValue}
-            type="text"
-            className={styles.filterBoxInput}
-            placeholder={`Search ${totalIconCount * 2} icons…`}
-            onChange={(e) => dispatch(setKeywords(e.target.value))}
-          />
-        </label>
+        <div>
+          <CategoryDropdown categories={categories} />
+          <label className={styles.filterBox}>
+            <input
+              value={searchKeywordsValue}
+              type="text"
+              className={styles.filterBoxInput}
+              placeholder={`Search ${totalIconCount * 2} icons…`}
+              onChange={(e) => dispatch(setKeywords(e.target.value))}
+            />
+          </label>
+        </div>
 
         <div className={styles.styleToggleContainer}>
           <button
@@ -163,7 +174,7 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
 
         {categories.map((c, categoryIndex) => (
           <div key={categoryIndex}>
-            {(!searchKeywordsValue ||
+            {(!isFiltered ||
               c.icons.some((i) => {
                 return iconsToRender.includes(i);
               })) && <CategoryHeading>{c.title}</CategoryHeading>}
@@ -173,7 +184,7 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
                   key={iconIndex}
                   icon={i}
                   iconStyle={searchStyleValue}
-                  visible={!searchKeywordsValue || iconsToRender.includes(i)}
+                  visible={!isFiltered || iconsToRender.includes(i)}
                   onClick={(iconType: string) => {
                     // uses the "as" property instead of the "url" to keep the route from changing which causes all of the icons to re-render each time. See the useEffect() above that captures the back/forward buttons to handle the URL changes
                     router.push(
