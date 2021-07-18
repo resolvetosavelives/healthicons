@@ -32,10 +32,21 @@
   padding-right: 1rem;
 }
 
-.filterBox {
+.filterPlacementBox {
   display: flex;
   margin: 1rem 1rem -3rem 1rem;
   padding: 1rem;
+  justify-content: center;
+}
+
+.filterBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterInputLabel {
+  width: 100%;
 }
 
 .filterBoxInput {
@@ -46,13 +57,26 @@
   background: #fff url(/ui/search-2-line.svg) 1rem 50% no-repeat;
   background-size: 20px;
   border: 1px solid var(--link-decoration-color);
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   position: relative;
   top: -60px;
 
   &:focus {
     border-color: var(--link-color);
     outline: none;
+  }
+}
+
+@media (min-width: 32rem) {
+  .filterBox {
+    flex-direction: row;
+  }
+
+  .filterBoxInput {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    right: 1px;
   }
 }
 
@@ -77,11 +101,11 @@
     }
   }
 
-  .filterBoxInput {
+  .filterBox {
     width: 80%;
   }
 
-  .filterBox {
+  .filterPlacementBox {
     margin: 1rem 1rem -3.5rem 1rem;
   }
 }

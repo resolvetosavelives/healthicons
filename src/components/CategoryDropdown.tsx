@@ -1,8 +1,10 @@
 import React from 'react';
 import Downshift from 'downshift';
+import classnames from 'classnames';
 import { Category } from '../lib/icons';
 import { useDispatch } from 'react-redux';
 import { setCategory } from '../store/search';
+import styles from './CategoryDropdown.module.scss';
 
 interface CategoryDropdownProps {
   categories: Category[];
@@ -19,21 +21,17 @@ export function CategoryDropdown({ categories }: CategoryDropdownProps) {
         dispatch(setCategory(value === allCategories ? '' : value));
       }}
     >
-      {({
-        getItemProps,
-        openMenu,
-        closeMenu,
-        isOpen,
-        highlightedIndex,
-        selectedItem
-      }) => (
-        <div>
-          <button onClick={() => (isOpen ? closeMenu() : openMenu())}>
+      {({ getItemProps, openMenu, closeMenu, isOpen, selectedItem }) => (
+        <div className={styles.categoryDropdown}>
+          <button
+            className={styles.menuButton}
+            onClick={() => (isOpen ? closeMenu() : openMenu())}
+          >
             {selectedItem || allCategories}
           </button>
           {isOpen && (
             <div>
-              <ul>
+              <ul className={styles.menuContainer}>
                 {items.map((item, index) => (
                   <li
                     {...getItemProps({
@@ -42,9 +40,10 @@ export function CategoryDropdown({ categories }: CategoryDropdownProps) {
                       item,
                       isSelected: selectedItem === item
                     })}
-                    isHighlighted={highlightedIndex === index}
                   >
-                    <button>{item}</button>
+                    <button className={classnames(styles.menuItem)}>
+                      {item}
+                    </button>
                   </li>
                 ))}
               </ul>

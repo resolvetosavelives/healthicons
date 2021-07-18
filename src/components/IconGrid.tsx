@@ -108,19 +108,20 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
             Editing is ok. Republishing is ok. No need to give credit.
           </h3>
         </div>
-        <div>
-          <CategoryDropdown categories={categories} />
-          <label className={styles.filterBox}>
-            <input
-              value={searchKeywordsValue}
-              type="text"
-              className={styles.filterBoxInput}
-              placeholder={`Search ${totalIconCount * 2} icons…`}
-              onChange={(e) => dispatch(setKeywords(e.target.value))}
-            />
-          </label>
+        <div className={styles.filterPlacementBox}>
+          <div className={styles.filterBox}>
+            <CategoryDropdown categories={categories} />
+            <label className={styles.filterInputLabel}>
+              <input
+                value={searchKeywordsValue}
+                type="text"
+                className={styles.filterBoxInput}
+                placeholder={`Search ${totalIconCount * 2} icons…`}
+                onChange={(e) => dispatch(setKeywords(e.target.value))}
+              />
+            </label>
+          </div>
         </div>
-
         <div className={styles.styleToggleContainer}>
           <button
             className={classnames(styles.styleToggle, {
