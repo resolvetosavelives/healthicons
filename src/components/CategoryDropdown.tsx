@@ -34,8 +34,8 @@ export function CategoryDropdown({ categories }: CategoryDropdownProps) {
               <ul className={styles.menuContainer}>
                 {items.map((item, index) => (
                   <li
+                    key={item}
                     {...getItemProps({
-                      key: item,
                       index,
                       item,
                       isSelected: selectedItem === item

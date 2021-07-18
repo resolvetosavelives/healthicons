@@ -90,7 +90,7 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
       return filteredIcons;
     }
     return [];
-  }, [searchKeywordsValue, searchCategoryValue, categories]);
+  }, [searchKeywordsValue, searchCategoryValue, isFiltered, categories]);
 
   const totalIconCount = categories.reduce((counter, c) => {
     return counter + c.icons.length;
