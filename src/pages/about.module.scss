@@ -60,6 +60,13 @@
   }
 }
 
+.figmaPlugin {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ebecff;
+}
+
 @media (min-width: 48rem) {
   .contentContainer {
     display: flex;
