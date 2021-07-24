@@ -1,4 +1,4 @@
-import styles from './contribute.module.scss';
+import styles from './Contribute.module.scss';
 
 interface ContibuteProps {
   hasTopMargin: boolean;
