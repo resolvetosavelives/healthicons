@@ -1,6 +1,6 @@
 :root {
   --text-color: hsl(172, 89%, 14%);
-  --secondary-text-color: rgba(0, 0, 0, 0.6);
+  --secondary-text-color: rgba(0, 0, 0, 0.7);
   --link-color: rgba(102, 102, 255, 1);
   --link-color-dark: rgba(9, 9, 80, 1);
   --link-decoration-color: rgba(102, 102, 255, 0.3);
