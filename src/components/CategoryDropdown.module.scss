@@ -15,6 +15,10 @@
   border: 1px solid var(--link-decoration-color);
   margin-bottom: 0.5rem;
   border-radius: 5px;
+
+  &:first-letter {
+    text-transform: capitalize;
+  }
 }
 
 .menuContainer {
@@ -42,8 +46,11 @@
   font-size: 1rem;
   border: none;
   text-align: left;
-  text-transform: capitalize;
   background: #fff;
+
+  &:first-letter {
+    text-transform: capitalize;
+  }
 
   &:focus,
   &:hover {
@@ -51,7 +58,7 @@
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 60rem) {
   .menuButton {
     border: none;
     border-radius: 0;
