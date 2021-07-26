@@ -1,0 +1,16 @@
+.aboutBullet {
+  padding: 1rem 0 0 48px;
+  margin-top: 1rem;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 1.3rem;
+    left: 0;
+    opacity: 0.5;
+  }
+
+  p {
+    margin: 0;
+  }
+}

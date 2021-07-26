@@ -1,142 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { TopBar } from '../components/TopBar';
+import { Contibute } from '../components/Contribute';
+import { Contibutors } from '../components/Contributors';
 import styles from './about.module.scss';
 
 export default function About() {
-  const contributors = [
-    {
-      name: 'Agrata Patel',
-      link: 'https://twitter.com/b0urnvita',
-      avatar: 'https://unavatar.now.sh/twitter/b0urnvita'
-    },
-    {
-      name: 'Andy Ngo',
-      link: 'https://twitter.com/andyngo',
-      avatar: 'https://unavatar.now.sh/twitter/andyngo'
-    },
-    {
-      name: 'Bryn Jackson',
-      link: 'https://twitter.com/@superbryntendo',
-      avatar: 'https://unavatar.now.sh/twitter/superbryntendo'
-    },
-    {
-      name: 'Clara Campos',
-      link: 'https://github.com/clara-campos',
-      avatar: 'https://unavatar.now.sh/github/clara-campos'
-    },
-    {
-      name: 'Daniel Burka',
-      link: 'https://twitter.com/dburka',
-      avatar: 'https://unavatar.now.sh/twitter/dburka'
-    },
-    {
-      name: 'Gregory Schmidt',
-      link: 'https://twitter.com/_GregSchmidt',
-      avatar: 'https://unavatar.now.sh/twitter/_GregSchmidt'
-    },
-    {
-      name: 'Julia Parchimowicz',
-      link: 'https://twitter.com/its_badjuju',
-      avatar: 'https://unavatar.now.sh/twitter/its_badjuju'
-    },
-    {
-      name: 'Jemis Mali',
-      link: 'https://twitter.com/jemismali',
-      avatar: 'https://unavatar.now.sh/twitter/jemismali'
-    },
-    {
-      name: 'Jordan Stephensen',
-      link: 'https://twitter.com/jwstephensen',
-      avatar: 'https://unavatar.now.sh/twitter/jwstephensen'
-    },
-    {
-      name: 'Kirill Golubev',
-      link: 'https://github.com/ArGeoph',
-      avatar: 'https://unavatar.now.sh/github/ArGeoph'
-    },
-    {
-      name: 'Lina Wang',
-      link: 'https://twitter.com/linafab',
-      avatar: 'https://unavatar.now.sh/twitter/linafab'
-    },
-    {
-      name: 'Mario Rocchi',
-      link: 'https://twitter.com/mario_rocchi',
-      avatar: 'https://unavatar.now.sh/twitter/mario_rocchi'
-    },
-    {
-      name: 'Mayank Dhawan',
-      link: 'https://twitter.com/mayankd_',
-      avatar: 'https://unavatar.now.sh/twitter/mayankd_'
-    },
-    {
-      name: 'Megha Chandrashekar',
-      link: 'https://twitter.com/meghacshekhar',
-      avatar: 'https://unavatar.now.sh/twitter/meghacshekhar'
-    },
-    {
-      name: 'Michael Gauthier',
-      link: 'https://twitter.com/hypertextmike',
-      avatar: 'https://unavatar.now.sh/twitter/hypertextmike'
-    },
-    {
-      name: 'Nick Burka',
-      link: 'https://twitter.com/nickburka',
-      avatar: 'https://unavatar.now.sh/twitter/nickburka'
-    },
-    {
-      name: 'Parth Kapadia',
-      link: 'https://twitter.com/parthk',
-      avatar: 'https://unavatar.now.sh/twitter/parthk'
-    },
-    {
-      name: 'Rama Krushna',
-      link: 'https://twitter.com/rkdotdesign',
-      avatar: 'https://unavatar.now.sh/twitter/rkdotdesign'
-    },
-    {
-      name: 'Ranit Das',
-      link: 'https://twitter.com/dasranit12',
-      avatar: 'https://unavatar.now.sh/twitter/dasranit12'
-    },
-    {
-      name: 'Rohan Pal',
-      link: 'https://twitter.com/rohanpaldesign',
-      avatar: 'https://unavatar.now.sh/twitter/rohanpaldesign'
-    },
-    {
-      name: 'Steven Garrity',
-      link: 'https://twitter.com/sgarrity',
-      avatar: 'https://unavatar.now.sh/twitter/sgarrity'
-    },
-    {
-      name: 'Yugandhar Bhamare',
-      link: 'https://twitter.com/yug_design',
-      avatar: 'https://unavatar.now.sh/twitter/yug_design'
-    },
-    {
-      name: 'Komal Khandelwal',
-      link: 'https://twitter.com/k4komaaaal',
-      avatar: 'https://unavatar.now.sh/twitter/k4komaaaal'
-    },
-    {
-      name: 'Hetal Rathi',
-      link: 'https://twitter.com/_hetalrathi',
-      avatar: 'https://unavatar.now.sh/twitter/_hetalrathi'
-    },
-    {
-      name: 'Tekeste Kidanu',
-      link: 'https://twitter.com/tkmadeit',
-      avatar: 'https://unavatar.now.sh/twitter/tkmadeit'
-    }
-  ];
-
-  // make sure they're alphabetical
-  contributors.sort((c1, c2) => {
-    return c1.name.toLowerCase() > c2.name.toLowerCase() ? 1 : -1;
-  });
-
   return (
     <div className="container">
       <Head>
@@ -192,41 +61,29 @@ export default function About() {
               our best to respond.
             </p>
 
-            <h2 id="contribute">How to contribute</h2>
-            <div className={styles.aboutBullet}>
-              <h6>Get in touch</h6>
-              <p>
-                Join our open Slack channel by emailing{' '}
-                <a href="mailto:contact@healthicons.org">
-                  contact@healthicons.org
-                </a>
-              </p>
-              <img src="/ui/slack.svg" width="32" height="32" alt="" />
+            <div className={styles.contributeMobile}>
+              <Contibute hasTopMargin={true} />
             </div>
-            <div className={styles.aboutBullet}>
-              <h6>Contribute icons</h6>
-              <p>
-                Browse the{' '}
-                <a href="https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3">
-                  Figma
-                </a>{' '}
-                and contribute icons in the "New icons" section. Please read the
-                code of conduct (below) and the styleguide (in the Figma)
-                carefully before contributing.
-              </p>
-              <img src="/ui/figma.svg" width="32" height="32" alt="" />
-            </div>
-            <div className={styles.aboutBullet}>
-              <h6>Improve the website</h6>
-              <p>
-                Developers can browse the{' '}
-                <a href="https://github.com/resolvetosavelives/healthicons/issues">
-                  issues on Github
-                </a>{' '}
-                and pick up projects to improve this website.
-              </p>
-              <img src="/ui/code.svg" width="32" height="32" alt="" />
-            </div>
+
+            <h2 id="figma">Figma plugin</h2>
+            <p>
+              <a href="https://www.figma.com/community/plugin/992844281461869440/Health-Icons-Figma-Plugin">
+                <img
+                  src="/ui/figma-plugin.png"
+                  alt="Figma plugin demo graphic"
+                  width="800"
+                  height="400"
+                  className={styles.figmaPlugin}
+                />
+              </a>
+              Want to use Health Icons on your next design project?{' '}
+              <a href="https://twitter.com/tkmadeit">Tekeste Kidanu</a> has made
+              a{' '}
+              <a href="https://www.figma.com/community/plugin/992844281461869440/Health-Icons-Figma-Plugin">
+                very slick Figma plugin
+              </a>{' '}
+              to make them super easy to find and include.
+            </p>
 
             <h2 id="license">Icons license</h2>
             <div className={styles.codeBlock}>
@@ -398,21 +255,10 @@ export default function About() {
 
           <div className={styles.contentSide}>
             <div className={styles.contentFeature}>
-              <h2 id={styles.contributors} className="mt-1">
-                Volunteer contributors
-              </h2>
-              {contributors.map((contributor, index) => (
-                <div key={index} className={styles.contributorItem}>
-                  <a href={contributor.link}>
-                    <img
-                      src={contributor.avatar}
-                      alt={`Avatar of ${contributor.name}`}
-                      className={styles.avatarImage}
-                    />
-                    {contributor.name}
-                  </a>
-                </div>
-              ))}
+              <div className={styles.contributeDesktop}>
+                <Contibute hasTopMargin={false} />
+              </div>
+              <Contibutors />
             </div>
             <h2 className="mt-3" id="credit">
               Credit &amp; inspiration
