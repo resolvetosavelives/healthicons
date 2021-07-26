@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { TopBar } from '../components/TopBar';
-import { Contibute } from '../components/Contribute';
-import { Contibutors } from '../components/Contributors';
+import { Contribute } from '../components/Contribute';
+import { Contributors } from '../components/Contributors';
 import styles from './about.module.scss';
 
 export default function About() {
@@ -62,7 +62,7 @@ export default function About() {
             </p>
 
             <div className={styles.contributeMobile}>
-              <Contibute hasTopMargin={true} />
+              <Contribute hasTopMargin={true} />
             </div>
 
             <h2 id="figma">Figma plugin</h2>
@@ -256,9 +256,9 @@ export default function About() {
           <div className={styles.contentSide}>
             <div className={styles.contentFeature}>
               <div className={styles.contributeDesktop}>
-                <Contibute hasTopMargin={false} />
+                <Contribute hasTopMargin={false} />
               </div>
-              <Contibutors />
+              <Contributors />
             </div>
             <h2 className="mt-3" id="credit">
               Credit &amp; inspiration

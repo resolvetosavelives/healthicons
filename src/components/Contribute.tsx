@@ -1,10 +1,10 @@
 import styles from './Contribute.module.scss';
 
-interface ContibuteProps {
+interface ContributeProps {
   hasTopMargin: boolean;
 }
 
-export function Contibute({ hasTopMargin = true }: ContibuteProps) {
+export function Contribute({ hasTopMargin = true }: ContributeProps) {
   return (
     <>
       <h2 id="contribute" className={hasTopMargin ? undefined : 'mt-1'}>
