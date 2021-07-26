@@ -108,9 +108,9 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
             Editing is ok. Republishing is ok. No need to give credit.
           </h3>
         </div>
+
         <div className={styles.filterPlacementBox}>
           <div className={styles.filterBox}>
-            <CategoryDropdown categories={categories} />
             <label className={styles.filterInputLabel}>
               <input
                 value={searchKeywordsValue}
@@ -120,57 +120,42 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
                 onChange={(e) => dispatch(setKeywords(e.target.value))}
               />
             </label>
+
+            <CategoryDropdown categories={categories} />
+
+            <div className={styles.styleToggleContainer}>
+              <button
+                className={classnames(styles.styleToggle, {
+                  [styles.styleToggleSelected]: searchStyleValue === 'all'
+                })}
+                onClick={() => {
+                  dispatch(setStyle('all'));
+                }}
+              >
+                All
+              </button>
+              <button
+                className={classnames(styles.styleToggle, {
+                  [styles.styleToggleSelected]: searchStyleValue === 'filled'
+                })}
+                onClick={() => {
+                  dispatch(setStyle('filled'));
+                }}
+              >
+                Filled
+              </button>
+              <button
+                className={classnames(styles.styleToggle, {
+                  [styles.styleToggleSelected]: searchStyleValue === 'outline'
+                })}
+                onClick={() => {
+                  dispatch(setStyle('outline'));
+                }}
+              >
+                Outline
+              </button>
+            </div>
           </div>
-        </div>
-        <div className={styles.styleToggleContainer}>
-          <button
-            className={classnames(styles.styleToggle, {
-              [styles.styleToggleSelected]: searchStyleValue === 'all'
-            })}
-            onClick={() => {
-              dispatch(setStyle('all'));
-            }}
-          >
-            <img
-              src="/icons/svg/outline/symbols/yes.svg"
-              width="20"
-              height="20"
-              alt=""
-            />
-            All
-          </button>
-          <button
-            className={classnames(styles.styleToggle, {
-              [styles.styleToggleSelected]: searchStyleValue === 'filled'
-            })}
-            onClick={() => {
-              dispatch(setStyle('filled'));
-            }}
-          >
-            <img
-              src="/icons/svg/outline/symbols/yes.svg"
-              width="20"
-              height="20"
-              alt=""
-            />
-            Filled
-          </button>
-          <button
-            className={classnames(styles.styleToggle, {
-              [styles.styleToggleSelected]: searchStyleValue === 'outline'
-            })}
-            onClick={() => {
-              dispatch(setStyle('outline'));
-            }}
-          >
-            <img
-              src="/icons/svg/outline/symbols/yes.svg"
-              width="20"
-              height="20"
-              alt=""
-            />
-            Outline
-          </button>
         </div>
 
         {categories.map((c, categoryIndex) => (

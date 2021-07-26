@@ -12,7 +12,7 @@ interface CategoryDropdownProps {
 
 export function CategoryDropdown({ categories }: CategoryDropdownProps) {
   const dispatch = useDispatch();
-  const allCategories = 'all categories';
+  const allCategories = 'All categories';
   const items = [allCategories, ...categories.map((c) => c.title)];
 
   return (
