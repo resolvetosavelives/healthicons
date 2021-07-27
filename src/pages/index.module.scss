@@ -1,9 +1,9 @@
 .box {
   background: #7a76de url(/gradient.jpg) no-repeat;
   background-size: cover;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem 2rem 3rem 2rem;
   text-align: center;
-  margin: 0 -1rem;
+  margin: 0 -1rem 1rem -1rem;
 
   h1 {
     font-size: 1.75rem;
@@ -32,10 +32,22 @@
   padding-right: 1rem;
 }
 
-.filterBox {
+.filterPlacementBox {
   display: flex;
-  margin: 1rem 1rem -3rem 1rem;
-  padding: 1rem;
+  justify-content: center;
+}
+
+.filterBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterInputLabel {
+  width: 100%;
+  border: 1px solid var(--link-decoration-color);
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .filterBoxInput {
@@ -45,10 +57,9 @@
   padding: 1rem 1rem 1rem 50px;
   background: #fff url(/ui/search-2-line.svg) 1rem 50% no-repeat;
   background-size: 20px;
-  border: 1px solid var(--link-decoration-color);
+  border: none;
   border-radius: 5px;
   position: relative;
-  top: -60px;
 
   &:focus {
     border-color: var(--link-color);
@@ -56,9 +67,65 @@
   }
 }
 
-@media (min-width: 48rem) {
+.styleToggleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin: 0.3rem 0 2rem 1px;
+  border-radius: 0 5px 5px 0;
+}
+
+.styleToggle {
+  font-size: 1rem;
+  background: none;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.2rem;
+  color: var(--link-color);
+  padding: 0.5rem 1rem 0.5rem 32px;
+  position: relative;
+
+  &:before {
+    content: '.';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: var(--link-decoration-color);
+    text-indent: -1000rem;
+    color: #fff;
+    border-radius: 100px;
+    top: 7px;
+    left: 5px;
+  }
+
+  &:after {
+    content: '.';
+    transition: opacity 0.2s;
+    opacity: 0;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--link-color);
+    text-indent: -1000rem;
+    color: #fff;
+    border-radius: 100px;
+    top: 13px;
+    left: 11px;
+  }
+}
+
+.styleToggleSelected {
+  border-color: var(--link-color);
+  &:after {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 60rem) {
   .box {
-    padding: 4rem 4rem 5rem 4rem;
+    padding: 4rem 4rem 7rem 4rem;
     border-radius: 0.5rem;
     margin: 0;
     background-image: url(/gradient-icons.png), url(/gradient.jpg);
@@ -77,46 +144,28 @@
     }
   }
 
-  .filterBoxInput {
-    width: 80%;
+  .filterInputLabel {
+    border: none;
+    margin-bottom: 0;
   }
 
   .filterBox {
-    margin: 1rem 1rem -3.5rem 1rem;
+    width: 90%;
+    flex-direction: row;
   }
-}
 
-.styleToggleContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.styleToggle {
-  background: none;
-  margin: 0;
-  padding: 0;
-  border: none;
-  cursor: pointer;
-  margin: 0 0.5rem;
-  border: 1px solid var(--link-decoration-color);
-  border-radius: 1rem;
-  padding: 0.5rem;
-  width: 7rem;
-  position: relative;
-
-  img {
-    transition: opacity 0.2s;
-    opacity: 0;
-    position: absolute;
-    top: 5px;
-    left: 5px;
+  .filterBoxInput {
+    border-radius: 5px 0 0 5px;
+    right: 1px;
   }
-}
 
-.styleToggleSelected {
-  border-color: var(--link-color);
-  img {
-    opacity: 1;
+  .filterPlacementBox {
+    margin: -5rem 1rem 4rem 1rem;
+  }
+
+  .styleToggleContainer {
+    padding-left: 16px;
+    padding: 0.5rem 0 0.5rem 16px;
+    margin: 0 0 0 1px;
   }
 }
