@@ -96,15 +96,18 @@ export default function About() {
                 has waived all copyright and related or neighboring rights to
                 icons available at
                 <span property="dct:title"> Health Icons</span>.
-                <br />
+              </p>
+              <p>
                 <a
                   rel="license"
                   href="http://creativecommons.org/publicdomain/zero/1.0/"
                 >
                   <img
-                    className={styles.aboutLicense}
-                    src="http://i.creativecommons.org/p/zero/1.0/88x31.png"
-                    alt="CC0"
+                    src="/cc0.png"
+                    alt="CC0 Public Domain License"
+                    className="cczero"
+                    width="120"
+                    height="39"
                   />
                 </a>
               </p>
