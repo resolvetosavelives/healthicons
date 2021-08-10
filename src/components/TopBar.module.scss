@@ -22,16 +22,10 @@
     background-size: 24px;
     padding-left: 32px;
     min-height: 1.3rem;
+    font-size: 1.3rem;
     &:link,
     &:visited {
       text-decoration: none;
-    }
-
-    sup {
-      font-size: 0.6rem;
-      font-weight: normal;
-      margin-left: 0.2rem;
-      letter-spacing: 0.1rem;
     }
   }
 }
@@ -106,10 +100,6 @@
   }
 
   .topbarTitle {
-    font-size: 1.3rem;
-
-    sup {
-      font-size: 0.8rem;
-    }
+    font-size: 1.5rem;
   }
 }

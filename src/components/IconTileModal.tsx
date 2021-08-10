@@ -74,8 +74,10 @@ export function IconTileModal(props: IconTileModalProps) {
             href="http://creativecommons.org/publicdomain/zero/1.0/"
           >
             <img
-              src="http://i.creativecommons.org/p/zero/1.0/88x31.png"
-              alt="CC0"
+              src="/cc0.png"
+              alt="CC0 Public Domain License"
+              className={styles.cczero}
+              width="120"
             />
           </a>
           To the extent possible under law,
