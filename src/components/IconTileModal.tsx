@@ -76,8 +76,9 @@ export function IconTileModal(props: IconTileModalProps) {
             <img
               src="/cc0.png"
               alt="CC0 Public Domain License"
-              className={styles.cczero}
+              className="cczero"
               width="120"
+              height="39"
             />
           </a>
           To the extent possible under law,
