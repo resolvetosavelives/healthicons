@@ -444,105 +444,6 @@
   "title": "Money Bills"
  },
  {
-  "id": "network_5g",
-  "category": "network",
-  "path": "network/network_5g",
-  "tags": [
-   "Bandwidth",
-   "Connection",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:5g"
-  ],
-  "title": "5G"
- },
- {
-  "id": "network_4g",
-  "category": "network",
-  "path": "network/network_4g",
-  "tags": [
-   "Bandwidth",
-   "Connection",
-   "LTE",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:4g"
-  ],
-  "title": "4G"
- },
- {
-  "id": "medium_bars",
-  "category": "network",
-  "path": "network/medium_bars",
-  "tags": [
-   "Connection",
-   "Medium",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:medium_bars"
-  ],
-  "title": "Medium Bars"
- },
- {
-  "id": "low_bars",
-  "category": "network",
-  "path": "network/low_bars",
-  "tags": [
-   "Connection",
-   "Network",
-   "Phone",
-   "Slow",
-   "Speed",
-   "dhis2:low_bars"
-  ],
-  "title": "Low Bars"
- },
- {
-  "id": "high_bars",
-  "category": "network",
-  "path": "network/high_bars",
-  "tags": [
-   "Connection",
-   "Fast",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:high_bars"
-  ],
-  "title": "High Bars"
- },
- {
-  "id": "3g",
-  "category": "network",
-  "path": "network/3g",
-  "tags": [
-   "Bandwidth",
-   "Connection",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:3g"
-  ],
-  "title": "3G"
- },
- {
-  "id": "2g",
-  "category": "network",
-  "path": "network/2g",
-  "tags": [
-   "Bandwidth",
-   "Connection",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:2g"
-  ],
-  "title": "2G"
- },
- {
   "id": "pills_4",
   "category": "medications",
   "path": "medications/pills_4",
@@ -1481,20 +1382,6 @@
   "title": "Kidneys"
  },
  {
-  "id": "eyes",
-  "category": "body",
-  "path": "body/eyes",
-  "tags": [
-   "Iris",
-   "Lens",
-   "Ocular",
-   "Ophthalmology",
-   "Organ",
-   "Pupil"
-  ],
-  "title": "Eye"
- },
- {
   "id": "dna",
   "category": "body",
   "path": "body/dna",
@@ -2086,9 +1973,9 @@
   "title": "Ecology"
  },
  {
-  "id": "donkey",
+  "id": "animal_donkey",
   "category": "symbols",
-  "path": "symbols/donkey",
+  "path": "symbols/animal_donkey",
   "tags": [
    "Animal",
    "Ass",
@@ -2096,7 +1983,7 @@
    "Mule",
    "dhis2:donkey"
   ],
-  "title": "Donkey"
+  "title": "Animal Donkey"
  },
  {
   "id": "diabetes_measure",
@@ -6543,5 +6430,515 @@
    "dhis2:pneumonia"
   ],
   "title": "Pneumonia"
+ },
+ {
+  "id": "animal_cow",
+  "category": "symbols",
+  "path": "symbols/animal_cow",
+  "tags": [
+   "Animal",
+   "Beef",
+   "Farm Animal",
+   "Milk",
+   "Zoonotic Diseases"
+  ],
+  "title": "Animal Cow"
+ },
+ {
+  "id": "animal_spider",
+  "category": "symbols",
+  "path": "symbols/animal_spider",
+  "tags": [
+   "Animal",
+   "Arachnid",
+   "Bite",
+   "Disease",
+   "Insect",
+   "Poison",
+   "Zoonotic Diseases"
+  ],
+  "title": "Animal Spider"
+ },
+ {
+  "id": "animal_tick",
+  "category": "symbols",
+  "path": "symbols/animal_tick",
+  "tags": [
+   "Animal",
+   "Disease",
+   "Insect",
+   "Zoonotic Diseases"
+  ],
+  "title": "Animal Tick"
+ },
+ {
+  "id": "assembly_point",
+  "category": "symbols",
+  "path": "symbols/assembly_point",
+  "tags": [
+   "Emergency",
+   "Navigation",
+   "Wayfinding"
+  ],
+  "title": "Assembly Point"
+ },
+ {
+  "id": "disinfecting_wipes",
+  "category": "devices",
+  "path": "devices/disinfecting_wipes",
+  "tags": [
+   "Antibacterial",
+   "Cleaning",
+   "PPE",
+   "Sanitation"
+  ],
+  "title": "PPE Disinfecting Wipes"
+ },
+ {
+  "id": "guide_dog",
+  "category": "symbols",
+  "path": "symbols/guide_dog",
+  "tags": [
+   "Animal",
+   "Blind",
+   "Service Animal",
+   "Sight"
+  ],
+  "title": "Guide Dog"
+ },
+ {
+  "id": "spleen",
+  "category": "body",
+  "path": "body/spleen",
+  "tags": [
+   "Body",
+   "Human",
+   "Immune System",
+   "Lymphatic System",
+   "Organs",
+   "Spleen"
+  ],
+  "title": "Spleen"
+ },
+ {
+  "id": "ventilator",
+  "category": "devices",
+  "path": "devices/ventilator",
+  "tags": [
+   "Breathing",
+   "Device",
+   "Lungs"
+  ],
+  "title": "Ventilator"
+ },
+ {
+  "id": "ventilator_alt",
+  "category": "devices",
+  "path": "devices/ventilator_alt",
+  "tags": [
+   "Breathing",
+   "Device",
+   "Lungs"
+  ],
+  "title": "Ventilator ALT"
+ },
+ {
+  "id": "unhealthy_food",
+  "category": "objects",
+  "path": "objects/unhealthy_food",
+  "tags": [
+   "Fast Food",
+   "Food",
+   "French Fries",
+   "Fried Food",
+   "Nutrition"
+  ],
+  "title": "Unhealthy Food"
+ },
+ {
+  "id": "ui_zoom_out",
+  "category": "symbols",
+  "path": "symbols/ui_zoom_out",
+  "tags": [
+   "Magnifying Glass",
+   "Navigation",
+   "User interface"
+  ],
+  "title": "UI Zoom In"
+ },
+ {
+  "id": "ui_zoom_in",
+  "category": "symbols",
+  "path": "symbols/ui_zoom_in",
+  "tags": [
+   "Magnifying Glass",
+   "Navigation",
+   "User interface"
+  ],
+  "title": "UI Zoom Out"
+ },
+ {
+  "id": "ui_zoom",
+  "category": "symbols",
+  "path": "symbols/ui_zoom",
+  "tags": [
+   "Find",
+   "Magnifying Glass",
+   "Navigation",
+   "Search",
+   "User interface"
+  ],
+  "title": "UI Zoom"
+ },
+ {
+  "id": "ui_settings",
+  "category": "symbols",
+  "path": "symbols/ui_settings",
+  "tags": [
+   "Navigation",
+   "Preferences",
+   "User interface"
+  ],
+  "title": "Settings"
+ },
+ {
+  "id": "ui_secure",
+  "category": "symbols",
+  "path": "symbols/ui_secure",
+  "tags": [
+   "Lock",
+   "Navigation",
+   "Security",
+   "User interface"
+  ],
+  "title": "Secure"
+ },
+ {
+  "id": "ui_preferences",
+  "category": "symbols",
+  "path": "symbols/ui_preferences",
+  "tags": [
+   "Navigation",
+   "Settings",
+   "User interface"
+  ],
+  "title": "Preferences"
+ },
+ {
+  "id": "ui_folder_family",
+  "category": "symbols",
+  "path": "symbols/ui_folder_family",
+  "tags": [
+   "Data",
+   "Folder",
+   "Navigation",
+   "User interface"
+  ],
+  "title": "UI Family Folder"
+ },
+ {
+  "id": "ui_folder",
+  "category": "symbols",
+  "path": "symbols/ui_folder",
+  "tags": [
+   "Data",
+   "Folder",
+   "Navigation",
+   "User interface"
+  ],
+  "title": "UI Folder"
+ },
+ {
+  "id": "ui_menu",
+  "category": "symbols",
+  "path": "symbols/ui_menu",
+  "tags": [
+   "Navigation",
+   "User interface"
+  ],
+  "title": "UI Menu"
+ },
+ {
+  "id": "ui_menu_grid",
+  "category": "symbols",
+  "path": "symbols/ui_menu_grid",
+  "tags": [
+   "Navigation",
+   "User interface"
+  ],
+  "title": "UI Menu Grid"
+ },
+ {
+  "id": "social_work",
+  "category": "specialties",
+  "path": "specialties/social_work",
+  "tags": [
+   "Care",
+   "Department",
+   "Hands",
+   "Heart",
+   "Social Worker",
+   "Speciality"
+  ],
+  "title": "Social Work"
+ },
+ {
+  "id": "intensive_care_unit",
+  "category": "specialties",
+  "path": "specialties/intensive_care_unit",
+  "tags": [
+   "Department",
+   "ICU",
+   "NICU",
+   "Speciality"
+  ],
+  "title": "Intensive Care Unit"
+ },
+ {
+  "id": "pediatrics",
+  "category": "specialties",
+  "path": "specialties/pediatrics",
+  "tags": [
+   "Baby",
+   "Child",
+   "Department",
+   "Pediatrician",
+   "Speciality"
+  ],
+  "title": "Pediatrics"
+ },
+ {
+  "id": "gym",
+  "category": "specialties",
+  "path": "specialties/gym",
+  "tags": [
+   "Department",
+   "Exercise",
+   "Gymnasium",
+   "Speciality",
+   "Weights"
+  ],
+  "title": "Gym"
+ },
+ {
+  "id": "physical_therapy",
+  "category": "specialties",
+  "path": "specialties/physical_therapy",
+  "tags": [
+   "Assisted Walking",
+   "Department",
+   "PT",
+   "Speciality"
+  ],
+  "title": "Physical Therapy"
+ },
+ {
+  "id": "pediatric_surgery",
+  "category": "people",
+  "path": "people/pediatric_surgery",
+  "tags": [
+   "Antenatal Care",
+   "Baby",
+   "Child",
+   "Pediatrics",
+   "Surgery"
+  ],
+  "title": "Pediatric Surgery"
+ },
+ {
+  "id": "neuro_surgery",
+  "category": "people",
+  "path": "people/neuro_surgery",
+  "tags": [
+   "Brain",
+   "Brain Surgery",
+   "Neurology",
+   "Surgery"
+  ],
+  "title": "Neurosurgery"
+ },
+ {
+  "id": "geriatrics",
+  "category": "specialties",
+  "path": "specialties/geriatrics",
+  "tags": [
+   "Cane",
+   "Department",
+   "Elderly",
+   "Speciality"
+  ],
+  "title": "Geriatrics"
+ },
+ {
+  "id": "database",
+  "category": "symbols",
+  "path": "symbols/database",
+  "tags": [
+   "DB",
+   "Data",
+   "Database",
+   "Storage"
+  ],
+  "title": "Database"
+ },
+ {
+  "id": "contact_lenses",
+  "category": "devices",
+  "path": "devices/contact_lenses",
+  "tags": [
+   "Corrective Lens",
+   "Ophthalmology",
+   "Sight",
+   "Vision"
+  ],
+  "title": "Contact Lens"
+ },
+ {
+  "id": "community_healthworker",
+  "category": "people",
+  "path": "people/community_healthworker",
+  "tags": [
+   "ASHA",
+   "CHEW",
+   "CHW",
+   "Healthcare Worker",
+   "Nurse",
+   "Village"
+  ],
+  "title": "Community Healthcare Worker"
+ },
+ {
+  "id": "chaplaincy",
+  "category": "specialties",
+  "path": "specialties/chaplaincy",
+  "tags": [
+   "Department",
+   "Prayer",
+   "Religion",
+   "Speciality",
+   "Spirituality"
+  ],
+  "title": "Chaplaincy"
+ },
+ {
+  "id": "cast",
+  "category": "devices",
+  "path": "devices/cast",
+  "tags": [
+   "Arm",
+   "Broken Arm",
+   "Limb",
+   "Splint"
+  ],
+  "title": "Cast"
+ },
+ {
+  "id": "ui_user_profile",
+  "category": "symbols",
+  "path": "symbols/ui_user_profile",
+  "tags": [
+   "Navigation",
+   "User interface"
+  ],
+  "title": "UI User Profile"
+ },
+ {
+  "id": "network_5g",
+  "category": "symbols",
+  "path": "symbols/network_5g",
+  "tags": [
+   "Bandwidth",
+   "Connection",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:5g"
+  ],
+  "title": "Network 5G"
+ },
+ {
+  "id": "network_4g",
+  "category": "symbols",
+  "path": "symbols/network_4g",
+  "tags": [
+   "Bandwidth",
+   "Connection",
+   "LTE",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:4g"
+  ],
+  "title": "Network 4G"
+ },
+ {
+  "id": "medium_bars",
+  "category": "symbols",
+  "path": "symbols/medium_bars",
+  "tags": [
+   "Connection",
+   "Medium",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:medium_bars"
+  ],
+  "title": "Network Medium Bars"
+ },
+ {
+  "id": "low_bars",
+  "category": "symbols",
+  "path": "symbols/low_bars",
+  "tags": [
+   "Connection",
+   "Network",
+   "Phone",
+   "Slow",
+   "Speed",
+   "dhis2:low_bars"
+  ],
+  "title": "Network Low Bars"
+ },
+ {
+  "id": "high_bars",
+  "category": "symbols",
+  "path": "symbols/high_bars",
+  "tags": [
+   "Connection",
+   "Fast",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:high_bars"
+  ],
+  "title": "Network High Bars"
+ },
+ {
+  "id": "3g",
+  "category": "symbols",
+  "path": "symbols/3g",
+  "tags": [
+   "Bandwidth",
+   "Connection",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:3g"
+  ],
+  "title": "Network 3G"
+ },
+ {
+  "id": "2g",
+  "category": "symbols",
+  "path": "symbols/2g",
+  "tags": [
+   "Bandwidth",
+   "Connection",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:2g"
+  ],
+  "title": "Network 2G"
  }
 ]
