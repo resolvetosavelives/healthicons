@@ -206,7 +206,7 @@ export default function IconGrid({ icon, style, categories }: IconGridProps) {
         )}
       </main>
       <footer>
-        All icons are licensed under are open source, under a{' '}
+        All icons are open source, licensed under a{' '}
         <a href="/about#license" className={styles.link}>
           Creative Commons CC0 License
         </a>
