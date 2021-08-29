@@ -6556,24 +6556,24 @@
   "title": "Unhealthy Food"
  },
  {
-  "id": "ui_zoom_out",
-  "category": "symbols",
-  "path": "symbols/ui_zoom_out",
-  "tags": [
-   "Magnifying Glass",
-   "Navigation",
-   "User interface"
-  ],
-  "title": "UI Zoom In"
- },
- {
   "id": "ui_zoom_in",
   "category": "symbols",
   "path": "symbols/ui_zoom_in",
   "tags": [
    "Magnifying Glass",
    "Navigation",
-   "User interface"
+   "User Interface"
+  ],
+  "title": "UI Zoom In"
+ },
+ {
+  "id": "ui_zoom_out",
+  "category": "symbols",
+  "path": "symbols/ui_zoom_out",
+  "tags": [
+   "Magnifying Glass",
+   "Navigation",
+   "User Interface"
   ],
   "title": "UI Zoom Out"
  },
@@ -6586,7 +6586,7 @@
    "Magnifying Glass",
    "Navigation",
    "Search",
-   "User interface"
+   "User Interface"
   ],
   "title": "UI Zoom"
  },
@@ -6597,7 +6597,7 @@
   "tags": [
    "Navigation",
    "Preferences",
-   "User interface"
+   "User Interface"
   ],
   "title": "Settings"
  },
@@ -6609,7 +6609,7 @@
    "Lock",
    "Navigation",
    "Security",
-   "User interface"
+   "User Interface"
   ],
   "title": "Secure"
  },
@@ -6620,7 +6620,7 @@
   "tags": [
    "Navigation",
    "Settings",
-   "User interface"
+   "User Interface"
   ],
   "title": "Preferences"
  },
@@ -6632,7 +6632,7 @@
    "Data",
    "Folder",
    "Navigation",
-   "User interface"
+   "User Interface"
   ],
   "title": "UI Family Folder"
  },
@@ -6644,7 +6644,7 @@
    "Data",
    "Folder",
    "Navigation",
-   "User interface"
+   "User Interface"
   ],
   "title": "UI Folder"
  },
@@ -6654,7 +6654,7 @@
   "path": "symbols/ui_menu",
   "tags": [
    "Navigation",
-   "User interface"
+   "User Interface"
   ],
   "title": "UI Menu"
  },
@@ -6664,7 +6664,7 @@
   "path": "symbols/ui_menu_grid",
   "tags": [
    "Navigation",
-   "User interface"
+   "User Interface"
   ],
   "title": "UI Menu Grid"
  },
@@ -6838,7 +6838,7 @@
   "path": "symbols/ui_user_profile",
   "tags": [
    "Navigation",
-   "User interface"
+   "User Interface"
   ],
   "title": "UI User Profile"
  },
