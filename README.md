@@ -108,14 +108,15 @@ This project uses [Next.js](https://nextjs.org).
 2. Run `yarn install`
 3. Run `yarn dev`
 
-### Importing icon meta-data
+### Importing the latest icon information from Figma
 
-To update the `public/icons/meta-data.json` file to the latest meta-data from Figma:
+To pull the latest icon information from Figma, update the open-graph images, and update the sitemap.xml:
 
 1. Copy `.env.example` to `.env.local`
 2. Go to your account settings on (figma.com)[https://www.figma.com] and generate a new access token under "Personal access tokens" and copy it to your clipboard.
 3. In `.env.local`, add `FIGMA_PERSONAL_ACCESS_TOKEN="{token-goes-here}"`
-4. Run `yarn import-meta-data`
+4. Run `yarn update-icons`
+5. If you're committing to a branch on git, make sure to remember to add the newly generated files in the `/public/` directory.
 
 ## MIT License
 
