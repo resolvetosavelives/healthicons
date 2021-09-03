@@ -27,7 +27,7 @@ export default function IconGrid({
           iconStyle={style}
           visible={true}
           onClick={(iconType: string) => {
-            // uses the "as" property instead of the "url" to keep the route from changing which causes all of the icons to re-render each time. See the useEffect() above that captures the back/forward buttons to handle the URL changes
+            // uses the "as" property instead of the "url" to keep the route from changing which causes all of the icons to re-render each time. See the useEffect() in LandingPage that captures the back/forward buttons to handle the URL changes
             router.push('/', `/icon/${iconType}/${icon.category}/${icon.id}`, {
               shallow: true,
               scroll: false
