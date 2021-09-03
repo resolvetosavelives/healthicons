@@ -8,13 +8,13 @@ import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
 import { CategoryHeading } from './CategoryHeading';
 import { CategoryDropdown } from './CategoryDropdown';
-import { IconTile } from './IconTile';
+import IconGrid from './IconGrid';
 import { IconTileModal } from './IconTileModal';
 import styles from '../pages/index.module.scss';
 
 import { Category, Icon } from '../lib/icons';
 
-interface ModalIcon {
+export interface ModalIcon {
   icon: Icon;
   iconType: string;
 }
@@ -161,38 +161,25 @@ export default function LandingPage({
             </div>
           </div>
         </div>
-
-        {categories.map((c, categoryIndex) => (
-          <div key={categoryIndex}>
-            {(!isFiltered ||
-              c.icons.some((i) => {
-                return iconsToRender.includes(i);
-              })) && <CategoryHeading>{c.title}</CategoryHeading>}
-            <div className={styles.iconGrid}>
-              {c.icons.map((i, iconIndex) => (
-                <IconTile
-                  key={iconIndex}
-                  icon={i}
-                  iconStyle={searchStyleValue}
-                  visible={!isFiltered || iconsToRender.includes(i)}
-                  onClick={(iconType: string) => {
-                    // uses the "as" property instead of the "url" to keep the route from changing which causes all of the icons to re-render each time. See the useEffect() above that captures the back/forward buttons to handle the URL changes
-                    router.push(
-                      '/',
-                      `/icon/${iconType}/${i.category}/${i.id}`,
-                      {
-                        shallow: true,
-                        scroll: false
-                      }
-                    );
-
-                    setModalIcon({ icon: i, iconType });
-                  }}
-                />
-              ))}
+        {isFiltered ? (
+          <IconGrid
+            icons={iconsToRender}
+            setModalIcon={setModalIcon}
+            style={searchStyleValue}
+          />
+        ) : (
+          categories.map((c, categoryIndex) => (
+            <div key={categoryIndex}>
+              <CategoryHeading>{c.title}</CategoryHeading>
+              <IconGrid
+                icons={c.icons}
+                setModalIcon={setModalIcon}
+                style={searchStyleValue}
+                key={c.title}
+              />
             </div>
-          </div>
-        ))}
+          ))
+        )}
         {modalIcon && (
           <IconTileModal
             icon={modalIcon.icon}
