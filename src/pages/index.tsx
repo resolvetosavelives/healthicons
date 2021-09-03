@@ -1,5 +1,5 @@
 import HeadTags from '../components/HeadTags';
-import IconGrid from '../components/IconGrid';
+import LandingPage from '../components/LandingPage';
 import { GetStaticProps } from 'next';
 import { getCategoriesAndIcons, Category } from '../lib/icons';
 
@@ -11,7 +11,7 @@ export default function Home({ categories }: HomeProps) {
   return (
     <>
       <HeadTags />
-      <IconGrid categories={categories} />
+      <LandingPage categories={categories} />
     </>
   );
 }

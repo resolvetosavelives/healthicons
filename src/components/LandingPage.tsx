@@ -19,13 +19,17 @@ interface ModalIcon {
   iconType: string;
 }
 
-interface IconGridProps {
+interface LandingPageProps {
   categories: Category[];
   icon?: Icon;
   style?: 'outline' | 'filled';
 }
 
-export default function IconGrid({ icon, style, categories }: IconGridProps) {
+export default function LandingPage({
+  icon,
+  style,
+  categories
+}: LandingPageProps) {
   const dispatch = useDispatch();
   const searchKeywordsValue = useSelector(
     (state: RootState) => state.search.keywords
