@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import HeadTags from '../../../../components/HeadTags';
-import IconGrid from '../../../../components/IconGrid';
+import LandingPage from '../../../../components/LandingPage';
 
 import { getCategoriesAndIcons, Category } from '../../../../lib/icons';
 
@@ -30,7 +30,7 @@ export default function IconPage({
         path={router.asPath}
         image={`og-icon-images/${iconObj.category}/${iconObj.id}.png`}
       />
-      <IconGrid categories={categories} icon={iconObj} style={style} />
+      <LandingPage categories={categories} icon={iconObj} style={style} />
     </>
   );
 }
