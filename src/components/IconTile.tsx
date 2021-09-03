@@ -3,11 +3,12 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import styles from './IconTile.module.scss';
 import { Icon } from '../lib/icons';
+import { SearchStyle } from '../store/search';
 
 interface IconTileProps {
   icon: Icon;
   visible: boolean;
-  iconStyle: 'all' | 'filled' | 'outline';
+  iconStyle: SearchStyle;
   onClick: (type: string) => void;
 }
 
