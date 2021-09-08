@@ -1013,15 +1013,15 @@
   "title": "Stethoscope"
  },
  {
-  "id": "sanitizer",
+  "id": "ppe_sanitizer",
   "category": "devices",
-  "path": "devices/sanitizer",
+  "path": "devices/ppe_sanitizer",
   "tags": [
    "Infection Control",
    "PPE",
    "dhis2:sanitizer"
   ],
-  "title": "Sanitizer"
+  "title": "PPE Sanitizer"
  },
  {
   "id": "ppe_mask_n95",
@@ -1145,9 +1145,9 @@
   "title": "Microscope"
  },
  {
-  "id": "mask",
+  "id": "ppe-mask",
   "category": "devices",
-  "path": "devices/mask",
+  "path": "devices/ppe-mask",
   "tags": [
    "Infection Control",
    "PPE",
@@ -6940,5 +6940,392 @@
    "dhis2:2g"
   ],
   "title": "Network 2G"
+ },
+ {
+  "id": "home-quarantine",
+  "category": "symbols",
+  "path": "symbols/home-quarantine",
+  "tags": [
+   "Covid",
+   "Home",
+   "Isolation",
+   "Quarantine",
+   "Virus"
+  ],
+  "title": "Quarantine Home"
+ },
+ {
+  "id": "calendar-quarantine",
+  "category": "symbols",
+  "path": "symbols/calendar-quarantine",
+  "tags": [
+   "Calendar",
+   "Covid",
+   "Isolation",
+   "Quarantine",
+   "Virus"
+  ],
+  "title": "Calendar Quarantine"
+ },
+ {
+  "id": "social_distancing_alt",
+  "category": "symbols",
+  "path": "symbols/social_distancing_alt",
+  "tags": [
+   "Apart",
+   "Arrows",
+   "Between",
+   "Social Distance",
+   "Space"
+  ],
+  "title": "Social Distancing ALT"
+ },
+ {
+  "id": "intestinal-pain",
+  "category": "symptoms",
+  "path": "symptoms/intestinal-pain",
+  "tags": [
+   "Ache",
+   "Digestive System",
+   "Intestine",
+   "Pain",
+   "Stomach",
+   "Symptom"
+  ],
+  "title": "Intestinal Pain"
+ },
+ {
+  "id": "virus-shield",
+  "category": "symbols",
+  "path": "symbols/virus-shield",
+  "tags": [
+   "Covid",
+   "Protection",
+   "Vaccine",
+   "Virus"
+  ],
+  "title": "Shield Virus"
+ },
+ {
+  "id": "syringe-vaccine",
+  "category": "devices",
+  "path": "devices/syringe-vaccine",
+  "tags": [
+   "Covid",
+   "Injection",
+   "Syringe",
+   "Vaccine",
+   "Virus"
+  ],
+  "title": "Syringe Vaccine"
+ },
+ {
+  "id": "virus_alt",
+  "category": "symbols",
+  "path": "symbols/virus_alt",
+  "tags": [
+   "Covid",
+   "Epidemic",
+   "Infection",
+   "Infectious",
+   "Pandemic",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Virus ALT"
+ },
+ {
+  "id": "virus_patient",
+  "category": "symbols",
+  "path": "symbols/virus_patient",
+  "tags": [
+   "Covid",
+   "Epidemic",
+   "Human",
+   "Pandemic",
+   "Patient",
+   "Person",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Patient Virus"
+ },
+ {
+  "id": "global-pandemic",
+  "category": "symbols",
+  "path": "symbols/global-pandemic",
+  "tags": [
+   "Covid",
+   "Epidemic",
+   "Pandemic",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Global Pandemic"
+ },
+ {
+  "id": "globe",
+  "category": "symbols",
+  "path": "symbols/globe",
+  "tags": [
+   "Earth",
+   "Globe",
+   "Location",
+   "World"
+  ],
+  "title": "Globe"
+ },
+ {
+  "id": "chart-cured-decreasing",
+  "category": "symbols",
+  "path": "symbols/chart-cured-decreasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Death",
+   "Graph",
+   "Metrics",
+   "Mortality",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Cured Decreasing"
+ },
+ {
+  "id": "chart-cured-increasing",
+  "category": "symbols",
+  "path": "symbols/chart-cured-increasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Death",
+   "Graph",
+   "Metrics",
+   "Mortality",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Cured Increasing"
+ },
+ {
+  "id": "chart-death-rate-increasing",
+  "category": "symbols",
+  "path": "symbols/chart-death-rate-increasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Death",
+   "Graph",
+   "Metrics",
+   "Mortality",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Death Rate Decreasing"
+ },
+ {
+  "id": "chart-death-rate-decreasing",
+  "category": "symbols",
+  "path": "symbols/chart-death-rate-decreasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Death",
+   "Graph",
+   "Metrics",
+   "Mortality",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Death Rate Increasing"
+ },
+ {
+  "id": "chart-death-rate-stable",
+  "category": "symbols",
+  "path": "symbols/chart-death-rate-stable",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Death",
+   "Graph",
+   "Metrics",
+   "Mortality",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Death Rate Stable"
+ },
+ {
+  "id": "chart-infected-decreasing",
+  "category": "symbols",
+  "path": "symbols/chart-infected-decreasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Graph",
+   "Metrics",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Infected Decreasing"
+ },
+ {
+  "id": "chart-infected-increasing",
+  "category": "symbols",
+  "path": "symbols/chart-infected-increasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Graph",
+   "Metrics",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Infected Increasing"
+ },
+ {
+  "id": "chart-infected-stable",
+  "category": "symbols",
+  "path": "symbols/chart-infected-stable",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Flat",
+   "Graph",
+   "Metrics",
+   "Stable",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Infected Stable"
+ },
+ {
+  "id": "virus-mutation",
+  "category": "symbols",
+  "path": "symbols/virus-mutation",
+  "tags": [
+   "Adaptation",
+   "Change",
+   "Covid",
+   "Evolution",
+   "Mutation",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Virus Mutation"
+ },
+ {
+  "id": "dental_hygiene",
+  "category": "devices",
+  "path": "devices/dental_hygiene",
+  "tags": [
+   "Dental",
+   "Dentist",
+   "Hygiene",
+   "Teeth",
+   "Toothbrush",
+   "Toothpaste"
+  ],
+  "title": "Dental Hygiene"
+ },
+ {
+  "id": "ppe_santizer_alt",
+  "category": "devices",
+  "path": "devices/ppe_santizer_alt",
+  "tags": [
+   "Infection Control",
+   "PPE"
+  ],
+  "title": "PPE Sanitizer ALT"
+ },
+ {
+  "id": "animal_chicken",
+  "category": "symbols",
+  "path": "symbols/animal_chicken",
+  "tags": [
+   "Bird Flu",
+   "Chicken",
+   "Chicken Pox",
+   "Farm",
+   "Poultry"
+  ],
+  "title": "Animal Chicken"
+ },
+ {
+  "id": "blood_cells",
+  "category": "body",
+  "path": "body/blood_cells",
+  "tags": [
+   "Blood",
+   "Body",
+   "Circulatory System",
+   "Human",
+   "Platelets"
+  ],
+  "title": "Blood Cells"
+ },
+ {
+  "id": "enzyme",
+  "category": "body",
+  "path": "body/enzyme",
+  "tags": [
+   "Body",
+   "Digestive System",
+   "Human",
+   "Microscopic"
+  ],
+  "title": "Enzyme"
+ },
+ {
+  "id": "fingerprint",
+  "category": "symbols",
+  "path": "symbols/fingerprint",
+  "tags": [
+   "Body",
+   "Finger",
+   "Fingerprint",
+   "Human",
+   "ID",
+   "Scan",
+   "identification"
+  ],
+  "title": "Fingerprint"
+ },
+ {
+  "id": "skeleton",
+  "category": "body",
+  "path": "body/skeleton",
+  "tags": [
+   "Body",
+   "Death",
+   "Head",
+   "Human",
+   "Skeletal System",
+   "Skeleton"
+  ],
+  "title": "Skeleton"
+ },
+ {
+  "id": "skull",
+  "category": "body",
+  "path": "body/skull",
+  "tags": [
+   "Body",
+   "Death",
+   "Head",
+   "Human",
+   "Skeletal System",
+   "Skeleton"
+  ],
+  "title": "Skull"
  }
 ]
