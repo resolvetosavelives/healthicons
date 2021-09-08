@@ -6946,11 +6946,11 @@
   "category": "symbols",
   "path": "symbols/home-quarantine",
   "tags": [
-   "covid",
-   "home",
-   "isolation",
-   "quarantine",
-   "virus"
+   "Covid",
+   "Home",
+   "Isolation",
+   "Quarantine",
+   "Virus"
   ],
   "title": "Quarantine Home"
  },
@@ -6959,11 +6959,11 @@
   "category": "symbols",
   "path": "symbols/calendar-quarantine",
   "tags": [
-   "calendar",
-   "covid",
-   "isolation",
-   "quarantine",
-   "virus"
+   "Calendar",
+   "Covid",
+   "Isolation",
+   "Quarantine",
+   "Virus"
   ],
   "title": "Calendar Quarantine"
  },
@@ -6985,12 +6985,12 @@
   "category": "symptoms",
   "path": "symptoms/intestinal-pain",
   "tags": [
-   "ache",
-   "digestive system",
-   "intestine",
-   "pain",
-   "stomach",
-   "symptom"
+   "Ache",
+   "Digestive System",
+   "Intestine",
+   "Pain",
+   "Stomach",
+   "Symptom"
   ],
   "title": "Intestinal Pain"
  },
@@ -6999,10 +6999,10 @@
   "category": "symbols",
   "path": "symbols/virus-shield",
   "tags": [
-   "covid",
-   "protection",
-   "vaccine",
-   "virus"
+   "Covid",
+   "Protection",
+   "Vaccine",
+   "Virus"
   ],
   "title": "Shield Virus"
  },
@@ -7011,11 +7011,11 @@
   "category": "devices",
   "path": "devices/syringe-vaccine",
   "tags": [
-   "covid",
-   "injection",
-   "syringe",
-   "vaccine",
-   "virus"
+   "Covid",
+   "Injection",
+   "Syringe",
+   "Vaccine",
+   "Virus"
   ],
   "title": "Syringe Vaccine"
  },
