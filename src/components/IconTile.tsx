@@ -35,7 +35,6 @@ export function IconTile(props: IconTileProps) {
               effect="opacity"
             />
           </div>
-          <div className={styles.iconTitle}>{props.icon.title}</div>
         </button>
       )}
       {['all', 'outline'].includes(props.iconStyle) && (
@@ -54,9 +53,9 @@ export function IconTile(props: IconTileProps) {
               effect="opacity"
             />
           </div>
-          <div className={styles.iconTitle}>{props.icon.title}</div>
         </button>
       )}
+      <div className={styles.iconTitle}>{props.icon.title}</div>
     </div>
   );
 }

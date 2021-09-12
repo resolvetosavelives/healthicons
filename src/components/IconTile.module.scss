@@ -4,12 +4,12 @@
 
 .iconGroup {
   text-align: center;
-  margin: 1rem 0;
+  margin: 1rem 1rem 0 0;
+  width: 120px;
 }
 
 .iconItem {
-  margin: 0 2rem 1rem 0;
-  width: 100px;
+  margin: 0;
   border: 0;
   background: transparent;
 }
@@ -18,7 +18,7 @@
   width: 96px;
   height: 96px;
   padding: 16px;
-  margin: 8px auto;
+  margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 5px;
   opacity: 0.8;
@@ -46,12 +46,13 @@
 
 .iconTitle {
   font-size: 0.8rem;
+  line-height: 1.1rem;
   color: rgba(134, 134, 155, 0.6);
-  width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
-  height: 30px;
+  height: 5rem;
+  padding: 8px 12px 0 12px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
