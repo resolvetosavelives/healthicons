@@ -5001,8 +5001,8 @@
  },
  {
   "id": "ribbon",
-  "category": "symbols",
-  "path": "symbols/ribbon",
+  "category": "conditions",
+  "path": "conditions/ribbon",
   "tags": [
    "AIDS",
    "Campaign",
@@ -7327,5 +7327,251 @@
    "Skeleton"
   ],
   "title": "Skull"
+ },
+ {
+  "id": "biochemistry_laboratory",
+  "category": "specialties",
+  "path": "specialties/biochemistry_laboratory",
+  "tags": [
+   "DNA",
+   "Laboratory",
+   "Science"
+  ],
+  "title": "Biochemistry Lab"
+ },
+ {
+  "id": "bladder",
+  "category": "body",
+  "path": "body/bladder",
+  "tags": [
+   "Organ",
+   "Urinary Tract",
+   "Urine"
+  ],
+  "title": "Bladder"
+ },
+ {
+  "id": "ears_nose_and_throat",
+  "category": "specialties",
+  "path": "specialties/ears_nose_and_throat",
+  "tags": [
+   "Ear",
+   "Nose",
+   "Throat"
+  ],
+  "title": "Ear Nose and Throat"
+ },
+ {
+  "id": "foot",
+  "category": "body",
+  "path": "body/foot",
+  "tags": [
+   "Ankle",
+   "Feet",
+   "Podiatrist",
+   "Podiatry",
+   "Toe"
+  ],
+  "title": "Foot"
+ },
+ {
+  "id": "gallbladder",
+  "category": "body",
+  "path": "body/gallbladder",
+  "tags": [
+   "Gallstone",
+   "Organ"
+  ],
+  "title": "Gallbladder"
+ },
+ {
+  "id": "lymph_nodes",
+  "category": "body",
+  "path": "body/lymph_nodes",
+  "tags": [
+   "Lymphatic System",
+   "Organ"
+  ],
+  "title": "Lymph Node"
+ },
+ {
+  "id": "nerve",
+  "category": "body",
+  "path": "body/nerve",
+  "tags": [
+   "Nervous System",
+   "Pain"
+  ],
+  "title": "Nerve"
+ },
+ {
+  "id": "pancreas",
+  "category": "body",
+  "path": "body/pancreas",
+  "tags": [
+   "Organ",
+   "Pancreatic"
+  ],
+  "title": "Pancreas"
+ },
+ {
+  "id": "sling",
+  "category": "devices",
+  "path": "devices/sling",
+  "tags": [
+   "Arm",
+   "Broken Arm",
+   "Cast",
+   "Injury",
+   "Sprain",
+   "Trauma"
+  ],
+  "title": "Sling"
+ },
+ {
+  "id": "sperm",
+  "category": "family",
+  "path": "family/sperm",
+  "tags": [
+   "Family Planning",
+   "Pregnancy",
+   "Reproductive System"
+  ],
+  "title": "Sperm"
+ },
+ {
+  "id": "urology",
+  "category": "specialties",
+  "path": "specialties/urology",
+  "tags": [
+   "Specialty"
+  ],
+  "title": "Urology"
+ },
+ {
+  "id": "nose",
+  "category": "body",
+  "path": "body/nose",
+  "tags": [
+   "Nose",
+   "Nostril",
+   "Smell"
+  ],
+  "title": "Nose"
+ },
+ {
+  "id": "loss-smell",
+  "category": "symptoms",
+  "path": "symptoms/loss-smell",
+  "tags": [
+   "Covid",
+   "Nose",
+   "Smell",
+   "Symptom"
+  ],
+  "title": "Loss of Smell"
+ },
+ {
+  "id": "viral_lung_infection",
+  "category": "symptoms",
+  "path": "symptoms/viral_lung_infection",
+  "tags": [
+   "Covid",
+   "Epidemic",
+   "Flu",
+   "Influenza",
+   "Pandemic",
+   "Symptom",
+   "Virus"
+  ],
+  "title": "Viral Lung Infection"
+ },
+ {
+  "id": "ppe-face-shield-alt",
+  "category": "devices",
+  "path": "devices/ppe-face-shield-alt",
+  "tags": [
+   "Hazardous Materials",
+   "PPE",
+   "Protection",
+   "Safety"
+  ],
+  "title": "PPE Face Shield ALT"
+ },
+ {
+  "id": "virus-sanitizer-spray",
+  "category": "devices",
+  "path": "devices/virus-sanitizer-spray",
+  "tags": [
+   "Antibacterial",
+   "Cleaner",
+   "PPE",
+   "Protection",
+   "Safety",
+   "Sanitizer"
+  ],
+  "title": "PPE Virus Sanitizer Spray"
+ },
+ {
+  "id": "virus-research",
+  "category": "symbols",
+  "path": "symbols/virus-research",
+  "tags": [
+   "Covid",
+   "Diagnostic",
+   "Lab",
+   "Magnify",
+   "Viral",
+   "Virus"
+  ],
+  "title": "Virus Research ALT"
+ },
+ {
+  "id": "virus_research_alt",
+  "category": "symbols",
+  "path": "symbols/virus_research_alt",
+  "tags": [
+   "Covid",
+   "Diagnostic",
+   "Lab",
+   "Magnify",
+   "Microscope",
+   "Viral",
+   "Virus"
+  ],
+  "title": "Virus Research"
+ },
+ {
+  "id": "virus_lab_research_syringe",
+  "category": "devices",
+  "path": "devices/virus_lab_research_syringe",
+  "tags": [
+   "Research",
+   "Syringe",
+   "Viral",
+   "Virus"
+  ],
+  "title": "Virus Lab Research"
+ },
+ {
+  "id": "virus_lab_research_test_tube",
+  "category": "devices",
+  "path": "devices/virus_lab_research_test_tube",
+  "tags": [
+   "Research",
+   "Test Tube",
+   "Viral",
+   "Virus"
+  ],
+  "title": "Virus Lab Research ALT"
+ },
+ {
+  "id": "liver-alt",
+  "category": "body",
+  "path": "body/liver-alt",
+  "tags": [
+   "Organ"
+  ],
+  "title": "Liver ALT"
  }
 ]

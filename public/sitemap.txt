@@ -14,6 +14,7 @@ https://healthicons.org/icon/filled/blood/blood_rh_p
 https://healthicons.org/icon/filled/blood/blood_rh_n
 https://healthicons.org/icon/filled/body/arm
 https://healthicons.org/icon/filled/body/bacteria
+https://healthicons.org/icon/filled/body/bladder
 https://healthicons.org/icon/filled/body/blood_cells
 https://healthicons.org/icon/filled/body/blood_drop
 https://healthicons.org/icon/filled/body/body
@@ -23,13 +24,20 @@ https://healthicons.org/icon/filled/body/ear
 https://healthicons.org/icon/filled/body/enzyme
 https://healthicons.org/icon/filled/body/eye
 https://healthicons.org/icon/filled/body/female_reproductive_system
+https://healthicons.org/icon/filled/body/foot
+https://healthicons.org/icon/filled/body/gallbladder
 https://healthicons.org/icon/filled/body/heart
 https://healthicons.org/icon/filled/body/joints
 https://healthicons.org/icon/filled/body/kidneys
 https://healthicons.org/icon/filled/body/leg
 https://healthicons.org/icon/filled/body/liver
+https://healthicons.org/icon/filled/body/liver-alt
 https://healthicons.org/icon/filled/body/lungs
+https://healthicons.org/icon/filled/body/lymph_nodes
 https://healthicons.org/icon/filled/body/mouth
+https://healthicons.org/icon/filled/body/nerve
+https://healthicons.org/icon/filled/body/nose
+https://healthicons.org/icon/filled/body/pancreas
 https://healthicons.org/icon/filled/body/skeleton
 https://healthicons.org/icon/filled/body/skull
 https://healthicons.org/icon/filled/body/spine
@@ -46,6 +54,7 @@ https://healthicons.org/icon/filled/conditions/diarrhea
 https://healthicons.org/icon/filled/conditions/chills_fever
 https://healthicons.org/icon/filled/conditions/headache
 https://healthicons.org/icon/filled/conditions/vih
+https://healthicons.org/icon/filled/conditions/ribbon
 https://healthicons.org/icon/filled/conditions/hiv_ind
 https://healthicons.org/icon/filled/conditions/hiv_neg
 https://healthicons.org/icon/filled/conditions/hiv_pos
@@ -84,6 +93,7 @@ https://healthicons.org/icon/filled/devices/ppe_apron
 https://healthicons.org/icon/filled/devices/disinfecting_wipes
 https://healthicons.org/icon/filled/devices/ppe_face_mask
 https://healthicons.org/icon/filled/devices/ppe_face_shield
+https://healthicons.org/icon/filled/devices/ppe-face-shield-alt
 https://healthicons.org/icon/filled/devices/ppe_gloves
 https://healthicons.org/icon/filled/devices/ppe_goggles
 https://healthicons.org/icon/filled/devices/ppe_gown
@@ -93,6 +103,8 @@ https://healthicons.org/icon/filled/devices/ppe_sanitizer
 https://healthicons.org/icon/filled/devices/ppe_santizer_alt
 https://healthicons.org/icon/filled/devices/ppe_suit
 https://healthicons.org/icon/filled/devices/ppe-mask
+https://healthicons.org/icon/filled/devices/virus-sanitizer-spray
+https://healthicons.org/icon/filled/devices/sling
 https://healthicons.org/icon/filled/devices/stethoscope
 https://healthicons.org/icon/filled/devices/surgical_sterilization
 https://healthicons.org/icon/filled/devices/syringe
@@ -103,6 +115,8 @@ https://healthicons.org/icon/filled/devices/thermometer_digital
 https://healthicons.org/icon/filled/devices/treated_water
 https://healthicons.org/icon/filled/devices/ventilator
 https://healthicons.org/icon/filled/devices/ventilator_alt
+https://healthicons.org/icon/filled/devices/virus_lab_research_syringe
+https://healthicons.org/icon/filled/devices/virus_lab_research_test_tube
 https://healthicons.org/icon/filled/devices/weight
 https://healthicons.org/icon/filled/devices/wheelchair
 https://healthicons.org/icon/filled/devices/wheelchair_alt
@@ -176,6 +190,7 @@ https://healthicons.org/icon/filled/family/iud
 https://healthicons.org/icon/filled/family/male_condom
 https://healthicons.org/icon/filled/family/oral_contraception_pillsx21
 https://healthicons.org/icon/filled/family/oral_contraception_pillsx28
+https://healthicons.org/icon/filled/family/sperm
 https://healthicons.org/icon/filled/family/sayana_press
 https://healthicons.org/icon/filled/medications/blister_pills_oval_x1
 https://healthicons.org/icon/filled/medications/blister_pills_oval_x14
@@ -333,11 +348,13 @@ https://healthicons.org/icon/filled/shapes/triangle_medium
 https://healthicons.org/icon/filled/shapes/triangle_small
 https://healthicons.org/icon/filled/specialties/accident_and_emergency
 https://healthicons.org/icon/filled/specialties/admissions
+https://healthicons.org/icon/filled/specialties/biochemistry_laboratory
 https://healthicons.org/icon/filled/specialties/cardiology
 https://healthicons.org/icon/filled/specialties/chaplaincy
 https://healthicons.org/icon/filled/specialties/coronary_care_unit
 https://healthicons.org/icon/filled/specialties/critical_care
 https://healthicons.org/icon/filled/specialties/discharge_lounge
+https://healthicons.org/icon/filled/specialties/ears_nose_and_throat
 https://healthicons.org/icon/filled/specialties/endocrinology
 https://healthicons.org/icon/filled/specialties/finance_dept
 https://healthicons.org/icon/filled/specialties/gastroenterology
@@ -365,6 +382,7 @@ https://healthicons.org/icon/filled/specialties/respirology
 https://healthicons.org/icon/filled/specialties/rheumatology
 https://healthicons.org/icon/filled/specialties/social_work
 https://healthicons.org/icon/filled/specialties/speech_language_therapy
+https://healthicons.org/icon/filled/specialties/urology
 https://healthicons.org/icon/filled/symbols/alert_circle
 https://healthicons.org/icon/filled/symbols/animal_chicken
 https://healthicons.org/icon/filled/symbols/animal_cow
@@ -433,7 +451,6 @@ https://healthicons.org/icon/filled/symbols/health
 https://healthicons.org/icon/filled/symbols/health_worker_form
 https://healthicons.org/icon/filled/symbols/heart
 https://healthicons.org/icon/filled/symbols/high_level
-https://healthicons.org/icon/filled/symbols/ribbon
 https://healthicons.org/icon/filled/symbols/hospital_symbol
 https://healthicons.org/icon/filled/symbols/imm
 https://healthicons.org/icon/filled/symbols/info
@@ -504,11 +521,15 @@ https://healthicons.org/icon/filled/symbols/un_paved_road
 https://healthicons.org/icon/filled/symbols/virus
 https://healthicons.org/icon/filled/symbols/virus_alt
 https://healthicons.org/icon/filled/symbols/virus-mutation
+https://healthicons.org/icon/filled/symbols/virus_research_alt
+https://healthicons.org/icon/filled/symbols/virus-research
 https://healthicons.org/icon/filled/symbols/alert
 https://healthicons.org/icon/filled/symbols/alert_triangle
 https://healthicons.org/icon/filled/symbols/running_water_alt
 https://healthicons.org/icon/filled/symbols/water_treatment
 https://healthicons.org/icon/filled/symptoms/intestinal-pain
+https://healthicons.org/icon/filled/symptoms/loss-smell
+https://healthicons.org/icon/filled/symptoms/viral_lung_infection
 https://healthicons.org/icon/filled/typography/0
 https://healthicons.org/icon/filled/typography/1
 https://healthicons.org/icon/filled/typography/2
