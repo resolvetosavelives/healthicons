@@ -59,6 +59,8 @@ https://healthicons.org/icon/filled/conditions/hiv_ind
 https://healthicons.org/icon/filled/conditions/hiv_neg
 https://healthicons.org/icon/filled/conditions/hiv_pos
 https://healthicons.org/icon/filled/conditions/hpv
+https://healthicons.org/icon/filled/conditions/intestinal-pain
+https://healthicons.org/icon/filled/conditions/loss-smell
 https://healthicons.org/icon/filled/conditions/low_vision
 https://healthicons.org/icon/filled/conditions/nausea
 https://healthicons.org/icon/filled/conditions/overweight
@@ -67,6 +69,7 @@ https://healthicons.org/icon/filled/conditions/sti
 https://healthicons.org/icon/filled/conditions/sweating
 https://healthicons.org/icon/filled/conditions/tb
 https://healthicons.org/icon/filled/conditions/underweight
+https://healthicons.org/icon/filled/conditions/viral_lung_infection
 https://healthicons.org/icon/filled/conditions/vomiting
 https://healthicons.org/icon/filled/devices/llin
 https://healthicons.org/icon/filled/devices/blood_pressure_monitor
@@ -527,9 +530,6 @@ https://healthicons.org/icon/filled/symbols/alert
 https://healthicons.org/icon/filled/symbols/alert_triangle
 https://healthicons.org/icon/filled/symbols/running_water_alt
 https://healthicons.org/icon/filled/symbols/water_treatment
-https://healthicons.org/icon/filled/symptoms/intestinal-pain
-https://healthicons.org/icon/filled/symptoms/loss-smell
-https://healthicons.org/icon/filled/symptoms/viral_lung_infection
 https://healthicons.org/icon/filled/typography/0
 https://healthicons.org/icon/filled/typography/1
 https://healthicons.org/icon/filled/typography/2
