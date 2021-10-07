@@ -6982,8 +6982,8 @@
  },
  {
   "id": "intestinal-pain",
-  "category": "symptoms",
-  "path": "symptoms/intestinal-pain",
+  "category": "conditions",
+  "path": "conditions/intestinal-pain",
   "tags": [
    "Ache",
    "Digestive System",
@@ -7461,8 +7461,8 @@
  },
  {
   "id": "loss-smell",
-  "category": "symptoms",
-  "path": "symptoms/loss-smell",
+  "category": "conditions",
+  "path": "conditions/loss-smell",
   "tags": [
    "Covid",
    "Nose",
@@ -7473,8 +7473,8 @@
  },
  {
   "id": "viral_lung_infection",
-  "category": "symptoms",
-  "path": "symptoms/viral_lung_infection",
+  "category": "conditions",
+  "path": "conditions/viral_lung_infection",
   "tags": [
    "Covid",
    "Epidemic",
