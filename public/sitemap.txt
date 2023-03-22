@@ -240,12 +240,12 @@ https://healthicons.org/icon/filled/people/asthma
 https://healthicons.org/icon/filled/people/baby_0203m
 https://healthicons.org/icon/filled/people/baby_0203_alt
 https://healthicons.org/icon/filled/people/baby_0306m
-https://healthicons.org/icon/filled/people/baby_female_0203m
 https://healthicons.org/icon/filled/people/baby_female_0203m_alt
 https://healthicons.org/icon/filled/people/baby_female_0306m
-https://healthicons.org/icon/filled/people/baby_male_0203m
 https://healthicons.org/icon/filled/people/baby_male_0203m_alt
 https://healthicons.org/icon/filled/people/baby_male_0306m
+https://healthicons.org/icon/filled/people/baby_female_0203m
+https://healthicons.org/icon/filled/people/baby_male_0203m
 https://healthicons.org/icon/filled/people/city_worker
 https://healthicons.org/icon/filled/people/call_centre
 https://healthicons.org/icon/filled/people/forum
@@ -263,7 +263,6 @@ https://healthicons.org/icon/filled/people/doctor
 https://healthicons.org/icon/filled/people/old_man
 https://healthicons.org/icon/filled/people/elderly
 https://healthicons.org/icon/filled/people/old_woman
-https://healthicons.org/icon/filled/people/wold_care
 https://healthicons.org/icon/filled/people/female_and_male
 https://healthicons.org/icon/filled/people/fetus
 https://healthicons.org/icon/filled/people/girl_0105y
@@ -313,6 +312,7 @@ https://healthicons.org/icon/filled/people/i_training_class
 https://healthicons.org/icon/filled/people/traumatism
 https://healthicons.org/icon/filled/people/wash_hands
 https://healthicons.org/icon/filled/people/water_sanitation
+https://healthicons.org/icon/filled/people/wold_care
 https://healthicons.org/icon/filled/people/woman
 https://healthicons.org/icon/filled/people/young_people
 https://healthicons.org/icon/filled/places/church
@@ -454,6 +454,7 @@ https://healthicons.org/icon/filled/symbols/health
 https://healthicons.org/icon/filled/symbols/health_worker_form
 https://healthicons.org/icon/filled/symbols/heart
 https://healthicons.org/icon/filled/symbols/high_level
+https://healthicons.org/icon/filled/symbols/hospice
 https://healthicons.org/icon/filled/symbols/hospital_symbol
 https://healthicons.org/icon/filled/symbols/imm
 https://healthicons.org/icon/filled/symbols/info
@@ -482,6 +483,7 @@ https://healthicons.org/icon/filled/symbols/nutrition
 https://healthicons.org/icon/filled/symbols/openMRS_logo
 https://healthicons.org/icon/filled/symbols/outbreak
 https://healthicons.org/icon/filled/symbols/community_meeting
+https://healthicons.org/icon/filled/symbols/palliative-care
 https://healthicons.org/icon/filled/symbols/virus_patient
 https://healthicons.org/icon/filled/symbols/paved_road
 https://healthicons.org/icon/filled/symbols/paved_road_alt
