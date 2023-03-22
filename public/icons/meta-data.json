@@ -2263,9 +2263,9 @@
   "title": "Warning"
  },
  {
-  "id": "wold_care",
+  "id": "world_care",
   "category": "people",
-  "path": "people/wold_care",
+  "path": "people/world_care",
   "tags": [
    "Activism",
    "Environment",
@@ -5182,9 +5182,9 @@
   "title": "Outpatient"
  },
  {
-  "id": "baby_male_0203m",
+  "id": "baby_male_0609m",
   "category": "people",
-  "path": "people/baby_male_0203m",
+  "path": "people/baby_male_0609m",
   "tags": [
    "Boy",
    "Diaper",
@@ -5206,9 +5206,9 @@
   "title": "Baby 2-3 Months"
  },
  {
-  "id": "baby_female_0203m",
+  "id": "baby_female_0609m",
   "category": "people",
-  "path": "people/baby_female_0203m",
+  "path": "people/baby_female_0609m",
   "tags": [
    "Diaper",
    "Girl",
@@ -7573,5 +7573,27 @@
    "Organ"
   ],
   "title": "Liver ALT"
+ },
+ {
+  "id": "palliative-care",
+  "category": "symbols",
+  "path": "symbols/palliative-care",
+  "tags": [
+   "Heart",
+   "Hearts",
+   "Palliative Care"
+  ],
+  "title": "Palliative Care"
+ },
+ {
+  "id": "hospice",
+  "category": "symbols",
+  "path": "symbols/hospice",
+  "tags": [
+   "Hospice Care",
+   "Hospital",
+   "Palliative Care"
+  ],
+  "title": "Hospice"
  }
 ]
