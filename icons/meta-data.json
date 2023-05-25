@@ -5848,7 +5848,7 @@
    "Woman",
    "dhis2:pregnant_32w"
   ],
-  "title": "32 Weeks Fetus"
+  "title": "Fetus 32 Weeks"
  },
  {
   "id": "pregnant_0812w",
@@ -5863,7 +5863,7 @@
    "Woman",
    "dhis2:pregnant_0812w"
   ],
-  "title": "8-12 Weeks Fetus"
+  "title": "Fetus 8-12 Weeks"
  },
  {
   "id": "pregnant_2426w",
@@ -5878,7 +5878,7 @@
    "Woman",
    "dhis2:pregnant_2426w"
   ],
-  "title": "24-26 Weeks Fetus"
+  "title": "Fetus 24-26 Weeks"
  },
  {
   "id": "pregnant_3638w",
@@ -5893,7 +5893,7 @@
    "Woman",
    "dhis2:pregnant_3638w"
   ],
-  "title": "36-38 Weeks Fetus"
+  "title": "Fetus 36-38 Weeks"
  },
  {
   "id": "forest_persons",
@@ -7595,5 +7595,156 @@
    "Palliative Care"
   ],
   "title": "Hospice"
+ },
+ {
+  "id": "exercise_bicycle",
+  "category": "devices",
+  "path": "devices/exercise_bicycle",
+  "tags": [
+   "Bicycle",
+   "Bike",
+   "Exercise",
+   "Fitness",
+   "Gym",
+   "Rehab",
+   "Rehabilitation"
+  ],
+  "title": "Exercise Bicycle"
+ },
+ {
+  "id": "eyeglasses",
+  "category": "devices",
+  "path": "devices/eyeglasses",
+  "tags": [
+   "Corrective Lens",
+   "Eyeglasses",
+   "Eyes",
+   "Glasses",
+   "Optometrist",
+   "Optometry"
+  ],
+  "title": "Eyeglasses"
+ },
+ {
+  "id": "FHIR_logo",
+  "category": "symbols",
+  "path": "symbols/FHIR_logo",
+  "tags": [],
+  "title": "FHIR Logo"
+ },
+ {
+  "id": "patient_band_alt",
+  "category": "devices",
+  "path": "devices/patient_band_alt",
+  "tags": [
+   "Hospital",
+   "ID",
+   "Identification",
+   "Patient"
+  ],
+  "title": "Patient Band ALT"
+ },
+ {
+  "id": "patient_band",
+  "category": "devices",
+  "path": "devices/patient_band",
+  "tags": [
+   "Hospital",
+   "ID",
+   "Identification",
+   "Patient"
+  ],
+  "title": "Patient Band"
+ },
+ {
+  "id": "blood_vessel",
+  "category": "body",
+  "path": "body/blood_vessel",
+  "tags": [
+   "Blood",
+   "Body",
+   "Hematology",
+   "Vessel"
+  ],
+  "title": "Blood Vessel"
+ },
+ {
+  "id": "fruits",
+  "category": "symbols",
+  "path": "symbols/fruits",
+  "tags": [
+   "Apple",
+   "Food",
+   "Fruit",
+   "Fruits",
+   "Grape",
+   "Health",
+   "Healthy",
+   "Nutrition"
+  ],
+  "title": "Fruits"
+ },
+ {
+  "id": "intestine",
+  "category": "body",
+  "path": "body/intestine",
+  "tags": [
+   "Body",
+   "Digestive System",
+   "Intestine"
+  ],
+  "title": "Intestine"
+ },
+ {
+  "id": "alcohol",
+  "category": "symbols",
+  "path": "symbols/alcohol",
+  "tags": [
+   "Abuse",
+   "Alcohol",
+   "Beverage",
+   "Booze",
+   "Bottle",
+   "Consumable",
+   "Drug",
+   "Food",
+   "Glass",
+   "Wine"
+  ],
+  "title": "Alcohol"
+ },
+ {
+  "id": "varicose_vein",
+  "category": "conditions",
+  "path": "conditions/varicose_vein",
+  "tags": [
+   "Aging",
+   "Blood",
+   "Body",
+   "Elderly",
+   "Leg",
+   "Varicose",
+   "Vein",
+   "Vessel"
+  ],
+  "title": "Varicose Vein"
+ },
+ {
+  "id": "sonography",
+  "category": "specialties",
+  "path": "specialties/sonography",
+  "tags": [
+   "Antenatal",
+   "Baby",
+   "Fetus",
+   "Prenatal",
+   "Scan",
+   "Sonogram",
+   "Sonograph",
+   "Specialty",
+   "Test",
+   "Testing"
+  ],
+  "title": "Sonography"
  }
 ]
