@@ -17,6 +17,7 @@ https://healthicons.org/icon/filled/body/bacteria
 https://healthicons.org/icon/filled/body/bladder
 https://healthicons.org/icon/filled/body/blood_cells
 https://healthicons.org/icon/filled/body/blood_drop
+https://healthicons.org/icon/filled/body/blood_vessel
 https://healthicons.org/icon/filled/body/body
 https://healthicons.org/icon/filled/body/neurology
 https://healthicons.org/icon/filled/body/dna
@@ -27,6 +28,7 @@ https://healthicons.org/icon/filled/body/female_reproductive_system
 https://healthicons.org/icon/filled/body/foot
 https://healthicons.org/icon/filled/body/gallbladder
 https://healthicons.org/icon/filled/body/heart
+https://healthicons.org/icon/filled/body/intestine
 https://healthicons.org/icon/filled/body/joints
 https://healthicons.org/icon/filled/body/kidneys
 https://healthicons.org/icon/filled/body/leg
@@ -69,6 +71,7 @@ https://healthicons.org/icon/filled/conditions/sti
 https://healthicons.org/icon/filled/conditions/sweating
 https://healthicons.org/icon/filled/conditions/tb
 https://healthicons.org/icon/filled/conditions/underweight
+https://healthicons.org/icon/filled/conditions/varicose_vein
 https://healthicons.org/icon/filled/conditions/viral_lung_infection
 https://healthicons.org/icon/filled/conditions/vomiting
 https://healthicons.org/icon/filled/devices/llin
@@ -81,7 +84,9 @@ https://healthicons.org/icon/filled/devices/tac
 https://healthicons.org/icon/filled/devices/defibrilator
 https://healthicons.org/icon/filled/devices/dental_hygiene
 https://healthicons.org/icon/filled/devices/discriminating_concentration_bioassays
+https://healthicons.org/icon/filled/devices/exercise_bicycle
 https://healthicons.org/icon/filled/devices/fever
+https://healthicons.org/icon/filled/devices/eyeglasses
 https://healthicons.org/icon/filled/devices/hospitalized
 https://healthicons.org/icon/filled/devices/inpatient
 https://healthicons.org/icon/filled/devices/observation
@@ -92,6 +97,8 @@ https://healthicons.org/icon/filled/devices/mobile
 https://healthicons.org/icon/filled/devices/odontology
 https://healthicons.org/icon/filled/devices/odontology_implant
 https://healthicons.org/icon/filled/devices/oxygen_tank
+https://healthicons.org/icon/filled/devices/patient_band
+https://healthicons.org/icon/filled/devices/patient_band_alt
 https://healthicons.org/icon/filled/devices/ppe_apron
 https://healthicons.org/icon/filled/devices/disinfecting_wipes
 https://healthicons.org/icon/filled/devices/ppe_face_mask
@@ -226,10 +233,6 @@ https://healthicons.org/icon/filled/objects/umbrella
 https://healthicons.org/icon/filled/objects/unhealthy_food
 https://healthicons.org/icon/filled/objects/i_utensils
 https://healthicons.org/icon/filled/objects/running_water
-https://healthicons.org/icon/filled/people/pregnant_2426w
-https://healthicons.org/icon/filled/people/pregnant_32w
-https://healthicons.org/icon/filled/people/pregnant_3638w
-https://healthicons.org/icon/filled/people/pregnant_0812w
 https://healthicons.org/icon/filled/people/exercise_running
 https://healthicons.org/icon/filled/people/exercise_walk_supported
 https://healthicons.org/icon/filled/people/exercise_walking
@@ -268,6 +271,10 @@ https://healthicons.org/icon/filled/people/old_woman
 https://healthicons.org/icon/filled/people/world_care
 https://healthicons.org/icon/filled/people/female_and_male
 https://healthicons.org/icon/filled/people/fetus
+https://healthicons.org/icon/filled/people/pregnant_2426w
+https://healthicons.org/icon/filled/people/pregnant_32w
+https://healthicons.org/icon/filled/people/pregnant_3638w
+https://healthicons.org/icon/filled/people/pregnant_0812w
 https://healthicons.org/icon/filled/people/girl_0105y
 https://healthicons.org/icon/filled/people/i_groups_perspective_crowd
 https://healthicons.org/icon/filled/people/group_discussion_meetingx3
@@ -387,8 +394,10 @@ https://healthicons.org/icon/filled/specialties/radiology
 https://healthicons.org/icon/filled/specialties/respirology
 https://healthicons.org/icon/filled/specialties/rheumatology
 https://healthicons.org/icon/filled/specialties/social_work
+https://healthicons.org/icon/filled/specialties/sonography
 https://healthicons.org/icon/filled/specialties/speech_language_therapy
 https://healthicons.org/icon/filled/specialties/urology
+https://healthicons.org/icon/filled/symbols/alcohol
 https://healthicons.org/icon/filled/symbols/alert_circle
 https://healthicons.org/icon/filled/symbols/animal_chicken
 https://healthicons.org/icon/filled/symbols/animal_cow
@@ -442,7 +451,9 @@ https://healthicons.org/icon/filled/symbols/i_exam_qualification
 https://healthicons.org/icon/filled/symbols/i_exam_multiple_choice
 https://healthicons.org/icon/filled/symbols/excel_logo
 https://healthicons.org/icon/filled/symbols/exercise
+https://healthicons.org/icon/filled/symbols/FHIR_logo
 https://healthicons.org/icon/filled/symbols/fingerprint
+https://healthicons.org/icon/filled/symbols/fruits
 https://healthicons.org/icon/filled/symbols/sexual_reproductive_health
 https://healthicons.org/icon/filled/symbols/global-pandemic
 https://healthicons.org/icon/filled/symbols/globe
