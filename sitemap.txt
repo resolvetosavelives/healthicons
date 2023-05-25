@@ -240,8 +240,10 @@ https://healthicons.org/icon/filled/people/asthma
 https://healthicons.org/icon/filled/people/baby_0203m
 https://healthicons.org/icon/filled/people/baby_0203_alt
 https://healthicons.org/icon/filled/people/baby_0306m
+https://healthicons.org/icon/filled/people/baby_female_0609m
 https://healthicons.org/icon/filled/people/baby_female_0203m_alt
 https://healthicons.org/icon/filled/people/baby_female_0306m
+https://healthicons.org/icon/filled/people/baby_male_0609m
 https://healthicons.org/icon/filled/people/baby_male_0203m_alt
 https://healthicons.org/icon/filled/people/baby_male_0306m
 https://healthicons.org/icon/filled/people/baby_female_0203m
@@ -263,6 +265,7 @@ https://healthicons.org/icon/filled/people/doctor
 https://healthicons.org/icon/filled/people/old_man
 https://healthicons.org/icon/filled/people/elderly
 https://healthicons.org/icon/filled/people/old_woman
+https://healthicons.org/icon/filled/people/world_care
 https://healthicons.org/icon/filled/people/female_and_male
 https://healthicons.org/icon/filled/people/fetus
 https://healthicons.org/icon/filled/people/girl_0105y
