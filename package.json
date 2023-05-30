@@ -1,5 +1,5 @@
 {
-  "name": "health-icons",
+  "name": "healthicons",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -74,5 +74,6 @@
     "suiteNameTemplate": "{filename}",
     "classNameTemplate": "{title}",
     "titleTemplate": "{title}"
-  }
+  },
+  "files": ["public/icons"]
 }

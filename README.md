@@ -14,11 +14,16 @@ The project is hosted by the public health not-for-profit [Resolve to Save Lives
 
 ### Accessing Icons
 
-Icons are available in several formats and in a few ways:
+Icons are available in several formats:
 
 - All icons are produced in "outline", "filled", and "negative" styles
 - Each icon is available in SVG and in PNG (48px and 96px)
-- Icons can be downloaded individually via [our website](https://healthicons.org), downloaded together in [a ZIP file](https://healthicons.org/icons.zip), or accessed under the [public/icons](https://github.com/resolvetosavelives/healthicons/tree/main/public/icons) folder in this GitHub project.
+
+Icons can be downloaded in a few ways:
+
+- Individually from [our website](https://healthicons.org)
+- Together as [a ZIP file](https://healthicons.org/icons.zip)
+- Via [NPM](https://www.npmjs.com/package/healthicons): `npm i healthicons` or `yarn add healthicons`
 
 ### Icon Requests
 
