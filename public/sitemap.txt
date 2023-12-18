@@ -27,7 +27,7 @@ https://healthicons.org/icon/filled/body/eye
 https://healthicons.org/icon/filled/body/female_reproductive_system
 https://healthicons.org/icon/filled/body/foot
 https://healthicons.org/icon/filled/body/gallbladder
-https://healthicons.org/icon/filled/body/heart
+https://healthicons.org/icon/filled/body/heart_organ
 https://healthicons.org/icon/filled/body/intestine
 https://healthicons.org/icon/filled/body/joints
 https://healthicons.org/icon/filled/body/kidneys
@@ -66,6 +66,7 @@ https://healthicons.org/icon/filled/conditions/loss-smell
 https://healthicons.org/icon/filled/conditions/low_vision
 https://healthicons.org/icon/filled/conditions/nausea
 https://healthicons.org/icon/filled/conditions/overweight
+https://healthicons.org/icon/filled/conditions/pain
 https://healthicons.org/icon/filled/conditions/pneumonia
 https://healthicons.org/icon/filled/conditions/sti
 https://healthicons.org/icon/filled/conditions/sweating
@@ -74,6 +75,7 @@ https://healthicons.org/icon/filled/conditions/underweight
 https://healthicons.org/icon/filled/conditions/varicose_vein
 https://healthicons.org/icon/filled/conditions/viral_lung_infection
 https://healthicons.org/icon/filled/conditions/vomiting
+https://healthicons.org/icon/filled/device/sonogram
 https://healthicons.org/icon/filled/devices/llin
 https://healthicons.org/icon/filled/devices/blood_pressure_monitor
 https://healthicons.org/icon/filled/devices/blood_pressure_2
@@ -81,12 +83,13 @@ https://healthicons.org/icon/filled/devices/cast
 https://healthicons.org/icon/filled/devices/cold_chain
 https://healthicons.org/icon/filled/devices/contact_lenses
 https://healthicons.org/icon/filled/devices/tac
-https://healthicons.org/icon/filled/devices/defibrilator
+https://healthicons.org/icon/filled/devices/defibrillator
 https://healthicons.org/icon/filled/devices/dental_hygiene
 https://healthicons.org/icon/filled/devices/discriminating_concentration_bioassays
 https://healthicons.org/icon/filled/devices/exercise_bicycle
 https://healthicons.org/icon/filled/devices/fever
 https://healthicons.org/icon/filled/devices/eyeglasses
+https://healthicons.org/icon/filled/devices/hand-wipe-paper
 https://healthicons.org/icon/filled/devices/hospitalized
 https://healthicons.org/icon/filled/devices/inpatient
 https://healthicons.org/icon/filled/devices/observation
@@ -249,8 +252,6 @@ https://healthicons.org/icon/filled/people/baby_female_0306m
 https://healthicons.org/icon/filled/people/baby_male_0609m
 https://healthicons.org/icon/filled/people/baby_male_0203m_alt
 https://healthicons.org/icon/filled/people/baby_male_0306m
-https://healthicons.org/icon/filled/people/baby_female_0203m
-https://healthicons.org/icon/filled/people/baby_male_0203m
 https://healthicons.org/icon/filled/people/city_worker
 https://healthicons.org/icon/filled/people/call_centre
 https://healthicons.org/icon/filled/people/forum
@@ -322,7 +323,6 @@ https://healthicons.org/icon/filled/people/i_training_class
 https://healthicons.org/icon/filled/people/traumatism
 https://healthicons.org/icon/filled/people/wash_hands
 https://healthicons.org/icon/filled/people/water_sanitation
-https://healthicons.org/icon/filled/people/wold_care
 https://healthicons.org/icon/filled/people/woman
 https://healthicons.org/icon/filled/people/young_people
 https://healthicons.org/icon/filled/places/church
@@ -396,6 +396,7 @@ https://healthicons.org/icon/filled/specialties/rheumatology
 https://healthicons.org/icon/filled/specialties/social_work
 https://healthicons.org/icon/filled/specialties/sonography
 https://healthicons.org/icon/filled/specialties/speech_language_therapy
+https://healthicons.org/icon/filled/specialties/general_surgery
 https://healthicons.org/icon/filled/specialties/urology
 https://healthicons.org/icon/filled/symbols/alcohol
 https://healthicons.org/icon/filled/symbols/alert_circle
@@ -412,6 +413,7 @@ https://healthicons.org/icon/filled/symbols/calendar
 https://healthicons.org/icon/filled/symbols/calendar-quarantine
 https://healthicons.org/icon/filled/symbols/i_schedule_school_date_time
 https://healthicons.org/icon/filled/symbols/cannabis
+https://healthicons.org/icon/filled/symbols/carbohydrates
 https://healthicons.org/icon/filled/symbols/heart_cardiogram
 https://healthicons.org/icon/filled/symbols/cardiogram
 https://healthicons.org/icon/filled/symbols/cardiogram_e
@@ -473,6 +475,7 @@ https://healthicons.org/icon/filled/symbols/hospital_symbol
 https://healthicons.org/icon/filled/symbols/imm
 https://healthicons.org/icon/filled/symbols/info
 https://healthicons.org/icon/filled/symbols/insecticide_resistance
+https://healthicons.org/icon/filled/symbols/interoperability
 https://healthicons.org/icon/filled/symbols/geo_location
 https://healthicons.org/icon/filled/symbols/low_level
 https://healthicons.org/icon/filled/symbols/magnifying_glass

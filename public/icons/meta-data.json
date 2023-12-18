@@ -1307,9 +1307,9 @@
   "title": "Blood Bag"
  },
  {
-  "id": "heart",
+  "id": "heart_organ",
   "category": "body",
-  "path": "body/heart",
+  "path": "body/heart_organ",
   "tags": [
    "Cardiac",
    "Cardiologist",
@@ -4681,9 +4681,9 @@
   "title": "Cleaning"
  },
  {
-  "id": "defibrilator",
+  "id": "defibrillator",
   "category": "devices",
-  "path": "devices/defibrilator",
+  "path": "devices/defibrillator",
   "tags": [
    "Cardiology",
    "ER",
@@ -4691,7 +4691,7 @@
    "Emergency",
    "Heart"
   ],
-  "title": "Defibrilator"
+  "title": "Defibrillator"
  },
  {
   "id": "discharge",
@@ -7746,5 +7746,102 @@
    "Testing"
   ],
   "title": "Sonography"
+ },
+ {
+  "id": "sonogram",
+  "category": "device",
+  "path": "device/sonogram",
+  "tags": [
+   "Antenatal",
+   "Baby",
+   "Birth",
+   "Device",
+   "Fetus",
+   "Prenatal",
+   "Scan",
+   "Sonogram",
+   "Sonograph",
+   "Sonography"
+  ],
+  "title": "Sonogram"
+ },
+ {
+  "id": "hand-wipe-paper",
+  "category": "devices",
+  "path": "devices/hand-wipe-paper",
+  "tags": [
+   "Clean",
+   "Cleaning",
+   "Hand",
+   "PPE",
+   "Paper",
+   "Sanitation",
+   "Towel",
+   "Wipe"
+  ],
+  "title": "Hand Wipe Paper"
+ },
+ {
+  "id": "general_surgery",
+  "category": "specialties",
+  "path": "specialties/general_surgery",
+  "tags": [
+   "Department",
+   "Group",
+   "Knife",
+   "Room",
+   "Scalpel",
+   "Speciality",
+   "Surgery",
+   "Surgical"
+  ],
+  "title": "Surgical Department"
+ },
+ {
+  "id": "pain",
+  "category": "conditions",
+  "path": "conditions/pain",
+  "tags": [
+   "Ache",
+   "Agony",
+   "Back",
+   "Cramp",
+   "Hurt",
+   "Pain",
+   "Sore",
+   "Trauma"
+  ],
+  "title": "Pain"
+ },
+ {
+  "id": "interoperability",
+  "category": "symbols",
+  "path": "symbols/interoperability",
+  "tags": [
+   "FHIR",
+   "IT",
+   "Informatics",
+   "Interoperability",
+   "Standards",
+   "Tech",
+   "Technology",
+   "Terminology"
+  ],
+  "title": "Interoperability"
+ },
+ {
+  "id": "carbohydrates",
+  "category": "symbols",
+  "path": "symbols/carbohydrates",
+  "tags": [
+   "Bread",
+   "Carbohydrates",
+   "Carbs",
+   "Diet",
+   "Food",
+   "Nutrition",
+   "Wheat"
+  ],
+  "title": "Carbohydrates"
  }
 ]
