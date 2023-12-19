@@ -505,8 +505,8 @@
  },
  {
   "id": "oral_contraception_pillsx28",
-  "category": "family",
-  "path": "family/oral_contraception_pillsx28",
+  "category": "contraceptives",
+  "path": "contraceptives/oral_contraception_pillsx28",
   "tags": [
    "Birth Control Pills",
    "Contraception",
@@ -517,8 +517,8 @@
  },
  {
   "id": "oral_contraception_pillsx21",
-  "category": "family",
-  "path": "family/oral_contraception_pillsx21",
+  "category": "contraceptives",
+  "path": "contraceptives/oral_contraception_pillsx21",
   "tags": [
    "Birth Control Pills",
    "Contraception",
@@ -1013,63 +1013,6 @@
   "title": "Stethoscope"
  },
  {
-  "id": "ppe_sanitizer",
-  "category": "devices",
-  "path": "devices/ppe_sanitizer",
-  "tags": [
-   "Infection Control",
-   "PPE",
-   "dhis2:sanitizer"
-  ],
-  "title": "PPE Sanitizer"
- },
- {
-  "id": "ppe_mask_n95",
-  "category": "devices",
-  "path": "devices/ppe_mask_n95",
-  "tags": [
-   "Infection Control",
-   "PPE",
-   "dhis2:ppe_mask_n95"
-  ],
-  "title": "PPE Mask N95"
- },
- {
-  "id": "ppe_gown",
-  "category": "devices",
-  "path": "devices/ppe_gown",
-  "tags": [
-   "Clothes",
-   "Infection Control",
-   "dhis2:ppe_gown"
-  ],
-  "title": "PPE Gown"
- },
- {
-  "id": "ppe_gloves",
-  "category": "devices",
-  "path": "devices/ppe_gloves",
-  "tags": [
-   "Glove",
-   "Hands",
-   "Infection Control",
-   "PPE",
-   "dhis2:ppe_gloves"
-  ],
-  "title": "PPE Gloves"
- },
- {
-  "id": "ppe_face_mask",
-  "category": "devices",
-  "path": "devices/ppe_face_mask",
-  "tags": [
-   "Infection Control",
-   "PPE",
-   "dhis2:ppe_face_mask"
-  ],
-  "title": "PPE Face Mask"
- },
- {
   "id": "oxygen_tank",
   "category": "devices",
   "path": "devices/oxygen_tank",
@@ -1145,20 +1088,9 @@
   "title": "Microscope"
  },
  {
-  "id": "ppe-mask",
-  "category": "devices",
-  "path": "devices/ppe-mask",
-  "tags": [
-   "Infection Control",
-   "PPE",
-   "dhis2:ppe_mask"
-  ],
-  "title": "PPE Surgical Mask"
- },
- {
   "id": "male_condom",
-  "category": "family",
-  "path": "family/male_condom",
+  "category": "contraceptives",
+  "path": "contraceptives/male_condom",
   "tags": [
    "Condom",
    "Contraceptive",
@@ -1169,8 +1101,8 @@
  },
  {
   "id": "iud",
-  "category": "family",
-  "path": "family/iud",
+  "category": "contraceptives",
+  "path": "contraceptives/iud",
   "tags": [
    "Contraceptive",
    "Family Planning",
@@ -1195,8 +1127,8 @@
  },
  {
   "id": "implant",
-  "category": "family",
-  "path": "family/implant",
+  "category": "contraceptives",
+  "path": "contraceptives/implant",
   "tags": [
    "Device",
    "dhis2:implant"
@@ -1220,8 +1152,8 @@
  },
  {
   "id": "hormonal_ring",
-  "category": "family",
-  "path": "family/hormonal_ring",
+  "category": "contraceptives",
+  "path": "contraceptives/hormonal_ring",
   "tags": [
    "Contraceptive",
    "Family Planning",
@@ -1231,8 +1163,8 @@
  },
  {
   "id": "female_condom",
-  "category": "family",
-  "path": "family/female_condom",
+  "category": "contraceptives",
+  "path": "contraceptives/female_condom",
   "tags": [
    "Condom",
    "Contraceptive",
@@ -1243,8 +1175,8 @@
  },
  {
   "id": "family_planning",
-  "category": "family",
-  "path": "family/family_planning",
+  "category": "contraceptives",
+  "path": "contraceptives/family_planning",
   "tags": [
    "Condom",
    "Contraceptive",
@@ -1257,8 +1189,8 @@
  },
  {
   "id": "contraceptive_patch",
-  "category": "family",
-  "path": "family/contraceptive_patch",
+  "category": "contraceptives",
+  "path": "contraceptives/contraceptive_patch",
   "tags": [
    "Contraceptive",
    "Family Planning",
@@ -1269,8 +1201,8 @@
  },
  {
   "id": "contraceptive_diaphragm",
-  "category": "family",
-  "path": "family/contraceptive_diaphragm",
+  "category": "contraceptives",
+  "path": "contraceptives/contraceptive_diaphragm",
   "tags": [
    "Contraceptive",
    "Diaphragm",
@@ -1649,8 +1581,8 @@
  },
  {
   "id": "nutrition",
-  "category": "symbols",
-  "path": "symbols/nutrition",
+  "category": "nutrition",
+  "path": "nutrition/nutrition",
   "tags": [
    "Apple",
    "Carrot",
@@ -3438,69 +3370,6 @@
   "title": "Health Register Book"
  },
  {
-  "id": "chart_bar",
-  "category": "symbols",
-  "path": "symbols/chart_bar",
-  "tags": [
-   "Bar Chart",
-   "Data",
-   "Graph",
-   "Visualization"
-  ],
-  "title": "Chart Bars"
- },
- {
-  "id": "chart_bar_stacked",
-  "category": "symbols",
-  "path": "symbols/chart_bar_stacked",
-  "tags": [
-   "Bar Chart",
-   "Data",
-   "Graph",
-   "Visualization"
-  ],
-  "title": "Chart Split Bars"
- },
- {
-  "id": "chart_line",
-  "category": "symbols",
-  "path": "symbols/chart_line",
-  "tags": [
-   "Data",
-   "Graph",
-   "Line Chart",
-   "Node",
-   "Visualization"
-  ],
-  "title": "Chart Line"
- },
- {
-  "id": "chart_line_stacked",
-  "category": "symbols",
-  "path": "symbols/chart_line_stacked",
-  "tags": [
-   "Data",
-   "Graph",
-   "Line Chart",
-   "Node",
-   "Visualization"
-  ],
-  "title": "Chart Double Line"
- },
- {
-  "id": "chart_pie",
-  "category": "symbols",
-  "path": "symbols/chart_pie",
-  "tags": [
-   "Data",
-   "Graph",
-   "Node",
-   "Pie Chart",
-   "Visualization"
-  ],
-  "title": "Chart Pie"
- },
- {
   "id": "blood_a_n",
   "category": "blood",
   "path": "blood/blood_a_n",
@@ -4620,44 +4489,6 @@
   "title": "Liver"
  },
  {
-  "id": "ppe_face_shield",
-  "category": "devices",
-  "path": "devices/ppe_face_shield",
-  "tags": [
-   "Hazardous Materials",
-   "PPE",
-   "Protection",
-   "Safety"
-  ],
-  "title": "PPE Face Shield"
- },
- {
-  "id": "ppe_goggles",
-  "category": "devices",
-  "path": "devices/ppe_goggles",
-  "tags": [
-   "Eye",
-   "Eye Protection",
-   "Hazardous Materials",
-   "PPE",
-   "Protection",
-   "Safety"
-  ],
-  "title": "PPE Goggles"
- },
- {
-  "id": "ppe_suit",
-  "category": "devices",
-  "path": "devices/ppe_suit",
-  "tags": [
-   "Hazardous Materials",
-   "Hazmat",
-   "Protection",
-   "Safety"
-  ],
-  "title": "PPE Suit"
- },
- {
   "id": "arm",
   "category": "body",
   "path": "body/arm",
@@ -4794,20 +4625,6 @@
    "Pills"
   ],
   "title": "Pharmacy"
- },
- {
-  "id": "respirator",
-  "category": "devices",
-  "path": "devices/respirator",
-  "tags": [
-   "Breathing",
-   "Mask",
-   "Outbreak",
-   "PPE",
-   "Safety",
-   "Virus"
-  ],
-  "title": "PPE Respirator"
  },
  {
   "id": "rheumatology",
@@ -6156,8 +5973,8 @@
  },
  {
   "id": "contraceptive_injection",
-  "category": "family",
-  "path": "family/contraceptive_injection",
+  "category": "contraceptives",
+  "path": "contraceptives/contraceptive_injection",
   "tags": [
    "Contraceptive",
    "Family Planning",
@@ -6196,8 +6013,8 @@
  },
  {
   "id": "copper_iud",
-  "category": "family",
-  "path": "family/copper_iud",
+  "category": "contraceptives",
+  "path": "contraceptives/copper_iud",
   "tags": [
    "Contraceptive",
    "Family Planning",
@@ -6252,8 +6069,8 @@
  },
  {
   "id": "sayana_press",
-  "category": "family",
-  "path": "family/sayana_press",
+  "category": "contraceptives",
+  "path": "contraceptives/sayana_press",
   "tags": [
    "Contraceptive",
    "Family Planning",
@@ -6408,8 +6225,8 @@
  },
  {
   "id": "contraceptive_voucher",
-  "category": "family",
-  "path": "family/contraceptive_voucher",
+  "category": "contraceptives",
+  "path": "contraceptives/contraceptive_voucher",
   "tags": [
    "Condom",
    "Contraception",
@@ -6481,18 +6298,6 @@
    "Wayfinding"
   ],
   "title": "Assembly Point"
- },
- {
-  "id": "disinfecting_wipes",
-  "category": "devices",
-  "path": "devices/disinfecting_wipes",
-  "tags": [
-   "Antibacterial",
-   "Cleaning",
-   "PPE",
-   "Sanitation"
-  ],
-  "title": "PPE Disinfecting Wipes"
  },
  {
   "id": "guide_dog",
@@ -7076,138 +6881,6 @@
   "title": "Globe"
  },
  {
-  "id": "chart-cured-decreasing",
-  "category": "symbols",
-  "path": "symbols/chart-cured-decreasing",
-  "tags": [
-   "Chart",
-   "Covid",
-   "Death",
-   "Graph",
-   "Metrics",
-   "Mortality",
-   "Viral",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Chart Cured Decreasing"
- },
- {
-  "id": "chart-cured-increasing",
-  "category": "symbols",
-  "path": "symbols/chart-cured-increasing",
-  "tags": [
-   "Chart",
-   "Covid",
-   "Death",
-   "Graph",
-   "Metrics",
-   "Mortality",
-   "Viral",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Chart Cured Increasing"
- },
- {
-  "id": "chart-death-rate-increasing",
-  "category": "symbols",
-  "path": "symbols/chart-death-rate-increasing",
-  "tags": [
-   "Chart",
-   "Covid",
-   "Death",
-   "Graph",
-   "Metrics",
-   "Mortality",
-   "Viral",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Chart Death Rate Decreasing"
- },
- {
-  "id": "chart-death-rate-decreasing",
-  "category": "symbols",
-  "path": "symbols/chart-death-rate-decreasing",
-  "tags": [
-   "Chart",
-   "Covid",
-   "Death",
-   "Graph",
-   "Metrics",
-   "Mortality",
-   "Viral",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Chart Death Rate Increasing"
- },
- {
-  "id": "chart-death-rate-stable",
-  "category": "symbols",
-  "path": "symbols/chart-death-rate-stable",
-  "tags": [
-   "Chart",
-   "Covid",
-   "Death",
-   "Graph",
-   "Metrics",
-   "Mortality",
-   "Viral",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Chart Death Rate Stable"
- },
- {
-  "id": "chart-infected-decreasing",
-  "category": "symbols",
-  "path": "symbols/chart-infected-decreasing",
-  "tags": [
-   "Chart",
-   "Covid",
-   "Graph",
-   "Metrics",
-   "Viral",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Chart Infected Decreasing"
- },
- {
-  "id": "chart-infected-increasing",
-  "category": "symbols",
-  "path": "symbols/chart-infected-increasing",
-  "tags": [
-   "Chart",
-   "Covid",
-   "Graph",
-   "Metrics",
-   "Viral",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Chart Infected Increasing"
- },
- {
-  "id": "chart-infected-stable",
-  "category": "symbols",
-  "path": "symbols/chart-infected-stable",
-  "tags": [
-   "Chart",
-   "Covid",
-   "Flat",
-   "Graph",
-   "Metrics",
-   "Stable",
-   "Viral",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Chart Infected Stable"
- },
- {
   "id": "virus-mutation",
   "category": "symbols",
   "path": "symbols/virus-mutation",
@@ -7430,8 +7103,8 @@
  },
  {
   "id": "sperm",
-  "category": "family",
-  "path": "family/sperm",
+  "category": "contraceptives",
+  "path": "contraceptives/sperm",
   "tags": [
    "Family Planning",
    "Pregnancy",
@@ -7485,18 +7158,6 @@
    "Virus"
   ],
   "title": "Viral Lung Infection"
- },
- {
-  "id": "ppe-face-shield-alt",
-  "category": "devices",
-  "path": "devices/ppe-face-shield-alt",
-  "tags": [
-   "Hazardous Materials",
-   "PPE",
-   "Protection",
-   "Safety"
-  ],
-  "title": "PPE Face Shield ALT"
  },
  {
   "id": "virus-sanitizer-spray",
@@ -7670,8 +7331,8 @@
  },
  {
   "id": "fruits",
-  "category": "symbols",
-  "path": "symbols/fruits",
+  "category": "nutrition",
+  "path": "nutrition/fruits",
   "tags": [
    "Apple",
    "Food",
@@ -7697,8 +7358,8 @@
  },
  {
   "id": "alcohol",
-  "category": "symbols",
-  "path": "symbols/alcohol",
+  "category": "nutrition",
+  "path": "nutrition/alcohol",
   "tags": [
    "Abuse",
    "Alcohol",
@@ -7749,8 +7410,8 @@
  },
  {
   "id": "sonogram",
-  "category": "device",
-  "path": "device/sonogram",
+  "category": "devices",
+  "path": "devices/sonogram",
   "tags": [
    "Antenatal",
    "Baby",
@@ -7764,22 +7425,6 @@
    "Sonography"
   ],
   "title": "Sonogram"
- },
- {
-  "id": "hand-wipe-paper",
-  "category": "devices",
-  "path": "devices/hand-wipe-paper",
-  "tags": [
-   "Clean",
-   "Cleaning",
-   "Hand",
-   "PPE",
-   "Paper",
-   "Sanitation",
-   "Towel",
-   "Wipe"
-  ],
-  "title": "Hand Wipe Paper"
  },
  {
   "id": "general_surgery",
@@ -7831,8 +7476,8 @@
  },
  {
   "id": "carbohydrates",
-  "category": "symbols",
-  "path": "symbols/carbohydrates",
+  "category": "nutrition",
+  "path": "nutrition/carbohydrates",
   "tags": [
    "Bread",
    "Carbohydrates",
@@ -7843,5 +7488,360 @@
    "Wheat"
   ],
   "title": "Carbohydrates"
+ },
+ {
+  "id": "ppe_sanitizer",
+  "category": "ppe",
+  "path": "ppe/ppe_sanitizer",
+  "tags": [
+   "Infection Control",
+   "PPE",
+   "dhis2:sanitizer"
+  ],
+  "title": "PPE Sanitizer"
+ },
+ {
+  "id": "ppe_mask_n95",
+  "category": "ppe",
+  "path": "ppe/ppe_mask_n95",
+  "tags": [
+   "Infection Control",
+   "PPE",
+   "dhis2:ppe_mask_n95"
+  ],
+  "title": "PPE Mask N95"
+ },
+ {
+  "id": "ppe_gown",
+  "category": "ppe",
+  "path": "ppe/ppe_gown",
+  "tags": [
+   "Clothes",
+   "Infection Control",
+   "dhis2:ppe_gown"
+  ],
+  "title": "PPE Gown"
+ },
+ {
+  "id": "ppe_gloves",
+  "category": "ppe",
+  "path": "ppe/ppe_gloves",
+  "tags": [
+   "Glove",
+   "Hands",
+   "Infection Control",
+   "PPE",
+   "dhis2:ppe_gloves"
+  ],
+  "title": "PPE Gloves"
+ },
+ {
+  "id": "ppe_face_mask",
+  "category": "ppe",
+  "path": "ppe/ppe_face_mask",
+  "tags": [
+   "Infection Control",
+   "PPE",
+   "dhis2:ppe_face_mask"
+  ],
+  "title": "PPE Face Mask"
+ },
+ {
+  "id": "ppe-mask",
+  "category": "ppe",
+  "path": "ppe/ppe-mask",
+  "tags": [
+   "Infection Control",
+   "PPE",
+   "dhis2:ppe_mask"
+  ],
+  "title": "PPE Surgical Mask"
+ },
+ {
+  "id": "ppe_face_shield",
+  "category": "ppe",
+  "path": "ppe/ppe_face_shield",
+  "tags": [
+   "Hazardous Materials",
+   "PPE",
+   "Protection",
+   "Safety"
+  ],
+  "title": "PPE Face Shield"
+ },
+ {
+  "id": "ppe_goggles",
+  "category": "ppe",
+  "path": "ppe/ppe_goggles",
+  "tags": [
+   "Eye",
+   "Eye Protection",
+   "Hazardous Materials",
+   "PPE",
+   "Protection",
+   "Safety"
+  ],
+  "title": "PPE Goggles"
+ },
+ {
+  "id": "ppe_suit",
+  "category": "ppe",
+  "path": "ppe/ppe_suit",
+  "tags": [
+   "Hazardous Materials",
+   "Hazmat",
+   "Protection",
+   "Safety"
+  ],
+  "title": "PPE Suit"
+ },
+ {
+  "id": "respirator",
+  "category": "ppe",
+  "path": "ppe/respirator",
+  "tags": [
+   "Breathing",
+   "Mask",
+   "Outbreak",
+   "PPE",
+   "Safety",
+   "Virus"
+  ],
+  "title": "PPE Respirator"
+ },
+ {
+  "id": "disinfecting_wipes",
+  "category": "ppe",
+  "path": "ppe/disinfecting_wipes",
+  "tags": [
+   "Antibacterial",
+   "Cleaning",
+   "PPE",
+   "Sanitation"
+  ],
+  "title": "PPE Disinfecting Wipes"
+ },
+ {
+  "id": "ppe-face-shield-alt",
+  "category": "ppe",
+  "path": "ppe/ppe-face-shield-alt",
+  "tags": [
+   "Hazardous Materials",
+   "PPE",
+   "Protection",
+   "Safety"
+  ],
+  "title": "PPE Face Shield ALT"
+ },
+ {
+  "id": "hand-wipe-paper",
+  "category": "ppe",
+  "path": "ppe/hand-wipe-paper",
+  "tags": [
+   "Clean",
+   "Cleaning",
+   "Hand",
+   "PPE",
+   "Paper",
+   "Sanitation",
+   "Towel",
+   "Wipe"
+  ],
+  "title": "Hand Wipe Paper"
+ },
+ {
+  "id": "chart_bar",
+  "category": "graphs",
+  "path": "graphs/chart_bar",
+  "tags": [
+   "Bar Chart",
+   "Data",
+   "Graph",
+   "Visualization"
+  ],
+  "title": "Chart Bars"
+ },
+ {
+  "id": "chart_bar_stacked",
+  "category": "graphs",
+  "path": "graphs/chart_bar_stacked",
+  "tags": [
+   "Bar Chart",
+   "Data",
+   "Graph",
+   "Visualization"
+  ],
+  "title": "Chart Split Bars"
+ },
+ {
+  "id": "chart_line",
+  "category": "graphs",
+  "path": "graphs/chart_line",
+  "tags": [
+   "Data",
+   "Graph",
+   "Line Chart",
+   "Node",
+   "Visualization"
+  ],
+  "title": "Chart Line"
+ },
+ {
+  "id": "chart_line_stacked",
+  "category": "graphs",
+  "path": "graphs/chart_line_stacked",
+  "tags": [
+   "Data",
+   "Graph",
+   "Line Chart",
+   "Node",
+   "Visualization"
+  ],
+  "title": "Chart Double Line"
+ },
+ {
+  "id": "chart_pie",
+  "category": "graphs",
+  "path": "graphs/chart_pie",
+  "tags": [
+   "Data",
+   "Graph",
+   "Node",
+   "Pie Chart",
+   "Visualization"
+  ],
+  "title": "Chart Pie"
+ },
+ {
+  "id": "chart-cured-decreasing",
+  "category": "graphs",
+  "path": "graphs/chart-cured-decreasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Death",
+   "Graph",
+   "Metrics",
+   "Mortality",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Cured Decreasing"
+ },
+ {
+  "id": "chart-cured-increasing",
+  "category": "graphs",
+  "path": "graphs/chart-cured-increasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Death",
+   "Graph",
+   "Metrics",
+   "Mortality",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Cured Increasing"
+ },
+ {
+  "id": "chart-death-rate-increasing",
+  "category": "graphs",
+  "path": "graphs/chart-death-rate-increasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Death",
+   "Graph",
+   "Metrics",
+   "Mortality",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Death Rate Decreasing"
+ },
+ {
+  "id": "chart-death-rate-decreasing",
+  "category": "graphs",
+  "path": "graphs/chart-death-rate-decreasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Death",
+   "Graph",
+   "Metrics",
+   "Mortality",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Death Rate Increasing"
+ },
+ {
+  "id": "chart-death-rate-stable",
+  "category": "graphs",
+  "path": "graphs/chart-death-rate-stable",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Death",
+   "Graph",
+   "Metrics",
+   "Mortality",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Death Rate Stable"
+ },
+ {
+  "id": "chart-infected-decreasing",
+  "category": "graphs",
+  "path": "graphs/chart-infected-decreasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Graph",
+   "Metrics",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Infected Decreasing"
+ },
+ {
+  "id": "chart-infected-increasing",
+  "category": "graphs",
+  "path": "graphs/chart-infected-increasing",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Graph",
+   "Metrics",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Infected Increasing"
+ },
+ {
+  "id": "chart-infected-stable",
+  "category": "graphs",
+  "path": "graphs/chart-infected-stable",
+  "tags": [
+   "Chart",
+   "Covid",
+   "Flat",
+   "Graph",
+   "Metrics",
+   "Stable",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Chart Infected Stable"
  }
 ]
