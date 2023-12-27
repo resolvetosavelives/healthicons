@@ -48,6 +48,7 @@ https://healthicons.org/icon/filled/body/stomach
 https://healthicons.org/icon/filled/body/tooth
 https://healthicons.org/icon/filled/conditions/allergies
 https://healthicons.org/icon/filled/conditions/back_pain
+https://healthicons.org/icon/filled/conditions/burn
 https://healthicons.org/icon/filled/conditions/cervical_cancer
 https://healthicons.org/icon/filled/conditions/chills
 https://healthicons.org/icon/filled/conditions/chills_fever
@@ -101,7 +102,6 @@ https://healthicons.org/icon/filled/devices/contact_lenses
 https://healthicons.org/icon/filled/devices/defibrillator
 https://healthicons.org/icon/filled/devices/dental_hygiene
 https://healthicons.org/icon/filled/devices/discriminating_concentration_bioassays
-https://healthicons.org/icon/filled/devices/exercise_bicycle
 https://healthicons.org/icon/filled/devices/eyeglasses
 https://healthicons.org/icon/filled/devices/fever
 https://healthicons.org/icon/filled/devices/hospitalized
@@ -196,6 +196,8 @@ https://healthicons.org/icon/filled/emotions/sweating
 https://healthicons.org/icon/filled/emotions/tongue
 https://healthicons.org/icon/filled/emotions/vomitting
 https://healthicons.org/icon/filled/emotions/woozy
+https://healthicons.org/icon/filled/exercise/exercise
+https://healthicons.org/icon/filled/exercise/exercise_bicycle
 https://healthicons.org/icon/filled/exercise/running
 https://healthicons.org/icon/filled/exercise/swim
 https://healthicons.org/icon/filled/exercise/walk_supported
@@ -228,10 +230,13 @@ https://healthicons.org/icon/filled/medications/pills_2
 https://healthicons.org/icon/filled/medications/pills_3
 https://healthicons.org/icon/filled/medications/pills_4
 https://healthicons.org/icon/filled/nutrition/alcohol
+https://healthicons.org/icon/filled/nutrition/baby_formula
 https://healthicons.org/icon/filled/nutrition/carbohydrates
+https://healthicons.org/icon/filled/nutrition/dairy
 https://healthicons.org/icon/filled/nutrition/fruits
 https://healthicons.org/icon/filled/nutrition/hot_meal
 https://healthicons.org/icon/filled/nutrition/lactose
+https://healthicons.org/icon/filled/nutrition/lactose_free
 https://healthicons.org/icon/filled/nutrition/nutrition
 https://healthicons.org/icon/filled/nutrition/sodium_free
 https://healthicons.org/icon/filled/nutrition/unhealthy_food
@@ -275,6 +280,7 @@ https://healthicons.org/icon/filled/people/city_worker
 https://healthicons.org/icon/filled/people/clean_hands
 https://healthicons.org/icon/filled/people/community_healthworker
 https://healthicons.org/icon/filled/people/construction_worker
+https://healthicons.org/icon/filled/people/cpr
 https://healthicons.org/icon/filled/people/diabetes
 https://healthicons.org/icon/filled/people/doctor
 https://healthicons.org/icon/filled/people/doctor_female
@@ -282,11 +288,11 @@ https://healthicons.org/icon/filled/people/doctor_male
 https://healthicons.org/icon/filled/people/domestic_worker
 https://healthicons.org/icon/filled/people/domestic_worker_alt
 https://healthicons.org/icon/filled/people/elderly
+https://healthicons.org/icon/filled/people/exercise_yoga
 https://healthicons.org/icon/filled/people/factory_worker
 https://healthicons.org/icon/filled/people/female_and_male
 https://healthicons.org/icon/filled/people/female_sex_worker
 https://healthicons.org/icon/filled/people/fetus
-https://healthicons.org/icon/filled/people/forum
 https://healthicons.org/icon/filled/people/girl_0105y
 https://healthicons.org/icon/filled/people/girl_1015y
 https://healthicons.org/icon/filled/people/group_discussion_meeting
@@ -386,6 +392,7 @@ https://healthicons.org/icon/filled/shapes/triangle_small
 https://healthicons.org/icon/filled/specialties/accident_and_emergency
 https://healthicons.org/icon/filled/specialties/admissions
 https://healthicons.org/icon/filled/specialties/biochemistry_laboratory
+https://healthicons.org/icon/filled/specialties/burn_unit
 https://healthicons.org/icon/filled/specialties/cardiology
 https://healthicons.org/icon/filled/specialties/chaplaincy
 https://healthicons.org/icon/filled/specialties/coronary_care_unit
@@ -463,9 +470,9 @@ https://healthicons.org/icon/filled/symbols/eco_care
 https://healthicons.org/icon/filled/symbols/electricity
 https://healthicons.org/icon/filled/symbols/entry
 https://healthicons.org/icon/filled/symbols/excel_logo
-https://healthicons.org/icon/filled/symbols/exercise
 https://healthicons.org/icon/filled/symbols/FHIR_logo
 https://healthicons.org/icon/filled/symbols/fingerprint
+https://healthicons.org/icon/filled/symbols/forum
 https://healthicons.org/icon/filled/symbols/geo_location
 https://healthicons.org/icon/filled/symbols/global-pandemic
 https://healthicons.org/icon/filled/symbols/globe
@@ -540,6 +547,7 @@ https://healthicons.org/icon/filled/symbols/social_distancing
 https://healthicons.org/icon/filled/symbols/social_distancing_alt
 https://healthicons.org/icon/filled/symbols/stop
 https://healthicons.org/icon/filled/symbols/tally
+https://healthicons.org/icon/filled/symbols/telemedicine
 https://healthicons.org/icon/filled/symbols/transgender
 https://healthicons.org/icon/filled/symbols/ui_folder
 https://healthicons.org/icon/filled/symbols/ui_folder_family
