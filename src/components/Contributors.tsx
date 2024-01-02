@@ -27,6 +27,11 @@ const contributors = [
     avatar: 'https://unavatar.io/twitter/dburka'
   },
   {
+    name: 'Girshon Paul',
+    link: 'https://www.linkedin.com/in/gershonpaul',
+    avatar: 'https://unavatar.io/twitter/gerrrsh'
+  },
+  {
     name: 'Gregory Schmidt',
     link: 'https://twitter.com/_GregSchmidt',
     avatar: 'https://unavatar.io/twitter/_GregSchmidt'
