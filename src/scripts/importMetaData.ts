@@ -3,7 +3,7 @@ import * as Figma from 'figma-js';
 import { promises as fs } from 'fs';
 import startCase from 'lodash.startcase';
 import path from 'path';
-import cliProgress from 'cli-progress';
+// import cliProgress from 'cli-progress';
 
 if (!config.figma.filename || !config.figma.personalAccessToken) {
   throw new Error(
