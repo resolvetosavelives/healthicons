@@ -5,23 +5,17 @@ export function TopBar() {
   return (
     <nav className={styles.topBar}>
       <div className={styles.topbarTitle}>
-        <Link href="/">
-          <span className={styles.title}>Health icons</span>
-        </Link>
+        <Link href="/" className={styles.title}>Health icons</Link>
       </div>
       <ul className={styles.topbarLinks}>
         <li>
-          <Link href="/about">
-            <span className={styles.link}>
-              <img src="/ui/information-line.svg" alt="" /> About
-            </span>
+          <Link href="/about" className={styles.link}>
+            <img src="/ui/information-line.svg" alt="" /> About
           </Link>
         </li>
         <li>
-          <Link href="/request-icon">
-            <span className={styles.link}>
-              <img src="/ui/question-line.svg" alt="" /> Request an icon
-            </span>
+          <Link href="/request-icon" className={styles.link}>
+            <img src="/ui/question-line.svg" alt="" /> Request an icon
           </Link>
         </li>
         <li>
