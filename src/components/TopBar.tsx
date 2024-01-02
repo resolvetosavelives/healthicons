@@ -5,7 +5,9 @@ export function TopBar() {
   return (
     <nav className={styles.topBar}>
       <div className={styles.topbarTitle}>
-        <Link href="/" className={styles.title}>Health icons</Link>
+        <Link href="/" className={styles.title}>
+          Health icons
+        </Link>
       </div>
       <ul className={styles.topbarLinks}>
         <li>
