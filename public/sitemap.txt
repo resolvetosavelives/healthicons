@@ -631,14 +631,13 @@ https://healthicons.org/icon/filled/vehicles/cross_country_motorcycle
 https://healthicons.org/icon/filled/vehicles/small_plane
 https://healthicons.org/icon/filled/vehicles/4x4
 https://healthicons.org/icon/filled/vehicles/war
+https://healthicons.org/icon/filled/zoonoses/animal_bat
 https://healthicons.org/icon/filled/zoonoses/animal_chicken
 https://healthicons.org/icon/filled/zoonoses/animal_cow
 https://healthicons.org/icon/filled/zoonoses/animal_donkey
-https://healthicons.org/icon/filled/zoonoses/animal_spider
-https://healthicons.org/icon/filled/zoonoses/animal_tick
-https://healthicons.org/icon/filled/zoonoses/animal_bat
 https://healthicons.org/icon/filled/zoonoses/mosquito
 https://healthicons.org/icon/filled/zoonoses/animal_mosquitos
 https://healthicons.org/icon/filled/zoonoses/animal_pig
-https://healthicons.org/icon/filled/zoonoses/animal_snake
 https://healthicons.org/icon/filled/zoonoses/animal_rat
+https://healthicons.org/icon/filled/zoonoses/animal_spider
+https://healthicons.org/icon/filled/zoonoses/animal_tick

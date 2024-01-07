@@ -1909,7 +1909,7 @@
    "Zoonotic",
    "dhis2:donkey"
   ],
-  "title": "Animal Donkey"
+  "title": "Donkey"
  },
  {
   "id": "diabetes_measure",
@@ -6201,7 +6201,7 @@
    "Zoonoses",
    "Zoonotic Diseases"
   ],
-  "title": "Animal Cow"
+  "title": "Cow"
  },
  {
   "id": "animal_spider",
@@ -6217,7 +6217,7 @@
    "Zoonoses",
    "Zoonotic Diseases"
   ],
-  "title": "Animal Spider"
+  "title": "Spider"
  },
  {
   "id": "animal_tick",
@@ -6229,7 +6229,7 @@
    "Insect",
    "Zoonotic Diseases"
   ],
-  "title": "Animal Tick"
+  "title": "Tick"
  },
  {
   "id": "assembly_point",
@@ -6863,7 +6863,7 @@
    "Zoonoses",
    "Zoonotic Disease"
   ],
-  "title": "Animal Chicken"
+  "title": "Chicken"
  },
  {
   "id": "blood_cells",
@@ -8333,21 +8333,6 @@
    "Mouse",
    "Rat",
    "Rodent",
-   "Zoonoses",
-   "Zoonotic Disease"
-  ],
-  "title": "Rat"
- },
- {
-  "id": "animal_snake",
-  "category": "zoonoses",
-  "path": "zoonoses/animal_snake",
-  "tags": [
-   "Animal",
-   "Poison",
-   "Poisonous",
-   "Python",
-   "Snake",
    "Zoonoses",
    "Zoonotic Disease"
   ],
