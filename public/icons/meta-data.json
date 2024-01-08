@@ -1898,29 +1898,32 @@
  },
  {
   "id": "animal_donkey",
-  "category": "symbols",
-  "path": "symbols/animal_donkey",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_donkey",
   "tags": [
    "Animal",
    "Ass",
    "Farm",
    "Mule",
+   "Zoonoses",
+   "Zoonotic",
    "dhis2:donkey"
   ],
-  "title": "Animal Donkey"
+  "title": "Donkey"
  },
  {
   "id": "diabetes_measure",
-  "category": "symbols",
-  "path": "symbols/diabetes_measure",
+  "category": "devices",
+  "path": "devices/diabetes_measure",
   "tags": [
    "Blood Sugar",
    "DM",
    "Diabetes",
+   "Glucose",
    "Strip",
    "dhis2:diabetes_measure"
   ],
-  "title": "Diabetes Measure"
+  "title": "Glucometer"
  },
  {
   "id": "diabetes",
@@ -4745,13 +4748,15 @@
   "title": "Outpatient"
  },
  {
-  "id": "malaria_outbreak",
-  "category": "symbols",
-  "path": "symbols/malaria_outbreak",
+  "id": "animal_mosquitos",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_mosquitos",
   "tags": [
    "Malaria",
    "Mosquito",
    "Outbreak",
+   "Zoonoses",
+   "Zoonotic Disease",
    "dhis2:malaria_outbreak"
   ],
   "title": "Mosquitos"
@@ -4801,13 +4806,15 @@
  },
  {
   "id": "mosquito",
-  "category": "symbols",
-  "path": "symbols/mosquito",
+  "category": "zoonoses",
+  "path": "zoonoses/mosquito",
   "tags": [
    "Animal",
    "Disease",
    "Insect",
    "Malaria",
+   "Zoonoses",
+   "Zoonotic Disease",
    "dhis2:mosquito"
   ],
   "title": "Mosquito"
@@ -6184,21 +6191,22 @@
  },
  {
   "id": "animal_cow",
-  "category": "symbols",
-  "path": "symbols/animal_cow",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_cow",
   "tags": [
    "Animal",
    "Beef",
    "Farm Animal",
    "Milk",
+   "Zoonoses",
    "Zoonotic Diseases"
   ],
-  "title": "Animal Cow"
+  "title": "Cow"
  },
  {
   "id": "animal_spider",
-  "category": "symbols",
-  "path": "symbols/animal_spider",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_spider",
   "tags": [
    "Animal",
    "Arachnid",
@@ -6206,21 +6214,22 @@
    "Disease",
    "Insect",
    "Poison",
+   "Zoonoses",
    "Zoonotic Diseases"
   ],
-  "title": "Animal Spider"
+  "title": "Spider"
  },
  {
   "id": "animal_tick",
-  "category": "symbols",
-  "path": "symbols/animal_tick",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_tick",
   "tags": [
    "Animal",
    "Disease",
    "Insect",
    "Zoonotic Diseases"
   ],
-  "title": "Animal Tick"
+  "title": "Tick"
  },
  {
   "id": "assembly_point",
@@ -6843,16 +6852,18 @@
  },
  {
   "id": "animal_chicken",
-  "category": "symbols",
-  "path": "symbols/animal_chicken",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_chicken",
   "tags": [
    "Bird Flu",
    "Chicken",
    "Chicken Pox",
    "Farm",
-   "Poultry"
+   "Poultry",
+   "Zoonoses",
+   "Zoonotic Disease"
   ],
-  "title": "Animal Chicken"
+  "title": "Chicken"
  },
  {
   "id": "blood_cells",
@@ -8208,5 +8219,254 @@
    "dhis2:exercise"
   ],
   "title": "Exercise"
+ },
+ {
+  "id": "vagina_alt",
+  "category": "body",
+  "path": "body/vagina_alt",
+  "tags": [
+   "Anatomy",
+   "Body",
+   "Female",
+   "Genitals",
+   "Organ",
+   "Reproductive System"
+  ],
+  "title": "Vagina"
+ },
+ {
+  "id": "penis_alt",
+  "category": "body",
+  "path": "body/penis_alt",
+  "tags": [
+   "Anatomy",
+   "Body",
+   "Genitals",
+   "Male",
+   "Organ",
+   "Reproductive System"
+  ],
+  "title": "Penis"
+ },
+ {
+  "id": "penis",
+  "category": "body",
+  "path": "body/penis",
+  "tags": [
+   "Anatomy",
+   "Body",
+   "Genitals",
+   "Male",
+   "Reproductive System"
+  ],
+  "title": "Penis"
+ },
+ {
+  "id": "testicles",
+  "category": "body",
+  "path": "body/testicles",
+  "tags": [
+   "Anatomy",
+   "Balls",
+   "Body",
+   "Genitals",
+   "Male",
+   "Organ",
+   "Reproductive System",
+   "Scrotum"
+  ],
+  "title": "Testicles"
+ },
+ {
+  "id": "chemical_burn",
+  "category": "conditions",
+  "path": "conditions/chemical_burn",
+  "tags": [
+   "Accident",
+   "Burn",
+   "Chemical",
+   "Condition",
+   "Flame",
+   "Flame",
+   "Hand",
+   "Injury",
+   "Lab",
+   "Laboratory",
+   "Test Tube"
+  ],
+  "title": "Chemical Burn"
+ },
+ {
+  "id": "pulse_oximeter_alt",
+  "category": "devices",
+  "path": "devices/pulse_oximeter_alt",
+  "tags": [
+   "Device",
+   "Finger",
+   "Measure",
+   "Oximeter",
+   "Oxygen",
+   "Pulse"
+  ],
+  "title": "Pulse Oximeter"
+ },
+ {
+  "id": "pulse_oximeter",
+  "category": "devices",
+  "path": "devices/pulse_oximeter",
+  "tags": [
+   "Device",
+   "Finger",
+   "Measure",
+   "Oximeter",
+   "Oxygen",
+   "Pulse"
+  ],
+  "title": "Pulse Oximeter"
+ },
+ {
+  "id": "animal_rat",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_rat",
+  "tags": [
+   "Animal",
+   "Mouse",
+   "Rat",
+   "Rodent",
+   "Zoonoses",
+   "Zoonotic Disease"
+  ],
+  "title": "Rat"
+ },
+ {
+  "id": "sugar",
+  "category": "nutrition",
+  "path": "nutrition/sugar",
+  "tags": [
+   "Cube",
+   "Food",
+   "Nutrition",
+   "Sucrose",
+   "Sugar",
+   "Sweetener"
+  ],
+  "title": "Sugar"
+ },
+ {
+  "id": "sugar_alt",
+  "category": "nutrition",
+  "path": "nutrition/sugar_alt",
+  "tags": [
+   "Food",
+   "Nutrition",
+   "Salt",
+   "Sodium",
+   "Spoon",
+   "Sucrose",
+   "Sugar",
+   "Sweetener"
+  ],
+  "title": "Sugar"
+ },
+ {
+  "id": "animal_pig",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_pig",
+  "tags": [
+   "Animal",
+   "Farm",
+   "Mammal",
+   "Pork",
+   "Zoonoses",
+   "Zoonotic Disease"
+  ],
+  "title": "Pig"
+ },
+ {
+  "id": "animal_bat",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_bat",
+  "tags": [
+   "Animal",
+   "Mammal",
+   "Zoonoses",
+   "Zoonotic Disease"
+  ],
+  "title": "Bat"
+ },
+ {
+  "id": "alcohol_cessation",
+  "category": "nutrition",
+  "path": "nutrition/alcohol_cessation",
+  "tags": [
+   "Alcohol",
+   "Cessation",
+   "Food",
+   "Liquor",
+   "Nutrition",
+   "Reduction",
+   "Wine"
+  ],
+  "title": "No Alcohol"
+ },
+ {
+  "id": "gluten",
+  "category": "nutrition",
+  "path": "nutrition/gluten",
+  "tags": [
+   "Celiac Disease",
+   "Cereal",
+   "Food",
+   "Gluten",
+   "Nutrition",
+   "Wheat"
+  ],
+  "title": "Gluten"
+ },
+ {
+  "id": "gluten_free",
+  "category": "nutrition",
+  "path": "nutrition/gluten_free",
+  "tags": [
+   "Celiac Disease",
+   "Cereal",
+   "Food",
+   "Gluten",
+   "Nutrition",
+   "Wheat"
+  ],
+  "title": "Gluten Free"
+ },
+ {
+  "id": "crisis_response_center_person",
+  "category": "people",
+  "path": "people/crisis_response_center_person",
+  "tags": [
+   "Alert",
+   "Computers",
+   "Emergency",
+   "Epidemiology",
+   "Headquarters",
+   "Monitors",
+   "Operations",
+   "Response",
+   "Statistics",
+   "Worker"
+  ],
+  "title": "Emergency Operations Person"
+ },
+ {
+  "id": "emergency_operations_center",
+  "category": "places",
+  "path": "places/emergency_operations_center",
+  "tags": [
+   "Building",
+   "Emergency",
+   "Headquarters",
+   "Operations",
+   "Response",
+   "Satellite"
+  ],
+  "title": "Emergency Operations Center"
  }
 ]
