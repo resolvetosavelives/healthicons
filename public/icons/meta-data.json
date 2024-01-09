@@ -2017,6 +2017,7 @@
   "category": "symbols",
   "path": "symbols/clinical_fe",
   "tags": [
+   "Chart",
    "Clinical Note",
    "Doctor Note",
    "Document",
@@ -2031,6 +2032,7 @@
   "category": "symbols",
   "path": "symbols/clinical_f",
   "tags": [
+   "Chart",
    "Clinical Note",
    "Doctor Note",
    "Document",
@@ -2071,6 +2073,7 @@
   "path": "symbols/cardiogram_e",
   "tags": [
    "Cardiology",
+   "Chart",
    "Heart",
    "Heartbeat",
    "dhis2:cardiogram_e"
@@ -3359,6 +3362,7 @@
   "path": "symbols/register_book",
   "tags": [
    "Book",
+   "Chart",
    "Document",
    "Documentation",
    "Health Record",
@@ -3888,6 +3892,7 @@
   "category": "symbols",
   "path": "symbols/default",
   "tags": [
+   "Chart",
    "Document",
    "Paper",
    "Test",
@@ -6204,34 +6209,6 @@
   "title": "Cow"
  },
  {
-  "id": "animal_spider",
-  "category": "zoonoses",
-  "path": "zoonoses/animal_spider",
-  "tags": [
-   "Animal",
-   "Arachnid",
-   "Bite",
-   "Disease",
-   "Insect",
-   "Poison",
-   "Zoonoses",
-   "Zoonotic Diseases"
-  ],
-  "title": "Spider"
- },
- {
-  "id": "animal_tick",
-  "category": "zoonoses",
-  "path": "zoonoses/animal_tick",
-  "tags": [
-   "Animal",
-   "Disease",
-   "Insect",
-   "Zoonotic Diseases"
-  ],
-  "title": "Tick"
- },
- {
   "id": "assembly_point",
   "category": "symbols",
   "path": "symbols/assembly_point",
@@ -6849,21 +6826,6 @@
    "PPE"
   ],
   "title": "PPE Sanitizer ALT"
- },
- {
-  "id": "animal_chicken",
-  "category": "zoonoses",
-  "path": "zoonoses/animal_chicken",
-  "tags": [
-   "Bird Flu",
-   "Chicken",
-   "Chicken Pox",
-   "Farm",
-   "Poultry",
-   "Zoonoses",
-   "Zoonotic Disease"
-  ],
-  "title": "Chicken"
  },
  {
   "id": "blood_cells",
@@ -7576,7 +7538,7 @@
    "Graph",
    "Visualization"
   ],
-  "title": "Chart Bars"
+  "title": "Bar Chart"
  },
  {
   "id": "chart_bar_stacked",
@@ -7588,7 +7550,7 @@
    "Graph",
    "Visualization"
   ],
-  "title": "Chart Split Bars"
+  "title": "Split Bar Chart"
  },
  {
   "id": "chart_line",
@@ -7601,7 +7563,7 @@
    "Node",
    "Visualization"
   ],
-  "title": "Chart Line"
+  "title": "Line Chart"
  },
  {
   "id": "chart_line_stacked",
@@ -7614,7 +7576,7 @@
    "Node",
    "Visualization"
   ],
-  "title": "Chart Double Line"
+  "title": "Double Line Chart"
  },
  {
   "id": "chart_pie",
@@ -7627,7 +7589,7 @@
    "Pie Chart",
    "Visualization"
   ],
-  "title": "Chart Pie"
+  "title": "Pie Chart"
  },
  {
   "id": "chart-cured-decreasing",
@@ -7644,7 +7606,7 @@
    "Virology",
    "Virus"
   ],
-  "title": "Chart Cured Decreasing"
+  "title": "Cured Decreasing Line Chart"
  },
  {
   "id": "chart-cured-increasing",
@@ -7661,7 +7623,7 @@
    "Virology",
    "Virus"
   ],
-  "title": "Chart Cured Increasing"
+  "title": "Cured Increasing Line Chart"
  },
  {
   "id": "chart-death-rate-increasing",
@@ -7678,7 +7640,7 @@
    "Virology",
    "Virus"
   ],
-  "title": "Chart Death Rate Decreasing"
+  "title": "Death Rate Decreasing Line Chart"
  },
  {
   "id": "chart-death-rate-decreasing",
@@ -7695,7 +7657,7 @@
    "Virology",
    "Virus"
   ],
-  "title": "Chart Death Rate Increasing"
+  "title": "Death Rate Increasing Line Chart"
  },
  {
   "id": "chart-death-rate-stable",
@@ -7712,7 +7674,7 @@
    "Virology",
    "Virus"
   ],
-  "title": "Chart Death Rate Stable"
+  "title": "Death Rate Stable Line Chart"
  },
  {
   "id": "chart-infected-decreasing",
@@ -7727,7 +7689,7 @@
    "Virology",
    "Virus"
   ],
-  "title": "Chart Infected Decreasing"
+  "title": "Infected Decreasing Line Chart"
  },
  {
   "id": "chart-infected-increasing",
@@ -7742,7 +7704,7 @@
    "Virology",
    "Virus"
   ],
-  "title": "Chart Infected Increasing"
+  "title": "Infected Increasing Line Chart"
  },
  {
   "id": "chart-infected-stable",
@@ -7759,7 +7721,7 @@
    "Virology",
    "Virus"
   ],
-  "title": "Chart Infected Stable"
+  "title": "Infected Stable Line Chart"
  },
  {
   "id": "hot_meal",
@@ -8468,5 +8430,124 @@
    "Satellite"
   ],
   "title": "Emergency Operations Center"
+ },
+ {
+  "id": "animal_spider",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_spider",
+  "tags": [
+   "Animal",
+   "Arachnid",
+   "Bite",
+   "Disease",
+   "Insect",
+   "Poison",
+   "Zoonoses",
+   "Zoonotic Diseases"
+  ],
+  "title": "Spider"
+ },
+ {
+  "id": "animal_tick",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_tick",
+  "tags": [
+   "Animal",
+   "Disease",
+   "Insect",
+   "Zoonotic Diseases"
+  ],
+  "title": "Tick"
+ },
+ {
+  "id": "animal_chicken",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_chicken",
+  "tags": [
+   "Bird Flu",
+   "Chicken",
+   "Chicken Pox",
+   "Farm",
+   "Poultry",
+   "Zoonoses",
+   "Zoonotic Disease"
+  ],
+  "title": "Chicken"
+ },
+ {
+  "id": "medicine_mortar",
+  "category": "devices",
+  "path": "devices/medicine_mortar",
+  "tags": [
+   "Compound",
+   "Compounding",
+   "Medicine",
+   "Mix",
+   "Mortar",
+   "Pestle",
+   "Pharmacy"
+  ],
+  "title": "Mortar and Pestle"
+ },
+ {
+  "id": "medicine_bottle",
+  "category": "devices",
+  "path": "devices/medicine_bottle",
+  "tags": [
+   "Bottle",
+   "Capsule",
+   "Drug",
+   "Medication",
+   "Packaging",
+   "Pharmacy",
+   "Prescription"
+  ],
+  "title": "Medicine Container"
+ },
+ {
+  "id": "asthma_inhaler",
+  "category": "devices",
+  "path": "devices/asthma_inhaler",
+  "tags": [
+   "Allergy",
+   "Asthma",
+   "Breath",
+   "Breathing",
+   "Inhaler",
+   "Lung",
+   "Nebulizer",
+   "Puffer",
+   "Pump",
+   "Respiratory System"
+  ],
+  "title": "Inhaler"
+ },
+ {
+  "id": "hearing_aid",
+  "category": "devices",
+  "path": "devices/hearing_aid",
+  "tags": [
+   "Assistive",
+   "Audio",
+   "Audiology",
+   "Device",
+   "Ear",
+   "Hearing"
+  ],
+  "title": "Hearing Aid"
+ },
+ {
+  "id": "crutches",
+  "category": "devices",
+  "path": "devices/crutches",
+  "tags": [
+   "Assistive",
+   "Break",
+   "Crutch",
+   "Physical Therapy",
+   "Rehab",
+   "Rehabilitation"
+  ],
+  "title": "Crutch"
  }
 ]
