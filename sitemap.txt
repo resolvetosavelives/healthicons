@@ -103,6 +103,7 @@ https://healthicons.org/icon/filled/devices/breast_pump
 https://healthicons.org/icon/filled/devices/cast
 https://healthicons.org/icon/filled/devices/cold_chain
 https://healthicons.org/icon/filled/devices/contact_lenses
+https://healthicons.org/icon/filled/devices/crutches
 https://healthicons.org/icon/filled/devices/tac
 https://healthicons.org/icon/filled/devices/defibrillator
 https://healthicons.org/icon/filled/devices/dental_hygiene
@@ -110,14 +111,18 @@ https://healthicons.org/icon/filled/devices/discriminating_concentration_bioassa
 https://healthicons.org/icon/filled/devices/fever
 https://healthicons.org/icon/filled/devices/eyeglasses
 https://healthicons.org/icon/filled/devices/diabetes_measure
+https://healthicons.org/icon/filled/devices/hearing_aid
 https://healthicons.org/icon/filled/devices/hospitalized
 https://healthicons.org/icon/filled/devices/inpatient
 https://healthicons.org/icon/filled/devices/observation
 https://healthicons.org/icon/filled/devices/blood_pressure
+https://healthicons.org/icon/filled/devices/asthma_inhaler
 https://healthicons.org/icon/filled/devices/intravenous_bag
 https://healthicons.org/icon/filled/devices/medical_sample
+https://healthicons.org/icon/filled/devices/medicine_bottle
 https://healthicons.org/icon/filled/devices/microscope
 https://healthicons.org/icon/filled/devices/mobile
+https://healthicons.org/icon/filled/devices/medicine_mortar
 https://healthicons.org/icon/filled/devices/odontology
 https://healthicons.org/icon/filled/devices/odontology_implant
 https://healthicons.org/icon/filled/devices/oxygen_tank
