@@ -1,6 +1,6 @@
 {
-  "name": "health-icons",
-  "version": "0.1.0",
+  "name": "healthicons",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
@@ -76,5 +76,6 @@
     "suiteNameTemplate": "{filename}",
     "classNameTemplate": "{title}",
     "titleTemplate": "{title}"
-  }
+  },
+  "files": ["public/icons"]
 }
