@@ -8631,9 +8631,9 @@
   "title": "Heartbeat"
  },
  {
-  "id": "vascular_surgery_positive",
+  "id": "vascular_surgery",
   "category": "specialties",
-  "path": "specialties/vascular_surgery_positive",
+  "path": "specialties/vascular_surgery",
   "tags": [
    "Blood vessel",
    "Department",
