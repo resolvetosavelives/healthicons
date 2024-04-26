@@ -12,6 +12,7 @@ https://healthicons.org/icon/filled/blood/blood_o_p
 https://healthicons.org/icon/filled/blood/blood_o_n
 https://healthicons.org/icon/filled/blood/blood_rh_p
 https://healthicons.org/icon/filled/blood/blood_rh_n
+https://healthicons.org/icon/filled/body/anus
 https://healthicons.org/icon/filled/body/arm
 https://healthicons.org/icon/filled/body/bacteria
 https://healthicons.org/icon/filled/body/bladder
@@ -100,6 +101,7 @@ https://healthicons.org/icon/filled/devices/llin
 https://healthicons.org/icon/filled/devices/blood_pressure_monitor
 https://healthicons.org/icon/filled/devices/blood_pressure_2
 https://healthicons.org/icon/filled/devices/breast_pump
+https://healthicons.org/icon/filled/devices/cane
 https://healthicons.org/icon/filled/devices/cast
 https://healthicons.org/icon/filled/devices/cold_chain
 https://healthicons.org/icon/filled/devices/contact_lenses
@@ -135,12 +137,14 @@ https://healthicons.org/icon/filled/devices/pulse_oximeter_alt
 https://healthicons.org/icon/filled/devices/pulse_oximeter
 https://healthicons.org/icon/filled/devices/sling
 https://healthicons.org/icon/filled/devices/sonogram
+https://healthicons.org/icon/filled/devices/stent
 https://healthicons.org/icon/filled/devices/stethoscope
 https://healthicons.org/icon/filled/devices/surgical_sterilization
 https://healthicons.org/icon/filled/devices/syringe
 https://healthicons.org/icon/filled/devices/syringe-vaccine
 https://healthicons.org/icon/filled/devices/thermometer
 https://healthicons.org/icon/filled/devices/clinical_a
+https://healthicons.org/icon/filled/devices/test_tubes
 https://healthicons.org/icon/filled/devices/thermometer_digital
 https://healthicons.org/icon/filled/devices/toilet_paper
 https://healthicons.org/icon/filled/devices/treated_water
@@ -210,11 +214,11 @@ https://healthicons.org/icon/filled/emotions/tongue
 https://healthicons.org/icon/filled/emotions/vomitting
 https://healthicons.org/icon/filled/emotions/woozy
 https://healthicons.org/icon/filled/exercise/running
-https://healthicons.org/icon/filled/exercise/walk_supported
 https://healthicons.org/icon/filled/exercise/walking
 https://healthicons.org/icon/filled/exercise/weights
 https://healthicons.org/icon/filled/exercise/exercise
 https://healthicons.org/icon/filled/exercise/exercise_bicycle
+https://healthicons.org/icon/filled/exercise/walk_supported
 https://healthicons.org/icon/filled/exercise/swim
 https://healthicons.org/icon/filled/graphs/chart_bar
 https://healthicons.org/icon/filled/graphs/chart-cured-decreasing
@@ -450,6 +454,7 @@ https://healthicons.org/icon/filled/specialties/sonography
 https://healthicons.org/icon/filled/specialties/speech_language_therapy
 https://healthicons.org/icon/filled/specialties/general_surgery
 https://healthicons.org/icon/filled/specialties/urology
+https://healthicons.org/icon/filled/specialties/vascular_surgery_positive
 https://healthicons.org/icon/filled/symbols/alert_circle
 https://healthicons.org/icon/filled/symbols/i_documents_accepted
 https://healthicons.org/icon/filled/symbols/assembly_point
@@ -501,6 +506,7 @@ https://healthicons.org/icon/filled/symbols/register_book
 https://healthicons.org/icon/filled/symbols/health
 https://healthicons.org/icon/filled/symbols/health_worker_form
 https://healthicons.org/icon/filled/symbols/heart
+https://healthicons.org/icon/filled/symbols/heartbeat
 https://healthicons.org/icon/filled/symbols/high_level
 https://healthicons.org/icon/filled/symbols/hospice
 https://healthicons.org/icon/filled/symbols/hospital_symbol
