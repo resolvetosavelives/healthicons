@@ -454,7 +454,7 @@ https://healthicons.org/icon/filled/specialties/sonography
 https://healthicons.org/icon/filled/specialties/speech_language_therapy
 https://healthicons.org/icon/filled/specialties/general_surgery
 https://healthicons.org/icon/filled/specialties/urology
-https://healthicons.org/icon/filled/specialties/vascular_surgery_positive
+https://healthicons.org/icon/filled/specialties/vascular_surgery
 https://healthicons.org/icon/filled/symbols/alert_circle
 https://healthicons.org/icon/filled/symbols/i_documents_accepted
 https://healthicons.org/icon/filled/symbols/assembly_point
