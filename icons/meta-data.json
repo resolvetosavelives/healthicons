@@ -2070,8 +2070,8 @@
  },
  {
   "id": "cardiogram",
-  "category": "objects",
-  "path": "objects/cardiogram",
+  "category": "symbols",
+  "path": "symbols/cardiogram",
   "tags": [
    "Cardiology",
    "Heart",
@@ -7147,8 +7147,15 @@
   "id": "FHIR_logo",
   "category": "symbols",
   "path": "symbols/FHIR_logo",
-  "tags": [],
-  "title": "FHIR Logo"
+  "tags": [
+   "FHIR",
+   "HL7",
+   "Informatics",
+   "Interoperability",
+   "Logo",
+   "Standards"
+  ],
+  "title": "FHIR"
  },
  {
   "id": "patient_band_alt",
