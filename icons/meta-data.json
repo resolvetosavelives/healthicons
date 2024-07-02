@@ -1271,18 +1271,6 @@
   "title": "Tooth"
  },
  {
-  "id": "stomach",
-  "category": "body",
-  "path": "body/stomach",
-  "tags": [
-   "Digestive System",
-   "Gut",
-   "Intestine",
-   "Organ"
-  ],
-  "title": "Stomach"
- },
- {
   "id": "neurology",
   "category": "body",
   "path": "body/neurology",
@@ -1492,8 +1480,8 @@
  },
  {
   "id": "prescription_document",
-  "category": "symbols",
-  "path": "symbols/prescription_document",
+  "category": "objects",
+  "path": "objects/prescription_document",
   "tags": [
    "Medication",
    "Pharmacy",
@@ -1633,8 +1621,8 @@
  },
  {
   "id": "megaphone",
-  "category": "symbols",
-  "path": "symbols/megaphone",
+  "category": "objects",
+  "path": "objects/megaphone",
   "tags": [
    "Announcement",
    "Noise",
@@ -2082,8 +2070,8 @@
  },
  {
   "id": "cardiogram",
-  "category": "symbols",
-  "path": "symbols/cardiogram",
+  "category": "objects",
+  "path": "objects/cardiogram",
   "tags": [
    "Cardiology",
    "Heart",
@@ -2107,8 +2095,8 @@
  },
  {
   "id": "calendar",
-  "category": "symbols",
-  "path": "symbols/calendar",
+  "category": "objects",
+  "path": "objects/calendar",
   "tags": [
    "Appointment",
    "Cal",
@@ -2119,8 +2107,8 @@
  },
  {
   "id": "book",
-  "category": "symbols",
-  "path": "symbols/book",
+  "category": "objects",
+  "path": "objects/book",
   "tags": [
    "Book",
    "Dictionary",
@@ -2133,8 +2121,8 @@
  },
  {
   "id": "award_trophy",
-  "category": "symbols",
-  "path": "symbols/award_trophy",
+  "category": "objects",
+  "path": "objects/award_trophy",
   "tags": [
    "Prize",
    "Success",
@@ -3358,8 +3346,8 @@
  },
  {
   "id": "register_book",
-  "category": "symbols",
-  "path": "symbols/register_book",
+  "category": "objects",
+  "path": "objects/register_book",
   "tags": [
    "Book",
    "Chart",
@@ -3783,8 +3771,8 @@
  },
  {
   "id": "i_certificate_paper",
-  "category": "symbols",
-  "path": "symbols/i_certificate_paper",
+  "category": "objects",
+  "path": "objects/i_certificate_paper",
   "tags": [
    "Document",
    "Paper",
@@ -3807,8 +3795,8 @@
  },
  {
   "id": "health_worker_form",
-  "category": "symbols",
-  "path": "symbols/health_worker_form",
+  "category": "objects",
+  "path": "objects/health_worker_form",
   "tags": [
    "Doctor",
    "Document",
@@ -6972,16 +6960,6 @@
   "title": "Nerve"
  },
  {
-  "id": "pancreas",
-  "category": "body",
-  "path": "body/pancreas",
-  "tags": [
-   "Organ",
-   "Pancreatic"
-  ],
-  "title": "Pancreas"
- },
- {
   "id": "sling",
   "category": "devices",
   "path": "devices/sling",
@@ -8192,9 +8170,11 @@
    "Female",
    "Genitals",
    "Organ",
-   "Reproductive System"
+   "Reproductive System",
+   "Vagina",
+   "Vulva"
   ],
-  "title": "Vagina"
+  "title": "Vulva"
  },
  {
   "id": "penis_alt",
@@ -8583,23 +8563,6 @@
   "title": "Test tubes"
  },
  {
-  "id": "stent",
-  "category": "devices",
-  "path": "devices/stent",
-  "tags": [
-   "Artery",
-   "Blood vessel",
-   "Device",
-   "Heart",
-   "Heart attack",
-   "Stent",
-   "Stroke",
-   "Surgery",
-   "Vein"
-  ],
-  "title": "Stent"
- },
- {
   "id": "anus",
   "category": "body",
   "path": "body/anus",
@@ -8643,5 +8606,470 @@
    "Vascular system"
   ],
   "title": "Vascular Surgery"
+ },
+ {
+  "id": "stent",
+  "category": "devices",
+  "path": "devices/stent",
+  "tags": [
+   "Artery",
+   "Blood vessel",
+   "Device",
+   "Heart",
+   "Heart attack",
+   "Stent",
+   "Stroke",
+   "Surgery",
+   "Vein"
+  ],
+  "title": "Stent"
+ },
+ {
+  "id": "vagina",
+  "category": "body",
+  "path": "body/vagina",
+  "tags": [
+   "Anatomy",
+   "Body",
+   "Clitoris",
+   "Female",
+   "Genitals",
+   "Organ",
+   "Reproductive System",
+   "Vagina",
+   "Vulva"
+  ],
+  "title": "Vagina"
+ },
+ {
+  "id": "pancreatic_cancer",
+  "category": "conditions",
+  "path": "conditions/pancreatic_cancer",
+  "tags": [
+   "Cancer",
+   "Digestive",
+   "Gland",
+   "Growth",
+   "Insulin",
+   "Malignant",
+   "Organ",
+   "Pancreatic",
+   "Tumor"
+  ],
+  "title": "Pancreatic Cancer"
+ },
+ {
+  "id": "pancreas",
+  "category": "body",
+  "path": "body/pancreas",
+  "tags": [
+   "Digestive",
+   "Gland",
+   "Insulin",
+   "Organ",
+   "Pancreatic"
+  ],
+  "title": "Pancreas"
+ },
+ {
+  "id": "prostate_cancer",
+  "category": "conditions",
+  "path": "conditions/prostate_cancer",
+  "tags": [
+   "Bladder",
+   "Cancer",
+   "Gland",
+   "Growth",
+   "Malignant",
+   "Prostate",
+   "Tumor"
+  ],
+  "title": "Prostate Cancer"
+ },
+ {
+  "id": "prostate",
+  "category": "body",
+  "path": "body/prostate",
+  "tags": [
+   "Bladder",
+   "Gland",
+   "Organ",
+   "Prostate"
+  ],
+  "title": "Prostate"
+ },
+ {
+  "id": "stomach_cancer",
+  "category": "conditions",
+  "path": "conditions/stomach_cancer",
+  "tags": [
+   "Cancer",
+   "Digestive System",
+   "Growth",
+   "Gut",
+   "Intestine",
+   "Malignant",
+   "Organ",
+   "Tumor"
+  ],
+  "title": "Stomach Cancer"
+ },
+ {
+  "id": "stomach",
+  "category": "body",
+  "path": "body/stomach",
+  "tags": [
+   "Digestive System",
+   "Gut",
+   "Intestine",
+   "Organ"
+  ],
+  "title": "Stomach"
+ },
+ {
+  "id": "cancerous_cell_nuclei",
+  "category": "conditions",
+  "path": "conditions/cancerous_cell_nuclei",
+  "tags": [
+   "Cancer",
+   "Cell",
+   "Malignant",
+   "Nucleus",
+   "Tumor"
+  ],
+  "title": "Cancerous Cell Nuclei"
+ },
+ {
+  "id": "cell_nuclei",
+  "category": "body",
+  "path": "body/cell_nuclei",
+  "tags": [
+   "Body",
+   "Cell",
+   "Chromatin",
+   "Ribosomes"
+  ],
+  "title": "Cell Nuclei"
+ },
+ {
+  "id": "cochlear_implant",
+  "category": "devices",
+  "path": "devices/cochlear_implant",
+  "tags": [
+   "Assistive Device",
+   "Audio",
+   "Ear",
+   "Hearing",
+   "Hearing Aid",
+   "Sensory",
+   "Sound",
+   "Speech"
+  ],
+  "title": "Cochlear Implant"
+ },
+ {
+  "id": "urine_sample",
+  "category": "devices",
+  "path": "devices/urine_sample",
+  "tags": [
+   "Container",
+   "Cup",
+   "Kidney",
+   "Lab",
+   "Laboratory",
+   "Liquid",
+   "Sample"
+  ],
+  "title": "Urine Sample"
+ },
+ {
+  "id": "insurance_card",
+  "category": "objects",
+  "path": "objects/insurance_card",
+  "tags": [
+   "ID",
+   "ID Card",
+   "Identification",
+   "Insurance",
+   "License",
+   "Patient",
+   "Patient ID",
+   "Payment",
+   "User"
+  ],
+  "title": "Insurance Card"
+ },
+ {
+  "id": "head",
+  "category": "body",
+  "path": "body/head",
+  "tags": [
+   "Body",
+   "Centimeter",
+   "Diagnostic",
+   "Face",
+   "Head",
+   "Measure",
+   "Neck",
+   "Nose",
+   "Patient",
+   "Skull"
+  ],
+  "title": "Head"
+ },
+ {
+  "id": "colon",
+  "category": "body",
+  "path": "body/colon",
+  "tags": [
+   "Anus",
+   "Appendix",
+   "Bowel",
+   "Colon",
+   "Digestive System",
+   "Intestine",
+   "Organ"
+  ],
+  "title": "Colon"
+ },
+ {
+  "id": "orthotics",
+  "category": "devices",
+  "path": "devices/orthotics",
+  "tags": [
+   "Braces",
+   "Calipers",
+   "Foot",
+   "Footwear",
+   "Insole",
+   "Support"
+  ],
+  "title": "Orthotics"
+ },
+ {
+  "id": "thyroid",
+  "category": "body",
+  "path": "body/thyroid",
+  "tags": [
+   "Gland",
+   "Hormones",
+   "Metabolism",
+   "Neck",
+   "Thyroid"
+  ],
+  "title": "Thyroid"
+ },
+ {
+  "id": "qr_code",
+  "category": "symbols",
+  "path": "symbols/qr_code",
+  "tags": [
+   "Bar code",
+   "Barcode",
+   "Code",
+   "ID",
+   "Identification",
+   "Quick Response Code",
+   "Scan"
+  ],
+  "title": "QR Code"
+ },
+ {
+  "id": "icd",
+  "category": "symbols",
+  "path": "symbols/icd",
+  "tags": [
+   "Classification",
+   "Code",
+   "Informatics",
+   "Standard",
+   "Terminology",
+   "WHO"
+  ],
+  "title": "ICD"
+ },
+ {
+  "id": "icd_11",
+  "category": "symbols",
+  "path": "symbols/icd_11",
+  "tags": [
+   "Classification",
+   "Code",
+   "Informatics",
+   "Standard",
+   "Terminology",
+   "WHO"
+  ],
+  "title": "ICD 11"
+ },
+ {
+  "id": "icd_10",
+  "category": "symbols",
+  "path": "symbols/icd_10",
+  "tags": [
+   "Classification",
+   "Code",
+   "Informatics",
+   "Standard",
+   "Terminology",
+   "WHO"
+  ],
+  "title": "ICD 10"
+ },
+ {
+  "id": "icd_9",
+  "category": "symbols",
+  "path": "symbols/icd_9",
+  "tags": [
+   "Classification",
+   "Code",
+   "Informatics",
+   "Standard",
+   "Terminology",
+   "WHO"
+  ],
+  "title": "ICD 9"
+ },
+ {
+  "id": "loinc",
+  "category": "symbols",
+  "path": "symbols/loinc",
+  "tags": [
+   "Classification",
+   "Code",
+   "Informatics",
+   "Lab",
+   "Standard",
+   "Terminology"
+  ],
+  "title": "LOINC"
+ },
+ {
+  "id": "height",
+  "category": "symbols",
+  "path": "symbols/height",
+  "tags": [
+   "BMI",
+   "Centimeter",
+   "Diagnostic",
+   "Foot",
+   "Height",
+   "Measure",
+   "Patient",
+   "Short",
+   "Tall"
+  ],
+  "title": "Height"
+ },
+ {
+  "id": "waist_circumference",
+  "category": "symbols",
+  "path": "symbols/waist_circumference",
+  "tags": [
+   "BMI",
+   "Centimeter",
+   "Diagnostic",
+   "Mass",
+   "Measure",
+   "Obese",
+   "Patient",
+   "Thin",
+   "Underweight",
+   "Waist"
+  ],
+  "title": "Waist Circumference"
+ },
+ {
+  "id": "body_mass_index",
+  "category": "symbols",
+  "path": "symbols/body_mass_index",
+  "tags": [
+   "BMI",
+   "BMI",
+   "Diagnostic",
+   "Height",
+   "Mass",
+   "Measure",
+   "Obese",
+   "Thin",
+   "Underweight",
+   "Waist"
+  ],
+  "title": "Body Mass Index"
+ },
+ {
+  "id": "head_circumference",
+  "category": "symbols",
+  "path": "symbols/head_circumference",
+  "tags": [
+   "Centimeter",
+   "Diagnostic",
+   "Head",
+   "Measure",
+   "Patient",
+   "Skull"
+  ],
+  "title": "Head Circumference"
+ },
+ {
+  "id": "animal_snake",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_snake",
+  "tags": [
+   "Animal",
+   "Poison",
+   "Poisonous",
+   "Python",
+   "Snake",
+   "Venom",
+   "Zoonoses",
+   "Zoonotic Disease"
+  ],
+  "title": "Snake"
+ },
+ {
+  "id": "arm_circumference",
+  "category": "symbols",
+  "path": "symbols/arm_circumference",
+  "tags": [
+   "Arm",
+   "Centimeter",
+   "Diagnostic",
+   "Measure",
+   "Patient"
+  ],
+  "title": "Arm Circumference"
+ },
+ {
+  "id": "healthcare_it",
+  "category": "symbols",
+  "path": "symbols/healthcare_it",
+  "tags": [
+   "Computer",
+   "Device",
+   "Health",
+   "IT",
+   "Information technology",
+   "Laptop",
+   "Medicine",
+   "Technology"
+  ],
+  "title": "Health IT"
+ },
+ {
+  "id": "laptop",
+  "category": "objects",
+  "path": "objects/laptop",
+  "tags": [
+   "Computer",
+   "Device",
+   "Health",
+   "IT",
+   "Information technology",
+   "Laptop",
+   "Medicine",
+   "Technology"
+  ],
+  "title": "Laptop"
  }
 ]
