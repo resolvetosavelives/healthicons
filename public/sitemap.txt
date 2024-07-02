@@ -277,7 +277,6 @@ https://healthicons.org/icon/filled/nutrition/sugar
 https://healthicons.org/icon/filled/nutrition/unhealthy_food
 https://healthicons.org/icon/filled/objects/bandage_adhesive
 https://healthicons.org/icon/filled/objects/calendar
-https://healthicons.org/icon/filled/objects/cardiogram
 https://healthicons.org/icon/filled/objects/i_certificate_paper
 https://healthicons.org/icon/filled/objects/cleaning
 https://healthicons.org/icon/filled/objects/coins
@@ -491,6 +490,7 @@ https://healthicons.org/icon/filled/symbols/i_schedule_school_date_time
 https://healthicons.org/icon/filled/symbols/cancel
 https://healthicons.org/icon/filled/symbols/cannabis
 https://healthicons.org/icon/filled/symbols/heart_cardiogram
+https://healthicons.org/icon/filled/symbols/cardiogram
 https://healthicons.org/icon/filled/symbols/cardiogram_e
 https://healthicons.org/icon/filled/symbols/forum
 https://healthicons.org/icon/filled/symbols/communication
