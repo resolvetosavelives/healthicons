@@ -8938,20 +8938,6 @@
   "title": "ICD 9"
  },
  {
-  "id": "loinc",
-  "category": "symbols",
-  "path": "symbols/loinc",
-  "tags": [
-   "Classification",
-   "Code",
-   "Informatics",
-   "Lab",
-   "Standard",
-   "Terminology"
-  ],
-  "title": "LOINC"
- },
- {
   "id": "height",
   "category": "symbols",
   "path": "symbols/height",
@@ -8985,24 +8971,6 @@
    "Waist"
   ],
   "title": "Waist Circumference"
- },
- {
-  "id": "body_mass_index",
-  "category": "symbols",
-  "path": "symbols/body_mass_index",
-  "tags": [
-   "BMI",
-   "BMI",
-   "Diagnostic",
-   "Height",
-   "Mass",
-   "Measure",
-   "Obese",
-   "Thin",
-   "Underweight",
-   "Waist"
-  ],
-  "title": "Body Mass Index"
  },
  {
   "id": "head_circumference",
@@ -9078,5 +9046,37 @@
    "Technology"
   ],
   "title": "Laptop"
+ },
+ {
+  "id": "body_mass_index",
+  "category": "symbols",
+  "path": "symbols/body_mass_index",
+  "tags": [
+   "BMI",
+   "BMI",
+   "Diagnostic",
+   "Height",
+   "Mass",
+   "Measure",
+   "Obese",
+   "Thin",
+   "Underweight",
+   "Waist"
+  ],
+  "title": "Body Mass Index"
+ },
+ {
+  "id": "loinc",
+  "category": "symbols",
+  "path": "symbols/loinc",
+  "tags": [
+   "Classification",
+   "Code",
+   "Informatics",
+   "Lab",
+   "Standard",
+   "Terminology"
+  ],
+  "title": "LOINC"
  }
 ]
