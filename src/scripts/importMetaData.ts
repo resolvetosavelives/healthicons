@@ -104,7 +104,6 @@ client.file(figmaFilename).then(({ data }) => {
   allComponents.map((component) => {
     if (component.style === 'filled') {
       verifyStyleExists(allComponents, component.name, 'outline');
-      verifyStyleExists(allComponents, component.name, 'negative');
       verifyNameIsUnique(allComponents, component.category, component.name);
 
       const metaData = getMetadataFromDescription(
