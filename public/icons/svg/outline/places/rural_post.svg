@@ -1,5 +1,4 @@
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="48" height="48" fill="none"/>
 <path d="M39 12L43 12V14L39 14V12Z" fill="currentColor"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6 16L23 16V18H8V37H29V25H37V37H40V18H39V16H42V37H43C43.5523 37 44 37.4477 44 38C44 38.5523 43.5523 39 43 39H5C4.44772 39 4 38.5523 4 38C4 37.4477 4.44772 37 5 37H6V16ZM31 37H35V27H31V37Z" fill="currentColor"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M27 32L26 32V25H11V32H10V34L27 34V32ZM13 27V32H24V27H13Z" fill="currentColor"/>
