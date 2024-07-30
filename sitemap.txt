@@ -21,6 +21,7 @@ https://healthicons.org/icon/filled/body/blood_drop
 https://healthicons.org/icon/filled/body/blood_vessel
 https://healthicons.org/icon/filled/body/body
 https://healthicons.org/icon/filled/body/neurology
+https://healthicons.org/icon/filled/body/breasts
 https://healthicons.org/icon/filled/body/cell_nuclei
 https://healthicons.org/icon/filled/body/colon
 https://healthicons.org/icon/filled/body/dna
@@ -121,6 +122,7 @@ https://healthicons.org/icon/filled/devices/tac
 https://healthicons.org/icon/filled/devices/defibrillator
 https://healthicons.org/icon/filled/devices/dental_hygiene
 https://healthicons.org/icon/filled/devices/discriminating_concentration_bioassays
+https://healthicons.org/icon/filled/devices/endotracheal_tube
 https://healthicons.org/icon/filled/devices/fever
 https://healthicons.org/icon/filled/devices/eyeglasses
 https://healthicons.org/icon/filled/devices/diabetes_measure
@@ -131,6 +133,7 @@ https://healthicons.org/icon/filled/devices/observation
 https://healthicons.org/icon/filled/devices/blood_pressure
 https://healthicons.org/icon/filled/devices/asthma_inhaler
 https://healthicons.org/icon/filled/devices/intravenous_bag
+https://healthicons.org/icon/filled/devices/laryngoscope
 https://healthicons.org/icon/filled/devices/medical_sample
 https://healthicons.org/icon/filled/devices/medicine_bottle
 https://healthicons.org/icon/filled/devices/microscope
@@ -481,8 +484,10 @@ https://healthicons.org/icon/filled/specialties/vascular_surgery
 https://healthicons.org/icon/filled/symbols/alert_circle
 https://healthicons.org/icon/filled/symbols/i_documents_accepted
 https://healthicons.org/icon/filled/symbols/arm_circumference
+https://healthicons.org/icon/filled/symbols/artificial_intelligence
 https://healthicons.org/icon/filled/symbols/assembly_point
 https://healthicons.org/icon/filled/symbols/award_ribbon
+https://healthicons.org/icon/filled/symbols/bio_pharma
 https://healthicons.org/icon/filled/symbols/body_mass_index
 https://healthicons.org/icon/filled/symbols/breeding_sites
 https://healthicons.org/icon/filled/symbols/calendar-quarantine
@@ -514,6 +519,7 @@ https://healthicons.org/icon/filled/symbols/entry
 https://healthicons.org/icon/filled/symbols/i_exam_qualification
 https://healthicons.org/icon/filled/symbols/i_exam_multiple_choice
 https://healthicons.org/icon/filled/symbols/excel_logo
+https://healthicons.org/icon/filled/symbols/female
 https://healthicons.org/icon/filled/symbols/FHIR_logo
 https://healthicons.org/icon/filled/symbols/fingerprint
 https://healthicons.org/icon/filled/symbols/sexual_reproductive_health
@@ -542,13 +548,15 @@ https://healthicons.org/icon/filled/symbols/imm
 https://healthicons.org/icon/filled/symbols/info
 https://healthicons.org/icon/filled/symbols/insecticide_resistance
 https://healthicons.org/icon/filled/symbols/interoperability
+https://healthicons.org/icon/filled/symbols/lab_search
 https://healthicons.org/icon/filled/symbols/geo_location
 https://healthicons.org/icon/filled/symbols/loinc
 https://healthicons.org/icon/filled/symbols/low_level
+https://healthicons.org/icon/filled/symbols/magic_wand
 https://healthicons.org/icon/filled/symbols/magnifying_glass
+https://healthicons.org/icon/filled/symbols/male
 https://healthicons.org/icon/filled/symbols/medical_advice
 https://healthicons.org/icon/filled/symbols/medical_search
-https://healthicons.org/icon/filled/symbols/medical_search-1
 https://healthicons.org/icon/filled/symbols/medium_level
 https://healthicons.org/icon/filled/symbols/negative
 https://healthicons.org/icon/filled/symbols/2g

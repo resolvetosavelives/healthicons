@@ -5,6 +5,7 @@
   "path": "vehicles/war",
   "tags": [
    "Armored Vehicle",
+   "Army",
    "Cannon",
    "Gun",
    "Military",
@@ -1330,57 +1331,6 @@
   "title": "Bacteria"
  },
  {
-  "id": "yes",
-  "category": "symbols",
-  "path": "symbols/yes",
-  "tags": [
-   "Approved",
-   "Circle",
-   "Success",
-   "Yes",
-   "dhis2:yes"
-  ],
-  "title": "Checkmark"
- },
- {
-  "id": "un_paved_road",
-  "category": "symbols",
-  "path": "symbols/un_paved_road",
-  "tags": [
-   "Curve",
-   "Dirt",
-   "Road",
-   "dhis2:unpaved_road"
-  ],
-  "title": "Unpaved Road"
- },
- {
-  "id": "tally",
-  "category": "symbols",
-  "path": "symbols/tally",
-  "tags": [
-   "Add",
-   "Addition",
-   "Count",
-   "Math",
-   "Register"
-  ],
-  "title": "Tally"
- },
- {
-  "id": "stop",
-  "category": "symbols",
-  "path": "symbols/stop",
-  "tags": [
-   "Fingers",
-   "Halt",
-   "Hand",
-   "Warning",
-   "dhis2:stop"
-  ],
-  "title": "Stop"
- },
- {
   "id": "smoking_cessation",
   "category": "symbols",
   "path": "symbols/smoking_cessation",
@@ -2489,29 +2439,6 @@
    "Talking"
   ],
   "title": "Call Center"
- },
- {
-  "id": "excel_logo",
-  "category": "symbols",
-  "path": "symbols/excel_logo",
-  "tags": [
-   "Document",
-   "Logo",
-   "Spreadsheet"
-  ],
-  "title": "Excel"
- },
- {
-  "id": "openMRS_logo",
-  "category": "symbols",
-  "path": "symbols/openMRS_logo",
-  "tags": [
-   "EHR",
-   "EMR",
-   "Logo",
-   "Open Medical Records System"
-  ],
-  "title": "OpenMRS"
  },
  {
   "id": "wheelchair_alt",
@@ -3850,32 +3777,6 @@
   "title": "HIV"
  },
  {
-  "id": "water_treatment",
-  "category": "symbols",
-  "path": "symbols/water_treatment",
-  "tags": [
-   "Arrows",
-   "Drop",
-   "Water",
-   "dhis2:water_treatment"
-  ],
-  "title": "Water Treatment"
- },
- {
-  "id": "social_distancing",
-  "category": "symbols",
-  "path": "symbols/social_distancing",
-  "tags": [
-   "Apart",
-   "Arrows",
-   "Between",
-   "Social Distance",
-   "Space",
-   "dhis2:social_distancing"
-  ],
-  "title": "Social Distancing"
- },
- {
   "id": "default",
   "category": "symbols",
   "path": "symbols/default",
@@ -4513,18 +4414,6 @@
   "title": "Defibrillator"
  },
  {
-  "id": "discharge",
-  "category": "symbols",
-  "path": "symbols/discharge",
-  "tags": [
-   "Chair",
-   "Department",
-   "Exit",
-   "Hospital"
-  ],
-  "title": "Discharge"
- },
- {
   "id": "leg",
   "category": "body",
   "path": "body/leg",
@@ -4563,20 +4452,6 @@
   "title": "Eye"
  },
  {
-  "id": "pharmacy",
-  "category": "symbols",
-  "path": "symbols/pharmacy",
-  "tags": [
-   "Department",
-   "Drugs",
-   "Medications",
-   "Pharmacist",
-   "Pharmacy",
-   "Pills"
-  ],
-  "title": "Pharmacy"
- },
- {
   "id": "xray",
   "category": "devices",
   "path": "devices/xray",
@@ -4599,20 +4474,6 @@
    "Oral"
   ],
   "title": "Mouth"
- },
- {
-  "id": "pharmacy_alt",
-  "category": "symbols",
-  "path": "symbols/pharmacy_alt",
-  "tags": [
-   "Department",
-   "Drugs",
-   "Medications",
-   "Pharmacist",
-   "Pharmacy",
-   "Pills"
-  ],
-  "title": "Pharmacy"
  },
  {
   "id": "rheumatology",
@@ -4662,18 +4523,6 @@
    "Transgender"
   ],
   "title": "Umbrella"
- },
- {
-  "id": "simple_logo",
-  "category": "symbols",
-  "path": "symbols/simple_logo",
-  "tags": [
-   "App",
-   "HIT",
-   "Health IT",
-   "Open Source"
-  ],
-  "title": "Simple.org"
  },
  {
   "id": "bandage_adhesive",
@@ -5543,20 +5392,6 @@
   "title": "Coughing"
  },
  {
-  "id": "transgender",
-  "category": "symbols",
-  "path": "symbols/transgender",
-  "tags": [
-   "Gender",
-   "Sex",
-   "Symbol",
-   "Trans",
-   "Transgender",
-   "dhis2:transgender"
-  ],
-  "title": "Transgender"
- },
- {
   "id": "pwid",
   "category": "people",
   "path": "people/pwid",
@@ -6183,43 +6018,6 @@
   "title": "Pneumonia"
  },
  {
-  "id": "animal_cow",
-  "category": "zoonoses",
-  "path": "zoonoses/animal_cow",
-  "tags": [
-   "Animal",
-   "Beef",
-   "Farm Animal",
-   "Milk",
-   "Zoonoses",
-   "Zoonotic Diseases"
-  ],
-  "title": "Cow"
- },
- {
-  "id": "assembly_point",
-  "category": "symbols",
-  "path": "symbols/assembly_point",
-  "tags": [
-   "Emergency",
-   "Navigation",
-   "Wayfinding"
-  ],
-  "title": "Assembly Point"
- },
- {
-  "id": "guide_dog",
-  "category": "symbols",
-  "path": "symbols/guide_dog",
-  "tags": [
-   "Animal",
-   "Blind",
-   "Service Animal",
-   "Sight"
-  ],
-  "title": "Guide Dog"
- },
- {
   "id": "spleen",
   "category": "body",
   "path": "body/spleen",
@@ -6254,119 +6052,6 @@
    "Lungs"
   ],
   "title": "Ventilator ALT"
- },
- {
-  "id": "ui_zoom_in",
-  "category": "symbols",
-  "path": "symbols/ui_zoom_in",
-  "tags": [
-   "Magnifying Glass",
-   "Navigation",
-   "User Interface"
-  ],
-  "title": "UI Zoom In"
- },
- {
-  "id": "ui_zoom_out",
-  "category": "symbols",
-  "path": "symbols/ui_zoom_out",
-  "tags": [
-   "Magnifying Glass",
-   "Navigation",
-   "User Interface"
-  ],
-  "title": "UI Zoom Out"
- },
- {
-  "id": "ui_zoom",
-  "category": "symbols",
-  "path": "symbols/ui_zoom",
-  "tags": [
-   "Find",
-   "Magnifying Glass",
-   "Navigation",
-   "Search",
-   "User Interface"
-  ],
-  "title": "UI Zoom"
- },
- {
-  "id": "ui_settings",
-  "category": "symbols",
-  "path": "symbols/ui_settings",
-  "tags": [
-   "Navigation",
-   "Preferences",
-   "User Interface"
-  ],
-  "title": "Settings"
- },
- {
-  "id": "ui_secure",
-  "category": "symbols",
-  "path": "symbols/ui_secure",
-  "tags": [
-   "Lock",
-   "Navigation",
-   "Security",
-   "User Interface"
-  ],
-  "title": "Secure"
- },
- {
-  "id": "ui_preferences",
-  "category": "symbols",
-  "path": "symbols/ui_preferences",
-  "tags": [
-   "Navigation",
-   "Settings",
-   "User Interface"
-  ],
-  "title": "Preferences"
- },
- {
-  "id": "ui_folder_family",
-  "category": "symbols",
-  "path": "symbols/ui_folder_family",
-  "tags": [
-   "Data",
-   "Folder",
-   "Navigation",
-   "User Interface"
-  ],
-  "title": "UI Family Folder"
- },
- {
-  "id": "ui_folder",
-  "category": "symbols",
-  "path": "symbols/ui_folder",
-  "tags": [
-   "Data",
-   "Folder",
-   "Navigation",
-   "User Interface"
-  ],
-  "title": "UI Folder"
- },
- {
-  "id": "ui_menu",
-  "category": "symbols",
-  "path": "symbols/ui_menu",
-  "tags": [
-   "Navigation",
-   "User Interface"
-  ],
-  "title": "UI Menu"
- },
- {
-  "id": "ui_menu_grid",
-  "category": "symbols",
-  "path": "symbols/ui_menu_grid",
-  "tags": [
-   "Navigation",
-   "User Interface"
-  ],
-  "title": "UI Menu Grid"
  },
  {
   "id": "social_work",
@@ -6470,18 +6155,6 @@
   "title": "Geriatrics"
  },
  {
-  "id": "database",
-  "category": "symbols",
-  "path": "symbols/database",
-  "tags": [
-   "DB",
-   "Data",
-   "Database",
-   "Storage"
-  ],
-  "title": "Database"
- },
- {
   "id": "contact_lenses",
   "category": "devices",
   "path": "devices/contact_lenses",
@@ -6533,154 +6206,6 @@
   "title": "Cast"
  },
  {
-  "id": "ui_user_profile",
-  "category": "symbols",
-  "path": "symbols/ui_user_profile",
-  "tags": [
-   "Navigation",
-   "User Interface"
-  ],
-  "title": "UI User Profile"
- },
- {
-  "id": "network_5g",
-  "category": "symbols",
-  "path": "symbols/network_5g",
-  "tags": [
-   "Bandwidth",
-   "Connection",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:5g"
-  ],
-  "title": "Network 5G"
- },
- {
-  "id": "network_4g",
-  "category": "symbols",
-  "path": "symbols/network_4g",
-  "tags": [
-   "Bandwidth",
-   "Connection",
-   "LTE",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:4g"
-  ],
-  "title": "Network 4G"
- },
- {
-  "id": "medium_bars",
-  "category": "symbols",
-  "path": "symbols/medium_bars",
-  "tags": [
-   "Connection",
-   "Medium",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:medium_bars"
-  ],
-  "title": "Network Medium Bars"
- },
- {
-  "id": "low_bars",
-  "category": "symbols",
-  "path": "symbols/low_bars",
-  "tags": [
-   "Connection",
-   "Network",
-   "Phone",
-   "Slow",
-   "Speed",
-   "dhis2:low_bars"
-  ],
-  "title": "Network Low Bars"
- },
- {
-  "id": "high_bars",
-  "category": "symbols",
-  "path": "symbols/high_bars",
-  "tags": [
-   "Connection",
-   "Fast",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:high_bars"
-  ],
-  "title": "Network High Bars"
- },
- {
-  "id": "3g",
-  "category": "symbols",
-  "path": "symbols/3g",
-  "tags": [
-   "Bandwidth",
-   "Connection",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:3g"
-  ],
-  "title": "Network 3G"
- },
- {
-  "id": "2g",
-  "category": "symbols",
-  "path": "symbols/2g",
-  "tags": [
-   "Bandwidth",
-   "Connection",
-   "Network",
-   "Phone",
-   "Speed",
-   "dhis2:2g"
-  ],
-  "title": "Network 2G"
- },
- {
-  "id": "home-quarantine",
-  "category": "symbols",
-  "path": "symbols/home-quarantine",
-  "tags": [
-   "Covid",
-   "Home",
-   "Isolation",
-   "Quarantine",
-   "Virus"
-  ],
-  "title": "Quarantine Home"
- },
- {
-  "id": "calendar-quarantine",
-  "category": "symbols",
-  "path": "symbols/calendar-quarantine",
-  "tags": [
-   "Calendar",
-   "Covid",
-   "Isolation",
-   "Quarantine",
-   "Virus"
-  ],
-  "title": "Calendar Quarantine"
- },
- {
-  "id": "social_distancing_alt",
-  "category": "symbols",
-  "path": "symbols/social_distancing_alt",
-  "tags": [
-   "Apart",
-   "Arrows",
-   "Between",
-   "Social Distance",
-   "Space"
-  ],
-  "title": "Social Distancing ALT"
- },
- {
   "id": "intestinal-pain",
   "category": "conditions",
   "path": "conditions/intestinal-pain",
@@ -6695,18 +6220,6 @@
   "title": "Intestinal Pain"
  },
  {
-  "id": "virus-shield",
-  "category": "symbols",
-  "path": "symbols/virus-shield",
-  "tags": [
-   "Covid",
-   "Protection",
-   "Vaccine",
-   "Virus"
-  ],
-  "title": "Shield Virus"
- },
- {
   "id": "syringe-vaccine",
   "category": "devices",
   "path": "devices/syringe-vaccine",
@@ -6718,78 +6231,6 @@
    "Virus"
   ],
   "title": "Syringe Vaccine"
- },
- {
-  "id": "virus_alt",
-  "category": "symbols",
-  "path": "symbols/virus_alt",
-  "tags": [
-   "Covid",
-   "Epidemic",
-   "Infection",
-   "Infectious",
-   "Pandemic",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Virus ALT"
- },
- {
-  "id": "virus_patient",
-  "category": "symbols",
-  "path": "symbols/virus_patient",
-  "tags": [
-   "Covid",
-   "Epidemic",
-   "Human",
-   "Pandemic",
-   "Patient",
-   "Person",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Patient Virus"
- },
- {
-  "id": "global-pandemic",
-  "category": "symbols",
-  "path": "symbols/global-pandemic",
-  "tags": [
-   "Covid",
-   "Epidemic",
-   "Pandemic",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Global Pandemic"
- },
- {
-  "id": "globe",
-  "category": "symbols",
-  "path": "symbols/globe",
-  "tags": [
-   "Earth",
-   "Globe",
-   "Location",
-   "World"
-  ],
-  "title": "Globe"
- },
- {
-  "id": "virus-mutation",
-  "category": "symbols",
-  "path": "symbols/virus-mutation",
-  "tags": [
-   "Adaptation",
-   "Change",
-   "Covid",
-   "Evolution",
-   "Mutation",
-   "Viral",
-   "Virology",
-   "Virus"
-  ],
-  "title": "Virus Mutation"
  },
  {
   "id": "dental_hygiene",
@@ -6839,21 +6280,6 @@
    "Microscopic"
   ],
   "title": "Enzyme"
- },
- {
-  "id": "fingerprint",
-  "category": "symbols",
-  "path": "symbols/fingerprint",
-  "tags": [
-   "Body",
-   "Finger",
-   "Fingerprint",
-   "Human",
-   "ID",
-   "Scan",
-   "identification"
-  ],
-  "title": "Fingerprint"
  },
  {
   "id": "skeleton",
@@ -7108,28 +6534,6 @@
   "title": "Liver ALT"
  },
  {
-  "id": "palliative-care",
-  "category": "symbols",
-  "path": "symbols/palliative-care",
-  "tags": [
-   "Heart",
-   "Hearts",
-   "Palliative Care"
-  ],
-  "title": "Palliative Care"
- },
- {
-  "id": "hospice",
-  "category": "symbols",
-  "path": "symbols/hospice",
-  "tags": [
-   "Hospice Care",
-   "Hospital",
-   "Palliative Care"
-  ],
-  "title": "Hospice"
- },
- {
   "id": "eyeglasses",
   "category": "devices",
   "path": "devices/eyeglasses",
@@ -7142,20 +6546,6 @@
    "Optometry"
   ],
   "title": "Eyeglasses"
- },
- {
-  "id": "FHIR_logo",
-  "category": "symbols",
-  "path": "symbols/FHIR_logo",
-  "tags": [
-   "FHIR",
-   "HL7",
-   "Informatics",
-   "Interoperability",
-   "Logo",
-   "Standards"
-  ],
-  "title": "FHIR"
  },
  {
   "id": "patient_band_alt",
@@ -7321,22 +6711,6 @@
    "Trauma"
   ],
   "title": "Pain"
- },
- {
-  "id": "interoperability",
-  "category": "symbols",
-  "path": "symbols/interoperability",
-  "tags": [
-   "FHIR",
-   "IT",
-   "Informatics",
-   "Interoperability",
-   "Standards",
-   "Tech",
-   "Technology",
-   "Terminology"
-  ],
-  "title": "Interoperability"
  },
  {
   "id": "carbohydrates",
@@ -7733,84 +7107,6 @@
   "title": "Unhealthy Food"
  },
  {
-  "id": "medical_search",
-  "category": "symbols",
-  "path": "symbols/medical_search",
-  "tags": [
-   "Cross",
-   "Find",
-   "Glass",
-   "Magnifying",
-   "Medical",
-   "Plus",
-   "Search",
-   "Zoom"
-  ],
-  "title": "Medical Search ALT"
- },
- {
-  "id": "medical_search",
-  "category": "symbols",
-  "path": "symbols/medical_search",
-  "tags": [
-   "Find",
-   "Glass",
-   "Lab",
-   "Magnifying",
-   "Medical",
-   "Sample",
-   "Search",
-   "Test tube"
-  ],
-  "title": "Medical Search"
- },
- {
-  "id": "secure_communication",
-  "category": "symbols",
-  "path": "symbols/secure_communication",
-  "tags": [
-   "Bubble",
-   "Chat",
-   "Communication",
-   "Encrypted",
-   "Lock",
-   "Message",
-   "SMS",
-   "Secure",
-   "Speech",
-   "Talk"
-  ],
-  "title": "Chat Secure"
- },
- {
-  "id": "smoking_cessation_alt",
-  "category": "symbols",
-  "path": "symbols/smoking_cessation_alt",
-  "tags": [
-   "Banned",
-   "Cessation",
-   "Smoking",
-   "Stop",
-   "Tobacco",
-   "Unhealthy"
-  ],
-  "title": "No Smoking"
- },
- {
-  "id": "cancel",
-  "category": "symbols",
-  "path": "symbols/cancel",
-  "tags": [
-   "Cancel",
-   "Cessation",
-   "No Entry",
-   "None",
-   "Stop",
-   "Symbol"
-  ],
-  "title": "Cancel"
- },
- {
   "id": "swim",
   "category": "exercise",
   "path": "exercise/swim",
@@ -8137,19 +7433,6 @@
    "Postnatal"
   ],
   "title": "Baby Formula"
- },
- {
-  "id": "telemedicine",
-  "category": "symbols",
-  "path": "symbols/telemedicine",
-  "tags": [
-   "Computer",
-   "Consult",
-   "Doctor",
-   "Meeting",
-   "Virtual"
-  ],
-  "title": "Telemedicine"
  },
  {
   "id": "exercise",
@@ -8584,23 +7867,6 @@
   "title": "Anus"
  },
  {
-  "id": "heartbeat",
-  "category": "symbols",
-  "path": "symbols/heartbeat",
-  "tags": [
-   "Cardiology",
-   "Circulatory System",
-   "Device",
-   "Electrical",
-   "Heart",
-   "Heart attack",
-   "Heartbeat",
-   "Stroke",
-   "Symbol"
-  ],
-  "title": "Heartbeat"
- },
- {
   "id": "vascular_surgery",
   "category": "specialties",
   "path": "specialties/vascular_surgery",
@@ -8867,6 +8133,822 @@
   "title": "Thyroid"
  },
  {
+  "id": "animal_snake",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_snake",
+  "tags": [
+   "Animal",
+   "Poison",
+   "Poisonous",
+   "Python",
+   "Snake",
+   "Venom",
+   "Zoonoses",
+   "Zoonotic Disease"
+  ],
+  "title": "Snake"
+ },
+ {
+  "id": "laptop",
+  "category": "objects",
+  "path": "objects/laptop",
+  "tags": [
+   "Computer",
+   "Device",
+   "Health",
+   "IT",
+   "Information technology",
+   "Laptop",
+   "Medicine",
+   "Technology"
+  ],
+  "title": "Laptop"
+ },
+ {
+  "id": "animal_cow",
+  "category": "zoonoses",
+  "path": "zoonoses/animal_cow",
+  "tags": [
+   "Animal",
+   "Beef",
+   "Farm Animal",
+   "Milk",
+   "Zoonoses",
+   "Zoonotic Diseases"
+  ],
+  "title": "Cow"
+ },
+ {
+  "id": "breasts",
+  "category": "body",
+  "path": "body/breasts",
+  "tags": [
+   "Body",
+   "Breast",
+   "Breast feeding",
+   "Chest",
+   "Mammary",
+   "Mammogram",
+   "Mother",
+   "Nipple"
+  ],
+  "title": "Breasts"
+ },
+ {
+  "id": "endotracheal_tube",
+  "category": "devices",
+  "path": "devices/endotracheal_tube",
+  "tags": [
+   "Airway",
+   "Breathe",
+   "Catheter",
+   "Device",
+   "Emergency",
+   "Oxygen",
+   "Throat",
+   "Trachea",
+   "Vocal cords"
+  ],
+  "title": "Endotracheal Tube"
+ },
+ {
+  "id": "laryngoscope",
+  "category": "devices",
+  "path": "devices/laryngoscope",
+  "tags": [
+   "Airway",
+   "Device",
+   "Exam",
+   "Examination",
+   "Larynx",
+   "Throat",
+   "Video",
+   "Vocal cords"
+  ],
+  "title": "Laryngoscope"
+ },
+ {
+  "id": "yes",
+  "category": "symbols",
+  "path": "symbols/yes",
+  "tags": [
+   "Approved",
+   "Circle",
+   "Success",
+   "Yes",
+   "dhis2:yes"
+  ],
+  "title": "Checkmark"
+ },
+ {
+  "id": "un_paved_road",
+  "category": "symbols",
+  "path": "symbols/un_paved_road",
+  "tags": [
+   "Curve",
+   "Dirt",
+   "Road",
+   "dhis2:unpaved_road"
+  ],
+  "title": "Unpaved Road"
+ },
+ {
+  "id": "tally",
+  "category": "symbols",
+  "path": "symbols/tally",
+  "tags": [
+   "Add",
+   "Addition",
+   "Count",
+   "Math",
+   "Register"
+  ],
+  "title": "Tally"
+ },
+ {
+  "id": "stop",
+  "category": "symbols",
+  "path": "symbols/stop",
+  "tags": [
+   "Fingers",
+   "Halt",
+   "Hand",
+   "Warning",
+   "dhis2:stop"
+  ],
+  "title": "Stop"
+ },
+ {
+  "id": "excel_logo",
+  "category": "symbols",
+  "path": "symbols/excel_logo",
+  "tags": [
+   "Document",
+   "Logo",
+   "Spreadsheet"
+  ],
+  "title": "Excel"
+ },
+ {
+  "id": "openMRS_logo",
+  "category": "symbols",
+  "path": "symbols/openMRS_logo",
+  "tags": [
+   "EHR",
+   "EMR",
+   "Logo",
+   "Open Medical Records System"
+  ],
+  "title": "OpenMRS"
+ },
+ {
+  "id": "water_treatment",
+  "category": "symbols",
+  "path": "symbols/water_treatment",
+  "tags": [
+   "Arrows",
+   "Drop",
+   "Water",
+   "dhis2:water_treatment"
+  ],
+  "title": "Water Treatment"
+ },
+ {
+  "id": "social_distancing",
+  "category": "symbols",
+  "path": "symbols/social_distancing",
+  "tags": [
+   "Apart",
+   "Arrows",
+   "Between",
+   "Social Distance",
+   "Space",
+   "dhis2:social_distancing"
+  ],
+  "title": "Social Distancing"
+ },
+ {
+  "id": "discharge",
+  "category": "symbols",
+  "path": "symbols/discharge",
+  "tags": [
+   "Chair",
+   "Department",
+   "Exit",
+   "Hospital"
+  ],
+  "title": "Discharge"
+ },
+ {
+  "id": "pharmacy",
+  "category": "symbols",
+  "path": "symbols/pharmacy",
+  "tags": [
+   "Department",
+   "Drugs",
+   "Medications",
+   "Pharmacist",
+   "Pharmacy",
+   "Pills"
+  ],
+  "title": "Pharmacy"
+ },
+ {
+  "id": "pharmacy_alt",
+  "category": "symbols",
+  "path": "symbols/pharmacy_alt",
+  "tags": [
+   "Department",
+   "Drugs",
+   "Medications",
+   "Pharmacist",
+   "Pharmacy",
+   "Pills"
+  ],
+  "title": "Pharmacy"
+ },
+ {
+  "id": "simple_logo",
+  "category": "symbols",
+  "path": "symbols/simple_logo",
+  "tags": [
+   "App",
+   "HIT",
+   "Health IT",
+   "Open Source"
+  ],
+  "title": "Simple.org"
+ },
+ {
+  "id": "transgender",
+  "category": "symbols",
+  "path": "symbols/transgender",
+  "tags": [
+   "Gender",
+   "Sex",
+   "Symbol",
+   "Trans",
+   "Transgender",
+   "dhis2:transgender"
+  ],
+  "title": "Transgender"
+ },
+ {
+  "id": "assembly_point",
+  "category": "symbols",
+  "path": "symbols/assembly_point",
+  "tags": [
+   "Emergency",
+   "Navigation",
+   "Wayfinding"
+  ],
+  "title": "Assembly Point"
+ },
+ {
+  "id": "guide_dog",
+  "category": "symbols",
+  "path": "symbols/guide_dog",
+  "tags": [
+   "Animal",
+   "Blind",
+   "Service Animal",
+   "Sight"
+  ],
+  "title": "Guide Dog"
+ },
+ {
+  "id": "ui_zoom_in",
+  "category": "symbols",
+  "path": "symbols/ui_zoom_in",
+  "tags": [
+   "Magnifying Glass",
+   "Navigation",
+   "User Interface"
+  ],
+  "title": "UI Zoom In"
+ },
+ {
+  "id": "ui_zoom_out",
+  "category": "symbols",
+  "path": "symbols/ui_zoom_out",
+  "tags": [
+   "Magnifying Glass",
+   "Navigation",
+   "User Interface"
+  ],
+  "title": "UI Zoom Out"
+ },
+ {
+  "id": "ui_zoom",
+  "category": "symbols",
+  "path": "symbols/ui_zoom",
+  "tags": [
+   "Find",
+   "Magnifying Glass",
+   "Navigation",
+   "Search",
+   "User Interface"
+  ],
+  "title": "UI Zoom"
+ },
+ {
+  "id": "ui_settings",
+  "category": "symbols",
+  "path": "symbols/ui_settings",
+  "tags": [
+   "Navigation",
+   "Preferences",
+   "User Interface"
+  ],
+  "title": "Settings"
+ },
+ {
+  "id": "ui_secure",
+  "category": "symbols",
+  "path": "symbols/ui_secure",
+  "tags": [
+   "Lock",
+   "Navigation",
+   "Security",
+   "User Interface"
+  ],
+  "title": "Secure"
+ },
+ {
+  "id": "ui_preferences",
+  "category": "symbols",
+  "path": "symbols/ui_preferences",
+  "tags": [
+   "Navigation",
+   "Settings",
+   "User Interface"
+  ],
+  "title": "Preferences"
+ },
+ {
+  "id": "ui_folder_family",
+  "category": "symbols",
+  "path": "symbols/ui_folder_family",
+  "tags": [
+   "Data",
+   "Folder",
+   "Navigation",
+   "User Interface"
+  ],
+  "title": "UI Family Folder"
+ },
+ {
+  "id": "ui_folder",
+  "category": "symbols",
+  "path": "symbols/ui_folder",
+  "tags": [
+   "Data",
+   "Folder",
+   "Navigation",
+   "User Interface"
+  ],
+  "title": "UI Folder"
+ },
+ {
+  "id": "ui_menu",
+  "category": "symbols",
+  "path": "symbols/ui_menu",
+  "tags": [
+   "Navigation",
+   "User Interface"
+  ],
+  "title": "UI Menu"
+ },
+ {
+  "id": "ui_menu_grid",
+  "category": "symbols",
+  "path": "symbols/ui_menu_grid",
+  "tags": [
+   "Navigation",
+   "User Interface"
+  ],
+  "title": "UI Menu Grid"
+ },
+ {
+  "id": "database",
+  "category": "symbols",
+  "path": "symbols/database",
+  "tags": [
+   "DB",
+   "Data",
+   "Database",
+   "Storage"
+  ],
+  "title": "Database"
+ },
+ {
+  "id": "ui_user_profile",
+  "category": "symbols",
+  "path": "symbols/ui_user_profile",
+  "tags": [
+   "Navigation",
+   "User Interface"
+  ],
+  "title": "UI User Profile"
+ },
+ {
+  "id": "network_5g",
+  "category": "symbols",
+  "path": "symbols/network_5g",
+  "tags": [
+   "Bandwidth",
+   "Connection",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:5g"
+  ],
+  "title": "Network 5G"
+ },
+ {
+  "id": "network_4g",
+  "category": "symbols",
+  "path": "symbols/network_4g",
+  "tags": [
+   "Bandwidth",
+   "Connection",
+   "LTE",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:4g"
+  ],
+  "title": "Network 4G"
+ },
+ {
+  "id": "medium_bars",
+  "category": "symbols",
+  "path": "symbols/medium_bars",
+  "tags": [
+   "Connection",
+   "Medium",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:medium_bars"
+  ],
+  "title": "Network Medium Bars"
+ },
+ {
+  "id": "low_bars",
+  "category": "symbols",
+  "path": "symbols/low_bars",
+  "tags": [
+   "Connection",
+   "Network",
+   "Phone",
+   "Slow",
+   "Speed",
+   "dhis2:low_bars"
+  ],
+  "title": "Network Low Bars"
+ },
+ {
+  "id": "high_bars",
+  "category": "symbols",
+  "path": "symbols/high_bars",
+  "tags": [
+   "Connection",
+   "Fast",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:high_bars"
+  ],
+  "title": "Network High Bars"
+ },
+ {
+  "id": "3g",
+  "category": "symbols",
+  "path": "symbols/3g",
+  "tags": [
+   "Bandwidth",
+   "Connection",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:3g"
+  ],
+  "title": "Network 3G"
+ },
+ {
+  "id": "2g",
+  "category": "symbols",
+  "path": "symbols/2g",
+  "tags": [
+   "Bandwidth",
+   "Connection",
+   "Network",
+   "Phone",
+   "Speed",
+   "dhis2:2g"
+  ],
+  "title": "Network 2G"
+ },
+ {
+  "id": "home-quarantine",
+  "category": "symbols",
+  "path": "symbols/home-quarantine",
+  "tags": [
+   "Covid",
+   "Home",
+   "Isolation",
+   "Quarantine",
+   "Virus"
+  ],
+  "title": "Quarantine Home"
+ },
+ {
+  "id": "calendar-quarantine",
+  "category": "symbols",
+  "path": "symbols/calendar-quarantine",
+  "tags": [
+   "Calendar",
+   "Covid",
+   "Isolation",
+   "Quarantine",
+   "Virus"
+  ],
+  "title": "Calendar Quarantine"
+ },
+ {
+  "id": "social_distancing_alt",
+  "category": "symbols",
+  "path": "symbols/social_distancing_alt",
+  "tags": [
+   "Apart",
+   "Arrows",
+   "Between",
+   "Social Distance",
+   "Space"
+  ],
+  "title": "Social Distancing ALT"
+ },
+ {
+  "id": "virus-shield",
+  "category": "symbols",
+  "path": "symbols/virus-shield",
+  "tags": [
+   "Covid",
+   "Protection",
+   "Vaccine",
+   "Virus"
+  ],
+  "title": "Shield Virus"
+ },
+ {
+  "id": "virus_alt",
+  "category": "symbols",
+  "path": "symbols/virus_alt",
+  "tags": [
+   "Covid",
+   "Epidemic",
+   "Infection",
+   "Infectious",
+   "Pandemic",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Virus ALT"
+ },
+ {
+  "id": "virus_patient",
+  "category": "symbols",
+  "path": "symbols/virus_patient",
+  "tags": [
+   "Covid",
+   "Epidemic",
+   "Human",
+   "Pandemic",
+   "Patient",
+   "Person",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Patient Virus"
+ },
+ {
+  "id": "global-pandemic",
+  "category": "symbols",
+  "path": "symbols/global-pandemic",
+  "tags": [
+   "Covid",
+   "Epidemic",
+   "Pandemic",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Global Pandemic"
+ },
+ {
+  "id": "globe",
+  "category": "symbols",
+  "path": "symbols/globe",
+  "tags": [
+   "Earth",
+   "Globe",
+   "Location",
+   "World"
+  ],
+  "title": "Globe"
+ },
+ {
+  "id": "virus-mutation",
+  "category": "symbols",
+  "path": "symbols/virus-mutation",
+  "tags": [
+   "Adaptation",
+   "Change",
+   "Covid",
+   "Evolution",
+   "Mutation",
+   "Viral",
+   "Virology",
+   "Virus"
+  ],
+  "title": "Virus Mutation"
+ },
+ {
+  "id": "fingerprint",
+  "category": "symbols",
+  "path": "symbols/fingerprint",
+  "tags": [
+   "Body",
+   "Finger",
+   "Fingerprint",
+   "Human",
+   "ID",
+   "Scan",
+   "identification"
+  ],
+  "title": "Fingerprint"
+ },
+ {
+  "id": "palliative-care",
+  "category": "symbols",
+  "path": "symbols/palliative-care",
+  "tags": [
+   "Heart",
+   "Hearts",
+   "Palliative Care"
+  ],
+  "title": "Palliative Care"
+ },
+ {
+  "id": "hospice",
+  "category": "symbols",
+  "path": "symbols/hospice",
+  "tags": [
+   "Hospice Care",
+   "Hospital",
+   "Palliative Care"
+  ],
+  "title": "Hospice"
+ },
+ {
+  "id": "FHIR_logo",
+  "category": "symbols",
+  "path": "symbols/FHIR_logo",
+  "tags": [
+   "FHIR",
+   "HL7",
+   "Informatics",
+   "Interoperability",
+   "Logo",
+   "Standards"
+  ],
+  "title": "FHIR"
+ },
+ {
+  "id": "interoperability",
+  "category": "symbols",
+  "path": "symbols/interoperability",
+  "tags": [
+   "FHIR",
+   "IT",
+   "Informatics",
+   "Interoperability",
+   "Standards",
+   "Tech",
+   "Technology",
+   "Terminology"
+  ],
+  "title": "Interoperability"
+ },
+ {
+  "id": "medical_search",
+  "category": "symbols",
+  "path": "symbols/medical_search",
+  "tags": [
+   "Cross",
+   "Find",
+   "Glass",
+   "Magnifying",
+   "Medical",
+   "Plus",
+   "Search",
+   "Zoom"
+  ],
+  "title": "Medical Search"
+ },
+ {
+  "id": "lab_search",
+  "category": "symbols",
+  "path": "symbols/lab_search",
+  "tags": [
+   "Find",
+   "Glass",
+   "Lab",
+   "Magnifying",
+   "Medical",
+   "Sample",
+   "Search",
+   "Test tube"
+  ],
+  "title": "Lab Search"
+ },
+ {
+  "id": "secure_communication",
+  "category": "symbols",
+  "path": "symbols/secure_communication",
+  "tags": [
+   "Bubble",
+   "Chat",
+   "Communication",
+   "Encrypted",
+   "Lock",
+   "Message",
+   "SMS",
+   "Secure",
+   "Speech",
+   "Talk"
+  ],
+  "title": "Chat Secure"
+ },
+ {
+  "id": "smoking_cessation_alt",
+  "category": "symbols",
+  "path": "symbols/smoking_cessation_alt",
+  "tags": [
+   "Banned",
+   "Cessation",
+   "Smoking",
+   "Stop",
+   "Tobacco",
+   "Unhealthy"
+  ],
+  "title": "No Smoking"
+ },
+ {
+  "id": "cancel",
+  "category": "symbols",
+  "path": "symbols/cancel",
+  "tags": [
+   "Cancel",
+   "Cessation",
+   "No Entry",
+   "None",
+   "Stop",
+   "Symbol"
+  ],
+  "title": "Cancel"
+ },
+ {
+  "id": "telemedicine",
+  "category": "symbols",
+  "path": "symbols/telemedicine",
+  "tags": [
+   "Computer",
+   "Consult",
+   "Doctor",
+   "Meeting",
+   "Virtual"
+  ],
+  "title": "Telemedicine"
+ },
+ {
+  "id": "heartbeat",
+  "category": "symbols",
+  "path": "symbols/heartbeat",
+  "tags": [
+   "Cardiology",
+   "Circulatory System",
+   "Device",
+   "Electrical",
+   "Heart",
+   "Heart attack",
+   "Heartbeat",
+   "Stroke",
+   "Symbol"
+  ],
+  "title": "Heartbeat"
+ },
+ {
   "id": "qr_code",
   "category": "symbols",
   "path": "symbols/qr_code",
@@ -8987,22 +9069,6 @@
   "title": "Head Circumference"
  },
  {
-  "id": "animal_snake",
-  "category": "zoonoses",
-  "path": "zoonoses/animal_snake",
-  "tags": [
-   "Animal",
-   "Poison",
-   "Poisonous",
-   "Python",
-   "Snake",
-   "Venom",
-   "Zoonoses",
-   "Zoonotic Disease"
-  ],
-  "title": "Snake"
- },
- {
   "id": "arm_circumference",
   "category": "symbols",
   "path": "symbols/arm_circumference",
@@ -9030,22 +9096,6 @@
    "Technology"
   ],
   "title": "Health IT"
- },
- {
-  "id": "laptop",
-  "category": "objects",
-  "path": "objects/laptop",
-  "tags": [
-   "Computer",
-   "Device",
-   "Health",
-   "IT",
-   "Information technology",
-   "Laptop",
-   "Medicine",
-   "Technology"
-  ],
-  "title": "Laptop"
  },
  {
   "id": "body_mass_index",
@@ -9078,5 +9128,82 @@
    "Terminology"
   ],
   "title": "LOINC"
+ },
+ {
+  "id": "bio_pharma",
+  "category": "symbols",
+  "path": "symbols/bio_pharma",
+  "tags": [
+   "Biology",
+   "Biopharmaceutical",
+   "Cancer",
+   "DNA",
+   "Drug",
+   "Medicine",
+   "Pharmacology"
+  ],
+  "title": "Biopharma"
+ },
+ {
+  "id": "female",
+  "category": "symbols",
+  "path": "symbols/female",
+  "tags": [
+   "Female",
+   "Gender",
+   "Sex",
+   "Sign",
+   "Symbol",
+   "Woman"
+  ],
+  "title": "Female symbol"
+ },
+ {
+  "id": "male",
+  "category": "symbols",
+  "path": "symbols/male",
+  "tags": [
+   "Gender",
+   "Male",
+   "Man",
+   "Sex",
+   "Sign",
+   "Symbol"
+  ],
+  "title": "Male symbol"
+ },
+ {
+  "id": "artificial_intelligence",
+  "category": "symbols",
+  "path": "symbols/artificial_intelligence",
+  "tags": [
+   "AI",
+   "Artificial intelligence",
+   "Automation",
+   "Bot",
+   "Improve",
+   "LLM",
+   "Magic",
+   "Optimize",
+   "Sparkle"
+  ],
+  "title": "Artificial intelligence"
+ },
+ {
+  "id": "magic_wand",
+  "category": "symbols",
+  "path": "symbols/magic_wand",
+  "tags": [
+   "AI",
+   "Artificial intelligence",
+   "Automation",
+   "Bot",
+   "Improve",
+   "LLM",
+   "Magic",
+   "Optimize",
+   "Sparkle"
+  ],
+  "title": "Magic Wand"
  }
 ]
