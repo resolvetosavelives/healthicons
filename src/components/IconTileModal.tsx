@@ -54,6 +54,42 @@ export function IconTileModal(props: IconTileModalProps) {
               <span>96px PNG</span>
             </a>
           </div>
+          {props.icon.hasMaterialVersion && (
+            <>
+              <div className={styles.modalLabel}>Material 24px Version</div>
+              <div className={styles.materialVersions}>
+                <img
+                  src={`/icons/svg/${props.iconType}-material/${props.icon.category}/${props.icon.id}.svg`}
+                  className={styles.modalMaterialImage}
+                  width="48"
+                  height="48"
+                  alt=""
+                />
+                <a
+                  href={`/icons/svg/${props.iconType}-material/${props.icon.category}/${props.icon.id}.svg`}
+                  download={`${props.icon.id}-material.svg`}
+                  className={styles.modalButton}
+                >
+                  <span>SVG</span>
+                </a>
+                <a
+                  href={`/icons/png/${props.iconType}-material/${props.icon.category}/${props.icon.id}.png`}
+                  download={`${props.icon.id}-material.png`}
+                  className={styles.modalButton}
+                >
+                  <span>48px PNG</span>
+                </a>
+                <a
+                  href={`/icons/png/${props.iconType}-material/${props.icon.category}/${props.icon.id}@2x.png`}
+                  download={`${props.icon.id}-material@2x.png`}
+                  className={styles.modalButton}
+                >
+                  <span>96px PNG</span>
+                </a>
+              </div>
+            </>
+          )}
+
           {props.icon.tags.length > 0 && (
             <>
               <div className={styles.modalLabel}>Tags</div>

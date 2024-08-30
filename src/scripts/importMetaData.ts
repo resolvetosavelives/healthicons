@@ -44,12 +44,14 @@ function getMetadataFromDescription(name: string, description: string) {
       };
 }
 
+function styleExists(components, name, style) {
+  return components.some((c) => {
+    return c.name === name && c.style === style;
+  });
+}
+
 function verifyStyleExists(components, name, style) {
-  if (
-    !components.some((c) => {
-      return c.name === name && c.style === style;
-    })
-  ) {
+  if (!styleExists(components, name, style)) {
     console.log(` ⚠️ Missing ${style} version of: ${name}`);
   }
 }
@@ -62,6 +64,13 @@ function verifyNameIsUnique(components, category, name) {
   if (matches.length !== 1) {
     console.log(` ⚠️ More than one component is named: ${name}`);
   }
+}
+
+function hasMaterialVersion(components, name) {
+  return (
+    styleExists(components, name, 'filled-material') &&
+    styleExists(components, name, 'outline-material')
+  );
 }
 
 console.log('🔎 Reading data from Figma');
@@ -116,7 +125,8 @@ client.file(figmaFilename).then(({ data }) => {
         category: component.category,
         path: `${component.category}/${component.name}`,
         tags: metaData.tags,
-        title: metaData.title
+        title: metaData.title,
+        hasMaterialVersion: hasMaterialVersion(allComponents, component.name)
       });
     } else {
       verifyStyleExists(allComponents, component.name, 'filled');

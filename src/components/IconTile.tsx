@@ -55,7 +55,10 @@ export function IconTile(props: IconTileProps) {
           </div>
         </button>
       )}
-      <div className={styles.iconTitle}>{props.icon.title}</div>
+      <div className={styles.iconTitle}>
+        {props.icon.title}
+        {props.icon.hasMaterialVersion && <span> (24px)</span>}
+      </div>
     </div>
   );
 }
