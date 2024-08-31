@@ -12,7 +12,8 @@
    "Tank",
    "dhis2:war"
   ],
-  "title": "Tank"
+  "title": "Tank",
+  "hasMaterialVersion": false
  },
  {
   "id": "vespa_motorcycle",
@@ -23,7 +24,8 @@
    "Motorcycle",
    "dhis2:vespa_motorcycle"
   ],
-  "title": "Motor Scooter"
+  "title": "Motor Scooter",
+  "hasMaterialVersion": false
  },
  {
   "id": "small_plane",
@@ -39,7 +41,8 @@
    "Wings",
    "dhis2:small_plane"
   ],
-  "title": "Small Airplane"
+  "title": "Small Airplane",
+  "hasMaterialVersion": false
  },
  {
   "id": "mobile_clinic",
@@ -52,7 +55,8 @@
    "Truck",
    "dhis2:mobile_clinic"
   ],
-  "title": "Mobile Clinic"
+  "title": "Mobile Clinic",
+  "hasMaterialVersion": false
  },
  {
   "id": "machinery",
@@ -64,7 +68,8 @@
    "Front-end Loader",
    "dhis2:machinery"
   ],
-  "title": "Machinery"
+  "title": "Machinery",
+  "hasMaterialVersion": false
  },
  {
   "id": "helicopter",
@@ -76,7 +81,8 @@
    "Medivac",
    "dhis2:helicopter"
   ],
-  "title": "Helicopter"
+  "title": "Helicopter",
+  "hasMaterialVersion": false
  },
  {
   "id": "cross_country_motorcycle",
@@ -89,7 +95,8 @@
    "Motorcycle",
    "dhis2:cross_country_motorcycle"
   ],
-  "title": "Off-road Motorcycle"
+  "title": "Off-road Motorcycle",
+  "hasMaterialVersion": false
  },
  {
   "id": "bike",
@@ -101,7 +108,8 @@
    "Mountain Bike",
    "dhis2:bike"
   ],
-  "title": "Bicycle"
+  "title": "Bicycle",
+  "hasMaterialVersion": false
  },
  {
   "id": "basic_motorcycle",
@@ -111,7 +119,8 @@
    "Dirtbike dhis2:motorcycle",
    "Motorbike"
   ],
-  "title": "Motorcycle"
+  "title": "Motorcycle",
+  "hasMaterialVersion": false
  },
  {
   "id": "ambulance",
@@ -125,7 +134,8 @@
    "Truck",
    "dhis2:ambulance"
   ],
-  "title": "Ambulance"
+  "title": "Ambulance",
+  "hasMaterialVersion": false
  },
  {
   "id": "4x4",
@@ -140,7 +150,8 @@
    "Truck",
    "dhis2:4x4"
   ],
-  "title": "SUV"
+  "title": "SUV",
+  "hasMaterialVersion": false
  },
  {
   "id": "drone",
@@ -153,7 +164,8 @@
    "Flight",
    "dhis2:drone"
   ],
-  "title": "Drone"
+  "title": "Drone",
+  "hasMaterialVersion": false
  },
  {
   "id": "triangle_small",
@@ -165,7 +177,8 @@
    "Triangle",
    "dhis2:triangle_small"
   ],
-  "title": "Triangle Small"
+  "title": "Triangle Small",
+  "hasMaterialVersion": false
  },
  {
   "id": "triangle_medium",
@@ -177,7 +190,8 @@
    "Triangle",
    "dhis2:triangle_medium"
   ],
-  "title": "Triangle Medium"
+  "title": "Triangle Medium",
+  "hasMaterialVersion": false
  },
  {
   "id": "triangle_large",
@@ -189,7 +203,8 @@
    "Triangle",
    "dhis2:triangle_large"
   ],
-  "title": "Triangle Large"
+  "title": "Triangle Large",
+  "hasMaterialVersion": false
  },
  {
   "id": "star_small",
@@ -201,7 +216,8 @@
    "Star",
    "dhis2:star_small"
   ],
-  "title": "Star Small"
+  "title": "Star Small",
+  "hasMaterialVersion": false
  },
  {
   "id": "star_medium",
@@ -213,7 +229,8 @@
    "Star",
    "dhis2:star_medium"
   ],
-  "title": "Star Medium"
+  "title": "Star Medium",
+  "hasMaterialVersion": false
  },
  {
   "id": "star_large",
@@ -225,7 +242,8 @@
    "Star",
    "dhis2:star_large"
   ],
-  "title": "Star Large"
+  "title": "Star Large",
+  "hasMaterialVersion": false
  },
  {
   "id": "square_small",
@@ -238,7 +256,8 @@
    "Shape",
    "dhis2:square_small"
   ],
-  "title": "Square Small"
+  "title": "Square Small",
+  "hasMaterialVersion": false
  },
  {
   "id": "square_medium",
@@ -251,7 +270,8 @@
    "Shape",
    "dhis2:square_medium"
   ],
-  "title": "Square Medium"
+  "title": "Square Medium",
+  "hasMaterialVersion": false
  },
  {
   "id": "square_large",
@@ -264,7 +284,8 @@
    "Shape",
    "dhis2:square_large"
   ],
-  "title": "Square Large"
+  "title": "Square Large",
+  "hasMaterialVersion": false
  },
  {
   "id": "information_campaign",
@@ -278,7 +299,8 @@
    "Sphere",
    "dhis2:information_campaign"
   ],
-  "title": "Information Campaign"
+  "title": "Information Campaign",
+  "hasMaterialVersion": false
  },
  {
   "id": "circle_small",
@@ -291,7 +313,8 @@
    "Sphere",
    "dhis2:circle_small"
   ],
-  "title": "Circle Small"
+  "title": "Circle Small",
+  "hasMaterialVersion": false
  },
  {
   "id": "circle_medium",
@@ -304,7 +327,8 @@
    "Sphere",
    "dhis2:circle_medium"
   ],
-  "title": "Circle Medium"
+  "title": "Circle Medium",
+  "hasMaterialVersion": false
  },
  {
   "id": "circle_large",
@@ -317,7 +341,8 @@
    "Sphere",
    "dhis2:circle_large"
   ],
-  "title": "Circle Large"
+  "title": "Circle Large",
+  "hasMaterialVersion": false
  },
  {
   "id": "market_stall",
@@ -331,7 +356,8 @@
    "Stall",
    "dhis2:market_stall"
   ],
-  "title": "Market Stall"
+  "title": "Market Stall",
+  "hasMaterialVersion": false
  },
  {
   "id": "hospital",
@@ -344,7 +370,8 @@
    "Urban Hospital",
    "dhis2:hospital"
   ],
-  "title": "Hospital"
+  "title": "Hospital",
+  "hasMaterialVersion": false
  },
  {
   "id": "home_alt",
@@ -357,7 +384,8 @@
    "Roof",
    "dhis2:home"
   ],
-  "title": "Home ALT"
+  "title": "Home ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "forest",
@@ -370,7 +398,8 @@
    "Woods",
    "dhis2:forest"
   ],
-  "title": "Forest"
+  "title": "Forest",
+  "hasMaterialVersion": false
  },
  {
   "id": "city",
@@ -386,7 +415,8 @@
    "Urban",
    "dhis2:city"
   ],
-  "title": "City"
+  "title": "City",
+  "hasMaterialVersion": false
  },
  {
   "id": "church",
@@ -400,7 +430,8 @@
    "Worship",
    "dhis2:church"
   ],
-  "title": "Church"
+  "title": "Church",
+  "hasMaterialVersion": false
  },
  {
   "id": "virus",
@@ -411,7 +442,8 @@
    "Infectious Disease",
    "dhis2:virus"
   ],
-  "title": "Virus"
+  "title": "Virus",
+  "hasMaterialVersion": false
  },
  {
   "id": "money_bag",
@@ -423,7 +455,8 @@
    "Payment",
    "dhis2:money_bag"
   ],
-  "title": "Money Bag"
+  "title": "Money Bag",
+  "hasMaterialVersion": false
  },
  {
   "id": "coins",
@@ -435,7 +468,8 @@
    "Payment",
    "dhis2:coins"
   ],
-  "title": "Coins"
+  "title": "Coins",
+  "hasMaterialVersion": false
  },
  {
   "id": "bills",
@@ -447,7 +481,8 @@
    "Payment",
    "dhis2:bills"
   ],
-  "title": "Money Bills"
+  "title": "Money Bills",
+  "hasMaterialVersion": false
  },
  {
   "id": "pills_4",
@@ -462,7 +497,8 @@
    "Round",
    "dhis2:pill_4"
   ],
-  "title": "Pill 4"
+  "title": "Pill 4",
+  "hasMaterialVersion": false
  },
  {
   "id": "pills_3",
@@ -477,7 +513,8 @@
    "Round",
    "dhis2:pill_3"
   ],
-  "title": "Pill 3"
+  "title": "Pill 3",
+  "hasMaterialVersion": false
  },
  {
   "id": "pills_2",
@@ -492,7 +529,8 @@
    "Round",
    "dhis2:pill_2"
   ],
-  "title": "Pill 2"
+  "title": "Pill 2",
+  "hasMaterialVersion": false
  },
  {
   "id": "pill_1",
@@ -507,7 +545,8 @@
    "Round",
    "dhis2:pill_1"
   ],
-  "title": "Pill 1"
+  "title": "Pill 1",
+  "hasMaterialVersion": false
  },
  {
   "id": "oral_contraception_pillsx28",
@@ -519,7 +558,8 @@
    "Female Contraception",
    "dhis2:oral_contraception_pillsx28"
   ],
-  "title": "Oral Contraceptive 28"
+  "title": "Oral Contraceptive 28",
+  "hasMaterialVersion": false
  },
  {
   "id": "oral_contraception_pillsx21",
@@ -531,7 +571,8 @@
    "Female Contraception",
    "dhis2:oral_contraception_pillsx21"
   ],
-  "title": "Oral Contraceptive 21"
+  "title": "Oral Contraceptive 21",
+  "hasMaterialVersion": false
  },
  {
   "id": "medicines",
@@ -545,7 +586,8 @@
    "Pills",
    "dhis2:Medicines"
   ],
-  "title": "Medicines"
+  "title": "Medicines",
+  "hasMaterialVersion": false
  },
  {
   "id": "blister_pills_round_x16",
@@ -562,7 +604,8 @@
    "Round",
    "dhis2:blister_pills_round_x16"
   ],
-  "title": "Blister Pills Round x16"
+  "title": "Blister Pills Round x16",
+  "hasMaterialVersion": false
  },
  {
   "id": "blister_pills_round_x14",
@@ -579,7 +622,8 @@
    "Round",
    "dhis2:blister_pills_round_x14"
   ],
-  "title": "Blister Pills Round x14"
+  "title": "Blister Pills Round x14",
+  "hasMaterialVersion": false
  },
  {
   "id": "blister_pills_round_x4",
@@ -596,7 +640,8 @@
    "Round",
    "dhis2:blister_pills_round_x4"
   ],
-  "title": "Blister Pills Round x4"
+  "title": "Blister Pills Round x4",
+  "hasMaterialVersion": false
  },
  {
   "id": "blister_pills_round_x1",
@@ -613,7 +658,8 @@
    "Round",
    "dhis2:blister_pills_round_x1"
   ],
-  "title": "Blister Pills Round x1"
+  "title": "Blister Pills Round x1",
+  "hasMaterialVersion": false
  },
  {
   "id": "blister_pills_oval_x16",
@@ -630,7 +676,8 @@
    "Pill",
    "dhis2:blister_pills_oval_x16"
   ],
-  "title": "Blister Pills Oval x16"
+  "title": "Blister Pills Oval x16",
+  "hasMaterialVersion": false
  },
  {
   "id": "blister_pills_oval_x14",
@@ -647,7 +694,8 @@
    "Pill",
    "dhis2:blister_pills_oval_x14"
   ],
-  "title": "Blister Pills Oval x14"
+  "title": "Blister Pills Oval x14",
+  "hasMaterialVersion": false
  },
  {
   "id": "blister_pills_oval_x4",
@@ -664,7 +712,8 @@
    "Pill",
    "dhis2:blister_pills_oval_x4"
   ],
-  "title": "Blister Pills Oval x4"
+  "title": "Blister Pills Oval x4",
+  "hasMaterialVersion": false
  },
  {
   "id": "blister_pills_oval_x1",
@@ -681,7 +730,8 @@
    "Pill",
    "dhis2:blister_pills_oval_x1"
   ],
-  "title": "Blister Pills Oval x1"
+  "title": "Blister Pills Oval x1",
+  "hasMaterialVersion": false
  },
  {
   "id": "synergist_insecticide_bioassays",
@@ -692,7 +742,8 @@
    "Mosquito",
    "dhis2:synergist_insecticide_bioassays"
   ],
-  "title": "Synergist Insecticide Bioassays"
+  "title": "Synergist Insecticide Bioassays",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_pv",
@@ -704,7 +755,8 @@
    "Testing",
    "dhis2:rdt_result_pv"
   ],
-  "title": "Rapid Diagnostic Testing Result PV"
+  "title": "Rapid Diagnostic Testing Result PV",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_positive",
@@ -716,7 +768,8 @@
    "Testing",
    "dhis2:rdt_result_positive"
   ],
-  "title": "Rapid Diagnostic Testing Result Positive"
+  "title": "Rapid Diagnostic Testing Result Positive",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_pf_invalid",
@@ -728,7 +781,8 @@
    "Testing",
    "dhis2:rdt_result_pf_invalid"
   ],
-  "title": "Rapid Diagnostic Testing Result PF Invalid"
+  "title": "Rapid Diagnostic Testing Result PF Invalid",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_no_test",
@@ -740,7 +794,8 @@
    "Testing",
    "dhis2:rdt_result_no_test"
   ],
-  "title": "Rapid Diagnostic Testing Result No Test"
+  "title": "Rapid Diagnostic Testing Result No Test",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_neg_invalid",
@@ -752,7 +807,8 @@
    "Testing",
    "dhis2:rdt_result_neg_invalid"
   ],
-  "title": "Rapid Diagnostic Testing Result Negative Invalid"
+  "title": "Rapid Diagnostic Testing Result Negative Invalid",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_neg",
@@ -764,7 +820,8 @@
    "Testing",
    "dhis2:rdt_result_neg"
   ],
-  "title": "Rapid Diagnostic Testing Result Negative"
+  "title": "Rapid Diagnostic Testing Result Negative",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_mixed_invalid",
@@ -776,7 +833,8 @@
    "Testing",
    "dhis2:rdt_result_mixed_invalid"
   ],
-  "title": "Rapid Diagnostic Testing Result Mixed Invalid"
+  "title": "Rapid Diagnostic Testing Result Mixed Invalid",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_mixed",
@@ -788,7 +846,8 @@
    "Testing",
    "dhis2:rdt_result_mixed"
   ],
-  "title": "Rapid Diagnostic Testing Result Mixed Positve"
+  "title": "Rapid Diagnostic Testing Result Mixed Positve",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_pv_invalid",
@@ -800,7 +859,8 @@
    "Testing",
    "dhis2:rdt_result_pv_invalid"
   ],
-  "title": "Rapid Diagnostic Testing Result Invalid"
+  "title": "Rapid Diagnostic Testing Result Invalid",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_pf",
@@ -812,7 +872,8 @@
    "Testing",
    "dhis2:rdt_result_pf"
   ],
-  "title": "Rapid Diagnostic Testing PF"
+  "title": "Rapid Diagnostic Testing PF",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_invalid",
@@ -824,7 +885,8 @@
    "Testing",
    "dhis2:rdt_result_invalid"
   ],
-  "title": "Rapid Diagnostic Testing Result Invalid"
+  "title": "Rapid Diagnostic Testing Result Invalid",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result",
@@ -836,7 +898,8 @@
    "Testing",
    "dhis2:rdt_result_negative"
   ],
-  "title": "Rapid Diagnostic Testing Result Negative"
+  "title": "Rapid Diagnostic Testing Result Negative",
+  "hasMaterialVersion": false
  },
  {
   "id": "mosquito_collection",
@@ -847,7 +910,8 @@
    "Mosquito",
    "dhis2:mosquito_collection"
   ],
-  "title": "Mosquito Collection"
+  "title": "Mosquito Collection",
+  "hasMaterialVersion": false
  },
  {
   "id": "malaria_testing",
@@ -858,7 +922,8 @@
    "Mosquito",
    "dhis2:malaria_testing"
   ],
-  "title": "Malaria Testing"
+  "title": "Malaria Testing",
+  "hasMaterialVersion": false
  },
  {
   "id": "malaria_pv_microscope",
@@ -870,7 +935,8 @@
    "Microscopic",
    "dhis2:malaria_pv_microscope"
   ],
-  "title": "Malaria PV"
+  "title": "Malaria PV",
+  "hasMaterialVersion": false
  },
  {
   "id": "malaria_pf_microscope",
@@ -882,7 +948,8 @@
    "Microscopic",
    "dhis2:malaria_pf_microscope"
   ],
-  "title": "Malaria PF"
+  "title": "Malaria PF",
+  "hasMaterialVersion": false
  },
  {
   "id": "malaria_mixed_microscope",
@@ -894,7 +961,8 @@
    "Microscopic",
    "dhis2:malaria_mixed_microscope"
   ],
-  "title": "Malaria Mixed"
+  "title": "Malaria Mixed",
+  "hasMaterialVersion": false
  },
  {
   "id": "malaria_microscope",
@@ -906,7 +974,8 @@
    "Microscopic",
    "dhis2:malaria_negative_microscope"
   ],
-  "title": "Malaria Negative"
+  "title": "Malaria Negative",
+  "hasMaterialVersion": false
  },
  {
   "id": "hiv_self_test",
@@ -920,7 +989,8 @@
    "Hand",
    "dhis2:hiv_self_test"
   ],
-  "title": "HIV Self Test"
+  "title": "HIV Self Test",
+  "hasMaterialVersion": false
  },
  {
   "id": "cone_test_on_walls",
@@ -931,7 +1001,8 @@
    "Testing",
    "dhis2:cone_test_on_walls"
   ],
-  "title": "Cone Test on Walls"
+  "title": "Cone Test on Walls",
+  "hasMaterialVersion": false
  },
  {
   "id": "cone_test_on_nets",
@@ -942,7 +1013,8 @@
    "Testing",
    "dhis2:cone_test_on_nets"
   ],
-  "title": "Cone Test on Nets"
+  "title": "Cone Test on Nets",
+  "hasMaterialVersion": false
  },
  {
   "id": "weight",
@@ -957,7 +1029,8 @@
    "Vitals",
    "dhis2:weight"
   ],
-  "title": "Weight Scale"
+  "title": "Weight Scale",
+  "hasMaterialVersion": false
  },
  {
   "id": "thermometer",
@@ -971,7 +1044,8 @@
    "Thermometer",
    "dhis2:thermometer"
   ],
-  "title": "Temperature"
+  "title": "Temperature",
+  "hasMaterialVersion": false
  },
  {
   "id": "syringe",
@@ -988,7 +1062,8 @@
    "Treatment",
    "dhis2:syringe"
   ],
-  "title": "Syringe"
+  "title": "Syringe",
+  "hasMaterialVersion": false
  },
  {
   "id": "surgical_sterilization",
@@ -1002,7 +1077,8 @@
    "Tweezers",
    "dhis2:surgical_sterilization"
   ],
-  "title": "Surgical Tools"
+  "title": "Surgical Tools",
+  "hasMaterialVersion": false
  },
  {
   "id": "stethoscope",
@@ -1016,7 +1092,8 @@
    "Vitals",
    "dhis2:stethoscope"
   ],
-  "title": "Stethoscope"
+  "title": "Stethoscope",
+  "hasMaterialVersion": false
  },
  {
   "id": "oxygen_tank",
@@ -1028,7 +1105,8 @@
    "Breath dhis2:oxygen_tank",
    "Canister"
   ],
-  "title": "Oxygen Tank"
+  "title": "Oxygen Tank",
+  "hasMaterialVersion": false
  },
  {
   "id": "odontology_implant",
@@ -1039,7 +1117,8 @@
    "Tooth",
    "dhis2:odontology_implant"
   ],
-  "title": "Odontology Implant"
+  "title": "Odontology Implant",
+  "hasMaterialVersion": false
  },
  {
   "id": "odontology",
@@ -1050,7 +1129,8 @@
    "Tooth",
    "dhis2:odontology"
   ],
-  "title": "Odontology"
+  "title": "Odontology",
+  "hasMaterialVersion": false
  },
  {
   "id": "observation",
@@ -1064,7 +1144,8 @@
    "Treatment",
    "dhis2:observation"
   ],
-  "title": "Hospital Bed Timer"
+  "title": "Hospital Bed Timer",
+  "hasMaterialVersion": false
  },
  {
   "id": "mobile",
@@ -1078,7 +1159,8 @@
    "dhis2:mobile_app",
    "eHealth"
   ],
-  "title": "Mobile App"
+  "title": "Mobile App",
+  "hasMaterialVersion": false
  },
  {
   "id": "microscope",
@@ -1091,7 +1173,8 @@
    "Microscope",
    "dhis2:microscope"
   ],
-  "title": "Microscope"
+  "title": "Microscope",
+  "hasMaterialVersion": false
  },
  {
   "id": "male_condom",
@@ -1103,7 +1186,8 @@
    "Family Planning",
    "dhis2:male_condom"
   ],
-  "title": "Male Condom"
+  "title": "Male Condom",
+  "hasMaterialVersion": false
  },
  {
   "id": "iud",
@@ -1116,7 +1200,8 @@
    "Intrauterine Device",
    "dhis2:iud"
   ],
-  "title": "Intrauterine Device"
+  "title": "Intrauterine Device",
+  "hasMaterialVersion": false
  },
  {
   "id": "inpatient",
@@ -1129,7 +1214,8 @@
    "Treatment",
    "dhis2:inpatient"
   ],
-  "title": "Hospital Bed ALT"
+  "title": "Hospital Bed ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "implant",
@@ -1139,7 +1225,8 @@
    "Device",
    "dhis2:implant"
   ],
-  "title": "Implant"
+  "title": "Implant",
+  "hasMaterialVersion": false
  },
  {
   "id": "hospitalized",
@@ -1154,7 +1241,8 @@
    "Treatment",
    "dhis2:hospitalized"
   ],
-  "title": "Hospital Bed"
+  "title": "Hospital Bed",
+  "hasMaterialVersion": false
  },
  {
   "id": "hormonal_ring",
@@ -1165,7 +1253,8 @@
    "Family Planning",
    "dhis2:hormonal_ring"
   ],
-  "title": "Hormonal Ring"
+  "title": "Hormonal Ring",
+  "hasMaterialVersion": false
  },
  {
   "id": "female_condom",
@@ -1177,7 +1266,8 @@
    "Family Planning",
    "dhis2:female_condom"
   ],
-  "title": "Female Condom"
+  "title": "Female Condom",
+  "hasMaterialVersion": false
  },
  {
   "id": "family_planning",
@@ -1191,7 +1281,8 @@
    "Pills",
    "dhis2:family_planning"
   ],
-  "title": "Family Planning"
+  "title": "Family Planning",
+  "hasMaterialVersion": false
  },
  {
   "id": "contraceptive_patch",
@@ -1203,7 +1294,8 @@
    "Patch",
    "dhis2:contraceptive_patch"
   ],
-  "title": "Contraceptive Patch"
+  "title": "Contraceptive Patch",
+  "hasMaterialVersion": false
  },
  {
   "id": "contraceptive_diaphragm",
@@ -1215,7 +1307,8 @@
    "Family Planning",
    "dhis2:contraceptive_diaphragm"
   ],
-  "title": "Contraceptive Diaphragm"
+  "title": "Contraceptive Diaphragm",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_pressure",
@@ -1230,7 +1323,8 @@
    "Hypertension",
    "dhis2:blood_pressure_positive"
   ],
-  "title": "Hypertension"
+  "title": "Hypertension",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_bag",
@@ -1242,7 +1336,8 @@
    "Hematology",
    "Transfusion"
   ],
-  "title": "Blood Bag"
+  "title": "Blood Bag",
+  "hasMaterialVersion": false
  },
  {
   "id": "heart_organ",
@@ -1256,7 +1351,8 @@
    "Heart",
    "Organ"
   ],
-  "title": "Heart"
+  "title": "Heart",
+  "hasMaterialVersion": false
  },
  {
   "id": "tooth",
@@ -1269,7 +1365,8 @@
    "Oral",
    "Teeth"
   ],
-  "title": "Tooth"
+  "title": "Tooth",
+  "hasMaterialVersion": false
  },
  {
   "id": "neurology",
@@ -1284,7 +1381,8 @@
    "Spine",
    "dhis2:brain"
   ],
-  "title": "Brain"
+  "title": "Brain",
+  "hasMaterialVersion": false
  },
  {
   "id": "lungs",
@@ -1294,7 +1392,8 @@
    "Organ",
    "Pulmonary dhis2:lungs"
   ],
-  "title": "Lungs"
+  "title": "Lungs",
+  "hasMaterialVersion": true
  },
  {
   "id": "kidneys",
@@ -1305,7 +1404,8 @@
    "Urinary",
    "dhis2:kidney"
   ],
-  "title": "Kidneys"
+  "title": "Kidneys",
+  "hasMaterialVersion": false
  },
  {
   "id": "dna",
@@ -1316,7 +1416,8 @@
    "Deoxyribonucleic Acid",
    "Double Helix"
   ],
-  "title": "DNA"
+  "title": "DNA",
+  "hasMaterialVersion": false
  },
  {
   "id": "bacteria",
@@ -1328,7 +1429,8 @@
    "Microorganism",
    "Microscopic"
   ],
-  "title": "Bacteria"
+  "title": "Bacteria",
+  "hasMaterialVersion": false
  },
  {
   "id": "smoking_cessation",
@@ -1340,7 +1442,8 @@
    "Smoking",
    "Tobacco"
   ],
-  "title": "No Smoking ALT"
+  "title": "No Smoking ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "smoking",
@@ -1350,7 +1453,8 @@
    "Smoking",
    "Tobacco"
   ],
-  "title": "Smoking"
+  "title": "Smoking",
+  "hasMaterialVersion": false
  },
  {
   "id": "rx",
@@ -1362,7 +1466,8 @@
    "Rx",
    "Script"
   ],
-  "title": "Prescription Alt"
+  "title": "Prescription Alt",
+  "hasMaterialVersion": false
  },
  {
   "id": "running_water_alt",
@@ -1374,7 +1479,8 @@
    "Running Water",
    "Water"
   ],
-  "title": "Water Tap"
+  "title": "Water Tap",
+  "hasMaterialVersion": false
  },
  {
   "id": "question_triangle",
@@ -1387,7 +1493,8 @@
    "Triangle",
    "dhis2:question_triangle"
   ],
-  "title": "Question Triangle"
+  "title": "Question Triangle",
+  "hasMaterialVersion": false
  },
  {
   "id": "question_circle",
@@ -1401,7 +1508,8 @@
    "Question",
    "dhis2:question_circle"
   ],
-  "title": "Question Circle"
+  "title": "Question Circle",
+  "hasMaterialVersion": false
  },
  {
   "id": "question",
@@ -1413,7 +1521,8 @@
    "Question Mark",
    "dhis2:question"
   ],
-  "title": "Question"
+  "title": "Question",
+  "hasMaterialVersion": false
  },
  {
   "id": "provider_fst",
@@ -1426,7 +1535,8 @@
    "Transfer",
    "dhis2:provider_fst"
   ],
-  "title": "Referral Alt"
+  "title": "Referral Alt",
+  "hasMaterialVersion": false
  },
  {
   "id": "prescription_document",
@@ -1438,7 +1548,8 @@
    "Rx",
    "Script"
   ],
-  "title": "Prescription"
+  "title": "Prescription",
+  "hasMaterialVersion": false
  },
  {
   "id": "positive",
@@ -1451,7 +1562,8 @@
    "Positive",
    "dhis2:positive"
   ],
-  "title": "Plus"
+  "title": "Plus",
+  "hasMaterialVersion": false
  },
  {
   "id": "polygon",
@@ -1464,7 +1576,8 @@
    "Shape",
    "dhis2:polygon"
   ],
-  "title": "Polygon"
+  "title": "Polygon",
+  "hasMaterialVersion": false
  },
  {
   "id": "poison",
@@ -1476,7 +1589,8 @@
    "Toxin",
    "dhis2:poison"
   ],
-  "title": "Poison"
+  "title": "Poison",
+  "hasMaterialVersion": false
  },
  {
   "id": "peace",
@@ -1486,7 +1600,8 @@
    "Symbol",
    "dhis2:peace"
   ],
-  "title": "Peace"
+  "title": "Peace",
+  "hasMaterialVersion": false
  },
  {
   "id": "paved_road_alt",
@@ -1497,7 +1612,8 @@
    "Road",
    "dhis2:paved_road_alt"
   ],
-  "title": "Paved Road Alt"
+  "title": "Paved Road Alt",
+  "hasMaterialVersion": false
  },
  {
   "id": "paved_road",
@@ -1508,7 +1624,8 @@
    "Road",
    "dhis2:paved_road"
   ],
-  "title": "Paved Road"
+  "title": "Paved Road",
+  "hasMaterialVersion": false
  },
  {
   "id": "outbreak",
@@ -1521,7 +1638,8 @@
    "Toxic",
    "dhis2:outbreak"
   ],
-  "title": "Outbreak"
+  "title": "Outbreak",
+  "hasMaterialVersion": false
  },
  {
   "id": "nutrition",
@@ -1537,7 +1655,8 @@
    "Vegetables",
    "dhis2:nutrition"
   ],
-  "title": "Nutrition"
+  "title": "Nutrition",
+  "hasMaterialVersion": false
  },
  {
   "id": "no",
@@ -1552,7 +1671,8 @@
    "X",
    "dhis2:no"
   ],
-  "title": "No"
+  "title": "No",
+  "hasMaterialVersion": false
  },
  {
   "id": "negative",
@@ -1567,7 +1687,8 @@
    "Subtract",
    "dhis2:negative"
   ],
-  "title": "Minus"
+  "title": "Minus",
+  "hasMaterialVersion": false
  },
  {
   "id": "megaphone",
@@ -1579,7 +1700,8 @@
    "Speaker",
    "dhis2:megaphone"
   ],
-  "title": "Megaphone"
+  "title": "Megaphone",
+  "hasMaterialVersion": false
  },
  {
   "id": "medium_level",
@@ -1594,7 +1716,8 @@
    "Speedometer",
    "dhis2:medium_level"
   ],
-  "title": "Medium Level"
+  "title": "Medium Level",
+  "hasMaterialVersion": false
  },
  {
   "id": "medical_advice",
@@ -1608,7 +1731,8 @@
    "Phone line",
    "dhis2:medical_advice"
   ],
-  "title": "Medical Advice Hotline"
+  "title": "Medical Advice Hotline",
+  "hasMaterialVersion": false
  },
  {
   "id": "magnifying_glass",
@@ -1621,7 +1745,8 @@
    "Zoom",
    "dhis2:magnifying_glass"
   ],
-  "title": "Magnifying Glass"
+  "title": "Magnifying Glass",
+  "hasMaterialVersion": false
  },
  {
   "id": "low_level",
@@ -1636,7 +1761,8 @@
    "Speedometer",
    "dhis2:low_level"
   ],
-  "title": "Low Level"
+  "title": "Low Level",
+  "hasMaterialVersion": false
  },
  {
   "id": "info",
@@ -1648,7 +1774,8 @@
    "Information",
    "dhis2:info"
   ],
-  "title": "Info"
+  "title": "Info",
+  "hasMaterialVersion": false
  },
  {
   "id": "imm",
@@ -1658,7 +1785,8 @@
    "IMM",
    "dhis2:imm"
   ],
-  "title": "IMM"
+  "title": "IMM",
+  "hasMaterialVersion": false
  },
  {
   "id": "i_exam_qualification",
@@ -1671,7 +1799,8 @@
    "Test",
    "dhis2:I_exam_qualification"
   ],
-  "title": "Exam"
+  "title": "Exam",
+  "hasMaterialVersion": false
  },
  {
   "id": "i_documents_denied",
@@ -1683,7 +1812,8 @@
    "Test",
    "dhis2:i_documents_denied"
   ],
-  "title": "Denied Document"
+  "title": "Denied Document",
+  "hasMaterialVersion": false
  },
  {
   "id": "i_documents_accepted",
@@ -1695,7 +1825,8 @@
    "Test",
    "dhis2:i_documents_accepted"
   ],
-  "title": "Approved Document"
+  "title": "Approved Document",
+  "hasMaterialVersion": false
  },
  {
   "id": "hospital_symbol",
@@ -1709,7 +1840,8 @@
    "Sign",
    "Symbol"
   ],
-  "title": "Hospital Symbol"
+  "title": "Hospital Symbol",
+  "hasMaterialVersion": false
  },
  {
   "id": "high_level",
@@ -1724,7 +1856,8 @@
    "Speedometer",
    "dhis2:high_level"
   ],
-  "title": "High Level"
+  "title": "High Level",
+  "hasMaterialVersion": false
  },
  {
   "id": "heart_cardiogram",
@@ -1739,7 +1872,8 @@
    "Monitor",
    "dhis2:heart_cardiogram"
   ],
-  "title": "Cardiogram"
+  "title": "Cardiogram",
+  "hasMaterialVersion": false
  },
  {
   "id": "heart",
@@ -1752,7 +1886,8 @@
    "Love",
    "dhis2:heart"
   ],
-  "title": "Heart"
+  "title": "Heart",
+  "hasMaterialVersion": false
  },
  {
   "id": "health_data_sync",
@@ -1764,7 +1899,8 @@
    "Synchronization",
    "dhis2:health_data_sync"
   ],
-  "title": "Health Data Sync"
+  "title": "Health Data Sync",
+  "hasMaterialVersion": false
  },
  {
   "id": "health_data_security",
@@ -1777,7 +1913,8 @@
    "Secure",
    "dhis2:health_data_security"
   ],
-  "title": "Health Data Security"
+  "title": "Health Data Security",
+  "hasMaterialVersion": false
  },
  {
   "id": "hazardous",
@@ -1791,7 +1928,8 @@
    "Warning",
    "dhis2:hazardous"
   ],
-  "title": "Hazardous"
+  "title": "Hazardous",
+  "hasMaterialVersion": false
  },
  {
   "id": "geo_location",
@@ -1805,7 +1943,8 @@
    "Pin",
    "dhis2:geo_location"
   ],
-  "title": "Location"
+  "title": "Location",
+  "hasMaterialVersion": false
  },
  {
   "id": "electricity",
@@ -1818,7 +1957,8 @@
    "Zap",
    "dhis2:electricity"
   ],
-  "title": "Electricity"
+  "title": "Electricity",
+  "hasMaterialVersion": false
  },
  {
   "id": "eco_care",
@@ -1832,7 +1972,8 @@
    "Plant",
    "dhis2:eco_care"
   ],
-  "title": "Ecology"
+  "title": "Ecology",
+  "hasMaterialVersion": false
  },
  {
   "id": "animal_donkey",
@@ -1847,7 +1988,8 @@
    "Zoonotic",
    "dhis2:donkey"
   ],
-  "title": "Donkey"
+  "title": "Donkey",
+  "hasMaterialVersion": false
  },
  {
   "id": "diabetes_measure",
@@ -1861,7 +2003,8 @@
    "Strip",
    "dhis2:diabetes_measure"
   ],
-  "title": "Glucometer"
+  "title": "Glucometer",
+  "hasMaterialVersion": false
  },
  {
   "id": "diabetes",
@@ -1875,7 +2018,8 @@
    "Sugar",
    "dhis2:diabetes"
   ],
-  "title": "Diabetes"
+  "title": "Diabetes",
+  "hasMaterialVersion": false
  },
  {
   "id": "dhis2_logo",
@@ -1886,7 +2030,8 @@
    "Squares",
    "dhis2:dhis2_logo"
   ],
-  "title": "DHIS2 Logo"
+  "title": "DHIS2 Logo",
+  "hasMaterialVersion": false
  },
  {
   "id": "death_alt2",
@@ -1898,7 +2043,8 @@
    "Death",
    "Died"
   ],
-  "title": "Death Alt 2"
+  "title": "Death Alt 2",
+  "hasMaterialVersion": false
  },
  {
   "id": "death_alt",
@@ -1911,7 +2057,8 @@
    "Died",
    "Skull"
   ],
-  "title": "Death Alt"
+  "title": "Death Alt",
+  "hasMaterialVersion": false
  },
  {
   "id": "death",
@@ -1924,7 +2071,8 @@
    "Died",
    "Skull"
   ],
-  "title": "Death"
+  "title": "Death",
+  "hasMaterialVersion": false
  },
  {
   "id": "community_meeting",
@@ -1936,7 +2084,8 @@
    "Tree",
    "dhis2:community_meeting"
   ],
-  "title": "Outdoor Meeting"
+  "title": "Outdoor Meeting",
+  "hasMaterialVersion": false
  },
  {
   "id": "communication",
@@ -1948,7 +2097,8 @@
    "Speech Bubble",
    "dhis2:communication"
   ],
-  "title": "Chat"
+  "title": "Chat",
+  "hasMaterialVersion": false
  },
  {
   "id": "clinical_fe",
@@ -1963,7 +2113,8 @@
    "Paper",
    "dhis2:clinical_fe"
   ],
-  "title": "Clinical Record"
+  "title": "Clinical Record",
+  "hasMaterialVersion": false
  },
  {
   "id": "clinical_f",
@@ -1978,7 +2129,8 @@
    "Paper",
    "dhis2:clinical_f"
   ],
-  "title": "Clinical Document"
+  "title": "Clinical Document",
+  "hasMaterialVersion": false
  },
  {
   "id": "cholera",
@@ -1991,7 +2143,8 @@
    "Water Borne Disease",
    "dhis2:cholera"
   ],
-  "title": "Cholera"
+  "title": "Cholera",
+  "hasMaterialVersion": false
  },
  {
   "id": "cervical_cancer",
@@ -2003,7 +2156,8 @@
    "Woman",
    "dhis2:cervical_cancer"
   ],
-  "title": "Cervical Cancer"
+  "title": "Cervical Cancer",
+  "hasMaterialVersion": false
  },
  {
   "id": "cardiogram_e",
@@ -2016,7 +2170,8 @@
    "Heartbeat",
    "dhis2:cardiogram_e"
   ],
-  "title": "Cardiogram Edit"
+  "title": "Cardiogram Edit",
+  "hasMaterialVersion": false
  },
  {
   "id": "cardiogram",
@@ -2028,7 +2183,8 @@
    "Heartbeat",
    "dhis2:cardiogram"
   ],
-  "title": "Cardiogram"
+  "title": "Cardiogram",
+  "hasMaterialVersion": false
  },
  {
   "id": "cannabis",
@@ -2041,7 +2197,8 @@
    "Wacky Tobaccy",
    "Weed"
   ],
-  "title": "Cannabis"
+  "title": "Cannabis",
+  "hasMaterialVersion": false
  },
  {
   "id": "calendar",
@@ -2053,7 +2210,8 @@
    "Event",
    "dhis2:calendar"
   ],
-  "title": "Calendar"
+  "title": "Calendar",
+  "hasMaterialVersion": false
  },
  {
   "id": "book",
@@ -2067,7 +2225,8 @@
    "Textbook",
    "dhis2:book"
   ],
-  "title": "Medical Book"
+  "title": "Medical Book",
+  "hasMaterialVersion": false
  },
  {
   "id": "award_trophy",
@@ -2079,7 +2238,8 @@
    "Trophy",
    "dhis2:award_trophy"
   ],
-  "title": "Trophy"
+  "title": "Trophy",
+  "hasMaterialVersion": false
  },
  {
   "id": "award_ribbon",
@@ -2092,7 +2252,8 @@
    "Trophy",
    "dhis2:award_ribbon"
   ],
-  "title": "Award"
+  "title": "Award",
+  "hasMaterialVersion": false
  },
  {
   "id": "alert_triangle",
@@ -2105,7 +2266,8 @@
    "Triangle",
    "dhis2:alert_triangle"
   ],
-  "title": "Warning Triangle"
+  "title": "Warning Triangle",
+  "hasMaterialVersion": false
  },
  {
   "id": "alert_circle",
@@ -2116,7 +2278,8 @@
    "Warning",
    "dhis2:alert_circle"
   ],
-  "title": "Alert Circle"
+  "title": "Alert Circle",
+  "hasMaterialVersion": false
  },
  {
   "id": "alert",
@@ -2128,7 +2291,8 @@
    "Exclamation Point",
    "dhis2:alert"
   ],
-  "title": "Warning"
+  "title": "Warning",
+  "hasMaterialVersion": false
  },
  {
   "id": "world_care",
@@ -2141,7 +2305,8 @@
    "Hands",
    "dhis2:world_care"
   ],
-  "title": "Environmental"
+  "title": "Environmental",
+  "hasMaterialVersion": false
  },
  {
   "id": "water_sanitation",
@@ -2155,7 +2320,8 @@
    "Sanitation",
    "dhis2:wash_hands"
   ],
-  "title": "Water Sanitation"
+  "title": "Water Sanitation",
+  "hasMaterialVersion": false
  },
  {
   "id": "wash_hands",
@@ -2169,7 +2335,8 @@
    "Sanitation",
    "dhis2:wash_hands"
   ],
-  "title": "Wash Hands"
+  "title": "Wash Hands",
+  "hasMaterialVersion": false
  },
  {
   "id": "tb",
@@ -2181,7 +2348,8 @@
    "TB",
    "dhis2:tb"
   ],
-  "title": "Tuberculosis"
+  "title": "Tuberculosis",
+  "hasMaterialVersion": false
  },
  {
   "id": "refused",
@@ -2195,7 +2363,8 @@
    "Stop",
    "dhis2:refused"
   ],
-  "title": "Hand"
+  "title": "Hand",
+  "hasMaterialVersion": false
  },
  {
   "id": "people",
@@ -2210,7 +2379,8 @@
    "Users",
    "dhis2:people"
   ],
-  "title": "People"
+  "title": "People",
+  "hasMaterialVersion": false
  },
  {
   "id": "miner_worker_alt",
@@ -2223,7 +2393,8 @@
    "Worker",
    "dhis2:miner_worker"
   ],
-  "title": "Person Miner ALT"
+  "title": "Person Miner ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "mental_disorders",
@@ -2237,7 +2408,8 @@
    "Spine",
    "dhis2:mental_disorders"
   ],
-  "title": "Mental Disorder"
+  "title": "Mental Disorder",
+  "hasMaterialVersion": false
  },
  {
   "id": "group_discussion_meeting",
@@ -2252,7 +2424,8 @@
    "Speech",
    "dhis2:discussion_meeting"
   ],
-  "title": "Discussion"
+  "title": "Discussion",
+  "hasMaterialVersion": false
  },
  {
   "id": "forum",
@@ -2267,7 +2440,8 @@
    "Speech",
    "dhis2:forum"
   ],
-  "title": "Chat"
+  "title": "Chat",
+  "hasMaterialVersion": false
  },
  {
   "id": "diarrhea",
@@ -2281,7 +2455,8 @@
    "Symptom",
    "dhis2:diarrhea"
   ],
-  "title": "Diarrhea"
+  "title": "Diarrhea",
+  "hasMaterialVersion": false
  },
  {
   "id": "diabetes",
@@ -2291,7 +2466,8 @@
    "Blood",
    "Blood Test Hand"
   ],
-  "title": "Diabetes"
+  "title": "Diabetes",
+  "hasMaterialVersion": false
  },
  {
   "id": "deaf",
@@ -2302,7 +2478,8 @@
    "Hearing",
    "Hearing Impaired"
   ],
-  "title": "Deaf"
+  "title": "Deaf",
+  "hasMaterialVersion": false
  },
  {
   "id": "clean_hands",
@@ -2316,7 +2493,8 @@
    "Sanitation",
    "dhis2:clean_hands"
   ],
-  "title": "Clean Hands"
+  "title": "Clean Hands",
+  "hasMaterialVersion": false
  },
  {
   "id": "child_cognition",
@@ -2334,7 +2512,8 @@
    "Spine",
    "dhis2:child_cognition"
   ],
-  "title": "Child Cognition"
+  "title": "Child Cognition",
+  "hasMaterialVersion": false
  },
  {
   "id": "asthma",
@@ -2346,7 +2525,8 @@
    "Mouth",
    "Respiratory"
   ],
-  "title": "Asthma"
+  "title": "Asthma",
+  "hasMaterialVersion": false
  },
  {
   "id": "allergies",
@@ -2357,7 +2537,8 @@
    "Rash",
    "dhis2:allergies"
   ],
-  "title": "Allergies"
+  "title": "Allergies",
+  "hasMaterialVersion": false
  },
  {
   "id": "spreadsheets",
@@ -2369,7 +2550,8 @@
    "Excel",
    "Sheets"
   ],
-  "title": "Spreadsheet"
+  "title": "Spreadsheet",
+  "hasMaterialVersion": false
  },
  {
   "id": "desktop_app",
@@ -2384,7 +2566,8 @@
    "Operating System",
    "Windows"
   ],
-  "title": "Desktop App"
+  "title": "Desktop App",
+  "hasMaterialVersion": false
  },
  {
   "id": "village",
@@ -2399,7 +2582,8 @@
    "Town",
    "dhis2:village"
   ],
-  "title": "Village"
+  "title": "Village",
+  "hasMaterialVersion": false
  },
  {
   "id": "ministry_of_health",
@@ -2413,7 +2597,8 @@
    "Official",
    "dhis2:ministry_of_health"
   ],
-  "title": "Ministry of Health"
+  "title": "Ministry of Health",
+  "hasMaterialVersion": false
  },
  {
   "id": "home",
@@ -2426,7 +2611,8 @@
    "House",
    "Roof"
   ],
-  "title": "Home"
+  "title": "Home",
+  "hasMaterialVersion": false
  },
  {
   "id": "call_centre",
@@ -2438,7 +2624,8 @@
    "Phone",
    "Talking"
   ],
-  "title": "Call Center"
+  "title": "Call Center",
+  "hasMaterialVersion": false
  },
  {
   "id": "wheelchair_alt",
@@ -2447,7 +2634,8 @@
   "tags": [
    "Transport"
   ],
-  "title": "Wheelchair ALT"
+  "title": "Wheelchair ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "intravenous_bag",
@@ -2460,7 +2648,8 @@
    "IV",
    "Liquid"
   ],
-  "title": "Intravenous Bag"
+  "title": "Intravenous Bag",
+  "hasMaterialVersion": false
  },
  {
   "id": "A",
@@ -2469,7 +2658,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "A"
+  "title": "A",
+  "hasMaterialVersion": false
  },
  {
   "id": "B",
@@ -2478,7 +2668,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "B"
+  "title": "B",
+  "hasMaterialVersion": false
  },
  {
   "id": "C",
@@ -2487,7 +2678,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "C"
+  "title": "C",
+  "hasMaterialVersion": false
  },
  {
   "id": "D",
@@ -2496,7 +2688,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "D"
+  "title": "D",
+  "hasMaterialVersion": false
  },
  {
   "id": "E",
@@ -2505,7 +2698,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "E"
+  "title": "E",
+  "hasMaterialVersion": false
  },
  {
   "id": "F",
@@ -2514,7 +2708,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "F"
+  "title": "F",
+  "hasMaterialVersion": false
  },
  {
   "id": "G",
@@ -2523,7 +2718,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "G"
+  "title": "G",
+  "hasMaterialVersion": false
  },
  {
   "id": "H",
@@ -2532,7 +2728,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "H"
+  "title": "H",
+  "hasMaterialVersion": false
  },
  {
   "id": "I",
@@ -2541,7 +2738,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "I"
+  "title": "I",
+  "hasMaterialVersion": false
  },
  {
   "id": "J",
@@ -2550,7 +2748,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "J"
+  "title": "J",
+  "hasMaterialVersion": false
  },
  {
   "id": "K",
@@ -2559,7 +2758,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "K"
+  "title": "K",
+  "hasMaterialVersion": false
  },
  {
   "id": "L",
@@ -2568,7 +2768,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "L"
+  "title": "L",
+  "hasMaterialVersion": false
  },
  {
   "id": "M",
@@ -2577,7 +2778,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "M"
+  "title": "M",
+  "hasMaterialVersion": false
  },
  {
   "id": "N",
@@ -2586,7 +2788,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "N"
+  "title": "N",
+  "hasMaterialVersion": false
  },
  {
   "id": "O",
@@ -2595,7 +2798,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "O"
+  "title": "O",
+  "hasMaterialVersion": false
  },
  {
   "id": "P",
@@ -2604,7 +2808,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "P"
+  "title": "P",
+  "hasMaterialVersion": false
  },
  {
   "id": "Q",
@@ -2613,7 +2818,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "Q"
+  "title": "Q",
+  "hasMaterialVersion": false
  },
  {
   "id": "R",
@@ -2622,7 +2828,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "R"
+  "title": "R",
+  "hasMaterialVersion": false
  },
  {
   "id": "S",
@@ -2631,7 +2838,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "S"
+  "title": "S",
+  "hasMaterialVersion": false
  },
  {
   "id": "T",
@@ -2640,7 +2848,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "T"
+  "title": "T",
+  "hasMaterialVersion": false
  },
  {
   "id": "U",
@@ -2649,7 +2858,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "U"
+  "title": "U",
+  "hasMaterialVersion": false
  },
  {
   "id": "V",
@@ -2658,7 +2868,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "V"
+  "title": "V",
+  "hasMaterialVersion": false
  },
  {
   "id": "W",
@@ -2667,7 +2878,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "W"
+  "title": "W",
+  "hasMaterialVersion": false
  },
  {
   "id": "X",
@@ -2676,7 +2888,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "X"
+  "title": "X",
+  "hasMaterialVersion": false
  },
  {
   "id": "Y",
@@ -2685,7 +2898,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "Y"
+  "title": "Y",
+  "hasMaterialVersion": false
  },
  {
   "id": "Z",
@@ -2694,7 +2908,8 @@
   "tags": [
    "Letter"
   ],
-  "title": "Z"
+  "title": "Z",
+  "hasMaterialVersion": false
  },
  {
   "id": "!",
@@ -2705,7 +2920,8 @@
    "Letter",
    "Punctuation"
   ],
-  "title": "Exclamation Point"
+  "title": "Exclamation Point",
+  "hasMaterialVersion": false
  },
  {
   "id": "question_mark",
@@ -2717,7 +2933,8 @@
    "Punctuation",
    "Question"
   ],
-  "title": "Question mark"
+  "title": "Question mark",
+  "hasMaterialVersion": false
  },
  {
   "id": "dollar",
@@ -2730,7 +2947,8 @@
    "Letter",
    "Money"
   ],
-  "title": "Dollar sign"
+  "title": "Dollar sign",
+  "hasMaterialVersion": false
  },
  {
   "id": "ghana",
@@ -2743,7 +2961,8 @@
    "Letter",
    "Money"
   ],
-  "title": "Cedi"
+  "title": "Cedi",
+  "hasMaterialVersion": false
  },
  {
   "id": "yen",
@@ -2756,7 +2975,8 @@
    "Letter",
    "Money"
   ],
-  "title": "Yen"
+  "title": "Yen",
+  "hasMaterialVersion": false
  },
  {
   "id": "rupee",
@@ -2769,7 +2989,8 @@
    "Letter",
    "Money"
   ],
-  "title": "Rupee"
+  "title": "Rupee",
+  "hasMaterialVersion": false
  },
  {
   "id": "accident_and_emergency",
@@ -2783,7 +3004,8 @@
    "Light",
    "Speciality"
   ],
-  "title": "Accident and Emergency"
+  "title": "Accident and Emergency",
+  "hasMaterialVersion": false
  },
  {
   "id": "admissions",
@@ -2800,7 +3022,8 @@
    "Registration",
    "Speciality"
   ],
-  "title": "Admissions"
+  "title": "Admissions",
+  "hasMaterialVersion": false
  },
  {
   "id": "coronary_care_unit",
@@ -2814,7 +3037,8 @@
    "Pulse",
    "Speciality"
   ],
-  "title": "Coronary Care"
+  "title": "Coronary Care",
+  "hasMaterialVersion": false
  },
  {
   "id": "critical_care",
@@ -2832,7 +3056,8 @@
    "Pulse",
    "Speciality"
   ],
-  "title": "Critical Care"
+  "title": "Critical Care",
+  "hasMaterialVersion": false
  },
  {
   "id": "discharge_lounge",
@@ -2847,7 +3072,8 @@
    "Lounge",
    "Speciality"
   ],
-  "title": "Discharge Lounge"
+  "title": "Discharge Lounge",
+  "hasMaterialVersion": false
  },
  {
   "id": "cardiology",
@@ -2861,7 +3087,8 @@
    "Organ",
    "Speciality"
   ],
-  "title": "Cardiology"
+  "title": "Cardiology",
+  "hasMaterialVersion": false
  },
  {
   "id": "ear",
@@ -2875,7 +3102,8 @@
    "Organ",
    "Sound"
   ],
-  "title": "Ear"
+  "title": "Ear",
+  "hasMaterialVersion": false
  },
  {
   "id": "hematology",
@@ -2886,7 +3114,8 @@
    "Department",
    "Speciality"
   ],
-  "title": "Hematology"
+  "title": "Hematology",
+  "hasMaterialVersion": false
  },
  {
   "id": "nephrology",
@@ -2897,7 +3126,8 @@
    "Kidneys",
    "Speciality"
   ],
-  "title": "Nephrology"
+  "title": "Nephrology",
+  "hasMaterialVersion": false
  },
  {
   "id": "obstetricsmonia",
@@ -2913,7 +3143,8 @@
    "Obstetrics",
    "Speciality"
   ],
-  "title": "Obstetricsmonia"
+  "title": "Obstetricsmonia",
+  "hasMaterialVersion": false
  },
  {
   "id": "opthalmology",
@@ -2926,7 +3157,8 @@
    "Speciality",
    "Vision"
   ],
-  "title": "Opthalmology"
+  "title": "Opthalmology",
+  "hasMaterialVersion": false
  },
  {
   "id": "respirology",
@@ -2939,7 +3171,8 @@
    "Pulmonary",
    "Specialty"
   ],
-  "title": "Respirology"
+  "title": "Respirology",
+  "hasMaterialVersion": false
  },
  {
   "id": "psychology",
@@ -2952,7 +3185,8 @@
    "Psychiatry",
    "Specialty"
   ],
-  "title": "Psychology"
+  "title": "Psychology",
+  "hasMaterialVersion": false
  },
  {
   "id": "medical_records",
@@ -2967,7 +3201,8 @@
    "Records",
    "Speciality"
   ],
-  "title": "Medical Records"
+  "title": "Medical Records",
+  "hasMaterialVersion": false
  },
  {
   "id": "oncology",
@@ -2979,7 +3214,8 @@
    "Department",
    "Speciality"
   ],
-  "title": "Oncology"
+  "title": "Oncology",
+  "hasMaterialVersion": false
  },
  {
   "id": "orthopaedics",
@@ -2992,7 +3228,8 @@
    "Ortho",
    "Spine"
   ],
-  "title": "Orthopaedics"
+  "title": "Orthopaedics",
+  "hasMaterialVersion": false
  },
  {
   "id": "radiology",
@@ -3004,7 +3241,8 @@
    "Specialty",
    "Xray"
   ],
-  "title": "Radiology"
+  "title": "Radiology",
+  "hasMaterialVersion": false
  },
  {
   "id": "speech_language_therapy",
@@ -3019,7 +3257,8 @@
    "Speech",
    "Therapy"
   ],
-  "title": "Speech Language Therapy"
+  "title": "Speech Language Therapy",
+  "hasMaterialVersion": false
  },
  {
   "id": "gynecology",
@@ -3035,7 +3274,8 @@
    "Woman Health",
    "Womens Health"
   ],
-  "title": "Gynecology"
+  "title": "Gynecology",
+  "hasMaterialVersion": false
  },
  {
   "id": "gastroenterology",
@@ -3047,7 +3287,8 @@
    "Speciality",
    "Stomach"
   ],
-  "title": "Gastroenterology"
+  "title": "Gastroenterology",
+  "hasMaterialVersion": false
  },
  {
   "id": "finance_dept",
@@ -3062,7 +3303,8 @@
    "Payments",
    "Speciality"
   ],
-  "title": "Finance"
+  "title": "Finance",
+  "hasMaterialVersion": false
  },
  {
   "id": "hematology_laboratory",
@@ -3075,7 +3317,8 @@
    "Laboratory",
    "Speciality"
   ],
-  "title": "Hematology Lab"
+  "title": "Hematology Lab",
+  "hasMaterialVersion": false
  },
  {
   "id": "human_resoruces",
@@ -3090,7 +3333,8 @@
    "Speciality",
    "Team"
   ],
-  "title": "Human Resources"
+  "title": "Human Resources",
+  "hasMaterialVersion": false
  },
  {
   "id": "0",
@@ -3100,7 +3344,8 @@
    "Number",
    "Zero"
   ],
-  "title": "0"
+  "title": "0",
+  "hasMaterialVersion": false
  },
  {
   "id": "1",
@@ -3110,7 +3355,8 @@
    "Number",
    "One"
   ],
-  "title": "1"
+  "title": "1",
+  "hasMaterialVersion": false
  },
  {
   "id": "2",
@@ -3120,7 +3366,8 @@
    "Number",
    "Two"
   ],
-  "title": "2"
+  "title": "2",
+  "hasMaterialVersion": false
  },
  {
   "id": "3",
@@ -3130,7 +3377,8 @@
    "Number",
    "Three"
   ],
-  "title": "3"
+  "title": "3",
+  "hasMaterialVersion": false
  },
  {
   "id": "4",
@@ -3140,7 +3388,8 @@
    "Four",
    "Number"
   ],
-  "title": "4"
+  "title": "4",
+  "hasMaterialVersion": false
  },
  {
   "id": "5",
@@ -3150,7 +3399,8 @@
    "Five",
    "Number"
   ],
-  "title": "5"
+  "title": "5",
+  "hasMaterialVersion": false
  },
  {
   "id": "6",
@@ -3160,7 +3410,8 @@
    "Number",
    "Six"
   ],
-  "title": "6"
+  "title": "6",
+  "hasMaterialVersion": false
  },
  {
   "id": "7",
@@ -3170,7 +3421,8 @@
    "Number",
    "Seven"
   ],
-  "title": "7"
+  "title": "7",
+  "hasMaterialVersion": false
  },
  {
   "id": "8",
@@ -3180,7 +3432,8 @@
    "Eight",
    "Number"
   ],
-  "title": "8"
+  "title": "8",
+  "hasMaterialVersion": false
  },
  {
   "id": "9",
@@ -3190,7 +3443,8 @@
    "Nine",
    "Number"
   ],
-  "title": "9"
+  "title": "9",
+  "hasMaterialVersion": false
  },
  {
   "id": "female_reproductive_system",
@@ -3205,7 +3459,8 @@
    "Vagina",
    "Woman"
   ],
-  "title": "Female Reproductive System"
+  "title": "Female Reproductive System",
+  "hasMaterialVersion": false
  },
  {
   "id": "spine",
@@ -3217,7 +3472,8 @@
    "Spinal Cord",
    "Vertebrae"
   ],
-  "title": "Spine"
+  "title": "Spine",
+  "hasMaterialVersion": true
  },
  {
   "id": "entry",
@@ -3231,7 +3487,8 @@
    "Open Door",
    "Sign in"
   ],
-  "title": "Entry"
+  "title": "Entry",
+  "hasMaterialVersion": false
  },
  {
   "id": "health",
@@ -3244,7 +3501,8 @@
    "Protect",
    "Symbol"
   ],
-  "title": "Health Shield"
+  "title": "Health Shield",
+  "hasMaterialVersion": false
  },
  {
   "id": "health_alt",
@@ -3256,7 +3514,8 @@
    "Medicine",
    "Symbol"
   ],
-  "title": "Health ALT"
+  "title": "Health ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "health_literacy",
@@ -3269,7 +3528,8 @@
    "Medicine",
    "Symbol"
   ],
-  "title": "Health Literacy"
+  "title": "Health Literacy",
+  "hasMaterialVersion": false
  },
  {
   "id": "register_book",
@@ -3286,7 +3546,8 @@
    "Registry",
    "Symbol"
   ],
-  "title": "Health Register Book"
+  "title": "Health Register Book",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_a_n",
@@ -3300,7 +3561,8 @@
    "Transfusion",
    "dhis2:blood_a_n"
   ],
-  "title": "Blood Type A-"
+  "title": "Blood Type A-",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_a_p",
@@ -3314,7 +3576,8 @@
    "Transfusion",
    "dhis2:blood_a_p"
   ],
-  "title": "Blood Type A+"
+  "title": "Blood Type A+",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_ab_n",
@@ -3328,7 +3591,8 @@
    "Transfusion",
    "dhis2:blood_ab_n"
   ],
-  "title": "Blood Type AB-"
+  "title": "Blood Type AB-",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_ab_p",
@@ -3342,7 +3606,8 @@
    "Transfusion",
    "dhis2:blood_ab_p"
   ],
-  "title": "Blood Type AB+"
+  "title": "Blood Type AB+",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_b_n",
@@ -3356,7 +3621,8 @@
    "Transfusion",
    "dhis2:blood_b_n"
   ],
-  "title": "Blood Type B-"
+  "title": "Blood Type B-",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_b_p",
@@ -3370,7 +3636,8 @@
    "Transfusion",
    "dhis2:blood_b_p"
   ],
-  "title": "Blood Type B+"
+  "title": "Blood Type B+",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_o_n",
@@ -3384,7 +3651,8 @@
    "Transfusion",
    "dhis2:blood_o_n"
   ],
-  "title": "Blood Type O-"
+  "title": "Blood Type O-",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_o_p",
@@ -3398,7 +3666,8 @@
    "Transfusion",
    "dhis2:blood_o_p"
   ],
-  "title": "Blood Type O+"
+  "title": "Blood Type O+",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_rh_n",
@@ -3412,7 +3681,8 @@
    "Transfusion",
    "dhis2:blood_rh_n"
   ],
-  "title": "Blood Type RH-"
+  "title": "Blood Type RH-",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_rh_p",
@@ -3426,7 +3696,8 @@
    "Transfusion",
    "dhis2:blood_rh_p"
   ],
-  "title": "Blood Type RH+"
+  "title": "Blood Type RH+",
+  "hasMaterialVersion": false
  },
  {
   "id": "i_groups_perspective_crowd",
@@ -3441,7 +3712,8 @@
    "Users",
    "dhis2:i_groups_perspective_crowd"
   ],
-  "title": "Group"
+  "title": "Group",
+  "hasMaterialVersion": false
  },
  {
   "id": "nurse",
@@ -3456,7 +3728,8 @@
    "Worker",
    "dhis2:nurse"
   ],
-  "title": "Person Nurse"
+  "title": "Person Nurse",
+  "hasMaterialVersion": false
  },
  {
   "id": "military_worker",
@@ -3471,7 +3744,8 @@
    "Uniform",
    "dhis2:military_worker"
   ],
-  "title": "Person Military"
+  "title": "Person Military",
+  "hasMaterialVersion": false
  },
  {
   "id": "truck_driver",
@@ -3487,7 +3761,8 @@
    "Worker",
    "dhis2:truck_driver"
   ],
-  "title": "Person Truck Driver"
+  "title": "Person Truck Driver",
+  "hasMaterialVersion": false
  },
  {
   "id": "security_worker",
@@ -3500,7 +3775,8 @@
    "Worker",
    "dhis2:security_worker"
   ],
-  "title": "Person Security Worker"
+  "title": "Person Security Worker",
+  "hasMaterialVersion": false
  },
  {
   "id": "construction_worker",
@@ -3513,7 +3789,8 @@
    "Worker",
    "dhis2:construction_worker"
   ],
-  "title": "Person Construction Worker"
+  "title": "Person Construction Worker",
+  "hasMaterialVersion": false
  },
  {
   "id": "palm_branches_roof",
@@ -3525,7 +3802,8 @@
    "Hut",
    "dhis2:palm_branches_roof"
   ],
-  "title": "Home with Roof Made of Palm Branches"
+  "title": "Home with Roof Made of Palm Branches",
+  "hasMaterialVersion": false
  },
  {
   "id": "proper_roof",
@@ -3537,7 +3815,8 @@
    "Hut",
    "dhis2:proper_roof"
   ],
-  "title": "Home with Proper Roof"
+  "title": "Home with Proper Roof",
+  "hasMaterialVersion": false
  },
  {
   "id": "letrina",
@@ -3563,7 +3842,8 @@
    "Water Closet",
    "dhis2:letrina"
   ],
-  "title": "Latrine"
+  "title": "Latrine",
+  "hasMaterialVersion": false
  },
  {
   "id": "letrina_alt",
@@ -3588,7 +3868,8 @@
    "WC",
    "Water Closet"
   ],
-  "title": "Latrine ALT"
+  "title": "Latrine ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "temple",
@@ -3600,7 +3881,8 @@
    "Religion",
    "Worship"
   ],
-  "title": "Temple"
+  "title": "Temple",
+  "hasMaterialVersion": false
  },
  {
   "id": "temple_alt",
@@ -3612,7 +3894,8 @@
    "Religion",
    "Worship"
   ],
-  "title": "Temple Alt"
+  "title": "Temple Alt",
+  "hasMaterialVersion": false
  },
  {
   "id": "mosque",
@@ -3626,7 +3909,8 @@
    "Religion",
    "Worship"
   ],
-  "title": "Mosque"
+  "title": "Mosque",
+  "hasMaterialVersion": false
  },
  {
   "id": "emergency_post",
@@ -3640,7 +3924,8 @@
    "War Hospital",
    "dhis2:emergency_post"
   ],
-  "title": "Field Hospital"
+  "title": "Field Hospital",
+  "hasMaterialVersion": false
  },
  {
   "id": "rural_post",
@@ -3653,7 +3938,8 @@
    "Small Hospital",
    "dhis2:rural_post"
   ],
-  "title": "Rural Clinic"
+  "title": "Rural Clinic",
+  "hasMaterialVersion": false
  },
  {
   "id": "ambulatory_clinic",
@@ -3667,7 +3953,8 @@
    "Small Hospital",
    "dhis2:ambulatory_clinic"
   ],
-  "title": "Clinic"
+  "title": "Clinic",
+  "hasMaterialVersion": false
  },
  {
   "id": "contact_support",
@@ -3682,7 +3969,8 @@
    "Speech Bubble",
    "dhis2:contact_support"
   ],
-  "title": "Support"
+  "title": "Support",
+  "hasMaterialVersion": false
  },
  {
   "id": "i_note_action",
@@ -3694,7 +3982,8 @@
    "Test",
    "dhis2:i_note_action"
   ],
-  "title": "Notes"
+  "title": "Notes",
+  "hasMaterialVersion": false
  },
  {
   "id": "i_certificate_paper",
@@ -3706,7 +3995,8 @@
    "Test",
    "dhis2:i_certificate"
   ],
-  "title": "Certificate"
+  "title": "Certificate",
+  "hasMaterialVersion": false
  },
  {
   "id": "breeding_sites",
@@ -3718,7 +4008,8 @@
    "Larva",
    "dhis2:breeding_sites"
   ],
-  "title": "Breeding Sites"
+  "title": "Breeding Sites",
+  "hasMaterialVersion": false
  },
  {
   "id": "health_worker_form",
@@ -3733,7 +4024,8 @@
    "Test",
    "dhis2:health_worker_form"
   ],
-  "title": "Health Worker Form"
+  "title": "Health Worker Form",
+  "hasMaterialVersion": false
  },
  {
   "id": "sexual_reproductive_health",
@@ -3747,7 +4039,8 @@
    "Symbols",
    "dhis2:sexual_reproductive_health"
   ],
-  "title": "Gender Symbols"
+  "title": "Gender Symbols",
+  "hasMaterialVersion": false
  },
  {
   "id": "hpv",
@@ -3760,7 +4053,8 @@
    "Virus",
    "dhis2:vih"
   ],
-  "title": "HPV"
+  "title": "HPV",
+  "hasMaterialVersion": false
  },
  {
   "id": "vih",
@@ -3774,7 +4068,8 @@
    "Virus",
    "dhis2:vih"
   ],
-  "title": "HIV"
+  "title": "HIV",
+  "hasMaterialVersion": false
  },
  {
   "id": "default",
@@ -3787,7 +4082,8 @@
    "Test",
    "dhis2:default"
   ],
-  "title": "Document Edit"
+  "title": "Document Edit",
+  "hasMaterialVersion": false
  },
  {
   "id": "i_exam_multiple_choice",
@@ -3801,7 +4097,8 @@
    "Test",
    "dhis2:i_exam_multiple_choice"
   ],
-  "title": "Exam Multiple-Choice"
+  "title": "Exam Multiple-Choice",
+  "hasMaterialVersion": false
  },
  {
   "id": "i_schedule_school_date_time",
@@ -3814,7 +4111,8 @@
    "Time",
    "dhis2:i_schedule_school_date_time"
   ],
-  "title": "Calendar Schedule"
+  "title": "Calendar Schedule",
+  "hasMaterialVersion": false
  },
  {
   "id": "justice",
@@ -3826,7 +4124,8 @@
    "Scales",
    "dhis2:justice"
   ],
-  "title": "Justice"
+  "title": "Justice",
+  "hasMaterialVersion": false
  },
  {
   "id": "phone",
@@ -3838,7 +4137,8 @@
    "Telephone",
    "dhis2:phone"
   ],
-  "title": "Phone"
+  "title": "Phone",
+  "hasMaterialVersion": false
  },
  {
   "id": "credit_card",
@@ -3852,7 +4152,8 @@
    "Visa",
    "dhis2:credit_card"
   ],
-  "title": "Credit Card"
+  "title": "Credit Card",
+  "hasMaterialVersion": false
  },
  {
   "id": "construction",
@@ -3865,7 +4166,8 @@
    "Tool",
    "dhis2:construction"
   ],
-  "title": "Hammer"
+  "title": "Hammer",
+  "hasMaterialVersion": false
  },
  {
   "id": "running_water",
@@ -3878,7 +4180,8 @@
    "Sanitation",
    "dhis2:running_water"
   ],
-  "title": "Water Tap"
+  "title": "Water Tap",
+  "hasMaterialVersion": false
  },
  {
   "id": "expectorate",
@@ -3895,7 +4198,8 @@
    "Sneeze",
    "dhis2:expectorate"
   ],
-  "title": "Expectorate"
+  "title": "Expectorate",
+  "hasMaterialVersion": false
  },
  {
   "id": "fever",
@@ -3914,7 +4218,8 @@
    "Thermometer",
    "dhis2:fever"
   ],
-  "title": "Fever"
+  "title": "Fever",
+  "hasMaterialVersion": false
  },
  {
   "id": "sad",
@@ -3931,7 +4236,8 @@
    "Sad",
    "dhis2:sad"
   ],
-  "title": "Sad"
+  "title": "Sad",
+  "hasMaterialVersion": false
  },
  {
   "id": "measles",
@@ -3948,7 +4254,8 @@
    "Measles",
    "dhis2:measles"
   ],
-  "title": "Measles"
+  "title": "Measles",
+  "hasMaterialVersion": false
  },
  {
   "id": "ok",
@@ -3965,7 +4272,8 @@
    "Smile",
    "dhis2:ok"
   ],
-  "title": "Smile"
+  "title": "Smile",
+  "hasMaterialVersion": false
  },
  {
   "id": "angry",
@@ -3980,7 +4288,8 @@
    "Mad",
    "Upset"
   ],
-  "title": "Angry"
+  "title": "Angry",
+  "hasMaterialVersion": false
  },
  {
   "id": "confused",
@@ -3994,7 +4303,8 @@
    "Emotion",
    "Face"
   ],
-  "title": "Confused"
+  "title": "Confused",
+  "hasMaterialVersion": false
  },
  {
   "id": "crying",
@@ -4009,7 +4319,8 @@
    "Sad",
    "Tears"
   ],
-  "title": "Crying"
+  "title": "Crying",
+  "hasMaterialVersion": false
  },
  {
   "id": "nauseous",
@@ -4026,7 +4337,8 @@
    "Sick",
    "Vomit"
   ],
-  "title": "Nauseous"
+  "title": "Nauseous",
+  "hasMaterialVersion": false
  },
  {
   "id": "loudly_crying",
@@ -4041,7 +4353,8 @@
    "Sad",
    "Tears"
   ],
-  "title": "Loudly Crying"
+  "title": "Loudly Crying",
+  "hasMaterialVersion": false
  },
  {
   "id": "not_ok",
@@ -4057,7 +4370,8 @@
    "Negative",
    "dhis2:not_ok"
   ],
-  "title": "Frown"
+  "title": "Frown",
+  "hasMaterialVersion": false
  },
  {
   "id": "neutral",
@@ -4073,7 +4387,8 @@
    "Okay",
    "dhis2:neutral"
   ],
-  "title": "Neutral"
+  "title": "Neutral",
+  "hasMaterialVersion": false
  },
  {
   "id": "happy",
@@ -4090,7 +4405,8 @@
    "Smile",
    "dhis2:happy"
   ],
-  "title": "Happy"
+  "title": "Happy",
+  "hasMaterialVersion": false
  },
  {
   "id": "coughing",
@@ -4105,7 +4421,8 @@
    "Sneeze",
    "Symptom"
   ],
-  "title": "Coughing"
+  "title": "Coughing",
+  "hasMaterialVersion": false
  },
  {
   "id": "vomitting",
@@ -4120,7 +4437,8 @@
    "Sick",
    "Symptom"
   ],
-  "title": "Vomiting"
+  "title": "Vomiting",
+  "hasMaterialVersion": false
  },
  {
   "id": "masked",
@@ -4136,7 +4454,8 @@
    "Sick",
    "Surgery"
   ],
-  "title": "Masked"
+  "title": "Masked",
+  "hasMaterialVersion": false
  },
  {
   "id": "eyeglasses",
@@ -4152,7 +4471,8 @@
    "Optometry",
    "Spectacles"
   ],
-  "title": "Glasses"
+  "title": "Glasses",
+  "hasMaterialVersion": false
  },
  {
   "id": "bandaged",
@@ -4168,7 +4488,8 @@
    "Injury",
    "Sick"
   ],
-  "title": "Bandage"
+  "title": "Bandage",
+  "hasMaterialVersion": false
  },
  {
   "id": "dizzy",
@@ -4182,7 +4503,8 @@
    "Nausea",
    "Nauseous"
   ],
-  "title": "Dizzy"
+  "title": "Dizzy",
+  "hasMaterialVersion": false
  },
  {
   "id": "tongue",
@@ -4195,7 +4517,8 @@
    "Face",
    "Mouth"
   ],
-  "title": "Tongue"
+  "title": "Tongue",
+  "hasMaterialVersion": false
  },
  {
   "id": "woozy",
@@ -4210,7 +4533,8 @@
    "Nauseous",
    "Sick"
   ],
-  "title": "Woozy"
+  "title": "Woozy",
+  "hasMaterialVersion": false
  },
  {
   "id": "sweating",
@@ -4225,7 +4549,8 @@
    "Perspiration",
    "Sweat"
   ],
-  "title": "Sweating"
+  "title": "Sweating",
+  "hasMaterialVersion": false
  },
  {
   "id": "nervous",
@@ -4240,7 +4565,8 @@
    "Nerves",
    "Teeth"
   ],
-  "title": "Nervous"
+  "title": "Nervous",
+  "hasMaterialVersion": false
  },
  {
   "id": "sleepy",
@@ -4255,7 +4581,8 @@
    "Sleeping",
    "Tired"
   ],
-  "title": "Sleepy"
+  "title": "Sleepy",
+  "hasMaterialVersion": false
  },
  {
   "id": "calm",
@@ -4270,7 +4597,8 @@
    "Face",
    "Relaxed"
   ],
-  "title": "Calm"
+  "title": "Calm",
+  "hasMaterialVersion": false
  },
  {
   "id": "thermometer_digital",
@@ -4281,7 +4609,8 @@
    "Temperature",
    "Thermometer"
   ],
-  "title": "Thermometer Digital"
+  "title": "Thermometer Digital",
+  "hasMaterialVersion": false
  },
  {
   "id": "endocrinology",
@@ -4292,7 +4621,8 @@
    "Endocrine glands",
    "Hormones"
   ],
-  "title": "Endocrinology"
+  "title": "Endocrinology",
+  "hasMaterialVersion": false
  },
  {
   "id": "speech_language_therapy",
@@ -4306,7 +4636,8 @@
    "Speech Pathology",
    "Therapy"
   ],
-  "title": "Speech Language Therapy"
+  "title": "Speech Language Therapy",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe_apron",
@@ -4319,7 +4650,8 @@
    "Protection",
    "Safety"
   ],
-  "title": "PPE Apron"
+  "title": "PPE Apron",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_drop",
@@ -4329,7 +4661,8 @@
    "Blood",
    "Circulatory System"
   ],
-  "title": "Blood Drop"
+  "title": "Blood Drop",
+  "hasMaterialVersion": false
  },
  {
   "id": "hepatology",
@@ -4339,7 +4672,8 @@
    "Department",
    "Liver"
   ],
-  "title": "Hepatology"
+  "title": "Hepatology",
+  "hasMaterialVersion": false
  },
  {
   "id": "pharmacy",
@@ -4352,7 +4686,8 @@
    "Medicines",
    "Pharmacy"
   ],
-  "title": "Pharmacy"
+  "title": "Pharmacy",
+  "hasMaterialVersion": false
  },
  {
   "id": "wheelchair",
@@ -4364,7 +4699,8 @@
    "Disabled",
    "Wheelchair"
   ],
-  "title": "Wheelchair"
+  "title": "Wheelchair",
+  "hasMaterialVersion": false
  },
  {
   "id": "liver",
@@ -4375,7 +4711,8 @@
    "Liver",
    "Organ"
   ],
-  "title": "Liver"
+  "title": "Liver",
+  "hasMaterialVersion": false
  },
  {
   "id": "arm",
@@ -4386,7 +4723,8 @@
    "Hand",
    "Joint"
   ],
-  "title": "Arm"
+  "title": "Arm",
+  "hasMaterialVersion": false
  },
  {
   "id": "cleaning",
@@ -4398,7 +4736,8 @@
    "Cleaning",
    "Sanitation"
   ],
-  "title": "Cleaning"
+  "title": "Cleaning",
+  "hasMaterialVersion": false
  },
  {
   "id": "defibrillator",
@@ -4411,7 +4750,8 @@
    "Emergency",
    "Heart"
   ],
-  "title": "Defibrillator"
+  "title": "Defibrillator",
+  "hasMaterialVersion": false
  },
  {
   "id": "leg",
@@ -4422,7 +4762,8 @@
    "Knee",
    "Leg"
   ],
-  "title": "Leg"
+  "title": "Leg",
+  "hasMaterialVersion": false
  },
  {
   "id": "low_vision",
@@ -4436,7 +4777,8 @@
    "Sight",
    "Vision"
   ],
-  "title": "Low Vision"
+  "title": "Low Vision",
+  "hasMaterialVersion": false
  },
  {
   "id": "eye",
@@ -4449,7 +4791,8 @@
    "Sight",
    "Vision"
   ],
-  "title": "Eye"
+  "title": "Eye",
+  "hasMaterialVersion": false
  },
  {
   "id": "xray",
@@ -4461,7 +4804,8 @@
    "Radiology",
    "Xray"
   ],
-  "title": "X-ray"
+  "title": "X-ray",
+  "hasMaterialVersion": false
  },
  {
   "id": "mouth",
@@ -4473,7 +4817,8 @@
    "Mouth",
    "Oral"
   ],
-  "title": "Mouth"
+  "title": "Mouth",
+  "hasMaterialVersion": false
  },
  {
   "id": "rheumatology",
@@ -4486,7 +4831,8 @@
    "Ortho",
    "Spine"
   ],
-  "title": "Rheumatology"
+  "title": "Rheumatology",
+  "hasMaterialVersion": false
  },
  {
   "id": "joints",
@@ -4498,7 +4844,8 @@
    "Ortho",
    "Orthopaedics"
   ],
-  "title": "Joints"
+  "title": "Joints",
+  "hasMaterialVersion": false
  },
  {
   "id": "rural_post_alt",
@@ -4513,7 +4860,8 @@
    "Primary Care",
    "Village"
   ],
-  "title": "Rural Post ALT"
+  "title": "Rural Post ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "umbrella",
@@ -4522,7 +4870,8 @@
   "tags": [
    "Transgender"
   ],
-  "title": "Umbrella"
+  "title": "Umbrella",
+  "hasMaterialVersion": false
  },
  {
   "id": "bandage_adhesive",
@@ -4535,7 +4884,8 @@
    "Cut",
    "Injury"
   ],
-  "title": "Bandage"
+  "title": "Bandage",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_out_stock",
@@ -4546,7 +4896,8 @@
    "Retroviral",
    "dhis2:rdt_result_out_stock"
   ],
-  "title": "Stock Out RDT"
+  "title": "Stock Out RDT",
+  "hasMaterialVersion": false
  },
  {
   "id": "stock_out",
@@ -4557,7 +4908,8 @@
    "Medicines",
    "dhis2:stock_out"
   ],
-  "title": "Stock Out"
+  "title": "Stock Out",
+  "hasMaterialVersion": false
  },
  {
   "id": "i_utensils",
@@ -4570,7 +4922,8 @@
    "Tools",
    "dhis2:i_utensils"
   ],
-  "title": "Utensils"
+  "title": "Utensils",
+  "hasMaterialVersion": false
  },
  {
   "id": "outpatient_department",
@@ -4587,7 +4940,8 @@
    "Triage",
    "Triage"
   ],
-  "title": "Outpatient"
+  "title": "Outpatient",
+  "hasMaterialVersion": false
  },
  {
   "id": "animal_mosquitos",
@@ -4601,7 +4955,8 @@
    "Zoonotic Disease",
    "dhis2:malaria_outbreak"
   ],
-  "title": "Mosquitos"
+  "title": "Mosquitos",
+  "hasMaterialVersion": false
  },
  {
   "id": "insecticide_resistance",
@@ -4611,7 +4966,8 @@
    "Mosquito",
    "dhis2:insecticide_resistance"
   ],
-  "title": "Insecticide Resistant"
+  "title": "Insecticide Resistant",
+  "hasMaterialVersion": false
  },
  {
   "id": "hiv_ind",
@@ -4622,7 +4978,8 @@
    "HIV",
    "dhis2:hiv_ind"
   ],
-  "title": "HIV Inconclusive"
+  "title": "HIV Inconclusive",
+  "hasMaterialVersion": false
  },
  {
   "id": "hiv_neg",
@@ -4633,7 +4990,8 @@
    "HIV",
    "dhis2:hiv_neg"
   ],
-  "title": "HIV Negative"
+  "title": "HIV Negative",
+  "hasMaterialVersion": false
  },
  {
   "id": "hiv_pos",
@@ -4644,7 +5002,8 @@
    "HIV",
    "dhis2:hiv_pos"
   ],
-  "title": "HIV Positive"
+  "title": "HIV Positive",
+  "hasMaterialVersion": false
  },
  {
   "id": "mosquito",
@@ -4659,7 +5018,8 @@
    "Zoonotic Disease",
    "dhis2:mosquito"
   ],
-  "title": "Mosquito"
+  "title": "Mosquito",
+  "hasMaterialVersion": false
  },
  {
   "id": "ribbon",
@@ -4672,7 +5032,8 @@
    "HIV",
    "Ribbon"
   ],
-  "title": "HIV"
+  "title": "HIV",
+  "hasMaterialVersion": false
  },
  {
   "id": "referral",
@@ -4685,7 +5046,8 @@
    "Transfer",
    "dhis2:referral"
   ],
-  "title": "Referral"
+  "title": "Referral",
+  "hasMaterialVersion": false
  },
  {
   "id": "body",
@@ -4696,7 +5058,8 @@
    "Human",
    "Limbs"
   ],
-  "title": "Body"
+  "title": "Body",
+  "hasMaterialVersion": false
  },
  {
   "id": "msm",
@@ -4708,7 +5071,8 @@
    "Sex",
    "dhis2:msm"
   ],
-  "title": "Men Who Have Sex With Men"
+  "title": "Men Who Have Sex With Men",
+  "hasMaterialVersion": false
  },
  {
   "id": "sti",
@@ -4725,7 +5089,8 @@
    "Sick",
    "Symptom dhis2:sti"
   ],
-  "title": "Sexually Transmitted Infection"
+  "title": "Sexually Transmitted Infection",
+  "hasMaterialVersion": false
  },
  {
   "id": "boy_0105y",
@@ -4738,7 +5103,8 @@
    "Toddler",
    "dhis2:boy_0105y"
   ],
-  "title": "Child 1-5 Years"
+  "title": "Child 1-5 Years",
+  "hasMaterialVersion": false
  },
  {
   "id": "child_program",
@@ -4758,7 +5124,8 @@
    "Youth",
    "dhis2:child_program"
   ],
-  "title": "Children"
+  "title": "Children",
+  "hasMaterialVersion": false
  },
  {
   "id": "girl_0105y",
@@ -4771,7 +5138,8 @@
    "Toddler",
    "dhis2:girl_0105y"
   ],
-  "title": "Girl 1-5 Years"
+  "title": "Girl 1-5 Years",
+  "hasMaterialVersion": false
  },
  {
   "id": "girl_1015y",
@@ -4784,7 +5152,8 @@
    "Teen",
    "dhis2:girl_1015y"
   ],
-  "title": "Child Female 10-15 Years"
+  "title": "Child Female 10-15 Years",
+  "hasMaterialVersion": false
  },
  {
   "id": "male_and_female",
@@ -4797,7 +5166,8 @@
    "Woman",
    "dhis2:male_and_female"
   ],
-  "title": "Male and Female"
+  "title": "Male and Female",
+  "hasMaterialVersion": false
  },
  {
   "id": "female_and_male",
@@ -4810,7 +5180,8 @@
    "Woman",
    "dhis2:female_and_male"
   ],
-  "title": "Female and Male"
+  "title": "Female and Male",
+  "hasMaterialVersion": false
  },
  {
   "id": "man",
@@ -4825,7 +5196,8 @@
    "Symbol",
    "dhis2:man"
   ],
-  "title": "Person"
+  "title": "Person",
+  "hasMaterialVersion": false
  },
  {
   "id": "outpatient",
@@ -4845,7 +5217,8 @@
    "Visit",
    "dhis2:outpatient"
   ],
-  "title": "Outpatient"
+  "title": "Outpatient",
+  "hasMaterialVersion": false
  },
  {
   "id": "baby_male_0609m",
@@ -4857,7 +5230,8 @@
    "Infant",
    "dhis2:baby_male_0203m"
   ],
-  "title": "Baby Male 2-3 Months"
+  "title": "Baby Male 2-3 Months",
+  "hasMaterialVersion": false
  },
  {
   "id": "baby_0203m",
@@ -4869,7 +5243,8 @@
    "Girl",
    "Infant"
   ],
-  "title": "Baby 2-3 Months"
+  "title": "Baby 2-3 Months",
+  "hasMaterialVersion": false
  },
  {
   "id": "baby_female_0609m",
@@ -4881,7 +5256,8 @@
    "Infant",
    "dhis2:baby_male_0203m"
   ],
-  "title": "Baby Female 2-3 Months"
+  "title": "Baby Female 2-3 Months",
+  "hasMaterialVersion": false
  },
  {
   "id": "factory_worker",
@@ -4894,7 +5270,8 @@
    "Worker",
    "dhis2:factory_worker"
   ],
-  "title": "Person Factory Worker"
+  "title": "Person Factory Worker",
+  "hasMaterialVersion": false
  },
  {
   "id": "agriculture_worker_alt",
@@ -4906,7 +5283,8 @@
    "Pitchfork",
    "dhis2:agricultural_worker"
   ],
-  "title": "Person Farmer ALT"
+  "title": "Person Farmer ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "domestic_worker_alt",
@@ -4918,7 +5296,8 @@
    "Plumber",
    "dhis2:domestic_worker"
   ],
-  "title": "Person Domestic Worker ALT"
+  "title": "Person Domestic Worker ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "agriculture_worker",
@@ -4930,7 +5309,8 @@
    "Pitchfork",
    "dhis2:agricultural_worker"
   ],
-  "title": "Person Farmer"
+  "title": "Person Farmer",
+  "hasMaterialVersion": false
  },
  {
   "id": "travel_alt",
@@ -4943,7 +5323,8 @@
    "Travel",
    "dhis2:travel"
   ],
-  "title": "Person Traveller ALT"
+  "title": "Person Traveller ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "plantation_worker_alt",
@@ -4957,7 +5338,8 @@
    "Worker",
    "dhis2:plantation_worker"
   ],
-  "title": "Person Plantation Worker ALT"
+  "title": "Person Plantation Worker ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "prisoner",
@@ -4970,7 +5352,8 @@
    "Prison",
    "dhis2:prisoner"
   ],
-  "title": "Person Prisoner"
+  "title": "Person Prisoner",
+  "hasMaterialVersion": false
  },
  {
   "id": "officer",
@@ -4984,7 +5367,8 @@
    "Worker",
    "dhis2:officer"
   ],
-  "title": "Person Police Officer"
+  "title": "Person Police Officer",
+  "hasMaterialVersion": false
  },
  {
   "id": "domestic_worker",
@@ -4996,7 +5380,8 @@
    "Plumber",
    "dhis2:domestic_worker"
   ],
-  "title": "Person Domestic Worker"
+  "title": "Person Domestic Worker",
+  "hasMaterialVersion": false
  },
  {
   "id": "travel",
@@ -5009,7 +5394,8 @@
    "Travel",
    "dhis2:travel"
   ],
-  "title": "Person Traveller"
+  "title": "Person Traveller",
+  "hasMaterialVersion": false
  },
  {
   "id": "plantation_worker",
@@ -5023,7 +5409,8 @@
    "Worker",
    "dhis2:plantation_worker"
   ],
-  "title": "Person Plantation Worker"
+  "title": "Person Plantation Worker",
+  "hasMaterialVersion": false
  },
  {
   "id": "miner_worker",
@@ -5035,7 +5422,8 @@
    "Worker",
    "dhis2:miner_worker"
   ],
-  "title": "Person Miner"
+  "title": "Person Miner",
+  "hasMaterialVersion": false
  },
  {
   "id": "pregnant",
@@ -5050,7 +5438,8 @@
    "antenatal",
    "dhis2:pregnant"
   ],
-  "title": "Pregnant"
+  "title": "Pregnant",
+  "hasMaterialVersion": false
  },
  {
   "id": "overweight",
@@ -5064,7 +5453,8 @@
    "Vitals",
    "dhis2:overweight"
   ],
-  "title": "Overweight"
+  "title": "Overweight",
+  "hasMaterialVersion": false
  },
  {
   "id": "lactation",
@@ -5081,7 +5471,8 @@
    "Pregnant",
    "dhis2:lactation"
   ],
-  "title": "Nursing Mother"
+  "title": "Nursing Mother",
+  "hasMaterialVersion": false
  },
  {
   "id": "vomiting",
@@ -5098,7 +5489,8 @@
    "Throw Up",
    "dhis2:vomiting"
   ],
-  "title": "Vomiting"
+  "title": "Vomiting",
+  "hasMaterialVersion": false
  },
  {
   "id": "baby_female_0306m",
@@ -5112,7 +5504,8 @@
    "Infant",
    "dhis2:baby_female"
   ],
-  "title": "Baby Female 3-6 Months"
+  "title": "Baby Female 3-6 Months",
+  "hasMaterialVersion": false
  },
  {
   "id": "baby_male_0306m",
@@ -5126,7 +5519,8 @@
    "Infant",
    "dhis2:baby_male"
   ],
-  "title": "Baby Male 3-6 Months"
+  "title": "Baby Male 3-6 Months",
+  "hasMaterialVersion": false
  },
  {
   "id": "baby_0306m",
@@ -5141,7 +5535,8 @@
    "Infant",
    "Male"
   ],
-  "title": "Baby 3-6 months"
+  "title": "Baby 3-6 months",
+  "hasMaterialVersion": false
  },
  {
   "id": "baby_female_0203m_alt",
@@ -5153,7 +5548,8 @@
    "Infant",
    "dhis2:baby_male_0203m"
   ],
-  "title": "Baby Female 2-3 Months ALT"
+  "title": "Baby Female 2-3 Months ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "baby_male_0203m_alt",
@@ -5165,7 +5561,8 @@
    "Infant",
    "dhis2:baby_male_0203m"
   ],
-  "title": "Baby Male 2-3 Months ALT"
+  "title": "Baby Male 2-3 Months ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "baby_0203_alt",
@@ -5177,7 +5574,8 @@
    "Girl",
    "Infant"
   ],
-  "title": "Baby 2-3 Months ALT"
+  "title": "Baby 2-3 Months ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "spraying",
@@ -5191,7 +5589,8 @@
    "Worker",
    "dhis2:spraying"
   ],
-  "title": "Spraying"
+  "title": "Spraying",
+  "hasMaterialVersion": false
  },
  {
   "id": "agriculture",
@@ -5206,7 +5605,8 @@
    "Seed",
    "dhis2:agriculture"
   ],
-  "title": "Agriculture"
+  "title": "Agriculture",
+  "hasMaterialVersion": false
  },
  {
   "id": "elderly",
@@ -5223,7 +5623,8 @@
    "Woman",
    "dhis2:elderly"
   ],
-  "title": "Elderly People"
+  "title": "Elderly People",
+  "hasMaterialVersion": false
  },
  {
   "id": "rmnh",
@@ -5238,7 +5639,8 @@
    "RMNH",
    "dhis2:rmnh"
   ],
-  "title": "Reproductive Maternal and Newborn Health"
+  "title": "Reproductive Maternal and Newborn Health",
+  "hasMaterialVersion": false
  },
  {
   "id": "young_people",
@@ -5256,7 +5658,8 @@
    "Youth",
    "dhis2:young_people"
   ],
-  "title": "Youth"
+  "title": "Youth",
+  "hasMaterialVersion": false
  },
  {
   "id": "female_sex_worker",
@@ -5270,7 +5673,8 @@
    "Worker",
    "dhis2:sex_worker_male"
   ],
-  "title": "Sex Worker Female"
+  "title": "Sex Worker Female",
+  "hasMaterialVersion": false
  },
  {
   "id": "male_sex_worker",
@@ -5283,7 +5687,8 @@
    "Worker",
    "dhis2:sex_worker_male"
   ],
-  "title": "Sex Worker"
+  "title": "Sex Worker",
+  "hasMaterialVersion": false
  },
  {
   "id": "health_worker",
@@ -5295,7 +5700,8 @@
    "Nurse",
    "dhis2:health_worker"
   ],
-  "title": "Person Health Worker"
+  "title": "Person Health Worker",
+  "hasMaterialVersion": false
  },
  {
   "id": "doctor_male",
@@ -5308,7 +5714,8 @@
    "Stethoscope",
    "dhis2:doctor_female"
   ],
-  "title": "Person Male Doctor"
+  "title": "Person Male Doctor",
+  "hasMaterialVersion": false
  },
  {
   "id": "doctor_female",
@@ -5321,7 +5728,8 @@
    "Woman",
    "dhis2:doctor_female"
   ],
-  "title": "Person Female Doctor"
+  "title": "Person Female Doctor",
+  "hasMaterialVersion": false
  },
  {
   "id": "doctor",
@@ -5334,7 +5742,8 @@
    "Worker",
    "dhis2:doctor"
   ],
-  "title": "Doctor"
+  "title": "Doctor",
+  "hasMaterialVersion": false
  },
  {
   "id": "city_worker",
@@ -5347,7 +5756,8 @@
    "Worker",
    "dhis2:city_worker"
   ],
-  "title": "Business Person"
+  "title": "Business Person",
+  "hasMaterialVersion": false
  },
  {
   "id": "group_discussion_meetingx3",
@@ -5362,7 +5772,8 @@
    "Speech",
    "dhis2:group_discussion_meetingx3"
   ],
-  "title": "Group Discussion"
+  "title": "Group Discussion",
+  "hasMaterialVersion": false
  },
  {
   "id": "child_care",
@@ -5374,7 +5785,8 @@
    "Parent",
    "dhis2:child_care"
   ],
-  "title": "Child care"
+  "title": "Child care",
+  "hasMaterialVersion": false
  },
  {
   "id": "coughing_alt",
@@ -5389,7 +5801,8 @@
    "Symptom",
    "dhis2:coughing"
   ],
-  "title": "Coughing"
+  "title": "Coughing",
+  "hasMaterialVersion": false
  },
  {
   "id": "pwid",
@@ -5405,7 +5818,8 @@
    "People",
    "dhis2:pwid"
   ],
-  "title": "People Who Inject Drugs"
+  "title": "People Who Inject Drugs",
+  "hasMaterialVersion": false
  },
  {
   "id": "fetus",
@@ -5419,7 +5833,8 @@
    "Umbilical Cord",
    "dhis2:fetus"
   ],
-  "title": "Fetus"
+  "title": "Fetus",
+  "hasMaterialVersion": false
  },
  {
   "id": "pregnant_32w",
@@ -5434,7 +5849,8 @@
    "Woman",
    "dhis2:pregnant_32w"
   ],
-  "title": "Fetus 32 Weeks"
+  "title": "Fetus 32 Weeks",
+  "hasMaterialVersion": false
  },
  {
   "id": "pregnant_0812w",
@@ -5449,7 +5865,8 @@
    "Woman",
    "dhis2:pregnant_0812w"
   ],
-  "title": "Fetus 8-12 Weeks"
+  "title": "Fetus 8-12 Weeks",
+  "hasMaterialVersion": false
  },
  {
   "id": "pregnant_2426w",
@@ -5464,7 +5881,8 @@
    "Woman",
    "dhis2:pregnant_2426w"
   ],
-  "title": "Fetus 24-26 Weeks"
+  "title": "Fetus 24-26 Weeks",
+  "hasMaterialVersion": false
  },
  {
   "id": "pregnant_3638w",
@@ -5479,7 +5897,8 @@
    "Woman",
    "dhis2:pregnant_3638w"
   ],
-  "title": "Fetus 36-38 Weeks"
+  "title": "Fetus 36-38 Weeks",
+  "hasMaterialVersion": false
  },
  {
   "id": "forest_persons",
@@ -5493,7 +5912,8 @@
    "Woods",
    "dhis2:forest_persons"
   ],
-  "title": "Person in Forest"
+  "title": "Person in Forest",
+  "hasMaterialVersion": false
  },
  {
   "id": "old_man",
@@ -5507,7 +5927,8 @@
    "Symbol",
    "dhis2:old_man"
   ],
-  "title": "Elderly Man"
+  "title": "Elderly Man",
+  "hasMaterialVersion": false
  },
  {
   "id": "old_woman",
@@ -5521,7 +5942,8 @@
    "Woman",
    "dhis2:old_woman"
   ],
-  "title": "Elderly Woman"
+  "title": "Elderly Woman",
+  "hasMaterialVersion": false
  },
  {
   "id": "person",
@@ -5536,7 +5958,8 @@
    "Woman",
    "dhis2:person"
   ],
-  "title": "Person"
+  "title": "Person",
+  "hasMaterialVersion": false
  },
  {
   "id": "sweating",
@@ -5550,7 +5973,8 @@
    "Symptom dhis2:sweating",
    "Temperature"
   ],
-  "title": "Sweating"
+  "title": "Sweating",
+  "hasMaterialVersion": false
  },
  {
   "id": "symptom",
@@ -5563,7 +5987,8 @@
    "Symptoms",
    "Triage"
   ],
-  "title": "Symptoms"
+  "title": "Symptoms",
+  "hasMaterialVersion": false
  },
  {
   "id": "underweight",
@@ -5577,7 +6002,8 @@
    "Vitals",
    "dhis2:underweight"
   ],
-  "title": "Underweight"
+  "title": "Underweight",
+  "hasMaterialVersion": false
  },
  {
   "id": "i_training_class",
@@ -5593,7 +6019,8 @@
    "Train",
    "dhis2:i_training_class"
   ],
-  "title": "Training"
+  "title": "Training",
+  "hasMaterialVersion": false
  },
  {
   "id": "traumatism",
@@ -5608,7 +6035,8 @@
    "Trauma",
    "dhis2:traumatism"
   ],
-  "title": "Trauma"
+  "title": "Trauma",
+  "hasMaterialVersion": false
  },
  {
   "id": "ancv",
@@ -5621,7 +6049,8 @@
    "Pregnant",
    "dhis2:ancv"
   ],
-  "title": "Antenatal Care Visit"
+  "title": "Antenatal Care Visit",
+  "hasMaterialVersion": false
  },
  {
   "id": "chills",
@@ -5636,7 +6065,8 @@
    "Symptom",
    "dhis2:chills"
   ],
-  "title": "Chills"
+  "title": "Chills",
+  "hasMaterialVersion": false
  },
  {
   "id": "chills_fever",
@@ -5653,7 +6083,8 @@
    "Temperature",
    "dhis2:chills_fever"
   ],
-  "title": "Fever"
+  "title": "Fever",
+  "hasMaterialVersion": false
  },
  {
   "id": "back_pain",
@@ -5667,7 +6098,8 @@
    "Symptom",
    "dhis2:back_pain"
   ],
-  "title": "Back Pain"
+  "title": "Back Pain",
+  "hasMaterialVersion": false
  },
  {
   "id": "nausea",
@@ -5684,7 +6116,8 @@
    "Vomit",
    "dhis2:nausea"
   ],
-  "title": "Nausea"
+  "title": "Nausea",
+  "hasMaterialVersion": false
  },
  {
   "id": "woman",
@@ -5699,7 +6132,8 @@
    "Woman",
    "dhis2:woman"
   ],
-  "title": "Woman"
+  "title": "Woman",
+  "hasMaterialVersion": false
  },
  {
   "id": "headache",
@@ -5712,7 +6146,8 @@
    "Sick",
    "Symptom dhis2:headache"
   ],
-  "title": "Headache"
+  "title": "Headache",
+  "hasMaterialVersion": false
  },
  {
   "id": "boy_1015y",
@@ -5725,7 +6160,8 @@
    "Teen",
    "dhis2:boy_1015y"
   ],
-  "title": "Child 10-15 Years"
+  "title": "Child 10-15 Years",
+  "hasMaterialVersion": false
  },
  {
   "id": "llin",
@@ -5738,7 +6174,8 @@
    "Mosquito",
    "dhis2:llin"
   ],
-  "title": "Bed Net"
+  "title": "Bed Net",
+  "hasMaterialVersion": false
  },
  {
   "id": "contraceptive_injection",
@@ -5750,7 +6187,8 @@
    "Injection",
    "dhis2:contraceptive_injection"
   ],
-  "title": "Contraceptive Injection"
+  "title": "Contraceptive Injection",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_pressure_2",
@@ -5764,7 +6202,8 @@
    "Hypertension",
    "dhis2:blood_pressure_2"
   ],
-  "title": "Blood Pressure Monitor ALT"
+  "title": "Blood Pressure Monitor ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_pressure_monitor",
@@ -5778,7 +6217,8 @@
    "Hypertension",
    "dhis2:blood_pressure_monitor"
   ],
-  "title": "Blood Pressure Monitor"
+  "title": "Blood Pressure Monitor",
+  "hasMaterialVersion": false
  },
  {
   "id": "copper_iud",
@@ -5791,7 +6231,8 @@
    "Intrauterine Device",
    "dhis2:copper_iud"
   ],
-  "title": "Copper Intrauterine Device"
+  "title": "Copper Intrauterine Device",
+  "hasMaterialVersion": false
  },
  {
   "id": "cold_chain",
@@ -5808,7 +6249,8 @@
    "Thermometer",
    "dhis2:cold_chain"
   ],
-  "title": "Cold Temperature"
+  "title": "Cold Temperature",
+  "hasMaterialVersion": false
  },
  {
   "id": "fever",
@@ -5821,7 +6263,8 @@
    "Thermometer",
    "dhis2:fever"
   ],
-  "title": "High Temperature"
+  "title": "High Temperature",
+  "hasMaterialVersion": false
  },
  {
   "id": "clinical_a",
@@ -5834,7 +6277,8 @@
    "Science",
    "dhis2:clinical_a"
   ],
-  "title": "Test Tube"
+  "title": "Test Tube",
+  "hasMaterialVersion": false
  },
  {
   "id": "sayana_press",
@@ -5845,7 +6289,8 @@
    "Family Planning",
    "dhis2:syana_press"
   ],
-  "title": "Syana Press"
+  "title": "Syana Press",
+  "hasMaterialVersion": false
  },
  {
   "id": "treated_water",
@@ -5857,7 +6302,8 @@
    "Hygeine",
    "dhis2:treated_water"
   ],
-  "title": "Treated Water"
+  "title": "Treated Water",
+  "hasMaterialVersion": false
  },
  {
   "id": "tac",
@@ -5871,7 +6317,8 @@
    "Radiology",
    "dhis2:tac"
   ],
-  "title": "CT Scan"
+  "title": "CT Scan",
+  "hasMaterialVersion": false
  },
  {
   "id": "intensity_concentration_bioassays",
@@ -5883,7 +6330,8 @@
    "Mosquito",
    "dhis2:intensity_concentration_bioassays"
   ],
-  "title": "Intensity Concentration Bioassays"
+  "title": "Intensity Concentration Bioassays",
+  "hasMaterialVersion": false
  },
  {
   "id": "discriminating_concentration_bioassays",
@@ -5894,7 +6342,8 @@
    "Test",
    "dhis2:discriminating_concentration_bioassays"
   ],
-  "title": "Discriminating Concentration Bioassays"
+  "title": "Discriminating Concentration Bioassays",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_pv_rectangular",
@@ -5906,7 +6355,8 @@
    "Testing",
    "dhis2:rdt_result_pv_rectangular"
   ],
-  "title": "Rapid Diagnostic Testing Result PV"
+  "title": "Rapid Diagnostic Testing Result PV",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_pf_rectangular",
@@ -5918,7 +6368,8 @@
    "Testing",
    "dhis2:rdt_result_pf_rectangular"
   ],
-  "title": "Rapid Diagnostic Testing Result PF"
+  "title": "Rapid Diagnostic Testing Result PF",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_pf_invalid_rectangular",
@@ -5930,7 +6381,8 @@
    "Testing",
    "dhis2:rdt_result_pf_invalid_rectangular"
   ],
-  "title": "Rapid Diagnostic Testing Result PF Invalid"
+  "title": "Rapid Diagnostic Testing Result PF Invalid",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_neg_rectangular",
@@ -5942,7 +6394,8 @@
    "Testing",
    "dhis2:rdt_result_neg_rectangular"
   ],
-  "title": "Rapid Diagnostic Testing Result Negative"
+  "title": "Rapid Diagnostic Testing Result Negative",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_mixed_rectangular",
@@ -5954,7 +6407,8 @@
    "Testing",
    "dhis2:rdt_result_mixed_rectangular"
   ],
-  "title": "Rapid Diagnostic Testing Result Mixed"
+  "title": "Rapid Diagnostic Testing Result Mixed",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_mixed_invalid_rectangular",
@@ -5966,7 +6420,8 @@
    "Testing",
    "dhis2:rdt_result_mixed_invalid_rectangular"
   ],
-  "title": "Rapid Diagnostic Testing Result Mixed Invalid"
+  "title": "Rapid Diagnostic Testing Result Mixed Invalid",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_neg_invalid_rectangular",
@@ -5978,7 +6433,8 @@
    "Testing",
    "dhis2:rdt_result_neg_invalid_rectangular"
   ],
-  "title": "Rapid Diagnostic Testing Result Negative Invalid"
+  "title": "Rapid Diagnostic Testing Result Negative Invalid",
+  "hasMaterialVersion": false
  },
  {
   "id": "rdt_result_pv_invalid_rectangular",
@@ -5990,7 +6446,8 @@
    "Testing",
    "dhis2:rdt_result_pv_invalid_rectangular"
   ],
-  "title": "Rapid Diagnostic Testing Result PV Invalid"
+  "title": "Rapid Diagnostic Testing Result PV Invalid",
+  "hasMaterialVersion": false
  },
  {
   "id": "contraceptive_voucher",
@@ -6002,7 +6459,8 @@
    "Sperm",
    "dhis2:contraceptive_voucher"
   ],
-  "title": "Contraceptive"
+  "title": "Contraceptive",
+  "hasMaterialVersion": false
  },
  {
   "id": "pneumonia",
@@ -6015,7 +6473,8 @@
    "Pneumonia",
    "dhis2:pneumonia"
   ],
-  "title": "Pneumonia"
+  "title": "Pneumonia",
+  "hasMaterialVersion": false
  },
  {
   "id": "spleen",
@@ -6029,7 +6488,8 @@
    "Organs",
    "Spleen"
   ],
-  "title": "Spleen"
+  "title": "Spleen",
+  "hasMaterialVersion": false
  },
  {
   "id": "ventilator",
@@ -6040,7 +6500,8 @@
    "Device",
    "Lungs"
   ],
-  "title": "Ventilator"
+  "title": "Ventilator",
+  "hasMaterialVersion": false
  },
  {
   "id": "ventilator_alt",
@@ -6051,7 +6512,8 @@
    "Device",
    "Lungs"
   ],
-  "title": "Ventilator ALT"
+  "title": "Ventilator ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "social_work",
@@ -6065,7 +6527,8 @@
    "Social Worker",
    "Speciality"
   ],
-  "title": "Social Work"
+  "title": "Social Work",
+  "hasMaterialVersion": false
  },
  {
   "id": "intensive_care_unit",
@@ -6077,7 +6540,8 @@
    "NICU",
    "Speciality"
   ],
-  "title": "Intensive Care Unit"
+  "title": "Intensive Care Unit",
+  "hasMaterialVersion": false
  },
  {
   "id": "pediatrics",
@@ -6090,7 +6554,8 @@
    "Pediatrician",
    "Speciality"
   ],
-  "title": "Pediatrics"
+  "title": "Pediatrics",
+  "hasMaterialVersion": false
  },
  {
   "id": "gym",
@@ -6103,7 +6568,8 @@
    "Speciality",
    "Weights"
   ],
-  "title": "Gym"
+  "title": "Gym",
+  "hasMaterialVersion": false
  },
  {
   "id": "physical_therapy",
@@ -6115,7 +6581,8 @@
    "PT",
    "Speciality"
   ],
-  "title": "Physical Therapy"
+  "title": "Physical Therapy",
+  "hasMaterialVersion": false
  },
  {
   "id": "pediatric_surgery",
@@ -6128,7 +6595,8 @@
    "Pediatrics",
    "Surgery"
   ],
-  "title": "Pediatric Surgery"
+  "title": "Pediatric Surgery",
+  "hasMaterialVersion": false
  },
  {
   "id": "neuro_surgery",
@@ -6140,7 +6608,8 @@
    "Neurology",
    "Surgery"
   ],
-  "title": "Neurosurgery"
+  "title": "Neurosurgery",
+  "hasMaterialVersion": false
  },
  {
   "id": "geriatrics",
@@ -6152,7 +6621,8 @@
    "Elderly",
    "Speciality"
   ],
-  "title": "Geriatrics"
+  "title": "Geriatrics",
+  "hasMaterialVersion": false
  },
  {
   "id": "contact_lenses",
@@ -6164,7 +6634,8 @@
    "Sight",
    "Vision"
   ],
-  "title": "Contact Lens"
+  "title": "Contact Lens",
+  "hasMaterialVersion": false
  },
  {
   "id": "community_healthworker",
@@ -6178,7 +6649,8 @@
    "Nurse",
    "Village"
   ],
-  "title": "Community Healthcare Worker"
+  "title": "Community Healthcare Worker",
+  "hasMaterialVersion": false
  },
  {
   "id": "chaplaincy",
@@ -6191,7 +6663,8 @@
    "Speciality",
    "Spirituality"
   ],
-  "title": "Chaplaincy"
+  "title": "Chaplaincy",
+  "hasMaterialVersion": false
  },
  {
   "id": "cast",
@@ -6203,7 +6676,8 @@
    "Limb",
    "Splint"
   ],
-  "title": "Cast"
+  "title": "Cast",
+  "hasMaterialVersion": false
  },
  {
   "id": "intestinal-pain",
@@ -6217,7 +6691,8 @@
    "Stomach",
    "Symptom"
   ],
-  "title": "Intestinal Pain"
+  "title": "Intestinal Pain",
+  "hasMaterialVersion": false
  },
  {
   "id": "syringe-vaccine",
@@ -6230,7 +6705,8 @@
    "Vaccine",
    "Virus"
   ],
-  "title": "Syringe Vaccine"
+  "title": "Syringe Vaccine",
+  "hasMaterialVersion": false
  },
  {
   "id": "dental_hygiene",
@@ -6244,7 +6720,8 @@
    "Toothbrush",
    "Toothpaste"
   ],
-  "title": "Dental Hygiene"
+  "title": "Dental Hygiene",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe_santizer_alt",
@@ -6254,7 +6731,8 @@
    "Infection Control",
    "PPE"
   ],
-  "title": "PPE Sanitizer ALT"
+  "title": "PPE Sanitizer ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_cells",
@@ -6267,7 +6745,8 @@
    "Human",
    "Platelets"
   ],
-  "title": "Blood Cells"
+  "title": "Blood Cells",
+  "hasMaterialVersion": false
  },
  {
   "id": "enzyme",
@@ -6279,7 +6758,8 @@
    "Human",
    "Microscopic"
   ],
-  "title": "Enzyme"
+  "title": "Enzyme",
+  "hasMaterialVersion": false
  },
  {
   "id": "skeleton",
@@ -6293,7 +6773,8 @@
    "Skeletal System",
    "Skeleton"
   ],
-  "title": "Skeleton"
+  "title": "Skeleton",
+  "hasMaterialVersion": false
  },
  {
   "id": "skull",
@@ -6307,7 +6788,8 @@
    "Skeletal System",
    "Skeleton"
   ],
-  "title": "Skull"
+  "title": "Skull",
+  "hasMaterialVersion": false
  },
  {
   "id": "biochemistry_laboratory",
@@ -6318,7 +6800,8 @@
    "Laboratory",
    "Science"
   ],
-  "title": "Biochemistry Lab"
+  "title": "Biochemistry Lab",
+  "hasMaterialVersion": false
  },
  {
   "id": "bladder",
@@ -6329,7 +6812,8 @@
    "Urinary Tract",
    "Urine"
   ],
-  "title": "Bladder"
+  "title": "Bladder",
+  "hasMaterialVersion": false
  },
  {
   "id": "ears_nose_and_throat",
@@ -6340,7 +6824,8 @@
    "Nose",
    "Throat"
   ],
-  "title": "Ear Nose and Throat"
+  "title": "Ear Nose and Throat",
+  "hasMaterialVersion": false
  },
  {
   "id": "foot",
@@ -6353,7 +6838,8 @@
    "Podiatry",
    "Toe"
   ],
-  "title": "Foot"
+  "title": "Foot",
+  "hasMaterialVersion": false
  },
  {
   "id": "gallbladder",
@@ -6363,7 +6849,8 @@
    "Gallstone",
    "Organ"
   ],
-  "title": "Gallbladder"
+  "title": "Gallbladder",
+  "hasMaterialVersion": false
  },
  {
   "id": "lymph_nodes",
@@ -6373,7 +6860,8 @@
    "Lymphatic System",
    "Organ"
   ],
-  "title": "Lymph Node"
+  "title": "Lymph Node",
+  "hasMaterialVersion": false
  },
  {
   "id": "nerve",
@@ -6383,7 +6871,8 @@
    "Nervous System",
    "Pain"
   ],
-  "title": "Nerve"
+  "title": "Nerve",
+  "hasMaterialVersion": false
  },
  {
   "id": "sling",
@@ -6397,7 +6886,8 @@
    "Sprain",
    "Trauma"
   ],
-  "title": "Sling"
+  "title": "Sling",
+  "hasMaterialVersion": false
  },
  {
   "id": "sperm",
@@ -6408,7 +6898,8 @@
    "Pregnancy",
    "Reproductive System"
   ],
-  "title": "Sperm"
+  "title": "Sperm",
+  "hasMaterialVersion": false
  },
  {
   "id": "urology",
@@ -6417,7 +6908,8 @@
   "tags": [
    "Specialty"
   ],
-  "title": "Urology"
+  "title": "Urology",
+  "hasMaterialVersion": false
  },
  {
   "id": "nose",
@@ -6428,7 +6920,8 @@
    "Nostril",
    "Smell"
   ],
-  "title": "Nose"
+  "title": "Nose",
+  "hasMaterialVersion": false
  },
  {
   "id": "loss-smell",
@@ -6440,7 +6933,8 @@
    "Smell",
    "Symptom"
   ],
-  "title": "Loss of Smell"
+  "title": "Loss of Smell",
+  "hasMaterialVersion": false
  },
  {
   "id": "viral_lung_infection",
@@ -6455,7 +6949,8 @@
    "Symptom",
    "Virus"
   ],
-  "title": "Viral Lung Infection"
+  "title": "Viral Lung Infection",
+  "hasMaterialVersion": false
  },
  {
   "id": "virus-sanitizer-spray",
@@ -6469,7 +6964,8 @@
    "Safety",
    "Sanitizer"
   ],
-  "title": "PPE Virus Sanitizer Spray"
+  "title": "PPE Virus Sanitizer Spray",
+  "hasMaterialVersion": false
  },
  {
   "id": "virus-research",
@@ -6483,7 +6979,8 @@
    "Viral",
    "Virus"
   ],
-  "title": "Virus Research ALT"
+  "title": "Virus Research ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "virus_research_alt",
@@ -6498,7 +6995,8 @@
    "Viral",
    "Virus"
   ],
-  "title": "Virus Research"
+  "title": "Virus Research",
+  "hasMaterialVersion": false
  },
  {
   "id": "virus_lab_research_syringe",
@@ -6510,7 +7008,8 @@
    "Viral",
    "Virus"
   ],
-  "title": "Virus Lab Research"
+  "title": "Virus Lab Research",
+  "hasMaterialVersion": false
  },
  {
   "id": "virus_lab_research_test_tube",
@@ -6522,7 +7021,8 @@
    "Viral",
    "Virus"
   ],
-  "title": "Virus Lab Research ALT"
+  "title": "Virus Lab Research ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "liver-alt",
@@ -6531,7 +7031,8 @@
   "tags": [
    "Organ"
   ],
-  "title": "Liver ALT"
+  "title": "Liver ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "eyeglasses",
@@ -6545,7 +7046,8 @@
    "Optometrist",
    "Optometry"
   ],
-  "title": "Eyeglasses"
+  "title": "Eyeglasses",
+  "hasMaterialVersion": false
  },
  {
   "id": "patient_band_alt",
@@ -6557,7 +7059,8 @@
    "Identification",
    "Patient"
   ],
-  "title": "Patient Band ALT"
+  "title": "Patient Band ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "patient_band",
@@ -6569,7 +7072,8 @@
    "Identification",
    "Patient"
   ],
-  "title": "Patient Band"
+  "title": "Patient Band",
+  "hasMaterialVersion": false
  },
  {
   "id": "blood_vessel",
@@ -6581,7 +7085,8 @@
    "Hematology",
    "Vessel"
   ],
-  "title": "Blood Vessel"
+  "title": "Blood Vessel",
+  "hasMaterialVersion": false
  },
  {
   "id": "fruits",
@@ -6597,7 +7102,8 @@
    "Healthy",
    "Nutrition"
   ],
-  "title": "Fruits"
+  "title": "Fruits",
+  "hasMaterialVersion": false
  },
  {
   "id": "intestine",
@@ -6608,7 +7114,8 @@
    "Digestive System",
    "Intestine"
   ],
-  "title": "Intestine"
+  "title": "Intestine",
+  "hasMaterialVersion": false
  },
  {
   "id": "alcohol",
@@ -6626,7 +7133,8 @@
    "Glass",
    "Wine"
   ],
-  "title": "Alcohol"
+  "title": "Alcohol",
+  "hasMaterialVersion": false
  },
  {
   "id": "varicose_vein",
@@ -6642,7 +7150,8 @@
    "Vein",
    "Vessel"
   ],
-  "title": "Varicose Vein"
+  "title": "Varicose Vein",
+  "hasMaterialVersion": false
  },
  {
   "id": "sonography",
@@ -6660,7 +7169,8 @@
    "Test",
    "Testing"
   ],
-  "title": "Sonography"
+  "title": "Sonography",
+  "hasMaterialVersion": false
  },
  {
   "id": "sonogram",
@@ -6678,7 +7188,8 @@
    "Sonograph",
    "Sonography"
   ],
-  "title": "Sonogram"
+  "title": "Sonogram",
+  "hasMaterialVersion": false
  },
  {
   "id": "general_surgery",
@@ -6694,7 +7205,8 @@
    "Surgery",
    "Surgical"
   ],
-  "title": "Surgical Department"
+  "title": "Surgical Department",
+  "hasMaterialVersion": false
  },
  {
   "id": "pain",
@@ -6710,7 +7222,8 @@
    "Sore",
    "Trauma"
   ],
-  "title": "Pain"
+  "title": "Pain",
+  "hasMaterialVersion": false
  },
  {
   "id": "carbohydrates",
@@ -6725,7 +7238,8 @@
    "Nutrition",
    "Wheat"
   ],
-  "title": "Carbohydrates"
+  "title": "Carbohydrates",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe_sanitizer",
@@ -6736,7 +7250,8 @@
    "PPE",
    "dhis2:sanitizer"
   ],
-  "title": "PPE Sanitizer"
+  "title": "PPE Sanitizer",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe_mask_n95",
@@ -6747,7 +7262,8 @@
    "PPE",
    "dhis2:ppe_mask_n95"
   ],
-  "title": "PPE Mask N95"
+  "title": "PPE Mask N95",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe_gown",
@@ -6758,7 +7274,8 @@
    "Infection Control",
    "dhis2:ppe_gown"
   ],
-  "title": "PPE Gown"
+  "title": "PPE Gown",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe_gloves",
@@ -6771,7 +7288,8 @@
    "PPE",
    "dhis2:ppe_gloves"
   ],
-  "title": "PPE Gloves"
+  "title": "PPE Gloves",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe_face_mask",
@@ -6782,7 +7300,8 @@
    "PPE",
    "dhis2:ppe_face_mask"
   ],
-  "title": "PPE Face Mask"
+  "title": "PPE Face Mask",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe-mask",
@@ -6793,7 +7312,8 @@
    "PPE",
    "dhis2:ppe_mask"
   ],
-  "title": "PPE Surgical Mask"
+  "title": "PPE Surgical Mask",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe_face_shield",
@@ -6805,7 +7325,8 @@
    "Protection",
    "Safety"
   ],
-  "title": "PPE Face Shield"
+  "title": "PPE Face Shield",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe_goggles",
@@ -6819,7 +7340,8 @@
    "Protection",
    "Safety"
   ],
-  "title": "PPE Goggles"
+  "title": "PPE Goggles",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe_suit",
@@ -6831,7 +7353,8 @@
    "Protection",
    "Safety"
   ],
-  "title": "PPE Suit"
+  "title": "PPE Suit",
+  "hasMaterialVersion": false
  },
  {
   "id": "respirator",
@@ -6845,7 +7368,8 @@
    "Safety",
    "Virus"
   ],
-  "title": "PPE Respirator"
+  "title": "PPE Respirator",
+  "hasMaterialVersion": false
  },
  {
   "id": "disinfecting_wipes",
@@ -6857,7 +7381,8 @@
    "PPE",
    "Sanitation"
   ],
-  "title": "PPE Disinfecting Wipes"
+  "title": "PPE Disinfecting Wipes",
+  "hasMaterialVersion": false
  },
  {
   "id": "ppe-face-shield-alt",
@@ -6869,7 +7394,8 @@
    "Protection",
    "Safety"
   ],
-  "title": "PPE Face Shield ALT"
+  "title": "PPE Face Shield ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "hand-wipe-paper",
@@ -6885,7 +7411,8 @@
    "Towel",
    "Wipe"
   ],
-  "title": "Hand Wipe Paper"
+  "title": "Hand Wipe Paper",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart_bar",
@@ -6897,7 +7424,8 @@
    "Graph",
    "Visualization"
   ],
-  "title": "Bar Chart"
+  "title": "Bar Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart_bar_stacked",
@@ -6909,7 +7437,8 @@
    "Graph",
    "Visualization"
   ],
-  "title": "Split Bar Chart"
+  "title": "Split Bar Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart_line",
@@ -6922,7 +7451,8 @@
    "Node",
    "Visualization"
   ],
-  "title": "Line Chart"
+  "title": "Line Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart_line_stacked",
@@ -6935,7 +7465,8 @@
    "Node",
    "Visualization"
   ],
-  "title": "Double Line Chart"
+  "title": "Double Line Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart_pie",
@@ -6948,7 +7479,8 @@
    "Pie Chart",
    "Visualization"
   ],
-  "title": "Pie Chart"
+  "title": "Pie Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart-cured-decreasing",
@@ -6965,7 +7497,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Cured Decreasing Line Chart"
+  "title": "Cured Decreasing Line Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart-cured-increasing",
@@ -6982,7 +7515,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Cured Increasing Line Chart"
+  "title": "Cured Increasing Line Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart-death-rate-increasing",
@@ -6999,7 +7533,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Death Rate Decreasing Line Chart"
+  "title": "Death Rate Decreasing Line Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart-death-rate-decreasing",
@@ -7016,7 +7551,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Death Rate Increasing Line Chart"
+  "title": "Death Rate Increasing Line Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart-death-rate-stable",
@@ -7033,7 +7569,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Death Rate Stable Line Chart"
+  "title": "Death Rate Stable Line Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart-infected-decreasing",
@@ -7048,7 +7585,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Infected Decreasing Line Chart"
+  "title": "Infected Decreasing Line Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart-infected-increasing",
@@ -7063,7 +7601,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Infected Increasing Line Chart"
+  "title": "Infected Increasing Line Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "chart-infected-stable",
@@ -7080,7 +7619,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Infected Stable Line Chart"
+  "title": "Infected Stable Line Chart",
+  "hasMaterialVersion": false
  },
  {
   "id": "hot_meal",
@@ -7091,7 +7631,8 @@
    "Meal",
    "dhis2:hot_meal"
   ],
-  "title": "Hot Meal"
+  "title": "Hot Meal",
+  "hasMaterialVersion": false
  },
  {
   "id": "unhealthy_food",
@@ -7104,7 +7645,8 @@
    "Fried Food",
    "Nutrition"
   ],
-  "title": "Unhealthy Food"
+  "title": "Unhealthy Food",
+  "hasMaterialVersion": false
  },
  {
   "id": "swim",
@@ -7123,7 +7665,8 @@
    "Therapy",
    "Water"
   ],
-  "title": "Swimming"
+  "title": "Swimming",
+  "hasMaterialVersion": false
  },
  {
   "id": "walking",
@@ -7140,7 +7683,8 @@
    "Physiotherapy",
    "Walk"
   ],
-  "title": "Activity Walk"
+  "title": "Activity Walk",
+  "hasMaterialVersion": false
  },
  {
   "id": "running",
@@ -7157,7 +7701,8 @@
    "Physiotherapy",
    "Run"
   ],
-  "title": "Activity Run"
+  "title": "Activity Run",
+  "hasMaterialVersion": false
  },
  {
   "id": "weights",
@@ -7174,7 +7719,8 @@
    "Weightlifting",
    "Weights"
   ],
-  "title": "Activity Weights"
+  "title": "Activity Weights",
+  "hasMaterialVersion": false
  },
  {
   "id": "walk_supported",
@@ -7190,7 +7736,8 @@
    "Physiotherapy",
    "Walk"
   ],
-  "title": "Supported Walk"
+  "title": "Supported Walk",
+  "hasMaterialVersion": false
  },
  {
   "id": "toilet_paper",
@@ -7206,7 +7753,8 @@
    "Sanitation",
    "Toilet"
   ],
-  "title": "Toilet Paper"
+  "title": "Toilet Paper",
+  "hasMaterialVersion": false
  },
  {
   "id": "ultrasound_scanner",
@@ -7225,7 +7773,8 @@
    "Scan",
    "Ultrasound"
   ],
-  "title": "Ultrasound Device"
+  "title": "Ultrasound Device",
+  "hasMaterialVersion": false
  },
  {
   "id": "medical_sample",
@@ -7241,7 +7790,8 @@
    "Test",
    "Test tube"
   ],
-  "title": "Medical Sample"
+  "title": "Medical Sample",
+  "hasMaterialVersion": false
  },
  {
   "id": "breast_pump",
@@ -7260,7 +7810,8 @@
    "Parent",
    "Postnatal"
   ],
-  "title": "Breast Pump"
+  "title": "Breast Pump",
+  "hasMaterialVersion": false
  },
  {
   "id": "lactose",
@@ -7274,7 +7825,8 @@
    "Sodium",
    "Unhealthy"
   ],
-  "title": "Sodium"
+  "title": "Sodium",
+  "hasMaterialVersion": false
  },
  {
   "id": "sodium_free",
@@ -7288,7 +7840,8 @@
    "Salt",
    "Sodium"
   ],
-  "title": "Low Sodium"
+  "title": "Low Sodium",
+  "hasMaterialVersion": false
  },
  {
   "id": "pain_managment",
@@ -7302,7 +7855,8 @@
    "Pain",
    "Speciality"
   ],
-  "title": "Pain Management"
+  "title": "Pain Management",
+  "hasMaterialVersion": false
  },
  {
   "id": "exercise_bicycle",
@@ -7319,7 +7873,8 @@
    "Rehab",
    "Rehabilitation"
   ],
-  "title": "Exercise Bicycle"
+  "title": "Exercise Bicycle",
+  "hasMaterialVersion": false
  },
  {
   "id": "burn",
@@ -7334,7 +7889,8 @@
    "Hand",
    "Injury"
   ],
-  "title": "Burn"
+  "title": "Burn",
+  "hasMaterialVersion": false
  },
  {
   "id": "burn_unit",
@@ -7351,7 +7907,8 @@
    "Speciality",
    "Unit"
   ],
-  "title": "Burn Unit"
+  "title": "Burn Unit",
+  "hasMaterialVersion": false
  },
  {
   "id": "dairy",
@@ -7367,7 +7924,8 @@
    "Milk",
    "Nutrition"
   ],
-  "title": "Dairy"
+  "title": "Dairy",
+  "hasMaterialVersion": false
  },
  {
   "id": "lactose_free",
@@ -7385,7 +7943,8 @@
    "Milk",
    "Nutrition"
   ],
-  "title": "Dairy Free"
+  "title": "Dairy Free",
+  "hasMaterialVersion": false
  },
  {
   "id": "exercise_yoga",
@@ -7401,7 +7960,8 @@
    "Physiotherapy",
    "Therapy"
   ],
-  "title": "Yoga"
+  "title": "Yoga",
+  "hasMaterialVersion": false
  },
  {
   "id": "cpr",
@@ -7416,7 +7976,8 @@
    "Rescue",
    "Resuscitation"
   ],
-  "title": "CPR"
+  "title": "CPR",
+  "hasMaterialVersion": false
  },
  {
   "id": "baby_formula",
@@ -7432,7 +7993,8 @@
    "Mother",
    "Postnatal"
   ],
-  "title": "Baby Formula"
+  "title": "Baby Formula",
+  "hasMaterialVersion": false
  },
  {
   "id": "exercise",
@@ -7448,7 +8010,8 @@
    "Wellness",
    "dhis2:exercise"
   ],
-  "title": "Exercise"
+  "title": "Exercise",
+  "hasMaterialVersion": false
  },
  {
   "id": "vagina_alt",
@@ -7464,7 +8027,8 @@
    "Vagina",
    "Vulva"
   ],
-  "title": "Vulva"
+  "title": "Vulva",
+  "hasMaterialVersion": false
  },
  {
   "id": "penis_alt",
@@ -7478,7 +8042,8 @@
    "Organ",
    "Reproductive System"
   ],
-  "title": "Penis"
+  "title": "Penis",
+  "hasMaterialVersion": false
  },
  {
   "id": "penis",
@@ -7491,7 +8056,8 @@
    "Male",
    "Reproductive System"
   ],
-  "title": "Penis"
+  "title": "Penis",
+  "hasMaterialVersion": false
  },
  {
   "id": "testicles",
@@ -7507,7 +8073,8 @@
    "Reproductive System",
    "Scrotum"
   ],
-  "title": "Testicles"
+  "title": "Testicles",
+  "hasMaterialVersion": false
  },
  {
   "id": "chemical_burn",
@@ -7526,7 +8093,8 @@
    "Laboratory",
    "Test Tube"
   ],
-  "title": "Chemical Burn"
+  "title": "Chemical Burn",
+  "hasMaterialVersion": false
  },
  {
   "id": "pulse_oximeter_alt",
@@ -7540,7 +8108,8 @@
    "Oxygen",
    "Pulse"
   ],
-  "title": "Pulse Oximeter"
+  "title": "Pulse Oximeter",
+  "hasMaterialVersion": false
  },
  {
   "id": "pulse_oximeter",
@@ -7554,7 +8123,8 @@
    "Oxygen",
    "Pulse"
   ],
-  "title": "Pulse Oximeter"
+  "title": "Pulse Oximeter",
+  "hasMaterialVersion": false
  },
  {
   "id": "animal_rat",
@@ -7568,7 +8138,8 @@
    "Zoonoses",
    "Zoonotic Disease"
   ],
-  "title": "Rat"
+  "title": "Rat",
+  "hasMaterialVersion": false
  },
  {
   "id": "sugar",
@@ -7582,7 +8153,8 @@
    "Sugar",
    "Sweetener"
   ],
-  "title": "Sugar"
+  "title": "Sugar",
+  "hasMaterialVersion": false
  },
  {
   "id": "sugar_alt",
@@ -7598,7 +8170,8 @@
    "Sugar",
    "Sweetener"
   ],
-  "title": "Sugar"
+  "title": "Sugar",
+  "hasMaterialVersion": false
  },
  {
   "id": "animal_pig",
@@ -7612,7 +8185,8 @@
    "Zoonoses",
    "Zoonotic Disease"
   ],
-  "title": "Pig"
+  "title": "Pig",
+  "hasMaterialVersion": false
  },
  {
   "id": "animal_bat",
@@ -7624,7 +8198,8 @@
    "Zoonoses",
    "Zoonotic Disease"
   ],
-  "title": "Bat"
+  "title": "Bat",
+  "hasMaterialVersion": false
  },
  {
   "id": "alcohol_cessation",
@@ -7639,7 +8214,8 @@
    "Reduction",
    "Wine"
   ],
-  "title": "No Alcohol"
+  "title": "No Alcohol",
+  "hasMaterialVersion": false
  },
  {
   "id": "gluten",
@@ -7653,7 +8229,8 @@
    "Nutrition",
    "Wheat"
   ],
-  "title": "Gluten"
+  "title": "Gluten",
+  "hasMaterialVersion": false
  },
  {
   "id": "gluten_free",
@@ -7667,7 +8244,8 @@
    "Nutrition",
    "Wheat"
   ],
-  "title": "Gluten Free"
+  "title": "Gluten Free",
+  "hasMaterialVersion": false
  },
  {
   "id": "crisis_response_center_person",
@@ -7685,7 +8263,8 @@
    "Statistics",
    "Worker"
   ],
-  "title": "Emergency Operations Person"
+  "title": "Emergency Operations Person",
+  "hasMaterialVersion": false
  },
  {
   "id": "emergency_operations_center",
@@ -7699,7 +8278,8 @@
    "Response",
    "Satellite"
   ],
-  "title": "Emergency Operations Center"
+  "title": "Emergency Operations Center",
+  "hasMaterialVersion": false
  },
  {
   "id": "animal_spider",
@@ -7715,7 +8295,8 @@
    "Zoonoses",
    "Zoonotic Diseases"
   ],
-  "title": "Spider"
+  "title": "Spider",
+  "hasMaterialVersion": false
  },
  {
   "id": "animal_tick",
@@ -7727,7 +8308,8 @@
    "Insect",
    "Zoonotic Diseases"
   ],
-  "title": "Tick"
+  "title": "Tick",
+  "hasMaterialVersion": false
  },
  {
   "id": "animal_chicken",
@@ -7742,7 +8324,8 @@
    "Zoonoses",
    "Zoonotic Disease"
   ],
-  "title": "Chicken"
+  "title": "Chicken",
+  "hasMaterialVersion": false
  },
  {
   "id": "medicine_mortar",
@@ -7757,7 +8340,8 @@
    "Pestle",
    "Pharmacy"
   ],
-  "title": "Mortar and Pestle"
+  "title": "Mortar and Pestle",
+  "hasMaterialVersion": false
  },
  {
   "id": "medicine_bottle",
@@ -7772,7 +8356,8 @@
    "Pharmacy",
    "Prescription"
   ],
-  "title": "Medicine Container"
+  "title": "Medicine Container",
+  "hasMaterialVersion": false
  },
  {
   "id": "asthma_inhaler",
@@ -7790,7 +8375,8 @@
    "Pump",
    "Respiratory System"
   ],
-  "title": "Inhaler"
+  "title": "Inhaler",
+  "hasMaterialVersion": false
  },
  {
   "id": "hearing_aid",
@@ -7804,7 +8390,8 @@
    "Ear",
    "Hearing"
   ],
-  "title": "Hearing Aid"
+  "title": "Hearing Aid",
+  "hasMaterialVersion": false
  },
  {
   "id": "crutches",
@@ -7818,7 +8405,8 @@
    "Rehab",
    "Rehabilitation"
   ],
-  "title": "Crutch"
+  "title": "Crutch",
+  "hasMaterialVersion": false
  },
  {
   "id": "cane",
@@ -7838,7 +8426,8 @@
    "Walker",
    "Walking"
   ],
-  "title": "Cane"
+  "title": "Cane",
+  "hasMaterialVersion": false
  },
  {
   "id": "test_tubes",
@@ -7850,7 +8439,8 @@
    "Test Tube",
    "Vial"
   ],
-  "title": "Test tubes"
+  "title": "Test tubes",
+  "hasMaterialVersion": false
  },
  {
   "id": "anus",
@@ -7864,7 +8454,8 @@
    "Intestinal System",
    "Intestine"
   ],
-  "title": "Anus"
+  "title": "Anus",
+  "hasMaterialVersion": false
  },
  {
   "id": "vascular_surgery",
@@ -7878,7 +8469,8 @@
    "Surgery",
    "Vascular system"
   ],
-  "title": "Vascular Surgery"
+  "title": "Vascular Surgery",
+  "hasMaterialVersion": false
  },
  {
   "id": "stent",
@@ -7895,7 +8487,8 @@
    "Surgery",
    "Vein"
   ],
-  "title": "Stent"
+  "title": "Stent",
+  "hasMaterialVersion": false
  },
  {
   "id": "vagina",
@@ -7912,7 +8505,8 @@
    "Vagina",
    "Vulva"
   ],
-  "title": "Vagina"
+  "title": "Vagina",
+  "hasMaterialVersion": false
  },
  {
   "id": "pancreatic_cancer",
@@ -7929,7 +8523,8 @@
    "Pancreatic",
    "Tumor"
   ],
-  "title": "Pancreatic Cancer"
+  "title": "Pancreatic Cancer",
+  "hasMaterialVersion": false
  },
  {
   "id": "pancreas",
@@ -7942,7 +8537,8 @@
    "Organ",
    "Pancreatic"
   ],
-  "title": "Pancreas"
+  "title": "Pancreas",
+  "hasMaterialVersion": false
  },
  {
   "id": "prostate_cancer",
@@ -7957,7 +8553,8 @@
    "Prostate",
    "Tumor"
   ],
-  "title": "Prostate Cancer"
+  "title": "Prostate Cancer",
+  "hasMaterialVersion": false
  },
  {
   "id": "prostate",
@@ -7969,7 +8566,8 @@
    "Organ",
    "Prostate"
   ],
-  "title": "Prostate"
+  "title": "Prostate",
+  "hasMaterialVersion": false
  },
  {
   "id": "stomach_cancer",
@@ -7985,7 +8583,8 @@
    "Organ",
    "Tumor"
   ],
-  "title": "Stomach Cancer"
+  "title": "Stomach Cancer",
+  "hasMaterialVersion": false
  },
  {
   "id": "stomach",
@@ -7997,7 +8596,8 @@
    "Intestine",
    "Organ"
   ],
-  "title": "Stomach"
+  "title": "Stomach",
+  "hasMaterialVersion": true
  },
  {
   "id": "cancerous_cell_nuclei",
@@ -8010,7 +8610,8 @@
    "Nucleus",
    "Tumor"
   ],
-  "title": "Cancerous Cell Nuclei"
+  "title": "Cancerous Cell Nuclei",
+  "hasMaterialVersion": false
  },
  {
   "id": "cell_nuclei",
@@ -8022,7 +8623,8 @@
    "Chromatin",
    "Ribosomes"
   ],
-  "title": "Cell Nuclei"
+  "title": "Cell Nuclei",
+  "hasMaterialVersion": false
  },
  {
   "id": "cochlear_implant",
@@ -8038,7 +8640,8 @@
    "Sound",
    "Speech"
   ],
-  "title": "Cochlear Implant"
+  "title": "Cochlear Implant",
+  "hasMaterialVersion": false
  },
  {
   "id": "urine_sample",
@@ -8053,7 +8656,8 @@
    "Liquid",
    "Sample"
   ],
-  "title": "Urine Sample"
+  "title": "Urine Sample",
+  "hasMaterialVersion": false
  },
  {
   "id": "insurance_card",
@@ -8070,7 +8674,8 @@
    "Payment",
    "User"
   ],
-  "title": "Insurance Card"
+  "title": "Insurance Card",
+  "hasMaterialVersion": false
  },
  {
   "id": "head",
@@ -8088,7 +8693,8 @@
    "Patient",
    "Skull"
   ],
-  "title": "Head"
+  "title": "Head",
+  "hasMaterialVersion": false
  },
  {
   "id": "colon",
@@ -8103,7 +8709,8 @@
    "Intestine",
    "Organ"
   ],
-  "title": "Colon"
+  "title": "Colon",
+  "hasMaterialVersion": false
  },
  {
   "id": "orthotics",
@@ -8117,7 +8724,8 @@
    "Insole",
    "Support"
   ],
-  "title": "Orthotics"
+  "title": "Orthotics",
+  "hasMaterialVersion": false
  },
  {
   "id": "thyroid",
@@ -8130,7 +8738,8 @@
    "Neck",
    "Thyroid"
   ],
-  "title": "Thyroid"
+  "title": "Thyroid",
+  "hasMaterialVersion": false
  },
  {
   "id": "animal_snake",
@@ -8146,7 +8755,8 @@
    "Zoonoses",
    "Zoonotic Disease"
   ],
-  "title": "Snake"
+  "title": "Snake",
+  "hasMaterialVersion": false
  },
  {
   "id": "laptop",
@@ -8162,7 +8772,8 @@
    "Medicine",
    "Technology"
   ],
-  "title": "Laptop"
+  "title": "Laptop",
+  "hasMaterialVersion": false
  },
  {
   "id": "animal_cow",
@@ -8176,7 +8787,8 @@
    "Zoonoses",
    "Zoonotic Diseases"
   ],
-  "title": "Cow"
+  "title": "Cow",
+  "hasMaterialVersion": false
  },
  {
   "id": "breasts",
@@ -8192,7 +8804,8 @@
    "Mother",
    "Nipple"
   ],
-  "title": "Breasts"
+  "title": "Breasts",
+  "hasMaterialVersion": false
  },
  {
   "id": "endotracheal_tube",
@@ -8209,7 +8822,8 @@
    "Trachea",
    "Vocal cords"
   ],
-  "title": "Endotracheal Tube"
+  "title": "Endotracheal Tube",
+  "hasMaterialVersion": false
  },
  {
   "id": "laryngoscope",
@@ -8225,7 +8839,8 @@
    "Video",
    "Vocal cords"
   ],
-  "title": "Laryngoscope"
+  "title": "Laryngoscope",
+  "hasMaterialVersion": false
  },
  {
   "id": "yes",
@@ -8238,7 +8853,8 @@
    "Yes",
    "dhis2:yes"
   ],
-  "title": "Checkmark"
+  "title": "Checkmark",
+  "hasMaterialVersion": false
  },
  {
   "id": "un_paved_road",
@@ -8250,7 +8866,8 @@
    "Road",
    "dhis2:unpaved_road"
   ],
-  "title": "Unpaved Road"
+  "title": "Unpaved Road",
+  "hasMaterialVersion": false
  },
  {
   "id": "tally",
@@ -8263,7 +8880,8 @@
    "Math",
    "Register"
   ],
-  "title": "Tally"
+  "title": "Tally",
+  "hasMaterialVersion": false
  },
  {
   "id": "stop",
@@ -8276,7 +8894,8 @@
    "Warning",
    "dhis2:stop"
   ],
-  "title": "Stop"
+  "title": "Stop",
+  "hasMaterialVersion": false
  },
  {
   "id": "excel_logo",
@@ -8287,7 +8906,8 @@
    "Logo",
    "Spreadsheet"
   ],
-  "title": "Excel"
+  "title": "Excel",
+  "hasMaterialVersion": false
  },
  {
   "id": "openMRS_logo",
@@ -8299,7 +8919,8 @@
    "Logo",
    "Open Medical Records System"
   ],
-  "title": "OpenMRS"
+  "title": "OpenMRS",
+  "hasMaterialVersion": false
  },
  {
   "id": "water_treatment",
@@ -8311,7 +8932,8 @@
    "Water",
    "dhis2:water_treatment"
   ],
-  "title": "Water Treatment"
+  "title": "Water Treatment",
+  "hasMaterialVersion": false
  },
  {
   "id": "social_distancing",
@@ -8325,7 +8947,8 @@
    "Space",
    "dhis2:social_distancing"
   ],
-  "title": "Social Distancing"
+  "title": "Social Distancing",
+  "hasMaterialVersion": false
  },
  {
   "id": "discharge",
@@ -8337,7 +8960,8 @@
    "Exit",
    "Hospital"
   ],
-  "title": "Discharge"
+  "title": "Discharge",
+  "hasMaterialVersion": false
  },
  {
   "id": "pharmacy",
@@ -8351,7 +8975,8 @@
    "Pharmacy",
    "Pills"
   ],
-  "title": "Pharmacy"
+  "title": "Pharmacy",
+  "hasMaterialVersion": false
  },
  {
   "id": "pharmacy_alt",
@@ -8365,7 +8990,8 @@
    "Pharmacy",
    "Pills"
   ],
-  "title": "Pharmacy"
+  "title": "Pharmacy",
+  "hasMaterialVersion": false
  },
  {
   "id": "simple_logo",
@@ -8377,7 +9003,8 @@
    "Health IT",
    "Open Source"
   ],
-  "title": "Simple.org"
+  "title": "Simple.org",
+  "hasMaterialVersion": false
  },
  {
   "id": "transgender",
@@ -8391,7 +9018,8 @@
    "Transgender",
    "dhis2:transgender"
   ],
-  "title": "Transgender"
+  "title": "Transgender",
+  "hasMaterialVersion": false
  },
  {
   "id": "assembly_point",
@@ -8402,7 +9030,8 @@
    "Navigation",
    "Wayfinding"
   ],
-  "title": "Assembly Point"
+  "title": "Assembly Point",
+  "hasMaterialVersion": false
  },
  {
   "id": "guide_dog",
@@ -8414,7 +9043,8 @@
    "Service Animal",
    "Sight"
   ],
-  "title": "Guide Dog"
+  "title": "Guide Dog",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_zoom_in",
@@ -8425,7 +9055,8 @@
    "Navigation",
    "User Interface"
   ],
-  "title": "UI Zoom In"
+  "title": "UI Zoom In",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_zoom_out",
@@ -8436,7 +9067,8 @@
    "Navigation",
    "User Interface"
   ],
-  "title": "UI Zoom Out"
+  "title": "UI Zoom Out",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_zoom",
@@ -8449,7 +9081,8 @@
    "Search",
    "User Interface"
   ],
-  "title": "UI Zoom"
+  "title": "UI Zoom",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_settings",
@@ -8460,7 +9093,8 @@
    "Preferences",
    "User Interface"
   ],
-  "title": "Settings"
+  "title": "Settings",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_secure",
@@ -8472,7 +9106,8 @@
    "Security",
    "User Interface"
   ],
-  "title": "Secure"
+  "title": "Secure",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_preferences",
@@ -8483,7 +9118,8 @@
    "Settings",
    "User Interface"
   ],
-  "title": "Preferences"
+  "title": "Preferences",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_folder_family",
@@ -8495,7 +9131,8 @@
    "Navigation",
    "User Interface"
   ],
-  "title": "UI Family Folder"
+  "title": "UI Family Folder",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_folder",
@@ -8507,7 +9144,8 @@
    "Navigation",
    "User Interface"
   ],
-  "title": "UI Folder"
+  "title": "UI Folder",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_menu",
@@ -8517,7 +9155,8 @@
    "Navigation",
    "User Interface"
   ],
-  "title": "UI Menu"
+  "title": "UI Menu",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_menu_grid",
@@ -8527,7 +9166,8 @@
    "Navigation",
    "User Interface"
   ],
-  "title": "UI Menu Grid"
+  "title": "UI Menu Grid",
+  "hasMaterialVersion": false
  },
  {
   "id": "database",
@@ -8539,7 +9179,8 @@
    "Database",
    "Storage"
   ],
-  "title": "Database"
+  "title": "Database",
+  "hasMaterialVersion": false
  },
  {
   "id": "ui_user_profile",
@@ -8549,7 +9190,8 @@
    "Navigation",
    "User Interface"
   ],
-  "title": "UI User Profile"
+  "title": "UI User Profile",
+  "hasMaterialVersion": false
  },
  {
   "id": "network_5g",
@@ -8563,7 +9205,8 @@
    "Speed",
    "dhis2:5g"
   ],
-  "title": "Network 5G"
+  "title": "Network 5G",
+  "hasMaterialVersion": false
  },
  {
   "id": "network_4g",
@@ -8578,7 +9221,8 @@
    "Speed",
    "dhis2:4g"
   ],
-  "title": "Network 4G"
+  "title": "Network 4G",
+  "hasMaterialVersion": false
  },
  {
   "id": "medium_bars",
@@ -8592,7 +9236,8 @@
    "Speed",
    "dhis2:medium_bars"
   ],
-  "title": "Network Medium Bars"
+  "title": "Network Medium Bars",
+  "hasMaterialVersion": false
  },
  {
   "id": "low_bars",
@@ -8606,7 +9251,8 @@
    "Speed",
    "dhis2:low_bars"
   ],
-  "title": "Network Low Bars"
+  "title": "Network Low Bars",
+  "hasMaterialVersion": false
  },
  {
   "id": "high_bars",
@@ -8620,7 +9266,8 @@
    "Speed",
    "dhis2:high_bars"
   ],
-  "title": "Network High Bars"
+  "title": "Network High Bars",
+  "hasMaterialVersion": false
  },
  {
   "id": "3g",
@@ -8634,7 +9281,8 @@
    "Speed",
    "dhis2:3g"
   ],
-  "title": "Network 3G"
+  "title": "Network 3G",
+  "hasMaterialVersion": false
  },
  {
   "id": "2g",
@@ -8648,7 +9296,8 @@
    "Speed",
    "dhis2:2g"
   ],
-  "title": "Network 2G"
+  "title": "Network 2G",
+  "hasMaterialVersion": false
  },
  {
   "id": "home-quarantine",
@@ -8661,7 +9310,8 @@
    "Quarantine",
    "Virus"
   ],
-  "title": "Quarantine Home"
+  "title": "Quarantine Home",
+  "hasMaterialVersion": false
  },
  {
   "id": "calendar-quarantine",
@@ -8674,7 +9324,8 @@
    "Quarantine",
    "Virus"
   ],
-  "title": "Calendar Quarantine"
+  "title": "Calendar Quarantine",
+  "hasMaterialVersion": false
  },
  {
   "id": "social_distancing_alt",
@@ -8687,7 +9338,8 @@
    "Social Distance",
    "Space"
   ],
-  "title": "Social Distancing ALT"
+  "title": "Social Distancing ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "virus-shield",
@@ -8699,7 +9351,8 @@
    "Vaccine",
    "Virus"
   ],
-  "title": "Shield Virus"
+  "title": "Shield Virus",
+  "hasMaterialVersion": false
  },
  {
   "id": "virus_alt",
@@ -8714,7 +9367,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Virus ALT"
+  "title": "Virus ALT",
+  "hasMaterialVersion": false
  },
  {
   "id": "virus_patient",
@@ -8730,7 +9384,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Patient Virus"
+  "title": "Patient Virus",
+  "hasMaterialVersion": false
  },
  {
   "id": "global-pandemic",
@@ -8743,7 +9398,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Global Pandemic"
+  "title": "Global Pandemic",
+  "hasMaterialVersion": false
  },
  {
   "id": "globe",
@@ -8755,7 +9411,8 @@
    "Location",
    "World"
   ],
-  "title": "Globe"
+  "title": "Globe",
+  "hasMaterialVersion": false
  },
  {
   "id": "virus-mutation",
@@ -8771,7 +9428,8 @@
    "Virology",
    "Virus"
   ],
-  "title": "Virus Mutation"
+  "title": "Virus Mutation",
+  "hasMaterialVersion": false
  },
  {
   "id": "fingerprint",
@@ -8786,7 +9444,8 @@
    "Scan",
    "identification"
   ],
-  "title": "Fingerprint"
+  "title": "Fingerprint",
+  "hasMaterialVersion": false
  },
  {
   "id": "palliative-care",
@@ -8797,7 +9456,8 @@
    "Hearts",
    "Palliative Care"
   ],
-  "title": "Palliative Care"
+  "title": "Palliative Care",
+  "hasMaterialVersion": false
  },
  {
   "id": "hospice",
@@ -8808,7 +9468,8 @@
    "Hospital",
    "Palliative Care"
   ],
-  "title": "Hospice"
+  "title": "Hospice",
+  "hasMaterialVersion": false
  },
  {
   "id": "FHIR_logo",
@@ -8822,7 +9483,8 @@
    "Logo",
    "Standards"
   ],
-  "title": "FHIR"
+  "title": "FHIR",
+  "hasMaterialVersion": false
  },
  {
   "id": "interoperability",
@@ -8838,7 +9500,8 @@
    "Technology",
    "Terminology"
   ],
-  "title": "Interoperability"
+  "title": "Interoperability",
+  "hasMaterialVersion": false
  },
  {
   "id": "medical_search",
@@ -8854,7 +9517,8 @@
    "Search",
    "Zoom"
   ],
-  "title": "Medical Search"
+  "title": "Medical Search",
+  "hasMaterialVersion": false
  },
  {
   "id": "lab_search",
@@ -8870,7 +9534,8 @@
    "Search",
    "Test tube"
   ],
-  "title": "Lab Search"
+  "title": "Lab Search",
+  "hasMaterialVersion": false
  },
  {
   "id": "secure_communication",
@@ -8888,7 +9553,8 @@
    "Speech",
    "Talk"
   ],
-  "title": "Chat Secure"
+  "title": "Chat Secure",
+  "hasMaterialVersion": false
  },
  {
   "id": "smoking_cessation_alt",
@@ -8902,7 +9568,8 @@
    "Tobacco",
    "Unhealthy"
   ],
-  "title": "No Smoking"
+  "title": "No Smoking",
+  "hasMaterialVersion": false
  },
  {
   "id": "cancel",
@@ -8916,7 +9583,8 @@
    "Stop",
    "Symbol"
   ],
-  "title": "Cancel"
+  "title": "Cancel",
+  "hasMaterialVersion": false
  },
  {
   "id": "telemedicine",
@@ -8929,7 +9597,8 @@
    "Meeting",
    "Virtual"
   ],
-  "title": "Telemedicine"
+  "title": "Telemedicine",
+  "hasMaterialVersion": false
  },
  {
   "id": "heartbeat",
@@ -8946,7 +9615,8 @@
    "Stroke",
    "Symbol"
   ],
-  "title": "Heartbeat"
+  "title": "Heartbeat",
+  "hasMaterialVersion": false
  },
  {
   "id": "qr_code",
@@ -8961,7 +9631,8 @@
    "Quick Response Code",
    "Scan"
   ],
-  "title": "QR Code"
+  "title": "QR Code",
+  "hasMaterialVersion": false
  },
  {
   "id": "icd",
@@ -8975,7 +9646,8 @@
    "Terminology",
    "WHO"
   ],
-  "title": "ICD"
+  "title": "ICD",
+  "hasMaterialVersion": false
  },
  {
   "id": "icd_11",
@@ -8989,7 +9661,8 @@
    "Terminology",
    "WHO"
   ],
-  "title": "ICD 11"
+  "title": "ICD 11",
+  "hasMaterialVersion": false
  },
  {
   "id": "icd_10",
@@ -9003,7 +9676,8 @@
    "Terminology",
    "WHO"
   ],
-  "title": "ICD 10"
+  "title": "ICD 10",
+  "hasMaterialVersion": false
  },
  {
   "id": "icd_9",
@@ -9017,7 +9691,8 @@
    "Terminology",
    "WHO"
   ],
-  "title": "ICD 9"
+  "title": "ICD 9",
+  "hasMaterialVersion": false
  },
  {
   "id": "height",
@@ -9034,7 +9709,8 @@
    "Short",
    "Tall"
   ],
-  "title": "Height"
+  "title": "Height",
+  "hasMaterialVersion": false
  },
  {
   "id": "waist_circumference",
@@ -9052,7 +9728,8 @@
    "Underweight",
    "Waist"
   ],
-  "title": "Waist Circumference"
+  "title": "Waist Circumference",
+  "hasMaterialVersion": false
  },
  {
   "id": "head_circumference",
@@ -9066,7 +9743,8 @@
    "Patient",
    "Skull"
   ],
-  "title": "Head Circumference"
+  "title": "Head Circumference",
+  "hasMaterialVersion": false
  },
  {
   "id": "arm_circumference",
@@ -9079,7 +9757,8 @@
    "Measure",
    "Patient"
   ],
-  "title": "Arm Circumference"
+  "title": "Arm Circumference",
+  "hasMaterialVersion": false
  },
  {
   "id": "healthcare_it",
@@ -9095,7 +9774,8 @@
    "Medicine",
    "Technology"
   ],
-  "title": "Health IT"
+  "title": "Health IT",
+  "hasMaterialVersion": false
  },
  {
   "id": "body_mass_index",
@@ -9113,7 +9793,8 @@
    "Underweight",
    "Waist"
   ],
-  "title": "Body Mass Index"
+  "title": "Body Mass Index",
+  "hasMaterialVersion": false
  },
  {
   "id": "loinc",
@@ -9127,7 +9808,8 @@
    "Standard",
    "Terminology"
   ],
-  "title": "LOINC"
+  "title": "LOINC",
+  "hasMaterialVersion": false
  },
  {
   "id": "bio_pharma",
@@ -9142,7 +9824,8 @@
    "Medicine",
    "Pharmacology"
   ],
-  "title": "Biopharma"
+  "title": "Biopharma",
+  "hasMaterialVersion": false
  },
  {
   "id": "female",
@@ -9156,7 +9839,8 @@
    "Symbol",
    "Woman"
   ],
-  "title": "Female symbol"
+  "title": "Female symbol",
+  "hasMaterialVersion": false
  },
  {
   "id": "male",
@@ -9170,7 +9854,8 @@
    "Sign",
    "Symbol"
   ],
-  "title": "Male symbol"
+  "title": "Male symbol",
+  "hasMaterialVersion": false
  },
  {
   "id": "artificial_intelligence",
@@ -9187,7 +9872,8 @@
    "Optimize",
    "Sparkle"
   ],
-  "title": "Artificial intelligence"
+  "title": "Artificial intelligence",
+  "hasMaterialVersion": false
  },
  {
   "id": "magic_wand",
@@ -9204,6 +9890,46 @@
    "Optimize",
    "Sparkle"
   ],
-  "title": "Magic Wand"
+  "title": "Magic Wand",
+  "hasMaterialVersion": false
+ },
+ {
+  "id": "triangle_inverted_small",
+  "category": "shapes",
+  "path": "shapes/triangle_inverted_small",
+  "tags": [
+   "Bullet",
+   "Medication monitoring",
+   "Shape",
+   "Triangle"
+  ],
+  "title": "Triangle Small Inverted",
+  "hasMaterialVersion": false
+ },
+ {
+  "id": "triangle_inverted_medium",
+  "category": "shapes",
+  "path": "shapes/triangle_inverted_medium",
+  "tags": [
+   "Bullet",
+   "Medication monitoring",
+   "Shape",
+   "Triangle"
+  ],
+  "title": "Triangle Medium Inverted",
+  "hasMaterialVersion": false
+ },
+ {
+  "id": "triangle_inverted_large",
+  "category": "shapes",
+  "path": "shapes/triangle_inverted_large",
+  "tags": [
+   "Bullet",
+   "Medication monitoring",
+   "Shape",
+   "Triangle"
+  ],
+  "title": "Triangle Large Inverted",
+  "hasMaterialVersion": false
  }
 ]
