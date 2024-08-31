@@ -3,11 +3,10 @@ import { useRouter } from 'next/router';
 import { useSelector, useDispatch } from 'react-redux';
 import classnames from 'classnames';
 import { RootState } from '../store';
-import { setStyle, setKeywords } from '../store/search';
+import { setStyle, setKeywords, setFormat } from '../store/search';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
 import { CategoryHeading } from './CategoryHeading';
-import { CategoryDropdown } from './CategoryDropdown';
 import IconGrid from './IconGrid';
 import { IconTileModal } from './IconTileModal';
 import styles from '../pages/index.module.scss';
@@ -37,10 +36,11 @@ export default function LandingPage({
   const searchStyleValue = useSelector(
     (state: RootState) => state.search.style
   );
-  const searchCategoryValue = useSelector(
-    (state: RootState) => state.search.category
+  const searchFormatValue = useSelector(
+    (state: RootState) => state.search.format
   );
-  const isFiltered = searchKeywordsValue || searchCategoryValue;
+
+  const isFiltered = searchKeywordsValue || searchFormatValue !== 'all';
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
   const router = useRouter();
 
@@ -75,11 +75,12 @@ export default function LandingPage({
   const iconsToRender = useMemo(() => {
     if (isFiltered) {
       const filteredIcons: Icon[] = [];
-      const filteredCategories = searchCategoryValue
+      /*const filteredCategories = searchCategoryValue
         ? categories.filter((c) => c.title === searchCategoryValue)
         : categories;
+        */
 
-      filteredCategories.forEach((c) => {
+      categories.forEach((c) => {
         c.icons.forEach((i) => {
           if (
             searchKeywords(
@@ -87,14 +88,20 @@ export default function LandingPage({
               i.tags.concat([i.title, c.title]).join(', ')
             )
           ) {
-            filteredIcons.push(i);
+            if (searchFormatValue === 'material') {
+              if (i.hasMaterialVersion) {
+                filteredIcons.push(i);
+              }
+            } else {
+              filteredIcons.push(i);
+            }
           }
         });
       });
       return filteredIcons;
     }
     return [];
-  }, [searchKeywordsValue, searchCategoryValue, isFiltered, categories]);
+  }, [searchKeywordsValue, searchFormatValue, isFiltered, categories]);
 
   const totalIconCount = categories.reduce((counter, c) => {
     return counter + c.icons.length;
@@ -125,7 +132,28 @@ export default function LandingPage({
               />
             </label>
 
-            <CategoryDropdown categories={categories} />
+            <div className={styles.styleToggleContainer}>
+              <button
+                className={classnames(styles.styleToggle, {
+                  [styles.styleToggleSelected]: searchFormatValue === 'all'
+                })}
+                onClick={() => {
+                  dispatch(setFormat('all'));
+                }}
+              >
+                All
+              </button>
+              <button
+                className={classnames(styles.styleToggle, {
+                  [styles.styleToggleSelected]: searchFormatValue === 'material'
+                })}
+                onClick={() => {
+                  dispatch(setFormat('material'));
+                }}
+              >
+                Material
+              </button>
+            </div>
 
             <div className={styles.styleToggleContainer}>
               <button

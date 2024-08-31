@@ -53,7 +53,7 @@ async function getIcons(dirName: string): Promise<Icon[]> {
         tags: currentFileMetaData?.tags || [],
         id,
         category: dirName,
-        hasMaterialVersion: currentFileMetaData.hasMaterialVersion
+        hasMaterialVersion: currentFileMetaData?.hasMaterialVersion
       };
     })
   );

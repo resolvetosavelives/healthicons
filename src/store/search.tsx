@@ -1,17 +1,20 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export type SearchStyle = 'outline' | 'filled' | 'all';
+export type Format = 'all' | 'material' | 'normal';
 
 export interface SearchState {
   keywords: string;
   style: SearchStyle;
   category: string;
+  format: Format;
 }
 
 const initialState: SearchState = {
   keywords: '',
   style: 'all',
-  category: ''
+  category: '',
+  format: 'all'
 };
 
 export const searchSlice = createSlice({
@@ -26,10 +29,14 @@ export const searchSlice = createSlice({
     },
     setCategory: (state, action: PayloadAction<string>) => {
       state.category = action.payload;
+    },
+    setFormat: (state, action: PayloadAction<Format>) => {
+      state.format = action.payload;
     }
   }
 });
 
-export const { setKeywords, setStyle, setCategory } = searchSlice.actions;
+export const { setKeywords, setStyle, setCategory, setFormat } =
+  searchSlice.actions;
 
 export default searchSlice.reducer;
