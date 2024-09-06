@@ -66,10 +66,10 @@ function verifyNameIsUnique(components, category, name) {
   }
 }
 
-function hasMaterialVersion(components, name) {
+function has24pxVersion(components, name) {
   return (
-    styleExists(components, name, 'filled-material') &&
-    styleExists(components, name, 'outline-material')
+    styleExists(components, name, 'filled-24px') &&
+    styleExists(components, name, 'outline-24px')
   );
 }
 
@@ -126,7 +126,7 @@ client.file(figmaFilename).then(({ data }) => {
         path: `${component.category}/${component.name}`,
         tags: metaData.tags,
         title: metaData.title,
-        hasMaterialVersion: hasMaterialVersion(allComponents, component.name)
+        has24pxVersion: has24pxVersion(allComponents, component.name)
       });
     } else {
       verifyStyleExists(allComponents, component.name, 'filled');

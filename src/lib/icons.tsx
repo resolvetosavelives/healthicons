@@ -20,7 +20,7 @@ export interface Icon {
   category: string;
   title: string;
   tags: string[];
-  hasMaterialVersion: boolean;
+  has24pxVersion: boolean;
 }
 
 export async function getCategoriesAndIcons(): Promise<Category[]> {
@@ -53,7 +53,7 @@ async function getIcons(dirName: string): Promise<Icon[]> {
         tags: currentFileMetaData?.tags || [],
         id,
         category: dirName,
-        hasMaterialVersion: currentFileMetaData?.hasMaterialVersion
+        has24pxVersion: currentFileMetaData?.has24pxVersion || false
       };
     })
   );

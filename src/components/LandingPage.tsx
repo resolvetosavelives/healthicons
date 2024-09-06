@@ -88,8 +88,8 @@ export default function LandingPage({
               i.tags.concat([i.title, c.title]).join(', ')
             )
           ) {
-            if (searchFormatValue === 'material') {
-              if (i.hasMaterialVersion) {
+            if (searchFormatValue === '24px') {
+              if (i.has24pxVersion) {
                 filteredIcons.push(i);
               }
             } else {
@@ -141,17 +141,17 @@ export default function LandingPage({
                   dispatch(setFormat('all'));
                 }}
               >
-                All
+                48px
               </button>
               <button
                 className={classnames(styles.styleToggle, {
-                  [styles.styleToggleSelected]: searchFormatValue === 'material'
+                  [styles.styleToggleSelected]: searchFormatValue === '24px'
                 })}
                 onClick={() => {
-                  dispatch(setFormat('material'));
+                  dispatch(setFormat('24px'));
                 }}
               >
-                Material
+                24px
               </button>
             </div>
 
@@ -194,6 +194,7 @@ export default function LandingPage({
             icons={iconsToRender}
             setModalIcon={setModalIcon}
             style={searchStyleValue}
+            format={searchFormatValue}
           />
         ) : (
           categories.map((c, categoryIndex) => (
@@ -203,6 +204,7 @@ export default function LandingPage({
                 icons={c.icons}
                 setModalIcon={setModalIcon}
                 style={searchStyleValue}
+                format={searchFormatValue}
                 key={c.title}
               />
             </div>
