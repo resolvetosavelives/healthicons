@@ -54,7 +54,7 @@ export function IconTileModal(props: IconTileModalProps) {
               <span>96px PNG</span>
             </a>
           </div>
-          {props.icon.has24pxVersion && (
+          {props.icon.formats.includes('24px') && (
             <>
               <div className={styles.modalLabel}>24px Version</div>
               <div className={styles.modal24pxVersions}>

@@ -60,7 +60,7 @@ export function IconTile(props: IconTileProps) {
       )}
       <div className={styles.iconTitle}>
         {props.icon.title}
-        {props.icon.has24pxVersion && <span> (24px)</span>}
+        {props.icon.formats.includes('24px') && <span> (24px)</span>}
       </div>
     </div>
   );

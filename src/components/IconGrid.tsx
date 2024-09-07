@@ -1,6 +1,6 @@
 import { IconTile } from './IconTile';
-import { Icon } from '../lib/icons';
-import { SearchStyle, SearchFormat } from '../store/search';
+import { Icon, IconFormat } from '../lib/icons';
+import { SearchStyle } from '../store/search';
 import { ModalIcon } from './LandingPage';
 import styles from '../pages/index.module.scss';
 import { Dispatch, SetStateAction } from 'react';
@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 interface IconGridProps {
   icons: Icon[];
   style: SearchStyle;
-  format: SearchFormat;
+  format: IconFormat;
   setModalIcon: Dispatch<SetStateAction<ModalIcon>>;
 }
 

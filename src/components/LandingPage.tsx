@@ -40,7 +40,7 @@ export default function LandingPage({
     (state: RootState) => state.search.format
   );
 
-  const isFiltered = searchKeywordsValue || searchFormatValue !== 'all';
+  const isFiltered = searchKeywordsValue || searchFormatValue;
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
   const router = useRouter();
 
@@ -89,7 +89,8 @@ export default function LandingPage({
             )
           ) {
             if (searchFormatValue === '24px') {
-              if (i.has24pxVersion) {
+              console.log(i.formats);
+              if (i.formats.includes('24px')) {
                 filteredIcons.push(i);
               }
             } else {
@@ -131,30 +132,6 @@ export default function LandingPage({
                 onChange={(e) => dispatch(setKeywords(e.target.value))}
               />
             </label>
-
-            <div className={styles.styleToggleContainer}>
-              <button
-                className={classnames(styles.styleToggle, {
-                  [styles.styleToggleSelected]: searchFormatValue === 'all'
-                })}
-                onClick={() => {
-                  dispatch(setFormat('all'));
-                }}
-              >
-                48px
-              </button>
-              <button
-                className={classnames(styles.styleToggle, {
-                  [styles.styleToggleSelected]: searchFormatValue === '24px'
-                })}
-                onClick={() => {
-                  dispatch(setFormat('24px'));
-                }}
-              >
-                24px
-              </button>
-            </div>
-
             <div className={styles.styleToggleContainer}>
               <button
                 className={classnames(styles.styleToggle, {
@@ -185,6 +162,28 @@ export default function LandingPage({
                 }}
               >
                 Outline
+              </button>
+            </div>
+            <div className={styles.styleToggleContainer}>
+              <button
+                className={classnames(styles.styleToggle, {
+                  [styles.styleToggleSelected]: searchFormatValue === '48px'
+                })}
+                onClick={() => {
+                  dispatch(setFormat('48px'));
+                }}
+              >
+                48px
+              </button>
+              <button
+                className={classnames(styles.styleToggle, {
+                  [styles.styleToggleSelected]: searchFormatValue === '24px'
+                })}
+                onClick={() => {
+                  dispatch(setFormat('24px'));
+                }}
+              >
+                24px
               </button>
             </div>
           </div>

@@ -2,6 +2,7 @@ import config from '../config';
 import * as Figma from 'figma-js';
 import { promises as fs } from 'fs';
 import startCase from 'lodash.startcase';
+import { IconFormat } from '../lib/icons';
 import path from 'path';
 // import cliProgress from 'cli-progress';
 
@@ -126,7 +127,9 @@ client.file(figmaFilename).then(({ data }) => {
         path: `${component.category}/${component.name}`,
         tags: metaData.tags,
         title: metaData.title,
-        has24pxVersion: has24pxVersion(allComponents, component.name)
+        formats: has24pxVersion(allComponents, component.name)
+          ? (['24px', '48px'] as IconFormat[])
+          : (['48px'] as IconFormat[])
       });
     } else {
       verifyStyleExists(allComponents, component.name, 'filled');
