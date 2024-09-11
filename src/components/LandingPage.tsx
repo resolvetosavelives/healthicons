@@ -40,7 +40,6 @@ export default function LandingPage({
     (state: RootState) => state.search.format
   );
 
-  const isFiltered = searchKeywordsValue || searchFormatValue;
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
   const router = useRouter();
 
@@ -73,36 +72,44 @@ export default function LandingPage({
   }, [categories, router.asPath]);
 
   const iconsToRender = useMemo(() => {
-    if (isFiltered) {
-      const filteredIcons: Icon[] = [];
-      /*const filteredCategories = searchCategoryValue
-        ? categories.filter((c) => c.title === searchCategoryValue)
-        : categories;
-        */
+    const filteredIcons: Icon[] = [];
 
-      categories.forEach((c) => {
-        c.icons.forEach((i) => {
-          if (
-            searchKeywords(
-              searchKeywordsValue,
-              i.tags.concat([i.title, c.title]).join(', ')
-            )
-          ) {
-            if (searchFormatValue === '24px') {
-              console.log(i.formats);
-              if (i.formats.includes('24px')) {
-                filteredIcons.push(i);
-              }
-            } else {
-              filteredIcons.push(i);
-            }
-          }
-        });
+    categories.forEach((c) => {
+      c.icons.forEach((i) => {
+        if (
+          searchKeywords(
+            searchKeywordsValue,
+            i.tags.concat([i.title, c.title]).join(', ')
+          ) &&
+          i.formats.includes(searchFormatValue)
+        ) {
+          filteredIcons.push(i);
+        }
       });
-      return filteredIcons;
-    }
-    return [];
-  }, [searchKeywordsValue, searchFormatValue, isFiltered, categories]);
+    });
+    return filteredIcons;
+  }, [searchKeywordsValue, searchFormatValue, categories]);
+
+  const categoriesToRender = useMemo(() => {
+    const filteredCategories: Category[] = [];
+
+    categories.forEach((c) => {
+      const filteredIcons: Icon[] = [];
+      c.icons.forEach((i) => {
+        if (i.formats.includes(searchFormatValue)) {
+          filteredIcons.push(i);
+        }
+      });
+
+      if (filteredIcons.length > 0) {
+        const filteredCategory: Category = c;
+        filteredCategory.icons = filteredIcons;
+        filteredCategories.push(c);
+      }
+    });
+
+    return filteredCategories;
+  }, [searchFormatValue, categories]);
 
   const totalIconCount = categories.reduce((counter, c) => {
     return counter + c.icons.length;
@@ -188,7 +195,7 @@ export default function LandingPage({
             </div>
           </div>
         </div>
-        {isFiltered ? (
+        {searchKeywordsValue ? (
           <IconGrid
             icons={iconsToRender}
             setModalIcon={setModalIcon}
@@ -196,7 +203,7 @@ export default function LandingPage({
             format={searchFormatValue}
           />
         ) : (
-          categories.map((c, categoryIndex) => (
+          categoriesToRender.map((c, categoryIndex) => (
             <div key={categoryIndex}>
               <CategoryHeading>{c.title}</CategoryHeading>
               <IconGrid
