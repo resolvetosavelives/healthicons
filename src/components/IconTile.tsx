@@ -2,14 +2,14 @@ import classnames from 'classnames';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 import styles from './IconTile.module.scss';
-import { Icon } from '../lib/icons';
-import { SearchStyle, SearchFormat } from '../store/search';
+import { Icon, IconFormat } from '../lib/icons';
+import { SearchStyle } from '../store/search';
 
 interface IconTileProps {
   icon: Icon;
   visible: boolean;
   iconStyle: SearchStyle;
-  iconFormat: SearchFormat;
+  iconFormat: IconFormat;
   onClick: (type: string) => void;
 }
 
@@ -60,7 +60,9 @@ export function IconTile(props: IconTileProps) {
       )}
       <div className={styles.iconTitle}>
         {props.icon.title}
-        {props.icon.formats.includes('24px') && <span> (24px)</span>}
+        {props.icon.formats.includes('24px') && props.iconFormat !== '24px' && (
+          <span> (24px)</span>
+        )}
       </div>
     </div>
   );
