@@ -77,14 +77,14 @@ export function IconTileModal(props: IconTileModalProps) {
                   download={`${props.icon.id}-24px.png`}
                   className={styles.modalButton}
                 >
-                  <span>48px PNG</span>
+                  <span>24px PNG</span>
                 </a>
                 <a
                   href={`/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}@2x.png`}
                   download={`${props.icon.id}-24px@2x.png`}
                   className={styles.modalButton}
                 >
-                  <span>96px PNG</span>
+                  <span>48px PNG</span>
                 </a>
               </div>
             </>
