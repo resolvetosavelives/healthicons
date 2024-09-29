@@ -171,7 +171,7 @@ export default function LandingPage({
                 Outline
               </button>
             </div>
-            <div className={styles.styleToggleContainer}>
+            <div className={styles.sizeToggleContainer}>
               <button
                 className={classnames(styles.styleToggle, {
                   [styles.styleToggleSelected]: searchFormatValue === '48px'
