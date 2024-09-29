@@ -61,8 +61,8 @@ export function IconTileModal(props: IconTileModalProps) {
                 <img
                   src={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
                   className={styles.modal24pxImage}
-                  width="48"
-                  height="48"
+                  width="24"
+                  height="24"
                   alt=""
                 />
                 <a
