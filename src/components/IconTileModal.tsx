@@ -28,9 +28,9 @@ export function IconTileModal(props: IconTileModalProps) {
             height="96"
             alt=""
           />
-          <div className={styles.modalLabel}>Icon</div>
           <div className={styles.modalTitle}>{props.icon.title}</div>
 
+          <div className={styles.modalLabel}>Standard (48px grid)</div>
           <div className={styles.modalButtons}>
             <a
               href={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
@@ -56,15 +56,15 @@ export function IconTileModal(props: IconTileModalProps) {
           </div>
           {props.icon.formats.includes('24px') && (
             <>
-              <div className={styles.modalLabel}>24px Version</div>
+              <img
+                src={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
+                className={styles.modal24pxImage}
+                width="24"
+                height="24"
+                alt=""
+              />
+              <div className={styles.modalLabel}>Small version (24px grid)</div>
               <div className={styles.modal24pxVersions}>
-                <img
-                  src={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
-                  className={styles.modal24pxImage}
-                  width="24"
-                  height="24"
-                  alt=""
-                />
                 <a
                   href={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
                   download={`${props.icon.id}-24px.svg`}

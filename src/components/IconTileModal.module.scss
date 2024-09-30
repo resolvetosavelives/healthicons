@@ -75,13 +75,6 @@
   font-size: 10px;
 }
 
-.modal24pxImage {
-  position: absolute;
-  left: 90px;
-  width: 24px;
-  height: auto;
-}
-
 .modalTitle {
   font-size: 1.4rem;
   font-weight: bold;
@@ -113,6 +106,10 @@
   font-size: 0.8rem;
 }
 
+.modal24pxImage {
+  margin: 16px 0;
+}
+
 @media (min-width: 60rem) {
   .modalWrapper {
     max-height: none;
@@ -135,5 +132,12 @@
     top: 4rem;
     margin: 0;
     width: 96px;
+  }
+
+  .modal24pxImage {
+    position: absolute;
+    left: 90px;
+    width: 24px;
+    height: auto;
   }
 }
