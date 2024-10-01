@@ -8,7 +8,6 @@ interface HomeProps {
 }
 
 export default function Home({ categories }: HomeProps) {
-  console.log(categories);
   return (
     <>
       <HeadTags />
