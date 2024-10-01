@@ -64,15 +64,12 @@
   transition: background-color ease-in-out 0.15s;
   white-space: nowrap;
   display: inline-block;
+  font-size: 0.8rem;
 
   &:hover {
     background-color: var(--link-color-dark);
     text-decoration: none;
   }
-}
-
-.modal24pxVersions {
-  font-size: 10px;
 }
 
 .modalTitle {
@@ -108,6 +105,10 @@
 
 .modal24pxImage {
   margin: 16px 0;
+}
+
+.modalTagsSection {
+  margin-top: 2rem;
 }
 
 @media (min-width: 60rem) {

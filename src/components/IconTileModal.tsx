@@ -30,7 +30,7 @@ export function IconTileModal(props: IconTileModalProps) {
           />
           <div className={styles.modalTitle}>{props.icon.title}</div>
 
-          <div className={styles.modalLabel}>Standard (48px grid)</div>
+          <div className={styles.modalLabel}>Standard version (48px grid)</div>
           <div className={styles.modalButtons}>
             <a
               href={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
@@ -91,14 +91,14 @@ export function IconTileModal(props: IconTileModalProps) {
           )}
 
           {props.icon.tags.length > 0 && (
-            <>
+            <div className={styles.modalTagsSection}>
               <div className={styles.modalLabel}>Tags</div>
               <div className={styles.modalTags}>
                 {props.icon.tags.map((tag) => (
                   <span key={tag}>{tag}</span>
                 ))}
               </div>
-            </>
+            </div>
           )}
         </>
         <div className={styles.modalLabel}>Filename</div>
