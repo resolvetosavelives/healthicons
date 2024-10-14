@@ -203,6 +203,10 @@ https://healthicons.org/icon/filled/diagnostics/rdt_result_positive
 https://healthicons.org/icon/filled/diagnostics/rdt_result_pv_rectangular
 https://healthicons.org/icon/filled/diagnostics/rdt_result_pv
 https://healthicons.org/icon/filled/diagnostics/rdt_result_pv_invalid_rectangular
+https://healthicons.org/icon/filled/diagnostics/rdt_result-1
+https://healthicons.org/icon/filled/diagnostics/rdt_result_invalid-1
+https://healthicons.org/icon/filled/diagnostics/rdt_result_pf-1
+https://healthicons.org/icon/filled/diagnostics/rdt_result_positive-1
 https://healthicons.org/icon/filled/diagnostics/synergist_insecticide_bioassays
 https://healthicons.org/icon/filled/emotions/angry
 https://healthicons.org/icon/filled/emotions/bandaged
