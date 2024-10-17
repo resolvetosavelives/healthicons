@@ -569,6 +569,7 @@
   ],
   "title": "Pill 4",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -587,6 +588,7 @@
   ],
   "title": "Pill 3",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -605,6 +607,7 @@
   ],
   "title": "Pill 2",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -623,6 +626,7 @@
   ],
   "title": "Pill 1",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1175,6 +1179,7 @@
   ],
   "title": "Weight Scale",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1212,6 +1217,7 @@
   ],
   "title": "Syringe",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1246,6 +1252,7 @@
   ],
   "title": "Stethoscope",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1339,6 +1346,7 @@
   ],
   "title": "Microscope",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1354,6 +1362,7 @@
   ],
   "title": "Male Condom",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1370,6 +1379,7 @@
   ],
   "title": "Intrauterine Device",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1446,6 +1456,7 @@
   ],
   "title": "Female Condom",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1463,6 +1474,7 @@
   ],
   "title": "Family Planning",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1493,6 +1505,7 @@
   ],
   "title": "Contraceptive Diaphragm",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1526,6 +1539,7 @@
   ],
   "title": "Blood Bag",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1559,6 +1573,7 @@
   ],
   "title": "Tooth",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1619,6 +1634,7 @@
   ],
   "title": "DNA",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1649,6 +1665,7 @@
   ],
   "title": "No Smoking ALT",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2105,6 +2122,7 @@
   ],
   "title": "Hospital Symbol",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2290,6 +2308,7 @@
   ],
   "title": "Glucometer",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2352,6 +2371,7 @@
   ],
   "title": "Death Alt",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2434,6 +2454,7 @@
   ],
   "title": "Clinical Document",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2465,6 +2486,7 @@
   ],
   "title": "Cervical Cancer",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2496,6 +2518,7 @@
   ],
   "title": "Cardiogram",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2951,6 +2974,7 @@
   ],
   "title": "Village",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2968,6 +2992,7 @@
   ],
   "title": "Ministry of Health",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -3011,6 +3036,7 @@
   ],
   "title": "Wheelchair ALT",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -3027,6 +3053,7 @@
   ],
   "title": "Intravenous Bag",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -3559,6 +3586,7 @@
   ],
   "title": "Ear",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4512,6 +4540,7 @@
   ],
   "title": "Rural Clinic",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4529,6 +4558,7 @@
   ],
   "title": "Clinic",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4724,6 +4754,7 @@
   ],
   "title": "Justice",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5316,6 +5347,7 @@
   ],
   "title": "PPE Apron",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5387,6 +5419,7 @@
   ],
   "title": "Liver",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5479,6 +5512,7 @@
   ],
   "title": "Eye",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5494,6 +5528,7 @@
   ],
   "title": "X-ray",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5509,6 +5544,7 @@
   ],
   "title": "Mouth",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5540,6 +5576,7 @@
   ],
   "title": "Joints",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5558,6 +5595,7 @@
   ],
   "title": "Rural Post ALT",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5740,6 +5778,7 @@
   ],
   "title": "Mosquito",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5786,6 +5825,7 @@
   ],
   "title": "Body",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5942,6 +5982,7 @@
   ],
   "title": "Person",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5995,6 +6036,7 @@
   ],
   "title": "Baby 2-3 Months",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -6218,6 +6260,7 @@
   ],
   "title": "Pregnant",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -6235,6 +6278,7 @@
   ],
   "title": "Overweight",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -6665,6 +6709,7 @@
   ],
   "title": "Fetus",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -6856,6 +6901,7 @@
   ],
   "title": "Underweight",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -6875,6 +6921,7 @@
   ],
   "title": "Training",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7002,6 +7049,7 @@
   ],
   "title": "Woman",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7099,6 +7147,7 @@
   ],
   "title": "Blood Pressure Monitor",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7393,6 +7442,7 @@
   ],
   "title": "Pneumonia",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7782,6 +7832,7 @@
   ],
   "title": "Bladder",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7882,6 +7933,7 @@
   ],
   "title": "Sperm",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7908,6 +7960,7 @@
   ],
   "title": "Nose",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8282,6 +8335,7 @@
   ],
   "title": "PPE Sanitizer",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8296,6 +8350,7 @@
   ],
   "title": "PPE Mask N95",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8340,6 +8395,7 @@
   ],
   "title": "PPE Face Mask",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8354,6 +8410,7 @@
   ],
   "title": "PPE Surgical Mask",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8401,6 +8458,7 @@
   ],
   "title": "PPE Suit",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8433,6 +8491,7 @@
   ],
   "title": "PPE Disinfecting Wipes",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -9621,6 +9680,7 @@
   ],
   "title": "Test tubes",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -10613,6 +10673,7 @@
   ],
   "title": "Quarantine Home",
   "formats": [
+   "24px",
    "48px"
   ]
  },
