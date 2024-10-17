@@ -1679,6 +1679,7 @@
   ],
   "title": "Smoking",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4524,6 +4525,7 @@
   ],
   "title": "Field Hospital",
   "formats": [
+   "24px",
    "48px"
   ]
  },
