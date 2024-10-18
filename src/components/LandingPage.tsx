@@ -71,10 +71,11 @@ export default function LandingPage({
     }
   }, [categories, router.asPath]);
 
-  const iconsToRender = useMemo(() => {
-    const filteredIcons: Icon[] = [];
+  const categoriesToRender = useMemo(() => {
+    const filteredCategories: Category[] = [];
 
     categories.forEach((c) => {
+      const filteredIcons: Icon[] = [];
       c.icons.forEach((i) => {
         if (
           searchKeywords(
@@ -86,30 +87,16 @@ export default function LandingPage({
           filteredIcons.push(i);
         }
       });
-    });
-    return filteredIcons;
-  }, [searchKeywordsValue, searchFormatValue, categories]);
-
-  const categoriesToRender = useMemo(() => {
-    const filteredCategories: Category[] = [];
-
-    categories.forEach((c) => {
-      const filteredIcons: Icon[] = [];
-      c.icons.forEach((i) => {
-        if (i.formats.includes(searchFormatValue)) {
-          filteredIcons.push(i);
-        }
-      });
 
       if (filteredIcons.length > 0) {
-        const filteredCategory: Category = c;
+        const filteredCategory: Category = structuredClone(c);
         filteredCategory.icons = filteredIcons;
-        filteredCategories.push(c);
+        filteredCategories.push(filteredCategory);
       }
     });
 
     return filteredCategories;
-  }, [searchFormatValue, categories]);
+  }, [searchFormatValue, categories, searchKeywordsValue]);
 
   const totalIconCount = categories.reduce((counter, c) => {
     return counter + c.icons.length;
@@ -197,7 +184,13 @@ export default function LandingPage({
         </div>
         {searchKeywordsValue ? (
           <IconGrid
-            icons={iconsToRender}
+            icons={categoriesToRender
+              .map((i) => i.icons)
+              .flat()
+              .sort((i1, i2) => {
+                // show all icons without categories and sorted A-Z
+                return i1.title < i2.title ? -1 : i1.title > i2.title ? 1 : 0;
+              })}
             setModalIcon={setModalIcon}
             style={searchStyleValue}
             format={searchFormatValue}
