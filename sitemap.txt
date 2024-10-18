@@ -145,7 +145,6 @@ https://healthicons.org/icon/filled/devices/orthotics
 https://healthicons.org/icon/filled/devices/oxygen_tank
 https://healthicons.org/icon/filled/devices/patient_band
 https://healthicons.org/icon/filled/devices/patient_band_alt
-https://healthicons.org/icon/filled/devices/ppe_apron
 https://healthicons.org/icon/filled/devices/ppe_santizer_alt
 https://healthicons.org/icon/filled/devices/virus-sanitizer-spray
 https://healthicons.org/icon/filled/devices/pulse_oximeter_alt
@@ -414,6 +413,7 @@ https://healthicons.org/icon/filled/places/temple
 https://healthicons.org/icon/filled/places/temple_alt
 https://healthicons.org/icon/filled/places/village
 https://healthicons.org/icon/filled/ppe/hand-wipe-paper
+https://healthicons.org/icon/filled/ppe/ppe_apron
 https://healthicons.org/icon/filled/ppe/disinfecting_wipes
 https://healthicons.org/icon/filled/ppe/ppe_face_mask
 https://healthicons.org/icon/filled/ppe/ppe_face_shield
@@ -437,8 +437,11 @@ https://healthicons.org/icon/filled/shapes/star_large
 https://healthicons.org/icon/filled/shapes/star_medium
 https://healthicons.org/icon/filled/shapes/star_small
 https://healthicons.org/icon/filled/shapes/triangle_large
+https://healthicons.org/icon/filled/shapes/triangle_inverted_large
 https://healthicons.org/icon/filled/shapes/triangle_medium
+https://healthicons.org/icon/filled/shapes/triangle_inverted_medium
 https://healthicons.org/icon/filled/shapes/triangle_small
+https://healthicons.org/icon/filled/shapes/triangle_inverted_small
 https://healthicons.org/icon/filled/specialties/accident_and_emergency
 https://healthicons.org/icon/filled/specialties/admissions
 https://healthicons.org/icon/filled/specialties/biochemistry_laboratory
