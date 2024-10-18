@@ -37,9 +37,10 @@ export function IconTile(props: IconTileProps) {
               alt={`${props.icon.title} outline icon`}
               effect="opacity"
             />
-            {props.icon.formats.includes('24px') && props.iconFormat !== '24px' && (
-              <span className={styles.iconSize}>24px</span>
-            )}
+            {props.icon.formats.includes('24px') &&
+              props.iconFormat !== '24px' && (
+                <span className={styles.iconSize}>24px</span>
+              )}
           </div>
         </button>
       )}
@@ -58,15 +59,14 @@ export function IconTile(props: IconTileProps) {
               alt={`${props.icon.title} outline icon`}
               effect="opacity"
             />
-            {props.icon.formats.includes('24px') && props.iconFormat !== '24px' && (
-              <span className={styles.iconSize}>24px</span>
-            )}
+            {props.icon.formats.includes('24px') &&
+              props.iconFormat !== '24px' && (
+                <span className={styles.iconSize}>24px</span>
+              )}
           </div>
         </button>
       )}
-      <div className={styles.iconTitle}>
-        {props.icon.title}
-      </div>
+      <div className={styles.iconTitle}>{props.icon.title}</div>
     </div>
   );
 }
