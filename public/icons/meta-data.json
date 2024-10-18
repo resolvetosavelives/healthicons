@@ -5339,8 +5339,8 @@
  },
  {
   "id": "ppe_apron",
-  "category": "devices",
-  "path": "devices/ppe_apron",
+  "category": "ppe",
+  "path": "ppe/ppe_apron",
   "tags": [
    "Apron",
    "Clothing",
