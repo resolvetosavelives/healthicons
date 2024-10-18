@@ -145,7 +145,6 @@ https://healthicons.org/icon/filled/devices/orthotics
 https://healthicons.org/icon/filled/devices/oxygen_tank
 https://healthicons.org/icon/filled/devices/patient_band
 https://healthicons.org/icon/filled/devices/patient_band_alt
-https://healthicons.org/icon/filled/devices/ppe_apron
 https://healthicons.org/icon/filled/devices/ppe_santizer_alt
 https://healthicons.org/icon/filled/devices/virus-sanitizer-spray
 https://healthicons.org/icon/filled/devices/pulse_oximeter_alt
@@ -203,10 +202,6 @@ https://healthicons.org/icon/filled/diagnostics/rdt_result_positive
 https://healthicons.org/icon/filled/diagnostics/rdt_result_pv_rectangular
 https://healthicons.org/icon/filled/diagnostics/rdt_result_pv
 https://healthicons.org/icon/filled/diagnostics/rdt_result_pv_invalid_rectangular
-https://healthicons.org/icon/filled/diagnostics/rdt_result-1
-https://healthicons.org/icon/filled/diagnostics/rdt_result_invalid-1
-https://healthicons.org/icon/filled/diagnostics/rdt_result_pf-1
-https://healthicons.org/icon/filled/diagnostics/rdt_result_positive-1
 https://healthicons.org/icon/filled/diagnostics/synergist_insecticide_bioassays
 https://healthicons.org/icon/filled/emotions/angry
 https://healthicons.org/icon/filled/emotions/bandaged
@@ -418,6 +413,7 @@ https://healthicons.org/icon/filled/places/temple
 https://healthicons.org/icon/filled/places/temple_alt
 https://healthicons.org/icon/filled/places/village
 https://healthicons.org/icon/filled/ppe/hand-wipe-paper
+https://healthicons.org/icon/filled/ppe/ppe_apron
 https://healthicons.org/icon/filled/ppe/disinfecting_wipes
 https://healthicons.org/icon/filled/ppe/ppe_face_mask
 https://healthicons.org/icon/filled/ppe/ppe_face_shield
