@@ -23,11 +23,27 @@
   border-radius: 5px;
   opacity: 0.8;
   transition: border-color ease-in-out 0.2s, opacity ease-in-out 0.2s;
+  position: relative;
 
   img {
     width: 56px;
     height: 56px;
   }
+}
+
+.iconSize {
+  background: coral;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  font-size: 0.6rem;
+  color: white;
+  width: 40px;
+  border-radius: 100px;
+  margin-left: -20px;
+  display: block;
+  padding: 2px 0;
+  display: block;
 }
 
 .iconItem:hover {

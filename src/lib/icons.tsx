@@ -15,11 +15,14 @@ export interface Category {
   icons: Icon[];
 }
 
+export type IconFormat = '48px' | '24px';
+
 export interface Icon {
   id: string;
   category: string;
   title: string;
   tags: string[];
+  formats: IconFormat[];
 }
 
 export async function getCategoriesAndIcons(): Promise<Category[]> {
@@ -51,7 +54,8 @@ async function getIcons(dirName: string): Promise<Icon[]> {
         title: currentFileMetaData?.title || id,
         tags: currentFileMetaData?.tags || [],
         id,
-        category: dirName
+        category: dirName,
+        formats: (currentFileMetaData?.formats as IconFormat[]) || ['48px']
       };
     })
   );

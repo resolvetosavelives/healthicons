@@ -2,6 +2,7 @@ import config from '../config';
 import * as Figma from 'figma-js';
 import { promises as fs } from 'fs';
 import startCase from 'lodash.startcase';
+import { IconFormat } from '../lib/icons';
 import path from 'path';
 // import cliProgress from 'cli-progress';
 
@@ -44,12 +45,14 @@ function getMetadataFromDescription(name: string, description: string) {
       };
 }
 
+function styleExists(components, name, style) {
+  return components.some((c) => {
+    return c.name === name && c.style === style;
+  });
+}
+
 function verifyStyleExists(components, name, style) {
-  if (
-    !components.some((c) => {
-      return c.name === name && c.style === style;
-    })
-  ) {
+  if (!styleExists(components, name, style)) {
     console.log(` ⚠️ Missing ${style} version of: ${name}`);
   }
 }
@@ -62,6 +65,13 @@ function verifyNameIsUnique(components, category, name) {
   if (matches.length !== 1) {
     console.log(` ⚠️ More than one component is named: ${name}`);
   }
+}
+
+function has24pxVersion(components, name) {
+  return (
+    styleExists(components, name, 'filled-24px') &&
+    styleExists(components, name, 'outline-24px')
+  );
 }
 
 console.log('🔎 Reading data from Figma');
@@ -116,7 +126,10 @@ client.file(figmaFilename).then(({ data }) => {
         category: component.category,
         path: `${component.category}/${component.name}`,
         tags: metaData.tags,
-        title: metaData.title
+        title: metaData.title,
+        formats: has24pxVersion(allComponents, component.name)
+          ? (['24px', '48px'] as IconFormat[])
+          : (['48px'] as IconFormat[])
       });
     } else {
       verifyStyleExists(allComponents, component.name, 'filled');
