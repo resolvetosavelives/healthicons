@@ -3,11 +3,10 @@ import { useRouter } from 'next/router';
 import { useSelector, useDispatch } from 'react-redux';
 import classnames from 'classnames';
 import { RootState } from '../store';
-import { setStyle, setKeywords } from '../store/search';
+import { setStyle, setKeywords, setFormat } from '../store/search';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
 import { CategoryHeading } from './CategoryHeading';
-import { CategoryDropdown } from './CategoryDropdown';
 import IconGrid from './IconGrid';
 import { IconTileModal } from './IconTileModal';
 import styles from '../pages/index.module.scss';
@@ -37,10 +36,10 @@ export default function LandingPage({
   const searchStyleValue = useSelector(
     (state: RootState) => state.search.style
   );
-  const searchCategoryValue = useSelector(
-    (state: RootState) => state.search.category
+  const searchFormatValue = useSelector(
+    (state: RootState) => state.search.format
   );
-  const isFiltered = searchKeywordsValue || searchCategoryValue;
+
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
   const router = useRouter();
 
@@ -72,29 +71,32 @@ export default function LandingPage({
     }
   }, [categories, router.asPath]);
 
-  const iconsToRender = useMemo(() => {
-    if (isFiltered) {
-      const filteredIcons: Icon[] = [];
-      const filteredCategories = searchCategoryValue
-        ? categories.filter((c) => c.title === searchCategoryValue)
-        : categories;
+  const categoriesToRender = useMemo(() => {
+    const filteredCategories: Category[] = [];
 
-      filteredCategories.forEach((c) => {
-        c.icons.forEach((i) => {
-          if (
-            searchKeywords(
-              searchKeywordsValue,
-              i.tags.concat([i.title, c.title]).join(', ')
-            )
-          ) {
-            filteredIcons.push(i);
-          }
-        });
+    categories.forEach((c) => {
+      const filteredIcons: Icon[] = [];
+      c.icons.forEach((i) => {
+        if (
+          searchKeywords(
+            searchKeywordsValue,
+            i.tags.concat([i.title, c.title]).join(', ')
+          ) &&
+          i.formats.includes(searchFormatValue)
+        ) {
+          filteredIcons.push(i);
+        }
       });
-      return filteredIcons;
-    }
-    return [];
-  }, [searchKeywordsValue, searchCategoryValue, isFiltered, categories]);
+
+      if (filteredIcons.length > 0) {
+        const filteredCategory: Category = structuredClone(c);
+        filteredCategory.icons = filteredIcons;
+        filteredCategories.push(filteredCategory);
+      }
+    });
+
+    return filteredCategories;
+  }, [searchFormatValue, categories, searchKeywordsValue]);
 
   const totalIconCount = categories.reduce((counter, c) => {
     return counter + c.icons.length;
@@ -124,9 +126,6 @@ export default function LandingPage({
                 onChange={(e) => dispatch(setKeywords(e.target.value))}
               />
             </label>
-
-            <CategoryDropdown categories={categories} />
-
             <div className={styles.styleToggleContainer}>
               <button
                 className={classnames(styles.styleToggle, {
@@ -159,22 +158,52 @@ export default function LandingPage({
                 Outline
               </button>
             </div>
+            <div className={styles.sizeToggleContainer}>
+              <button
+                className={classnames(styles.styleToggle, {
+                  [styles.styleToggleSelected]: searchFormatValue === '48px'
+                })}
+                onClick={() => {
+                  dispatch(setFormat('48px'));
+                }}
+              >
+                48px
+              </button>
+              <button
+                className={classnames(styles.styleToggle, {
+                  [styles.styleToggleSelected]: searchFormatValue === '24px'
+                })}
+                onClick={() => {
+                  dispatch(setFormat('24px'));
+                }}
+              >
+                24px
+              </button>
+            </div>
           </div>
         </div>
-        {isFiltered ? (
+        {searchKeywordsValue ? (
           <IconGrid
-            icons={iconsToRender}
+            icons={categoriesToRender
+              .map((i) => i.icons)
+              .flat()
+              .sort((i1, i2) => {
+                // show all icons without categories and sorted A-Z
+                return i1.title < i2.title ? -1 : i1.title > i2.title ? 1 : 0;
+              })}
             setModalIcon={setModalIcon}
             style={searchStyleValue}
+            format={searchFormatValue}
           />
         ) : (
-          categories.map((c, categoryIndex) => (
+          categoriesToRender.map((c, categoryIndex) => (
             <div key={categoryIndex}>
               <CategoryHeading>{c.title}</CategoryHeading>
               <IconGrid
                 icons={c.icons}
                 setModalIcon={setModalIcon}
                 style={searchStyleValue}
+                format={searchFormatValue}
                 key={c.title}
               />
             </div>

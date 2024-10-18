@@ -64,6 +64,7 @@
   transition: background-color ease-in-out 0.15s;
   white-space: nowrap;
   display: inline-block;
+  font-size: 0.8rem;
 
   &:hover {
     background-color: var(--link-color-dark);
@@ -102,6 +103,14 @@
   font-size: 0.8rem;
 }
 
+.modal24pxImage {
+  margin: 16px 0;
+}
+
+.modalTagsSection {
+  margin-top: 2rem;
+}
+
 @media (min-width: 60rem) {
   .modalWrapper {
     max-height: none;
@@ -124,5 +133,12 @@
     top: 4rem;
     margin: 0;
     width: 96px;
+  }
+
+  .modal24pxImage {
+    position: absolute;
+    left: 90px;
+    width: 24px;
+    height: auto;
   }
 }
