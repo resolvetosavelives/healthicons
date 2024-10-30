@@ -111,6 +111,33 @@
   margin-top: 2rem;
 }
 
+.nextPrevLinksWrapper {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+}
+
+.nextPrevLinksWrapper a {
+  background: none;
+  border: none;
+  color: var(--link-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-right: 0.2rem;
+
+  &:hover {
+    color: var(--link-color-dark);
+    cursor: pointer;
+  }
+}
+
+.nextPrevLinksWrapper span {
+  padding-right: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ccc;  
+}
+
 @media (min-width: 60rem) {
   .modalWrapper {
     max-height: none;

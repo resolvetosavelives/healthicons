@@ -1,15 +1,55 @@
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { Icon } from '../lib/icons';
 
 interface IconTileModalProps {
   icon: Icon;
+  allIcons: Icon[];
   iconType: string;
   isOpen: boolean;
   onClose: () => void;
 }
 
 export function IconTileModal(props: IconTileModalProps) {
+  const router = useRouter();
+
+  const currentIndex = props.allIcons.map((i) => i.id).indexOf(props.icon.id);
+  const nextIcon =
+    currentIndex < props.allIcons.length - 1
+      ? props.allIcons[currentIndex + 1]
+      : null;
+
+  const prevIcon = currentIndex > 0 ? props.allIcons[currentIndex - 1] : null;
+
+  useEffect(() => {
+    const keyDownHandler = (e) => {
+      if (e.code === 'ArrowRight') {
+        if (nextIcon) {
+          router.replace(
+            `/icon/${props.iconType}/${nextIcon.category}/${nextIcon.id}`,
+            { scroll: false }
+          );
+        }
+      } else if (e.code === 'ArrowLeft') {
+        if (prevIcon) {
+          router.replace(
+            `/icon/${props.iconType}/${prevIcon.category}/${prevIcon.id}`,
+            { scroll: false }
+          );
+        }
+      }
+    };
+    document.addEventListener('keydown', keyDownHandler);
+
+    // clean up
+    return () => {
+      document.removeEventListener('keydown', keyDownHandler);
+    };
+  });
+
   return (
     <ReactModal
       isOpen={props.isOpen}
@@ -21,6 +61,34 @@ export function IconTileModal(props: IconTileModalProps) {
     >
       <div className={styles.modalWrapper}>
         <>
+          <div className={styles.nextPrevLinksWrapper}>
+            {prevIcon ? (
+              <Link
+                href={`/icon/${props.iconType}/${prevIcon.category}/${prevIcon.id}`}
+                title={`Previous: ${prevIcon.title}`}
+                scroll={false}
+                replace={true}
+                className={styles.nextPrevLink}
+              >
+                ◀
+              </Link>
+            ) : (
+              <span className={styles.nextPrevLink}>◀</span>
+            )}
+            {nextIcon ? (
+              <Link
+                href={`/icon/${props.iconType}/${nextIcon.category}/${nextIcon.id}`}
+                title={`Next: ${nextIcon.title}`}
+                scroll={false}
+                replace={true}
+                className={styles.nextPrevLink}
+              >
+                ▶
+              </Link>
+            ) : (
+              <span className={styles.nextPrevLink}>▶</span>
+            )}
+          </div>
           <img
             src={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
             className={styles.modalImage}
