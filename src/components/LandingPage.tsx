@@ -41,6 +41,7 @@ export default function LandingPage({
   );
 
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
+
   const router = useRouter();
 
   useMemo(() => {
@@ -101,6 +102,14 @@ export default function LandingPage({
   const totalIconCount = categories.reduce((counter, c) => {
     return counter + c.icons.length;
   }, 0);
+
+  const flatIcons = categoriesToRender.flatMap((c) => c.icons);
+  // if searching by keyword, show all icons without categories and sorted A-Z
+  if (searchKeywordsValue) {
+    flatIcons.sort((i1, i2) => {
+      return i1.title < i2.title ? -1 : i1.title > i2.title ? 1 : 0;
+    });
+  }
 
   return (
     <div className="container">
@@ -184,13 +193,7 @@ export default function LandingPage({
         </div>
         {searchKeywordsValue ? (
           <IconGrid
-            icons={categoriesToRender
-              .map((i) => i.icons)
-              .flat()
-              .sort((i1, i2) => {
-                // show all icons without categories and sorted A-Z
-                return i1.title < i2.title ? -1 : i1.title > i2.title ? 1 : 0;
-              })}
+            icons={flatIcons}
             setModalIcon={setModalIcon}
             style={searchStyleValue}
             format={searchFormatValue}
@@ -214,6 +217,7 @@ export default function LandingPage({
             icon={modalIcon.icon}
             iconType={modalIcon.iconType}
             isOpen={modalIcon !== undefined}
+            allIcons={flatIcons}
             onClose={() => {
               router.push('/', undefined, {
                 shallow: true,
