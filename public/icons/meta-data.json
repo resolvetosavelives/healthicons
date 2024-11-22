@@ -4842,6 +4842,7 @@
   ],
   "title": "Expectorate",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4864,6 +4865,7 @@
   ],
   "title": "Fever",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4884,6 +4886,7 @@
   ],
   "title": "Sad",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4904,6 +4907,7 @@
   ],
   "title": "Measles",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4924,6 +4928,7 @@
   ],
   "title": "Smile",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4942,6 +4947,7 @@
   ],
   "title": "Angry",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4959,6 +4965,7 @@
   ],
   "title": "Confused",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4977,6 +4984,7 @@
   ],
   "title": "Crying",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5034,6 +5042,7 @@
   ],
   "title": "Frown",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5053,6 +5062,7 @@
   ],
   "title": "Neutral",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5073,6 +5083,7 @@
   ],
   "title": "Happy",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5091,6 +5102,7 @@
   ],
   "title": "Coughing",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5109,6 +5121,7 @@
   ],
   "title": "Vomiting",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5128,6 +5141,7 @@
   ],
   "title": "Masked",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5147,6 +5161,7 @@
   ],
   "title": "Glasses",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5166,6 +5181,7 @@
   ],
   "title": "Bandage",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5183,6 +5199,7 @@
   ],
   "title": "Dizzy",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5199,6 +5216,7 @@
   ],
   "title": "Tongue",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5217,6 +5235,7 @@
   ],
   "title": "Woozy",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5235,6 +5254,7 @@
   ],
   "title": "Sweating",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5253,6 +5273,7 @@
   ],
   "title": "Nervous",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5289,6 +5310,7 @@
   ],
   "title": "Calm",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -6871,6 +6893,7 @@
   ],
   "title": "Sweating",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7203,6 +7226,7 @@
   ],
   "title": "High Temperature",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8108,6 +8132,7 @@
   ],
   "title": "Eyeglasses",
   "formats": [
+   "24px",
    "48px"
   ]
  },
