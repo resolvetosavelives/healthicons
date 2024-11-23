@@ -4,12 +4,20 @@ import { promises as fs } from 'fs';
 import startCase from 'lodash.startcase';
 import { IconFormat } from '../lib/icons';
 import path from 'path';
-// import cliProgress from 'cli-progress';
 
 if (!config.figma.filename || !config.figma.personalAccessToken) {
   throw new Error(
     'You must have .env.local with FIGMA_PERSONAL_ACCESS_TOKEN and FIGMA_FILENAME'
   );
+}
+
+type IconStyle = 'filled-24px' | 'outline-24px' | 'outline' | 'filled';
+
+interface IconImport {
+  style: string;
+  category: string;
+  name: string;
+  description: string;
 }
 
 const figmaPersonalAccessToken = config.figma.personalAccessToken;
@@ -21,7 +29,7 @@ const metadataRegex = /([^/[]*) \[(.*)\]$/;
 
 const ICONS_PATH = path.join(process.cwd(), 'public', 'icons');
 
-const allComponents = [];
+const allComponents: IconImport[] = [];
 
 function getMetadataFromDescription(name: string, description: string) {
   const metaData = description.trim().match(metadataRegex);
@@ -45,19 +53,33 @@ function getMetadataFromDescription(name: string, description: string) {
       };
 }
 
-function styleExists(components, name, style) {
+function styleExists(
+  components: IconImport[],
+  category: string,
+  name: string,
+  style: IconStyle
+) {
   return components.some((c) => {
-    return c.name === name && c.style === style;
+    return c.name === name && c.category === category && c.style === style;
   });
 }
 
-function verifyStyleExists(components, name, style) {
-  if (!styleExists(components, name, style)) {
+function verifyStyleExists(
+  components: IconImport[],
+  category,
+  name: string,
+  style: IconStyle
+) {
+  if (!styleExists(components, category, name, style)) {
     console.log(` ⚠️ Missing ${style} version of: ${name}`);
   }
 }
 
-function verifyNameIsUnique(components, category, name) {
+function verifyNameIsUnique(
+  components: IconImport[],
+  category: string,
+  name: string
+) {
   const matches = components.filter((c) => {
     return c.name === name && c.category === category && c.style === 'filled';
   });
@@ -67,10 +89,14 @@ function verifyNameIsUnique(components, category, name) {
   }
 }
 
-function has24pxVersion(components, name) {
+function has24pxVersion(
+  components: IconImport[],
+  category: string,
+  name: string
+) {
   return (
-    styleExists(components, name, 'filled-24px') &&
-    styleExists(components, name, 'outline-24px')
+    styleExists(components, category, name, 'filled-24px') &&
+    styleExists(components, category, name, 'outline-24px')
   );
 }
 
@@ -113,7 +139,12 @@ client.file(figmaFilename).then(({ data }) => {
 
   allComponents.map((component) => {
     if (component.style === 'filled') {
-      verifyStyleExists(allComponents, component.name, 'outline');
+      verifyStyleExists(
+        allComponents,
+        component.category,
+        component.name,
+        'outline'
+      );
       verifyNameIsUnique(allComponents, component.category, component.name);
 
       const metaData = getMetadataFromDescription(
@@ -127,12 +158,21 @@ client.file(figmaFilename).then(({ data }) => {
         path: `${component.category}/${component.name}`,
         tags: metaData.tags,
         title: metaData.title,
-        formats: has24pxVersion(allComponents, component.name)
+        formats: has24pxVersion(
+          allComponents,
+          component.category,
+          component.name
+        )
           ? (['24px', '48px'] as IconFormat[])
           : (['48px'] as IconFormat[])
       });
     } else {
-      verifyStyleExists(allComponents, component.name, 'filled');
+      verifyStyleExists(
+        allComponents,
+        component.category,
+        component.name,
+        'filled'
+      );
     }
 
     return component;
