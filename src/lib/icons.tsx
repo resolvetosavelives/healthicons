@@ -48,7 +48,10 @@ async function getIcons(dirName: string): Promise<Icon[]> {
     fileNames.map(async (fileName) => {
       const id = fileName.replace(/\.[^/.]+$/, '');
 
-      const currentFileMetaData = metaData.find((m) => m.id === id);
+      // find same icon id in the same category from the meta-data JSON file
+      const currentFileMetaData = metaData.find(
+        (m) => m.id === id && m.category === dirName
+      );
 
       return {
         title: currentFileMetaData?.title || id,
