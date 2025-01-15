@@ -158,8 +158,13 @@ const contributors = [
   },
   {
     name: 'Naveen Sangu',
-    //link: 'https://twitter.com/??',
+    link: 'https://www.linkedin.com/in/naveen-sangu-30250596/',
     avatar: 'https://unavatar.io/twitter/needs-an-account-' // TODO
+  },
+  {
+    name: 'Linda Ojo Taiwo',
+    link: 'https://www.lindaojo.com',
+    avatar: 'https://unavatar.io/twitter/LindaOjo_'
   }
 ];
 
