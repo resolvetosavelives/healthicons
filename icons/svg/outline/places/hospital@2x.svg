@@ -1,0 +1,13 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 20H16V23H20V20Z" fill="currentColor"/>
+<path d="M16 25H20V28H16V25Z" fill="currentColor"/>
+<path d="M20 30H16V33H20V30Z" fill="currentColor"/>
+<path d="M22 20H26V23H22V20Z" fill="currentColor"/>
+<path d="M26 25H22V28H26V25Z" fill="currentColor"/>
+<path d="M22 30H26V33H22V30Z" fill="currentColor"/>
+<path d="M32 20H28V23H32V20Z" fill="currentColor"/>
+<path d="M28 25H32V28H28V25Z" fill="currentColor"/>
+<path d="M32 30H28V33H32V30Z" fill="currentColor"/>
+<path d="M25 15V12H28V10H25V7H23V10H20V12H23V15H25Z" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17 6C17 4.89543 17.8954 4 19 4H29C30.1046 4 31 4.89543 31 6H39V8H37V42H39C39.5523 42 40 42.4477 40 43C40 43.5523 39.5523 44 39 44H9C8.44772 44 8 43.5523 8 43C8 42.4477 8.44772 42 9 42H11V8H10V6L17 6ZM17 11L13 11V42H17V38H16V36H32V38H31V42H35V11H31V16C31 17.1046 30.1046 18 29 18H19C17.8954 18 17 17.1046 17 16V11ZM17 9L13 9V8H17V9ZM19 6H29V16H19V6ZM23 42H19V38H23V42ZM29 42V38H25V42H29ZM35 9V8H31V9H35Z" fill="currentColor"/>
+</svg>
