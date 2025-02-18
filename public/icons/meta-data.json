@@ -3068,6 +3068,27 @@
   ]
  },
  {
+  "id": "intravenous_drip",
+  "category": "devices",
+  "path": "devices/intravenous_drip",
+  "tags": [
+   "Bag",
+   "Blood",
+   "Drip",
+   "Hospitalized",
+   "IV",
+   "Inpatient",
+   "Patient",
+   "Saline",
+   "Surgery",
+   "Water"
+  ],
+  "title": "Intravenous Drip",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
   "id": "intravenous_bag",
   "category": "devices",
   "path": "devices/intravenous_bag",
@@ -7347,8 +7368,8 @@
  },
  {
   "id": "discriminating_concentration_bioassays",
-  "category": "devices",
-  "path": "devices/discriminating_concentration_bioassays",
+  "category": "diagnostics",
+  "path": "diagnostics/discriminating_concentration_bioassays",
   "tags": [
    "Mosquito",
    "Test",
@@ -8165,6 +8186,26 @@
   ],
   "title": "Liver ALT",
   "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "low_income_level",
+  "category": "symbols",
+  "path": "symbols/low_income_level",
+  "tags": [
+   "Arrow",
+   "Finance",
+   "Financial",
+   "Income",
+   "Low income",
+   "Money",
+   "Poor",
+   "Poverty"
+  ],
+  "title": "Low income",
+  "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -9262,6 +9303,7 @@
    "Milk",
    "Milk Substitute",
    "Mother",
+   "Nutrition",
    "Postnatal"
   ],
   "title": "Baby Formula",
@@ -9509,6 +9551,7 @@
    "Cessation",
    "Food",
    "Liquor",
+   "Nutrition",
    "Nutrition",
    "Reduction",
    "Wine"
@@ -11706,6 +11749,7 @@
    "Green",
    "Healthy",
    "Kale",
+   "Nutrition",
    "Vegetables"
   ],
   "title": "Vegetables",
@@ -11800,6 +11844,7 @@
    "Diet",
    "Food",
    "Healthy",
+   "Nutrition",
    "Sugar",
    "Sugar Free",
    "Sweet"
@@ -11936,6 +11981,418 @@
   ],
   "title": "Dry Mouth",
   "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "surveilance_officer",
+  "category": "people",
+  "path": "people/surveilance_officer",
+  "tags": [
+   "Doctor",
+   "Epidemiologist",
+   "Offiical",
+   "Quality Improvement",
+   "Surveillance"
+  ],
+  "title": "Person Surveillance Officer",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "mental_health",
+  "category": "symbols",
+  "path": "symbols/mental_health",
+  "tags": [
+   "Brain",
+   "Heart",
+   "Mental Health",
+   "Psychiatry",
+   "Psychology",
+   "Wellness"
+  ],
+  "title": "Mental Health",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "ecmo",
+  "category": "devices",
+  "path": "devices/ecmo",
+  "tags": [
+   "Critical Care",
+   "Device",
+   "Extracorporeal membrane oxygenation",
+   "ICU",
+   "Life Support",
+   "Lungs",
+   "Oxygen",
+   "Pump"
+  ],
+  "title": "ECMO",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "integrated_data_and_research",
+  "category": "symbols",
+  "path": "symbols/integrated_data_and_research",
+  "tags": [
+   "Chart",
+   "Data",
+   "Data Science",
+   "Graph",
+   "Quality Improvement",
+   "Research",
+   "Science",
+   "Search"
+  ],
+  "title": "Integrated Data and Research",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "autoimmune_disease",
+  "category": "conditions",
+  "path": "conditions/autoimmune_disease",
+  "tags": [
+   "Autoimmune",
+   "Body",
+   "Condition",
+   "Disease",
+   "Endocrine",
+   "Nervous System",
+   "Organs",
+   "Tissues"
+  ],
+  "title": "Autoimmune disease",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "risk_analysis",
+  "category": "symbols",
+  "path": "symbols/risk_analysis",
+  "tags": [
+   "Alert",
+   "CDSS",
+   "Clinical",
+   "Clinical decision support",
+   "Risk",
+   "Warning"
+  ],
+  "title": "Risk Analysis",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "health_vulnerability_through_social_determinants",
+  "category": "symbols",
+  "path": "symbols/health_vulnerability_through_social_determinants",
+  "tags": [
+   "Causes",
+   "Community",
+   "Health vulnerability",
+   "Root causes",
+   "Social",
+   "Welfare"
+  ],
+  "title": "Social Determinants of Health",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "resilient_and_migration_sensitive_health_system",
+  "category": "symbols",
+  "path": "symbols/resilient_and_migration_sensitive_health_system",
+  "tags": [
+   "Adaptable",
+   "Environment",
+   "Hands",
+   "Health system",
+   "Heart",
+   "Plant",
+   "Resilience"
+  ],
+  "title": "Resilient and Migration Sensitive Health System",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "close_policy_gaps",
+  "category": "symbols",
+  "path": "symbols/close_policy_gaps",
+  "tags": [
+   "Government",
+   "Health policy",
+   "Interoperability",
+   "Policy",
+   "Puzzle",
+   "System"
+  ],
+  "title": "Policy Gaps",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "close_policy_gaps_alt",
+  "category": "symbols",
+  "path": "symbols/close_policy_gaps_alt",
+  "tags": [
+   "Government",
+   "Health policy",
+   "Interoperability",
+   "Policy",
+   "Puzzle",
+   "System"
+  ],
+  "title": "Policy Gaps ALT",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "biopsy",
+  "category": "diagnostics",
+  "path": "diagnostics/biopsy",
+  "tags": [
+   "Biopsy",
+   "Cancer",
+   "Cells",
+   "Device",
+   "Diagnostic",
+   "Lab",
+   "Laboratory",
+   "Sample",
+   "Test",
+   "Tissue",
+   "Tumor"
+  ],
+  "title": "Biopsy",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "job_status_level",
+  "category": "symbols",
+  "path": "symbols/job_status_level",
+  "tags": [
+   "Career",
+   "Group",
+   "Hierarchy",
+   "Job",
+   "Organization",
+   "Organogram",
+   "Team"
+  ],
+  "title": "Job level",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "regular_patient",
+  "category": "people",
+  "path": "people/regular_patient",
+  "tags": [
+   "Ongoing",
+   "Patient",
+   "Person",
+   "Regular",
+   "Repeat"
+  ],
+  "title": "Regular patient",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "diagnostics",
+  "category": "symbols",
+  "path": "symbols/diagnostics",
+  "tags": [
+   "Charts",
+   "Data",
+   "Diagnose",
+   "Diagnositics",
+   "Dx",
+   "Evaluation",
+   "Exam",
+   "Lab",
+   "Trend",
+   "Triage"
+  ],
+  "title": "Diagnostics",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "cpap_machine",
+  "category": "devices",
+  "path": "devices/cpap_machine",
+  "tags": [
+   "Breathing",
+   "Continuous positive airway pressure",
+   "Device",
+   "Mask",
+   "Sleep Apnea"
+  ],
+  "title": "CPAP machine",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "antibody",
+  "category": "body",
+  "path": "body/antibody",
+  "tags": [
+   "Antibodies",
+   "Antigens",
+   "Immune System",
+   "Pathogens",
+   "Proteins"
+  ],
+  "title": "Antibody",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "blood_transfusion",
+  "category": "symbols",
+  "path": "symbols/blood_transfusion",
+  "tags": [
+   "Arm",
+   "Bag",
+   "Blood",
+   "Fist",
+   "Hand",
+   "IV",
+   "Intravenous",
+   "Liquid",
+   "Saline",
+   "Surgery",
+   "Transfusion"
+  ],
+  "title": "Blood transfusion",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "tissue",
+  "category": "body",
+  "path": "body/tissue",
+  "tags": [
+   "Body",
+   "Cell",
+   "Connective",
+   "Tissue"
+  ],
+  "title": "Tissue",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "tumour",
+  "category": "body",
+  "path": "body/tumour",
+  "tags": [
+   "Abnormal mass",
+   "Cancer",
+   "Tissue",
+   "Tumor",
+   "Tumour"
+  ],
+  "title": "Tumor",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "cpap_tubes",
+  "category": "devices",
+  "path": "devices/cpap_tubes",
+  "tags": [
+   "Breathing",
+   "Continuous positive airway pressure",
+   "Device",
+   "Mask",
+   "Sleep Apnea",
+   "Tubes"
+  ],
+  "title": "CPAP mask",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "infusion_pump",
+  "category": "devices",
+  "path": "devices/infusion_pump",
+  "tags": [
+   "Bag",
+   "Device",
+   "Fluids",
+   "IV",
+   "Infusion",
+   "Liquid",
+   "Nutrients",
+   "Pump"
+  ],
+  "title": "Infusion pump",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "HL7v2_logo",
+  "category": "symbols",
+  "path": "symbols/HL7v2_logo",
+  "tags": [
+   "FHIR",
+   "FHIR2",
+   "HL7",
+   "Informatics",
+   "Interoperability",
+   "Logo",
+   "Standards"
+  ],
+  "title": "FHIR2",
+  "formats": [
+   "24px",
    "48px"
   ]
  }

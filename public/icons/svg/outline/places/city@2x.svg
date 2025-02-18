@@ -1,0 +1,23 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 13H20V15H22V13Z" fill="currentColor"/>
+<path d="M24 13H26V15H24V13Z" fill="currentColor"/>
+<path d="M30 13H28V15H30V13Z" fill="currentColor"/>
+<path d="M20 17H22V19H20V17Z" fill="currentColor"/>
+<path d="M26 17H24V19H26V17Z" fill="currentColor"/>
+<path d="M28 17H30V19H28V17Z" fill="currentColor"/>
+<path d="M22 21H20V23H22V21Z" fill="currentColor"/>
+<path d="M24 21H26V23H24V21Z" fill="currentColor"/>
+<path d="M30 21H28V23H30V21Z" fill="currentColor"/>
+<path d="M20 25H22V27H20V25Z" fill="currentColor"/>
+<path d="M26 25H24V27H26V25Z" fill="currentColor"/>
+<path d="M20 29H22V31H20V29Z" fill="currentColor"/>
+<path d="M26 29H24V31H26V29Z" fill="currentColor"/>
+<path d="M20 33H22V35H20V33Z" fill="currentColor"/>
+<path d="M26 33H24V35H26V33Z" fill="currentColor"/>
+<path d="M20 37H22V39H20V37Z" fill="currentColor"/>
+<path d="M26 37H24V39H26V37Z" fill="currentColor"/>
+<path d="M31 30H34V28H31V30Z" fill="currentColor"/>
+<path d="M34 34H31V32H34V34Z" fill="currentColor"/>
+<path d="M31 38H34V36H31V38Z" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17 4L33 10V24H37C37.5523 24 38 24.4477 38 25V42H39C39.5523 42 40 42.4477 40 43C40 43.5523 39.5523 44 39 44H9C8.44772 44 8 43.5523 8 43C8 42.4477 8.44772 42 9 42H10V21C10 20.4477 10.4477 20 11 20H13L13 13H15L15 20H17V4ZM19 6.886L31 11.386V24H28C27.4477 24 27 24.4477 27 25V42H19V6.886ZM12 22V42H17V22H12ZM36 42H34V40H31V42H29V26H36V42Z" fill="currentColor"/>
+</svg>
