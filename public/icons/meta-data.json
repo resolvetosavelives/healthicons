@@ -1635,6 +1635,7 @@
   ],
   "title": "Kidneys",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2423,6 +2424,7 @@
   ],
   "title": "Outdoor Meeting",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4046,6 +4048,7 @@
   ],
   "title": "Female Reproductive System",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5053,6 +5056,7 @@
   ],
   "title": "Nauseous",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5071,6 +5075,7 @@
   ],
   "title": "Loudly Crying",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5340,6 +5345,7 @@
   ],
   "title": "Sleepy",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8595,6 +8601,7 @@
   ],
   "title": "PPE Respirator",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -11758,9 +11765,9 @@
   ]
  },
  {
-  "id": "bladder-cancer",
+  "id": "bladder_cancer",
   "category": "conditions",
-  "path": "conditions/bladder-cancer",
+  "path": "conditions/bladder_cancer",
   "tags": [
    "Anus",
    "Bowel",
@@ -12351,7 +12358,7 @@
    "Sleep Apnea",
    "Tubes"
   ],
-  "title": "CPAP mask",
+  "title": "CPAP Mask",
   "formats": [
    "24px",
    "48px"
@@ -12393,6 +12400,47 @@
   "title": "FHIR2",
   "formats": [
    "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "cpap_masks",
+  "category": "devices",
+  "path": "devices/cpap_masks",
+  "tags": [
+   "Breathing",
+   "Continuous positive airway pressure",
+   "Device",
+   "Mask",
+   "Sleep Apnea",
+   "Tubes"
+  ],
+  "title": "CPAP Mask ALT",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "ear_nose_throat",
+  "category": "symbols",
+  "path": "symbols/ear_nose_throat",
+  "tags": [
+   "Auditory",
+   "Breathing",
+   "Condition",
+   "ENT",
+   "Ear",
+   "Head",
+   "Hearing",
+   "Neck",
+   "Nose",
+   "Respiratory",
+   "Specialty",
+   "Throat"
+  ],
+  "title": "Ear Nose and Throat",
+  "formats": [
    "48px"
   ]
  }
