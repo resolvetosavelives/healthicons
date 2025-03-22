@@ -550,6 +550,7 @@ https://healthicons.org/icon/filled/symbols/i_documents_denied
 https://healthicons.org/icon/filled/symbols/dhis2_logo
 https://healthicons.org/icon/filled/symbols/diabetes
 https://healthicons.org/icon/filled/symbols/diagnostics
+https://healthicons.org/icon/filled/symbols/nappy_diaper
 https://healthicons.org/icon/filled/symbols/discharge
 https://healthicons.org/icon/filled/symbols/default
 https://healthicons.org/icon/filled/symbols/ear_nose_throat

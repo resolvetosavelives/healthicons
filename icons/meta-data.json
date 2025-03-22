@@ -1421,6 +1421,7 @@
   ],
   "title": "Implant",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1454,6 +1455,7 @@
   ],
   "title": "Hormonal Ring",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1503,6 +1505,7 @@
   ],
   "title": "Contraceptive Patch",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1742,6 +1745,7 @@
   ],
   "title": "Question Triangle",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1759,6 +1763,7 @@
   ],
   "title": "Question Circle",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1774,6 +1779,7 @@
   ],
   "title": "Question",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1790,6 +1796,7 @@
   ],
   "title": "Referral Alt",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1821,6 +1828,7 @@
   ],
   "title": "Plus",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1837,6 +1845,7 @@
   ],
   "title": "Polygon",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1866,6 +1875,7 @@
   ],
   "title": "Peace",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1880,6 +1890,7 @@
   ],
   "title": "Paved Road Alt",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1894,6 +1905,7 @@
   ],
   "title": "Paved Road",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1949,6 +1961,7 @@
   ],
   "title": "No",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1967,6 +1980,7 @@
   ],
   "title": "Minus",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2000,6 +2014,7 @@
   ],
   "title": "Medium Level",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2051,6 +2066,7 @@
   ],
   "title": "Low Level",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2066,6 +2082,7 @@
   ],
   "title": "Info",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2110,6 +2127,7 @@
   ],
   "title": "Denied Document",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2125,6 +2143,7 @@
   ],
   "title": "Approved Document",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2161,6 +2180,7 @@
   ],
   "title": "High Level",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2179,6 +2199,7 @@
   ],
   "title": "Cardiogram",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2195,6 +2216,7 @@
   ],
   "title": "Heart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2243,6 +2265,7 @@
   ],
   "title": "Hazardous",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -2260,6 +2283,7 @@
   ],
   "title": "Location",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4098,6 +4122,7 @@
   ],
   "title": "Health Shield",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4113,6 +4138,7 @@
   ],
   "title": "Health ALT",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4166,6 +4192,7 @@
   ],
   "title": "Blood Type A-",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4183,6 +4210,7 @@
   ],
   "title": "Blood Type A+",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4200,6 +4228,7 @@
   ],
   "title": "Blood Type AB-",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4217,6 +4246,7 @@
   ],
   "title": "Blood Type AB+",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4234,6 +4264,7 @@
   ],
   "title": "Blood Type B-",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4251,6 +4282,7 @@
   ],
   "title": "Blood Type B+",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4268,6 +4300,7 @@
   ],
   "title": "Blood Type O-",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4285,6 +4318,7 @@
   ],
   "title": "Blood Type O+",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4302,6 +4336,7 @@
   ],
   "title": "Blood Type RH-",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -4319,6 +4354,7 @@
   ],
   "title": "Blood Type RH+",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -5549,6 +5585,7 @@
   ],
   "title": "Leg",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7204,6 +7241,7 @@
   ],
   "title": "Contraceptive Injection",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7255,6 +7293,7 @@
   ],
   "title": "Copper Intrauterine Device",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7322,6 +7361,7 @@
   ],
   "title": "Syana Press",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -7870,6 +7910,7 @@
   ],
   "title": "Enzyme",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8192,6 +8233,7 @@
   ],
   "title": "Liver ALT",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8568,6 +8610,7 @@
   ],
   "title": "PPE Goggles",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8755,6 +8798,7 @@
   ],
   "title": "Cured Decreasing Line Chart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8775,6 +8819,7 @@
   ],
   "title": "Cured Increasing Line Chart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8795,6 +8840,7 @@
   ],
   "title": "Death Rate Decreasing Line Chart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8815,6 +8861,7 @@
   ],
   "title": "Death Rate Increasing Line Chart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8835,6 +8882,7 @@
   ],
   "title": "Death Rate Stable Line Chart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8853,6 +8901,7 @@
   ],
   "title": "Infected Decreasing Line Chart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8871,6 +8920,7 @@
   ],
   "title": "Infected Increasing Line Chart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8891,6 +8941,7 @@
   ],
   "title": "Infected Stable Line Chart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -9353,6 +9404,7 @@
   ],
   "title": "Vulva",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -9370,6 +9422,7 @@
   ],
   "title": "Penis",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -9963,6 +10016,7 @@
   ],
   "title": "Prostate",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -10029,6 +10083,7 @@
   ],
   "title": "Cell Nuclei",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -10930,6 +10985,7 @@
   ],
   "title": "Globe",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -11417,6 +11473,7 @@
   ],
   "title": "Female symbol",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -11434,6 +11491,7 @@
   ],
   "title": "Male symbol",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -12441,6 +12499,28 @@
   ],
   "title": "Ear Nose and Throat",
   "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "nappy_diaper",
+  "category": "symbols",
+  "path": "symbols/nappy_diaper",
+  "tags": [
+   "Baby",
+   "Child",
+   "Depends",
+   "Diaper",
+   "Incontinence",
+   "Napkin",
+   "Nappy",
+   "Newborn",
+   "Poop",
+   "Undergarment"
+  ],
+  "title": "Diaper",
+  "formats": [
+   "24px",
    "48px"
   ]
  }
