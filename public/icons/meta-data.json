@@ -1745,6 +1745,7 @@
   ],
   "title": "Question Triangle",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1762,6 +1763,7 @@
   ],
   "title": "Question Circle",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1777,6 +1779,7 @@
   ],
   "title": "Question",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8607,6 +8610,7 @@
   ],
   "title": "PPE Goggles",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8794,6 +8798,7 @@
   ],
   "title": "Cured Decreasing Line Chart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8814,6 +8819,7 @@
   ],
   "title": "Cured Increasing Line Chart",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -10979,6 +10985,7 @@
   ],
   "title": "Globe",
   "formats": [
+   "24px",
    "48px"
   ]
  },

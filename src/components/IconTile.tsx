@@ -60,9 +60,10 @@ export function IconTile(props: IconTileProps) {
       )}
       <div className={styles.iconTitle}>
         {props.icon.title}
-        {!props.icon.formats.includes('24px') && props.iconFormat !== '24px' && (
-          <span className={styles.iconSize}> *</span>
-        )}
+        {!props.icon.formats.includes('24px') &&
+          props.iconFormat !== '24px' && (
+            <span className={styles.iconSize}> *</span>
+          )}
       </div>
     </div>
   );
