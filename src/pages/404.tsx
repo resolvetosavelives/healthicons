@@ -14,7 +14,7 @@ export default function RequestIcon() {
   return (
     <div className="container">
       <Head>
-        <title>404</title>
+        <title>404 Error</title>
         <link rel="icon" href="/favicon.ico" />
 
         <meta property="og:site_name" content="Health icons" />
