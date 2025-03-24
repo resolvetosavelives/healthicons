@@ -71,7 +71,7 @@ function verifyStyleExists(
   style: IconStyle
 ) {
   if (!styleExists(components, category, name, style)) {
-    console.log(` ⚠️ Missing ${style} version of: ${name}`);
+    console.log(` ⚠️ Missing ${style} version of: ${category}/${name}`);
   }
 }
 
@@ -125,8 +125,8 @@ client.file(figmaFilename).then(({ data }) => {
 
           allComponents.push({
             style,
-            category,
-            name,
+            category: category.trim(),
+            name: name.trim(),
             description
           });
         }
