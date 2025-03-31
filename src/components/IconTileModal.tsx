@@ -1,9 +1,11 @@
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Icon } from '../lib/icons';
+import { useDispatch } from 'react-redux';
+import { setKeywords } from '../store/search';
 
 interface IconTileModalProps {
   icon: Icon;
@@ -15,6 +17,7 @@ interface IconTileModalProps {
 
 export function IconTileModal(props: IconTileModalProps) {
   const router = useRouter();
+  const dispatch = useDispatch();
 
   const currentIndex = props.allIcons.map((i) => i.id).indexOf(props.icon.id);
   const nextIcon =
@@ -23,6 +26,23 @@ export function IconTileModal(props: IconTileModalProps) {
       : null;
 
   const prevIcon = currentIndex > 0 ? props.allIcons[currentIndex - 1] : null;
+
+  // Find related icons based on matching tags
+  const relatedIcons = useMemo(() => {
+    const currentTags = new Set(props.icon.tags);
+    return props.allIcons
+      .filter(icon => {
+        if (icon.id === props.icon.id) return false; // Exclude current icon
+        // Check if any tags match
+        return icon.tags.some(tag => currentTags.has(tag));
+      })
+      .slice(0, 6); // Limit to 6 related icons
+  }, [props.icon.id, props.icon.tags, props.allIcons]);
+
+  const handleTagClick = (tag: string) => {
+    dispatch(setKeywords(tag));
+    props.onClose();
+  };
 
   useEffect(() => {
     const keyDownHandler = (e) => {
@@ -163,7 +183,39 @@ export function IconTileModal(props: IconTileModalProps) {
               <div className={styles.modalLabel}>Tags</div>
               <div className={styles.modalTags}>
                 {props.icon.tags.map((tag) => (
-                  <span key={tag}>{tag}</span>
+                  <button
+                    key={tag}
+                    onClick={() => handleTagClick(tag)}
+                    className={styles.tagButton}
+                  >
+                    {tag}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {relatedIcons.length > 0 && (
+            <div className={styles.modalRelatedSection}>
+              <div className={styles.modalLabel}>Related Icons</div>
+              <div className={styles.relatedIcons}>
+                {relatedIcons.map((icon) => (
+                  <Link
+                    key={icon.id}
+                    href={`/icon/${props.iconType}/${icon.category}/${icon.id}`}
+                    className={styles.relatedIconLink}
+                    scroll={false}
+                    replace={true}
+                  >
+                    <img
+                      src={`/icons/svg/${props.iconType}/${icon.category}/${icon.id}.svg`}
+                      width="48"
+                      height="48"
+                      alt={icon.title}
+                      title={icon.title}
+                    />
+                    <span className={styles.relatedIconTitle}>{icon.title}</span>
+                  </Link>
                 ))}
               </div>
             </div>
