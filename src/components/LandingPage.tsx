@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useSelector, useDispatch } from 'react-redux';
 import classnames from 'classnames';
 import { RootState } from '../store';
-import { setStyle, setKeywords, setFormat } from '../store/search';
+import { setStyle, setKeywords, setFormat, setCategory } from '../store/search';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
 import { CategoryHeading } from './CategoryHeading';
@@ -38,6 +38,9 @@ export default function LandingPage({
   );
   const searchFormatValue = useSelector(
     (state: RootState) => state.search.format
+  );
+  const searchCategoryValue = useSelector(
+    (state: RootState) => state.search.category
   );
 
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
@@ -83,7 +86,8 @@ export default function LandingPage({
             searchKeywordsValue,
             i.tags.concat([i.title, c.title]).join(', ')
           ) &&
-          i.formats.includes(searchFormatValue)
+          i.formats.includes(searchFormatValue) &&
+          (!searchCategoryValue || c.title.toLowerCase() === searchCategoryValue)
         ) {
           filteredIcons.push(i);
         }
@@ -97,7 +101,7 @@ export default function LandingPage({
     });
 
     return filteredCategories;
-  }, [searchFormatValue, categories, searchKeywordsValue]);
+  }, [searchFormatValue, categories, searchKeywordsValue, searchCategoryValue]);
 
   const totalIconCount = categories.reduce((counter, c) => {
     return counter + c.icons.length;
@@ -126,23 +130,35 @@ export default function LandingPage({
 
         <div className={styles.filterPlacementBox}>
           <div className={styles.filterBox}>
-            <label className={styles.filterInputLabel}>
-              <input
-                value={searchKeywordsValue}
-                type="text"
-                className={styles.filterBoxInput}
-                placeholder={`Search ${totalIconCount * 2} icons…`}
-                onChange={(e) => dispatch(setKeywords(e.target.value))}
-              />
-            </label>
+            <div className={styles.searchContainer}>
+              <label className={styles.filterInputLabel}>
+                <input
+                  value={searchKeywordsValue}
+                  type="text"
+                  className={styles.filterBoxInput}
+                  placeholder={`Search ${totalIconCount * 2} icons…`}
+                  onChange={(e) => dispatch(setKeywords(e.target.value))}
+                />
+              </label>
+              <select 
+                className={styles.categorySelect}
+                value={searchCategoryValue}
+                onChange={(e) => dispatch(setCategory(e.target.value))}
+              >
+                <option value="">All Categories</option>
+                {categories.map((category) => (
+                  <option key={category.title} value={category.title.toLowerCase()}>
+                    {category.title}
+                  </option>
+                ))}
+              </select>
+            </div>
             <div className={styles.styleToggleContainer}>
               <button
                 className={classnames(styles.styleToggle, {
                   [styles.styleToggleSelected]: searchStyleValue === 'all'
                 })}
-                onClick={() => {
-                  dispatch(setStyle('all'));
-                }}
+                onClick={() => dispatch(setStyle('all'))}
               >
                 All
               </button>
@@ -150,9 +166,7 @@ export default function LandingPage({
                 className={classnames(styles.styleToggle, {
                   [styles.styleToggleSelected]: searchStyleValue === 'filled'
                 })}
-                onClick={() => {
-                  dispatch(setStyle('filled'));
-                }}
+                onClick={() => dispatch(setStyle('filled'))}
               >
                 Filled
               </button>
@@ -160,9 +174,7 @@ export default function LandingPage({
                 className={classnames(styles.styleToggle, {
                   [styles.styleToggleSelected]: searchStyleValue === 'outline'
                 })}
-                onClick={() => {
-                  dispatch(setStyle('outline'));
-                }}
+                onClick={() => dispatch(setStyle('outline'))}
               >
                 Outline
               </button>
@@ -172,9 +184,7 @@ export default function LandingPage({
                 className={classnames(styles.styleToggle, {
                   [styles.styleToggleSelected]: searchFormatValue === '48px'
                 })}
-                onClick={() => {
-                  dispatch(setFormat('48px'));
-                }}
+                onClick={() => dispatch(setFormat('48px'))}
               >
                 48px
               </button>
@@ -182,9 +192,7 @@ export default function LandingPage({
                 className={classnames(styles.styleToggle, {
                   [styles.styleToggleSelected]: searchFormatValue === '24px'
                 })}
-                onClick={() => {
-                  dispatch(setFormat('24px'));
-                }}
+                onClick={() => dispatch(setFormat('24px'))}
               >
                 24px
               </button>
@@ -201,13 +209,12 @@ export default function LandingPage({
         ) : (
           categoriesToRender.map((c, categoryIndex) => (
             <div key={categoryIndex}>
-              <CategoryHeading>{c.title}</CategoryHeading>
+              <CategoryHeading children={c.title} />
               <IconGrid
                 icons={c.icons}
                 setModalIcon={setModalIcon}
                 style={searchStyleValue}
                 format={searchFormatValue}
-                key={c.title}
               />
             </div>
           ))

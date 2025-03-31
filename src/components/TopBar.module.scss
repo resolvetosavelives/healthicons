@@ -1,17 +1,18 @@
 .topBar {
   display: grid;
-  grid-template-columns: minmax(max-content, 1fr) max-content max-content;
+  grid-template-columns: minmax(max-content, 1fr) max-content max-content max-content;
   grid-template-rows: auto auto;
   gap: 1em 1em;
   grid-template-areas:
-    'title-area desktop-links-area download-area'
-    'mobile-links-area mobile-links-area mobile-links-area';
+    'title-area desktop-links-area category-area download-area'
+    'mobile-links-area mobile-links-area mobile-links-area mobile-links-area';
   margin-bottom: 1rem;
   align-items: center;
 }
 
 .topbarDownload {
   grid-area: download-area;
+  height: 32px; /* Reduced height */
 }
 
 .topbarTitle {
@@ -55,14 +56,31 @@
   }
 }
 
+.topbarCategory {
+  grid-area: category-area;
+  display: flex;
+  align-items: center;
+  height: 32px; 
+  margin-right: 2em;
+}
+
+.topbarCategory select {
+  height: 100%;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px; /* Matching border-radius with 3rd one */
+  outline: none;
+  transition: all 0.3s ease;
+}
+
 .buttonLink {
-  background: var(--link-color) url(/ui/folder-download-line-white.svg) 0.75rem
-    50% no-repeat;
+  background: var(--link-color) url(/ui/folder-download-line-white.svg) 0.75rem 50% no-repeat;
   display: inline-block;
   background-size: 18px;
   color: #fff;
   font-weight: bold;
-  padding: 0.6rem 1rem 0.6rem 2.25rem;
+  padding: 0.5rem 1rem 0.5rem 2.25rem; /* Reduced height */
   border-radius: 3px;
   font-size: 0.8rem;
   transition: background-color ease-in-out 0.15s;
@@ -83,7 +101,7 @@
   }
 
   .buttonLink {
-    padding: 0.5rem 30px 0.5rem 50px;
+    padding: 0.4rem 30px 0.4rem 50px; /* Adjusted height */
     font-size: 1rem;
     background-position: 1.25rem 50%;
   }
@@ -102,4 +120,90 @@
   .topbarTitle {
     font-size: 1.5rem;
   }
+  .filterPlacementBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    height:42px;
+  }
+  
+  .filterBox {
+    display: flex;
+    flex-wrap: wrap;
+    background: #f8f8f8;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    height:42px;
+  }
+  
+  .searchContainer {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    height:42px;
+  }
+  
+  .filterBoxInput {
+    display: flex;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    height:42px;
+  }
+  
+  .categorySelect {
+    display: flex;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    height:42px;
+  }
+  
+  .styleToggleContainer,
+  .sizeToggleContainer {
+    display: flex;
+    margin-left: 1rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    height:42px;
+  }
+  
+  .styleToggle,
+  .sizeToggle {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    background: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 0;
+    height:42px;
+  }
+  
+  .styleToggle:first-child,
+  .sizeToggle:first-child {
+    border-radius: 10px 0 0 10px;
+    height:42px;
+  }
+  
+  .styleToggle:last-child,
+  .sizeToggle:last-child {
+    border-radius: 0 10px 10px 0;
+    height:42px;
+  }
+  
+  .styleToggleSelected,
+  .sizeToggleSelected {
+    background: #007bff;
+    color: white;
+    border-color: #0056b3;
+    height:42px;
+  }
+  
 }
