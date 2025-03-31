@@ -50,7 +50,14 @@ export default function About() {
               the public domain for use in any type of project.
             </p>
             <p>
-              The project is hosted by the public health not-for-profit{' '}
+              The Health Icons project was started in 2021 during the Covid 19
+              pandemic. A group of volunteers originally came together to
+              upgrade the icons used in the open source{' '}
+              <a href="https://dhis2.org">DHIS2</a> health software project.
+              This volunteer effort expanded into the Health Icons project to
+              provide high quality free-to-use icons for the entire world. Read{' '}
+              <a href="/history">our full history here</a>. The project is
+              hosted by the public health not-for-profit{' '}
               <a href="https://resolvetosavelives.org">Resolve to Save Lives</a>{' '}
               as an expression of our committment to offer the icons for free,
               forever.
