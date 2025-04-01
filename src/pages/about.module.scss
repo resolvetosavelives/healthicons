@@ -33,6 +33,18 @@
   border: 2px solid #ebecff;
 }
 
+.fullImage {
+  width: 100%;
+  height: auto;
+}
+
+caption.caption {
+  width: 100%;
+  display: block;
+  margin: -0.5em 0 2em 0;
+  font-size: 0.9rem;
+}
+
 .contributeDesktop {
   display: none;
 }
