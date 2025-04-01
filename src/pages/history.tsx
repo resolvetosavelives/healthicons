@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { TopBar } from '../components/TopBar';
-import { Contribute } from '../components/Contribute';
-import { Contributors } from '../components/Contributors';
 import styles from './about.module.scss';
 
 export default function About() {
@@ -52,12 +50,12 @@ export default function About() {
             <h2>Origin story with DHIS2</h2>
             <p>
               In the spring of 2021, Daniel Burka was doing a project with the{' '}
-              <a href="https://dhis2.org">DHIS2</a> software system as part of a
-              large-scale hypertension control project in Nigeria. DHIS2 is a
-              popular open source digital health tool that is used governments
-              in over 70 countries all over the world. DHIS2 has many admirable
-              qualities, but the quality of the icons in their software back in
-              2021 were very inconsistent. See below.
+              <Link href="https://dhis2.org">DHIS2</Link> software system as
+              part of a large-scale hypertension control project in Nigeria.
+              DHIS2 is a popular open source digital health tool that is used
+              governments in over 70 countries all over the world. DHIS2 has
+              many admirable qualities, but the quality of the icons in their
+              software back in 2021 were very inconsistent. See below.
             </p>
             <p>
               <img
@@ -77,18 +75,18 @@ export default function About() {
               commonsense icons that you might expect from health, like
               hospital, clinic, blood pressure monitor, etc. But some icons were
               very specific concepts like{' '}
-              <a href="https://healthicons.org/icon/outline/diagnostics/rdt-result_invalid">
+              <Link href="https://healthicons.org/icon/outline/diagnostics/rdt-result_invalid">
                 Rapid Diagnostic Testing Result Invalid
-              </a>{' '}
+              </Link>{' '}
               that were related to specific usages of DHIS2 for managing
               pandemic response programs. Other examples include{' '}
-              <a href="https://healthicons.org/icon/outline/diagnostics/cone-test_on_nets">
+              <Link href="https://healthicons.org/icon/outline/diagnostics/cone-test_on_nets">
                 Cone Test on Nets
-              </a>{' '}
+              </Link>{' '}
               and{' '}
-              <a href="https://healthicons.org/icon/outline/diagnostics/discriminating-concentration_bioassays">
+              <Link href="https://healthicons.org/icon/outline/diagnostics/discriminating-concentration_bioassays">
                 Discriminating Concentration Bioassays
-              </a>
+              </Link>
               . If you're ever wondering why the collection includes some very
               specfic icon, the answer is probably because it was in the
               original DHIS2 collection.
@@ -107,9 +105,9 @@ export default function About() {
             </p>
             <p>
               Health Icons were first incorporated into
-              <a href="https://dhis2.org/releases/version-237/">
+              <Link href="https://dhis2.org/releases/version-237/">
                 DHIS2 version 2.37
-              </a>{' '}
+              </Link>{' '}
               in June 2021.
             </p>
             <h2>A volunteer effort in 2021</h2>
@@ -130,7 +128,7 @@ export default function About() {
               </li>
               <li>
                 Cutouts in shapes to create uniqueness (e.g.{' '}
-                <a href="/icon/filled/devices/microscope">Microscope</a>)
+                <Link href="/icon/filled/devices/microscope">Microscope</Link>)
               </li>
             </ul>
 
