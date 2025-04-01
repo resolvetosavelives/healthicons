@@ -43,12 +43,11 @@
   align-items: center;
   gap: 0.75rem;
   background: white;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   width: 100%;
   max-width: 800px;
-  height: 48px;
 }
 
 .searchContainer {
@@ -57,7 +56,7 @@
   flex: 1;
   background: #f8f9fa;
   border-radius: 6px;
-  height: 100%;
+  height: 42px;
   overflow: hidden;
   border: 1px solid #e9ecef;
   transition: border-color 0.15s ease-in-out;
@@ -110,9 +109,9 @@
   border-left: 1px solid #e9ecef;
   outline: none;
   cursor: pointer;
-  appearance: none;
   color: #495057;
   min-width: 140px;
+  appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8.825L1.175 4 2.238 2.938 6 6.7l3.763-3.763L10.825 4z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 12px center;
@@ -121,45 +120,53 @@
   &:focus {
     border-left-color: var(--link-color);
   }
+
+  &:hover {
+    color: var(--link-color);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%237a76de' d='M6 8.825L1.175 4 2.238 2.938 6 6.7l3.763-3.763L10.825 4z'/%3E%3C/svg%3E");
+  }
 }
 
 .styleToggleContainer,
 .sizeToggleContainer {
   display: flex;
-  height: 100%;
+  align-items: center;
   background: #f8f9fa;
   border-radius: 6px;
   border: 1px solid #e9ecef;
-  overflow: hidden;
+  padding: 3px;
+  gap: 3px;
+  height: 42px;
 }
 
 .styleToggle,
 .sizeToggle {
+  height: 34px;
   padding: 0 16px;
   background: transparent;
   border: none;
   cursor: pointer;
   font-size: 0.9rem;
   color: #495057;
-  transition: all 0.15s ease-in-out;
-  height: 100%;
+  border-radius: 4px;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 60px;
-
-  &:not(:last-child) {
-    border-right: 1px solid #e9ecef;
-  }
+  font-weight: 500;
 
   &:hover:not(.styleToggleSelected) {
     background: #e9ecef;
+    color: var(--link-color);
   }
 }
 
 .styleToggleSelected {
   background: var(--link-color);
   color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   &:hover {
     background: var(--link-color-dark);
@@ -178,11 +185,15 @@
   .styleToggleContainer,
   .sizeToggleContainer {
     width: 100%;
-    height: 42px;
   }
 
   .categorySelect {
     min-width: 120px;
+  }
+
+  .styleToggle,
+  .sizeToggle {
+    flex: 1;
   }
 }
 
