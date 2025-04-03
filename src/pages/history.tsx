@@ -11,7 +11,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
 
         <meta property="og:site_name" content="Health icons" />
-        <meta property="og:title" content="About Health icons" />
+        <meta property="og:title" content="History of Health icons" />
         <meta
           property="og:description"
           content="Free, open source health icons. Use in your next commercial or personal project. Editing is ok. Republishing is ok. No need to give credit."
@@ -57,7 +57,7 @@ export default function About() {
               many admirable qualities, but the quality of the icons in their
               software back in 2021 were very inconsistent. See below.
             </p>
-            <p>
+            <figure>
               <img
                 src="/ui/dhis2-icons-old.png"
                 alt="An example of the old icons in DHIS2"
@@ -65,10 +65,10 @@ export default function About() {
                 height="400"
                 className={styles.fullImage}
               />
-              <caption className={styles.caption}>
+              <figcaption className={styles.caption}>
                 The original DHIS2 icons that were replaced by our Health Icons.
-              </caption>
-            </p>
+              </figcaption>
+            </figure>
             <p>
               DHIS2 had around 400 icons that represented common themes in
               public health, education, and climate change. Many were pretty
@@ -104,13 +104,14 @@ export default function About() {
               tag "DHIS2" and can be found by searching Health Icons by "DHIS2".
             </p>
             <p>
-              Health Icons were first incorporated into
+              Health Icons were first incorporated into DHIS2 in
               <Link href="https://dhis2.org/releases/version-237/">
-                DHIS2 version 2.37
+                {' '}
+                version 2.37
               </Link>{' '}
               in June 2021.
             </p>
-            <h2>A volunteer effort in 2021</h2>
+            <h2>A volunteer effort starting in 2021</h2>
             <p>
               Daniel put out a call on Twitter to see if other people wanted to
               help out with the effort to replace the DHIS2 icons. About a dozen
@@ -132,6 +133,74 @@ export default function About() {
               </li>
             </ul>
 
+            <figure>
+              <img
+                src="/ui/example-icons.png"
+                alt="An example of early icons that established our style"
+                width="800"
+                height="400"
+                className={styles.fullImage}
+              />
+              <figcaption className={styles.caption}>
+                Early icons that exemplify the unique style of Health Icons
+              </figcaption>
+            </figure>
+            <p>
+              After completing the DHIS2 icon set redesign, we expanded our work
+              to include many other common health icons. At first, we created
+              lists of common medical terms, devices, conditions, etc. Later we
+              added the ability to request icons from the public (see below).
+            </p>
+            <p>
+              Since we started in 2021, many contributors have come in and out
+              of the project. Some people contributed 1 or 2 icons and several
+              prolific contributors created dozens of icons each.{' '}
+              <Link href="https://www.gregoryschmidt.com/about">
+                Dr Greg Schmidt
+              </Link>
+              , an internal medicine doctor from Canada with global public
+              health experience, has acted as our medical advisor for feedback
+              as we create icons. We list most of the people who contributed to
+              the Health Icons project on the{' '}
+              <Link href="/about">About page</Link> of our website.
+            </p>
+
+            <h2>Choosing which icons to create</h2>
+            <p>
+              The first icons mirrored the icons available in the DHIS2 software
+              library. Then we expanded to commonsense health icons to round out
+              the collection. We then put a{' '}
+              <Link href="/request-icon">Request an icon</Link> link on our
+              website and have had dozens of requests from medical professionals
+              and software developers from all over the world. You can see a
+              full list of completed and still-to-be-done icons on the{' '}
+              <Link href="https://github.com/resolvetosavelives/healthicons/issues?q=is%3Aissue%20%20label%3A%22icon%20request%22%20">
+                Github issues page
+              </Link>{' '}
+              for the project.
+            </p>
+            <p>
+              We honestly are not too picky about choosing icons and any
+              health-related icon that seems reasonable by our volunteer team is
+              added to the collection.
+            </p>
+
+            <h2>Icons vs. symbols</h2>
+            <p>Paragraph</p>
+
+            <figure>
+              <img
+                src="/ui/example-symbols.png"
+                alt="Examples of icons at 48px and 24px grid sizes"
+                width="800"
+                height="400"
+                className={styles.fullImage}
+              />
+              <figcaption className={styles.caption}>
+                Examples of icons at 48px and 24px grid sizes
+              </figcaption>
+            </figure>
+
             <h2>CC0 public domain</h2>
             <p>Paragraph</p>
 
@@ -141,9 +210,6 @@ export default function About() {
             <h2>Other volunteer projects</h2>
             <p>Figma plugin</p>
             <p>React packages</p>
-
-            <h2>Icons vs. symbols</h2>
-            <p>Paragraph</p>
 
             <h2>No tracking usage?</h2>
             <p>Paragraph</p>
