@@ -12503,6 +12503,25 @@
   ]
  },
  {
+    "id": "video-on-line",
+    "category": "devices",
+    "path": "devices/video-on-line",
+    "tags": [
+     "Camera",
+     "Video",
+     "Recording",
+     "Conference",
+     "Streaming",
+     "Telemedicine",
+     "Live"
+    ],
+    "title": "Video Camera",
+    "formats": [
+     "48px"
+    ]
+   },
+ {
+  "id": "nappy_diaper",
   "id": "nappy-diaper",
   "category": "symbols",
   "path": "symbols/nappy-diaper",
@@ -12523,5 +12542,6 @@
    "24px",
    "48px"
   ]
+  
  }
 ]
