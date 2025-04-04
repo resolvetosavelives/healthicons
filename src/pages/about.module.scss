@@ -38,11 +38,13 @@
   height: auto;
 }
 
-caption.caption {
+.caption {
+  text-align: center;
   width: 100%;
   display: block;
   margin: -0.5em 0 2em 0;
   font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .contributeDesktop {
