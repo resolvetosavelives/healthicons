@@ -121,48 +121,6 @@
   margin-top: 2rem;
 }
 
-.relatedIcons {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0 2rem;
-}
-
-.relatedIconLink {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  color: var(--link-color);
-  padding: 0.5rem;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-
-  &:hover {
-    background: var(--link-decoration-color);
-    transform: translateY(-2px);
-  }
-
-  img {
-    margin-bottom: 0.5rem;
-    transition: transform 0.2s ease;
-  }
-
-  &:hover img {
-    transform: scale(1.1);
-  }
-}
-
-.relatedIconTitle {
-  font-size: 0.8rem;
-  line-height: 1.2;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
 .nextPrevLinksWrapper {
   position: absolute;
   top: 20px;
@@ -187,7 +145,7 @@
   padding-right: 0.2rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ccc;  
+  color: #ccc;
 }
 
 @media (min-width: 60rem) {

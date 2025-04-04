@@ -27,18 +27,6 @@ export function IconTileModal(props: IconTileModalProps) {
 
   const prevIcon = currentIndex > 0 ? props.allIcons[currentIndex - 1] : null;
 
-  // Find related icons based on matching tags
-  const relatedIcons = useMemo(() => {
-    const currentTags = new Set(props.icon.tags);
-    return props.allIcons
-      .filter(icon => {
-        if (icon.id === props.icon.id) return false; // Exclude current icon
-        // Check if any tags match
-        return icon.tags.some(tag => currentTags.has(tag));
-      })
-      .slice(0, 6); // Limit to 6 related icons
-  }, [props.icon.id, props.icon.tags, props.allIcons]);
-
   const handleTagClick = (tag: string) => {
     dispatch(setKeywords(tag));
     props.onClose();
@@ -190,32 +178,6 @@ export function IconTileModal(props: IconTileModalProps) {
                   >
                     {tag}
                   </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {relatedIcons.length > 0 && (
-            <div className={styles.modalRelatedSection}>
-              <div className={styles.modalLabel}>Related Icons</div>
-              <div className={styles.relatedIcons}>
-                {relatedIcons.map((icon) => (
-                  <Link
-                    key={icon.id}
-                    href={`/icon/${props.iconType}/${icon.category}/${icon.id}`}
-                    className={styles.relatedIconLink}
-                    scroll={false}
-                    replace={true}
-                  >
-                    <img
-                      src={`/icons/svg/${props.iconType}/${icon.category}/${icon.id}.svg`}
-                      width="48"
-                      height="48"
-                      alt={icon.title}
-                      title={icon.title}
-                    />
-                    <span className={styles.relatedIconTitle}>{icon.title}</span>
-                  </Link>
                 ))}
               </div>
             </div>
