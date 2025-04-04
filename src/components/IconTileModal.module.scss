@@ -91,23 +91,33 @@
 
 .modalTags {
   margin: 0 0 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.modalTags span {
+.tagButton {
   background: var(--link-decoration-color);
   color: var(--link-color);
-  margin: 0.2rem 0.2rem 0.2rem 0;
-  padding: 0.2rem 1rem;
+  padding: 0.4rem 1rem;
   border-radius: 100px;
-  display: inline-block;
   font-size: 0.8rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--link-color);
+    color: white;
+  }
 }
 
 .modal24pxImage {
   margin: 16px 0;
 }
 
-.modalTagsSection {
+.modalTagsSection,
+.modalRelatedSection {
   margin-top: 2rem;
 }
 
@@ -135,7 +145,7 @@
   padding-right: 0.2rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ccc;  
+  color: #ccc;
 }
 
 @media (min-width: 60rem) {
@@ -167,5 +177,9 @@
     left: 90px;
     width: 24px;
     height: auto;
+  }
+
+  .relatedIcons {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 }

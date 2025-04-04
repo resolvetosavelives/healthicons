@@ -35,108 +35,164 @@
 .filterPlacementBox {
   display: flex;
   justify-content: center;
+  margin-top: 1rem;
 }
 
 .filterBox {
-  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 800px;
+  height: 48px;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #fff;
+  transition: border-color 0.15s ease-in-out;
+
+  &:focus-within {
+    border-color: var(--link-color);
+  }
 }
 
 .filterInputLabel {
-  width: 100%;
-  border: 1px solid var(--link-decoration-color);
-  border-radius: 5px;
-  margin-bottom: 0.5rem;
+  flex: 1;
+  position: relative;
+  height: 38px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: url(/ui/search-2-line.svg) center no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+  }
 }
 
 .filterBoxInput {
   width: 100%;
-  margin: 0 auto;
-  font-size: 1rem;
-  padding: 1rem 1rem 1rem 50px;
-  background: #fff url(/ui/search-2-line.svg) 1rem 50% no-repeat;
-  background-size: 20px;
+  height: 100%;
+  padding: 0 12px 0 36px;
+  font-size: 0.95rem;
+  background: transparent;
   border: none;
-  border-radius: 5px;
-  position: relative;
+  outline: none;
+  color: #495057;
+
+  &::placeholder {
+    color: #adb5bd;
+  }
+}
+
+.categorySelect {
+  height: 100%;
+  padding: 0 32px 0 12px;
+  font-size: 0.95rem;
+  background: transparent;
+  border: none;
+  border-left: 1px solid #e9ecef;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  color: #495057;
+  min-width: 140px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8.825L1.175 4 2.238 2.938 6 6.7l3.763-3.763L10.825 4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px;
 
   &:focus {
-    border-color: var(--link-color);
-    outline: none;
+    border-left-color: var(--link-color);
   }
 }
 
-.styleToggleContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  margin: 0.3rem 0 2rem 0;
-}
-
+.styleToggleContainer,
 .sizeToggleContainer {
   display: flex;
-  align-items: center;
-  justify-content: center;
   background: #fff;
-  margin: 0.3rem 0 2rem 1px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 6px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  height: 40px;
 }
 
-.formatToggleContainer {
+.styleToggle,
+.sizeToggle {
+  padding: 0 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #495057;
+  transition: all 0.15s ease-in-out;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
-  margin: 0.3rem 0 2rem 1px;
-  border-radius: 0 5px 5px 0;
-}
+  min-width: 60px;
 
-.styleToggle {
-  font-size: 1rem;
-  background: none;
-  margin: 0;
-  border: none;
-  cursor: pointer;
-  margin: 0 0.2rem;
-  color: var(--link-color);
-  padding: 0.5rem 1rem 0.5rem 32px;
-  position: relative;
-
-  &:before {
-    content: '.';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: var(--link-decoration-color);
-    text-indent: -1000rem;
-    color: #fff;
-    border-radius: 100px;
-    top: 7px;
-    left: 5px;
+  &:not(:last-child) {
+    border-right: 1px solid #e9ecef;
   }
 
-  &:after {
-    content: '.';
-    transition: opacity 0.2s;
-    opacity: 0;
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: var(--link-color);
-    text-indent: -1000rem;
-    color: #fff;
-    border-radius: 100px;
-    top: 13px;
-    left: 11px;
+  &:hover:not(.styleToggleSelected) {
+    background: #e9ecef;
   }
 }
 
 .styleToggleSelected {
-  border-color: var(--link-color);
-  &:after {
-    opacity: 1;
+  background: var(--link-color);
+  color: white;
+
+  &:hover {
+    background: var(--link-color-dark);
+  }
+}
+
+@media (max-width: 768px) {
+  .filterBox {
+    flex-direction: column;
+    height: auto;
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .searchContainer,
+  .styleToggleContainer,
+  .sizeToggleContainer {
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    border-color: #e9ecef;
+    border-width: 1px;
+  }
+
+  .styleToggle {
+    width: 50%;
+  }
+
+  .styleToggleContainer {
+    display: none;
+  }
+
+  .categorySelect {
+    min-width: 120px;
   }
 }
 
@@ -161,34 +217,13 @@
     }
   }
 
-  .filterInputLabel {
-    border: none;
-    margin-bottom: 0;
-  }
-
-  .filterBox {
-    width: 90%;
-    flex-direction: row;
-  }
-
-  .filterBoxInput {
-    border-radius: 5px 0 0 5px;
-    right: 1px;
-  }
-
   .filterPlacementBox {
     margin: -5rem 1rem 4rem 1rem;
   }
 
-  .styleToggleContainer {
-    padding-left: 16px;
-    padding: 0.5rem 16px;
-    margin: 0 1px 0 1px;
-  }
-
-  .sizeToggleContainer {
-    padding-left: 16px;
-    padding: 0.5rem 16px;
-    margin: 0 0 0 1px;
+  .filterBox {
+    padding: 0.75rem;
+    background: none;
+    box-shadow: none;
   }
 }
