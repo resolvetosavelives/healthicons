@@ -186,7 +186,27 @@ export default function About() {
             </p>
 
             <h2>Icons vs. symbols</h2>
-            <p>Paragraph</p>
+            <p>
+              The original icon set was designed at a 48 pixel grid. In
+              hindsight, this made the Health Icons set really more 'symbols'
+              than 'icons.' They were really useful when you needed a symbol to
+              be recognizable on a large button, in a PowerPoint presentation,
+              or on a sign. But, the 48 pixel icons were not ideal for using in
+              user interfaces, especially alongside common icon sets like{' '}
+              <Link href="https://fonts.google.com/icons?icon.set=Material+Symbols">
+                Google Material
+              </Link>{' '}
+              icons, <Link href="https://feathericons.com/">Feather</Link>{' '}
+              icons, <Link href="https://remixicon.com/">Remix</Link> icons,
+              etc.
+            </p>
+            <p>
+              In 2024, we started redrawing many of the icons at a 24 pixel grid
+              (half the size), which meant reducing the amount of detail in each
+              icon. Today, many of the icons have been redrawn in this smaller
+              size, which makes them much more useful in software user
+              interfaces and apps.
+            </p>
 
             <figure>
               <img
@@ -202,20 +222,31 @@ export default function About() {
             </figure>
 
             <h2>CC0 public domain</h2>
-            <p>Paragraph</p>
+            <p>
+              From the very beginning, we wanted the Health Icons to be used as
+              widely as possible. So, we chose to label all icons with a{' '}
+              <Link href="https://creativecommons.org/public-domain/cc0/">
+                CC0 (Creative Commons Zero) license
+              </Link>
+              , which is a type of public domain license. This means that anyone
+              can use the icons, they can modify the icons in any way, they can
+              sell the icons, they can sell products containing the icons, and
+              we retain no ownership. We even let almost anyone into our Figma
+              so they can access the originals of the icons.
+            </p>
 
             <h2>The website</h2>
-            <p>Text</p>
+            <p>Description coming...</p>
 
             <h2>Other volunteer projects</h2>
             <p>Figma plugin</p>
             <p>React packages</p>
 
             <h2>No tracking usage?</h2>
-            <p>Paragraph</p>
+            <p>Description coming...</p>
 
             <h2>Health icons in the wild</h2>
-            <p>Paragraph</p>
+            <p>Description coming...</p>
           </div>
         </div>
       </main>
