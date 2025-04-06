@@ -116,8 +116,7 @@
   margin: 16px 0;
 }
 
-.modalTagsSection,
-.modalRelatedSection {
+.modalTagsSection {
   margin-top: 2rem;
 }
 
@@ -177,9 +176,5 @@
     left: 90px;
     width: 24px;
     height: auto;
-  }
-
-  .relatedIcons {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   }
 }
