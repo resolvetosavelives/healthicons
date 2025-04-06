@@ -1,6 +1,5 @@
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
-import { useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Icon } from '../lib/icons';

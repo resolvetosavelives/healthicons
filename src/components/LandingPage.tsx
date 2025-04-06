@@ -87,7 +87,8 @@ export default function LandingPage({
             i.tags.concat([i.title, c.title]).join(', ')
           ) &&
           i.formats.includes(searchFormatValue) &&
-          (!searchCategoryValue || c.title.toLowerCase() === searchCategoryValue)
+          (!searchCategoryValue ||
+            c.title.toLowerCase() === searchCategoryValue)
         ) {
           filteredIcons.push(i);
         }
@@ -140,14 +141,17 @@ export default function LandingPage({
                   onChange={(e) => dispatch(setKeywords(e.target.value))}
                 />
               </label>
-              <select 
+              <select
                 className={styles.categorySelect}
                 value={searchCategoryValue}
                 onChange={(e) => dispatch(setCategory(e.target.value))}
               >
                 <option value="">All Categories</option>
                 {categories.map((category) => (
-                  <option key={category.title} value={category.title.toLowerCase()}>
+                  <option
+                    key={category.title}
+                    value={category.title.toLowerCase()}
+                  >
                     {category.title}
                   </option>
                 ))}
