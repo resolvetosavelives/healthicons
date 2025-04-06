@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
 import { useRouter } from 'next/navigation';
