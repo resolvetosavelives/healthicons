@@ -6,7 +6,7 @@ Free, open source health icons available for any use. Use for your next commerci
 <br />
 <br />
 
-### Using Health Icons
+## Using Health Icons
 
 These icons are available in the public domain ([CC0]([https://healthicons.org](https://creativecommons.org/public-domain/cc0/))) for use in any type of project. Icons are available in several formats:
 
@@ -21,7 +21,7 @@ Icons can be downloaded:
 - Via [NPM](https://www.npmjs.com/package/healthicons): `npm i healthicons` or `yarn add healthicons`
 <br />
 
-### Icon Requests
+## Request a new icon
 
 Need an icon for your project? Submit a request with an [Issue on GitHub](https://github.com/resolvetosavelives/healthicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=Icon+Request%3A+%5Bname+of+icon%5D) using the title `"Icon Request: [name of icon]"` and we will do our best to respond.
 
