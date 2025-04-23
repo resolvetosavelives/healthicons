@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
 import { useRouter } from 'next/navigation';
@@ -19,6 +19,8 @@ export function IconTileModal(props: IconTileModalProps) {
   const router = useRouter();
   const dispatch = useDispatch();
 
+  const [copied, setCopied] = useState(false);
+
   const currentIndex = props.allIcons.map((i) => i.id).indexOf(props.icon.id);
   const nextIcon =
     currentIndex < props.allIcons.length - 1
@@ -30,6 +32,20 @@ export function IconTileModal(props: IconTileModalProps) {
   const handleTagClick = (tag: string) => {
     dispatch(setKeywords(tag));
     props.onClose();
+  };
+
+  const handleCopySVG = async () => {
+    try {
+      const res = await fetch(
+        `/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`
+      );
+      const svgText = await res.text();
+      await navigator.clipboard.writeText(svgText);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (error) {
+      console.error('Failed to copy SVG', error);
+    }
   };
 
   useEffect(() => {
@@ -52,7 +68,6 @@ export function IconTileModal(props: IconTileModalProps) {
     };
     document.addEventListener('keydown', keyDownHandler);
 
-    // clean up
     return () => {
       document.removeEventListener('keydown', keyDownHandler);
     };
@@ -129,7 +144,11 @@ export function IconTileModal(props: IconTileModalProps) {
             >
               <span>96px PNG</span>
             </a>
+            <button onClick={handleCopySVG} className={styles.modalButton}>
+              <span>{copied ? 'Copied!' : 'Copy SVG to Clipboard'}</span>
+            </button>
           </div>
+
           {props.icon.formats.includes('24px') && (
             <>
               <img
