@@ -428,6 +428,7 @@ https://healthicons.org/icon/filled/places/ambulatory-clinic
 https://healthicons.org/icon/filled/places/emergency-operations_center
 https://healthicons.org/icon/filled/places/emergency-post
 https://healthicons.org/icon/filled/places/forest
+https://healthicons.org/icon/filled/places/forest-persons
 https://healthicons.org/icon/filled/places/home
 https://healthicons.org/icon/filled/places/home-alt
 https://healthicons.org/icon/filled/places/proper-roof
@@ -438,7 +439,6 @@ https://healthicons.org/icon/filled/places/letrina-alt
 https://healthicons.org/icon/filled/places/market-stall
 https://healthicons.org/icon/filled/places/ministry-of_health
 https://healthicons.org/icon/filled/places/mosque
-https://healthicons.org/icon/filled/places/forest-persons
 https://healthicons.org/icon/filled/places/rural-post
 https://healthicons.org/icon/filled/places/rural-post_alt
 https://healthicons.org/icon/filled/places/temple
@@ -597,7 +597,7 @@ https://healthicons.org/icon/filled/symbols/lactation
 https://healthicons.org/icon/filled/symbols/life-science
 https://healthicons.org/icon/filled/symbols/geo-location
 https://healthicons.org/icon/filled/symbols/loinc
-https://healthicons.org/icon/filled/symbols/low-income_level
+https://healthicons.org/icon/filled/symbols/low-income-level
 https://healthicons.org/icon/filled/symbols/low-level
 https://healthicons.org/icon/filled/symbols/magic-wand
 https://healthicons.org/icon/filled/symbols/magnifying-glass
@@ -666,6 +666,7 @@ https://healthicons.org/icon/filled/symbols/ui-zoom
 https://healthicons.org/icon/filled/symbols/ui-zoom_in
 https://healthicons.org/icon/filled/symbols/ui-zoom_out
 https://healthicons.org/icon/filled/symbols/un-paved_road
+https://healthicons.org/icon/filled/symbols/video
 https://healthicons.org/icon/filled/symbols/virus
 https://healthicons.org/icon/filled/symbols/virus-alt
 https://healthicons.org/icon/filled/symbols/virus-mutation

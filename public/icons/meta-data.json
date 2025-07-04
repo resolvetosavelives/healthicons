@@ -663,6 +663,7 @@
   ],
   "title": "Oral Contraceptive 21",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -1669,6 +1670,7 @@
   ],
   "title": "Bacteria",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -6905,23 +6907,6 @@
   ]
  },
  {
-  "id": "forest-persons",
-  "category": "places",
-  "path": "places/forest-persons",
-  "tags": [
-   "Nature",
-   "Person",
-   "Tree",
-   "Walking",
-   "Woods",
-   "dhis2:forest_persons"
-  ],
-  "title": "Person in Forest",
-  "formats": [
-   "48px"
-  ]
- },
- {
   "id": "old-man",
   "category": "people",
   "path": "people/old-man",
@@ -8238,9 +8223,9 @@
   ]
  },
  {
-  "id": "low-income_level",
+  "id": "low-income-level",
   "category": "symbols",
-  "path": "symbols/low-income_level",
+  "path": "symbols/low-income-level",
   "tags": [
    "Arrow",
    "Finance",
@@ -8349,6 +8334,7 @@
   ],
   "title": "Intestine",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -8389,6 +8375,7 @@
   ],
   "title": "Varicose Vein",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -9439,6 +9426,7 @@
   ],
   "title": "Penis",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -9458,6 +9446,7 @@
   ],
   "title": "Testicles",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -9889,6 +9878,7 @@
   ],
   "title": "Anus",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -10162,6 +10152,7 @@
   ],
   "title": "Head",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -10213,6 +10204,7 @@
   ],
   "title": "Thyroid",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -11532,6 +11524,7 @@
   ],
   "title": "Magic Wand",
   "formats": [
+   "24px",
    "48px"
   ]
  },
@@ -11782,18 +11775,10 @@
   "category": "symbols",
   "path": "symbols/lactation",
   "tags": [
-   "Baby",
-   "Breast",
-   "Breastfeed",
-   "Breastmilk",
-   "Feed",
-   "Feed",
-   "Milk",
-   "Mother",
-   "Nurse",
-   "Nursing",
-   "Nutrition",
-   "Postnatal"
+   "Breastfeeding",
+   "Maternal",
+   "Motherhood",
+   "Nursing"
   ],
   "title": "Lactation",
   "formats": [
@@ -12071,14 +12056,12 @@
   "category": "symbols",
   "path": "symbols/mental-health",
   "tags": [
-   "Brain",
-   "Heart",
-   "Mental Health",
-   "Psychiatry",
+   "Emotional health",
+   "Mind",
    "Psychology",
-   "Wellness"
+   "Wellbeing"
   ],
-  "title": "Mental Health",
+  "title": "Mental health",
   "formats": [
    "24px",
    "48px"
@@ -12231,7 +12214,6 @@
   ],
   "title": "Policy Gaps ALT",
   "formats": [
-   "24px",
    "48px"
   ]
  },
@@ -12298,16 +12280,12 @@
   "category": "symbols",
   "path": "symbols/diagnostics",
   "tags": [
-   "Charts",
-   "Data",
-   "Diagnose",
-   "Diagnositics",
-   "Dx",
-   "Evaluation",
-   "Exam",
-   "Lab",
-   "Trend",
-   "Triage"
+   "Analysis",
+   "Disease Detection",
+   "Health Check",
+   "Lab Analysis",
+   "Medical test",
+   "Report"
   ],
   "title": "Diagnostics",
   "formats": [
@@ -12519,6 +12497,24 @@
    "Undergarment"
   ],
   "title": "Diaper",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "video",
+  "category": "symbols",
+  "path": "symbols/video",
+  "tags": [
+   "Camera",
+   "Film",
+   "Media",
+   "Movie",
+   "Multimedia",
+   "Play"
+  ],
+  "title": "Video",
   "formats": [
    "24px",
    "48px"
