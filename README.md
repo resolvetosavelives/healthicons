@@ -8,7 +8,7 @@ Free, open source health icons available for any use. Use for your next commerci
 
 ## Using Health Icons
 
-These icons are available in the public domain ([CC0]([https://healthicons.org](https://creativecommons.org/public-domain/cc0/))) for use in any type of project. Icons are available in several formats:
+These icons are available in the public domain ([CC0](<[https://healthicons.org](https://creativecommons.org/public-domain/cc0/)>)) for use in any type of project. Icons are available in several formats:
 
 - All icons are produced in "outline" and "filled" styles
 - Each icon is available in SVG and in PNG (48px and 96px)
@@ -19,7 +19,7 @@ Icons can be downloaded:
 - Individually from [our website](https://healthicons.org)
 - Together as [a ZIP file](https://healthicons.org/icons.zip)
 - Via [NPM](https://www.npmjs.com/package/healthicons): `npm i healthicons` or `yarn add healthicons`
-<br />
+  <br />
 
 ## Request a new icon
 
@@ -41,9 +41,19 @@ We’d love for you to join our team of volunteer designers and developers!
 
 This project uses [Next.js](https://nextjs.org).
 
-1. Check out the repo locally
-2. Run `yarn install`
-3. Run `yarn dev`
+This is the intended way to contribute to the code base:
+
+1. [Fork the main repo](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) so you have your own copy which will be at `https://github.com/{your-username}/healthicons/`
+2. Check it your fork on your computer: `gh repo clone {your-username}}/healthicons`
+3. Add a remote referencing the main repo: `git remote add upstream git@github.com:resolvetosavelives/healthicons.git`
+4. Fetch the remote upstream using: `git fetch upstream`
+5. Create a new branch based on the RTSL repo’s main branch: `git checkout -b my-branch-name upstream/main`
+6. Install dependencies using `yarn install`
+7. Run the project locally using `yarn dev`
+8. Make all of your changes and make a bunch of commits
+9. Push to your branch: `git push origin my-branch-name`
+10. On Github, create a pull request from your branch to `upstream/main`
+11. After that, an admin of the project will review the pull request and then offer feedback and/or merge it
 
 **Importing the latest icon information from Figma**
 
@@ -58,6 +68,7 @@ To pull the latest icon information from Figma, update the open-graph images, an
 <br />
 
 ## Publishing new icons to the website
+
 1. Run the website locally (see above)
 2. Delete all of the icons from your local directories `/public/icons/png/` and `/public/icons/svg/`
 3. Go the `Export` page on Figma
@@ -93,7 +104,7 @@ Each icon should have a title and tags which are added in the “Description” 
 - The “Description” only needs to go on the “filled” version of the icon in Figma
 - Icon titles should be in [Title Case](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case) with each word capitalized
 - Tags are essentially synonyms or important related words that would help someone find the icon. They could also be alternative uses of the icon, the way a donkey could represent “farm”. If someone searches “blood” or “positive” they’ll see any icons that are tagged with those words. Tags should also be Title Case.
-<br />
+  <br />
 
 ## Code of Conduct
 
