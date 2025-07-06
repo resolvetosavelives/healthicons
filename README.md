@@ -3,12 +3,10 @@
 # Health Icons
 
 Free, open source health icons available for any use. Use for your next commercial or personal project. You don’t need to give credit and you can edit the icons however you want. Health Icons is a volunteer effort to create a 'global good' for health projects all over the world. Website: [healthicons.org](https://healthicons.org)
-<br />
-<br />
 
 ## Using Health Icons
 
-These icons are available in the public domain ([CC0](<[https://healthicons.org](https://creativecommons.org/public-domain/cc0/)>)) for use in any type of project. Icons are available in several formats:
+These icons are available in the public domain ([CC0](https://creativecommons.org/public-domain/cc0/)) for use in any type of project. Icons are available in several formats:
 
 - All icons are produced in "outline" and "filled" styles
 - Each icon is available in SVG and in PNG (48px and 96px)
@@ -19,14 +17,10 @@ Icons can be downloaded:
 - Individually from [our website](https://healthicons.org)
 - Together as [a ZIP file](https://healthicons.org/icons.zip)
 - Via [NPM](https://www.npmjs.com/package/healthicons): `npm i healthicons` or `yarn add healthicons`
-  <br />
 
 ## Request a new icon
 
 Need an icon for your project? Submit a request with an [Issue on GitHub](https://github.com/resolvetosavelives/healthicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=Icon+Request%3A+%5Bname+of+icon%5D) using the title `"Icon Request: [name of icon]"` and we will do our best to respond.
-
-<br />
-<br />
 
 ## How to contribute
 
@@ -34,8 +28,6 @@ We’d love for you to join our team of volunteer designers and developers!
 
 1. Join our open Slack channel by emailing [contact@healthicons.org](mailto:contact@healthicons.org)
 2. Browse the [Figma](https://www.figma.com/file/mbsBVYXECIOl5E0kkGAiC2/?node-id=978%3A3) and contribute icons in the "New icons" section. Please read the code of conduct ([below](https://github.com/resolvetosavelives/healthicons#code-of-conduct)) and the styleguide (in the Figma) carefully before contributing.
-
-<br />
 
 ## Installing and running the website locally
 
@@ -65,8 +57,6 @@ To pull the latest icon information from Figma, update the open-graph images, an
 4. Run `yarn update-icons`
 5. If you're committing to a branch on git, make sure to remember to add the newly generated files in the `/public/` directory.
 
-<br />
-
 ## Publishing new icons to the website
 
 1. Run the website locally (see above)
@@ -81,8 +71,6 @@ To pull the latest icon information from Figma, update the open-graph images, an
 10. Raise a PR and request a review from another volunteer via Slack
 11. Wait for review
 12. Merge the PR
-
-<br />
 
 ## Tagging icons in Figma
 
@@ -104,7 +92,6 @@ Each icon should have a title and tags which are added in the “Description” 
 - The “Description” only needs to go on the “filled” version of the icon in Figma
 - Icon titles should be in [Title Case](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case) with each word capitalized
 - Tags are essentially synonyms or important related words that would help someone find the icon. They could also be alternative uses of the icon, the way a donkey could represent “farm”. If someone searches “blood” or “positive” they’ll see any icons that are tagged with those words. Tags should also be Title Case.
-  <br />
 
 ## Code of Conduct
 
@@ -148,8 +135,6 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 This Code of Conduct is adapted from the Contributor Covenant, version 1.4, [available here](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html). For answers to common questions about this code of conduct, see [this FAQ](https://www.contributor-covenant.org/faq).
 
-<br />
-
 ## MIT License
 
 Copyright © 2021 Resolve to Save Lives
@@ -159,8 +144,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-<br />
 
 ## Hosted by Resolve to Save Lives
 
