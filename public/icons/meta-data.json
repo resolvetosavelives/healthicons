@@ -465,6 +465,22 @@
   ]
  },
  {
+  "id": "forest-persons",
+  "category": "places",
+  "path": "places/forest-persons",
+  "tags": [
+   "Nature",
+   "Park",
+   "Trees",
+   "Woods",
+   "dhis2:forest-persons"
+  ],
+  "title": "Forest",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
   "id": "city",
   "category": "places",
   "path": "places/city",
