@@ -1,7 +1,7 @@
 .modalContainer {
   background: white;
   width: 90%;
-  top: 4%;
+  top: 5%;
   left: 5%;
   position: fixed;
   border-radius: 5px;
@@ -154,14 +154,7 @@
 }
 
 .userActionsContainer {
-  display: flex;
-  width: 100%;
-  gap: 4rem;
-}
-
-.modalCopySvgContainer {
-  padding: 0.2rem;
-  width: 50%;
+  display: block;
 }
 
 .modalCopySvgContainer pre {
@@ -230,5 +223,16 @@
     left: 90px;
     width: 24px;
     height: auto;
+  }
+
+  .userActionsContainer {
+    display: flex;
+    width: 100%;
+    gap: 4rem;
+  }
+
+  .modalCopySvgContainer {
+    padding: 0.2rem;
+    width: 50%;
   }
 }
