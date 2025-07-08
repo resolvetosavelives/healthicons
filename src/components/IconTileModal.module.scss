@@ -1,7 +1,7 @@
 .modalContainer {
   background: white;
   width: 90%;
-  top: 5%;
+  top: 4%;
   left: 5%;
   position: fixed;
   border-radius: 5px;
@@ -65,10 +65,16 @@
   white-space: nowrap;
   display: inline-block;
   font-size: 0.8rem;
+  outline: none;
+  border: none;
 
   &:hover {
     background-color: var(--link-color-dark);
     text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
@@ -145,6 +151,54 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #ccc;
+}
+
+.userActionsContainer {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+}
+
+.modalCopySvgContainer {
+  padding: 0.2rem;
+  width: 50%;
+}
+
+.modalCopySvgContainer pre {
+  background-color: #d0c8c8;
+  padding: 1rem;
+  border-radius: .5rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 5rem;
+  overflow-y: scroll;
+
+  /* Hide scrollbar track and arrows, show only the thumb */
+  &::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-button {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #b0a8a8;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #a09090;
+  }
+  /* Firefox: only show thumb */
+  scrollbar-width: thin;
+  scrollbar-color: #b0a8a8 transparent;
 }
 
 @media (min-width: 60rem) {
