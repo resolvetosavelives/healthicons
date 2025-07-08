@@ -17,6 +17,7 @@ interface IconTileModalProps {
 
 export function IconTileModal(props: IconTileModalProps) {
   const [iconCode, setIconCode] = useState(null);
+  const [copied, setCopied] = useState(false);
   const router = useRouter();
   const dispatch = useDispatch();
 
@@ -36,20 +37,24 @@ export function IconTileModal(props: IconTileModalProps) {
   const handleCopyToClipboard = () => {
     if (iconCode) {
       if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(iconCode).catch(() => {
-          const textarea = document.createElement('textarea');
-          textarea.value = iconCode;
-          textarea.style.position = 'fixed';
-          textarea.style.left = '-9999px';
-          document.body.appendChild(textarea);
-          textarea.focus();
-          textarea.select();
-          try {
-            document.execCommand('copy');
-          } finally {
-            document.body.removeChild(textarea);
-          }
-        });
+        navigator.clipboard
+          .writeText(iconCode)
+          .then(() => setCopied(true))
+          .catch(() => {
+            const textarea = document.createElement('textarea');
+            textarea.value = iconCode;
+            textarea.style.position = 'fixed';
+            textarea.style.left = '-9999px';
+            document.body.appendChild(textarea);
+            textarea.focus();
+            textarea.select();
+            try {
+              document.execCommand('copy');
+              setCopied(true);
+            } finally {
+              document.body.removeChild(textarea);
+            }
+          });
       } else {
         const textarea = document.createElement('textarea');
         textarea.value = iconCode;
@@ -60,10 +65,13 @@ export function IconTileModal(props: IconTileModalProps) {
         textarea.select();
         try {
           document.execCommand('copy');
+          setCopied(true);
         } finally {
           document.body.removeChild(textarea);
         }
       }
+
+      setTimeout(() => setCopied(false), 1000);
     }
   };
 
@@ -223,8 +231,9 @@ export function IconTileModal(props: IconTileModalProps) {
                 <button
                   className={styles.modalButton}
                   onClick={handleCopyToClipboard}
+                  disabled={copied}
                 >
-                  <span>Copy SVG</span>
+                  <span>{copied ? 'copied' : 'Copy SVG'}</span>
                 </button>
               </div>
             ) : null}

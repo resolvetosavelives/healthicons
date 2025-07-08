@@ -7,6 +7,17 @@
   border-radius: 5px;
   box-shadow: 0 0 0 10px var(--link-decoration-color);
   border: 1px solid var(--link-color);
+  max-height: 75vh;
+  overflow-y: scroll;
+  /* Hide scrollbar track and arrows, show only the thumb */
+  &,
+  & * {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    &::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, Opera */
+    }
+  }
 }
 
 .modalWrapper {
@@ -67,6 +78,7 @@
   font-size: 0.8rem;
   outline: none;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--link-color-dark);
@@ -165,33 +177,6 @@
   word-break: break-word;
   max-height: 5rem;
   overflow-y: scroll;
-
-  /* Hide scrollbar track and arrows, show only the thumb */
-  &::-webkit-scrollbar {
-    width: 8px;
-    background: transparent;
-  }
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  &::-webkit-scrollbar-button {
-    display: none;
-    height: 0;
-    width: 0;
-  }
-  &::-webkit-scrollbar-corner {
-    background: transparent;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: #b0a8a8;
-    border-radius: 4px;
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background: #a09090;
-  }
-  /* Firefox: only show thumb */
-  scrollbar-width: thin;
-  scrollbar-color: #b0a8a8 transparent;
 }
 
 @media (min-width: 60rem) {
@@ -228,7 +213,7 @@
   .userActionsContainer {
     display: flex;
     width: 100%;
-    gap: 4rem;
+    gap: 1rem;
   }
 
   .modalCopySvgContainer {
