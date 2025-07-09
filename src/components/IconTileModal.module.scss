@@ -12,10 +12,18 @@
   /* Hide scrollbar track and arrows, show only the thumb */
   &,
   & * {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent; /* Firefox */
     &::-webkit-scrollbar {
-      display: none; /* Chrome, Safari, Opera */
+      width: 6px;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #e5e5e5;
+      border-radius: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
     }
   }
 }
@@ -166,7 +174,7 @@
 }
 
 .modalCopySvgContainer {
-  background-color: #d0c8c8;
+  background-color: #0000000b;
   padding: .5rem;
   border-radius: .2rem;
   white-space: pre-wrap;
