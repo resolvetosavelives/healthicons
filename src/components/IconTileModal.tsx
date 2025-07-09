@@ -51,6 +51,8 @@ export function IconTileModal(props: IconTileModalProps) {
         setCopied(false);
       }, 1500);
     });
+
+    return () => clipboard.destroy();
   }, [iconCode]);
 
   useEffect(() => {
