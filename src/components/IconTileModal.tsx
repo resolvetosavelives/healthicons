@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import ClipboardJs from 'clipboard';
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
 import { useRouter } from 'next/navigation';
@@ -18,6 +19,7 @@ interface IconTileModalProps {
 export function IconTileModal(props: IconTileModalProps) {
   const [iconCode, setIconCode] = useState(null);
   const [copied, setCopied] = useState(false);
+  const btnRef = useRef(null);
   const router = useRouter();
   const dispatch = useDispatch();
 
@@ -34,46 +36,22 @@ export function IconTileModal(props: IconTileModalProps) {
     props.onClose();
   };
 
-  const handleCopyToClipboard = () => {
-    if (iconCode) {
-      if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard
-          .writeText(iconCode)
-          .then(() => setCopied(true))
-          .catch(() => {
-            const textarea = document.createElement('textarea');
-            textarea.value = iconCode;
-            textarea.style.position = 'fixed';
-            textarea.style.left = '-9999px';
-            document.body.appendChild(textarea);
-            textarea.focus();
-            textarea.select();
-            try {
-              document.execCommand('copy');
-              setCopied(true);
-            } finally {
-              document.body.removeChild(textarea);
-            }
-          });
-      } else {
-        const textarea = document.createElement('textarea');
-        textarea.value = iconCode;
-        textarea.style.position = 'fixed';
-        textarea.style.left = '-9999px';
-        document.body.appendChild(textarea);
-        textarea.focus();
-        textarea.select();
-        try {
-          document.execCommand('copy');
-          setCopied(true);
-        } finally {
-          document.body.removeChild(textarea);
-        }
-      }
-
-      setTimeout(() => setCopied(false), 1000);
+  useEffect(() => {
+    if (!btnRef.current) {
+      return;
     }
-  };
+
+    const clipboard = new ClipboardJs(btnRef.current, {
+      text: () => iconCode
+    });
+
+    clipboard.on('success', () => {
+      setCopied(true);
+      setTimeout(() => {
+        setCopied(false);
+      }, 1500);
+    });
+  }, [iconCode]);
 
   useEffect(() => {
     fetch(
@@ -230,8 +208,8 @@ export function IconTileModal(props: IconTileModalProps) {
                 <pre>{iconCode}</pre>
                 <button
                   className={styles.modalButtonVariableIcon}
-                  onClick={handleCopyToClipboard}
                   disabled={copied}
+                  ref={btnRef}
                 >
                   <span className={styles.buttonContent}>
                     <span>
