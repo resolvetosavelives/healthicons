@@ -24,4 +24,21 @@ describe('searchKeywords', () => {
   test('NO match multiple search terms', () => {
     expect(searchKeywords('brown bear', 'quick brown fox')).toBe(false);
   });
+
+  // New tests for improved functionality
+  test('empty search returns true', () => {
+    expect(searchKeywords('', 'quick brown fox')).toBe(true);
+  });
+
+  test('whitespace-only search returns true', () => {
+    expect(searchKeywords('   ', 'quick brown fox')).toBe(true);
+  });
+
+  test('partial word match without word boundary', () => {
+    expect(searchKeywords('ow', 'quick brown fox')).toBe(true);
+  });
+
+  test('multiple partial matches', () => {
+    expect(searchKeywords('ick ow', 'quick brown fox')).toBe(true);
+  });
 });
