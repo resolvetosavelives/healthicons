@@ -75,5 +75,10 @@
     "classNameTemplate": "{title}",
     "titleTemplate": "{title}"
   },
-  "files": ["public/icons"]
+  "files": [
+    "public/icons"
+  ],
+  "dependencies": {
+    "clipboard": "^2.0.11"
+  }
 }

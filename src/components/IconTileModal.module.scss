@@ -7,6 +7,25 @@
   border-radius: 5px;
   box-shadow: 0 0 0 10px var(--link-decoration-color);
   border: 1px solid var(--link-color);
+  max-height: 75vh;
+  overflow-y: scroll;
+  /* Hide scrollbar track and arrows, show only the thumb */
+  &,
+  & * {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent; /* Firefox */
+    &::-webkit-scrollbar {
+      width: 6px;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #e5e5e5;
+      border-radius: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  }
 }
 
 .modalWrapper {
@@ -65,10 +84,17 @@
   white-space: nowrap;
   display: inline-block;
   font-size: 0.8rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--link-color-dark);
     text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
@@ -145,6 +171,29 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #ccc;
+}
+
+.modalCopySvgContainer {
+  background-color: #0000000b;
+  padding: .5rem;
+  border-radius: .2rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 5rem;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.modalButtonCopy {
+  @extend .modalButton;
+  background: var(--link-color) url(/ui/copy.svg) 16px 50%
+    no-repeat;
+}
+
+.modalButtonCopied {
+  @extend .modalButton;
+  background: var(--link-color) url(/ui/check.svg) 16px 50%
+    no-repeat;
 }
 
 @media (min-width: 60rem) {

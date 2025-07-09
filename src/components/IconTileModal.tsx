@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import ClipboardJs from 'clipboard';
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
 import { useRouter } from 'next/navigation';
@@ -16,6 +17,12 @@ interface IconTileModalProps {
 }
 
 export function IconTileModal(props: IconTileModalProps) {
+  const [iconCode24, setIconCode24] = useState(null);
+  const [iconCode48, setIconCode48] = useState(null);
+  const [copied24, setCopied24] = useState(false);
+  const [copied48, setCopied48] = useState(false);
+  const btnRef24 = useRef(null);
+  const btnRef48 = useRef(null);
   const router = useRouter();
   const dispatch = useDispatch();
 
@@ -31,6 +38,62 @@ export function IconTileModal(props: IconTileModalProps) {
     dispatch(setKeywords(tag));
     props.onClose();
   };
+
+  useEffect(() => {
+    if (!btnRef24.current) {
+      return;
+    }
+
+    const clipboard = new ClipboardJs(btnRef24.current, {
+      text: () => iconCode24
+    });
+
+    clipboard.on('success', () => {
+      setCopied24(true);
+      setTimeout(() => {
+        setCopied24(false);
+      }, 1500);
+    });
+
+    return () => clipboard.destroy();
+  }, [iconCode24]);
+
+  useEffect(() => {
+    if (!btnRef48.current) {
+      return;
+    }
+
+    const clipboard = new ClipboardJs(btnRef48.current, {
+      text: () => iconCode48
+    });
+
+    clipboard.on('success', () => {
+      setCopied48(true);
+      setTimeout(() => {
+        setCopied48(false);
+      }, 1500);
+    });
+
+    return () => clipboard.destroy();
+  }, [iconCode48]);
+
+  useEffect(() => {
+    fetch(
+      `/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`
+    )
+      .then((res) => res.text())
+      .then((text) => setIconCode24(text));
+    return () => setIconCode24(null);
+  }, [props.icon.category, props.icon.id, props.iconType]);
+
+  useEffect(() => {
+    fetch(
+      `/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`
+    )
+      .then((res) => res.text())
+      .then((text) => setIconCode48(text));
+    return () => setIconCode48(null);
+  }, [props.icon.category, props.icon.id, props.iconType]);
 
   useEffect(() => {
     const keyDownHandler = (e) => {
@@ -107,7 +170,7 @@ export function IconTileModal(props: IconTileModalProps) {
           <div className={styles.modalTitle}>{props.icon.title}</div>
 
           <div className={styles.modalLabel}>Standard version (48px grid)</div>
-          <div className={styles.modalButtons}>
+          <div>
             <a
               href={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
               download={`${props.icon.id}.svg`}
@@ -115,6 +178,16 @@ export function IconTileModal(props: IconTileModalProps) {
             >
               <span>SVG</span>
             </a>
+            {iconCode48 ? (
+              <a
+                className={
+                  copied48 ? styles.modalButtonCopied : styles.modalButtonCopy
+                }
+                ref={btnRef48}
+              >
+                <span>{copied48 ? 'Copied' : 'SVG'}</span>
+              </a>
+            ) : null}
             <a
               href={`/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}.png`}
               download={`${props.icon.id}.png`}
@@ -130,6 +203,7 @@ export function IconTileModal(props: IconTileModalProps) {
               <span>96px PNG</span>
             </a>
           </div>
+          <pre className={styles.modalCopySvgContainer}>{iconCode48}</pre>
           {props.icon.formats.includes('24px') && (
             <>
               <img
@@ -148,6 +222,18 @@ export function IconTileModal(props: IconTileModalProps) {
                 >
                   <span>SVG</span>
                 </a>
+                {iconCode24 ? (
+                  <a
+                    className={
+                      copied24
+                        ? styles.modalButtonCopied
+                        : styles.modalButtonCopy
+                    }
+                    ref={btnRef24}
+                  >
+                    <span>{copied24 ? 'Copied' : 'SVG'}</span>
+                  </a>
+                ) : null}
                 <a
                   href={`/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.png`}
                   download={`${props.icon.id}-24px.png`}
@@ -163,6 +249,7 @@ export function IconTileModal(props: IconTileModalProps) {
                   <span>48px PNG</span>
                 </a>
               </div>
+              <pre className={styles.modalCopySvgContainer}>{iconCode24}</pre>
             </>
           )}
 
