@@ -5,8 +5,11 @@ export function searchKeywords(search: string, keywords: string): boolean {
   }
 
   // Split search terms and filter out empty strings
-  const searchTerms = search.trim().split(/\s+/).filter(term => term.length > 0);
-  
+  const searchTerms = search
+    .trim()
+    .split(/\s+/)
+    .filter((term) => term.length > 0);
+
   // If no valid search terms after filtering, return true
   if (searchTerms.length === 0) {
     return true;
@@ -15,6 +18,6 @@ export function searchKeywords(search: string, keywords: string): boolean {
   // Create a regex pattern that matches all search terms in any order
   // The \b word boundary is removed to better support partial matches
   const pattern = '(?=.*?' + searchTerms.join(')(?=.*?') + ').*';
-  
+
   return new RegExp(pattern, 'i').test(keywords);
 }
