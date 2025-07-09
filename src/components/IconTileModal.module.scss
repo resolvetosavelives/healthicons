@@ -165,31 +165,27 @@
   color: #ccc;
 }
 
-.userActionsContainer {
-  display: block;
-}
-
-.modalCopySvgContainer pre {
+.modalCopySvgContainer {
   background-color: #d0c8c8;
-  padding: 1rem;
-  border-radius: .5rem;
+  padding: .5rem;
+  border-radius: .2rem;
   white-space: pre-wrap;
   word-break: break-word;
   max-height: 5rem;
   overflow-y: scroll;
+  width: 100%;
 }
 
-.modalButtonVariableIcon {
+.modalButtonCopy {
   @extend .modalButton;
-  background: var(--link-color);
-  padding: 0.6rem 20px 0.6rem 20px;
+  background: var(--link-color) url(/ui/copy.svg) 16px 50%
+    no-repeat;
 }
 
-.buttonContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.2rem;
+.modalButtonCopied {
+  @extend .modalButton;
+  background: var(--link-color) url(/ui/check.svg) 16px 50%
+    no-repeat;
 }
 
 @media (min-width: 60rem) {
@@ -221,16 +217,5 @@
     left: 90px;
     width: 24px;
     height: auto;
-  }
-
-  .userActionsContainer {
-    display: flex;
-    width: 100%;
-    gap: 1rem;
-  }
-
-  .modalCopySvgContainer {
-    padding: 0.2rem;
-    width: 50%;
   }
 }

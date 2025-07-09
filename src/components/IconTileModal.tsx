@@ -17,9 +17,12 @@ interface IconTileModalProps {
 }
 
 export function IconTileModal(props: IconTileModalProps) {
-  const [iconCode, setIconCode] = useState(null);
-  const [copied, setCopied] = useState(false);
-  const btnRef = useRef(null);
+  const [iconCode24, setIconCode24] = useState(null);
+  const [iconCode48, setIconCode48] = useState(null);
+  const [copied24, setCopied24] = useState(false);
+  const [copied48, setCopied48] = useState(false);
+  const btnRef24 = useRef(null);
+  const btnRef48 = useRef(null);
   const router = useRouter();
   const dispatch = useDispatch();
 
@@ -37,31 +40,59 @@ export function IconTileModal(props: IconTileModalProps) {
   };
 
   useEffect(() => {
-    if (!btnRef.current) {
+    if (!btnRef24.current) {
       return;
     }
 
-    const clipboard = new ClipboardJs(btnRef.current, {
-      text: () => iconCode
+    const clipboard = new ClipboardJs(btnRef24.current, {
+      text: () => iconCode24
     });
 
     clipboard.on('success', () => {
-      setCopied(true);
+      setCopied24(true);
       setTimeout(() => {
-        setCopied(false);
+        setCopied24(false);
       }, 1500);
     });
 
     return () => clipboard.destroy();
-  }, [iconCode]);
+  }, [iconCode24]);
+
+  useEffect(() => {
+    if (!btnRef48.current) {
+      return;
+    }
+
+    const clipboard = new ClipboardJs(btnRef48.current, {
+      text: () => iconCode48
+    });
+
+    clipboard.on('success', () => {
+      setCopied48(true);
+      setTimeout(() => {
+        setCopied48(false);
+      }, 1500);
+    });
+
+    return () => clipboard.destroy();
+  }, [iconCode48]);
+
+  useEffect(() => {
+    fetch(
+      `/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`
+    )
+      .then((res) => res.text())
+      .then((text) => setIconCode24(text));
+    return () => setIconCode24(null);
+  }, [props.icon.category, props.icon.id, props.iconType]);
 
   useEffect(() => {
     fetch(
       `/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`
     )
       .then((res) => res.text())
-      .then((text) => setIconCode(text));
-    return () => setIconCode(null);
+      .then((text) => setIconCode48(text));
+    return () => setIconCode48(null);
   }, [props.icon.category, props.icon.id, props.iconType]);
 
   useEffect(() => {
@@ -138,100 +169,89 @@ export function IconTileModal(props: IconTileModalProps) {
           />
           <div className={styles.modalTitle}>{props.icon.title}</div>
 
-          <div className={styles.userActionsContainer}>
-            <div className={styles.iconDownloadContainer}>
-              <div className={styles.modalLabel}>
-                Standard version (48px grid)
-              </div>
-              <div className={styles.modalButtons}>
+          <div className={styles.modalLabel}>Standard version (48px grid)</div>
+          <div>
+            <a
+              href={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
+              download={`${props.icon.id}.svg`}
+              className={styles.modalButton}
+            >
+              <span>SVG</span>
+            </a>
+            {iconCode48 ? (
+              <a
+                className={
+                  copied48 ? styles.modalButtonCopied : styles.modalButtonCopy
+                }
+                ref={btnRef48}
+              >
+                <span>{copied48 ? 'Copied' : 'SVG'}</span>
+              </a>
+            ) : null}
+            <a
+              href={`/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}.png`}
+              download={`${props.icon.id}.png`}
+              className={styles.modalButton}
+            >
+              <span>48px PNG</span>
+            </a>
+            <a
+              href={`/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}@2x.png`}
+              download={`${props.icon.id}@2x.png`}
+              className={styles.modalButton}
+            >
+              <span>96px PNG</span>
+            </a>
+          </div>
+          <pre className={styles.modalCopySvgContainer}>{iconCode48}</pre>
+          {props.icon.formats.includes('24px') && (
+            <>
+              <img
+                src={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
+                className={styles.modal24pxImage}
+                width="24"
+                height="24"
+                alt=""
+              />
+              <div className={styles.modalLabel}>Small version (24px grid)</div>
+              <div className={styles.modal24pxVersions}>
                 <a
-                  href={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
-                  download={`${props.icon.id}.svg`}
+                  href={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
+                  download={`${props.icon.id}-24px.svg`}
                   className={styles.modalButton}
                 >
                   <span>SVG</span>
                 </a>
+                {iconCode24 ? (
+                  <a
+                    className={
+                      copied24
+                        ? styles.modalButtonCopied
+                        : styles.modalButtonCopy
+                    }
+                    ref={btnRef24}
+                  >
+                    <span>{copied24 ? 'Copied' : 'SVG'}</span>
+                  </a>
+                ) : null}
                 <a
-                  href={`/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}.png`}
-                  download={`${props.icon.id}.png`}
+                  href={`/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.png`}
+                  download={`${props.icon.id}-24px.png`}
+                  className={styles.modalButton}
+                >
+                  <span>24px PNG</span>
+                </a>
+                <a
+                  href={`/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}@2x.png`}
+                  download={`${props.icon.id}-24px@2x.png`}
                   className={styles.modalButton}
                 >
                   <span>48px PNG</span>
                 </a>
-                <a
-                  href={`/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}@2x.png`}
-                  download={`${props.icon.id}@2x.png`}
-                  className={styles.modalButton}
-                >
-                  <span>96px PNG</span>
-                </a>
               </div>
-              {props.icon.formats.includes('24px') && (
-                <>
-                  <img
-                    src={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
-                    className={styles.modal24pxImage}
-                    width="24"
-                    height="24"
-                    alt=""
-                  />
-                  <div className={styles.modalLabel}>
-                    Small version (24px grid)
-                  </div>
-                  <div className={styles.modal24pxVersions}>
-                    <a
-                      href={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
-                      download={`${props.icon.id}-24px.svg`}
-                      className={styles.modalButton}
-                    >
-                      <span>SVG</span>
-                    </a>
-                    <a
-                      href={`/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.png`}
-                      download={`${props.icon.id}-24px.png`}
-                      className={styles.modalButton}
-                    >
-                      <span>24px PNG</span>
-                    </a>
-                    <a
-                      href={`/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}@2x.png`}
-                      download={`${props.icon.id}-24px@2x.png`}
-                      className={styles.modalButton}
-                    >
-                      <span>48px PNG</span>
-                    </a>
-                  </div>
-                </>
-              )}
-            </div>
-            {iconCode ? (
-              <div className={styles.modalCopySvgContainer}>
-                <div className={styles.modalLabel}>Copy Svg Code</div>
-                <pre>{iconCode}</pre>
-                <button
-                  className={styles.modalButtonVariableIcon}
-                  disabled={copied}
-                  ref={btnRef}
-                >
-                  <span className={styles.buttonContent}>
-                    <span>
-                      {copied ? (
-                        <img
-                          width={20}
-                          height={20}
-                          src="/ui/check.svg"
-                          alt=""
-                        />
-                      ) : (
-                        <img width={20} height={20} src="/ui/copy.svg" alt="" />
-                      )}
-                    </span>
-                    <span>{copied ? 'copied' : 'Copy SVG'}</span>
-                  </span>
-                </button>
-              </div>
-            ) : null}
-          </div>
+              <pre className={styles.modalCopySvgContainer}>{iconCode24}</pre>
+            </>
+          )}
 
           {props.icon.tags.length > 0 && (
             <div className={styles.modalTagsSection}>
