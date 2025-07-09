@@ -229,11 +229,25 @@ export function IconTileModal(props: IconTileModalProps) {
                 <div className={styles.modalLabel}>Copy Svg Code</div>
                 <pre>{iconCode}</pre>
                 <button
-                  className={styles.modalButton}
+                  className={styles.modalButtonVariableIcon}
                   onClick={handleCopyToClipboard}
                   disabled={copied}
                 >
-                  <span>{copied ? 'copied' : 'Copy SVG'}</span>
+                  <span className={styles.buttonContent}>
+                    <span>
+                      {copied ? (
+                        <img
+                          width={20}
+                          height={20}
+                          src="/ui/check.svg"
+                          alt=""
+                        />
+                      ) : (
+                        <img width={20} height={20} src="/ui/copy.svg" alt="" />
+                      )}
+                    </span>
+                    <span>{copied ? 'copied' : 'Copy SVG'}</span>
+                  </span>
                 </button>
               </div>
             ) : null}

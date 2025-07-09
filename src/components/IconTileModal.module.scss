@@ -179,6 +179,39 @@
   overflow-y: scroll;
 }
 
+.modalButtonVariableIcon {
+  background: var(--link-color);
+  background-size: 18px;
+  color: #fff !important;
+  margin: 0 1rem 1rem 0;
+  padding: 0.6rem 20px 0.6rem 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background-color ease-in-out 0.15s;
+  white-space: nowrap;
+  display: inline-block;
+  font-size: 0.8rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--link-color-dark);
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.buttonContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
 @media (min-width: 60rem) {
   .modalWrapper {
     max-height: none;
