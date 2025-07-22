@@ -14,18 +14,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+
       - name: Use Node.js 18.x
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: 18.x
+
       - name: Installing packages
         run: yarn install
+
       - name: Linting code
         run: yarn lint
+
       - name: Linting styles
         run: yarn lint:style
+
       - name: Validating TypeScript
         run: yarn tsc --noEmit
+
       - name: Running Tests
         run: yarn test:ci
+
+      - name: Building App
+        run: yarn build
