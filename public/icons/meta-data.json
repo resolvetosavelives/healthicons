@@ -12535,5 +12535,142 @@
    "24px",
    "48px"
   ]
+ },
+ {
+  "id": "american-sign-language",
+  "category": "symbols",
+  "path": "symbols/american-sign-language",
+  "tags": [
+   "ASL",
+   "Accessibility",
+   "Communication",
+   "Deaf",
+   "Hand Gesture",
+   "Sign Language"
+  ],
+  "title": "American Sign Language",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "dialysis",
+  "category": "body",
+  "path": "body/dialysis",
+  "tags": [
+   "Blood Filtration",
+   "Healthcare",
+   "Hemodialysis",
+   "Kidney",
+   "Medical",
+   "Renal Care"
+  ],
+  "title": "Dialysis",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "euro",
+  "category": "typography",
+  "path": "typography/euro",
+  "tags": [
+   "Currency",
+   "Currency Symbol",
+   "EUR",
+   "Euro",
+   "Finance",
+   "Money"
+  ],
+  "title": "Euro",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "naira",
+  "category": "typography",
+  "path": "typography/naira",
+  "tags": [
+   "Currency",
+   "Currency Symbol",
+   "Finance",
+   "Money",
+   "NGN",
+   "Naira"
+  ],
+  "title": "Naira",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "peso",
+  "category": "typography",
+  "path": "typography/peso",
+  "tags": [
+   "Currency",
+   "Currency Symbol",
+   "Finance",
+   "Money",
+   "PHP",
+   "Peso"
+  ],
+  "title": "Peso",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "pound",
+  "category": "typography",
+  "path": "typography/pound",
+  "tags": [
+   "Currency",
+   "Currency Symbol",
+   "Finance",
+   "GBP",
+   "Money",
+   "Sterling"
+  ],
+  "title": "Pound",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "ruble",
+  "category": "typography",
+  "path": "typography/ruble",
+  "tags": [
+   "Currency",
+   "Currency Symbol",
+   "Finance",
+   "Money",
+   "RUB",
+   "Ruble"
+  ],
+  "title": "Ruble",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "won",
+  "category": "typography",
+  "path": "typography/won",
+  "tags": [
+   "Currency",
+   "Currency Symbol",
+   "Finance",
+   "KRW",
+   "Money",
+   "Won"
+  ],
+  "title": "Won",
+  "formats": [
+   "48px"
+  ]
  }
 ]

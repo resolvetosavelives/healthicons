@@ -25,6 +25,7 @@ https://healthicons.org/icon/filled/body/neurology
 https://healthicons.org/icon/filled/body/breasts
 https://healthicons.org/icon/filled/body/cell-nuclei
 https://healthicons.org/icon/filled/body/colon
+https://healthicons.org/icon/filled/body/dialysis
 https://healthicons.org/icon/filled/body/dna
 https://healthicons.org/icon/filled/body/ear
 https://healthicons.org/icon/filled/body/enzyme
@@ -518,6 +519,7 @@ https://healthicons.org/icon/filled/specialties/general-surgery
 https://healthicons.org/icon/filled/specialties/urology
 https://healthicons.org/icon/filled/specialties/vascular-surgery
 https://healthicons.org/icon/filled/symbols/alert-circle
+https://healthicons.org/icon/filled/symbols/american-sign-language
 https://healthicons.org/icon/filled/symbols/i-documents_accepted
 https://healthicons.org/icon/filled/symbols/arm-circumference
 https://healthicons.org/icon/filled/symbols/artificial-intelligence
@@ -694,6 +696,7 @@ https://healthicons.org/icon/filled/typography/ghana
 https://healthicons.org/icon/filled/typography/D
 https://healthicons.org/icon/filled/typography/dollar
 https://healthicons.org/icon/filled/typography/E
+https://healthicons.org/icon/filled/typography/euro
 https://healthicons.org/icon/filled/typography/!
 https://healthicons.org/icon/filled/typography/F
 https://healthicons.org/icon/filled/typography/G
@@ -704,17 +707,22 @@ https://healthicons.org/icon/filled/typography/K
 https://healthicons.org/icon/filled/typography/L
 https://healthicons.org/icon/filled/typography/M
 https://healthicons.org/icon/filled/typography/N
+https://healthicons.org/icon/filled/typography/naira
 https://healthicons.org/icon/filled/typography/O
 https://healthicons.org/icon/filled/typography/P
+https://healthicons.org/icon/filled/typography/peso
+https://healthicons.org/icon/filled/typography/pound
 https://healthicons.org/icon/filled/typography/Q
 https://healthicons.org/icon/filled/typography/question-mark
 https://healthicons.org/icon/filled/typography/R
+https://healthicons.org/icon/filled/typography/ruble
 https://healthicons.org/icon/filled/typography/rupee
 https://healthicons.org/icon/filled/typography/S
 https://healthicons.org/icon/filled/typography/T
 https://healthicons.org/icon/filled/typography/U
 https://healthicons.org/icon/filled/typography/V
 https://healthicons.org/icon/filled/typography/W
+https://healthicons.org/icon/filled/typography/won
 https://healthicons.org/icon/filled/typography/X
 https://healthicons.org/icon/filled/typography/Y
 https://healthicons.org/icon/filled/typography/yen
