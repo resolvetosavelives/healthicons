@@ -25,7 +25,6 @@ https://healthicons.org/icon/filled/body/neurology
 https://healthicons.org/icon/filled/body/breasts
 https://healthicons.org/icon/filled/body/cell-nuclei
 https://healthicons.org/icon/filled/body/colon
-https://healthicons.org/icon/filled/body/dialysis
 https://healthicons.org/icon/filled/body/dna
 https://healthicons.org/icon/filled/body/ear
 https://healthicons.org/icon/filled/body/enzyme
@@ -143,6 +142,7 @@ https://healthicons.org/icon/filled/devices/crutches
 https://healthicons.org/icon/filled/devices/tac
 https://healthicons.org/icon/filled/devices/defibrillator
 https://healthicons.org/icon/filled/devices/dental-hygiene
+https://healthicons.org/icon/filled/devices/dialysis
 https://healthicons.org/icon/filled/devices/ecmo
 https://healthicons.org/icon/filled/devices/endotracheal-tube
 https://healthicons.org/icon/filled/devices/eyeglasses
@@ -555,7 +555,7 @@ https://healthicons.org/icon/filled/symbols/diagnostics
 https://healthicons.org/icon/filled/symbols/nappy-diaper
 https://healthicons.org/icon/filled/symbols/discharge
 https://healthicons.org/icon/filled/symbols/default
-https://healthicons.org/icon/filled/symbols/ear-nose_throat
+https://healthicons.org/icon/filled/symbols/ear-nose-throat
 https://healthicons.org/icon/filled/symbols/eco-care
 https://healthicons.org/icon/filled/symbols/electricity
 https://healthicons.org/icon/filled/symbols/entry
@@ -593,7 +593,7 @@ https://healthicons.org/icon/filled/symbols/info
 https://healthicons.org/icon/filled/symbols/insecticide-resistance
 https://healthicons.org/icon/filled/symbols/integrated-data_and_research
 https://healthicons.org/icon/filled/symbols/interoperability
-https://healthicons.org/icon/filled/symbols/job-status_level
+https://healthicons.org/icon/filled/symbols/job-status-level
 https://healthicons.org/icon/filled/symbols/lab-search
 https://healthicons.org/icon/filled/symbols/lactation
 https://healthicons.org/icon/filled/symbols/life-science

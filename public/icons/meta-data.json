@@ -475,7 +475,7 @@
    "Woods",
    "dhis2:forest-persons"
   ],
-  "title": "Forest",
+  "title": "Forest Persons",
   "formats": [
    "48px"
   ]
@@ -3740,7 +3740,7 @@
    "Speciality",
    "Vision"
   ],
-  "title": "Opthalmology",
+  "title": "Ophthalmology",
   "formats": [
    "48px"
   ]
@@ -12257,9 +12257,9 @@
   ]
  },
  {
-  "id": "job-status_level",
+  "id": "job-status-level",
   "category": "symbols",
-  "path": "symbols/job-status_level",
+  "path": "symbols/job-status-level",
   "tags": [
    "Career",
    "Group",
@@ -12474,9 +12474,9 @@
   ]
  },
  {
-  "id": "ear-nose_throat",
+  "id": "ear-nose-throat",
   "category": "symbols",
-  "path": "symbols/ear-nose_throat",
+  "path": "symbols/ear-nose-throat",
   "tags": [
    "Auditory",
    "Breathing",
@@ -12555,18 +12555,18 @@
   ]
  },
  {
-  "id": "dialysis",
-  "category": "body",
-  "path": "body/dialysis",
+  "id": "pound",
+  "category": "typography",
+  "path": "typography/pound",
   "tags": [
-   "Blood Filtration",
-   "Healthcare",
-   "Hemodialysis",
-   "Kidney",
-   "Medical",
-   "Renal Care"
+   "Currency",
+   "Currency Symbol",
+   "Finance",
+   "GBP",
+   "Money",
+   "Sterling"
   ],
-  "title": "Dialysis",
+  "title": "Pound",
   "formats": [
    "48px"
   ]
@@ -12584,6 +12584,40 @@
    "Money"
   ],
   "title": "Euro",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "ruble",
+  "category": "typography",
+  "path": "typography/ruble",
+  "tags": [
+   "Currency",
+   "Currency Symbol",
+   "Finance",
+   "Money",
+   "RUB",
+   "Ruble"
+  ],
+  "title": "Ruble",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "won",
+  "category": "typography",
+  "path": "typography/won",
+  "tags": [
+   "Currency",
+   "Currency Symbol",
+   "Finance",
+   "KRW",
+   "Money",
+   "Won"
+  ],
+  "title": "Won",
   "formats": [
    "48px"
   ]
@@ -12623,52 +12657,19 @@
   ]
  },
  {
-  "id": "pound",
-  "category": "typography",
-  "path": "typography/pound",
+  "id": "dialysis",
+  "category": "devices",
+  "path": "devices/dialysis",
   "tags": [
-   "Currency",
-   "Currency Symbol",
-   "Finance",
-   "GBP",
-   "Money",
-   "Sterling"
+   "Blood Filtration",
+   "Device",
+   "Healthcare",
+   "Hemodialysis",
+   "Kidney",
+   "Medical",
+   "Renal Care"
   ],
-  "title": "Pound",
-  "formats": [
-   "48px"
-  ]
- },
- {
-  "id": "ruble",
-  "category": "typography",
-  "path": "typography/ruble",
-  "tags": [
-   "Currency",
-   "Currency Symbol",
-   "Finance",
-   "Money",
-   "RUB",
-   "Ruble"
-  ],
-  "title": "Ruble",
-  "formats": [
-   "48px"
-  ]
- },
- {
-  "id": "won",
-  "category": "typography",
-  "path": "typography/won",
-  "tags": [
-   "Currency",
-   "Currency Symbol",
-   "Finance",
-   "KRW",
-   "Money",
-   "Won"
-  ],
-  "title": "Won",
+  "title": "Dialysis",
   "formats": [
    "48px"
   ]
