@@ -146,7 +146,7 @@ export default function LandingPage({
                 value={searchCategoryValue}
                 onChange={(e) => dispatch(setCategory(e.target.value))}
               >
-                <option value="">All Categories</option>
+                <option value="">Categories</option>
                 {categories.map((category) => (
                   <option
                     key={category.title}
