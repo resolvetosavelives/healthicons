@@ -27,7 +27,7 @@ export default function IconPage({
     <>
       <HeadTags
         title={`Icon: ${iconObj.title}`}
-        path={router.asPath}
+        path={router.asPath.split('?')[0]}
         image={`og-icon-images/${iconObj.category}/${iconObj.id}.png`}
       />
       <LandingPage categories={categories} icon={iconObj} style={style} />

@@ -5,8 +5,12 @@ import ReactModal from 'react-modal';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Icon } from '../lib/icons';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../store';
 import { setKeywords } from '../store/search';
+import { IconImage } from './IconImage';
+import { colorizeSvg, downloadSvgAsPng, svgDataUrl } from '../lib/iconColor';
+import { filtersToQueryString } from '../lib/filterQuery';
 
 interface IconTileModalProps {
   icon: Icon;
@@ -25,6 +29,37 @@ export function IconTileModal(props: IconTileModalProps) {
   const btnRef48 = useRef(null);
   const router = useRouter();
   const dispatch = useDispatch();
+  const filters = useSelector((state: RootState) => state.search);
+  const color = filters.color;
+  // keep the current filters in the URL when moving between icons
+  const query = filtersToQueryString(filters);
+
+  // the SVG code shown, copied and downloaded uses the chosen icon color
+  const coloredCode24 = iconCode24 && colorizeSvg(iconCode24, color);
+  const coloredCode48 = iconCode48 && colorizeSvg(iconCode48, color);
+
+  // download links point at the static files unless a color is chosen, in
+  // which case the SVG/PNG is generated in the browser in that color
+  const svgLink = (path: string, svg: string, filename: string) => ({
+    href: color && svg ? svgDataUrl(svg) : path,
+    download: filename
+  });
+  const pngLink = (
+    path: string,
+    svg: string,
+    size: number,
+    filename: string
+  ) => ({
+    href: path,
+    download: filename,
+    onClick:
+      color && svg
+        ? (e: React.MouseEvent) => {
+            e.preventDefault();
+            downloadSvgAsPng(svg, size, filename);
+          }
+        : undefined
+  });
 
   const currentIndex = props.allIcons.map((i) => i.id).indexOf(props.icon.id);
   const nextIcon =
@@ -45,7 +80,7 @@ export function IconTileModal(props: IconTileModalProps) {
     }
 
     const clipboard = new ClipboardJs(btnRef24.current, {
-      text: () => iconCode24
+      text: () => coloredCode24
     });
 
     clipboard.on('success', () => {
@@ -56,7 +91,7 @@ export function IconTileModal(props: IconTileModalProps) {
     });
 
     return () => clipboard.destroy();
-  }, [iconCode24]);
+  }, [coloredCode24]);
 
   useEffect(() => {
     if (!btnRef48.current) {
@@ -64,7 +99,7 @@ export function IconTileModal(props: IconTileModalProps) {
     }
 
     const clipboard = new ClipboardJs(btnRef48.current, {
-      text: () => iconCode48
+      text: () => coloredCode48
     });
 
     clipboard.on('success', () => {
@@ -75,7 +110,7 @@ export function IconTileModal(props: IconTileModalProps) {
     });
 
     return () => clipboard.destroy();
-  }, [iconCode48]);
+  }, [coloredCode48]);
 
   useEffect(() => {
     fetch(
@@ -100,14 +135,14 @@ export function IconTileModal(props: IconTileModalProps) {
       if (e.code === 'ArrowRight') {
         if (nextIcon) {
           router.replace(
-            `/icon/${props.iconType}/${nextIcon.category}/${nextIcon.id}`,
+            `/icon/${props.iconType}/${nextIcon.category}/${nextIcon.id}${query}`,
             { scroll: false }
           );
         }
       } else if (e.code === 'ArrowLeft') {
         if (prevIcon) {
           router.replace(
-            `/icon/${props.iconType}/${prevIcon.category}/${prevIcon.id}`,
+            `/icon/${props.iconType}/${prevIcon.category}/${prevIcon.id}${query}`,
             { scroll: false }
           );
         }
@@ -128,6 +163,8 @@ export function IconTileModal(props: IconTileModalProps) {
       onRequestClose={props.onClose}
       className={styles.modalContainer}
       overlayClassName={styles.modalBody}
+      // keep the modal above the sticky sidebar and mobile filter drawer
+      style={{ overlay: { zIndex: 100 } }}
       closeTimeoutMS={200}
     >
       <div className={styles.modalWrapper}>
@@ -135,7 +172,7 @@ export function IconTileModal(props: IconTileModalProps) {
           <div className={styles.nextPrevLinksWrapper}>
             {prevIcon ? (
               <Link
-                href={`/icon/${props.iconType}/${prevIcon.category}/${prevIcon.id}`}
+                href={`/icon/${props.iconType}/${prevIcon.category}/${prevIcon.id}${query}`}
                 title={`Previous: ${prevIcon.title}`}
                 scroll={false}
                 replace={true}
@@ -148,7 +185,7 @@ export function IconTileModal(props: IconTileModalProps) {
             )}
             {nextIcon ? (
               <Link
-                href={`/icon/${props.iconType}/${nextIcon.category}/${nextIcon.id}`}
+                href={`/icon/${props.iconType}/${nextIcon.category}/${nextIcon.id}${query}`}
                 title={`Next: ${nextIcon.title}`}
                 scroll={false}
                 replace={true}
@@ -160,20 +197,23 @@ export function IconTileModal(props: IconTileModalProps) {
               <span className={styles.nextPrevLink}>▶</span>
             )}
           </div>
-          <img
+          <IconImage
             src={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
             className={styles.modalImage}
-            width="96"
-            height="96"
+            size={96}
             alt=""
+            colored={color !== ''}
           />
           <div className={styles.modalTitle}>{props.icon.title}</div>
 
           <div className={styles.modalLabel}>Standard version (48px grid)</div>
           <div>
             <a
-              href={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
-              download={`${props.icon.id}.svg`}
+              {...svgLink(
+                `/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`,
+                coloredCode48,
+                `${props.icon.id}.svg`
+              )}
               className={styles.modalButton}
             >
               <span>SVG</span>
@@ -189,35 +229,46 @@ export function IconTileModal(props: IconTileModalProps) {
               </a>
             ) : null}
             <a
-              href={`/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}.png`}
-              download={`${props.icon.id}.png`}
+              {...pngLink(
+                `/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}.png`,
+                coloredCode48,
+                48,
+                `${props.icon.id}.png`
+              )}
               className={styles.modalButton}
             >
               <span>48px PNG</span>
             </a>
             <a
-              href={`/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}@2x.png`}
-              download={`${props.icon.id}@2x.png`}
+              {...pngLink(
+                `/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}@2x.png`,
+                coloredCode48,
+                96,
+                `${props.icon.id}@2x.png`
+              )}
               className={styles.modalButton}
             >
               <span>96px PNG</span>
             </a>
           </div>
-          <pre className={styles.modalCopySvgContainer}>{iconCode48}</pre>
+          <pre className={styles.modalCopySvgContainer}>{coloredCode48}</pre>
           {props.icon.formats.includes('24px') && (
             <>
-              <img
+              <IconImage
                 src={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
                 className={styles.modal24pxImage}
-                width="24"
-                height="24"
+                size={24}
                 alt=""
+                colored={color !== ''}
               />
               <div className={styles.modalLabel}>Small version (24px grid)</div>
               <div className={styles.modal24pxVersions}>
                 <a
-                  href={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
-                  download={`${props.icon.id}-24px.svg`}
+                  {...svgLink(
+                    `/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`,
+                    coloredCode24,
+                    `${props.icon.id}-24px.svg`
+                  )}
                   className={styles.modalButton}
                 >
                   <span>SVG</span>
@@ -235,21 +286,31 @@ export function IconTileModal(props: IconTileModalProps) {
                   </a>
                 ) : null}
                 <a
-                  href={`/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.png`}
-                  download={`${props.icon.id}-24px.png`}
+                  {...pngLink(
+                    `/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.png`,
+                    coloredCode24,
+                    24,
+                    `${props.icon.id}-24px.png`
+                  )}
                   className={styles.modalButton}
                 >
                   <span>24px PNG</span>
                 </a>
                 <a
-                  href={`/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}@2x.png`}
-                  download={`${props.icon.id}-24px@2x.png`}
+                  {...pngLink(
+                    `/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}@2x.png`,
+                    coloredCode24,
+                    48,
+                    `${props.icon.id}-24px@2x.png`
+                  )}
                   className={styles.modalButton}
                 >
                   <span>48px PNG</span>
                 </a>
               </div>
-              <pre className={styles.modalCopySvgContainer}>{iconCode24}</pre>
+              <pre className={styles.modalCopySvgContainer}>
+                {coloredCode24}
+              </pre>
             </>
           )}
 

@@ -12,12 +12,12 @@ export function TopBar() {
       <ul className={styles.topbarLinks}>
         <li>
           <Link href="/about" className={styles.link}>
-            <img src="/ui/information-line.svg" alt="" /> About
+            About
           </Link>
         </li>
         <li>
           <Link href="/request-icon" className={styles.link}>
-            <img src="/ui/question-line.svg" alt="" /> Request an icon
+            Request an icon
           </Link>
         </li>
         <li>
@@ -25,7 +25,7 @@ export function TopBar() {
             href="https://github.com/resolvetosavelives/healthicons"
             className={styles.link}
           >
-            <img src="/ui/github-fill.svg" alt="" /> GitHub
+            GitHub
           </a>
         </li>
       </ul>

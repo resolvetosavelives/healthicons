@@ -8,18 +8,21 @@ export interface SearchState {
   style: SearchStyle;
   category: string;
   format: IconFormat;
+  // hex color applied to every icon, or '' for the default (black)
+  color: string;
 }
 
-const initialState: SearchState = {
+export const initialSearchState: SearchState = {
   keywords: '',
-  style: 'all',
+  style: 'outline',
   category: '',
-  format: '48px'
+  format: '48px',
+  color: ''
 };
 
 export const searchSlice = createSlice({
   name: 'search',
-  initialState,
+  initialState: initialSearchState,
   reducers: {
     setKeywords: (state, action: PayloadAction<string>) => {
       state.keywords = action.payload;
@@ -32,11 +35,23 @@ export const searchSlice = createSlice({
     },
     setFormat: (state, action: PayloadAction<IconFormat>) => {
       state.format = action.payload;
+    },
+    setColor: (state, action: PayloadAction<string>) => {
+      state.color = action.payload;
+    },
+    setFilters: (state, action: PayloadAction<Partial<SearchState>>) => {
+      return { ...state, ...action.payload };
     }
   }
 });
 
-export const { setKeywords, setStyle, setCategory, setFormat } =
-  searchSlice.actions;
+export const {
+  setKeywords,
+  setStyle,
+  setCategory,
+  setFormat,
+  setColor,
+  setFilters
+} = searchSlice.actions;
 
 export default searchSlice.reducer;
