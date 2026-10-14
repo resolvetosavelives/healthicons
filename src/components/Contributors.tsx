@@ -133,8 +133,8 @@ const contributors = [
   },
   {
     name: 'Yoshitha Krishna V',
-    //link: 'https://twitter.com/yoshithakrishna',
-    avatar: 'https://unavatar.io/twitter/needs-an-account-' // TODO
+    link: 'https://www.linkedin.com/in/yoshithakrishna/',
+    avatar: 'https://unavatar.io/linkedin/yoshithakrishna'
   },
   {
     name: 'Jahanvi Singh',
@@ -143,13 +143,13 @@ const contributors = [
   },
   {
     name: 'Swetha Ramaswamy',
-    //link: 'https://twitter.com/swetharamaswamy',
-    avatar: 'https://unavatar.io/twitter/needs-an-account-' // TODO
+    link: 'https://www.linkedin.com/in/swetha-ramaswamy/',
+    avatar: 'https://unavatar.io/linkedin/swetha-ramaswamy'
   },
   {
     name: 'Hazly Mohammed',
-    //link: 'https://twitter.com/??',
-    avatar: 'https://unavatar.io/twitter/needs-an-account-' // TODO
+    link: 'https://medium.com/@ajhmohammed',
+    avatar: 'https://unavatar.io/medium/ajhmohammed'
   },
   {
     name: 'Samanvitha AN',
