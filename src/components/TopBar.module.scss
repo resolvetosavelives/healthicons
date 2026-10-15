@@ -10,7 +10,10 @@
   grid-template-areas:
     'title-area desktop-links-area category-area download-area'
     'mobile-links-area mobile-links-area mobile-links-area mobile-links-area';
-  margin: -1rem 0 1rem;
+
+  /* the links row pulls 1rem into this bottom margin, leaving 1rem under its
+     line on mobile */
+  margin: -1rem 0 2rem;
   align-items: center;
 }
 
@@ -41,15 +44,16 @@
 .topbarLinks {
   grid-area: mobile-links-area;
   margin: 0 -1rem -1rem -1rem;
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   list-style-type: none;
   display: grid;
   grid-auto-flow: column;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
   background: none;
   font-size: 14px;
   border-top: 1px solid var(--link-decoration-color);
+  border-bottom: 1px solid var(--link-decoration-color);
 }
 
 .topbarCategory {
@@ -121,6 +125,7 @@
     margin: 0;
     padding: 0;
     border-top: none;
+    border-bottom: none;
     font-size: 14px;
     grid-gap: 2rem;
     justify-content: space-around;

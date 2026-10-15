@@ -213,14 +213,14 @@
   font-size: 0.7rem;
   font-weight: bold;
   color: #fff;
-  background: #4a4a52 url(/ui/copy.svg) 0.5rem 50% / 13px no-repeat;
+  background: hsl(172, 45%, 34%) url(/ui/copy.svg) 0.5rem 50% / 13px no-repeat;
   border: none;
   border-radius: 999px;
   cursor: pointer;
   transition: background-color ease-in-out 0.15s;
 
   &:hover {
-    background-color: #2a2a30;
+    background-color: hsl(172, 55%, 26%);
   }
 }
 

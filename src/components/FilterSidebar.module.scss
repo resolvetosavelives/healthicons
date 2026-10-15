@@ -118,6 +118,7 @@
 
 .segmented {
   display: flex;
+  gap: 2px;
   padding: 2px;
   background: var(--surface-color);
   border: 1px solid var(--border-color);
