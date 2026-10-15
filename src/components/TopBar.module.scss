@@ -1,18 +1,23 @@
 .topBar {
   display: grid;
   grid-template-columns: minmax(max-content, 1fr) max-content max-content max-content;
-  grid-template-rows: auto auto;
-  gap: 1em 1em;
+
+  /* on mobile the first row is a fixed-height band running from the top of
+     the page (pulled up through the body padding) to the line above the links,
+     so the logo and Download all button sit centered between the two */
+  grid-template-rows: 64px auto;
+  gap: 0 1em;
   grid-template-areas:
     'title-area desktop-links-area category-area download-area'
     'mobile-links-area mobile-links-area mobile-links-area mobile-links-area';
-  margin-bottom: 1rem;
+  margin: -1rem 0 1rem;
   align-items: center;
 }
 
 .topbarDownload {
   grid-area: download-area;
-  height: 32px; /* Reduced height */
+  display: flex;
+  align-items: center;
 }
 
 .topbarTitle {
@@ -20,10 +25,12 @@
     font-weight: bold;
     display: inline-block;
     background: url(/health-icons-logo.svg) 0 50% no-repeat;
-    background-size: 24px;
-    padding-left: 32px;
-    min-height: 1.3rem;
-    font-size: 1.3rem;
+
+    /* 20% smaller on mobile; full size on desktop below */
+    background-size: 19px;
+    padding-left: 26px;
+    min-height: 1.04rem;
+    font-size: 1.04rem;
     &:link,
     &:visited {
       text-decoration: none;
@@ -41,7 +48,7 @@
   justify-content: flex-start;
   gap: 1rem;
   background: none;
-  font-size: 0.75rem;
+  font-size: 14px;
   border-top: 1px solid var(--link-decoration-color);
 }
 
@@ -70,7 +77,7 @@
   color: #fff;
   font-weight: bold;
   padding: 0.35rem 0.8rem 0.35rem 2rem;
-  border-radius: 3px;
+  border-radius: 999px;
   font-size: 0.75rem;
   line-height: 1.4;
   transition: background-color ease-in-out 0.15s;
@@ -92,6 +99,7 @@
     /* no empty category column on desktop, so there's a single gap before the
        download button */
     grid-template-columns: minmax(max-content, 1fr) max-content max-content;
+    grid-template-rows: auto;
     grid-template-areas: 'title-area desktop-links-area download-area';
     gap: 0 2.25rem;
 
@@ -113,13 +121,20 @@
     margin: 0;
     padding: 0;
     border-top: none;
-    font-size: 0.875rem;
+    font-size: 14px;
     grid-gap: 2rem;
     justify-content: space-around;
   }
 
   .topbarTitle {
     font-size: 1.5rem;
+
+    a {
+      background-size: 24px;
+      padding-left: 32px;
+      min-height: 1.3rem;
+      font-size: 1.3rem;
+    }
   }
   .filterPlacementBox {
     display: flex;

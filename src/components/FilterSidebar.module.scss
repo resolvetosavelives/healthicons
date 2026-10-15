@@ -1,155 +1,13 @@
 .sidebar {
   grid-area: sidebar;
 
-  /* on mobile the sidebar's children join the page flow so the intro scrolls
-     away and the search row can stick to the top for the whole page */
+  /* on mobile the sidebar's children join the page flow: the intro sits
+     above the search bar and the filters become a slide-in drawer */
   display: contents;
 }
 
 .noScroll {
   overflow: hidden;
-}
-
-/* Search */
-
-.searchRow {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  display: flex;
-  gap: 0.5rem;
-  margin: 0 -1rem;
-  padding: 0.75rem 1rem;
-  background: #fff;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.search {
-  flex: 1;
-  min-width: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 44px;
-  background: #fff;
-  border: 1px solid #c4c4d4;
-  border-radius: 10px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
-    background-color 0.15s ease-in-out;
-
-  &:focus-within {
-    border-color: var(--link-color);
-    box-shadow: 0 0 0 3px var(--link-decoration-color);
-  }
-}
-
-.searchIcon {
-  position: absolute;
-  left: 12px;
-  width: 18px;
-  height: 18px;
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.searchInput {
-  width: 100%;
-  height: 100%;
-  min-width: 0;
-  padding: 0 12px 0 38px;
-  font: inherit;
-  font-size: 1rem;
-  color: var(--text-color);
-  background: transparent;
-  border: none;
-  outline: none;
-  appearance: none;
-
-  &::placeholder {
-    color: var(--muted-text-color);
-  }
-
-  &::-webkit-search-cancel-button {
-    display: none;
-  }
-}
-
-.searchWithAction .searchInput {
-  padding-right: 40px;
-}
-
-.shortcut,
-.clearButton {
-  position: absolute;
-  right: 10px;
-}
-
-.shortcut {
-  display: none;
-  min-width: 22px;
-  padding: 0 6px;
-  font-family: var(--font-family);
-  font-size: 0.7rem;
-  line-height: 20px;
-  text-align: center;
-  color: var(--muted-text-color);
-  background: #fff;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  pointer-events: none;
-}
-
-.clearButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  padding: 0;
-  color: var(--muted-text-color);
-  background: transparent;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-
-  &:hover {
-    color: var(--text-color);
-    background: var(--hover-color);
-  }
-}
-
-.filtersButton {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  flex-shrink: 0;
-  height: 44px;
-  padding: 0 0.75rem;
-  font: inherit;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--text-color);
-  background: #fff;
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  cursor: pointer;
-
-  &:hover {
-    background: var(--hover-color);
-  }
-}
-
-.filtersBadge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 18px;
-  height: 18px;
-  padding: 0 5px;
-  font-size: 0.7rem;
-  color: #fff;
-  background: var(--link-color);
-  border-radius: 9px;
 }
 
 /* Filters: a slide-in drawer on mobile, a static panel on desktop */
@@ -420,42 +278,25 @@
 }
 
 @media (min-width: 60rem) {
-  /* the whole column (intro, search, filters) scrolls as one; the 4px of left
-     padding, offset by a negative margin, leaves room for focus rings that
-     the scroll area would otherwise clip */
+  /* the whole column (intro, filters) scrolls as one. It sticks with the
+     intro just above the top of the window (--intro-height is measured in
+     FilterSidebar), so scrolling the page also carries the intro off the top.
+     The 4px of left padding, offset by a negative margin, leaves room for
+     focus rings that the scroll area would otherwise clip */
   .sidebar {
+    /* stylelint-disable-next-line length-zero-no-unit -- used inside calc() */
+    --intro-height: 0px;
+
     display: block;
     position: sticky;
-    top: 2rem;
+    top: calc(-1 * var(--intro-height));
     align-self: start;
-    max-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 2rem + var(--intro-height));
     overflow-y: auto;
-    overscroll-behavior: contain;
     margin-left: -4px;
     padding: 0 1.5rem 1rem 4px;
   }
 
-  /* the search stays pinned while the intro scrolls away above it */
-  .searchRow {
-    top: 0;
-    z-index: 1;
-    margin: 0;
-    padding: 4px 0;
-    background: var(--sidebar-color);
-    border-bottom: none;
-  }
-
-  .shortcut {
-    display: block;
-  }
-
-  /* kept at 1rem on mobile so iOS doesn't zoom in when the field is focused */
-  .searchInput {
-    padding-right: 40px;
-    font-size: 0.875rem;
-  }
-
-  .filtersButton,
   .backdrop,
   .drawerHeader,
   .drawerFooter {

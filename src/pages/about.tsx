@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import HeadTags from '../components/HeadTags';
 import Link from 'next/link';
 import { TopBar } from '../components/TopBar';
 import { Contribute } from '../components/Contribute';
@@ -8,34 +8,11 @@ import styles from './about.module.scss';
 export default function About() {
   return (
     <div className="container">
-      <Head>
-        <title>About Health Icons</title>
-        <link rel="icon" href="/favicon.ico" />
-
-        <meta property="og:site_name" content="Health icons" />
-        <meta property="og:title" content="About Health icons" />
-        <meta
-          property="og:description"
-          content="Free, open source health icons. Use in your next commercial or personal project. Editing is ok. Republishing is ok. No need to give credit."
-        />
-        <meta property="og:url" content="http://healthicons.org/about" />
-        <meta
-          property="og:image"
-          content="http://healthicons.org/og_image.png"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://healthicons.org/og_image.png"
-        />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="640" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:image"
-          content="https://healthicons.org/og_image.png"
-        />
-        <meta property="twitter:site" content="@health_icons" />
-      </Head>
+      <HeadTags
+        title="About Health Icons"
+        description="About the Health Icons project: how to use the free health icons in Figma and React, the CC0 public domain license, the code of conduct, and how to contribute."
+        path="/about"
+      />
 
       <TopBar />
       <main id="main">

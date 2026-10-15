@@ -49,6 +49,11 @@ body {
   line-height: 1.6;
 }
 
+/* the icon browser uses the full window width; text pages keep the max-width */
+body:has(#icon-results) {
+  max-width: none;
+}
+
 @media (min-width: 60rem) {
   body {
     padding: 2rem;

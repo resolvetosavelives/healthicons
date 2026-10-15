@@ -1,8 +1,4 @@
-import {
-  LazyLoadComponent,
-  LazyLoadImage
-} from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/opacity.css';
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
 import classnames from 'classnames';
 
 interface IconImageProps {
@@ -25,21 +21,16 @@ export function IconImage({
   className
 }: IconImageProps) {
   if (!colored) {
-    return lazy ? (
-      <LazyLoadImage
-        src={src}
-        width={size}
-        height={size}
-        alt={alt}
-        effect="opacity"
-        className={className}
-      />
-    ) : (
+    // a plain <img> (lazy-loaded natively by the browser) so the image and its
+    // alt text are in the page's HTML for search engines
+    return (
       <img
         src={src}
         width={size}
         height={size}
         alt={alt}
+        loading={lazy ? 'lazy' : undefined}
+        decoding="async"
         className={className}
       />
     );

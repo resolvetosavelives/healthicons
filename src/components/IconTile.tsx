@@ -1,3 +1,4 @@
+import { MouseEvent } from 'react';
 import classnames from 'classnames';
 import { IconImage } from './IconImage';
 import styles from './IconTile.module.scss';
@@ -21,48 +22,57 @@ export function IconTile(props: IconTileProps) {
 
   const formatSuffix = props.iconFormat === '24px' ? '-24px' : '';
 
+  // tiles are real links to each icon's page (so search engines can find
+  // them), but a plain click opens the icon in the modal instead; modified
+  // clicks (e.g. cmd-click for a new tab) behave like normal links
+  const openInModal = (e: MouseEvent, type: string) => {
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) {
+      return;
+    }
+    e.preventDefault();
+    props.onClick(type);
+  };
+
   return (
     <div className={classes}>
       <div className={styles.iconRow}>
         {['all', 'filled'].includes(props.iconStyle) && (
-          <button
+          <a
+            href={`/icon/filled/${props.icon.category}/${props.icon.id}`}
             className={styles.iconItem}
             title={`${props.icon.title} (filled)`}
-            onClick={() => {
-              props.onClick.call(this, 'filled');
-            }}
+            onClick={(e) => openInModal(e, 'filled')}
           >
             <div className={styles.iconThumb}>
               <IconImage
                 src={`/icons/svg/filled${formatSuffix}/${props.icon.category}/${props.icon.id}.svg`}
                 size={48}
-                alt={`${props.icon.title} filled icon`}
+                alt={`${props.icon.title} filled style icon`}
                 colored={props.colored}
                 lazy={true}
                 className={styles.iconImage}
               />
             </div>
-          </button>
+          </a>
         )}
         {['all', 'outline'].includes(props.iconStyle) && (
-          <button
+          <a
+            href={`/icon/outline/${props.icon.category}/${props.icon.id}`}
             className={styles.iconItem}
             title={`${props.icon.title} (outline)`}
-            onClick={() => {
-              props.onClick.call(this, 'outline');
-            }}
+            onClick={(e) => openInModal(e, 'outline')}
           >
             <div className={styles.iconThumb}>
               <IconImage
                 src={`/icons/svg/outline${formatSuffix}/${props.icon.category}/${props.icon.id}.svg`}
                 size={48}
-                alt={`${props.icon.title} outline icon`}
+                alt={`${props.icon.title} outline style icon`}
                 colored={props.colored}
                 lazy={true}
                 className={styles.iconImage}
               />
             </div>
-          </button>
+          </a>
         )}
       </div>
       <div className={styles.iconTitle}>

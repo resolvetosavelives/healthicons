@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import HeadTags from '../components/HeadTags';
 import Link from 'next/link';
 import { TopBar } from '../components/TopBar';
 import styles from './about.module.scss';
@@ -6,34 +6,11 @@ import styles from './about.module.scss';
 export default function About() {
   return (
     <div className="container">
-      <Head>
-        <title>The History of the Health Icons Project</title>
-        <link rel="icon" href="/favicon.ico" />
-
-        <meta property="og:site_name" content="Health icons" />
-        <meta property="og:title" content="History of Health icons" />
-        <meta
-          property="og:description"
-          content="Free, open source health icons. Use in your next commercial or personal project. Editing is ok. Republishing is ok. No need to give credit."
-        />
-        <meta property="og:url" content="http://healthicons.org/about" />
-        <meta
-          property="og:image"
-          content="http://healthicons.org/og_image.png"
-        />
-        <meta
-          property="og:image:secure_url"
-          content="https://healthicons.org/og_image.png"
-        />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="640" />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:image"
-          content="https://healthicons.org/og_image.png"
-        />
-        <meta property="twitter:site" content="@health_icons" />
-      </Head>
+      <HeadTags
+        title="The History of the Health Icons Project"
+        description="How the Health Icons project began with DHIS2, grew into a volunteer effort in 2021, and why its free health icons are in the public domain."
+        path="/history"
+      />
 
       <TopBar />
       <main id="main">

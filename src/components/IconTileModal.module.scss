@@ -54,15 +54,18 @@
 
 .modalLabel {
   text-transform: uppercase;
-  font-size: 0.8rem;
-  color: #999;
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  /* the same light teal as the category headings */
+  color: hsl(172, 40%, 40%);
   letter-spacing: 0.1rem;
   margin: 0 0 0.2rem 0;
 }
 
 .modalImage {
   position: relative;
-  margin: -1.5rem 0 2rem 0;
+  margin: -0.5rem 0 2rem 0;
   width: 140px;
   height: auto;
 }
@@ -72,18 +75,20 @@
 }
 
 .modalButton {
-  background: var(--link-color) url(/ui/download-2-line-white.svg) 20px 50%
+  background: var(--link-color) url(/ui/download-2-line-white.svg) 0.7rem 50%
     no-repeat;
-  background-size: 18px;
+  background-size: 14px;
   color: #fff !important;
-  margin: 0 1rem 1rem 0;
-  padding: 0.6rem 20px 0.6rem 46px;
-  border-radius: 3px;
+
+  /* space above (from the section label) rather than below (to the code) */
+  margin: 0.4rem 0.5rem 0 0;
+  padding: 0.3rem 0.85rem 0.3rem 1.9rem;
+  border-radius: 999px;
   font-weight: bold;
   transition: background-color ease-in-out 0.15s;
   white-space: nowrap;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   outline: none;
   border: none;
   cursor: pointer;
@@ -105,6 +110,9 @@
 }
 
 .modalLicense {
+  margin: 0 0 1rem 0;
+  font-size: 0.85rem;
+
   img {
     float: right;
     margin: 0 1rem;
@@ -113,6 +121,7 @@
 
 .filename {
   margin: 0 0 1rem 0;
+  font-size: 0.85rem;
 }
 
 .modalTags {
@@ -123,7 +132,7 @@
 }
 
 .tagButton {
-  background: var(--link-decoration-color);
+  background: rgba(102, 102, 255, 0.12);
   color: var(--link-color);
   padding: 0.4rem 1rem;
   border-radius: 100px;
@@ -138,9 +147,10 @@
   }
 }
 
+/* space between the standard and small versions */
 .modal24pxImage {
   width: 24px;
-  margin: 16px 0;
+  margin: 2rem 0 16px;
 }
 
 .modalTagsSection {
@@ -174,10 +184,19 @@
   color: #ccc;
 }
 
+/* the SVG code, with its copy button pinned to the top-right corner */
+.codeBlock {
+  position: relative;
+  margin: 0.5rem 0 1rem;
+}
+
 .modalCopySvgContainer {
+  margin: 0;
   background-color: #0000000b;
-  padding: .5rem;
-  border-radius: .2rem;
+  padding: 0.5rem 5.5rem 0.5rem 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.7rem;
+  line-height: 1.5;
   white-space: pre-wrap;
   word-break: break-word;
   max-height: 5rem;
@@ -185,16 +204,28 @@
   width: 100%;
 }
 
-.modalButtonCopy {
-  @extend .modalButton;
-  background: var(--link-color) url(/ui/copy.svg) 16px 50%
-    no-repeat;
+.copyButton {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  padding: 0.2rem 0.7rem 0.2rem 1.6rem;
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #fff;
+  background: #4a4a52 url(/ui/copy.svg) 0.5rem 50% / 13px no-repeat;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.15s;
+
+  &:hover {
+    background-color: #2a2a30;
+  }
 }
 
-.modalButtonCopied {
-  @extend .modalButton;
-  background: var(--link-color) url(/ui/check.svg) 16px 50%
-    no-repeat;
+.copyButtonCopied {
+  background-image: url(/ui/check.svg);
 }
 
 @media (min-width: 60rem) {
@@ -216,9 +247,15 @@
   .modalImage {
     position: absolute;
     left: 56px;
-    top: 4rem;
+    top: 5rem;
     margin: 0;
     width: 96px;
+  }
+
+  /* on desktop the small icon sits beside its label, so the label takes the
+     space above it and the icon keeps level with it */
+  .smallVersionLabel {
+    margin-top: 2rem;
   }
 
   .modal24pxImage {
@@ -226,5 +263,6 @@
     left: 90px;
     width: 24px;
     height: auto;
+    margin-top: 2rem;
   }
 }

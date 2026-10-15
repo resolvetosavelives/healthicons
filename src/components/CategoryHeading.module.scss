@@ -5,11 +5,16 @@
   margin: 0 0 0.75rem;
   font-size: 1rem;
   font-weight: 700;
+
+  /* a lighter shade of the site's teal text color */
+  color: hsl(172, 40%, 40%);
 }
 
 .count {
   font-size: 0.8rem;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
-  color: var(--muted-text-color);
+
+  /* the heading's teal, lighter still */
+  color: hsl(172, 30%, 55%);
 }

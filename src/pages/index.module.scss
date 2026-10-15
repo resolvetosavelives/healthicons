@@ -18,10 +18,6 @@
 .results {
   grid-area: results;
   min-width: 0;
-  padding-top: 1rem;
-
-  /* clear the sticky search bar when scrolled into view */
-  scroll-margin-top: 4.5rem;
 }
 
 .resultsHeader {
@@ -134,12 +130,7 @@
   }
 
   .intro {
-    margin: 0 0 1.25rem;
-  }
-
-  .results {
-    padding-top: 0;
-    scroll-margin-top: 0.5rem;
+    margin: 0;
   }
 
   .resultsHeader {

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import ClipboardJs from 'clipboard';
+import classnames from 'classnames';
 import styles from './IconTileModal.module.scss';
 import ReactModal from 'react-modal';
 import { useRouter } from 'next/navigation';
@@ -11,6 +12,12 @@ import { setKeywords } from '../store/search';
 import { IconImage } from './IconImage';
 import { colorizeSvg, downloadSvgAsPng, svgDataUrl } from '../lib/iconColor';
 import { filtersToQueryString } from '../lib/filterQuery';
+
+// react-modal can't render on the server, so an icon page loaded directly
+// would have none of the icon's details in its HTML. Until the app has
+// hydrated, the modal is drawn as plain markup that looks the same; after that
+// the real (accessible, focus-trapping) react-modal takes over.
+let appHydrated = false;
 
 interface IconTileModalProps {
   icon: Icon;
@@ -27,6 +34,11 @@ export function IconTileModal(props: IconTileModalProps) {
   const [copied48, setCopied48] = useState(false);
   const btnRef24 = useRef(null);
   const btnRef48 = useRef(null);
+  const [hydrated, setHydrated] = useState(appHydrated);
+  useEffect(() => {
+    appHydrated = true;
+    setHydrated(true);
+  }, []);
   const router = useRouter();
   const dispatch = useDispatch();
   const filters = useSelector((state: RootState) => state.search);
@@ -156,17 +168,9 @@ export function IconTileModal(props: IconTileModalProps) {
     };
   });
 
-  return (
-    <ReactModal
-      isOpen={props.isOpen}
-      bodyOpenClassName="modal--open"
-      onRequestClose={props.onClose}
-      className={styles.modalContainer}
-      overlayClassName={styles.modalBody}
-      // keep the modal above the sticky sidebar and mobile filter drawer
-      style={{ overlay: { zIndex: 100 } }}
-      closeTimeoutMS={200}
-    >
+  const typeLabel = props.iconType === 'filled' ? 'filled' : 'outline';
+  const content = (
+    <>
       <div className={styles.modalWrapper}>
         <>
           <div className={styles.nextPrevLinksWrapper}>
@@ -201,10 +205,10 @@ export function IconTileModal(props: IconTileModalProps) {
             src={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
             className={styles.modalImage}
             size={96}
-            alt=""
+            alt={`${props.icon.title} ${typeLabel} style icon`}
             colored={color !== ''}
           />
-          <div className={styles.modalTitle}>{props.icon.title}</div>
+          <h1 className={styles.modalTitle}>{props.icon.title}</h1>
 
           <div className={styles.modalLabel}>Standard version (48px grid)</div>
           <div>
@@ -218,16 +222,6 @@ export function IconTileModal(props: IconTileModalProps) {
             >
               <span>SVG</span>
             </a>
-            {iconCode48 ? (
-              <a
-                className={
-                  copied48 ? styles.modalButtonCopied : styles.modalButtonCopy
-                }
-                ref={btnRef48}
-              >
-                <span>{copied48 ? 'Copied' : 'SVG'}</span>
-              </a>
-            ) : null}
             <a
               {...pngLink(
                 `/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}.png`,
@@ -251,17 +245,37 @@ export function IconTileModal(props: IconTileModalProps) {
               <span>96px PNG</span>
             </a>
           </div>
-          <pre className={styles.modalCopySvgContainer}>{coloredCode48}</pre>
+          <div className={styles.codeBlock}>
+            <pre className={styles.modalCopySvgContainer}>{coloredCode48}</pre>
+            {iconCode48 && (
+              <button
+                type="button"
+                ref={btnRef48}
+                className={classnames(styles.copyButton, {
+                  [styles.copyButtonCopied]: copied48
+                })}
+              >
+                {copied48 ? 'Copied' : 'Copy'}
+              </button>
+            )}
+          </div>
           {props.icon.formats.includes('24px') && (
             <>
               <IconImage
                 src={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
                 className={styles.modal24pxImage}
                 size={24}
-                alt=""
+                alt={`${props.icon.title} ${typeLabel} style icon, 24px version`}
                 colored={color !== ''}
               />
-              <div className={styles.modalLabel}>Small version (24px grid)</div>
+              <div
+                className={classnames(
+                  styles.modalLabel,
+                  styles.smallVersionLabel
+                )}
+              >
+                Small version (24px grid)
+              </div>
               <div className={styles.modal24pxVersions}>
                 <a
                   {...svgLink(
@@ -273,18 +287,6 @@ export function IconTileModal(props: IconTileModalProps) {
                 >
                   <span>SVG</span>
                 </a>
-                {iconCode24 ? (
-                  <a
-                    className={
-                      copied24
-                        ? styles.modalButtonCopied
-                        : styles.modalButtonCopy
-                    }
-                    ref={btnRef24}
-                  >
-                    <span>{copied24 ? 'Copied' : 'SVG'}</span>
-                  </a>
-                ) : null}
                 <a
                   {...pngLink(
                     `/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.png`,
@@ -308,9 +310,22 @@ export function IconTileModal(props: IconTileModalProps) {
                   <span>48px PNG</span>
                 </a>
               </div>
-              <pre className={styles.modalCopySvgContainer}>
-                {coloredCode24}
-              </pre>
+              <div className={styles.codeBlock}>
+                <pre className={styles.modalCopySvgContainer}>
+                  {coloredCode24}
+                </pre>
+                {iconCode24 && (
+                  <button
+                    type="button"
+                    ref={btnRef24}
+                    className={classnames(styles.copyButton, {
+                      [styles.copyButtonCopied]: copied24
+                    })}
+                  >
+                    {copied24 ? 'Copied' : 'Copy'}
+                  </button>
+                )}
+              </div>
             </>
           )}
 
@@ -355,9 +370,53 @@ export function IconTileModal(props: IconTileModalProps) {
           available icons.
         </p>
       </div>
-      <button onClick={props.onClose} className={styles.modalClose}>
+      <button
+        onClick={props.onClose}
+        className={styles.modalClose}
+        aria-label="Close"
+      >
         ×
       </button>
+    </>
+  );
+
+  if (!hydrated) {
+    // the same markup react-modal produces, including its default overlay
+    return (
+      <div
+        className="ReactModal__Overlay ReactModal__Overlay--after-open"
+        style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: 100,
+          backgroundColor: 'rgba(255, 255, 255, 0.75)'
+        }}
+      >
+        <div
+          className={`ReactModal__Content ReactModal__Content--after-open ${styles.modalContainer}`}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`${props.icon.title} icon`}
+        >
+          {content}
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <ReactModal
+      isOpen={props.isOpen}
+      bodyOpenClassName="modal--open"
+      onRequestClose={props.onClose}
+      className={styles.modalContainer}
+      overlayClassName={styles.modalBody}
+      // keep the modal above the sticky sidebar and mobile filter drawer
+      style={{ overlay: { zIndex: 100 } }}
+      closeTimeoutMS={200}
+      contentLabel={`${props.icon.title} icon`}
+    >
+      {content}
     </ReactModal>
   );
 }

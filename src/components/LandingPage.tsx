@@ -9,6 +9,7 @@ import { TopBar } from './TopBar';
 import { FilterUrlSync } from './FilterUrlSync';
 import { filtersToQueryString } from '../lib/filterQuery';
 import { FilterSidebar, formatCategoryTitle } from './FilterSidebar';
+import { SearchBar } from './SearchBar';
 import { CategoryHeading } from './CategoryHeading';
 import IconGrid from './IconGrid';
 import { IconTileModal } from './IconTileModal';
@@ -52,6 +53,8 @@ export default function LandingPage({
   );
 
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
+  // the filters drawer on mobile, opened from the search bar
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const router = useRouter();
 
@@ -139,13 +142,17 @@ export default function LandingPage({
         <FilterSidebar
           categories={categories}
           categoryCounts={categoryCounts}
-          totalIconCount={totalIconCount}
           resultCount={flatIcons.length}
+          filtersOpen={filtersOpen}
+          setFiltersOpen={setFiltersOpen}
           intro={
             <div className={styles.intro}>
-              <h1 className="visually-hidden">
-                Free, open source health icons
-              </h1>
+              {/* on an icon's page, the icon's name (in the modal) is the h1 */}
+              {!icon && (
+                <h1 className="visually-hidden">
+                  Free, open source health icons
+                </h1>
+              )}
               <p>
                 Free open-source health icons for use in your next commercial or
                 personal project. Editing is ok. Republishing is ok. No need to
@@ -156,6 +163,11 @@ export default function LandingPage({
         />
 
         <div id="icon-results" className={styles.results}>
+          <SearchBar
+            totalIconCount={totalIconCount}
+            filtersOpen={filtersOpen}
+            onOpenFilters={() => setFiltersOpen(true)}
+          />
           {hasActiveFilters && (
             <div className={styles.resultsHeader}>
               <p className={styles.resultsSummary} aria-live="polite">
