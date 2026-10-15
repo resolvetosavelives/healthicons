@@ -289,12 +289,19 @@
 
     display: block;
     position: sticky;
-    top: calc(-1 * var(--intro-height));
+    top: calc(1.5rem - var(--intro-height));
     align-self: start;
-    max-height: calc(100vh - 2rem + var(--intro-height));
+    max-height: calc(100vh - 3.5rem + var(--intro-height));
     overflow-y: auto;
     margin-left: -4px;
-    padding: 0 1.5rem 1rem 4px;
+    padding: 0 2rem 1rem 4px;
+  }
+
+  /* 2rem above the first filter (1.5rem below the header, or from the top of
+     the window when pinned, plus this), matching the 2rem to its left and
+     right */
+  .filtersScroll > .section:first-child {
+    margin-top: 0.5rem;
   }
 
   .backdrop,

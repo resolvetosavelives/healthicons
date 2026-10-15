@@ -6,6 +6,7 @@ import { RootState, store } from '../store';
 import { setKeywords, setCategory } from '../store/search';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
+import { AnnouncementBar } from './AnnouncementBar';
 import { FilterUrlSync } from './FilterUrlSync';
 import { filtersToQueryString } from '../lib/filterQuery';
 import { FilterSidebar, formatCategoryTitle } from './FilterSidebar';
@@ -137,6 +138,7 @@ export default function LandingPage({
   return (
     <div className={classnames('container', styles.page)}>
       <FilterUrlSync />
+      <AnnouncementBar />
       <TopBar />
       <main id="main" className={styles.layout}>
         <FilterSidebar
@@ -153,11 +155,6 @@ export default function LandingPage({
                   Free, open source health icons
                 </h1>
               )}
-              <p>
-                Free open-source health icons for use in your next commercial or
-                personal project. Editing is ok. Republishing is ok. No need to
-                give credit.
-              </p>
             </div>
           }
         />

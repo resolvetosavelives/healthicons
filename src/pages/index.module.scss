@@ -4,15 +4,10 @@
   display: block;
 }
 
+/* now only holds the page's visually hidden h1 (the intro text moved to the
+   announcement bar), so it takes no space */
 .intro {
-  margin: 0.5rem 0 0.25rem;
-
-  p {
-    margin: 0;
-    font-size: 0.8rem;
-    line-height: 1.5;
-    color: var(--secondary-text-color);
-  }
+  margin: 0;
 }
 
 .results {
@@ -127,10 +122,6 @@
     grid-template-areas: 'sidebar results';
     display: grid;
     column-gap: 2rem;
-  }
-
-  .intro {
-    margin: 0;
   }
 
   .resultsHeader {

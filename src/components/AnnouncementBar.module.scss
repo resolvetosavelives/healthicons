@@ -1,0 +1,63 @@
+/* runs edge to edge above the header: pulled out through the body padding,
+   with a matching bottom margin so the header's own pull-up lands it just
+   below the bar */
+.bar {
+  position: relative;
+
+  /* sits above the sidebar divider and tint, which start at the page top */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: -1rem -1rem 1rem;
+  padding: 0.9rem 0.5rem 0.9rem 1rem;
+  color: hsl(172, 55%, 30%);
+  background: hsl(172, 45%, 92%);
+  border-bottom: 1px solid hsl(172, 35%, 80%);
+}
+
+.text {
+  flex: 1;
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.close {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.07);
+  }
+}
+
+@media (min-width: 60rem) {
+  .bar {
+    justify-content: center;
+    margin: -2rem -2rem 2rem;
+    padding: 0.85rem 2rem;
+  }
+
+  .text {
+    flex: none;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  /* kept at the right edge while the text is centered */
+  .close {
+    position: absolute;
+    right: 1rem;
+  }
+}
