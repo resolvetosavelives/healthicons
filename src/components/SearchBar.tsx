@@ -6,14 +6,15 @@ import { setKeywords } from '../store/search';
 import styles from './SearchBar.module.scss';
 
 interface SearchBarProps {
-  totalIconCount: number;
+  // shown in the placeholder; matches the sidebar's "All categories" count
+  iconCount: number;
   filtersOpen: boolean;
   // opens the filters drawer (the Filters button is only shown on mobile)
   onOpenFilters: () => void;
 }
 
 export function SearchBar({
-  totalIconCount,
+  iconCount,
   filtersOpen,
   onOpenFilters
 }: SearchBarProps) {
@@ -91,7 +92,7 @@ export function SearchBar({
             value={keywords}
             type="search"
             className={styles.searchInput}
-            placeholder={`Search ${totalIconCount} icons…`}
+            placeholder={`Search ${iconCount} icons…`}
             onChange={(e) => dispatch(setKeywords(e.target.value))}
             onKeyDown={(e) => {
               if (e.key === 'Escape') {

@@ -5,9 +5,7 @@
   margin: 0 0 0.75rem;
   font-size: 1rem;
   font-weight: 700;
-
-  /* a lighter shade of the site's teal text color */
-  color: hsl(172, 40%, 40%);
+  color: #2f2f35;
 }
 
 .count {
@@ -18,6 +16,6 @@
   font-weight: 500;
   font-variant-numeric: tabular-nums;
 
-  /* the heading's teal, lighter still */
-  color: hsl(172, 30%, 55%);
+  /* a lighter grey than the heading, so the count reads as secondary */
+  color: #6e6e78;
 }

@@ -407,7 +407,7 @@ export function IconTileModal(props: IconTileModalProps) {
               height="39"
             />
           </a>
-          To the extent possible under law,
+          <strong>Public domain:</strong> To the extent possible under law,
           <a rel="dct:publisher" href="https://healthicons.org">
             <span property="dct:title"> Health Icons </span>
           </a>

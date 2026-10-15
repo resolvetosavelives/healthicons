@@ -44,16 +44,53 @@
 .topbarLinks {
   grid-area: mobile-links-area;
   margin: 0 -1rem -1rem -1rem;
-  padding: 0.75rem 1rem;
+  padding: 0 1rem;
   list-style-type: none;
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
   gap: 1rem;
   background: none;
-  font-size: 14px;
+  font-size: 13px;
   border-top: 1px solid var(--link-decoration-color);
   border-bottom: 1px solid var(--link-decoration-color);
+}
+
+/* the links fill the bar's full height, so the active one's underline can
+   sit on the bar's bottom line like a tab. They're dark grey, turning purple
+   on hover; the doubled class beats the global a:link colors */
+.topbarLinks .link {
+  color: #2f2f35;
+  transition: color 0.15s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0.75rem 0;
+}
+
+.topbarLinks .link:hover {
+  color: var(--link-color);
+}
+
+/* the link for the page you're on: purple, with its underline */
+.topbarLinks .activeLink {
+  color: var(--link-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 3px;
+    background: var(--link-color);
+  }
+}
+
+/* some links use a shorter label on mobile */
+.fullLabel {
+  display: none;
 }
 
 .topbarCategory {
@@ -100,16 +137,18 @@
   /* the header runs edge to edge (through the body padding) with a line under
      it that the sidebar divider meets */
   .topBar {
-    /* no empty category column on desktop, so there's a single gap before the
-       download button */
-    grid-template-columns: minmax(max-content, 1fr) max-content max-content;
+    /* the logo's column is sized so the links start exactly where the icon
+       column does (the sidebar width plus the 2rem layout gap, less this
+       grid's own 2.25rem gap), lining them up with the search box. The links
+       column takes the rest, which keeps Download all at the right */
+    grid-template-columns: calc(var(--sidebar-width) - 0.25rem) 1fr max-content;
     grid-template-rows: auto;
     grid-template-areas: 'title-area desktop-links-area download-area';
     gap: 0 2.25rem;
 
     /* pull up into the body padding so the space above and below is equal */
     margin: -2rem -2rem 1.5rem;
-    padding: 1.25rem 2rem;
+    padding: 0.9rem 2rem;
     border-bottom: 1px solid var(--border-color);
   }
 
@@ -119,16 +158,31 @@
     background-position: 0.75rem 50%;
   }
 
+  /* stretched through the header's top and bottom padding so the active
+     underline lands on the header's bottom border */
   .topbarLinks {
     grid-area: desktop-links-area;
+    align-self: stretch;
     background: none;
-    margin: 0;
+    margin: -0.9rem 0;
     padding: 0;
     border-top: none;
     border-bottom: none;
     font-size: 14px;
     grid-gap: 2rem;
-    justify-content: space-around;
+    justify-content: start;
+  }
+
+  .topbarLinks .link {
+    padding: 0;
+  }
+
+  .fullLabel {
+    display: inline;
+  }
+
+  .shortLabel {
+    display: none;
   }
 
   .topbarTitle {

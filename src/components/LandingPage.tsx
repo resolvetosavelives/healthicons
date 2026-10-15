@@ -6,7 +6,6 @@ import { RootState, store } from '../store';
 import { setKeywords, setCategory, sourceFormat } from '../store/search';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
-import { AnnouncementBar } from './AnnouncementBar';
 import { FilterUrlSync } from './FilterUrlSync';
 import { filtersToQueryString } from '../lib/filterQuery';
 import { FilterSidebar, formatCategoryTitle } from './FilterSidebar';
@@ -121,9 +120,14 @@ export default function LandingPage({
       (!searchCategoryValue || c.title.toLowerCase() === searchCategoryValue)
   );
 
-  const totalIconCount = categories.reduce((counter, c) => {
-    return counter + c.icons.length;
-  }, 0);
+  // icons available at the selected size (and matching any search) across all
+  // categories: the same number as "All categories" in the sidebar. The search
+  // field only shows it as a placeholder while it's empty, when it's simply
+  // the number of icons at the current size.
+  const allCategoriesCount = matchingCategories.reduce(
+    (counter, c) => counter + c.icons.length,
+    0
+  );
 
   const flatIcons = categoriesToRender.flatMap((c) => c.icons);
   // if searching by keyword, show all icons without categories and sorted A-Z
@@ -138,7 +142,6 @@ export default function LandingPage({
   return (
     <div className={classnames('container', styles.page)}>
       <FilterUrlSync />
-      <AnnouncementBar />
       <TopBar />
       <main id="main" className={styles.layout}>
         <FilterSidebar
@@ -161,7 +164,7 @@ export default function LandingPage({
 
         <div id="icon-results" className={styles.results}>
           <SearchBar
-            totalIconCount={totalIconCount}
+            iconCount={allCategoriesCount}
             filtersOpen={filtersOpen}
             onOpenFilters={() => setFiltersOpen(true)}
           />

@@ -87,8 +87,8 @@
   font-size: 0.7rem;
   font-weight: 700;
 
-  /* the same light teal as the category headings */
-  color: hsl(172, 40%, 40%);
+  /* the same dark grey as the category headings */
+  color: #2f2f35;
   letter-spacing: 0.1rem;
   margin: 0 0 0.2rem 0;
 }
@@ -187,10 +187,13 @@
 
 .modalLicense {
   margin: 0;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
 
+  /* the CC0 badge, 30% smaller than its 120x39 size */
   img {
     float: right;
+    width: 84px;
+    height: auto;
     margin: 0 1rem;
   }
 }

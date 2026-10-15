@@ -45,6 +45,10 @@ body {
   margin: 0 auto;
   font-family: var(--font-family);
   background: #fff;
+
+  /* full-window-width elements (the announcement bar) use 100vw, which on
+     some systems includes the scrollbar; don't let that scroll sideways */
+  overflow-x: clip;
   color: var(--text-color);
   line-height: 1.6;
 }
