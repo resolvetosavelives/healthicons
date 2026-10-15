@@ -2,8 +2,14 @@ import { ReactNode, useEffect, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import classnames from 'classnames';
 import { RootState } from '../store';
-import { setStyle, setFormat, setCategory, SearchStyle } from '../store/search';
-import { Category, IconFormat } from '../lib/icons';
+import {
+  setStyle,
+  setFormat,
+  setCategory,
+  SearchStyle,
+  DisplaySize
+} from '../store/search';
+import { Category } from '../lib/icons';
 import { ColorPicker } from './ColorPicker';
 import styles from './FilterSidebar.module.scss';
 
@@ -13,9 +19,10 @@ const STYLE_OPTIONS: Array<{ value: SearchStyle; label: string }> = [
   { value: 'all', label: 'Both' }
 ];
 
-const FORMAT_OPTIONS: Array<{ value: IconFormat; label: string }> = [
+const FORMAT_OPTIONS: Array<{ value: DisplaySize; label: string }> = [
+  { value: '24px', label: '24px' },
   { value: '48px', label: '48px' },
-  { value: '24px', label: '24px' }
+  { value: '64px', label: '64px' }
 ];
 
 export function formatCategoryTitle(title: string) {

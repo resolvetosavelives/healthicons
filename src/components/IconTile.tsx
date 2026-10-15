@@ -2,14 +2,14 @@ import { MouseEvent } from 'react';
 import classnames from 'classnames';
 import { IconImage } from './IconImage';
 import styles from './IconTile.module.scss';
-import { Icon, IconFormat } from '../lib/icons';
-import { SearchStyle } from '../store/search';
+import { Icon } from '../lib/icons';
+import { SearchStyle, DisplaySize } from '../store/search';
 
 interface IconTileProps {
   icon: Icon;
   visible: boolean;
   iconStyle: SearchStyle;
-  iconFormat: IconFormat;
+  iconFormat: DisplaySize;
   colored: boolean;
   onClick: (type: string) => void;
 }
@@ -17,7 +17,8 @@ interface IconTileProps {
 export function IconTile(props: IconTileProps) {
   const classes = classnames(styles.iconGroup, {
     [styles.hidden]: !props.visible,
-    [styles.small]: props.iconFormat === '24px'
+    [styles.small]: props.iconFormat === '24px',
+    [styles.large]: props.iconFormat === '64px'
   });
 
   const formatSuffix = props.iconFormat === '24px' ? '-24px' : '';

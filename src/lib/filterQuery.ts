@@ -50,7 +50,7 @@ export function queryStringToFilters(query: string): Partial<SearchState> {
   }
 
   const size = params.get('size');
-  if (size === '24' || size === '48') {
+  if (size === '24' || size === '48' || size === '64') {
     filters.format = `${size}px`;
   }
 

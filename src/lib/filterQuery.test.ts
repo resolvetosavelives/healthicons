@@ -34,6 +34,10 @@ describe('queryStringToFilters', () => {
     });
   });
 
+  test('reads the 64px size', () => {
+    expect(queryStringToFilters('?size=64')).toEqual({ format: '64px' });
+  });
+
   test('ignores missing and invalid values', () => {
     expect(
       queryStringToFilters('?style=striped&size=36&color=nope&other=1')

@@ -11,6 +11,9 @@
 }
 
 .count {
+  /* nudged up to sit level with the heading text rather than on its baseline */
+  position: relative;
+  top: -1px;
   font-size: 0.8rem;
   font-weight: 500;
   font-variant-numeric: tabular-nums;

@@ -8,7 +8,13 @@
   box-shadow: 0 0 0 10px var(--link-decoration-color);
   border: 1px solid var(--link-color);
   max-height: 75vh;
-  overflow-y: scroll;
+
+  /* a column: the content scrolls on its own and the footer stays pinned
+     along the bottom edge */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
   /* Hide scrollbar track and arrows, show only the thumb */
   &,
   & * {
@@ -29,27 +35,51 @@
 }
 
 .modalWrapper {
-  overflow: scroll;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
   position: relative;
-  max-height: 550px;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 2rem;
 }
 
 .modalClose {
   position: absolute;
   top: 20px;
   right: 24px;
+}
+
+/* the close and previous/next controls: thin Lucide-style line icons in a
+   soft grey, turning purple with a light background on hover */
+.modalClose,
+.nextPrevLinksWrapper a,
+.nextPrevLinksWrapper span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  color: var(--secondary-text-color);
   background: none;
   border: none;
-  text-transform: uppercase;
-  color: var(--link-color);
-  font-size: 2rem;
-  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
 
-  &:hover {
-    color: var(--link-color-dark);
-    cursor: pointer;
-  }
+.modalClose:hover,
+.nextPrevLinksWrapper a:hover {
+  color: var(--link-color);
+  background: var(--selected-color);
+  cursor: pointer;
+}
+
+/* replaces the site-wide link focus style (a teal fill) */
+.modalClose:focus-visible,
+.nextPrevLinksWrapper a:focus-visible {
+  color: var(--link-color);
+  background: var(--selected-color);
+  outline: 2px solid var(--link-color);
+  outline-offset: 1px;
 }
 
 .modalLabel {
@@ -63,11 +93,29 @@
   margin: 0 0 0.2rem 0;
 }
 
-.modalImage {
-  position: relative;
+/* the standard and small icons each sit centered in a same-size square box */
+.previewBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 128px;
   margin: -0.5rem 0 2rem 0;
-  width: 140px;
-  height: auto;
+  background: #fff;
+  border: 1px solid hsl(172, 40%, 80%);
+  border-radius: 5px;
+}
+
+.previewLarge {
+  display: block;
+  width: 96px;
+  height: 96px;
+}
+
+.previewSmall {
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 
 .modalButtons {
@@ -103,14 +151,42 @@
   }
 }
 
+/* in the top row with the arrows and close button: from the top-left corner
+   up to just short of the arrows, vertically centered with the 34px icons */
 .modalTitle {
+  position: absolute;
+  top: 20px;
+  left: 2rem;
+  right: calc(24px + 34px + 0.75rem + 70px + 1rem);
+  margin: 0;
   font-size: 1.4rem;
   font-weight: bold;
-  margin: 0 0 2rem 0;
+  line-height: 34px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* the license sits in a light grey footer along the bottom of the modal */
+.modalFooter {
+  flex-shrink: 0;
+
+  /* overrides the site-wide <footer> margin meant for the page footer */
+  margin: 0;
+  padding: 1rem 2rem;
+  background: var(--surface-color);
+  border-top: 1px solid var(--border-color);
+
+  /* clears the floated CC0 badge */
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
 
 .modalLicense {
-  margin: 0 0 1rem 0;
+  margin: 0;
   font-size: 0.85rem;
 
   img {
@@ -134,9 +210,9 @@
 .tagButton {
   background: rgba(102, 102, 255, 0.12);
   color: var(--link-color);
-  padding: 0.4rem 1rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 100px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -148,8 +224,7 @@
 }
 
 /* space between the standard and small versions */
-.modal24pxImage {
-  width: 24px;
+.previewBoxSmall {
   margin: 2rem 0 16px;
 }
 
@@ -157,31 +232,19 @@
   margin-top: 2rem;
 }
 
+/* sits at the top right, just left of the close button (24px from the edge,
+   34px wide) with a little space between them */
 .nextPrevLinksWrapper {
   position: absolute;
   top: 20px;
-  left: 24px;
+  right: calc(24px + 34px + 0.75rem);
+  display: flex;
+  gap: 2px;
 }
 
-.nextPrevLinksWrapper a {
-  background: none;
-  border: none;
-  color: var(--link-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-right: 0.2rem;
-
-  &:hover {
-    color: var(--link-color-dark);
-    cursor: pointer;
-  }
-}
-
+/* no previous/next icon at the ends of the list */
 .nextPrevLinksWrapper span {
-  padding-right: 0.2rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ccc;
+  color: #d0d0d8;
 }
 
 /* the SVG code, with its copy button pinned to the top-right corner */
@@ -195,11 +258,12 @@
   background-color: #0000000b;
   padding: 0.5rem 5.5rem 0.5rem 0.5rem;
   border-radius: 0.2rem;
-  font-size: 0.7rem;
+  font-size: 0.625rem;
   line-height: 1.5;
+  color: hsl(172, 20%, 38%);
   white-space: pre-wrap;
   word-break: break-word;
-  max-height: 5rem;
+  max-height: 3.75rem;
   overflow-y: scroll;
   width: 100%;
 }
@@ -230,7 +294,7 @@
 
 @media (min-width: 60rem) {
   .modalWrapper {
-    max-height: none;
+    padding-left: 180px;
   }
 
   .modalContainer {
@@ -240,29 +304,28 @@
     left: 20%;
   }
 
-  .modalWrapper {
-    padding-left: 180px;
-  }
-
-  .modalImage {
+  /* in the left column, beside the section each one belongs to */
+  .previewBox {
     position: absolute;
-    left: 56px;
+    left: 2rem;
     top: 5rem;
     margin: 0;
-    width: 96px;
   }
 
-  /* on desktop the small icon sits beside its label, so the label takes the
-     space above it and the icon keeps level with it */
+  /* the section titles start level with the top of the icon box beside
+     them: the standard box is placed 1rem below where the content starts,
+     and the small box sits 1rem lower than its 2rem gap because it also
+     takes the code box's bottom margin */
+  .standardVersionLabel {
+    margin-top: 1rem;
+  }
+
   .smallVersionLabel {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
-  .modal24pxImage {
-    position: absolute;
-    left: 90px;
-    width: 24px;
-    height: auto;
+  .previewBoxSmall {
+    top: auto;
     margin-top: 2rem;
   }
 }

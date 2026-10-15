@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import classnames from 'classnames';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState, store } from '../store';
-import { setKeywords, setCategory } from '../store/search';
+import { setKeywords, setCategory, sourceFormat } from '../store/search';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
 import { AnnouncementBar } from './AnnouncementBar';
@@ -98,7 +98,7 @@ export default function LandingPage({
           searchKeywords(
             searchKeywordsValue,
             i.tags.concat([i.title, c.title]).join(', ')
-          ) && i.formats.includes(searchFormatValue)
+          ) && i.formats.includes(sourceFormat(searchFormatValue))
       );
 
       filteredCategories.push({ ...c, icons: filteredIcons });

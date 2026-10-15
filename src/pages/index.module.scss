@@ -70,6 +70,15 @@
   --tile-min-width: 148px;
 }
 
+/* wider columns for the 64px size (applies at every screen width) */
+.iconGridSingle.iconGridLarge {
+  --tile-min-width: 112px;
+}
+
+.iconGridDouble.iconGridLarge {
+  --tile-min-width: 200px;
+}
+
 .emptyState {
   padding: 4rem 1rem;
   text-align: center;

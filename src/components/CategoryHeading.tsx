@@ -11,7 +11,9 @@ export function CategoryHeading(props: CategoryHeadingProps) {
     <h2 className={styles.categoryHeading}>
       {props.children}
       {props.count !== undefined && (
-        <span className={styles.count}>{props.count}</span>
+        <span className={styles.count}>
+          {props.count} {props.count === 1 ? 'icon' : 'icons'}
+        </span>
       )}
     </h2>
   );

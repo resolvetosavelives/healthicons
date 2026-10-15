@@ -1,7 +1,7 @@
 import classnames from 'classnames';
 import { IconTile } from './IconTile';
-import { Icon, IconFormat } from '../lib/icons';
-import { SearchStyle } from '../store/search';
+import { Icon } from '../lib/icons';
+import { SearchStyle, DisplaySize } from '../store/search';
 import { ModalIcon } from './LandingPage';
 import styles from '../pages/index.module.scss';
 import { Dispatch, SetStateAction } from 'react';
@@ -12,7 +12,7 @@ import { filtersToQueryString } from '../lib/filterQuery';
 interface IconGridProps {
   icons: Icon[];
   style: SearchStyle;
-  format: IconFormat;
+  format: DisplaySize;
   colored: boolean;
   setModalIcon: Dispatch<SetStateAction<ModalIcon>>;
 }
@@ -29,7 +29,8 @@ export default function IconGrid({
     <div
       className={classnames(
         styles.iconGrid,
-        style === 'all' ? styles.iconGridDouble : styles.iconGridSingle
+        style === 'all' ? styles.iconGridDouble : styles.iconGridSingle,
+        { [styles.iconGridLarge]: format === '64px' }
       )}
     >
       {icons.map((icon, iconIndex) => (

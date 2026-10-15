@@ -13,6 +13,30 @@ import { IconImage } from './IconImage';
 import { colorizeSvg, downloadSvgAsPng, svgDataUrl } from '../lib/iconColor';
 import { filtersToQueryString } from '../lib/filterQuery';
 
+// line icons drawn like Lucide's (arrow-left, arrow-right, x)
+function LineIcon({ d }: { d: string[] }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="20"
+      height="20"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      {d.map((path) => (
+        <path key={path} d={path} />
+      ))}
+    </svg>
+  );
+}
+const ARROW_LEFT = ['m12 19-7-7 7-7', 'M19 12H5'];
+const ARROW_RIGHT = ['M5 12h14', 'm12 5 7 7-7 7'];
+const CLOSE = ['M18 6 6 18', 'm6 6 12 12'];
+
 // react-modal can't render on the server, so an icon page loaded directly
 // would have none of the icon's details in its HTML. Until the app has
 // hydrated, the modal is drawn as plain markup that looks the same; after that
@@ -182,10 +206,12 @@ export function IconTileModal(props: IconTileModalProps) {
                 replace={true}
                 className={styles.nextPrevLink}
               >
-                ◀
+                <LineIcon d={ARROW_LEFT} />
               </Link>
             ) : (
-              <span className={styles.nextPrevLink}>◀</span>
+              <span className={styles.nextPrevLink}>
+                <LineIcon d={ARROW_LEFT} />
+              </span>
             )}
             {nextIcon ? (
               <Link
@@ -195,22 +221,33 @@ export function IconTileModal(props: IconTileModalProps) {
                 replace={true}
                 className={styles.nextPrevLink}
               >
-                ▶
+                <LineIcon d={ARROW_RIGHT} />
               </Link>
             ) : (
-              <span className={styles.nextPrevLink}>▶</span>
+              <span className={styles.nextPrevLink}>
+                <LineIcon d={ARROW_RIGHT} />
+              </span>
             )}
           </div>
-          <IconImage
-            src={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
-            className={styles.modalImage}
-            size={96}
-            alt={`${props.icon.title} ${typeLabel} style icon`}
-            colored={color !== ''}
-          />
+          <div className={styles.previewBox}>
+            <IconImage
+              src={`/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`}
+              className={styles.previewLarge}
+              size={96}
+              alt={`${props.icon.title} ${typeLabel} style icon`}
+              colored={color !== ''}
+            />
+          </div>
           <h1 className={styles.modalTitle}>{props.icon.title}</h1>
 
-          <div className={styles.modalLabel}>Standard version (48px grid)</div>
+          <div
+            className={classnames(
+              styles.modalLabel,
+              styles.standardVersionLabel
+            )}
+          >
+            Standard icon
+          </div>
           <div>
             <a
               {...svgLink(
@@ -261,20 +298,27 @@ export function IconTileModal(props: IconTileModalProps) {
           </div>
           {props.icon.formats.includes('24px') && (
             <>
-              <IconImage
-                src={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
-                className={styles.modal24pxImage}
-                size={24}
-                alt={`${props.icon.title} ${typeLabel} style icon, 24px version`}
-                colored={color !== ''}
-              />
+              <div
+                className={classnames(
+                  styles.previewBox,
+                  styles.previewBoxSmall
+                )}
+              >
+                <IconImage
+                  src={`/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`}
+                  className={styles.previewSmall}
+                  size={24}
+                  alt={`${props.icon.title} ${typeLabel} style icon, 24px version`}
+                  colored={color !== ''}
+                />
+              </div>
               <div
                 className={classnames(
                   styles.modalLabel,
                   styles.smallVersionLabel
                 )}
               >
-                Small version (24px grid)
+                Small icon
               </div>
               <div className={styles.modal24pxVersions}>
                 <a
@@ -348,7 +392,8 @@ export function IconTileModal(props: IconTileModalProps) {
         </>
         <div className={styles.modalLabel}>Filename</div>
         <p className={styles.filename}>{props.icon.id}</p>
-        <div className={styles.modalLabel}>License</div>
+      </div>
+      <footer className={styles.modalFooter}>
         <p className={styles.modalLicense}>
           <a
             rel="license"
@@ -369,13 +414,13 @@ export function IconTileModal(props: IconTileModalProps) {
           has waived all copyright and related or neighboring rights to
           available icons.
         </p>
-      </div>
+      </footer>
       <button
         onClick={props.onClose}
         className={styles.modalClose}
         aria-label="Close"
       >
-        ×
+        <LineIcon d={CLOSE} />
       </button>
     </>
   );

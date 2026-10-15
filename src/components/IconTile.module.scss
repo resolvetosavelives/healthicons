@@ -78,6 +78,17 @@
   transition: color ease-in-out 0.15s;
 }
 
+/* 64px icons are shown at 64px */
+.large .iconThumb {
+  width: 80px;
+  height: 80px;
+
+  .iconImage {
+    width: 64px;
+    height: 64px;
+  }
+}
+
 /* 24px icons are shown at 24px */
 .small .iconThumb {
   width: 48px;
