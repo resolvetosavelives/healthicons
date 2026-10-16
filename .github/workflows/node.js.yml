@@ -16,10 +16,10 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - name: Use Node.js 18.x
+      - name: Use Node.js 24.x
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 24.x
 
       - name: Installing packages
         run: yarn install
