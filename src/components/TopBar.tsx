@@ -77,6 +77,23 @@ export function TopBar() {
               className={styles.link}
             >
               GitHub
+              {/* Lucide's arrow-up-right, marking a link to another site */}
+              <svg
+                className={styles.externalIcon}
+                viewBox="0 0 24 24"
+                width="12"
+                height="12"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 7h10v10" />
+
+                <path d="M7 17 17 7" />
+              </svg>
             </a>
           </li>
         </ul>

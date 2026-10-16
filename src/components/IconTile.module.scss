@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   min-width: 0;
-  padding: 0.5rem 0.25rem 0.6rem;
+  padding: 0.25rem 0.25rem 0.4rem;
   border-radius: 12px;
   transition: background-color ease-in-out 0.15s;
 }
@@ -67,7 +67,6 @@
   padding: 0 0.25rem;
   font-size: 0.75rem;
   line-height: 1.1rem;
-  min-height: 2.2rem;
   color: var(--muted-text-color);
   text-align: center;
   overflow: hidden;
@@ -105,6 +104,13 @@
   background: #fff;
   border-color: var(--link-decoration-color);
   box-shadow: 0 1px 4px rgba(102, 102, 255, 0.15);
+}
+
+@media (min-width: 60rem) {
+  /* a little more breathing room around tiles on desktop */
+  .iconGroup {
+    padding: 0.5rem 0.25rem 0.6rem;
+  }
 }
 
 /* only show hover states on devices that can hover, so they don't stick after a tap */

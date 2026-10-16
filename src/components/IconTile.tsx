@@ -78,9 +78,11 @@ export function IconTile(props: IconTileProps) {
       </div>
       <div className={styles.iconTitle}>
         {props.icon.title}
+        {/* marks icons with no 24px version; a non-breaking space keeps the *
+            on the same line as the name */}
         {!props.icon.formats.includes('24px') &&
           props.iconFormat !== '24px' && (
-            <span className={styles.iconSize}> *</span>
+            <span className={styles.iconSize}>{'\u00a0*'}</span>
           )}
       </div>
     </div>
