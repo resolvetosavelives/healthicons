@@ -207,10 +207,14 @@ export function FilterSidebar({
               {categories.map((c) => {
                 const value = c.title.toLowerCase();
                 const count = categoryCounts[c.title] ?? 0;
+                // a category with no matching icons can't be picked (but
+                // stays clickable if it's already selected, to turn it off)
+                const unavailable = count === 0 && category !== value;
                 return (
                   <li key={c.title}>
                     <button
                       type="button"
+                      disabled={unavailable}
                       aria-pressed={category === value}
                       className={classnames(styles.categoryItem, {
                         [styles.categoryItemSelected]: category === value,

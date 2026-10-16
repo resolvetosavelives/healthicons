@@ -64,6 +64,11 @@
   }
 }
 
+/* hidden from the first paint once dismissed (see AnnouncementBar.tsx) */
+:global(html[data-announcement-dismissed]) .bar {
+  display: none;
+}
+
 .text {
   flex: 1;
   margin: 0;

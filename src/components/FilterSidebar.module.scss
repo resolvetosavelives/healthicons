@@ -258,7 +258,11 @@
   border-radius: 7px;
   cursor: pointer;
 
-  &:hover:not(.categoryItemSelected) {
+  &:disabled {
+    cursor: default;
+  }
+
+  &:hover:not(.categoryItemSelected, :disabled) {
     color: var(--text-color);
     background: #f2f2f8;
   }

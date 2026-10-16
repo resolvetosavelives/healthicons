@@ -24,6 +24,18 @@ export function SearchBar({
   );
   const searchInput = useRef<HTMLInputElement>(null);
 
+  // on very narrow screens the count is dropped from the placeholder so it
+  // isn't cut off next to the Filters button; checked after load, so the
+  // server-rendered page always has the full version
+  const [narrow, setNarrow] = useState(false);
+  useEffect(() => {
+    const query = window.matchMedia('(max-width: 359px)');
+    const update = () => setNarrow(query.matches);
+    update();
+    query.addEventListener('change', update);
+    return () => query.removeEventListener('change', update);
+  }, []);
+
   // the bar only shows its bottom line once it's stuck to the top of the
   // window; an invisible marker just above it scrolls out of view at that point
   const stuckMarker = useRef<HTMLDivElement>(null);
@@ -40,7 +52,8 @@ export function SearchBar({
     return () => observer.disconnect();
   }, []);
 
-  // press "/" anywhere to jump to the search field
+  // press "/" (when not typing elsewhere) or cmd-K / ctrl-K (from anywhere)
+  // to jump to the search field
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
       const target = e.target as HTMLElement;
@@ -49,9 +62,12 @@ export function SearchBar({
         target.tagName === 'TEXTAREA' ||
         target.tagName === 'SELECT' ||
         target.isContentEditable;
-      if (e.key === '/' && !isTyping) {
+      const commandK =
+        (e.metaKey || e.ctrlKey) && !e.altKey && e.key.toLowerCase() === 'k';
+      if (commandK || (e.key === '/' && !isTyping)) {
         e.preventDefault();
         searchInput.current?.focus();
+        searchInput.current?.select();
       }
     }
     document.addEventListener('keydown', onKeyDown);
@@ -92,7 +108,9 @@ export function SearchBar({
             value={keywords}
             type="search"
             className={styles.searchInput}
-            placeholder={`Search ${iconCount} icons…`}
+            placeholder={
+              narrow ? 'Search icons…' : `Search ${iconCount} icons…`
+            }
             onChange={(e) => dispatch(setKeywords(e.target.value))}
             onKeyDown={(e) => {
               if (e.key === 'Escape') {
