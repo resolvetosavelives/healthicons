@@ -1,3 +1,12 @@
+/* the semi-transparent white backdrop behind the modal, covering the page;
+   kept above the sticky sidebar and mobile filter drawer */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
 .modalContainer {
   background: white;
   width: 90%;
@@ -7,8 +16,11 @@
   border-radius: 5px;
   box-shadow: 0 0 0 10px var(--link-decoration-color);
   border: 1px solid var(--link-color);
-  max-height: 75vh;
-  overflow-y: scroll;
+  max-height: 90vh;
+
+  /* the whole modal scrolls as one, with the footer at the end */
+  overflow-y: auto;
+
   /* Hide scrollbar track and arrows, show only the thumb */
   &,
   & * {
@@ -29,42 +41,111 @@
 }
 
 .modalWrapper {
-  overflow: scroll;
   position: relative;
-  max-height: 550px;
-  padding: 4rem 2rem;
+  padding: 20px 2rem 2rem;
 }
 
 .modalClose {
   position: absolute;
   top: 20px;
   right: 24px;
+}
+
+/* a light outline marks the close button out from the arrows beside it;
+   the doubled class beats the shared border: none below */
+.modalClose.modalClose {
+  border: 1px solid var(--border-color);
+}
+
+/* the close and previous/next controls: thin Lucide-style line icons in a
+   soft grey, turning purple with a light background on hover */
+.modalClose,
+.nextPrevLinksWrapper a,
+.nextPrevLinksWrapper span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  color: var(--secondary-text-color);
   background: none;
   border: none;
-  text-transform: uppercase;
-  color: var(--link-color);
-  font-size: 2rem;
-  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
 
-  &:hover {
-    color: var(--link-color-dark);
-    cursor: pointer;
-  }
+.modalClose:hover,
+.nextPrevLinksWrapper a:hover {
+  color: var(--link-color);
+  background: var(--selected-color);
+  cursor: pointer;
+}
+
+/* replaces the site-wide link focus style (a teal fill) */
+.modalClose:focus-visible,
+.nextPrevLinksWrapper a:focus-visible {
+  color: var(--link-color);
+  background: var(--selected-color);
+  outline: 2px solid var(--link-color);
+  outline-offset: 1px;
 }
 
 .modalLabel {
   text-transform: uppercase;
-  font-size: 0.8rem;
-  color: #999;
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  /* the same dark grey as the category headings */
+  color: #2f2f35;
   letter-spacing: 0.1rem;
   margin: 0 0 0.2rem 0;
 }
 
-.modalImage {
-  position: relative;
-  margin: -1.5rem 0 2rem 0;
-  width: 140px;
+/* each icon section (standard, small): on mobile its preview box sits to
+   the left of its title and buttons; on desktop the box sits in the left
+   column beside the section */
+.iconSection {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 1rem;
+
+  & + & {
+    margin-top: 1.5rem;
+  }
+}
+
+.sectionContent {
+  min-width: 0;
+}
+
+/* the standard and small icons each sit centered in a same-size square box,
+   which shrinks on narrow screens (128px down to 72px) */
+.previewBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(72px, 28vw, 128px);
+  aspect-ratio: 1;
+  background: #fff;
+  border: 1px solid hsl(172, 40%, 80%);
+  border-radius: 5px;
+}
+
+/* the standard icon scales with its box; the small one stays at its true
+   24px size */
+.previewLarge {
+  display: block;
+  width: 75%;
   height: auto;
+  aspect-ratio: 1;
+}
+
+.previewSmall {
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 
 .modalButtons {
@@ -72,18 +153,20 @@
 }
 
 .modalButton {
-  background: var(--link-color) url(/ui/download-2-line-white.svg) 20px 50%
+  background: var(--link-color) url(/ui/download-2-line-white.svg) 0.7rem 50%
     no-repeat;
-  background-size: 18px;
+  background-size: 14px;
   color: #fff !important;
-  margin: 0 1rem 1rem 0;
-  padding: 0.6rem 20px 0.6rem 46px;
-  border-radius: 3px;
+
+  /* space above (from the section label) rather than below (to the code) */
+  margin: 0.4rem 0.5rem 0 0;
+  padding: 0.3rem 0.85rem 0.3rem 1.9rem;
+  border-radius: 999px;
   font-weight: bold;
   transition: background-color ease-in-out 0.15s;
   white-space: nowrap;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   outline: none;
   border: none;
   cursor: pointer;
@@ -98,21 +181,57 @@
   }
 }
 
+/* top left, on the same row as the arrows and close button. Long names wrap
+   onto more lines (never cut off), keeping clear of the icons on the right;
+   the 3px top padding centers the first line with the 34px icons */
 .modalTitle {
+  margin: 0 0 1.5rem;
+
+  /* room on the right for the close button (and on desktop the arrows) */
+  padding: 3px calc(34px + 1rem - 8px) 0 0;
   font-size: 1.4rem;
   font-weight: bold;
-  margin: 0 0 2rem 0;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.modalContent {
+  position: relative;
+}
+
+/* the license sits in a light grey footer along the bottom of the modal */
+.modalFooter {
+  /* overrides the site-wide <footer> margin meant for the page footer */
+  margin: 0;
+  padding: 1rem 2rem;
+  background: var(--surface-color);
+  border-top: 1px solid var(--border-color);
+
+  /* clears the floated CC0 badge */
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
 
 .modalLicense {
+  margin: 0;
+  font-size: 0.75rem;
+
+  /* the CC0 badge, 30% smaller than its 120x39 size: above the text on
+     mobile, floated to its right on desktop */
   img {
-    float: right;
-    margin: 0 1rem;
+    display: block;
+    width: 84px;
+    height: auto;
+    margin: 0 0 0.5rem;
   }
 }
 
 .filename {
   margin: 0 0 1rem 0;
+  font-size: 0.85rem;
 }
 
 .modalTags {
@@ -123,11 +242,11 @@
 }
 
 .tagButton {
-  background: var(--link-decoration-color);
+  background: rgba(102, 102, 255, 0.12);
   color: var(--link-color);
-  padding: 0.4rem 1rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 100px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -138,92 +257,203 @@
   }
 }
 
-.modal24pxImage {
-  margin: 16px 0;
-}
-
 .modalTagsSection {
   margin-top: 2rem;
 }
 
+/* sits at the top right, just left of the close button (24px from the edge,
+   34px wide) with a little space between them */
 .nextPrevLinksWrapper {
   position: absolute;
   top: 20px;
-  left: 24px;
+  right: calc(24px + 34px + 0.75rem);
+
+  /* desktop only; on mobile there's just the close button */
+  display: none;
+  gap: 2px;
 }
 
-.nextPrevLinksWrapper a {
-  background: none;
-  border: none;
-  color: var(--link-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-right: 0.2rem;
+/* no previous/next icon at the ends of the list */
+.nextPrevLinksWrapper span {
+  color: #d0d0d8;
+}
 
-  &:hover {
-    color: var(--link-color-dark);
-    cursor: pointer;
+/* On mobile each section shows just Download (which reveals the download
+   options) and Copy SVG; the code box is hidden. On desktop the download
+   options are always shown, with the code box and its Copy button below. */
+.mobileActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  .modalButton {
+    margin: 0.4rem 0 0;
   }
 }
 
-.nextPrevLinksWrapper span {
-  padding-right: 0.2rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ccc;
+.downloadToggle {
+  /* a small chevron after the label, flipping when the options are open */
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 0 2px 0.5rem;
+    border: solid currentColor;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+    transition: transform 0.15s ease-in-out;
+  }
+
+  &[aria-expanded='true']::after {
+    margin-bottom: -2px;
+    transform: rotate(-135deg);
+  }
+}
+
+.mobileCopyButton {
+  background-color: hsl(172, 45%, 34%);
+  background-image: url(/ui/copy.svg);
+
+  &:hover {
+    background-color: hsl(172, 55%, 26%);
+  }
+
+  &.copyButtonCopied {
+    background-image: url(/ui/check.svg);
+  }
+}
+
+.downloadOptions {
+  display: none;
+}
+
+.downloadOptionsOpen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: -0.5rem 0 1rem;
+  padding: 0.25rem 0.75rem 0.75rem;
+  background: var(--surface-color);
+  border-radius: 10px;
+
+  .modalButton {
+    margin: 0.5rem 0 0;
+  }
+}
+
+/* the SVG code, with its copy button pinned to the top-right corner */
+.codeBlock {
+  display: none;
+  position: relative;
+  margin: 0.5rem 0 1rem;
 }
 
 .modalCopySvgContainer {
+  margin: 0;
   background-color: #0000000b;
-  padding: .5rem;
-  border-radius: .2rem;
+  padding: 0.5rem 5.5rem 0.5rem 0.5rem;
+  border-radius: 0.2rem;
+  font-size: 0.625rem;
+  line-height: 1.5;
+  color: hsl(172, 20%, 38%);
   white-space: pre-wrap;
   word-break: break-word;
-  max-height: 5rem;
+  max-height: 3.75rem;
   overflow-y: scroll;
   width: 100%;
 }
 
-.modalButtonCopy {
-  @extend .modalButton;
-  background: var(--link-color) url(/ui/copy.svg) 16px 50%
-    no-repeat;
+.copyButton {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  padding: 0.2rem 0.7rem 0.2rem 1.6rem;
+  font: inherit;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #fff;
+  background: hsl(172, 45%, 34%) url(/ui/copy.svg) 0.5rem 50% / 13px no-repeat;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.15s;
+
+  &:hover {
+    background-color: hsl(172, 55%, 26%);
+  }
 }
 
-.modalButtonCopied {
-  @extend .modalButton;
-  background: var(--link-color) url(/ui/check.svg) 16px 50%
-    no-repeat;
+.copyButtonCopied {
+  background-image: url(/ui/check.svg);
 }
 
 @media (min-width: 60rem) {
   .modalWrapper {
-    max-height: none;
+    padding-left: 180px;
+  }
+
+  .nextPrevLinksWrapper {
+    display: flex;
+  }
+
+  .modalLicense img {
+    float: right;
+    margin: 0 1rem;
+  }
+
+  .mobileActions {
+    display: none;
+  }
+
+  .downloadOptions,
+  .downloadOptionsOpen {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+
+  .downloadOptions .modalButton {
+    margin: 0.4rem 0.5rem 0 0;
+  }
+
+  .codeBlock {
+    display: block;
+  }
+
+  /* the content is indented for the preview column; the title isn't, and
+     it leaves room for the arrows as well as the close button */
+  .modalTitle {
+    margin-left: calc(2rem - 180px);
+    padding-right: calc(34px + 0.75rem + 70px + 1rem - 8px);
   }
 
   .modalContainer {
     background: white;
     width: 60%;
     top: 16%;
+    max-height: 75vh;
     left: 20%;
   }
 
-  .modalWrapper {
-    padding-left: 180px;
+  /* the box moves out to the left column (left is measured from the
+     indented content), level with the top of its section's title */
+  .iconSection {
+    display: block;
+    position: relative;
+    min-height: 128px;
+
+    & + & {
+      margin-top: 2rem;
+    }
   }
 
-  .modalImage {
+  .previewBox {
     position: absolute;
-    left: 56px;
-    top: 4rem;
-    margin: 0;
-    width: 96px;
-  }
-
-  .modal24pxImage {
-    position: absolute;
-    left: 90px;
-    width: 24px;
-    height: auto;
+    left: calc(2rem - 180px);
+    top: 0;
+    width: 128px;
   }
 }

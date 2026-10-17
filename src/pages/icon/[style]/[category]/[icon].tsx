@@ -1,5 +1,4 @@
-import { useRouter } from 'next/router';
-import HeadTags from '../../../../components/HeadTags';
+import HeadTags, { SITE_URL } from '../../../../components/HeadTags';
 import LandingPage from '../../../../components/LandingPage';
 
 import { getCategoriesAndIcons, Category } from '../../../../lib/icons';
@@ -17,18 +16,44 @@ export default function IconPage({
   style,
   categories
 }: IconPageProps) {
-  const router = useRouter();
-
   const iconObj = categories
     .flatMap((c) => c.icons)
     .find((i) => i.id === icon && i.category === category);
 
+  // the outline and filled pages for an icon are nearly identical, so both
+  // name the outline page (the site's default style) as the canonical one and
+  // search engines index a single page per icon
+  const canonicalPath = `/icon/outline/${category}/${icon}`;
+  const tags = iconObj.tags.length ? ` Tags: ${iconObj.tags.join(', ')}.` : '';
+  const description = `Free, open-source ${iconObj.title} icon in outline and filled styles, as SVG and PNG. Public domain: use it anywhere, no credit needed.${tags}`;
+
   return (
     <>
       <HeadTags
-        title={`Icon: ${iconObj.title}`}
-        path={router.asPath}
+        title={`${iconObj.title} icon — free open-source icon in SVG & PNG from Health Icons`}
+        description={description}
+        path={canonicalPath}
         image={`og-icon-images/${iconObj.category}/${iconObj.id}.png`}
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'ImageObject',
+          name: `${iconObj.title} icon`,
+          description,
+          contentUrl: `${SITE_URL}/icons/svg/${style}/${iconObj.category}/${iconObj.id}.svg`,
+          thumbnailUrl: `${SITE_URL}/icons/png/${style}/${iconObj.category}/${iconObj.id}.png`,
+          encodingFormat: 'image/svg+xml',
+          keywords: iconObj.tags.join(', '),
+          // public domain: lets image search show the icon as free to use
+          license: 'https://creativecommons.org/publicdomain/zero/1.0/',
+          acquireLicensePage: `${SITE_URL}/about#license`,
+          creditText: 'Health Icons',
+          creator: {
+            '@type': 'Organization',
+            name: 'Health Icons',
+            url: SITE_URL
+          },
+          copyrightNotice: 'Public domain (CC0)'
+        }}
       />
       <LandingPage categories={categories} icon={iconObj} style={style} />
     </>

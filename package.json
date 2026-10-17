@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "yarn generate-site-map",
     "build": "next build",
     "export": "next export",
     "start": "next start",

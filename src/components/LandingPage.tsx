@@ -1,11 +1,15 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { useSelector, useDispatch } from 'react-redux';
 import classnames from 'classnames';
-import { RootState } from '../store';
-import { setStyle, setKeywords, setFormat, setCategory } from '../store/search';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState, store } from '../store';
+import { setKeywords, setCategory, sourceFormat } from '../store/search';
 import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
+import { FilterUrlSync } from './FilterUrlSync';
+import { filtersToQueryString } from '../lib/filterQuery';
+import { FilterSidebar, formatCategoryTitle } from './FilterSidebar';
+import { SearchBar } from './SearchBar';
 import { CategoryHeading } from './CategoryHeading';
 import IconGrid from './IconGrid';
 import { IconTileModal } from './IconTileModal';
@@ -42,8 +46,15 @@ export default function LandingPage({
   const searchCategoryValue = useSelector(
     (state: RootState) => state.search.category
   );
+  // only whether a color is set: the color itself is applied through the
+  // --icon-color CSS variable, so changing it doesn't re-render every icon
+  const iconsColored = useSelector(
+    (state: RootState) => state.search.color !== ''
+  );
 
   const [modalIcon, setModalIcon] = useState<ModalIcon>(undefined);
+  // the filters drawer on mobile, opened from the search bar
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const router = useRouter();
 
@@ -60,7 +71,7 @@ export default function LandingPage({
 
   // if the path changes (by using the back/forward buttons), open or close the modal based on the path
   useEffect(() => {
-    const parts = router.asPath.split('/');
+    const parts = router.asPath.split('?')[0].split('/');
     if (parts.length === 5) {
       const [, , iconStyle, iconCategory, iconId] = parts;
       const foundIcon = categories
@@ -75,38 +86,48 @@ export default function LandingPage({
     }
   }, [categories, router.asPath]);
 
-  const categoriesToRender = useMemo(() => {
+  // icons matching the keyword & size filters, before narrowing by category,
+  // so the sidebar can show how many results each category would give
+  const matchingCategories = useMemo(() => {
     const filteredCategories: Category[] = [];
 
     categories.forEach((c) => {
-      const filteredIcons: Icon[] = [];
-      c.icons.forEach((i) => {
-        if (
+      const filteredIcons = c.icons.filter(
+        (i) =>
           searchKeywords(
             searchKeywordsValue,
             i.tags.concat([i.title, c.title]).join(', ')
-          ) &&
-          i.formats.includes(searchFormatValue) &&
-          (!searchCategoryValue ||
-            c.title.toLowerCase() === searchCategoryValue)
-        ) {
-          filteredIcons.push(i);
-        }
-      });
+          ) && i.formats.includes(sourceFormat(searchFormatValue))
+      );
 
-      if (filteredIcons.length > 0) {
-        const filteredCategory: Category = structuredClone(c);
-        filteredCategory.icons = filteredIcons;
-        filteredCategories.push(filteredCategory);
-      }
+      filteredCategories.push({ ...c, icons: filteredIcons });
     });
 
     return filteredCategories;
-  }, [searchFormatValue, categories, searchKeywordsValue, searchCategoryValue]);
+  }, [searchFormatValue, categories, searchKeywordsValue]);
 
-  const totalIconCount = categories.reduce((counter, c) => {
-    return counter + c.icons.length;
-  }, 0);
+  const categoryCounts = useMemo(
+    () =>
+      Object.fromEntries(
+        matchingCategories.map((c) => [c.title, c.icons.length])
+      ),
+    [matchingCategories]
+  );
+
+  const categoriesToRender = matchingCategories.filter(
+    (c) =>
+      c.icons.length > 0 &&
+      (!searchCategoryValue || c.title.toLowerCase() === searchCategoryValue)
+  );
+
+  // icons available at the selected size (and matching any search) across all
+  // categories: the same number as "All categories" in the sidebar. The search
+  // field only shows it as a placeholder while it's empty, when it's simply
+  // the number of icons at the current size.
+  const allCategoriesCount = matchingCategories.reduce(
+    (counter, c) => counter + c.icons.length,
+    0
+  );
 
   const flatIcons = categoriesToRender.flatMap((c) => c.icons);
   // if searching by keyword, show all icons without categories and sorted A-Z
@@ -116,113 +137,115 @@ export default function LandingPage({
     });
   }
 
+  const hasActiveFilters = Boolean(searchKeywordsValue || searchCategoryValue);
+
   return (
-    <div className="container">
+    <div className={classnames('container', styles.page)}>
+      <FilterUrlSync />
       <TopBar />
-      <main id="main">
-        <div className={styles.box}>
-          <h1 className="mt-2">Free, open source health icons</h1>
-          <h3>
-            Free for use in your next commercial or personal project.
-            <span> </span>
-            Editing is ok. Republishing is ok. No need to give credit.
-          </h3>
+      <main id="main" className={styles.layout}>
+        <FilterSidebar
+          categories={categories}
+          categoryCounts={categoryCounts}
+          resultCount={flatIcons.length}
+          filtersOpen={filtersOpen}
+          setFiltersOpen={setFiltersOpen}
+          intro={
+            <div className={styles.intro}>
+              {/* on an icon's page, the icon's name (in the modal) is the h1 */}
+              {!icon && (
+                <h1 className="visually-hidden">
+                  Free, open source health icons
+                </h1>
+              )}
+            </div>
+          }
+        />
+
+        <div id="icon-results" className={styles.results}>
+          <SearchBar
+            iconCount={allCategoriesCount}
+            filtersOpen={filtersOpen}
+            onOpenFilters={() => setFiltersOpen(true)}
+          />
+          {hasActiveFilters && (
+            <div className={styles.resultsHeader}>
+              <p className={styles.resultsSummary} aria-live="polite">
+                <strong>{flatIcons.length}</strong>{' '}
+                {flatIcons.length === 1 ? 'icon' : 'icons'}
+                {searchKeywordsValue && (
+                  <>
+                    {' '}
+                    for <strong>“{searchKeywordsValue}”</strong>
+                  </>
+                )}
+                {searchCategoryValue && (
+                  <>
+                    {' '}
+                    in{' '}
+                    <strong>{formatCategoryTitle(searchCategoryValue)}</strong>
+                  </>
+                )}
+              </p>
+              <button
+                type="button"
+                className={styles.clearFilters}
+                onClick={() => {
+                  dispatch(setKeywords(''));
+                  dispatch(setCategory(''));
+                }}
+              >
+                Show all icons
+              </button>
+            </div>
+          )}
+
+          {flatIcons.length === 0 ? (
+            <div className={styles.emptyState}>
+              <p>No icons match your search.</p>
+              <p>
+                Can’t find what you need?{' '}
+                <a href="/request-icon">Request an icon</a>
+              </p>
+            </div>
+          ) : searchKeywordsValue ? (
+            <IconGrid
+              icons={flatIcons}
+              setModalIcon={setModalIcon}
+              style={searchStyleValue}
+              format={searchFormatValue}
+              colored={iconsColored}
+            />
+          ) : (
+            categoriesToRender.map((c) => (
+              <section key={c.title} className={styles.categorySection}>
+                <CategoryHeading count={c.icons.length}>
+                  {formatCategoryTitle(c.title)}
+                </CategoryHeading>
+                <IconGrid
+                  icons={c.icons}
+                  setModalIcon={setModalIcon}
+                  style={searchStyleValue}
+                  format={searchFormatValue}
+                  colored={iconsColored}
+                />
+              </section>
+            ))
+          )}
+
+          <footer className={styles.footer}>
+            All icons are open source, licensed under a{' '}
+            <a href="/about#license" className={styles.link}>
+              Creative Commons CC0 License
+            </a>
+            . This website is also open source, under an{' '}
+            <a href="/about#license" className={styles.link}>
+              MIT license
+            </a>
+            .
+          </footer>
         </div>
 
-        <div className={styles.filterPlacementBox}>
-          <div className={styles.filterBox}>
-            <div className={styles.searchContainer}>
-              <label className={styles.filterInputLabel}>
-                <input
-                  value={searchKeywordsValue}
-                  type="text"
-                  className={styles.filterBoxInput}
-                  placeholder={`Search ${totalIconCount * 2} icons…`}
-                  onChange={(e) => dispatch(setKeywords(e.target.value))}
-                />
-              </label>
-              <select
-                className={styles.categorySelect}
-                value={searchCategoryValue}
-                onChange={(e) => dispatch(setCategory(e.target.value))}
-              >
-                <option value="">Categories</option>
-                {categories.map((category) => (
-                  <option
-                    key={category.title}
-                    value={category.title.toLowerCase()}
-                  >
-                    {category.title}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className={styles.styleToggleContainer}>
-              <button
-                className={classnames(styles.styleToggle, {
-                  [styles.styleToggleSelected]: searchStyleValue === 'all'
-                })}
-                onClick={() => dispatch(setStyle('all'))}
-              >
-                All
-              </button>
-              <button
-                className={classnames(styles.styleToggle, {
-                  [styles.styleToggleSelected]: searchStyleValue === 'filled'
-                })}
-                onClick={() => dispatch(setStyle('filled'))}
-              >
-                Filled
-              </button>
-              <button
-                className={classnames(styles.styleToggle, {
-                  [styles.styleToggleSelected]: searchStyleValue === 'outline'
-                })}
-                onClick={() => dispatch(setStyle('outline'))}
-              >
-                Outline
-              </button>
-            </div>
-            <div className={styles.sizeToggleContainer}>
-              <button
-                className={classnames(styles.styleToggle, {
-                  [styles.styleToggleSelected]: searchFormatValue === '48px'
-                })}
-                onClick={() => dispatch(setFormat('48px'))}
-              >
-                48px
-              </button>
-              <button
-                className={classnames(styles.styleToggle, {
-                  [styles.styleToggleSelected]: searchFormatValue === '24px'
-                })}
-                onClick={() => dispatch(setFormat('24px'))}
-              >
-                24px
-              </button>
-            </div>
-          </div>
-        </div>
-        {searchKeywordsValue ? (
-          <IconGrid
-            icons={flatIcons}
-            setModalIcon={setModalIcon}
-            style={searchStyleValue}
-            format={searchFormatValue}
-          />
-        ) : (
-          categoriesToRender.map((c, categoryIndex) => (
-            <div key={categoryIndex}>
-              <CategoryHeading children={c.title} />
-              <IconGrid
-                icons={c.icons}
-                setModalIcon={setModalIcon}
-                style={searchStyleValue}
-                format={searchFormatValue}
-              />
-            </div>
-          ))
-        )}
         {modalIcon && (
           <IconTileModal
             icon={modalIcon.icon}
@@ -230,27 +253,20 @@ export default function LandingPage({
             isOpen={modalIcon !== undefined}
             allIcons={flatIcons}
             onClose={() => {
-              router.push('/', undefined, {
-                shallow: true,
-                scroll: false
-              });
+              router.push(
+                '/',
+                `/${filtersToQueryString(store.getState().search)}`,
+                {
+                  shallow: true,
+                  scroll: false
+                }
+              );
 
               setModalIcon(undefined);
             }}
           />
         )}
       </main>
-      <footer>
-        All icons are open source, licensed under a{' '}
-        <a href="/about#license" className={styles.link}>
-          Creative Commons CC0 License
-        </a>
-        . This website is also open source, under an{' '}
-        <a href="/about#license" className={styles.link}>
-          MIT license
-        </a>
-        .
-      </footer>
     </div>
   );
 }
