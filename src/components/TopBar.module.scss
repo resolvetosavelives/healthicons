@@ -17,6 +17,28 @@
   align-items: center;
 }
 
+/* pinned to the top of the window once scrolled past (see TopBar.tsx): it
+   needs its own background there, and hides by sliding up out of view */
+.topBarPinned {
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  background: #fff;
+}
+
+.topBarHidden {
+  /* past its own height plus the mobile links row, which hangs 1rem below
+     the header's box (its negative bottom margin), and the active link's
+     underline; once slid away it's hidden outright so nothing can peek out
+     over the search bar */
+  transform: translateY(calc(-100% - 2rem));
+  visibility: hidden;
+}
+
+.topBarAnimated {
+  transition: transform 0.2s ease-in-out, visibility 0.2s;
+}
+
 .topbarDownload {
   grid-area: download-area;
   display: flex;
@@ -50,7 +72,10 @@
   grid-auto-flow: column;
   justify-content: center;
   gap: 1rem;
-  background: none;
+
+  /* it hangs below the header's box, so it needs its own background when
+     the header is pinned over the icons */
+  background: #fff;
   font-size: 13px;
   border-top: 1px solid var(--link-decoration-color);
   border-bottom: 1px solid var(--link-decoration-color);
@@ -164,6 +189,17 @@
     margin: -2rem -2rem 1.5rem;
     padding: 0.9rem 2rem;
     border-bottom: 1px solid var(--border-color);
+  }
+
+  /* on the icons page the pinned header continues the sidebar's tint and
+     divider line, which sit behind it when it's in its normal place */
+  :global(body:has(#icon-results)) .topBarPinned {
+    background: linear-gradient(
+      to right,
+      var(--sidebar-color) calc(2rem + var(--sidebar-width) - 1px),
+      var(--border-color) 0 calc(2rem + var(--sidebar-width)),
+      #fff 0
+    );
   }
 
   .buttonLink {

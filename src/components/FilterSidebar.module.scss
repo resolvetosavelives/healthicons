@@ -294,7 +294,8 @@
 
     display: block;
     position: sticky;
-    top: calc(-1 * var(--intro-height));
+    top: calc(var(--header-offset, 0px) - var(--intro-height));
+    transition: top 0.2s ease-in-out;
     align-self: start;
 
     /* the scroll area runs to the top and bottom of the window (so content
@@ -302,7 +303,7 @@
        first filter is padding inside it instead. The negative top margin
        pulls it into the gap under the header to keep that spacing the same
        when the page isn't scrolled */
-    max-height: calc(100vh + var(--intro-height));
+    max-height: calc(100vh - var(--header-offset, 0px) + var(--intro-height));
     overflow-y: auto;
     margin: -1.5rem 0 0 -4px;
     padding: 1.5rem 2rem 1.5rem 4px;

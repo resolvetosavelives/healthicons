@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import classnames from 'classnames';
@@ -37,11 +38,88 @@ export function TopBar() {
   // on the server and in the browser, so the active link never flickers
   const { pathname } = useRouter();
 
+  // Once scrolled past, the header slides away while scrolling down and back
+  // in while scrolling up. 'top' is its normal place at the top of the page;
+  // 'hidden' and 'shown' are pinned to the top of the window (sticky).
+  const nav = useRef<HTMLElement>(null);
+  const navEnd = useRef<HTMLDivElement>(null);
+  const [mode, setMode] = useState<'top' | 'hidden' | 'shown'>('top');
+  const modeRef = useRef(mode);
+  const [animated, setAnimated] = useState(false);
+
+  useEffect(() => {
+    let lastY = window.scrollY;
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const y = window.scrollY;
+      // where the header sits in the page, from the marker just after it
+      const marginBottom = parseFloat(
+        getComputedStyle(nav.current).marginBottom
+      );
+      const naturalBottom = navEnd.current.offsetTop - marginBottom;
+      const naturalTop = naturalBottom - nav.current.offsetHeight;
+      const current = modeRef.current;
+      let next = current;
+      if (current === 'shown' ? y <= naturalTop : y <= naturalBottom) {
+        next = 'top';
+      } else if (y > lastY + 4) {
+        next = 'hidden';
+      } else if (y < lastY - 4) {
+        next = 'shown';
+      }
+      lastY = y;
+      if (next !== current) {
+        // slide only between hidden and shown; moving to or from its normal
+        // place happens off screen, so it shouldn't animate
+        setAnimated(next === 'shown' || current === 'shown');
+        modeRef.current = next;
+        setMode(next);
+      }
+    };
+    const onScroll = () => {
+      if (!frame) {
+        frame = requestAnimationFrame(update);
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      cancelAnimationFrame(frame);
+    };
+  }, []);
+
+  // while shown, the sticky search bar and sidebar sit below the header,
+  // including the mobile links row that hangs below the header's box
+  useEffect(() => {
+    let offset = 0;
+    if (mode === 'shown') {
+      const top = nav.current.getBoundingClientRect().top;
+      offset = Math.max(
+        nav.current.offsetHeight,
+        ...Array.from(nav.current.children).map(
+          (child) => child.getBoundingClientRect().bottom - top
+        )
+      );
+    }
+    document.documentElement.style.setProperty(
+      '--header-offset',
+      `${Math.round(offset)}px`
+    );
+  }, [mode]);
+
   return (
     <>
       {/* shown on every page until dismissed */}
       <AnnouncementBar />
-      <nav className={styles.topBar}>
+      <nav
+        ref={nav}
+        className={classnames(styles.topBar, {
+          [styles.topBarPinned]: mode !== 'top',
+          [styles.topBarHidden]: mode === 'hidden',
+          [styles.topBarAnimated]: animated
+        })}
+      >
         <div className={styles.topbarTitle}>
           <Link href="/" className={styles.title}>
             Health icons
@@ -106,6 +184,8 @@ export function TopBar() {
           </div>
         )}
       </nav>
+      {/* marks where the header ends in the page */}
+      <div ref={navEnd} />
     </>
   );
 }

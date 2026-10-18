@@ -35,6 +35,19 @@ body {
 
 html {
   height: 100%;
+
+  /* keeps the scrollbar's space even when the page can't scroll (e.g. while
+     the icon modal is open), so the page doesn't shift sideways on systems
+     with always-visible scrollbars, like Windows */
+  scrollbar-gutter: stable;
+}
+
+/* while a modal dialog (the icon modal) is open, the page behind it doesn't
+   scroll; it scrolls again as soon as the dialog closes */
+/* stylelint-disable-next-line selector-pseudo-class-no-unknown -- :has and
+   :modal are newer than this stylelint version */
+html:has(dialog:modal) {
+  overflow: hidden;
 }
 
 body {
