@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import classnames from 'classnames';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState, store } from '../store';
@@ -211,7 +212,7 @@ export default function LandingPage({
               <p>No icons match your search.</p>
               <p>
                 Can’t find what you need?{' '}
-                <a href="/request-icon">Request an icon</a>
+                <Link href="/request-icon">Request an icon</Link>
               </p>
             </div>
           ) : searchKeywordsValue ? (
@@ -256,7 +257,6 @@ export default function LandingPage({
           <IconTileModal
             icon={modalIcon.icon}
             iconType={modalIcon.iconType}
-            isOpen={modalIcon !== undefined}
             allIcons={flatIcons}
             onClose={() => {
               router.push(

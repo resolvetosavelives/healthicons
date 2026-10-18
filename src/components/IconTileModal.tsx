@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import ClipboardJs from 'clipboard';
 import classnames from 'classnames';
 import styles from './IconTileModal.module.scss';
-import ReactModal from 'react-modal';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Icon } from '../lib/icons';
@@ -56,27 +55,62 @@ function useCopyButton(text: string | null) {
   return { ref, copied };
 }
 
-// react-modal can't render on the server, so an icon page loaded directly
-// would have none of the icon's details in its HTML. Until the app has
-// hydrated, the modal is drawn as plain markup that looks the same; after that
-// the real (accessible, focus-trapping) react-modal takes over.
-let appHydrated = false;
-
 interface IconTileModalProps {
   icon: Icon;
   allIcons: Icon[];
   iconType: string;
-  isOpen: boolean;
   onClose: () => void;
 }
 
 export function IconTileModal(props: IconTileModalProps) {
   const [iconCode24, setIconCode24] = useState(null);
   const [iconCode48, setIconCode48] = useState(null);
-  const [hydrated, setHydrated] = useState(appHydrated);
+
+  // The modal is a native <dialog>. The server renders it already open, so an
+  // icon page loaded directly has the icon's details in its HTML; once the
+  // page is running it's reopened with showModal(), which makes it a true
+  // modal: the rest of the page can't be clicked or tabbed to, and Escape
+  // closes it.
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const onClose = useRef(props.onClose);
+  onClose.current = props.onClose;
   useEffect(() => {
-    appHydrated = true;
-    setHydrated(true);
+    const dialog = dialogRef.current;
+    const returnFocusTo = document.activeElement as HTMLElement | null;
+    if (dialog.open) {
+      dialog.close();
+    }
+    dialog.showModal();
+
+    const onCancel = (e: Event) => {
+      e.preventDefault();
+      onClose.current();
+    };
+    // a click on the backdrop lands on the dialog itself, outside its box
+    const onClick = (e: MouseEvent) => {
+      const box = dialog.getBoundingClientRect();
+      const outside =
+        e.clientX < box.left ||
+        e.clientX > box.right ||
+        e.clientY < box.top ||
+        e.clientY > box.bottom;
+      if (e.target === dialog && outside) {
+        onClose.current();
+      }
+    };
+    dialog.addEventListener('cancel', onCancel);
+    dialog.addEventListener('click', onClick);
+    return () => {
+      dialog.removeEventListener('cancel', onCancel);
+      dialog.removeEventListener('click', onClick);
+      if (dialog.open) {
+        dialog.close();
+      }
+      // back to whatever opened the modal (e.g. the icon tile)
+      if (returnFocusTo && document.contains(returnFocusTo)) {
+        returnFocusTo.focus();
+      }
+    };
   }, []);
   const router = useRouter();
   const dispatch = useDispatch();
@@ -101,6 +135,20 @@ export function IconTileModal(props: IconTileModalProps) {
   useEffect(() => {
     setOpenDownloads(null);
   }, [props.icon.id, props.iconType]);
+
+  // like a dropdown, the options close on a tap anywhere outside them
+  useEffect(() => {
+    if (!openDownloads) {
+      return;
+    }
+    const closeIfOutside = (e: PointerEvent) => {
+      if (!(e.target as Element).closest(`.${styles.downloadMenu}`)) {
+        setOpenDownloads(null);
+      }
+    };
+    document.addEventListener('pointerdown', closeIfOutside);
+    return () => document.removeEventListener('pointerdown', closeIfOutside);
+  }, [openDownloads]);
 
   // download links point at the static files unless a color is chosen, in
   // which case the SVG/PNG is generated in the browser in that color
@@ -217,7 +265,9 @@ export function IconTileModal(props: IconTileModalProps) {
             </span>
           )}
         </div>
-        <h1 className={styles.modalTitle}>{props.icon.title}</h1>
+        <h1 id="icon-modal-title" className={styles.modalTitle}>
+          {props.icon.title}
+        </h1>
         {/* everything below the title; the desktop preview boxes are
               positioned from its top */}
         <div className={styles.modalContent}>
@@ -234,19 +284,62 @@ export function IconTileModal(props: IconTileModalProps) {
             <div className={styles.sectionContent}>
               <div className={styles.modalLabel}>Standard icon</div>
               <div className={styles.mobileActions}>
-                <button
-                  type="button"
-                  className={classnames(
-                    styles.modalButton,
-                    styles.downloadToggle
-                  )}
-                  aria-expanded={openDownloads === '48'}
-                  onClick={() =>
-                    setOpenDownloads((open) => (open === '48' ? null : '48'))
-                  }
-                >
-                  Download
-                </button>
+                {/* the options drop down from under Download on mobile; on desktop
+    they're always shown as a row */}
+                <div className={styles.downloadMenu}>
+                  <button
+                    type="button"
+                    className={classnames(
+                      styles.modalButton,
+                      styles.downloadToggle
+                    )}
+                    aria-expanded={openDownloads === '48'}
+                    onClick={() =>
+                      setOpenDownloads((open) => (open === '48' ? null : '48'))
+                    }
+                  >
+                    Download
+                  </button>
+                  <div
+                    className={classnames(styles.downloadOptions, {
+                      [styles.downloadOptionsOpen]: openDownloads === '48'
+                    })}
+                    onClick={() => setOpenDownloads(null)}
+                  >
+                    <a
+                      {...svgLink(
+                        `/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`,
+                        coloredCode48,
+                        `${props.icon.id}.svg`
+                      )}
+                      className={styles.modalButton}
+                    >
+                      <span>SVG</span>
+                    </a>
+                    <a
+                      {...pngLink(
+                        `/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}.png`,
+                        coloredCode48,
+                        48,
+                        `${props.icon.id}.png`
+                      )}
+                      className={styles.modalButton}
+                    >
+                      <span>48px PNG</span>
+                    </a>
+                    <a
+                      {...pngLink(
+                        `/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}@2x.png`,
+                        coloredCode48,
+                        96,
+                        `${props.icon.id}@2x.png`
+                      )}
+                      className={styles.modalButton}
+                    >
+                      <span>96px PNG</span>
+                    </a>
+                  </div>
+                </div>
                 {iconCode48 && (
                   <button
                     type="button"
@@ -262,44 +355,6 @@ export function IconTileModal(props: IconTileModalProps) {
                     {mobileCopy48.copied ? 'Copied' : 'Copy SVG'}
                   </button>
                 )}
-              </div>
-              <div
-                className={classnames(styles.downloadOptions, {
-                  [styles.downloadOptionsOpen]: openDownloads === '48'
-                })}
-              >
-                <a
-                  {...svgLink(
-                    `/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`,
-                    coloredCode48,
-                    `${props.icon.id}.svg`
-                  )}
-                  className={styles.modalButton}
-                >
-                  <span>SVG</span>
-                </a>
-                <a
-                  {...pngLink(
-                    `/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}.png`,
-                    coloredCode48,
-                    48,
-                    `${props.icon.id}.png`
-                  )}
-                  className={styles.modalButton}
-                >
-                  <span>48px PNG</span>
-                </a>
-                <a
-                  {...pngLink(
-                    `/icons/png/${props.iconType}/${props.icon.category}/${props.icon.id}@2x.png`,
-                    coloredCode48,
-                    96,
-                    `${props.icon.id}@2x.png`
-                  )}
-                  className={styles.modalButton}
-                >
-                  <span>96px PNG</span>
-                </a>
               </div>
               <div className={styles.codeBlock}>
                 <pre className={styles.modalCopySvgContainer}>
@@ -333,19 +388,64 @@ export function IconTileModal(props: IconTileModalProps) {
               <div className={styles.sectionContent}>
                 <div className={styles.modalLabel}>Small icon</div>
                 <div className={styles.mobileActions}>
-                  <button
-                    type="button"
-                    className={classnames(
-                      styles.modalButton,
-                      styles.downloadToggle
-                    )}
-                    aria-expanded={openDownloads === '24'}
-                    onClick={() =>
-                      setOpenDownloads((open) => (open === '24' ? null : '24'))
-                    }
-                  >
-                    Download
-                  </button>
+                  {/* the options drop down from under Download on mobile; on desktop
+    they're always shown as a row */}
+                  <div className={styles.downloadMenu}>
+                    <button
+                      type="button"
+                      className={classnames(
+                        styles.modalButton,
+                        styles.downloadToggle
+                      )}
+                      aria-expanded={openDownloads === '24'}
+                      onClick={() =>
+                        setOpenDownloads((open) =>
+                          open === '24' ? null : '24'
+                        )
+                      }
+                    >
+                      Download
+                    </button>
+                    <div
+                      className={classnames(styles.downloadOptions, {
+                        [styles.downloadOptionsOpen]: openDownloads === '24'
+                      })}
+                      onClick={() => setOpenDownloads(null)}
+                    >
+                      <a
+                        {...svgLink(
+                          `/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`,
+                          coloredCode24,
+                          `${props.icon.id}-24px.svg`
+                        )}
+                        className={styles.modalButton}
+                      >
+                        <span>SVG</span>
+                      </a>
+                      <a
+                        {...pngLink(
+                          `/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.png`,
+                          coloredCode24,
+                          24,
+                          `${props.icon.id}-24px.png`
+                        )}
+                        className={styles.modalButton}
+                      >
+                        <span>24px PNG</span>
+                      </a>
+                      <a
+                        {...pngLink(
+                          `/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}@2x.png`,
+                          coloredCode24,
+                          48,
+                          `${props.icon.id}-24px@2x.png`
+                        )}
+                        className={styles.modalButton}
+                      >
+                        <span>48px PNG</span>
+                      </a>
+                    </div>
+                  </div>
                   {iconCode24 && (
                     <button
                       type="button"
@@ -361,44 +461,6 @@ export function IconTileModal(props: IconTileModalProps) {
                       {mobileCopy24.copied ? 'Copied' : 'Copy SVG'}
                     </button>
                   )}
-                </div>
-                <div
-                  className={classnames(styles.downloadOptions, {
-                    [styles.downloadOptionsOpen]: openDownloads === '24'
-                  })}
-                >
-                  <a
-                    {...svgLink(
-                      `/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`,
-                      coloredCode24,
-                      `${props.icon.id}-24px.svg`
-                    )}
-                    className={styles.modalButton}
-                  >
-                    <span>SVG</span>
-                  </a>
-                  <a
-                    {...pngLink(
-                      `/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.png`,
-                      coloredCode24,
-                      24,
-                      `${props.icon.id}-24px.png`
-                    )}
-                    className={styles.modalButton}
-                  >
-                    <span>24px PNG</span>
-                  </a>
-                  <a
-                    {...pngLink(
-                      `/icons/png/${props.iconType}-24px/${props.icon.category}/${props.icon.id}@2x.png`,
-                      coloredCode24,
-                      48,
-                      `${props.icon.id}-24px@2x.png`
-                    )}
-                    className={styles.modalButton}
-                  >
-                    <span>48px PNG</span>
-                  </a>
                 </div>
                 <div className={styles.codeBlock}>
                   <pre className={styles.modalCopySvgContainer}>
@@ -472,35 +534,14 @@ export function IconTileModal(props: IconTileModalProps) {
     </>
   );
 
-  if (!hydrated) {
-    // the same markup react-modal produces
-    return (
-      <div
-        className={`ReactModal__Overlay ReactModal__Overlay--after-open ${styles.modalOverlay}`}
-      >
-        <div
-          className={`ReactModal__Content ReactModal__Content--after-open ${styles.modalContainer}`}
-          role="dialog"
-          aria-modal="true"
-          aria-label={`${props.icon.title} icon`}
-        >
-          {content}
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <ReactModal
-      isOpen={props.isOpen}
-      bodyOpenClassName="modal--open"
-      onRequestClose={props.onClose}
+    <dialog
+      ref={dialogRef}
+      open={true}
       className={styles.modalContainer}
-      overlayClassName={styles.modalOverlay}
-      closeTimeoutMS={200}
-      contentLabel={`${props.icon.title} icon`}
+      aria-labelledby="icon-modal-title"
     >
       {content}
-    </ReactModal>
+    </dialog>
   );
 }
