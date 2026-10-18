@@ -170,23 +170,29 @@ export default function LandingPage({
           />
           {hasActiveFilters && (
             <div className={styles.resultsHeader}>
-              <p className={styles.resultsSummary} aria-live="polite">
-                <strong>{flatIcons.length}</strong>{' '}
-                {flatIcons.length === 1 ? 'icon' : 'icons'}
-                {searchKeywordsValue && (
-                  <>
-                    {' '}
-                    for <strong>“{searchKeywordsValue}”</strong>
-                  </>
-                )}
-                {searchCategoryValue && (
-                  <>
-                    {' '}
-                    in{' '}
-                    <strong>{formatCategoryTitle(searchCategoryValue)}</strong>
-                  </>
-                )}
-              </p>
+              {/* only for searches: with just a category picked, its heading
+                  below already shows the count */}
+              {searchKeywordsValue && (
+                <p className={styles.resultsSummary} aria-live="polite">
+                  <strong>{flatIcons.length}</strong>{' '}
+                  {flatIcons.length === 1 ? 'icon' : 'icons'}
+                  {searchKeywordsValue && (
+                    <>
+                      {' '}
+                      for <strong>“{searchKeywordsValue}”</strong>
+                    </>
+                  )}
+                  {searchCategoryValue && (
+                    <>
+                      {' '}
+                      in{' '}
+                      <strong>
+                        {formatCategoryTitle(searchCategoryValue)}
+                      </strong>
+                    </>
+                  )}
+                </p>
+              )}
               <button
                 type="button"
                 className={styles.clearFilters}

@@ -12,6 +12,20 @@
   transition: background-color ease-in-out 0.15s;
 }
 
+/* a whole tile as one link (when only one style is showing): the
+   site-wide link colors and focus fill don't apply to it */
+.singleLink {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 1px;
+    background: #f9f9fc;
+  }
+}
+
 .iconRow {
   display: flex;
   justify-content: center;
@@ -113,7 +127,7 @@
 /* only show hover states on devices that can hover, so they don't stick after a tap */
 @media (hover: hover) {
   .iconGroup:hover {
-    background: var(--surface-color);
+    background: #f9f9fc;
   }
 
   .iconGroup:hover .iconTitle {

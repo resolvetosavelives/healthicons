@@ -45,12 +45,18 @@ body {
   margin: 0 auto;
   font-family: var(--font-family);
   background: #fff;
-
-  /* full-window-width elements (the announcement bar) use 100vw, which on
-     some systems includes the scrollbar; don't let that scroll sideways */
-  overflow-x: clip;
   color: var(--text-color);
   line-height: 1.6;
+}
+
+/* full-window-width elements (the announcement bar) use 100vw, which on
+   some systems includes the scrollbar; don't let that scroll sideways. Only
+   from 320px up: below that the page is wider than the screen (its
+   min-width), and it needs to scroll sideways rather than be cut off */
+@media (min-width: 320px) {
+  body {
+    overflow-x: clip;
+  }
 }
 
 /* the icon browser uses the full window width; text pages keep the max-width */

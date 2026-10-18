@@ -1,6 +1,6 @@
 .topBar {
   display: grid;
-  grid-template-columns: minmax(max-content, 1fr) max-content max-content max-content;
+  grid-template-columns: minmax(max-content, 1fr) max-content max-content;
 
   /* on mobile the first row is a fixed-height band running from the top of
      the page (pulled up through the body padding) to the line above the links,
@@ -8,8 +8,8 @@
   grid-template-rows: 64px auto;
   gap: 0 1em;
   grid-template-areas:
-    'title-area desktop-links-area category-area download-area'
-    'mobile-links-area mobile-links-area mobile-links-area mobile-links-area';
+    'title-area desktop-links-area download-area'
+    'mobile-links-area mobile-links-area mobile-links-area';
 
   /* the links row pulls 1rem into this bottom margin, leaving 1rem under its
      line on mobile */
