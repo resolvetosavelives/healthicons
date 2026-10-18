@@ -1,11 +1,10 @@
-/* on mobile the layout is a plain block flow (intro, sticky search, results)
-   so the search bar can stick for the whole page rather than one grid row */
+/* on mobile the layout is a plain block flow so the search bar can stick for
+   the whole page rather than one grid row */
 .layout {
   display: block;
 }
 
-/* now only holds the page's visually hidden h1 (the intro text moved to the
-   announcement bar), so it takes no space */
+/* holds only the page's visually hidden h1, so it takes no space */
 .intro {
   margin: 0;
 }

@@ -54,7 +54,7 @@ export default function About() {
           <a href="/history">our full history here</a>. The project is hosted by
           the public health not-for-profit{' '}
           <a href="https://resolvetosavelives.org">Resolve to Save Lives</a> as
-          an expression of our committment to offer the icons for free, forever.
+          an expression of our commitment to offer the icons for free, forever.
         </p>
         <p>
           Need an icon for your project?{' '}

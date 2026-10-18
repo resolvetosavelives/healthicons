@@ -1,8 +1,8 @@
 .sidebar {
   grid-area: sidebar;
 
-  /* on mobile the sidebar's children join the page flow: the intro sits
-     above the search bar and the filters become a slide-in drawer */
+  /* on mobile the sidebar's children join the page flow, and the filters
+     become a slide-in drawer */
   display: contents;
 }
 

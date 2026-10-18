@@ -4,9 +4,7 @@ import styles from './ContentPage.module.scss';
 
 interface ContentPageProps {
   title: string;
-  // id for the title, e.g. for linking to the top of the page
   titleId?: string;
-  // the larger lead paragraph under the title
   intro: ReactNode;
   // optional side column: beside the text on desktop, below it on mobile
   aside?: ReactNode;

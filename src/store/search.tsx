@@ -8,7 +8,6 @@ export type SearchStyle = 'outline' | 'filled' | 'all';
 // larger, as there's no separate 64px artwork)
 export type DisplaySize = '24px' | '48px' | '64px';
 
-// which drawing a display size uses
 export function sourceFormat(size: DisplaySize): IconFormat {
   return size === '24px' ? '24px' : '48px';
 }

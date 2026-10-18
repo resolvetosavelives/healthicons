@@ -1,10 +1,7 @@
-/* the layout shared by the text pages (About, History, Request an icon) */
-
 .page {
   padding: 1rem 0 3rem;
 }
 
-/* one readable column of text */
 .main {
   max-width: 42.5rem;
 }
@@ -29,7 +26,6 @@
   }
 }
 
-/* consistent section spacing within the page text */
 .body {
   h2 {
     margin: 3rem 0 0.75rem;

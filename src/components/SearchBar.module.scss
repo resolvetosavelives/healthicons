@@ -31,9 +31,6 @@
   align-items: center;
   height: 38px;
   background: #fff;
-
-  /* always outlined in purple; the outline thickens and the glow grows when
-     the field is focused */
   border: 1px solid var(--link-color);
   border-radius: 10px;
   box-shadow: 0 0 0 3px rgba(102, 102, 255, 0.15);

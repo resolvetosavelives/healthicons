@@ -57,8 +57,8 @@
 }
 
 /* the links fill the bar's full height, so the active one's underline can
-   sit on the bar's bottom line like a tab. They're dark grey, turning purple
-   on hover; the doubled class beats the global a:link colors */
+   sit on the bar's bottom line like a tab; the doubled class beats the
+   global a:link colors */
 .topbarLinks .link {
   color: #2f2f35;
   transition: color 0.15s ease-in-out;
@@ -69,7 +69,6 @@
   padding: 0.75rem 0;
 }
 
-/* the small arrow after GitHub marking it as an external link */
 .externalIcon {
   flex-shrink: 0;
   margin-left: 3px;
@@ -80,7 +79,6 @@
   color: var(--link-color);
 }
 
-/* the link for the page you're on: purple, with its underline */
 .topbarLinks .activeLink {
   color: var(--link-color);
 
@@ -100,26 +98,9 @@
   display: none;
 }
 
-.topbarCategory {
-  grid-area: category-area;
-  display: flex;
-  align-items: center;
-  height: 32px; 
-  margin-right: 2em;
-}
-
-.topbarCategory select {
-  height: 100%;
-  padding: 0.6rem 1rem;
-  font-size: 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 10px; /* Matching border-radius with 3rd one */
-  outline: none;
-  transition: all 0.3s ease;
-}
-
 .buttonLink {
-  background: var(--link-color) url(/ui/folder-download-line-white.svg) 0.65rem 50% no-repeat;
+  background: var(--link-color) url(/ui/folder-download-line-white.svg) 0.65rem
+    50% no-repeat;
   display: inline-block;
   background-size: 16px;
   color: #fff;
@@ -138,6 +119,32 @@
     text-decoration: none;
     background-color: var(--link-color-dark);
   }
+}
+
+/* Keyboard focus in the header: a purple outline, with each element keeping
+   its normal look. The site-wide link focus style (a dark teal fill with white
+   text) doesn't suit these: it turned the logo's text white on white, gave the
+   menu links grey text on teal, and hid the button's download icon. */
+.topbarTitle a:focus-visible {
+  color: var(--link-color);
+  outline: 2px solid var(--link-color);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.topbarLinks .link:focus-visible {
+  color: var(--link-color);
+  background: none;
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.buttonLink:focus-visible {
+  background: var(--link-color-dark) url(/ui/folder-download-line-white.svg)
+    0.65rem 50% / 16px no-repeat;
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
 }
 
 @media (min-width: 60rem) {
@@ -162,6 +169,10 @@
   .buttonLink {
     padding: 0.4rem 0.9rem 0.4rem 2.15rem;
     font-size: 0.85rem;
+  }
+
+  .buttonLink,
+  .buttonLink:focus-visible {
     background-position: 0.75rem 50%;
   }
 
@@ -202,90 +213,4 @@
       font-size: 1.3rem;
     }
   }
-  .filterPlacementBox {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    height:42px;
-  }
-  
-  .filterBox {
-    display: flex;
-    flex-wrap: wrap;
-    background: #f8f8f8;
-    padding: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    height:42px;
-  }
-  
-  .searchContainer {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    height:42px;
-  }
-  
-  .filterBoxInput {
-    display: flex;
-    margin-left: 1rem;
-    padding: 0.5rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    height:42px;
-  }
-  
-  .categorySelect {
-    display: flex;
-    margin-left: 1rem;
-    padding: 0.5rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    height:42px;
-  }
-  
-  .styleToggleContainer,
-  .sizeToggleContainer {
-    display: flex;
-    margin-left: 1rem;
-    padding: 0.5rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    height:42px;
-  }
-  
-  .styleToggle,
-  .sizeToggle {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    background: none;
-    cursor: pointer;
-    transition: background 0.3s;
-    border-radius: 0;
-    height:42px;
-  }
-  
-  .styleToggle:first-child,
-  .sizeToggle:first-child {
-    border-radius: 10px 0 0 10px;
-    height:42px;
-  }
-  
-  .styleToggle:last-child,
-  .sizeToggle:last-child {
-    border-radius: 0 10px 10px 0;
-    height:42px;
-  }
-  
-  .styleToggleSelected,
-  .sizeToggleSelected {
-    background: #007bff;
-    color: white;
-    border-color: #0056b3;
-    height:42px;
-  }
-  
 }

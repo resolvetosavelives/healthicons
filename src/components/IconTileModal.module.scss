@@ -17,8 +17,6 @@
   box-shadow: 0 0 0 10px var(--link-decoration-color);
   border: 1px solid var(--link-color);
   max-height: 90vh;
-
-  /* the whole modal scrolls as one, with the footer at the end */
   overflow-y: auto;
 
   /* Hide scrollbar track and arrows, show only the thumb */
@@ -57,8 +55,6 @@
   border: 1px solid var(--border-color);
 }
 
-/* the close and previous/next controls: thin Lucide-style line icons in a
-   soft grey, turning purple with a light background on hover */
 .modalClose,
 .nextPrevLinksWrapper a,
 .nextPrevLinksWrapper span {
@@ -157,8 +153,6 @@
     no-repeat;
   background-size: 14px;
   color: #fff !important;
-
-  /* space above (from the section label) rather than below (to the code) */
   margin: 0.4rem 0.5rem 0 0;
   padding: 0.3rem 0.85rem 0.3rem 1.9rem;
   border-radius: 999px;
@@ -199,7 +193,6 @@
   position: relative;
 }
 
-/* the license sits in a light grey footer along the bottom of the modal */
 .modalFooter {
   /* overrides the site-wide <footer> margin meant for the page footer */
   margin: 0;
@@ -267,8 +260,6 @@
   position: absolute;
   top: 20px;
   right: calc(24px + 34px + 0.75rem);
-
-  /* desktop only; on mobile there's just the close button */
   display: none;
   gap: 2px;
 }
@@ -343,7 +334,6 @@
   }
 }
 
-/* the SVG code, with its copy button pinned to the top-right corner */
 .codeBlock {
   display: none;
   position: relative;

@@ -36,7 +36,6 @@ interface FilterSidebarProps {
   // number of icons in each category that match the current keyword & size filters
   categoryCounts: Record<string, number>;
   resultCount: number;
-  // whether the filters drawer is open (mobile only)
   filtersOpen: boolean;
   setFiltersOpen: (open: boolean) => void;
   // shown at the top of the column; it always scrolls off the top, whether
@@ -101,7 +100,6 @@ export function FilterSidebar({
   const selectCategory = (value: string) => {
     dispatch(setCategory(value));
     setFiltersOpen(false);
-    // jump back to the top of the results if they've been scrolled past
     const results = document.getElementById('icon-results');
     if (results && results.getBoundingClientRect().top < 0) {
       results.scrollIntoView();

@@ -176,7 +176,6 @@ export function IconTileModal(props: IconTileModalProps) {
     };
     document.addEventListener('keydown', keyDownHandler);
 
-    // clean up
     return () => {
       document.removeEventListener('keydown', keyDownHandler);
     };
