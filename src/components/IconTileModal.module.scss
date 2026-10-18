@@ -162,7 +162,7 @@
   background: var(--link-color) url(/ui/download-2-line-white.svg) 0.7rem 50%
     no-repeat;
   background-size: 14px;
-  color: #fff !important;
+  color: #fff;
   margin: 0.4rem 0.5rem 0 0;
   padding: 0.3rem 0.85rem 0.3rem 1.9rem;
   border-radius: 999px;
@@ -175,7 +175,14 @@
   border: none;
   cursor: pointer;
 
+  /* beats the site-wide link colors */
+  &:link,
+  &:visited {
+    color: #fff;
+  }
+
   &:hover {
+    color: #fff;
     background-color: var(--link-color-dark);
     text-decoration: none;
   }
@@ -318,12 +325,21 @@
   }
 }
 
+/* white with purple text, next to the purple Download button; the outline
+   is a shadow so it's the same size as Download */
 .mobileCopyButton {
-  background-color: hsl(172, 45%, 34%);
+  color: var(--link-color);
+  background-color: #fff;
   background-image: url(/ui/copy.svg);
+  box-shadow: inset 0 0 0 1px var(--link-decoration-color);
+  transition: box-shadow ease-in-out 0.15s;
 
+  /* stays white on hover: the outline darkens and it lifts slightly */
   &:hover {
-    background-color: hsl(172, 55%, 26%);
+    color: var(--link-color);
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px var(--link-color),
+      0 1px 4px rgba(102, 102, 255, 0.3);
   }
 
   &.copyButtonCopied {
@@ -385,15 +401,17 @@
   font: inherit;
   font-size: 0.7rem;
   font-weight: bold;
-  color: #fff;
-  background: hsl(172, 45%, 34%) url(/ui/copy.svg) 0.5rem 50% / 13px no-repeat;
+  color: var(--link-color);
+  background: #fff url(/ui/copy.svg) 0.5rem 50% / 13px no-repeat;
   border: none;
+  box-shadow: inset 0 0 0 1px var(--link-decoration-color);
   border-radius: 999px;
   cursor: pointer;
-  transition: background-color ease-in-out 0.15s;
+  transition: box-shadow ease-in-out 0.15s;
 
   &:hover {
-    background-color: hsl(172, 55%, 26%);
+    box-shadow: inset 0 0 0 1px var(--link-color),
+      0 1px 4px rgba(102, 102, 255, 0.3);
   }
 }
 
