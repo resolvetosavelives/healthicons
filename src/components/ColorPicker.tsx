@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../store';
 import { setColor } from '../store/search';
@@ -12,9 +12,15 @@ export function ColorPicker() {
   const color = useSelector((state: RootState) => state.search.color);
   // what's typed in the hex field, which may be an incomplete color
   const [draft, setDraft] = useState(color);
+  const typing = useRef(false);
 
+  // show color changes from elsewhere (the color wheel, Reset, the URL) in the
+  // field, but not while typing in it: a valid shorthand like "abc" would
+  // otherwise be rewritten to "#aabbcc" before the rest could be typed
   useEffect(() => {
-    setDraft(color);
+    if (!typing.current) {
+      setDraft(color);
+    }
   }, [color]);
 
   // icons are drawn with the --icon-color CSS variable, so updating it here
@@ -47,6 +53,9 @@ export function ColorPicker() {
           aria-label="Icon color hex value"
           placeholder={DEFAULT_COLOR}
           spellCheck={false}
+          autoComplete="off"
+          autoCorrect="off"
+          autoCapitalize="off"
           maxLength={7}
           value={draft}
           onChange={(e) => {
@@ -61,7 +70,13 @@ export function ColorPicker() {
               }
             }
           }}
-          onBlur={() => setDraft(color)}
+          onFocus={() => {
+            typing.current = true;
+          }}
+          onBlur={() => {
+            typing.current = false;
+            setDraft(color);
+          }}
         />
       </div>
       {color && (
