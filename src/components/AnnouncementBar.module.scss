@@ -1,0 +1,115 @@
+/* runs edge to edge above the header: the side margins stretch it to the
+   window edges whatever the page's width or max-width, and the top/bottom
+   margins pull it through the body padding so the header's own pull-up lands
+   it just below the bar */
+.bar {
+  position: relative;
+
+  /* sits above the sidebar divider and tint, which start at the page top */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: -1rem calc(50% - 50vw) 1rem;
+  padding: 0.9rem 0.5rem 0.9rem 1rem;
+
+  /* a dark teal at 80% opacity, so the moving gradient tints the text; it
+     still reads at 5:1 or better over every color in the gradient */
+  color: rgba(4, 37, 32, 0.8);
+  overflow: hidden;
+  background: hsl(225, 95%, 99%);
+  border-bottom: 1px solid rgba(102, 102, 255, 0.2);
+}
+
+/* the gradient sits on a layer three times the bar's width that drifts side
+   to side behind the text, so its colors glide past. Purple, violet, blue
+   and teal blobs over a purple-to-teal sweep, kept light enough that the
+   text reads anywhere on it */
+.bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 300%;
+  background: radial-gradient(
+      circle at 8% 25%,
+      hsl(245, 100%, 83%) 0,
+      transparent 30%
+    ),
+    radial-gradient(circle at 30% 110%, hsl(270, 85%, 91%) 0, transparent 30%),
+    radial-gradient(circle at 52% -10%, hsl(205, 90%, 82%) 0, transparent 30%),
+    radial-gradient(circle at 72% 100%, hsl(250, 95%, 91%) 0, transparent 28%),
+    radial-gradient(circle at 92% 40%, hsl(172, 60%, 77%) 0, transparent 30%),
+    linear-gradient(
+      100deg,
+      hsl(245, 100%, 99%),
+      hsl(225, 95%, 99%) 30%,
+      hsl(195, 80%, 98.5%) 60%,
+      hsl(172, 60%, 98%)
+    );
+  animation: drift 12s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  to {
+    transform: translateX(calc(-200% / 3));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bar::before {
+    animation: none;
+  }
+}
+
+/* hidden from the first paint once dismissed (see AnnouncementBar.tsx) */
+:global(html[data-announcement-dismissed]) .bar {
+  display: none;
+}
+
+.text {
+  flex: 1;
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.close {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.07);
+  }
+}
+
+@media (min-width: 60rem) {
+  .bar {
+    justify-content: center;
+    margin: -2rem calc(50% - 50vw) 2rem;
+    padding: 24px 2rem;
+  }
+
+  .text {
+    flex: none;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+
+  .close {
+    position: absolute;
+    right: 1rem;
+  }
+}

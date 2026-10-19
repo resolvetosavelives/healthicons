@@ -1,0 +1,340 @@
+.sidebar {
+  grid-area: sidebar;
+
+  /* on mobile the sidebar's children join the page flow, and the filters
+     become a slide-in drawer */
+  display: contents;
+}
+
+.noScroll {
+  overflow: hidden;
+}
+
+/* Filters: a slide-in drawer on mobile, a static panel on desktop */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgba(9, 9, 40, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s;
+}
+
+.backdropVisible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.filters {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  width: min(320px, 88vw);
+  background: #fff;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.12);
+  transform: translateX(-105%);
+  visibility: hidden;
+  transition: transform 0.25s ease-in-out, visibility 0.25s;
+}
+
+.filtersOpen {
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.drawerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0.75rem 0.75rem 1.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: var(--text-color);
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--hover-color);
+  }
+}
+
+.filtersScroll {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0.5rem 1.25rem 1.5rem;
+}
+
+.drawerFooter {
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.showResultsButton {
+  width: 100%;
+  height: 44px;
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: var(--link-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--link-color-dark);
+  }
+}
+
+.section {
+  margin-top: 1.75rem;
+}
+
+.sectionTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-text-color);
+}
+
+.segmented {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.segment {
+  flex: 1;
+  height: 28px;
+  padding: 0 0.5rem;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--secondary-text-color);
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+
+  &:hover:not(.segmentSelected) {
+    color: var(--text-color);
+    background: var(--hover-color);
+  }
+}
+
+.segmentSelected {
+  font-weight: 600;
+  color: var(--link-color);
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.colorRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.colorField {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 34px;
+  padding: 0 0.6rem 0 5px;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+
+  &:focus-within {
+    border-color: var(--link-color);
+    box-shadow: 0 0 0 3px var(--link-decoration-color);
+  }
+}
+
+.colorSwatch {
+  position: relative;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  /* the native color input opens the system color wheel; it's stretched over
+     the swatch and made invisible so the swatch itself is what you click */
+  input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+.colorInput {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.8rem;
+  color: var(--text-color);
+  text-transform: lowercase;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.colorReset {
+  flex-shrink: 0;
+  height: 34px;
+  padding: 0 0.6rem;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--link-color);
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--selected-color);
+  }
+}
+
+.categoryList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.categoryCount {
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted-text-color);
+}
+
+.categoryItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 28px;
+  padding: calc(0.15rem - 1px) 0.5rem calc(0.15rem - 1px) 0.75rem;
+  margin-bottom: 1px;
+  font: inherit;
+  font-size: 0.825rem;
+  text-align: left;
+  color: var(--secondary-text-color);
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:hover:not(.categoryItemSelected, :disabled) {
+    color: var(--text-color);
+    background: #f2f2f8;
+  }
+}
+
+.categoryItemSelected {
+  font-weight: 600;
+  color: var(--link-color);
+  background: var(--selected-color);
+
+  .categoryCount {
+    color: var(--link-color);
+  }
+}
+
+.categoryItemEmpty {
+  opacity: 0.45;
+}
+
+@media (min-width: 60rem) {
+  /* the whole column (intro, filters) scrolls as one. It sticks with the
+     intro just above the top of the window (--intro-height is measured in
+     FilterSidebar), so scrolling the page also carries the intro off the top.
+     The 4px of left padding, offset by a negative margin, leaves room for
+     focus rings that the scroll area would otherwise clip */
+  .sidebar {
+    /* stylelint-disable-next-line length-zero-no-unit -- used inside calc() */
+    --intro-height: 0px;
+
+    display: block;
+    position: sticky;
+    top: calc(var(--header-offset, 0px) - var(--intro-height));
+    transition: top 0.2s ease-in-out;
+    align-self: start;
+
+    /* the scroll area runs to the top and bottom of the window (so content
+       scrolls off at the window's edges, not mid-air); the space above the
+       first filter is padding inside it instead. The negative top margin
+       pulls it into the gap under the header to keep that spacing the same
+       when the page isn't scrolled */
+    max-height: calc(100vh - var(--header-offset, 0px) + var(--intro-height));
+    overflow-y: auto;
+    margin: -1.5rem 0 0 -4px;
+    padding: 1.5rem 2rem 1.5rem 4px;
+  }
+
+  /* 2rem above the first filter (the column's 1.5rem top padding plus this),
+     below the header line or the top of the window when pinned, matching the
+     2rem to its left and right */
+  .filtersScroll > .section:first-child {
+    margin-top: 0.5rem;
+  }
+
+  .backdrop,
+  .drawerHeader,
+  .drawerFooter {
+    display: none;
+  }
+
+  .filters {
+    position: static;
+    z-index: auto;
+    width: auto;
+    background: none;
+    box-shadow: none;
+    transform: none;
+    visibility: visible;
+    transition: none;
+  }
+
+  .filtersScroll {
+    overflow: visible;
+    padding: 0;
+  }
+}

@@ -3,31 +3,71 @@
 }
 
 .iconGroup {
-  text-align: center;
-  margin: 1rem 1rem 0 0;
-  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  padding: 0.25rem 0.25rem 0.4rem;
+  border-radius: 12px;
+  transition: background-color ease-in-out 0.15s;
+}
+
+/* a whole tile as one link (when only one style is showing): the
+   site-wide link colors and focus fill don't apply to it */
+.singleLink {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 1px;
+    background: #f9f9fc;
+  }
+}
+
+.iconRow {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
 }
 
 .iconItem {
+  display: block;
   margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
   border: 0;
   background: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+
+  /* tiles are links: replace the site-wide link focus style (a teal fill) */
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 1px;
+    background: transparent;
+  }
 }
 
 .iconThumb {
-  width: 96px;
-  height: 96px;
-  padding: 16px;
-  margin: 0 auto;
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 5px;
-  opacity: 0.8;
-  transition: border-color ease-in-out 0.2s, opacity ease-in-out 0.2s;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  opacity: 0.85;
+  transition: border-color ease-in-out 0.15s, background-color ease-in-out 0.15s,
+    opacity ease-in-out 0.15s;
 
-  img {
-    width: 56px;
-    height: 56px;
+  /* 48px icons are shown at 36px */
+  .iconImage {
+    display: block;
+    width: 36px;
+    height: 36px;
   }
 }
 
@@ -35,42 +75,69 @@
   color: coral;
 }
 
-.iconItem:hover {
-  cursor: pointer;
-
-  .iconThumb {
-    border-color: var(--link-decoration-color);
-    opacity: 1;
-  }
-
-  .iconTitle {
-    color: var(--link-color);
-    transition: color ease-in-out 0.4s;
-  }
-}
-
 .iconTitle {
-  font-size: 0.8rem;
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0 0.25rem;
+  font-size: 0.75rem;
   line-height: 1.1rem;
-  color: rgba(134, 134, 155, 0.6);
-  overflow: hidden;
-  text-overflow: ellipsis;
+  color: var(--muted-text-color);
   text-align: center;
-  height: 5rem;
-  padding: 8px 12px 0 12px;
+  overflow: hidden;
+  overflow-wrap: anywhere;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  transition: color ease-in-out 0.15s;
+}
+
+.large .iconThumb {
+  width: 80px;
+  height: 80px;
+
+  .iconImage {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.small .iconThumb {
+  width: 48px;
+  height: 48px;
+
+  .iconImage {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.iconItem:focus-visible .iconThumb {
+  opacity: 1;
+  background: #fff;
+  border-color: var(--link-decoration-color);
+  box-shadow: 0 1px 4px rgba(102, 102, 255, 0.15);
 }
 
 @media (min-width: 60rem) {
-  .iconThumb {
-    width: 84px;
-    height: 84px;
+  .iconGroup {
+    padding: 0.5rem 0.25rem 0.6rem;
+  }
+}
 
-    img {
-      width: 48px;
-      height: 48px;
-    }
+/* only show hover states on devices that can hover, so they don't stick after a tap */
+@media (hover: hover) {
+  .iconGroup:hover {
+    background: #f9f9fc;
+  }
+
+  .iconGroup:hover .iconTitle {
+    color: var(--text-color);
+  }
+
+  .iconItem:hover .iconThumb {
+    opacity: 1;
+    background: #fff;
+    border-color: var(--link-decoration-color);
+    box-shadow: 0 1px 4px rgba(102, 102, 255, 0.15);
   }
 }

@@ -4,9 +4,10 @@ import TextToSVG from 'text-to-svg';
 import mkdirp from 'mkdirp';
 import path from 'path';
 import cliProgress from 'cli-progress';
-import { readFileSync } from 'fs';
+import { readdirSync, readFileSync, rmdirSync, statSync, unlinkSync } from 'fs';
 
 const PUBLIC_PATH = path.join(process.cwd(), 'public');
+const OUTPUT_PATH = `${PUBLIC_PATH}/og-icon-images`;
 const FONT_PATH = path.join(process.cwd(), 'src', 'scripts');
 const BLUE = '#474FCA';
 
@@ -36,6 +37,34 @@ async function processIcons() {
   }
 
   progress.stop();
+
+  removeStaleImages(icons);
+}
+
+// deletes the images of icons that were renamed or removed (and any category
+// folders left empty), so they aren't deployed with the site. Files directly
+// in the output folder, like og_image.png, aren't icon images and are kept.
+function removeStaleImages(icons: Icon[]) {
+  const current = new Set(
+    icons.map((icon) => `${icon.category}/${icon.id}.png`)
+  );
+  let removed = 0;
+  for (const category of readdirSync(OUTPUT_PATH)) {
+    const categoryDir = `${OUTPUT_PATH}/${category}`;
+    if (!statSync(categoryDir).isDirectory()) {
+      continue;
+    }
+    for (const fileName of readdirSync(categoryDir)) {
+      if (!current.has(`${category}/${fileName}`)) {
+        unlinkSync(`${categoryDir}/${fileName}`);
+        removed++;
+      }
+    }
+    if (readdirSync(categoryDir).length === 0) {
+      rmdirSync(categoryDir);
+    }
+  }
+  console.log(`Removed ${removed} stale OG icon images`);
 }
 
 async function createComposite(icon: Icon) {
@@ -44,7 +73,7 @@ async function createComposite(icon: Icon) {
     .toString()
     .replace(/#333333/gi, BLUE);
 
-  const outputDir = `${PUBLIC_PATH}/og-icon-images/${icon.category}`;
+  const outputDir = `${OUTPUT_PATH}/${icon.category}`;
   mkdirp.sync(outputDir);
 
   const titleSvg = textToSVG.getSVG(`Icon: ${icon.title}`, textToSVGOptions);

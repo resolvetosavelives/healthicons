@@ -1,231 +1,146 @@
-.box {
-  background: #7a76de url(/gradient.jpg) no-repeat;
-  background-size: cover;
-  padding: 1rem 2rem 2rem 2rem;
-  text-align: center;
-  margin: 0 -1rem 1rem -1rem;
+/* on mobile the layout is a plain block flow so the search bar can stick for
+   the whole page rather than one grid row */
+.layout {
+  display: block;
+}
 
-  h1 {
-    font-size: 1.4rem;
-    opacity: 1;
-    color: #fff;
-    line-height: 1.2;
-  }
+/* holds only the page's visually hidden h1, so it takes no space */
+.intro {
+  margin: 0;
+}
 
-  h3 {
-    font-size: 1rem;
-    mix-blend-mode: multiply;
-    opacity: 0.7;
-    font-weight: 500;
-  }
+.results {
+  grid-area: results;
+  min-width: 0;
+}
 
-  span {
-    display: inline;
+.resultsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.resultsSummary {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--secondary-text-color);
+  overflow-wrap: anywhere;
+
+  strong {
+    color: var(--text-color);
   }
+}
+
+.clearFilters {
+  flex-shrink: 0;
+  padding: 0.35rem 0.75rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--link-color);
+  background: transparent;
+  border: 1px solid var(--link-decoration-color);
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--selected-color);
+  }
+}
+
+.categorySection {
+  margin-bottom: 2rem;
+  scroll-margin-top: 5rem;
 }
 
 .iconGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 4rem);
-  justify-content: left;
-  grid-gap: 3rem;
-  padding-right: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(var(--tile-min-width), 1fr));
+  gap: 0.5rem;
 }
 
-.filterPlacementBox {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+.iconGridSingle {
+  --tile-min-width: 88px;
 }
 
-.filterBox {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  background: white;
-  padding: 0.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  width: 100%;
-  max-width: 800px;
-  height: 48px;
+.iconGridDouble {
+  --tile-min-width: 148px;
 }
 
-.searchContainer {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  background: #fff;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #fff;
-  transition: border-color 0.15s ease-in-out;
+/* wider columns for the 64px size (applies at every screen width) */
+.iconGridSingle.iconGridLarge {
+  --tile-min-width: 112px;
+}
 
-  &:focus-within {
-    border-color: var(--link-color);
+.iconGridDouble.iconGridLarge {
+  --tile-min-width: 200px;
+}
+
+.emptyState {
+  padding: 4rem 1rem;
+  text-align: center;
+  color: var(--secondary-text-color);
+  background: var(--surface-color);
+  border-radius: 12px;
+
+  p {
+    margin: 0.25rem 0;
   }
 }
 
-.filterInputLabel {
-  flex: 1;
-  position: relative;
-  height: 38px;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 16px;
-    background: url(/ui/search-2-line.svg) center no-repeat;
-    background-size: contain;
-    opacity: 0.5;
-  }
-}
-
-.filterBoxInput {
-  width: 100%;
-  height: 100%;
-  padding: 0 12px 0 36px;
-  font-size: 0.95rem;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #495057;
-
-  &::placeholder {
-    color: #adb5bd;
-  }
-}
-
-.categorySelect {
-  height: 100%;
-  padding: 0 32px 0 12px;
-  font-size: 0.75rem;
-  background: transparent;
-  border: none;
-  border-left: 1px solid #e9ecef;
-  outline: none;
-  cursor: pointer;
-  appearance: none;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #495057;
-  min-width: 140px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8.825L1.175 4 2.238 2.938 6 6.7l3.763-3.763L10.825 4z'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 12px;
-
-  &:focus {
-    border-left-color: var(--link-color);
-  }
-}
-
-.styleToggleContainer,
-.sizeToggleContainer {
-  display: flex;
-  background: #fff;
-  border-radius: 6px;
-  border: 2px solid #fff;
-  overflow: hidden;
-  height: 40px;
-}
-
-.styleToggle,
-.sizeToggle {
-  padding: 0 16px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 0.9rem;
-  color: #495057;
-  transition: all 0.15s ease-in-out;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 60px;
-
-  &:not(:last-child) {
-    border-right: 1px solid #e9ecef;
-  }
-
-  &:hover:not(.styleToggleSelected) {
-    background: #e9ecef;
-  }
-}
-
-.styleToggleSelected {
-  background: var(--link-color);
-  color: white;
-
-  &:hover {
-    background: var(--link-color-dark);
-  }
-}
-
-@media (max-width: 768px) {
-  .filterBox {
-    flex-direction: column;
-    height: auto;
-    padding: 0.75rem;
-    gap: 0.75rem;
-  }
-
-  .searchContainer,
-  .styleToggleContainer,
-  .sizeToggleContainer {
-    width: 100%;
-    height: 40px;
-    padding: 0;
-    border-color: #e9ecef;
-    border-width: 1px;
-  }
-
-  .styleToggle {
-    width: 50%;
-  }
-
-  .styleToggleContainer {
-    display: none;
-  }
-
-  .categorySelect {
-    min-width: 120px;
-  }
+.footer {
+  margin: 3rem 0 1rem;
 }
 
 @media (min-width: 60rem) {
-  .box {
-    padding: 4rem 4rem 7rem 4rem;
-    border-radius: 0.5rem;
-    margin: 0;
-    background-image: url(/gradient-icons.png), url(/gradient.jpg);
+  /* divider between the sidebar and the icons, running from the very top of
+     the page (through the body padding and top bar) to the bottom */
+  .page {
+    position: relative;
 
-    h1 {
-      font-size: 2.4rem;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2rem;
+      bottom: -2rem;
+      left: calc(var(--sidebar-width) - 1px);
+      width: 1px;
+      background: var(--border-color);
+      pointer-events: none;
     }
 
-    h3 {
-      font-size: 1.4rem;
-      margin-top: -0.5rem;
-    }
-
-    span {
-      display: block;
+    /* light background behind the sidebar column (including the logo),
+       reaching the left edge of the window */
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -2rem;
+      bottom: -2rem;
+      left: -100vw;
+      right: calc(100% - var(--sidebar-width));
+      background: var(--sidebar-color);
     }
   }
 
-  .filterPlacementBox {
-    margin: -5rem 1rem 4rem 1rem;
+  .layout {
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+    grid-template-areas: 'sidebar results';
+    display: grid;
+    column-gap: 2rem;
   }
 
-  .filterBox {
-    padding: 0.75rem;
-    background: none;
-    box-shadow: none;
+  .resultsHeader {
+    margin-bottom: 1rem;
+  }
+
+  .iconGridSingle {
+    --tile-min-width: 104px;
+  }
+
+  .iconGridDouble {
+    --tile-min-width: 168px;
   }
 }

@@ -1,18 +1,48 @@
 .topBar {
   display: grid;
-  grid-template-columns: minmax(max-content, 1fr) max-content max-content max-content;
-  grid-template-rows: auto auto;
-  gap: 1em 1em;
+  grid-template-columns: minmax(max-content, 1fr) max-content max-content;
+
+  /* on mobile the first row is a fixed-height band running from the top of
+     the page (pulled up through the body padding) to the line above the links,
+     so the logo and Download all button sit centered between the two */
+  grid-template-rows: 64px auto;
+  gap: 0 1em;
   grid-template-areas:
-    'title-area desktop-links-area category-area download-area'
-    'mobile-links-area mobile-links-area mobile-links-area mobile-links-area';
-  margin-bottom: 1rem;
+    'title-area desktop-links-area download-area'
+    'mobile-links-area mobile-links-area mobile-links-area';
+
+  /* the links row pulls 1rem into this bottom margin, leaving 1rem under its
+     line on mobile */
+  margin: -1rem 0 2rem;
   align-items: center;
+}
+
+/* pinned to the top of the window once scrolled past (see TopBar.tsx): it
+   needs its own background there, and hides by sliding up out of view */
+.topBarPinned {
+  position: sticky;
+  top: 0;
+  z-index: 25;
+  background: #fff;
+}
+
+.topBarHidden {
+  /* past its own height plus the mobile links row, which hangs 1rem below
+     the header's box (its negative bottom margin), and the active link's
+     underline; once slid away it's hidden outright so nothing can peek out
+     over the search bar */
+  transform: translateY(calc(-100% - 2rem));
+  visibility: hidden;
+}
+
+.topBarAnimated {
+  transition: transform 0.2s ease-in-out, visibility 0.2s;
 }
 
 .topbarDownload {
   grid-area: download-area;
-  height: 32px; /* Reduced height */
+  display: flex;
+  align-items: center;
 }
 
 .topbarTitle {
@@ -20,10 +50,12 @@
     font-weight: bold;
     display: inline-block;
     background: url(/health-icons-logo.svg) 0 50% no-repeat;
-    background-size: 24px;
-    padding-left: 32px;
-    min-height: 1.3rem;
-    font-size: 1.3rem;
+
+    /* 20% smaller on mobile; full size on desktop below */
+    background-size: 19px;
+    padding-left: 26px;
+    min-height: 1.04rem;
+    font-size: 1.04rem;
     &:link,
     &:visited {
       text-decoration: none;
@@ -34,55 +66,74 @@
 .topbarLinks {
   grid-area: mobile-links-area;
   margin: 0 -1rem -1rem -1rem;
-  padding: 1rem;
+  padding: 0 1rem;
   list-style-type: none;
   display: grid;
   grid-auto-flow: column;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 1rem;
-  background: none;
-  font-size: 0.8rem;
+
+  /* it hangs below the header's box, so it needs its own background when
+     the header is pinned over the icons */
+  background: #fff;
+  font-size: 13px;
   border-top: 1px solid var(--link-decoration-color);
-
-  img {
-    vertical-align: middle;
-    margin-top: -2px;
-    opacity: 0.6;
-    width: 20px;
-  }
-
-  a:hover img {
-    opacity: 1;
-  }
+  border-bottom: 1px solid var(--link-decoration-color);
 }
 
-.topbarCategory {
-  grid-area: category-area;
+/* the links fill the bar's full height, so the active one's underline can
+   sit on the bar's bottom line like a tab; the doubled class beats the
+   global a:link colors */
+.topbarLinks .link {
+  color: #2f2f35;
+  transition: color 0.15s ease-in-out;
+  position: relative;
   display: flex;
   align-items: center;
-  height: 32px; 
-  margin-right: 2em;
+  height: 100%;
+  padding: 0.75rem 0;
 }
 
-.topbarCategory select {
-  height: 100%;
-  padding: 0.6rem 1rem;
-  font-size: 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 10px; /* Matching border-radius with 3rd one */
-  outline: none;
-  transition: all 0.3s ease;
+.externalIcon {
+  flex-shrink: 0;
+  margin-left: 3px;
+  opacity: 0.7;
+}
+
+.topbarLinks .link:hover {
+  color: var(--link-color);
+}
+
+.topbarLinks .activeLink {
+  color: var(--link-color);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 3px;
+    background: var(--link-color);
+  }
+}
+
+/* some links use a shorter label on mobile */
+.fullLabel {
+  display: none;
 }
 
 .buttonLink {
-  background: var(--link-color) url(/ui/folder-download-line-white.svg) 0.75rem 50% no-repeat;
+  background: var(--link-color) url(/ui/folder-download-line-white.svg) 0.65rem
+    50% no-repeat;
   display: inline-block;
-  background-size: 18px;
+  background-size: 16px;
   color: #fff;
   font-weight: bold;
-  padding: 0.5rem 1rem 0.5rem 2.25rem; /* Reduced height */
-  border-radius: 3px;
-  font-size: 0.8rem;
+  padding: 0.35rem 0.8rem 0.35rem 2rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  line-height: 1.4;
   transition: background-color ease-in-out 0.15s;
 
   &:link {
@@ -95,115 +146,107 @@
   }
 }
 
+/* Keyboard focus in the header: a purple outline, with each element keeping
+   its normal look. The site-wide link focus style (a dark teal fill with white
+   text) doesn't suit these: it turned the logo's text white on white, gave the
+   menu links grey text on teal, and hid the button's download icon. */
+.topbarTitle a:focus-visible {
+  color: var(--link-color);
+  outline: 2px solid var(--link-color);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.topbarLinks .link:focus-visible {
+  color: var(--link-color);
+  background: none;
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.buttonLink:focus-visible {
+  background: var(--link-color-dark) url(/ui/folder-download-line-white.svg)
+    0.65rem 50% / 16px no-repeat;
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
 @media (min-width: 60rem) {
+  /* the header runs edge to edge (through the body padding) with a line under
+     it that the sidebar divider meets */
   .topBar {
-    gap: 0 2em;
+    /* the logo's column is sized so the links start exactly where the icon
+       column does (the sidebar width plus the 2rem layout gap, less this
+       grid's own 2.25rem gap), lining them up with the search box. The links
+       column takes the rest, which keeps Download all at the right */
+    grid-template-columns: calc(var(--sidebar-width) - 0.25rem) 1fr max-content;
+    grid-template-rows: auto;
+    grid-template-areas: 'title-area desktop-links-area download-area';
+    gap: 0 2.25rem;
+
+    /* pull up into the body padding so the space above and below is equal */
+    margin: -2rem -2rem 1.5rem;
+    padding: 0.9rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  /* on the icons page the pinned header continues the sidebar's tint and
+     divider line, which sit behind it when it's in its normal place */
+  :global(body:has(#icon-results)) .topBarPinned {
+    background: linear-gradient(
+      to right,
+      var(--sidebar-color) calc(2rem + var(--sidebar-width) - 1px),
+      var(--border-color) 0 calc(2rem + var(--sidebar-width)),
+      #fff 0
+    );
   }
 
   .buttonLink {
-    padding: 0.4rem 30px 0.4rem 50px; /* Adjusted height */
-    font-size: 1rem;
-    background-position: 1.25rem 50%;
+    padding: 0.4rem 0.9rem 0.4rem 2.15rem;
+    font-size: 0.85rem;
   }
 
+  .buttonLink,
+  .buttonLink:focus-visible {
+    background-position: 0.75rem 50%;
+  }
+
+  /* stretched through the header's top and bottom padding so the active
+     underline lands on the header's bottom border */
   .topbarLinks {
     grid-area: desktop-links-area;
+    align-self: stretch;
     background: none;
-    margin: 0;
+    margin: -0.9rem 0;
     padding: 0;
     border-top: none;
-    font-size: 1rem;
-    grid-gap: 1rem;
-    justify-content: space-around;
+    border-bottom: none;
+    font-size: 14px;
+    grid-gap: 2rem;
+    justify-content: start;
+  }
+
+  .topbarLinks .link {
+    padding: 0;
+  }
+
+  .fullLabel {
+    display: inline;
+  }
+
+  .shortLabel {
+    display: none;
   }
 
   .topbarTitle {
     font-size: 1.5rem;
+
+    a {
+      background-size: 24px;
+      padding-left: 32px;
+      min-height: 1.3rem;
+      font-size: 1.3rem;
+    }
   }
-  .filterPlacementBox {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    height:42px;
-  }
-  
-  .filterBox {
-    display: flex;
-    flex-wrap: wrap;
-    background: #f8f8f8;
-    padding: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    height:42px;
-  }
-  
-  .searchContainer {
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    height:42px;
-  }
-  
-  .filterBoxInput {
-    display: flex;
-    margin-left: 1rem;
-    padding: 0.5rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    height:42px;
-  }
-  
-  .categorySelect {
-    display: flex;
-    margin-left: 1rem;
-    padding: 0.5rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    height:42px;
-  }
-  
-  .styleToggleContainer,
-  .sizeToggleContainer {
-    display: flex;
-    margin-left: 1rem;
-    padding: 0.5rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    height:42px;
-  }
-  
-  .styleToggle,
-  .sizeToggle {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    background: none;
-    cursor: pointer;
-    transition: background 0.3s;
-    border-radius: 0;
-    height:42px;
-  }
-  
-  .styleToggle:first-child,
-  .sizeToggle:first-child {
-    border-radius: 10px 0 0 10px;
-    height:42px;
-  }
-  
-  .styleToggle:last-child,
-  .sizeToggle:last-child {
-    border-radius: 0 10px 10px 0;
-    height:42px;
-  }
-  
-  .styleToggleSelected,
-  .sizeToggleSelected {
-    background: #007bff;
-    color: white;
-    border-color: #0056b3;
-    height:42px;
-  }
-  
 }

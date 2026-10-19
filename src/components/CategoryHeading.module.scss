@@ -1,10 +1,19 @@
 .categoryHeading {
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  letter-spacing: 0.3rem;
   display: flex;
-  width: 100%;
-  align-items: center;
-  margin: 2rem 0 0 0;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2f2f35;
+}
+
+.count {
+  /* nudged up to sit level with the heading text rather than on its baseline */
+  position: relative;
+  top: -1px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: #6e6e78;
 }
