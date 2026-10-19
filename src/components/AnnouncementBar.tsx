@@ -12,6 +12,73 @@ export const DISMISSED_ATTRIBUTE = 'data-announcement-dismissed';
 // would show until the page's JavaScript loaded and removed it.
 export const HIDE_IF_DISMISSED_SCRIPT = `try{if(localStorage.getItem('${STORAGE_KEY}')==='true')document.documentElement.setAttribute('${DISMISSED_ATTRIBUTE}','')}catch(e){}`;
 
+// how often a new icon pops in; the pop animation (in the CSS) lasts as long
+const ICON_INTERVAL = 2000;
+
+// the categories the icons are picked from
+const ICON_CATEGORIES = ['body', 'conditions'];
+
+// A random health icon every couple of seconds, popping in and out. The list
+// is loaded once the page is up, so the bar doesn't hold up anything else.
+function RandomIcon() {
+  const [src, setSrc] = useState<string>();
+
+  useEffect(() => {
+    let paths: string[] = [];
+    let timer: number;
+    let cancelled = false;
+    const randomPath = () => paths[Math.floor(Math.random() * paths.length)];
+
+    fetch('/icons/meta-data.json')
+      .then((response) => response.json())
+      .then((icons: Array<{ category: string; id: string }>) => {
+        if (cancelled) {
+          return;
+        }
+        paths = icons
+          .filter((icon) => ICON_CATEGORIES.includes(icon.category))
+          .map((icon) => `/icons/svg/outline/${icon.category}/${icon.id}.svg`);
+        // the next icon is loaded a step ahead so it's ready to pop in
+        let next = randomPath();
+        const show = () => {
+          setSrc(next);
+          next = randomPath();
+          new Image().src = next;
+        };
+        show();
+        // with reduced motion, one icon stays put
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          timer = window.setInterval(show, ICON_INTERVAL);
+        }
+      })
+      .catch(() => {
+        // no icon; the bar reads fine without one
+      });
+
+    return () => {
+      cancelled = true;
+      window.clearInterval(timer);
+    };
+  }, []);
+
+  return (
+    <span className={styles.iconSlot} aria-hidden="true">
+      {src && (
+        <span key={src} className={styles.iconCircle}>
+          <span
+            className={styles.icon}
+            style={{
+              // eslint-disable-next-line @typescript-eslint/naming-convention
+              WebkitMaskImage: `url(${src})`,
+              maskImage: `url(${src})`
+            }}
+          />
+        </span>
+      )}
+    </span>
+  );
+}
+
 // A bar across the top of the page; once dismissed it stays hidden on later
 // visits (remembered in this browser only).
 export function AnnouncementBar() {
@@ -33,6 +100,7 @@ export function AnnouncementBar() {
 
   return (
     <div className={styles.bar} role="region" aria-label="About these icons">
+      <RandomIcon />
       <p className={styles.text}>
         <strong>Free open-source health icons</strong> for use in your next
         commercial or personal project. Editing is ok. Republishing is ok. No

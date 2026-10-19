@@ -69,6 +69,68 @@
   display: none;
 }
 
+/* keeps its space while the icons come and go, so the text never moves; the
+   negative margins stop the circle making the bar taller */
+.iconSlot {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin: -6px 0;
+}
+
+/* each icon sits on a semi-transparent white circle, and the two pop in
+   together with a slight overshoot, hold, then shrink away just before the
+   next one (every 2s, see AnnouncementBar.tsx) */
+.iconCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: pop 2s both;
+}
+
+/* drawn in the button purple (the SVG is a mask) */
+.icon {
+  width: 24px;
+  height: 24px;
+  background: var(--link-color);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  85% {
+    transform: scale(1);
+    animation-timing-function: cubic-bezier(0.36, 0, 0.66, -0.56);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .iconCircle {
+    animation: none;
+  }
+}
+
 .text {
   flex: 1;
   margin: 0;
