@@ -171,7 +171,6 @@
   white-space: nowrap;
   display: inline-block;
   font-size: 0.75rem;
-  outline: none;
   border: none;
   cursor: pointer;
 
@@ -187,9 +186,18 @@
     text-decoration: none;
   }
 
-  &:focus {
-    outline: none;
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
   }
+}
+
+/* the download links: replaces the site-wide link focus style (a teal fill),
+   which also removed the download icon */
+a.modalButton:focus-visible {
+  color: #fff;
+  background: var(--link-color-dark) url(/ui/download-2-line-white.svg) 0.7rem
+    50% / 14px no-repeat;
 }
 
 /* top left, on the same row as the arrows and close button. Long names wrap
@@ -412,6 +420,11 @@
   &:hover {
     box-shadow: inset 0 0 0 1px var(--link-color),
       0 1px 4px rgba(102, 102, 255, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
   }
 }
 
