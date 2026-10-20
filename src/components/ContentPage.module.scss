@@ -10,6 +10,20 @@
   margin-bottom: 2.5rem;
 }
 
+.topLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+}
+
 .title {
   margin: 0 0 1rem;
   font-size: 1.75rem;
@@ -44,6 +58,11 @@
 }
 
 @media (min-width: 60rem) {
+  .topLinks {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .page {
     display: flex;
     align-items: flex-start;

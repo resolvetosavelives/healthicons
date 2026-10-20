@@ -118,6 +118,13 @@
   }
 }
 
+/* closer together on the narrowest phones, so all five links fit */
+@media (max-width: 359px) {
+  .topbarLinks {
+    gap: 0.6rem;
+  }
+}
+
 /* some links use a shorter label on mobile */
 .fullLabel {
   display: none;

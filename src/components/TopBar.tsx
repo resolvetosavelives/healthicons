@@ -30,6 +30,11 @@ const NAV_LINKS: Array<{
     label: 'Request an icon',
     shortLabel: 'Requests',
     active: (path: string) => path === '/request-icon'
+  },
+  {
+    href: '/packages',
+    label: 'Packages',
+    active: (path: string) => path.startsWith('/packages')
   }
 ];
 

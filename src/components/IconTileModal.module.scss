@@ -247,9 +247,23 @@ a.modalButton:focus-visible {
   }
 }
 
+.names {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 2.5rem;
+}
+
 .filename {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
   margin: 0 0 1rem 0;
   font-size: 0.85rem;
+
+  code {
+    font-size: inherit;
+  }
 }
 
 .modalTags {
@@ -430,6 +444,11 @@ a.modalButton:focus-visible {
 
 .copyButtonCopied {
   background-image: url(/ui/check.svg);
+}
+
+/* beside the filename rather than in the corner of a code box */
+.filenameCopy {
+  position: static;
 }
 
 @media (min-width: 60rem) {

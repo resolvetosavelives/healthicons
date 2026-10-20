@@ -46,9 +46,17 @@ async function generateSiteMap() {
   const categories = await getCategoriesAndIcons();
   const icons = categories.flatMap((category) => category.icons);
 
-  const entries = ['/', '/about', '/history', '/request-icon'].map((p) =>
-    urlEntry(p)
-  );
+  const entries = [
+    '/',
+    '/packages',
+    '/packages/react',
+    '/packages/vue',
+    '/packages/svelte',
+    '/packages/javascript',
+    '/about',
+    '/history',
+    '/request-icon'
+  ].map((p) => urlEntry(p));
 
   // each icon has an outline and a filled page; the outline one is canonical
   // (see the icon page), so only it is listed

@@ -13,6 +13,7 @@
     "generate-icon-og-images": "NODE_ENV=local ts-node-dev ./src/scripts/generateIconOgImages.ts",
     "generate-site-map": "NODE_ENV=local ts-node-dev ./src/scripts/generateSiteMap.ts",
     "remove-svg-backgrounds": "./src/scripts/removeSvgBackgrounds.sh",
+    "build-packages": "NODE_ENV=local ts-node-dev ./src/scripts/buildPackages.ts",
     "lint": "eslint '{src/components,src/lib,src/pages}/**/*.{js,jsx,ts,tsx}'",
     "lint:style": "stylelint '{src,styles}/**/*.css'",
     "test": "jest --watch",
