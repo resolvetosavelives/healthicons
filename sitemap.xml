@@ -323,6 +323,10 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/conditions/back-pain.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/conditions/bladder-cancer</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/conditions/bladder-cancer.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/conditions/burn</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/conditions/burn.svg</image:loc></image:image>
   </url>
@@ -355,10 +359,6 @@
   <url>
     <loc>https://healthicons.org/icon/outline/conditions/colorectal-cancer</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/conditions/colorectal-cancer.svg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://healthicons.org/icon/outline/conditions/bladder-cancer</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/conditions/bladder-cancer.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/conditions/coughing-alt</loc>
@@ -700,9 +700,9 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/hearing-aid.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/devices/fever</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/fever.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/devices/fever.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/devices/high-temp</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/high-temp.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/devices/high-temp.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/devices/hospitalized</loc>
@@ -978,8 +978,8 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/diagnostics/rdt-result_pf.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/diagnostics/rdt-result_pv_invalid</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/diagnostics/rdt-result_pv_invalid.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/diagnostics/rdt-result</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/diagnostics/rdt-result.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/diagnostics/rdt-result_invalid</loc>
@@ -1008,10 +1008,6 @@
   <url>
     <loc>https://healthicons.org/icon/outline/diagnostics/rdt-result_neg</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/diagnostics/rdt-result_neg.svg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://healthicons.org/icon/outline/diagnostics/rdt-result</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/diagnostics/rdt-result.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/diagnostics/rdt-result_neg_invalid_rectangular</loc>
@@ -1054,133 +1050,137 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/diagnostics/rdt-result_pv_invalid_rectangular.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/diagnostics/rdt-result_pv_invalid</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/diagnostics/rdt-result_pv_invalid.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/diagnostics/synergist-insecticide_bioassays</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/diagnostics/synergist-insecticide_bioassays.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/angry</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/angry.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/angry.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-angry</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-angry.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-angry.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/bandaged</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/bandaged.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/bandaged.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-bandaged</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-bandaged.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-bandaged.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/calm</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/calm.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/calm.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-calm</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-calm.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-calm.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/confused</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/confused.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/confused.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-confused</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-confused.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-confused.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/coughing</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/coughing.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/coughing.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-coughing</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-coughing.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-coughing.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/crying</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/crying.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/crying.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-crying</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-crying.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-crying.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/dizzy</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/dizzy.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/dizzy.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-dizzy</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-dizzy.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-dizzy.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/expectorate</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/expectorate.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/expectorate.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-expectorate</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-expectorate.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-expectorate.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/fever</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/fever.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/fever.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-fever</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-fever.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-fever.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/not-ok</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/not-ok.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/not-ok.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-not-ok</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-not-ok.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-not-ok.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/eyeglasses</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/eyeglasses.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/eyeglasses.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-eyeglasses</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-eyeglasses.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-eyeglasses.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/happy</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/happy.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/happy.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-happy</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-happy.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-happy.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/loudly-crying</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/loudly-crying.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/loudly-crying.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-loudly-crying</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-loudly-crying.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-loudly-crying.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/masked</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/masked.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/masked.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-masked</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-masked.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-masked.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/measles</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/measles.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/measles.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-measles</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-measles.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-measles.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/nauseous</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/nauseous.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/nauseous.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-nauseous</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-nauseous.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-nauseous.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/nervous</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/nervous.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/nervous.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-nervous</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-nervous.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-nervous.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/neutral</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/neutral.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/neutral.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-neutral</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-neutral.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-neutral.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/sad</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/sad.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/sad.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-sad</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-sad.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-sad.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/sleepy</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/sleepy.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/sleepy.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-sleepy</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-sleepy.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-sleepy.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/ok</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/ok.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/ok.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-ok</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-ok.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-ok.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/sweating</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/sweating.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/sweating.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-sweating</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-sweating.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-sweating.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/tongue</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/tongue.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/tongue.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-tongue</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-tongue.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-tongue.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/vomitting</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/vomitting.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/vomitting.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-vomitting</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-vomitting.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-vomitting.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/emotions/woozy</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/woozy.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/woozy.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/emotions/face-woozy</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-woozy.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-woozy.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/exercise/running</loc>
@@ -1711,9 +1711,9 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/people/neuro-surgery.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/people/lactation</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/people/lactation.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/people/lactation.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/people/lactating</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/people/lactating.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/people/lactating.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/people/outpatient</loc>
@@ -2246,8 +2246,8 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/pediatrics.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/specialties/pharmacy</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/pharmacy.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/specialties/pharmacy-dept</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/pharmacy-dept.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/specialties/physical-therapy</loc>
@@ -2278,8 +2278,8 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/sonography.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/specialties/speech-language_therapy</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/speech-language_therapy.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/specialties/speech-language_therapist</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/speech-language_therapist.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/specialties/general-surgery</loc>
@@ -2432,8 +2432,8 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/dhis2-logo.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/symbols/diabetes</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/diabetes.svg</image:loc></image:image>
+    <loc>https://healthicons.org/icon/outline/symbols/diabetes-blood-sample</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/diabetes-blood-sample.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/symbols/diagnostics</loc>

@@ -1006,7 +1006,7 @@
    "Testing",
    "dhis2:rdt_result_pv_invalid"
   ],
-  "title": "Rapid Diagnostic Testing Result Invalid",
+  "title": "Rapid Diagnostic Testing Result PV Invalid",
   "formats": [
    "48px"
   ]
@@ -1051,7 +1051,7 @@
    "Testing",
    "dhis2:rdt_result_negative"
   ],
-  "title": "Rapid Diagnostic Testing Result Negative",
+  "title": "Rapid Diagnostic Testing Result",
   "formats": [
    "48px"
   ]
@@ -2375,9 +2375,9 @@
   ]
  },
  {
-  "id": "diabetes",
+  "id": "diabetes-blood-sample",
   "category": "symbols",
-  "path": "symbols/diabetes",
+  "path": "symbols/diabetes-blood-sample",
   "tags": [
    "DM",
    "Endocrine",
@@ -3842,9 +3842,9 @@
   ]
  },
  {
-  "id": "speech-language_therapy",
+  "id": "speech-language_therapist",
   "category": "specialties",
-  "path": "specialties/speech-language_therapy",
+  "path": "specialties/speech-language_therapist",
   "tags": [
    "Department",
    "Language",
@@ -4931,9 +4931,9 @@
   ]
  },
  {
-  "id": "expectorate",
+  "id": "face-expectorate",
   "category": "emotions",
-  "path": "emotions/expectorate",
+  "path": "emotions/face-expectorate",
   "tags": [
    "Aerosol",
    "Cough",
@@ -4952,9 +4952,9 @@
   ]
  },
  {
-  "id": "fever",
+  "id": "face-fever",
   "category": "emotions",
-  "path": "emotions/fever",
+  "path": "emotions/face-fever",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -4975,9 +4975,9 @@
   ]
  },
  {
-  "id": "sad",
+  "id": "face-sad",
   "category": "emotions",
-  "path": "emotions/sad",
+  "path": "emotions/face-sad",
   "tags": [
    "Bad",
    "Emoji",
@@ -4996,9 +4996,9 @@
   ]
  },
  {
-  "id": "measles",
+  "id": "face-measles",
   "category": "emotions",
-  "path": "emotions/measles",
+  "path": "emotions/face-measles",
   "tags": [
    "Disease",
    "Emoji",
@@ -5017,9 +5017,9 @@
   ]
  },
  {
-  "id": "ok",
+  "id": "face-ok",
   "category": "emotions",
-  "path": "emotions/ok",
+  "path": "emotions/face-ok",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5038,9 +5038,9 @@
   ]
  },
  {
-  "id": "angry",
+  "id": "face-angry",
   "category": "emotions",
-  "path": "emotions/angry",
+  "path": "emotions/face-angry",
   "tags": [
    "Anger",
    "Emoji",
@@ -5057,9 +5057,9 @@
   ]
  },
  {
-  "id": "confused",
+  "id": "face-confused",
   "category": "emotions",
-  "path": "emotions/confused",
+  "path": "emotions/face-confused",
   "tags": [
    "Concern",
    "Confusion",
@@ -5075,9 +5075,9 @@
   ]
  },
  {
-  "id": "crying",
+  "id": "face-crying",
   "category": "emotions",
-  "path": "emotions/crying",
+  "path": "emotions/face-crying",
   "tags": [
    "Crying",
    "Emoji",
@@ -5094,9 +5094,9 @@
   ]
  },
  {
-  "id": "nauseous",
+  "id": "face-nauseous",
   "category": "emotions",
-  "path": "emotions/nauseous",
+  "path": "emotions/face-nauseous",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5115,9 +5115,9 @@
   ]
  },
  {
-  "id": "loudly-crying",
+  "id": "face-loudly-crying",
   "category": "emotions",
-  "path": "emotions/loudly-crying",
+  "path": "emotions/face-loudly-crying",
   "tags": [
    "Crying",
    "Emoji",
@@ -5134,9 +5134,9 @@
   ]
  },
  {
-  "id": "not-ok",
+  "id": "face-not-ok",
   "category": "emotions",
-  "path": "emotions/not-ok",
+  "path": "emotions/face-not-ok",
   "tags": [
    "Bad",
    "Emoji",
@@ -5154,9 +5154,9 @@
   ]
  },
  {
-  "id": "neutral",
+  "id": "face-neutral",
   "category": "emotions",
-  "path": "emotions/neutral",
+  "path": "emotions/face-neutral",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5174,9 +5174,9 @@
   ]
  },
  {
-  "id": "happy",
+  "id": "face-happy",
   "category": "emotions",
-  "path": "emotions/happy",
+  "path": "emotions/face-happy",
   "tags": [
    "Content",
    "Emoji",
@@ -5195,9 +5195,9 @@
   ]
  },
  {
-  "id": "coughing",
+  "id": "face-coughing",
   "category": "emotions",
-  "path": "emotions/coughing",
+  "path": "emotions/face-coughing",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5214,9 +5214,9 @@
   ]
  },
  {
-  "id": "vomitting",
+  "id": "face-vomitting",
   "category": "emotions",
-  "path": "emotions/vomitting",
+  "path": "emotions/face-vomitting",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5233,9 +5233,9 @@
   ]
  },
  {
-  "id": "masked",
+  "id": "face-masked",
   "category": "emotions",
-  "path": "emotions/masked",
+  "path": "emotions/face-masked",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5253,9 +5253,9 @@
   ]
  },
  {
-  "id": "eyeglasses",
+  "id": "face-eyeglasses",
   "category": "emotions",
-  "path": "emotions/eyeglasses",
+  "path": "emotions/face-eyeglasses",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5273,9 +5273,9 @@
   ]
  },
  {
-  "id": "bandaged",
+  "id": "face-bandaged",
   "category": "emotions",
-  "path": "emotions/bandaged",
+  "path": "emotions/face-bandaged",
   "tags": [
    "Bandage",
    "Emoji",
@@ -5293,9 +5293,9 @@
   ]
  },
  {
-  "id": "dizzy",
+  "id": "face-dizzy",
   "category": "emotions",
-  "path": "emotions/dizzy",
+  "path": "emotions/face-dizzy",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5311,9 +5311,9 @@
   ]
  },
  {
-  "id": "tongue",
+  "id": "face-tongue",
   "category": "emotions",
-  "path": "emotions/tongue",
+  "path": "emotions/face-tongue",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5328,9 +5328,9 @@
   ]
  },
  {
-  "id": "woozy",
+  "id": "face-woozy",
   "category": "emotions",
-  "path": "emotions/woozy",
+  "path": "emotions/face-woozy",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5347,9 +5347,9 @@
   ]
  },
  {
-  "id": "sweating",
+  "id": "face-sweating",
   "category": "emotions",
-  "path": "emotions/sweating",
+  "path": "emotions/face-sweating",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5366,9 +5366,9 @@
   ]
  },
  {
-  "id": "nervous",
+  "id": "face-nervous",
   "category": "emotions",
-  "path": "emotions/nervous",
+  "path": "emotions/face-nervous",
   "tags": [
    "Clenched Teeth",
    "Emoji",
@@ -5385,9 +5385,9 @@
   ]
  },
  {
-  "id": "sleepy",
+  "id": "face-sleepy",
   "category": "emotions",
-  "path": "emotions/sleepy",
+  "path": "emotions/face-sleepy",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -5404,9 +5404,9 @@
   ]
  },
  {
-  "id": "calm",
+  "id": "face-calm",
   "category": "emotions",
-  "path": "emotions/calm",
+  "path": "emotions/face-calm",
   "tags": [
    "Calm",
    "Comfort",
@@ -5499,9 +5499,9 @@
   ]
  },
  {
-  "id": "pharmacy",
+  "id": "pharmacy-dept",
   "category": "specialties",
-  "path": "specialties/pharmacy",
+  "path": "specialties/pharmacy-dept",
   "tags": [
    "Department",
    "Drugs",
@@ -6413,9 +6413,9 @@
   ]
  },
  {
-  "id": "lactation",
+  "id": "lactating",
   "category": "people",
-  "path": "people/lactation",
+  "path": "people/lactating",
   "tags": [
    "Baby",
    "Breast",
@@ -7319,9 +7319,9 @@
   ]
  },
  {
-  "id": "fever",
+  "id": "high-temp",
   "category": "devices",
-  "path": "devices/fever",
+  "path": "devices/high-temp",
   "tags": [
    "Fever",
    "High",
@@ -11839,7 +11839,7 @@
    "Tumor",
    "Urinary Tract"
   ],
-  "title": "Colorectal Cancer",
+  "title": "Bladder Cancer",
   "formats": [
    "48px"
   ]
