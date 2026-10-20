@@ -20,9 +20,11 @@ Icons can be downloaded:
 
 ### Upgrading the NPM package to 3.0
 
-Version 3.0 adds 60 new icons and 215 new 24px versions of existing icons. It also **renames 378 icons**, so it may break code that imports icons by file path:
+Version 3.0 adds 59 new icons and 215 new 24px versions of existing icons. It also **renames 405 icons**, so it may break code that imports icons by file path:
 
 - Most names changed from underscores to hyphens, for example `blood/blood_bag.svg` is now `blood/blood-bag.svg`
+- The face icons in `emotions` start with `face-`, for example `emotions/happy.svg` is now `emotions/face-happy.svg`
+- A few icons have more specific names so no two icons share a name, for example `specialties/pharmacy` is now `specialties/pharmacy-dept`
 - One icon moved category: `devices/discriminating_concentration_bioassays` is now `diagnostics/discriminating-concentration_bioassays`
 - No icons were removed
 

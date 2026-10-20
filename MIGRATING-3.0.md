@@ -1,6 +1,11 @@
 # Migrating from 2.x to 3.0
 
-Version 3.0 of the `healthicons` package renames many icon files. Most names switched from underscores to hyphens (for example `blood/blood_bag.svg` is now `blood/blood-bag.svg`), and one icon moved to a different category. No icons were removed.
+Version 3.0 of the `healthicons` package renames many icon files. No icons were removed. The changes are:
+
+- Most names switched from underscores to hyphens, for example `blood/blood_bag.svg` is now `blood/blood-bag.svg`
+- The face icons in `emotions` start with `face-`, for example `emotions/happy.svg` is now `emotions/face-happy.svg`
+- A few icons have more specific names, so no two icons share a name (for example `specialties/pharmacy` is now `specialties/pharmacy-dept`, leaving `symbols/pharmacy`)
+- One icon moved to a different category
 
 Each rename applies to every version of the icon: `filled` and `outline`, SVG and PNG (including `@2x`), and the 24px versions where they exist. For example, `blood/blood_bag` covers:
 
@@ -16,7 +21,7 @@ public/icons/png/filled/blood/blood_bag@2x.png    → public/icons/png/filled/bl
 | ------------------------------------------------ | ---------------------------------------------------- |
 | `devices/discriminating_concentration_bioassays` | `diagnostics/discriminating-concentration_bioassays` |
 
-## All renamed icons (378)
+## All renamed icons (405)
 
 ### blood
 
@@ -102,6 +107,7 @@ public/icons/png/filled/blood/blood_bag@2x.png    → public/icons/png/filled/bl
 | `devices/diabetes_measure`                       | `devices/diabetes-measure`                           |
 | `devices/discriminating_concentration_bioassays` | `diagnostics/discriminating-concentration_bioassays` |
 | `devices/endotracheal_tube`                      | `devices/endotracheal-tube`                          |
+| `devices/fever`                                  | `devices/high-temp`                                  |
 | `devices/hearing_aid`                            | `devices/hearing-aid`                                |
 | `devices/intravenous_bag`                        | `devices/intravenous-bag`                            |
 | `devices/medical_sample`                         | `devices/medical-sample`                             |
@@ -164,10 +170,33 @@ public/icons/png/filled/blood/blood_bag@2x.png    → public/icons/png/filled/bl
 
 ### emotions
 
-| 2.x                      | 3.0                      |
-| ------------------------ | ------------------------ |
-| `emotions/loudly_crying` | `emotions/loudly-crying` |
-| `emotions/not_ok`        | `emotions/not-ok`        |
+| 2.x                      | 3.0                           |
+| ------------------------ | ----------------------------- |
+| `emotions/angry`         | `emotions/face-angry`         |
+| `emotions/bandaged`      | `emotions/face-bandaged`      |
+| `emotions/calm`          | `emotions/face-calm`          |
+| `emotions/confused`      | `emotions/face-confused`      |
+| `emotions/coughing`      | `emotions/face-coughing`      |
+| `emotions/crying`        | `emotions/face-crying`        |
+| `emotions/dizzy`         | `emotions/face-dizzy`         |
+| `emotions/expectorate`   | `emotions/face-expectorate`   |
+| `emotions/eyeglasses`    | `emotions/face-eyeglasses`    |
+| `emotions/fever`         | `emotions/face-fever`         |
+| `emotions/happy`         | `emotions/face-happy`         |
+| `emotions/loudly_crying` | `emotions/face-loudly-crying` |
+| `emotions/masked`        | `emotions/face-masked`        |
+| `emotions/measles`       | `emotions/face-measles`       |
+| `emotions/nauseous`      | `emotions/face-nauseous`      |
+| `emotions/nervous`       | `emotions/face-nervous`       |
+| `emotions/neutral`       | `emotions/face-neutral`       |
+| `emotions/not_ok`        | `emotions/face-not-ok`        |
+| `emotions/ok`            | `emotions/face-ok`            |
+| `emotions/sad`           | `emotions/face-sad`           |
+| `emotions/sleepy`        | `emotions/face-sleepy`        |
+| `emotions/sweating`      | `emotions/face-sweating`      |
+| `emotions/tongue`        | `emotions/face-tongue`        |
+| `emotions/vomitting`     | `emotions/face-vomitting`     |
+| `emotions/woozy`         | `emotions/face-woozy`         |
 
 ### exercise
 
@@ -276,6 +305,7 @@ public/icons/png/filled/blood/blood_bag@2x.png    → public/icons/png/filled/bl
 | `people/health_worker`                 | `people/health-worker`                 |
 | `people/i_groups_perspective_crowd`    | `people/i-groups_perspective_crowd`    |
 | `people/i_training_class`              | `people/i-training_class`              |
+| `people/lactation`                     | `people/lactating`                     |
 | `people/male_and_female`               | `people/male-and_female`               |
 | `people/male_sex_worker`               | `people/male-sex_worker`               |
 | `people/mental_disorders`              | `people/mental-disorders`              |
@@ -357,27 +387,28 @@ public/icons/png/filled/blood/blood_bag@2x.png    → public/icons/png/filled/bl
 
 ### specialties
 
-| 2.x                                   | 3.0                                   |
-| ------------------------------------- | ------------------------------------- |
-| `specialties/accident_and_emergency`  | `specialties/accident-and_emergency`  |
-| `specialties/biochemistry_laboratory` | `specialties/biochemistry-laboratory` |
-| `specialties/burn_unit`               | `specialties/burn-unit`               |
-| `specialties/coronary_care_unit`      | `specialties/coronary-care_unit`      |
-| `specialties/critical_care`           | `specialties/critical-care`           |
-| `specialties/discharge_lounge`        | `specialties/discharge-lounge`        |
-| `specialties/ears_nose_and_throat`    | `specialties/ears-nose_and_throat`    |
-| `specialties/finance_dept`            | `specialties/finance-dept`            |
-| `specialties/general_surgery`         | `specialties/general-surgery`         |
-| `specialties/hematology_laboratory`   | `specialties/hematology-laboratory`   |
-| `specialties/human_resoruces`         | `specialties/human-resoruces`         |
-| `specialties/intensive_care_unit`     | `specialties/intensive-care_unit`     |
-| `specialties/medical_records`         | `specialties/medical-records`         |
-| `specialties/outpatient_department`   | `specialties/outpatient-department`   |
-| `specialties/pain_managment`          | `specialties/pain-managment`          |
-| `specialties/physical_therapy`        | `specialties/physical-therapy`        |
-| `specialties/social_work`             | `specialties/social-work`             |
-| `specialties/speech_language_therapy` | `specialties/speech-language_therapy` |
-| `specialties/vascular_surgery`        | `specialties/vascular-surgery`        |
+| 2.x                                   | 3.0                                     |
+| ------------------------------------- | --------------------------------------- |
+| `specialties/accident_and_emergency`  | `specialties/accident-and_emergency`    |
+| `specialties/biochemistry_laboratory` | `specialties/biochemistry-laboratory`   |
+| `specialties/burn_unit`               | `specialties/burn-unit`                 |
+| `specialties/coronary_care_unit`      | `specialties/coronary-care_unit`        |
+| `specialties/critical_care`           | `specialties/critical-care`             |
+| `specialties/discharge_lounge`        | `specialties/discharge-lounge`          |
+| `specialties/ears_nose_and_throat`    | `specialties/ears-nose_and_throat`      |
+| `specialties/finance_dept`            | `specialties/finance-dept`              |
+| `specialties/general_surgery`         | `specialties/general-surgery`           |
+| `specialties/hematology_laboratory`   | `specialties/hematology-laboratory`     |
+| `specialties/human_resoruces`         | `specialties/human-resoruces`           |
+| `specialties/intensive_care_unit`     | `specialties/intensive-care_unit`       |
+| `specialties/medical_records`         | `specialties/medical-records`           |
+| `specialties/outpatient_department`   | `specialties/outpatient-department`     |
+| `specialties/pain_managment`          | `specialties/pain-managment`            |
+| `specialties/pharmacy`                | `specialties/pharmacy-dept`             |
+| `specialties/physical_therapy`        | `specialties/physical-therapy`          |
+| `specialties/social_work`             | `specialties/social-work`               |
+| `specialties/speech_language_therapy` | `specialties/speech-language_therapist` |
+| `specialties/vascular_surgery`        | `specialties/vascular-surgery`          |
 
 ### symbols
 
@@ -401,6 +432,7 @@ public/icons/png/filled/blood/blood_bag@2x.png    → public/icons/png/filled/bl
 | `symbols/death_alt`                   | `symbols/death-alt`                   |
 | `symbols/death_alt2`                  | `symbols/death-alt2`                  |
 | `symbols/dhis2_logo`                  | `symbols/dhis2-logo`                  |
+| `symbols/diabetes`                    | `symbols/diabetes-blood-sample`       |
 | `symbols/eco_care`                    | `symbols/eco-care`                    |
 | `symbols/excel_logo`                  | `symbols/excel-logo`                  |
 | `symbols/geo_location`                | `symbols/geo-location`                |
