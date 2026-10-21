@@ -15,9 +15,9 @@ export function searchKeywords(search: string, keywords: string): boolean {
     return true;
   }
 
-  // Create a regex pattern that matches all search terms in any order
-  // The \b word boundary is removed to better support partial matches
-  const pattern = '(?=.*?' + searchTerms.join(')(?=.*?') + ').*';
-
-  return new RegExp(pattern, 'i').test(keywords);
+  // Every search term must appear somewhere in the keywords, in any order and
+  // as part of a word. Plain text matching, so any character can be searched
+  // for (a regular expression broke on characters like "[" or "(")
+  const text = keywords.toLowerCase();
+  return searchTerms.every((term) => text.includes(term.toLowerCase()));
 }
