@@ -66,7 +66,7 @@ To pull the latest icon information from Figma, update the open-graph images, an
 5. Export as PNG: Select all of the icons and export all as `1x PNG` and `2x PNG`
 6. Export as SVG: Select all of the icons and export all as `SVG`
 7. In your terminal, type: `yarn update-icons`
-8. Test the website locally at `localhost:3000`
+8. Test the website locally at `localhost:3005`
 9. Commit your changes to a new branch on Github
 10. Raise a PR and request a review from another volunteer via Slack
 11. Wait for review

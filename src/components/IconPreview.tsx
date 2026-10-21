@@ -1,8 +1,9 @@
 import { ReactNode } from 'react';
 import styles from './Packages.module.scss';
 
-// the icons used in the packages pages' examples (category/name). All have
-// versions drawn for small sizes, like most icons.
+// the icons used in the packages pages (category/name). All but the AI
+// sparkle have versions drawn for small sizes; it's only shown at "1em", which
+// uses the standard drawing.
 export type PreviewIconName =
   | 'blood/blood-bag'
   | 'body/dna'
@@ -12,6 +13,7 @@ export type PreviewIconName =
   | 'medications/medicines'
   | 'people/doctor'
   | 'places/hospital'
+  | 'symbols/artificial-intelligence'
   | 'symbols/heart'
   | 'symbols/virus'
   | 'vehicles/ambulance'

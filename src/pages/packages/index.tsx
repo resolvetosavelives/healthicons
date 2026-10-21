@@ -5,6 +5,8 @@ import HeadTags from '../../components/HeadTags';
 import { ContentPage } from '../../components/ContentPage';
 import { AI_PROMPT, PACKAGES } from '../../lib/packages';
 import { AiPrompt } from '../../components/AiPrompt';
+import { AiHeading } from '../../components/AiHeading';
+import { FrameworkLogo } from '../../components/FrameworkLogo';
 import styles from '../../components/Packages.module.scss';
 
 // The AI prompt with its heading and explanation. It's on the page twice:
@@ -15,9 +17,7 @@ import styles from '../../components/Packages.module.scss';
 function AiAssistant({ id, className }: { id?: string; className: string }) {
   return (
     <div className={className} data-ai-section={true}>
-      <h2 id={id} className="mt-1">
-        Using an AI assistant?
-      </h2>
+      <AiHeading id={id} className="mt-1" />
       <p>
         Copy this prompt into ChatGPT, Claude, Copilot or another AI assistant
         before asking it to add icons. It explains how the packages work, so the
@@ -76,6 +76,11 @@ export default function Packages() {
                 href={`/packages/${info.slug}`}
                 className={styles.packageCard}
               >
+                <FrameworkLogo
+                  name={info.slug}
+                  size={28}
+                  className={styles.packageLogo}
+                />
                 <span className={styles.packageFramework}>
                   {info.framework}
                 </span>

@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import { IconPreview, PreviewButton } from '../components/IconPreview';
+import { FrameworkLogoName } from '../components/FrameworkLogo';
 
 // The content of the packages pages (/packages and a page per package). The
 // packages themselves are in packages/ at the top of the repository.
@@ -21,7 +22,8 @@ export interface PackageExample {
 }
 
 export interface PackageInfo {
-  slug: string;
+  // the page's address, and its logo
+  slug: FrameworkLogoName;
   name: string;
   framework: string;
   // a line for the card on /packages

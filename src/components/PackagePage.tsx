@@ -4,6 +4,8 @@ import HeadTags from './HeadTags';
 import { ContentPage } from './ContentPage';
 import { PackageInfo } from '../lib/packages';
 import { IconPreview, PreviewIconName } from './IconPreview';
+import { AiHeading } from './AiHeading';
+import { FrameworkLogo } from './FrameworkLogo';
 import styles from './Packages.module.scss';
 
 export function Code({ children }: { children: string }) {
@@ -148,6 +150,7 @@ export function PackagePage({ info }: { info: PackageInfo }) {
       <ContentPage
         title={`Health icons for ${info.framework}`}
         titleId="package"
+        titleIcon={<FrameworkLogo name={info.slug} />}
         topLinks={
           <>
             <span>
@@ -209,7 +212,7 @@ export function PackagePage({ info }: { info: PackageInfo }) {
           ))}
         </ol>
 
-        <h2 id="ai">Using an AI assistant?</h2>
+        <AiHeading id="ai" />
         <p>
           Copy our <Link href="/packages#ai">prompt for AI assistants</Link>{' '}
           before asking ChatGPT, Claude, Copilot or another assistant to add

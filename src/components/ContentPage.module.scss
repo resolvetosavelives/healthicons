@@ -14,7 +14,9 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 0.75rem;
+
+  /* room above the title, so the links don't crowd it */
+  margin-bottom: 1.75rem;
   font-size: 0.9rem;
 
   a {
@@ -28,6 +30,19 @@
   margin: 0 0 1rem;
   font-size: 1.75rem;
   line-height: 1.2;
+}
+
+/* a logo or icon after the title, sized to the text */
+.titleIcon {
+  display: inline-block;
+  margin-left: 0.35em;
+  vertical-align: -0.12em;
+
+  svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+  }
 }
 
 .intro {
