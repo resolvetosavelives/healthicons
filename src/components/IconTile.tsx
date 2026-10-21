@@ -53,16 +53,7 @@ export function IconTile(props: IconTileProps) {
     onClick: (e: MouseEvent) => openInModal(e, type)
   });
 
-  const title = (
-    <div className={styles.iconTitle}>
-      {props.icon.title}
-      {/* marks icons with no 24px version; a non-breaking space keeps the *
-          on the same line as the name */}
-      {!props.icon.formats.includes('24px') && props.iconFormat !== '24px' && (
-        <span className={styles.iconSize}>{'\u00a0*'}</span>
-      )}
-    </div>
-  );
+  const title = <div className={styles.iconTitle}>{props.icon.title}</div>;
 
   // with one style showing, the whole tile (icon and name) is a single link
   // with a single hover state; with both, each style gets its own link
