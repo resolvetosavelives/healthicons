@@ -18,6 +18,18 @@ Icons can be downloaded:
 - Together as [a ZIP file](https://healthicons.org/icons.zip)
 - Via [NPM](https://www.npmjs.com/package/healthicons): `npm i healthicons` or `yarn add healthicons`
 
+### Upgrading the NPM package to 3.0
+
+Version 3.0 adds 59 new icons and 215 new 24px versions of existing icons. It also **renames 405 icons**, so it may break code that imports icons by file path:
+
+- Most names changed from underscores to hyphens, for example `blood/blood_bag.svg` is now `blood/blood-bag.svg`
+- The face icons in `emotions` start with `face-`, for example `emotions/happy.svg` is now `emotions/face-happy.svg`
+- A few icons have more specific names so no two icons share a name, for example `specialties/pharmacy` is now `specialties/pharmacy-dept`
+- One icon moved category: `devices/discriminating_concentration_bioassays` is now `diagnostics/discriminating-concentration_bioassays`
+- No icons were removed
+
+See the [full list of renamed icons](https://github.com/resolvetosavelives/healthicons/blob/main/MIGRATING-3.0.md) to update your imports. If you'd rather not change anything yet, stay on 2.x with `npm i healthicons@2`.
+
 ## Request a new icon
 
 Need an icon for your project? Submit a request with an [Issue on GitHub](https://github.com/resolvetosavelives/healthicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=Icon+Request%3A+%5Bname+of+icon%5D) using the title `"Icon Request: [name of icon]"` and we will do our best to respond.
