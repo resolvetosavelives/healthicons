@@ -41,4 +41,17 @@ describe('searchKeywords', () => {
   test('multiple partial matches', () => {
     expect(searchKeywords('ick ow', 'quick brown fox')).toBe(true);
   });
+
+  test('ignores case', () => {
+    expect(searchKeywords('QUICK Fox', 'quick brown fox')).toBe(true);
+  });
+
+  test('special characters are matched as text', () => {
+    expect(searchKeywords('[', 'quick brown fox')).toBe(false);
+    expect(searchKeywords('(', 'blood type (rh+)')).toBe(true);
+    expect(searchKeywords('rh+', 'blood type rh+')).toBe(true);
+    expect(searchKeywords('*', 'quick brown fox')).toBe(false);
+    expect(searchKeywords('.', 'quick brown fox')).toBe(false);
+    expect(searchKeywords('a\\', 'quick brown fox')).toBe(false);
+  });
 });
