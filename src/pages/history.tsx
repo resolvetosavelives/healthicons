@@ -8,7 +8,7 @@ export default function About() {
     <>
       <HeadTags
         title="The History of the Health Icons Project"
-        description="How the Health Icons project began with DHIS2, grew into a volunteer effort in 2021, and why its free health icons are in the public domain."
+        description="How Health Icons started in 2021 as a volunteer project, and why we made the icons free for everyone, forever."
         path="/history"
       />
       <ContentPage

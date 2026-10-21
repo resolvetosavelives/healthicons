@@ -14,9 +14,10 @@ const PUBLIC_PATH = path.join(process.cwd(), 'public');
 const OUTPUT_PATH = `${PUBLIC_PATH}/og-icon-images`;
 const FONT_PATH = path.join(process.cwd(), 'src', 'scripts');
 
-// the size HeadTags tells sites to expect
-const WIDTH = 1280;
-const HEIGHT = 640;
+// 1.91:1, the shape social sites and chat apps expect (the icon pages tell
+// them this size)
+const WIDTH = 1200;
+const HEIGHT = 630;
 
 // the site's colors
 const PURPLE = '#6666ff';
@@ -25,11 +26,11 @@ const TEXT = '#063f39';
 const MUTED = '#6b6b80';
 const LINK = '#4a4ad9';
 
-const TILE_LEFT = 112;
-const TILE_SIZE = 400;
-const ICON_SIZE = 272;
-const TEXT_LEFT = 600;
-const TEXT_MAX_WIDTH = WIDTH - TEXT_LEFT - 100;
+const TILE_LEFT = 100;
+const TILE_SIZE = 380;
+const ICON_SIZE = 260;
+const TEXT_LEFT = 560;
+const TEXT_MAX_WIDTH = WIDTH - TEXT_LEFT - 80;
 
 const font = TextToSVG.loadSync(`${FONT_PATH}/Bariol_Regular.otf`);
 
