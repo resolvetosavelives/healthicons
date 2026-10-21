@@ -90,10 +90,20 @@ What I'd like you to do: `;
 
 const findAnIcon = (
   <>
-    Browse the <Link href="/">icons</Link> and click one you like. Its name is
-    shown under <strong>Filename</strong>, for example <code>blood-bag</code>.
-    In your code, write it in PascalCase (each word starting with a capital
-    letter, no dashes): <code>blood-bag</code> becomes <code>BloodBag</code>.
+    Browse the <Link href="/">icons</Link> and click one you like. The window
+    that opens shows its <strong>Code name</strong>, like <code>BloodBag</code>,
+    with a button to copy it: that’s the name to use in your code.
+  </>
+);
+
+// the JavaScript package uses both names: the filename in placeholders, the
+// code name in imports
+const findAnIconJavaScript = (
+  <>
+    Browse the <Link href="/">icons</Link> and click one you like. The window
+    that opens shows its <strong>Filename</strong>, like <code>blood-bag</code>,
+    which you use in your HTML, and its <strong>Code name</strong>, like{' '}
+    <code>BloodBag</code>, which you use in your JavaScript.
   </>
 );
 
@@ -374,7 +384,7 @@ import { BloodBag } from '@healthicons/vue';
     ),
     gettingStarted: [
       installStep('@healthicons/core'),
-      { title: 'Find an icon', body: findAnIcon },
+      { title: 'Find an icon', body: findAnIconJavaScript },
       {
         title: 'Put placeholders in your HTML',
         body: (

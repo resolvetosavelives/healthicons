@@ -234,14 +234,26 @@ export function PackagePage({ info }: { info: PackageInfo }) {
 
         <h2 id="names">Icon names</h2>
         <p>
-          In code, an icon’s name is its name on this site in PascalCase:{' '}
+          The easiest way to get an icon’s name is from the icon itself: open it
+          in the <Link href="/">icon library</Link> and copy its{' '}
+          <strong>Code name</strong>.
+          {info.slug === 'javascript' && (
+            <>
+              {' '}
+              For placeholders, use its <strong>Filename</strong> instead, like{' '}
+              <code>blood-bag</code>.
+            </>
+          )}
+        </p>
+        <p>
+          Code names follow a pattern: they’re the filename in PascalCase, so{' '}
           <code>blood-bag</code> is <code>BloodBag</code> and{' '}
           <code>blister-pills_oval_x14</code> is{' '}
-          <code>BlisterPillsOvalX14</code>. A few names can’t be written that
-          way, so they use the icon’s title: <code>0</code> to <code>9</code>{' '}
-          are <code>Number0</code> to <code>Number9</code>, <code>!</code> is{' '}
-          <code>ExclamationPoint</code> and <code>4x4</code> is <code>SUV</code>
-          .
+          <code>BlisterPillsOvalX14</code>. A few filenames can’t be written
+          that way, so they use the icon’s title: <code>0</code> to{' '}
+          <code>9</code> are <code>Number0</code> to <code>Number9</code>,{' '}
+          <code>!</code> is <code>ExclamationPoint</code> and <code>4x4</code>{' '}
+          is <code>SUV</code>.
         </p>
         <p>
           If your editor suggests names as you type (most do), start typing what

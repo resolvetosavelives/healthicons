@@ -87,7 +87,7 @@
 /* numbered steps, each with its number in a circle beside it */
 .steps {
   counter-reset: step;
-  margin: 0;
+  margin: 1.5rem 0 0;
   padding: 0;
   list-style: none;
 }
