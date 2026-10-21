@@ -85,17 +85,12 @@ export default function About() {
           to make them super easy to find and include.
         </p>
 
-        <h2 id="react">React Packages</h2>
+        <h2 id="react">Packages for React, Vue, Svelte and JavaScript</h2>
         <p>
-          Looking to use Health Icons in your next React project? React wrappers
-          are available for both{' '}
-          <a href="https://www.npmjs.com/package/healthicons-react">React </a>
-          and{' '}
-          <a href="https://www.npmjs.com/package/healthicons-react-native">
-            React Native
-          </a>
-          , offering a simple interface for accessing all the Healthicons you
-          need. Customize and use these icons easily to save time and effort.
+          Using Health Icons in your website or app? Our{' '}
+          <Link href="/packages">packages</Link> for React, Vue, Svelte and
+          plain JavaScript let you import just the icons you need, in either
+          style, at any size and in any color.
         </p>
 
         <h2 id="license">Icons license</h2>

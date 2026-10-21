@@ -1,0 +1,330 @@
+/* the packages as cards linking to their sections: two across, or one on
+   narrow phones */
+.packageList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.packageCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  height: 100%;
+  padding: 1rem 1.25rem;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:link,
+  &:visited {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: var(--text-color);
+    border-color: var(--link-color);
+    box-shadow: 0 1px 4px rgba(102, 102, 255, 0.2);
+  }
+
+  /* replaces the site-wide link focus style (a teal fill) */
+  &:focus-visible {
+    color: var(--text-color);
+    background: none;
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
+}
+
+.packageFramework {
+  font-weight: 600;
+}
+
+.packageName {
+  font-size: 0.85rem;
+  color: var(--link-color);
+}
+
+.code {
+  margin: 0 0 0.75rem;
+  padding: 0.9rem 1.1rem;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+/* scrolls sideways on narrow screens rather than squashing the table */
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  font-size: 0.9rem;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 0.6rem 0.75rem 0.6rem 0;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  th {
+    font-weight: 600;
+  }
+}
+
+/* numbered steps, each with its number in a circle beside it */
+.steps {
+  counter-reset: step;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  position: relative;
+  padding-left: 2.75rem;
+  margin-bottom: 2rem;
+  counter-increment: step;
+
+  &::before {
+    content: counter(step);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--link-color);
+    background: var(--selected-color);
+    border-radius: 50%;
+  }
+
+  p {
+    margin: 0 0 0.75rem;
+  }
+}
+
+.stepTitle,
+.exampleTitle {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.8rem;
+}
+
+.exampleTitle {
+  margin-top: 1.75rem;
+}
+
+.packageSummary {
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+}
+
+/* an icon drawn from its SVG file as a mask, in the text color unless given
+   another (like the packages draw them) */
+.previewIcon {
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: -0.125em;
+  background: currentColor;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.previewButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+/* the code's result, joined to the bottom of the code box */
+.withPreview {
+  margin-bottom: 0.75rem;
+
+  .code {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 4rem;
+  padding: 0.75rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.resultLabel {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted-text-color);
+}
+
+.resultContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.showcase {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.5rem 0 0;
+  padding: 1.5rem;
+  background: var(--sidebar-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+/* the ten icons in one row, or two even rows of five on phones */
+.showcaseRow {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  gap: 1.25rem;
+}
+
+@media (min-width: 36rem) {
+  .showcaseRow {
+    grid-template-columns: repeat(10, max-content);
+  }
+}
+
+.showcaseCaption {
+  font-size: 0.85rem;
+  color: var(--secondary-text-color);
+}
+
+/* the AI prompt: the text in a box that scrolls if it's long, with a copy
+   button above it */
+.prompt {
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.promptHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0.75rem 0.6rem 1.1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.promptText {
+  max-height: 16rem;
+  margin: 0;
+  padding: 0.9rem 1.1rem;
+  overflow-y: auto;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  background: var(--surface-color);
+  border-radius: 0 0 10px 10px;
+}
+
+/* like the copy buttons in the icon modal */
+.promptCopy {
+  padding: 0.3rem 0.85rem 0.3rem 1.75rem;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--link-color);
+  background: #fff url(/ui/copy.svg) 0.6rem 50% / 14px no-repeat;
+  border: none;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 1px var(--link-decoration-color);
+  cursor: pointer;
+  transition: box-shadow ease-in-out 0.15s;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px var(--link-color),
+      0 1px 4px rgba(102, 102, 255, 0.3);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
+}
+
+.promptCopied {
+  background-image: url(/ui/check.svg);
+}
+
+/* the AI prompt: in a box in the side column on desktop, like How to
+   contribute on About, and in the main text on mobile */
+.feature {
+  padding: 1rem 2rem 2rem;
+  border: 2px solid #ebecff;
+  border-radius: 10px;
+}
+
+.aiDesktop {
+  display: none;
+}
+
+@media (min-width: 60rem) {
+  .aiMobile {
+    display: none;
+  }
+
+  .aiDesktop {
+    display: block;
+  }
+
+  /* room for most of the prompt without scrolling */
+  .promptText {
+    max-height: 34rem;
+  }
+}
+
+/* the sparkle after "Using AI?" */
+.aiSparkle {
+  margin-left: 0.35em;
+
+  .previewIcon {
+    vertical-align: -0.1em;
+  }
+}
+
+.packageLogo {
+  margin-bottom: 0.4rem;
+}

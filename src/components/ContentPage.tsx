@@ -5,6 +5,11 @@ import styles from './ContentPage.module.scss';
 interface ContentPageProps {
   title: string;
   titleId?: string;
+  // shown after the title, like a package's logo
+  titleIcon?: ReactNode;
+  // links above the title: a link back on the left, others on the right
+  // (stacked on mobile)
+  topLinks?: ReactNode;
   intro: ReactNode;
   // optional side column: beside the text on desktop, below it on mobile
   aside?: ReactNode;
@@ -16,6 +21,8 @@ interface ContentPageProps {
 export function ContentPage({
   title,
   titleId,
+  titleIcon,
+  topLinks,
   intro,
   aside,
   children
@@ -26,8 +33,12 @@ export function ContentPage({
       <main id="main" className={styles.page}>
         <article className={styles.main}>
           <header className={styles.header}>
+            {topLinks && <nav className={styles.topLinks}>{topLinks}</nav>}
             <h1 id={titleId} className={styles.title}>
               {title}
+              {titleIcon && (
+                <span className={styles.titleIcon}>{titleIcon}</span>
+              )}
             </h1>
             <div className={styles.intro}>{intro}</div>
           </header>

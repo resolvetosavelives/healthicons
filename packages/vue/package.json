@@ -1,0 +1,43 @@
+{
+  "name": "@healthicons/vue",
+  "description": "Health Icons as Vue 3 components. Free, open source health icons from healthicons.org.",
+  "version": "1.0.1",
+  "license": "MIT",
+  "homepage": "https://healthicons.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resolvetosavelives/healthicons.git",
+    "directory": "packages/vue"
+  },
+  "bugs": "https://github.com/resolvetosavelives/healthicons/issues",
+  "keywords": [
+    "icons",
+    "health",
+    "healthicons",
+    "svg",
+    "medical",
+    "vue"
+  ],
+  "type": "commonjs",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

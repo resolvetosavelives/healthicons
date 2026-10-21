@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
-import ClipboardJs from 'clipboard';
 import classnames from 'classnames';
 import styles from './IconTileModal.module.scss';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Icon } from '../lib/icons';
+import { useCopyButton } from '../lib/useCopyButton';
+import { componentName } from '../lib/componentName';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../store';
 import { setKeywords } from '../store/search';
@@ -35,25 +36,6 @@ function LineIcon({ d }: { d: string[] }) {
 const ARROW_LEFT = ['m12 19-7-7 7-7', 'M19 12H5'];
 const ARROW_RIGHT = ['M5 12h14', 'm12 5 7 7-7 7'];
 const CLOSE = ['M18 6 6 18', 'm6 6 12 12'];
-
-// attaches copy-to-clipboard to a button; `copied` is true briefly after a
-// successful copy so the button can say so
-function useCopyButton(text: string | null) {
-  const ref = useRef<HTMLButtonElement>(null);
-  const [copied, setCopied] = useState(false);
-  useEffect(() => {
-    if (!ref.current || !text) {
-      return;
-    }
-    const clipboard = new ClipboardJs(ref.current, { text: () => text });
-    clipboard.on('success', () => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1500);
-    });
-    return () => clipboard.destroy();
-  }, [text]);
-  return { ref, copied };
-}
 
 interface IconTileModalProps {
   icon: Icon;
@@ -128,6 +110,16 @@ export function IconTileModal(props: IconTileModalProps) {
   const copy24 = useCopyButton(coloredCode24);
   const mobileCopy48 = useCopyButton(coloredCode48);
   const mobileCopy24 = useCopyButton(coloredCode24);
+  // the icon's name in the packages (BloodBag for blood-bag). If an icon's
+  // name can't be turned into one, the package build reports it; here the
+  // name is just left out.
+  let codeName: string | null = null;
+  try {
+    codeName = componentName(props.icon.id, props.icon.title);
+  } catch {
+    // no code name
+  }
+  const copyCodeName = useCopyButton(codeName);
 
   // on mobile each section's download options are behind a Download button;
   // this is which one is open, closed again when moving to another icon
@@ -498,8 +490,41 @@ export function IconTileModal(props: IconTileModalProps) {
               </div>
             </div>
           )}
-          <div className={styles.modalLabel}>Filename</div>
-          <p className={styles.filename}>{props.icon.id}</p>
+          {/* side by side, wrapping onto two rows if there isn't room */}
+          <div className={styles.names}>
+            {codeName && (
+              <div>
+                <div className={styles.modalLabel}>Code name</div>
+                <p className={styles.filename}>
+                  <code>{codeName}</code>
+                  <button
+                    type="button"
+                    ref={copyCodeName.ref}
+                    aria-label={
+                      copyCodeName.copied
+                        ? 'Code name copied'
+                        : 'Copy code name'
+                    }
+                    className={classnames(
+                      styles.copyButton,
+                      styles.filenameCopy,
+                      {
+                        [styles.copyButtonCopied]: copyCodeName.copied
+                      }
+                    )}
+                  >
+                    {copyCodeName.copied ? 'Copied' : 'Copy'}
+                  </button>
+                </p>
+              </div>
+            )}
+            <div>
+              <div className={styles.modalLabel}>Filename</div>
+              <p className={styles.filename}>
+                <code>{props.icon.id}</code>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <footer className={styles.modalFooter}>

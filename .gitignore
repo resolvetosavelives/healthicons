@@ -31,3 +31,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# built icon packages (yarn build-packages)
+/packages/*/dist

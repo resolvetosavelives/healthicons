@@ -30,6 +30,11 @@ const NAV_LINKS: Array<{
     label: 'Request an icon',
     shortLabel: 'Requests',
     active: (path: string) => path === '/request-icon'
+  },
+  {
+    href: '/packages',
+    label: 'Packages',
+    active: (path: string) => path.startsWith('/packages')
   }
 ];
 
@@ -52,6 +57,11 @@ export function TopBar() {
     let frame = 0;
     const update = () => {
       frame = 0;
+      // React removes the header (when changing pages) a moment before this
+      // effect's cleanup stops these updates; a scroll in between finds it gone
+      if (!nav.current || !navEnd.current) {
+        return;
+      }
       const y = window.scrollY;
       // where the header sits in the page, from the marker just after it
       const marginBottom = parseFloat(
@@ -93,7 +103,7 @@ export function TopBar() {
   // including the mobile links row that hangs below the header's box
   useEffect(() => {
     let offset = 0;
-    if (mode === 'shown') {
+    if (mode === 'shown' && nav.current) {
       const top = nav.current.getBoundingClientRect().top;
       offset = Math.max(
         nav.current.offsetHeight,
