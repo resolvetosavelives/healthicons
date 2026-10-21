@@ -507,12 +507,17 @@ a.modalButton:focus-visible {
     padding-right: calc(34px + 0.75rem + 70px + 1rem - 8px);
   }
 
+  /* centered in the window, as tall as its content up to the window's
+     height less 2rem above and below (it scrolls beyond that) */
   .modalContainer {
     background: white;
     width: 60%;
-    top: 16%;
-    max-height: 75vh;
+    top: 2rem;
+    bottom: 2rem;
     left: 20%;
+    height: fit-content;
+    max-height: calc(100vh - 4rem);
+    margin: auto 0;
   }
 
   /* the box moves out to the left column (left is measured from the

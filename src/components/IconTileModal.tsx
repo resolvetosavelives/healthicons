@@ -492,12 +492,6 @@ export function IconTileModal(props: IconTileModalProps) {
           )}
           {/* side by side, wrapping onto two rows if there isn't room */}
           <div className={styles.names}>
-            <div>
-              <div className={styles.modalLabel}>Filename</div>
-              <p className={styles.filename}>
-                <code>{props.icon.id}</code>
-              </p>
-            </div>
             {codeName && (
               <div>
                 <div className={styles.modalLabel}>Code name</div>
@@ -524,6 +518,12 @@ export function IconTileModal(props: IconTileModalProps) {
                 </p>
               </div>
             )}
+            <div>
+              <div className={styles.modalLabel}>Filename</div>
+              <p className={styles.filename}>
+                <code>{props.icon.id}</code>
+              </p>
+            </div>
           </div>
         </div>
       </div>
