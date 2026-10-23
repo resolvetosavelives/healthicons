@@ -4100,6 +4100,7 @@
   "path": "body/spine",
   "tags": [
    "Back",
+   "Bone",
    "Organ",
    "Spinal Cord",
    "Vertebrae"
@@ -5679,7 +5680,7 @@
   "category": "specialties",
   "path": "specialties/rheumatology",
   "tags": [
-   "Bones",
+   "Bone",
    "Department",
    "Joints",
    "Ortho",
@@ -7921,6 +7922,7 @@
   "path": "body/skeleton",
   "tags": [
    "Body",
+   "Bone",
    "Death",
    "Head",
    "Human",
@@ -7939,6 +7941,7 @@
   "path": "body/skull",
   "tags": [
    "Body",
+   "Bone",
    "Death",
    "Head",
    "Human",
@@ -12675,22 +12678,6 @@
   ]
  },
  {
-  "id": "breast",
-  "category": "body",
-  "path": "body/breast",
-  "tags": [
-   "Anatomy",
-   "Breast Health",
-   "Chest",
-   "Mammary Gland",
-   "Nursing"
-  ],
-  "title": "Breast",
-  "formats": [
-   "48px"
-  ]
- },
- {
   "id": "breast-cancer",
   "category": "conditions",
   "path": "conditions/breast-cancer",
@@ -12708,18 +12695,55 @@
   ]
  },
  {
-  "id": "braces",
-  "category": "devices",
-  "path": "devices/braces",
+  "id": "breast",
+  "category": "body",
+  "path": "body/breast",
   "tags": [
-   "Dental Appliance",
-   "Dental Care",
-   "Orthodontic Treatment",
-   "Orthodontics",
-   "Teeth Alignment",
-   "Teeth Straightening"
+   "ANC",
+   "Anatomy",
+   "Antenatal",
+   "Baby",
+   "Breast Health",
+   "Chest",
+   "Mammary Gland",
+   "Nursing"
   ],
-  "title": "Braces",
+  "title": "Breast",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "heat-therapy",
+  "category": "symbols",
+  "path": "symbols/heat-therapy",
+  "tags": [
+   "Heat Treatment",
+   "Muscle Relaxation",
+   "Pain Relief",
+   "Physical Therapy",
+   "Thermotherapy",
+   "Warm Compress"
+  ],
+  "title": "Heat Therapy",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "skin-layers",
+  "category": "symbols",
+  "path": "symbols/skin-layers",
+  "tags": [
+   "Dermatologist",
+   "Dermis",
+   "Skin Care",
+   "Skin Conditions",
+   "Skin Health",
+   "Skin Treatment"
+  ],
+  "title": "Dermatology",
   "formats": [
    "48px"
   ]
@@ -12743,53 +12767,18 @@
   ]
  },
  {
-  "id": "heat-therapy",
-  "category": "symbols",
-  "path": "symbols/heat-therapy",
+  "id": "braces",
+  "category": "devices",
+  "path": "devices/braces",
   "tags": [
-   "Heat Treatment",
-   "Muscle Relaxation",
-   "Pain Relief",
-   "Physical Therapy",
-   "Thermotherapy",
-   "Warm Compress"
+   "Dental Appliance",
+   "Dental Care",
+   "Orthodontic Treatment",
+   "Orthodontics",
+   "Teeth Alignment",
+   "Teeth Straightening"
   ],
-  "title": "Heat Therapy",
-  "formats": [
-   "24px",
-   "48px"
-  ]
- },
- {
-  "id": "camera",
-  "category": "symbols",
-  "path": "symbols/camera",
-  "tags": [
-   "Digital Camera",
-   "Imaging",
-   "Lens",
-   "Photo Capture",
-   "Photography",
-   "Snapshot"
-  ],
-  "title": "Camera",
-  "formats": [
-   "48px"
-  ]
- },
- {
-  "id": "skin-layers",
-  "category": "symbols",
-  "path": "symbols/skin-layers",
-  "tags": [
-   "Dermatologist",
-   "Dermis",
-   "Skin Care",
-   "Skin Conditions",
-   "Skin Health",
-   "Skin Treatment"
-  ],
-  "title": "Skin Layers",
+  "title": "Braces",
   "formats": [
    "48px"
   ]
@@ -12807,6 +12796,23 @@
    "Skin Treatment"
   ],
   "title": "Dermatology",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "camera",
+  "category": "symbols",
+  "path": "symbols/camera",
+  "tags": [
+   "Digital Camera",
+   "Imaging",
+   "Lens",
+   "Photo Capture",
+   "Photography",
+   "Snapshot"
+  ],
+  "title": "Camera",
   "formats": [
    "48px"
   ]
