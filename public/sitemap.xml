@@ -2453,6 +2453,10 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/i-documents_denied.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/symbols/skin-layers</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/skin-layers.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/symbols/dhis2-logo</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/dhis2-logo.svg</image:loc></image:image>
   </url>
@@ -2907,10 +2911,6 @@
   <url>
     <loc>https://healthicons.org/icon/outline/symbols/simple-logo</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/simple-logo.svg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://healthicons.org/icon/outline/symbols/skin-layers</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/skin-layers.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/symbols/smoking</loc>
