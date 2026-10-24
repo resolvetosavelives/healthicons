@@ -23,7 +23,7 @@
   position: sticky;
   top: 0;
   z-index: 25;
-  background: #fff;
+  background: var(--page-color);
 }
 
 .topBarHidden {
@@ -43,6 +43,8 @@
   grid-area: download-area;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
 }
 
 .topbarTitle {
@@ -75,7 +77,7 @@
 
   /* it hangs below the header's box, so it needs its own background when
      the header is pinned over the icons */
-  background: #fff;
+  background: var(--page-color);
   font-size: 13px;
   border-top: 1px solid var(--link-decoration-color);
   border-bottom: 1px solid var(--link-decoration-color);
@@ -85,7 +87,7 @@
    sit on the bar's bottom line like a tab; the doubled class beats the
    global a:link colors */
 .topbarLinks .link {
-  color: #2f2f35;
+  color: var(--heading-color);
   transition: color 0.15s ease-in-out;
   position: relative;
   display: flex;
@@ -124,8 +126,8 @@
 }
 
 .buttonLink {
-  background: var(--link-color) url(/ui/folder-download-line-white.svg) 0.65rem
-    50% no-repeat;
+  background: var(--button-color) url(/ui/folder-download-line-white.svg)
+    0.65rem 50% no-repeat;
   display: inline-block;
   background-size: 16px;
   color: #fff;
@@ -142,7 +144,7 @@
 
   &:hover {
     text-decoration: none;
-    background-color: var(--link-color-dark);
+    background-color: var(--button-hover-color);
   }
 }
 
@@ -166,7 +168,7 @@
 }
 
 .buttonLink:focus-visible {
-  background: var(--link-color-dark) url(/ui/folder-download-line-white.svg)
+  background: var(--button-hover-color) url(/ui/folder-download-line-white.svg)
     0.65rem 50% / 16px no-repeat;
   outline: 2px solid var(--link-color);
   outline-offset: 2px;
@@ -198,7 +200,7 @@
       to right,
       var(--sidebar-color) calc(2rem + var(--sidebar-width) - 1px),
       var(--border-color) 0 calc(2rem + var(--sidebar-width)),
-      #fff 0
+      var(--page-color) 0
     );
   }
 

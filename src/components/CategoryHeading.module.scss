@@ -5,7 +5,7 @@
   margin: 0 0 0.75rem;
   font-size: 1rem;
   font-weight: 700;
-  color: #2f2f35;
+  color: var(--heading-color);
 }
 
 .count {
@@ -15,5 +15,5 @@
   font-size: 0.8rem;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
-  color: #6e6e78;
+  color: var(--subtle-text-color);
 }

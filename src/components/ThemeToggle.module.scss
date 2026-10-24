@@ -1,0 +1,38 @@
+.toggle {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  color: var(--heading-color);
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+
+  &:hover {
+    color: var(--link-color);
+    background: var(--selected-color);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
+}
+
+/* a moon to turn night mode on, a sun to turn it off */
+.sun {
+  display: none;
+}
+
+:global(:root[data-theme='dark']) .moon {
+  display: none;
+}
+
+:global(:root[data-theme='dark']) .sun {
+  display: block;
+}
