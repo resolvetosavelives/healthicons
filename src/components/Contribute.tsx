@@ -16,7 +16,13 @@ export function Contribute({ hasTopMargin = true }: ContributeProps) {
           Join our open Slack channel by emailing{' '}
           <a href="mailto:contact@healthicons.org">contact@healthicons.org</a>
         </p>
-        <img src="/ui/slack.svg" width="32" height="32" alt="" />
+        <img
+          src="/ui/slack.svg"
+          width="32"
+          height="32"
+          alt=""
+          className="invert-in-dark"
+        />
       </div>
       <div className={styles.aboutBullet}>
         <h6>Contribute icons</h6>
@@ -29,7 +35,13 @@ export function Contribute({ hasTopMargin = true }: ContributeProps) {
           of conduct (below) and the styleguide (in the Figma) carefully before
           contributing.
         </p>
-        <img src="/ui/figma.svg" width="32" height="32" alt="" />
+        <img
+          src="/ui/figma.svg"
+          width="32"
+          height="32"
+          alt=""
+          className="invert-in-dark"
+        />
       </div>
       <div className={styles.aboutBullet}>
         <h6>Improve the website</h6>
@@ -40,7 +52,13 @@ export function Contribute({ hasTopMargin = true }: ContributeProps) {
           </a>{' '}
           and pick up projects to improve this website.
         </p>
-        <img src="/ui/code.svg" width="32" height="32" alt="" />
+        <img
+          src="/ui/code.svg"
+          width="32"
+          height="32"
+          alt=""
+          className="invert-in-dark"
+        />
       </div>
     </>
   );

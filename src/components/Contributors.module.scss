@@ -13,8 +13,8 @@
   left: 0;
   top: 4px;
   border-radius: 50%;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid var(--border-color);
   &:hover {
-    border: 1px solid rgba(0,0,0,0.5);
+    border: 1px solid var(--muted-text-color);
   }
 }

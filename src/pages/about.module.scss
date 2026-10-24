@@ -1,5 +1,5 @@
 .codeBlock {
-  background: #edf1f4;
+  background: var(--surface-color);
   padding: 1rem 1.5rem 1.5rem 1.5rem;
   font-family: monospace;
   border-radius: 10px;
@@ -13,7 +13,7 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
-  border: 2px solid #ebecff;
+  border: 2px solid var(--soft-purple-color);
 }
 
 .fullImage {
@@ -27,7 +27,7 @@
   display: block;
   margin: -0.5em 0 2em 0;
   font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--muted-text-color);
 }
 
 /* the contribute section shows in the main text on mobile, and in the side
@@ -37,7 +37,7 @@
 }
 
 .contentFeature {
-  border: 2px solid #ebecff;
+  border: 2px solid var(--soft-purple-color);
   padding: 1rem 1.5rem 1.5rem;
   border-radius: 10px;
 }

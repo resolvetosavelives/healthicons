@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   color: inherit;
-  background: white;
+  background: var(--page-color);
   width: 90%;
   top: 5%;
   left: 5%;
@@ -27,7 +27,7 @@
       background: transparent;
     }
     &::-webkit-scrollbar-thumb {
-      background: #e5e5e5;
+      background: var(--border-color);
       border-radius: 3px;
     }
     &::-webkit-scrollbar-track {
@@ -41,7 +41,7 @@
    JavaScript runs it's an ordinary open dialog, so it draws the same backdrop
    with a very wide shadow and sits above the sticky sidebar and drawer */
 .modalContainer::backdrop {
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--overlay-color);
 }
 
 /* stylelint-disable-next-line selector-pseudo-class-no-unknown -- :modal is
@@ -49,7 +49,7 @@
 .modalContainer:not(:modal) {
   z-index: 100;
   box-shadow: 0 0 0 10px var(--link-decoration-color),
-    0 0 0 100vmax rgba(255, 255, 255, 0.75);
+    0 0 0 100vmax var(--overlay-color);
 }
 
 .modalWrapper {
@@ -103,7 +103,7 @@
   font-weight: 700;
 
   /* the same dark grey as the category headings */
-  color: #2f2f35;
+  color: var(--heading-color);
   letter-spacing: 0.1rem;
   margin: 0 0 0.2rem 0;
 }
@@ -134,8 +134,8 @@
   justify-content: center;
   width: clamp(72px, 28vw, 128px);
   aspect-ratio: 1;
-  background: #fff;
-  border: 1px solid hsl(172, 40%, 80%);
+  background: var(--page-color);
+  border: 1px solid var(--preview-border-color);
   border-radius: 5px;
 }
 
@@ -159,7 +159,7 @@
 }
 
 .modalButton {
-  background: var(--link-color) url(/ui/download-2-line-white.svg) 0.7rem 50%
+  background: var(--button-color) url(/ui/download-2-line-white.svg) 0.7rem 50%
     no-repeat;
   background-size: 14px;
   color: #fff;
@@ -182,7 +182,7 @@
 
   &:hover {
     color: #fff;
-    background-color: var(--link-color-dark);
+    background-color: var(--button-hover-color);
     text-decoration: none;
   }
 
@@ -196,8 +196,8 @@
    which also removed the download icon */
 a.modalButton:focus-visible {
   color: #fff;
-  background: var(--link-color-dark) url(/ui/download-2-line-white.svg) 0.7rem
-    50% / 14px no-repeat;
+  background: var(--button-hover-color) url(/ui/download-2-line-white.svg)
+    0.7rem 50% / 14px no-repeat;
 }
 
 /* top left, on the same row as the arrows and close button. Long names wrap
@@ -260,7 +260,7 @@ a.modalButton:focus-visible {
 }
 
 .tagButton {
-  background: rgba(102, 102, 255, 0.12);
+  background: var(--selected-color);
   color: var(--link-color);
   padding: 0.3rem 0.8rem;
   border-radius: 100px;
@@ -270,7 +270,7 @@ a.modalButton:focus-visible {
   transition: all 0.2s ease;
 
   &:hover {
-    background: var(--link-color);
+    background: var(--button-color);
     color: white;
   }
 }
@@ -291,7 +291,7 @@ a.modalButton:focus-visible {
 
 /* no previous/next icon at the ends of the list */
 .nextPrevLinksWrapper span {
-  color: #d0d0d8;
+  color: var(--disabled-color);
 }
 
 /* On mobile each section shows just Download (which drops down the download
@@ -337,7 +337,7 @@ a.modalButton:focus-visible {
    is a shadow so it's the same size as Download */
 .mobileCopyButton {
   color: var(--link-color);
-  background-color: #fff;
+  background-color: var(--page-color);
   background-image: url(/ui/copy.svg);
   box-shadow: inset 0 0 0 1px var(--link-decoration-color);
   transition: box-shadow ease-in-out 0.15s;
@@ -345,7 +345,7 @@ a.modalButton:focus-visible {
   /* stays white on hover: the outline darkens and it lifts slightly */
   &:hover {
     color: var(--link-color);
-    background-color: #fff;
+    background-color: var(--page-color);
     box-shadow: inset 0 0 0 1px var(--link-color),
       0 1px 4px rgba(102, 102, 255, 0.3);
   }
@@ -370,10 +370,10 @@ a.modalButton:focus-visible {
   min-width: 100%;
   width: max-content;
   padding: 0.5rem;
-  background: #fff;
+  background: var(--page-color);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px var(--shadow-color);
 
   .modalButton {
     margin: 0;
@@ -388,12 +388,12 @@ a.modalButton:focus-visible {
 
 .modalCopySvgContainer {
   margin: 0;
-  background-color: #0000000b;
+  background-color: var(--surface-color);
   padding: 0.5rem 5.5rem 0.5rem 0.5rem;
   border-radius: 0.2rem;
   font-size: 0.625rem;
   line-height: 1.5;
-  color: hsl(172, 20%, 38%);
+  color: var(--code-text-color);
   white-space: pre-wrap;
   word-break: break-word;
   max-height: 3.75rem;
@@ -410,7 +410,7 @@ a.modalButton:focus-visible {
   font-size: 0.7rem;
   font-weight: bold;
   color: var(--link-color);
-  background: #fff url(/ui/copy.svg) 0.5rem 50% / 13px no-repeat;
+  background: var(--page-color) url(/ui/copy.svg) 0.5rem 50% / 13px no-repeat;
   border: none;
   box-shadow: inset 0 0 0 1px var(--link-decoration-color);
   border-radius: 999px;
@@ -489,7 +489,7 @@ a.modalButton:focus-visible {
   }
 
   .modalContainer {
-    background: white;
+    background: var(--page-color);
     width: 60%;
     top: 16%;
     max-height: 75vh;

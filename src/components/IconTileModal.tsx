@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../store';
 import { setKeywords } from '../store/search';
 import { IconImage } from './IconImage';
+import { DEFAULT_ICON_COLOR, useTheme } from './ThemeToggle';
 import { colorizeSvg, downloadSvgAsPng, svgDataUrl } from '../lib/iconColor';
 import { filtersToQueryString } from '../lib/filterQuery';
 
@@ -116,12 +117,17 @@ export function IconTileModal(props: IconTileModalProps) {
   const dispatch = useDispatch();
   const filters = useSelector((state: RootState) => state.search);
   const color = filters.color;
+  // with no color chosen, downloads and copied code are black (the static
+  // files), or white in night mode
+  const theme = useTheme();
+  const downloadColor =
+    color || (theme === 'dark' ? DEFAULT_ICON_COLOR.dark : '');
   // keep the current filters in the URL when moving between icons
   const query = filtersToQueryString(filters);
 
   // the SVG code shown, copied and downloaded uses the chosen icon color
-  const coloredCode24 = iconCode24 && colorizeSvg(iconCode24, color);
-  const coloredCode48 = iconCode48 && colorizeSvg(iconCode48, color);
+  const coloredCode24 = iconCode24 && colorizeSvg(iconCode24, downloadColor);
+  const coloredCode48 = iconCode48 && colorizeSvg(iconCode48, downloadColor);
 
   // copy buttons: on the code boxes (desktop) and beside Download (mobile)
   const copy48 = useCopyButton(coloredCode48);
@@ -153,7 +159,7 @@ export function IconTileModal(props: IconTileModalProps) {
   // download links point at the static files unless a color is chosen, in
   // which case the SVG/PNG is generated in the browser in that color
   const svgLink = (path: string, svg: string, filename: string) => ({
-    href: color && svg ? svgDataUrl(svg) : path,
+    href: downloadColor && svg ? svgDataUrl(svg) : path,
     download: filename
   });
   const pngLink = (
@@ -165,7 +171,7 @@ export function IconTileModal(props: IconTileModalProps) {
     href: path,
     download: filename,
     onClick:
-      color && svg
+      downloadColor && svg
         ? (e: React.MouseEvent) => {
             e.preventDefault();
             downloadSvgAsPng(svg, size, filename);

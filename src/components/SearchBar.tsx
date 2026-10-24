@@ -101,7 +101,7 @@ export function SearchBar({
           <img
             src="/ui/search-2-line.svg"
             alt=""
-            className={styles.searchIcon}
+            className={`invert-in-dark ${styles.searchIcon}`}
           />
           <input
             ref={searchInput}

@@ -12,9 +12,86 @@
   --sidebar-width: 248px;
   --sidebar-color: #fafafd;
   --icon-color: #000;
+  --page-color: #fff;
+  --heading-color: #2f2f35;
+  --subtle-text-color: #6e6e78;
+  --link-hover-color: #000;
+
+  /* buttons with white text (in night mode a deeper purple than links, so
+     the white text stays readable) */
+  --button-color: rgba(102, 102, 255, 1);
+  --button-hover-color: rgba(9, 9, 80, 1);
+  --tile-hover-color: #f9f9fc;
+  --shadow-color: rgba(0, 0, 0, 0.12);
+
+  /* behind the icon modal */
+  --overlay-color: rgba(255, 255, 255, 0.75);
+  --code-text-color: hsl(172, 20%, 38%);
+  --preview-border-color: hsl(172, 40%, 80%);
+  --disabled-color: #d0d0d8;
+  --soft-purple-color: #ebecff;
+
+  /* the icons' color when none is chosen (the Color field's swatch) */
+  --default-icon-color: #000;
+
+  /* the selected option in Style and Size */
+  --segment-selected-color: #fff;
+  --segment-selected-text-color: rgba(102, 102, 255, 1);
   --font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
     'Liberation Sans', sans-serif;
   $breakpoint-desktop: 60rem;
+
+  /* form controls and scrollbars match */
+  color-scheme: light;
+}
+
+/* Night mode: set on <html> by the toggle in the header (see ThemeToggle),
+   or from the device's setting until someone chooses */
+:root[data-theme='dark'] {
+  --text-color: #d3ece6;
+  --secondary-text-color: rgba(255, 255, 255, 0.72);
+  --link-color: #8f8fff;
+  --link-color-dark: #b3b3ff;
+  --link-decoration-color: rgba(143, 143, 255, 0.35);
+  --muted-text-color: rgba(220, 220, 240, 0.55);
+  --border-color: #2e2e3d;
+  --surface-color: #1d1d28;
+  --hover-color: #262633;
+  --selected-color: rgba(143, 143, 255, 0.16);
+  --sidebar-color: #181822;
+  --page-color: #14141c;
+  --heading-color: #ececf4;
+  --subtle-text-color: #a3a3b5;
+  --link-hover-color: #fff;
+  --button-color: #5c5ce6;
+  --button-hover-color: #4747c2;
+  --tile-hover-color: #1c1c27;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --overlay-color: rgba(10, 10, 18, 0.8);
+  --code-text-color: hsl(172, 25%, 72%);
+  --preview-border-color: hsl(172, 20%, 30%);
+  --disabled-color: #44445a;
+  --soft-purple-color: #2b2b4a;
+  --default-icon-color: #fff;
+
+  /* lighter than its control, and a little purple */
+  --segment-selected-color: #383863;
+  --segment-selected-text-color: #c4c4ff;
+
+  color-scheme: dark;
+}
+
+/* in night mode the icons (black images) are shown white, the color they're
+   downloaded in then (see ColorPicker); icons in a chosen color are drawn in
+   that color */
+:root[data-theme='dark'] img.icon-image {
+  filter: invert(1);
+}
+
+/* the few dark interface images, shown light */
+:root[data-theme='dark'] img.invert-in-dark,
+:root[data-theme='dark'] img.cczero {
+  filter: invert(0.93);
 }
 
 @media (min-width: $breakpoint-desktop) {
@@ -57,7 +134,7 @@ body {
   max-width: 100rem;
   margin: 0 auto;
   font-family: var(--font-family);
-  background: #fff;
+  background: var(--page-color);
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -96,13 +173,13 @@ a:visited {
 
 a:hover,
 a:active {
-  color: #000;
+  color: var(--link-hover-color);
 }
 
 a:focus-visible {
   outline: 4px solid var(--text-color);
   background: var(--text-color);
-  color: #fff;
+  color: var(--page-color);
 }
 
 .visually-hidden {
@@ -174,7 +251,7 @@ footer {
 }
 
 .cczero {
-  border: 2px solid #000;
+  border: 2px solid var(--heading-color);
   border-radius: 5px;
 }
 
