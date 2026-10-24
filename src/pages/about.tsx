@@ -10,7 +10,7 @@ export default function About() {
     <>
       <HeadTags
         title="About Health Icons"
-        description="About the Health Icons project: how to use the free health icons in Figma and React, the CC0 public domain license, the code of conduct, and how to contribute."
+        description="Who makes Health Icons, how you can use the icons for free, and how to get involved and contribute icons of your own."
         path="/about"
       />
       <ContentPage

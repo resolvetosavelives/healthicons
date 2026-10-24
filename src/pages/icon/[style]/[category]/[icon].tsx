@@ -24,16 +24,23 @@ export default function IconPage({
   // name the outline page (the site's default style) as the canonical one and
   // search engines index a single page per icon
   const canonicalPath = `/icon/outline/${category}/${icon}`;
-  const tags = iconObj.tags.length ? ` Tags: ${iconObj.tags.join(', ')}.` : '';
-  const description = `Free, open-source ${iconObj.title} icon in outline and filled styles, as SVG and PNG. Public domain: use it anywhere, no credit needed.${tags}`;
+  // for search results, with the icon's name (what people search for); the
+  // tags go to search engines in the structured data below
+  const description = `Free ${iconObj.title} icon for your website, app or report. Download it as SVG or PNG and use it anywhere, no credit needed.`;
+  // for social previews, under the image (which shows the name)
+  const socialDescription =
+    'Need an icon? Download this one for free and use it in any project, no credit needed.';
 
   return (
     <>
       <HeadTags
-        title={`${iconObj.title} icon — free open-source icon in SVG & PNG from Health Icons`}
+        title={`${iconObj.title} — a free open-source icon from Health Icons`}
         description={description}
+        socialDescription={socialDescription}
         path={canonicalPath}
         image={`og-icon-images/${iconObj.category}/${iconObj.id}.png`}
+        imageWidth={1200}
+        imageHeight={630}
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'ImageObject',
