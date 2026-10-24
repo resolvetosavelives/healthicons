@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import styles from './ThemeToggle.module.scss';
 
 // Night mode: data-theme="dark" on <html> switches the site's colors (see
-// global.css). Someone's choice is remembered in this browser; until they
-// choose, the site follows their device's light or dark setting.
+// global.css). It's only ever on by choice: the site starts in normal mode
+// (whatever the device's setting) and someone's choice is remembered in this
+// browser.
 
 export const THEME_KEY = 'theme';
 
@@ -19,21 +20,9 @@ export const DEFAULT_ICON_COLOR: Record<Theme, string> = {
 // sent on window when the theme changes, for useTheme
 const THEME_CHANGE = 'healthicons-themechange';
 
-const DEVICE_DARK = '(prefers-color-scheme: dark)';
-
 // Runs in the page <head> (see _document.tsx) before anything is drawn, so
 // pages never flash in the wrong colors
-export const SET_THEME_SCRIPT = `(function(){var t;try{t=localStorage.getItem('${THEME_KEY}')}catch(e){}if(t!=='dark'&&t!=='light'){t=window.matchMedia&&matchMedia('${DEVICE_DARK}').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)})()`;
-
-function storedTheme(): Theme | null {
-  try {
-    const theme = localStorage.getItem(THEME_KEY);
-    return theme === 'dark' || theme === 'light' ? theme : null;
-  } catch {
-    // storage can be unavailable (e.g. blocked in private browsing)
-    return null;
-  }
-}
+export const SET_THEME_SCRIPT = `(function(){var t;try{t=localStorage.getItem('${THEME_KEY}')}catch(e){}document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light')})()`;
 
 function currentTheme(): Theme {
   return document.documentElement.getAttribute('data-theme') === 'dark'
@@ -62,24 +51,13 @@ export function useTheme(): Theme {
 export function ThemeToggle() {
   const dark = useTheme() === 'dark';
 
-  useEffect(() => {
-    // follow the device's setting as it changes, until someone chooses
-    const device = window.matchMedia(DEVICE_DARK);
-    const onDeviceChange = () => {
-      if (!storedTheme()) {
-        applyTheme(device.matches ? 'dark' : 'light');
-      }
-    };
-    device.addEventListener('change', onDeviceChange);
-    return () => device.removeEventListener('change', onDeviceChange);
-  }, []);
-
   const toggle = () => {
     const next: Theme = dark ? 'light' : 'dark';
     applyTheme(next);
     try {
       localStorage.setItem(THEME_KEY, next);
     } catch {
+      // storage can be unavailable (e.g. blocked in private browsing); it
       // still switches for this visit
     }
   };
