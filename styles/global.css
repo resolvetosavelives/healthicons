@@ -37,9 +37,9 @@
   /* the selected option in Style and Size */
   --segment-selected-color: #fff;
   --segment-selected-text-color: rgba(102, 102, 255, 1);
-  --font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI',
-    'Liberation Sans', sans-serif;
-  $breakpoint-desktop: 60rem;
+  --font-family:
+    -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Liberation Sans',
+    sans-serif;
 
   /* form controls and scrollbars match */
   color-scheme: light;
@@ -92,12 +92,6 @@
 :root[data-theme='dark'] img.invert-in-dark,
 :root[data-theme='dark'] img.cczero {
   filter: invert(0.93);
-}
-
-@media (min-width: $breakpoint-desktop) {
-  :root {
-    --column-gutter-width: 8rem;
-  }
 }
 
 html,
@@ -189,7 +183,7 @@ a:focus-visible {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
 }
@@ -198,29 +192,31 @@ a:focus-visible {
   display: inline-block;
   aspect-ratio: 1;
   background-color: var(--icon-color);
-  -webkit-mask-size: contain;
   mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-position: center;
   mask-position: center;
 }
 
 .mt-0 {
   margin-top: 0;
 }
+
 .mt-1 {
   margin-top: 1rem;
 }
+
 .mt-2 {
   margin-top: 2rem;
 }
+
 .mt-3 {
   margin-top: 3rem;
 }
+
 .mt-4 {
   margin-top: 4rem;
 }
+
 .mt-5 {
   margin-top: 5rem;
 }
@@ -240,7 +236,7 @@ h3 {
 
 h6 {
   font-size: 1rem;
-  margin: 0 0 0.2rem 0;
+  margin: 0 0 0.2rem;
 }
 
 footer {

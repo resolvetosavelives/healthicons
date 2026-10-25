@@ -306,6 +306,9 @@ export function IconTileModal(props: IconTileModalProps) {
                   >
                     Download
                   </button>
+                  {/* closes the menu once one of its links is used (keyboard use of a
+                      link fires a click too), so the div itself isn't a control */}
+                  {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
                   <div
                     className={classnames(styles.downloadOptions, {
                       [styles.downloadOptionsOpen]: openDownloads === '48'
@@ -412,6 +415,9 @@ export function IconTileModal(props: IconTileModalProps) {
                     >
                       Download
                     </button>
+                    {/* closes the menu once one of its links is used (keyboard use of a
+                        link fires a click too), so the div itself isn't a control */}
+                    {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
                     <div
                       className={classnames(styles.downloadOptions, {
                         [styles.downloadOptionsOpen]: openDownloads === '24'

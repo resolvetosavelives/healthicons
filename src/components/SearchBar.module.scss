@@ -12,7 +12,9 @@
   padding: 0.75rem 1rem;
   background: var(--page-color);
   border-bottom: 1px solid transparent;
-  transition: top 0.2s ease-in-out, border-color 0.15s ease-in-out;
+  transition:
+    top 0.2s ease-in-out,
+    border-color 0.15s ease-in-out;
 }
 
 /* shown once the bar is stuck to the top of the window (see SearchBar) */
@@ -39,7 +41,8 @@
   transition: box-shadow 0.15s ease-in-out;
 
   &:focus-within {
-    box-shadow: 0 0 0 0.5px var(--link-color),
+    box-shadow:
+      0 0 0 0.5px var(--link-color),
       0 0 0 4px rgba(102, 102, 255, 0.25);
   }
 }

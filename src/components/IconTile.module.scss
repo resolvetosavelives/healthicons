@@ -60,7 +60,9 @@
   border: 1px solid transparent;
   border-radius: 10px;
   opacity: 0.85;
-  transition: border-color ease-in-out 0.15s, background-color ease-in-out 0.15s,
+  transition:
+    border-color ease-in-out 0.15s,
+    background-color ease-in-out 0.15s,
     opacity ease-in-out 0.15s;
 
   /* 48px icons are shown at 36px */

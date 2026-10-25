@@ -11,7 +11,9 @@
   border: 1px solid var(--border-color);
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition:
+    background-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
 
   &:hover {
     color: var(--link-color);
