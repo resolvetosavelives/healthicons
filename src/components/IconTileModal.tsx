@@ -73,6 +73,8 @@ export function IconTileModal(props: IconTileModalProps) {
   // modal: the rest of the page can't be clicked or tabbed to, and Escape
   // closes it.
   const dialogRef = useRef<HTMLDialogElement>(null);
+  // the header gets a dividing line once the content scrolls under it
+  const [scrolled, setScrolled] = useState(false);
   const onClose = useRef(props.onClose);
   onClose.current = props.onClose;
   useEffect(() => {
@@ -238,7 +240,13 @@ export function IconTileModal(props: IconTileModalProps) {
   const typeLabel = props.iconType === 'filled' ? 'filled' : 'outline';
   const content = (
     <>
-      <div className={styles.modalWrapper}>
+      {/* stays at the top as the dialog scrolls, so the title, arrows and
+          close button are always in the same place */}
+      <header
+        className={classnames(styles.modalHeader, {
+          [styles.modalHeaderScrolled]: scrolled
+        })}
+      >
         <div className={styles.nextPrevLinksWrapper}>
           {prevIcon ? (
             <Link
@@ -274,6 +282,15 @@ export function IconTileModal(props: IconTileModalProps) {
         <h1 id="icon-modal-title" className={styles.modalTitle}>
           {props.icon.title}
         </h1>
+        <button
+          onClick={props.onClose}
+          className={styles.modalClose}
+          aria-label="Close"
+        >
+          <LineIcon d={CLOSE} />
+        </button>
+      </header>
+      <div className={styles.modalWrapper}>
         {/* everything below the title; the desktop preview boxes are
               positioned from its top */}
         <div className={styles.modalContent}>
@@ -536,13 +553,6 @@ export function IconTileModal(props: IconTileModalProps) {
           available icons.
         </p>
       </footer>
-      <button
-        onClick={props.onClose}
-        className={styles.modalClose}
-        aria-label="Close"
-      >
-        <LineIcon d={CLOSE} />
-      </button>
     </>
   );
 
@@ -551,6 +561,7 @@ export function IconTileModal(props: IconTileModalProps) {
       ref={dialogRef}
       open={true}
       className={styles.modalContainer}
+      onScroll={(e) => setScrolled(e.currentTarget.scrollTop > 0)}
       aria-labelledby="icon-modal-title"
     >
       {content}
