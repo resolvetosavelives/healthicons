@@ -1,8 +1,32 @@
 {
   "extends": [
-    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
     "stylelint-config-css-modules",
-    "stylelint-config-prettier",
     "stylelint-prettier/recommended"
-  ]
+  ],
+  "rules": {
+    "selector-class-pattern": [
+      "^[a-z][a-zA-Z0-9]*(-[a-zA-Z0-9]+)*$",
+      {
+        "message": "Use camelCase for CSS module classes (styles.iconTile) or kebab-case for global ones (.icon-mask)"
+      }
+    ],
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "color-function-alias-notation": null,
+    "hue-degree-notation": null,
+    "media-feature-range-notation": null,
+    "selector-id-pattern": [
+      "^([a-z][a-z0-9]*(-[a-z0-9]+)*|__next)$",
+      {
+        "message": "Use kebab-case for ids (#__next is set by Next.js)"
+      }
+    ],
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      {
+        "ignoreShorthands": ["grid-template"]
+      }
+    ]
+  }
 }

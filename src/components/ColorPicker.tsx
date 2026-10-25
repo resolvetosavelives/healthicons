@@ -3,9 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../store';
 import { setColor } from '../store/search';
 import { parseHexColor } from '../lib/iconColor';
+import { DEFAULT_ICON_COLOR, useTheme } from './ThemeToggle';
 import styles from './FilterSidebar.module.scss';
-
-const DEFAULT_COLOR = '#000000';
 
 export function ColorPicker() {
   const dispatch = useDispatch();
@@ -13,6 +12,13 @@ export function ColorPicker() {
   // what's typed in the hex field, which may be an incomplete color
   const [draft, setDraft] = useState(color);
   const typing = useRef(false);
+  // with no color chosen, icons are black, or white in night mode
+  const defaultColor = DEFAULT_ICON_COLOR[useTheme()];
+
+  // choosing the default color is the same as choosing none, so it changes
+  // with night mode like the default does (a color someone picked stays)
+  const choose = (value: string) =>
+    dispatch(setColor(value === defaultColor ? '' : value));
 
   // show color changes from elsewhere (the color wheel, Reset, the URL) in the
   // field, but not while typing in it: a valid shorthand like "abc" would
@@ -28,30 +34,32 @@ export function ColorPicker() {
   useEffect(() => {
     document.documentElement.style.setProperty(
       '--icon-color',
-      color || DEFAULT_COLOR
+      color || defaultColor
     );
-  }, [color]);
+  }, [color, defaultColor]);
 
   return (
     <div className={styles.colorRow}>
       <div className={styles.colorField}>
         <label
           className={styles.colorSwatch}
-          style={{ backgroundColor: color || DEFAULT_COLOR }}
+          // the default color comes from CSS too, so it's right for night mode
+          // before the page's code runs
+          style={{ backgroundColor: color || 'var(--default-icon-color)' }}
           title="Pick a color"
         >
           <span className="visually-hidden">Pick an icon color</span>
           <input
             type="color"
-            value={color || DEFAULT_COLOR}
-            onChange={(e) => dispatch(setColor(e.target.value))}
+            value={color || defaultColor}
+            onChange={(e) => choose(e.target.value)}
           />
         </label>
         <input
           type="text"
           className={styles.colorInput}
           aria-label="Icon color hex value"
-          placeholder={DEFAULT_COLOR}
+          placeholder={defaultColor}
           spellCheck={false}
           autoComplete="off"
           autoCorrect="off"
@@ -66,7 +74,7 @@ export function ColorPicker() {
             } else {
               const parsed = parseHexColor(value);
               if (parsed) {
-                dispatch(setColor(parsed));
+                choose(parsed);
               }
             }
           }}

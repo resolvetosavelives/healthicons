@@ -31,7 +31,8 @@ export function IconImage({
         alt={alt}
         loading={lazy ? 'lazy' : undefined}
         decoding="async"
-        className={className}
+        // icon-image: shown light in night mode (see global.css)
+        className={classnames('icon-image', className)}
       />
     );
   }

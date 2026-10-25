@@ -23,7 +23,7 @@
   position: sticky;
   top: 0;
   z-index: 25;
-  background: #fff;
+  background: var(--page-color);
 }
 
 .topBarHidden {
@@ -36,26 +36,31 @@
 }
 
 .topBarAnimated {
-  transition: transform 0.2s ease-in-out, visibility 0.2s;
+  transition:
+    transform 0.2s ease-in-out,
+    visibility 0.2s;
 }
 
 .topbarDownload {
   grid-area: download-area;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
 }
 
 .topbarTitle {
   a {
     font-weight: bold;
     display: inline-block;
-    background: url(/health-icons-logo.svg) 0 50% no-repeat;
+    background: url('/health-icons-logo.svg') 0 50% no-repeat;
 
     /* 20% smaller on mobile; full size on desktop below */
     background-size: 19px;
     padding-left: 26px;
     min-height: 1.04rem;
     font-size: 1.04rem;
+
     &:link,
     &:visited {
       text-decoration: none;
@@ -65,7 +70,7 @@
 
 .topbarLinks {
   grid-area: mobile-links-area;
-  margin: 0 -1rem -1rem -1rem;
+  margin: 0 -1rem -1rem;
   padding: 0 1rem;
   list-style-type: none;
   display: grid;
@@ -75,7 +80,7 @@
 
   /* it hangs below the header's box, so it needs its own background when
      the header is pinned over the icons */
-  background: #fff;
+  background: var(--page-color);
   font-size: 13px;
   border-top: 1px solid var(--link-decoration-color);
   border-bottom: 1px solid var(--link-decoration-color);
@@ -85,7 +90,7 @@
    sit on the bar's bottom line like a tab; the doubled class beats the
    global a:link colors */
 .topbarLinks .link {
-  color: #2f2f35;
+  color: var(--heading-color);
   transition: color 0.15s ease-in-out;
   position: relative;
   display: flex;
@@ -131,8 +136,8 @@
 }
 
 .buttonLink {
-  background: var(--link-color) url(/ui/folder-download-line-white.svg) 0.65rem
-    50% no-repeat;
+  background: var(--button-color) url('/ui/folder-download-line-white.svg')
+    0.65rem 50% no-repeat;
   display: inline-block;
   background-size: 16px;
   color: #fff;
@@ -149,7 +154,7 @@
 
   &:hover {
     text-decoration: none;
-    background-color: var(--link-color-dark);
+    background-color: var(--button-hover-color);
   }
 }
 
@@ -173,8 +178,8 @@
 }
 
 .buttonLink:focus-visible {
-  background: var(--link-color-dark) url(/ui/folder-download-line-white.svg)
-    0.65rem 50% / 16px no-repeat;
+  background: var(--button-hover-color)
+    url('/ui/folder-download-line-white.svg') 0.65rem 50% / 16px no-repeat;
   outline: 2px solid var(--link-color);
   outline-offset: 2px;
 }
@@ -205,7 +210,7 @@
       to right,
       var(--sidebar-color) calc(2rem + var(--sidebar-width) - 1px),
       var(--border-color) 0 calc(2rem + var(--sidebar-width)),
-      #fff 0
+      var(--page-color) 0
     );
   }
 
@@ -230,7 +235,7 @@
     border-top: none;
     border-bottom: none;
     font-size: 14px;
-    grid-gap: 2rem;
+    gap: 2rem;
     justify-content: start;
   }
 

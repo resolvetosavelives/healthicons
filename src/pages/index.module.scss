@@ -117,10 +117,7 @@
       content: '';
       position: absolute;
       z-index: -1;
-      top: -2rem;
-      bottom: -2rem;
-      left: -100vw;
-      right: calc(100% - var(--sidebar-width));
+      inset: -2rem calc(100% - var(--sidebar-width)) -2rem -100vw;
       background: var(--sidebar-color);
     }
   }

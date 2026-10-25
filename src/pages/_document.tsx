@@ -1,10 +1,16 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 import { HIDE_IF_DISMISSED_SCRIPT } from '../components/AnnouncementBar';
+import { SET_THEME_SCRIPT } from '../components/ThemeToggle';
 
 export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        {/* night mode or not, before the page is drawn (no flash) */}
+        <script
+          // eslint-disable-next-line @typescript-eslint/naming-convention
+          dangerouslySetInnerHTML={{ __html: SET_THEME_SCRIPT }}
+        />
         {/* hides the announcement bar before the page is drawn if it was
             dismissed on an earlier visit (no flash) */}
         <script

@@ -22,7 +22,7 @@
   &:focus-visible {
     outline: 2px solid var(--link-color);
     outline-offset: 1px;
-    background: #f9f9fc;
+    background: var(--tile-hover-color);
   }
 }
 
@@ -60,7 +60,9 @@
   border: 1px solid transparent;
   border-radius: 10px;
   opacity: 0.85;
-  transition: border-color ease-in-out 0.15s, background-color ease-in-out 0.15s,
+  transition:
+    border-color ease-in-out 0.15s,
+    background-color ease-in-out 0.15s,
     opacity ease-in-out 0.15s;
 
   /* 48px icons are shown at 36px */
@@ -109,7 +111,7 @@
 
 .iconItem:focus-visible .iconThumb {
   opacity: 1;
-  background: #fff;
+  background: var(--page-color);
   border-color: var(--link-decoration-color);
   box-shadow: 0 1px 4px rgba(102, 102, 255, 0.15);
 }
@@ -123,7 +125,7 @@
 /* only show hover states on devices that can hover, so they don't stick after a tap */
 @media (hover: hover) {
   .iconGroup:hover {
-    background: #f9f9fc;
+    background: var(--tile-hover-color);
   }
 
   .iconGroup:hover .iconTitle {
@@ -132,7 +134,7 @@
 
   .iconItem:hover .iconThumb {
     opacity: 1;
-    background: #fff;
+    background: var(--page-color);
     border-color: var(--link-decoration-color);
     box-shadow: 0 1px 4px rgba(102, 102, 255, 0.15);
   }

@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import classnames from 'classnames';
 import styles from './TopBar.module.scss';
 import { AnnouncementBar } from './AnnouncementBar';
+import { ThemeToggle } from './ThemeToggle';
 
 const isIconsPage = (path: string) => path === '/' || path.startsWith('/icon/');
 
@@ -185,14 +186,15 @@ export function TopBar() {
             </a>
           </li>
         </ul>
-        {/* only offered alongside the icons themselves */}
-        {isIconsPage(pathname) && (
-          <div className={styles.topbarDownload}>
+        <div className={styles.topbarDownload}>
+          <ThemeToggle />
+          {/* only offered alongside the icons themselves */}
+          {isIconsPage(pathname) && (
             <a href="/icons.zip" className={styles.buttonLink}>
               Download all
             </a>
-          </div>
-        )}
+          )}
+        </div>
       </nav>
       {/* marks where the header ends in the page */}
       <div ref={navEnd} />
