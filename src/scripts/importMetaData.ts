@@ -183,4 +183,32 @@ client.file(figmaFilename).then(({ data }) => {
     `${ICONS_PATH}/meta-data.json`,
     JSON.stringify(metaDataArray, null, ' ')
   );
-});
+}, explainFigmaError);
+
+// Figma's API limits how often a file can be read, depending on the plan and
+// the token owner's seat. When it refuses (429), it says how long to wait.
+function explainFigmaError(error) {
+  const response = error.response;
+  if (response?.status !== 429) {
+    throw error;
+  }
+  const headers = response.headers;
+  const retryAfter = Number(headers['retry-after']);
+  console.log(' ⛔️ Figma refused the request: too many requests (429)');
+  if (retryAfter) {
+    const hours = retryAfter / 3600;
+    console.log(
+      `    Try again in ${
+        hours >= 1
+          ? `${Math.ceil(hours)} hour(s)`
+          : `${Math.ceil(retryAfter / 60)} minute(s)`
+      }`
+    );
+  }
+  console.log(
+    `    Plan: ${headers['x-figma-plan-tier'] ?? 'unknown'}, limit: ${
+      headers['x-figma-rate-limit-type'] ?? 'unknown'
+    } (a "low" limit means the token's owner has a View or Collab seat)`
+  );
+  process.exit(1);
+}

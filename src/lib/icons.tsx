@@ -26,7 +26,11 @@ export interface Icon {
 }
 
 export async function getCategoriesAndIcons(): Promise<Category[]> {
-  const dirNames = await fs.readdir(ICONS_DIRECTORY);
+  // only the category folders: other files can turn up, like macOS's
+  // .DS_Store
+  const dirNames = (await fs.readdir(ICONS_DIRECTORY, { withFileTypes: true }))
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name);
   const categories = await Promise.all(
     dirNames.map(async (dirName) => {
       return {
@@ -43,7 +47,10 @@ export async function getCategoriesAndIcons(): Promise<Category[]> {
 
 async function getIcons(dirName: string): Promise<Icon[]> {
   const dirPath = path.join(ICONS_DIRECTORY, dirName);
-  const fileNames = await fs.readdir(dirPath);
+  // only the SVGs: other files can turn up, like macOS's .DS_Store
+  const fileNames = (await fs.readdir(dirPath)).filter((fileName) =>
+    fileName.endsWith('.svg')
+  );
   const icons = await Promise.all(
     fileNames.map(async (fileName) => {
       const id = fileName.replace(/\.[^/.]+$/, '');
