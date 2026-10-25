@@ -118,6 +118,10 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/body/neurology.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/body/breast</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/breast.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/body/breasts</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/breasts.svg</image:loc></image:image>
   </url>
@@ -325,6 +329,10 @@
   <url>
     <loc>https://healthicons.org/icon/outline/conditions/bladder-cancer</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/conditions/bladder-cancer.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/conditions/breast-cancer</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/conditions/breast-cancer.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/conditions/burn</loc>
@@ -617,6 +625,10 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/blood-pressure_2.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/devices/braces</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/braces.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/devices/breast-pump</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/breast-pump.svg</image:loc></image:image>
   </url>
@@ -676,6 +688,11 @@
   <url>
     <loc>https://healthicons.org/icon/outline/devices/dialysis</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/dialysis.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/devices/dialysis-alt</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/dialysis-alt.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/devices/dialysis-alt.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/devices/ecmo</loc>
@@ -2154,6 +2171,10 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/critical-care.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/specialties/dermatology</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/dermatology.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/specialties/discharge-lounge</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/discharge-lounge.svg</image:loc></image:image>
   </url>
@@ -2353,6 +2374,10 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/i-schedule_school_date_time.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/symbols/camera</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/camera.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/symbols/cancel</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/cancel.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/cancel.svg</image:loc></image:image>
@@ -2426,6 +2451,10 @@
     <loc>https://healthicons.org/icon/outline/symbols/i-documents_denied</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/i-documents_denied.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/i-documents_denied.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/symbols/skin-layers</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/skin-layers.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/symbols/dhis2-logo</loc>
@@ -2561,6 +2590,11 @@
     <loc>https://healthicons.org/icon/outline/symbols/heartbeat</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/heartbeat.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/heartbeat.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/symbols/heat-therapy</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/heat-therapy.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/heat-therapy.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/symbols/height</loc>
