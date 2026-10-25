@@ -150,10 +150,6 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/body/ear.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/body/acupuncture-2</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/acupuncture-2.svg</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://healthicons.org/icon/outline/body/enzyme</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/enzyme.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/body/enzyme.svg</image:loc></image:image>
@@ -174,26 +170,14 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/body/foot.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/body/acupuncture-3</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/acupuncture-3.svg</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://healthicons.org/icon/outline/body/gallbladder</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/gallbladder.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/body/gallbladder.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/body/acupuncture-4</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/acupuncture-4.svg</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://healthicons.org/icon/outline/body/head</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/head.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/body/head.svg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://healthicons.org/icon/outline/body/acupuncture-1</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/acupuncture-1.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/body/heart-organ</loc>
@@ -1318,6 +1302,7 @@
   <url>
     <loc>https://healthicons.org/icon/outline/graphs/chart-pie</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/graphs/chart-pie.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/graphs/chart-pie.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/graphs/chart-bar_stacked</loc>
@@ -2525,6 +2510,10 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/default.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/symbols/acupuncture-2</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/acupuncture-2.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/symbols/ear-nose-throat</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/ear-nose-throat.svg</image:loc></image:image>
   </url>
@@ -2572,6 +2561,10 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/fingerprint.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/symbols/acupuncture-3</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/acupuncture-3.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/symbols/sexual-reproductive_health</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/sexual-reproductive_health.svg</image:loc></image:image>
   </url>
@@ -2589,9 +2582,17 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/guide-dog.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/symbols/acupuncture-4</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/acupuncture-4.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/symbols/hazardous</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/hazardous.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/hazardous.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/symbols/acupuncture-1</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/acupuncture-1.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/symbols/head-circumference</loc>
@@ -2885,6 +2886,7 @@
   <url>
     <loc>https://healthicons.org/icon/outline/symbols/close-policy_gaps_alt</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/close-policy_gaps_alt.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/close-policy_gaps_alt.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/symbols/polygon</loc>
