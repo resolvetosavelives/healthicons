@@ -13000,5 +13000,22 @@
   "formats": [
    "48px"
   ]
+ },
+ {
+  "id": "maxillofacial",
+  "category": "specialties",
+  "path": "specialties/maxillofacial",
+  "tags": [
+   "Dentistry",
+   "Face",
+   "Jaw",
+   "Oral Health",
+   "Oral Surgery",
+   "Specialty"
+  ],
+  "title": "Maxillofacial",
+  "formats": [
+   "48px"
+  ]
  }
 ]

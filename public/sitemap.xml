@@ -2265,6 +2265,10 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/intensive-care_unit.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/specialties/maxillofacial</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/maxillofacial.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/specialties/medical-records</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/specialties/medical-records.svg</image:loc></image:image>
   </url>
