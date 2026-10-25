@@ -33,11 +33,8 @@
   left: 0;
   z-index: -1;
   width: 300%;
-  background: radial-gradient(
-      circle at 8% 25%,
-      hsl(245, 100%, 83%) 0,
-      transparent 30%
-    ),
+  background:
+    radial-gradient(circle at 8% 25%, hsl(245, 100%, 83%) 0, transparent 30%),
     radial-gradient(circle at 30% 110%, hsl(270, 85%, 91%) 0, transparent 30%),
     radial-gradient(circle at 52% -10%, hsl(205, 90%, 82%) 0, transparent 30%),
     radial-gradient(circle at 72% 100%, hsl(250, 95%, 91%) 0, transparent 28%),
@@ -107,11 +104,8 @@
   width: 24px;
   height: 24px;
   background: var(--link-color);
-  -webkit-mask-size: contain;
   mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-position: center;
   mask-position: center;
 }
 

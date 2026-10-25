@@ -1,15 +1,12 @@
 .modalContainer {
   /* resets the browser's default <dialog> styles */
-  right: auto;
-  bottom: auto;
+  inset: 5% auto auto 5%;
   max-width: none;
   margin: 0;
   padding: 0;
   color: inherit;
   background: var(--page-color);
   width: 90%;
-  top: 5%;
-  left: 5%;
   position: fixed;
   border-radius: 5px;
   box-shadow: 0 0 0 10px var(--link-decoration-color);
@@ -26,10 +23,12 @@
       width: 6px;
       background: transparent;
     }
+
     &::-webkit-scrollbar-thumb {
       background: var(--border-color);
       border-radius: 3px;
     }
+
     &::-webkit-scrollbar-track {
       background: transparent;
     }
@@ -48,7 +47,8 @@
    newer than this stylelint version */
 .modalContainer:not(:modal) {
   z-index: 100;
-  box-shadow: 0 0 0 10px var(--link-decoration-color),
+  box-shadow:
+    0 0 0 10px var(--link-decoration-color),
     0 0 0 100vmax var(--overlay-color);
 }
 
@@ -70,7 +70,9 @@
   background: none;
   border: 1px solid transparent;
   border-radius: 8px;
-  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition:
+    background-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
 }
 
 /* a light outline marks the close button out from the arrows beside it */
@@ -105,7 +107,7 @@
   /* the same dark grey as the category headings */
   color: var(--heading-color);
   letter-spacing: 0.1rem;
-  margin: 0 0 0.2rem 0;
+  margin: 0 0 0.2rem;
 }
 
 /* each icon section (standard, small): on mobile its preview box sits to
@@ -155,12 +157,12 @@
 }
 
 .modalButtons {
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
 }
 
 .modalButton {
-  background: var(--button-color) url(/ui/download-2-line-white.svg) 0.7rem 50%
-    no-repeat;
+  background: var(--button-color) url('/ui/download-2-line-white.svg') 0.7rem
+    50% no-repeat;
   background-size: 14px;
   color: #fff;
   margin: 0.4rem 0.5rem 0 0;
@@ -196,7 +198,7 @@
    which also removed the download icon */
 a.modalButton:focus-visible {
   color: #fff;
-  background: var(--button-hover-color) url(/ui/download-2-line-white.svg)
+  background: var(--button-hover-color) url('/ui/download-2-line-white.svg')
     0.7rem 50% / 14px no-repeat;
 }
 
@@ -248,12 +250,12 @@ a.modalButton:focus-visible {
 }
 
 .filename {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
   font-size: 0.85rem;
 }
 
 .modalTags {
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -321,7 +323,7 @@ a.modalButton:focus-visible {
     width: 6px;
     height: 6px;
     margin: 0 0 2px 0.5rem;
-    border: solid currentColor;
+    border: solid currentcolor;
     border-width: 0 1.5px 1.5px 0;
     transform: rotate(45deg);
     transition: transform 0.15s ease-in-out;
@@ -338,7 +340,7 @@ a.modalButton:focus-visible {
 .mobileCopyButton {
   color: var(--link-color);
   background-color: var(--page-color);
-  background-image: url(/ui/copy.svg);
+  background-image: url('/ui/copy.svg');
   box-shadow: inset 0 0 0 1px var(--link-decoration-color);
   transition: box-shadow ease-in-out 0.15s;
 
@@ -346,12 +348,13 @@ a.modalButton:focus-visible {
   &:hover {
     color: var(--link-color);
     background-color: var(--page-color);
-    box-shadow: inset 0 0 0 1px var(--link-color),
+    box-shadow:
+      inset 0 0 0 1px var(--link-color),
       0 1px 4px rgba(102, 102, 255, 0.3);
   }
 
   &.copyButtonCopied {
-    background-image: url(/ui/check.svg);
+    background-image: url('/ui/check.svg');
   }
 }
 
@@ -395,7 +398,7 @@ a.modalButton:focus-visible {
   line-height: 1.5;
   color: var(--code-text-color);
   white-space: pre-wrap;
-  word-break: break-word;
+  overflow-wrap: anywhere;
   max-height: 3.75rem;
   overflow-y: scroll;
   width: 100%;
@@ -410,7 +413,7 @@ a.modalButton:focus-visible {
   font-size: 0.7rem;
   font-weight: bold;
   color: var(--link-color);
-  background: var(--page-color) url(/ui/copy.svg) 0.5rem 50% / 13px no-repeat;
+  background: var(--page-color) url('/ui/copy.svg') 0.5rem 50% / 13px no-repeat;
   border: none;
   box-shadow: inset 0 0 0 1px var(--link-decoration-color);
   border-radius: 999px;
@@ -418,7 +421,8 @@ a.modalButton:focus-visible {
   transition: box-shadow ease-in-out 0.15s;
 
   &:hover {
-    box-shadow: inset 0 0 0 1px var(--link-color),
+    box-shadow:
+      inset 0 0 0 1px var(--link-color),
       0 1px 4px rgba(102, 102, 255, 0.3);
   }
 
@@ -429,7 +433,7 @@ a.modalButton:focus-visible {
 }
 
 .copyButtonCopied {
-  background-image: url(/ui/check.svg);
+  background-image: url('/ui/check.svg');
 }
 
 @media (min-width: 60rem) {

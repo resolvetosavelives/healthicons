@@ -36,7 +36,9 @@
 }
 
 .topBarAnimated {
-  transition: transform 0.2s ease-in-out, visibility 0.2s;
+  transition:
+    transform 0.2s ease-in-out,
+    visibility 0.2s;
 }
 
 .topbarDownload {
@@ -51,13 +53,14 @@
   a {
     font-weight: bold;
     display: inline-block;
-    background: url(/health-icons-logo.svg) 0 50% no-repeat;
+    background: url('/health-icons-logo.svg') 0 50% no-repeat;
 
     /* 20% smaller on mobile; full size on desktop below */
     background-size: 19px;
     padding-left: 26px;
     min-height: 1.04rem;
     font-size: 1.04rem;
+
     &:link,
     &:visited {
       text-decoration: none;
@@ -67,7 +70,7 @@
 
 .topbarLinks {
   grid-area: mobile-links-area;
-  margin: 0 -1rem -1rem -1rem;
+  margin: 0 -1rem -1rem;
   padding: 0 1rem;
   list-style-type: none;
   display: grid;
@@ -126,7 +129,7 @@
 }
 
 .buttonLink {
-  background: var(--button-color) url(/ui/folder-download-line-white.svg)
+  background: var(--button-color) url('/ui/folder-download-line-white.svg')
     0.65rem 50% no-repeat;
   display: inline-block;
   background-size: 16px;
@@ -168,8 +171,8 @@
 }
 
 .buttonLink:focus-visible {
-  background: var(--button-hover-color) url(/ui/folder-download-line-white.svg)
-    0.65rem 50% / 16px no-repeat;
+  background: var(--button-hover-color)
+    url('/ui/folder-download-line-white.svg') 0.65rem 50% / 16px no-repeat;
   outline: 2px solid var(--link-color);
   outline-offset: 2px;
 }
@@ -225,7 +228,7 @@
     border-top: none;
     border-bottom: none;
     font-size: 14px;
-    grid-gap: 2rem;
+    gap: 2rem;
     justify-content: start;
   }
 

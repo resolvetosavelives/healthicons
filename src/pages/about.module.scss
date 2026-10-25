@@ -1,12 +1,12 @@
 .codeBlock {
   background: var(--surface-color);
-  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  padding: 1rem 1.5rem 1.5rem;
   font-family: monospace;
   border-radius: 10px;
 }
 
 .aboutLicense {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0;
 }
 
 .figmaPlugin {
@@ -25,7 +25,7 @@
   text-align: center;
   width: 100%;
   display: block;
-  margin: -0.5em 0 2em 0;
+  margin: -0.5em 0 2em;
   font-size: 0.9rem;
   color: var(--muted-text-color);
 }
