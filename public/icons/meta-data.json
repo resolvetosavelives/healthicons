@@ -4100,6 +4100,7 @@
   "path": "body/spine",
   "tags": [
    "Back",
+   "Bone",
    "Organ",
    "Spinal Cord",
    "Vertebrae"
@@ -5679,7 +5680,7 @@
   "category": "specialties",
   "path": "specialties/rheumatology",
   "tags": [
-   "Bones",
+   "Bone",
    "Department",
    "Joints",
    "Ortho",
@@ -7921,6 +7922,7 @@
   "path": "body/skeleton",
   "tags": [
    "Body",
+   "Bone",
    "Death",
    "Head",
    "Human",
@@ -7939,6 +7941,7 @@
   "path": "body/skull",
   "tags": [
    "Body",
+   "Bone",
    "Death",
    "Head",
    "Human",
@@ -12670,6 +12673,146 @@
    "Renal Care"
   ],
   "title": "Dialysis",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "breast-cancer",
+  "category": "conditions",
+  "path": "conditions/breast-cancer",
+  "tags": [
+   "Breast Health",
+   "Cancer",
+   "Mammogram",
+   "Oncology",
+   "Tumor",
+   "Women's Health"
+  ],
+  "title": "Breast Cancer",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "breast",
+  "category": "body",
+  "path": "body/breast",
+  "tags": [
+   "ANC",
+   "Anatomy",
+   "Antenatal",
+   "Baby",
+   "Breast Health",
+   "Chest",
+   "Mammary Gland",
+   "Nursing"
+  ],
+  "title": "Breast",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "heat-therapy",
+  "category": "symbols",
+  "path": "symbols/heat-therapy",
+  "tags": [
+   "Heat Treatment",
+   "Muscle Relaxation",
+   "Pain Relief",
+   "Physical Therapy",
+   "Thermotherapy",
+   "Warm Compress"
+  ],
+  "title": "Heat Therapy",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "skin-layers",
+  "category": "symbols",
+  "path": "symbols/skin-layers",
+  "tags": [
+   "Dermatologist",
+   "Dermis",
+   "Skin Care",
+   "Skin Conditions",
+   "Skin Health",
+   "Skin Treatment"
+  ],
+  "title": "Dermatology",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "dialysis-alt",
+  "category": "devices",
+  "path": "devices/dialysis-alt",
+  "tags": [
+   "Blood Filtration",
+   "Hemodialysis",
+   "Kidney",
+   "Medical Equipment",
+   "Renal Care",
+   "Renal Therapy"
+  ],
+  "title": "Dialysis Machine",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "braces",
+  "category": "devices",
+  "path": "devices/braces",
+  "tags": [
+   "Dental Appliance",
+   "Dental Care",
+   "Orthodontic Treatment",
+   "Orthodontics",
+   "Teeth Alignment",
+   "Teeth Straightening"
+  ],
+  "title": "Braces",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "dermatology",
+  "category": "specialties",
+  "path": "specialties/dermatology",
+  "tags": [
+   "Dermatologist",
+   "Medical Specialty",
+   "Skin Diseases",
+   "Skin Examination",
+   "Skin Specialist",
+   "Skin Treatment"
+  ],
+  "title": "Dermatology",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "camera",
+  "category": "symbols",
+  "path": "symbols/camera",
+  "tags": [
+   "Digital Camera",
+   "Imaging",
+   "Lens",
+   "Photo Capture",
+   "Photography",
+   "Snapshot"
+  ],
+  "title": "Camera",
   "formats": [
    "48px"
   ]
