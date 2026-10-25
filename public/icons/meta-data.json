@@ -12816,5 +12816,189 @@
   "formats": [
    "48px"
   ]
+ },
+ {
+  "id": "acupuncture-1",
+  "category": "body",
+  "path": "body/acupuncture-1",
+  "tags": [
+   "Acupressure",
+   "Face",
+   "Head",
+   "Headache",
+   "Pain Relief",
+   "Scalp",
+   "Traditional Medicine"
+  ],
+  "title": "Head Acupuncture",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "acupuncture-2",
+  "category": "body",
+  "path": "body/acupuncture-2",
+  "tags": [
+   "Acupressure",
+   "Auricular Therapy",
+   "Auriculotherapy",
+   "Ears",
+   "Hearing",
+   "Pain Relief",
+   "Traditional Medicine"
+  ],
+  "title": "Ear Acupuncture",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "acupuncture-3",
+  "category": "body",
+  "path": "body/acupuncture-3",
+  "tags": [
+   "Acupressure",
+   "Ankle",
+   "Feet",
+   "Pain Relief",
+   "Podiatry",
+   "Reflexology",
+   "Toe",
+   "Traditional Medicine"
+  ],
+  "title": "Foot Acupuncture",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "acupuncture-4",
+  "category": "body",
+  "path": "body/acupuncture-4",
+  "tags": [
+   "Acupressure",
+   "Fingers",
+   "Hands",
+   "Pain Relief",
+   "Palm",
+   "Traditional Medicine",
+   "Wrist"
+  ],
+  "title": "Hand Acupuncture",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "bone",
+  "category": "body",
+  "path": "body/bone",
+  "tags": [
+   "Anatomy",
+   "Body Structure",
+   "Calcium",
+   "Orthopedics",
+   "Skeletal System",
+   "Skeleton"
+  ],
+  "title": "Bone",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "bone-long",
+  "category": "body",
+  "path": "body/bone-long",
+  "tags": [
+   "Anatomy",
+   "Femur",
+   "Fibula",
+   "Orthopedics",
+   "Skeleton",
+   "Tibia"
+  ],
+  "title": "Long Bone",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "happy-sleepy",
+  "category": "emotions",
+  "path": "emotions/happy-sleepy",
+  "tags": [
+   "Emoji",
+   "Emoticon",
+   "Emotion",
+   "Face",
+   "Happy",
+   "Sleeping",
+   "Smiling"
+  ],
+  "title": "Happy Sleepy",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "liquid-medicine",
+  "category": "medications",
+  "path": "medications/liquid-medicine",
+  "tags": [
+   "Dose",
+   "Liquid Dosage",
+   "Medication",
+   "Medicine Bottle",
+   "Oral Medication",
+   "Pharmacy",
+   "Prescription",
+   "Syrup"
+  ],
+  "title": "Liquid Medicine",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "topical-medicine",
+  "category": "medications",
+  "path": "medications/topical-medicine",
+  "tags": [
+   "Cream",
+   "Dermatology",
+   "Gel",
+   "Lotion",
+   "Medication",
+   "Ointment",
+   "Skin Treatment",
+   "Tube"
+  ],
+  "title": "Topical Medicine",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "mental-health-therapy",
+  "category": "symbols",
+  "path": "symbols/mental-health-therapy",
+  "tags": [
+   "Counseling",
+   "Emotional Support",
+   "Mental Wellness",
+   "Mind",
+   "Psychiatric Care",
+   "Psychology",
+   "Psychotherapy",
+   "Wellbeing"
+  ],
+  "title": "Mental Health Therapy",
+  "formats": [
+   "48px"
+  ]
  }
 ]
