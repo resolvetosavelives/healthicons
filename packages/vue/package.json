@@ -2,7 +2,7 @@
   "name": "@healthicons/vue",
   "description": "Health Icons as Vue 3 components. Free, open source health icons from healthicons.org.",
   "version": "1.2.0",
-  "license": "MIT",
+  "license": "CC0-1.0",
   "homepage": "https://healthicons.org",
   "repository": {
     "type": "git",

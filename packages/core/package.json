@@ -2,7 +2,7 @@
   "name": "@healthicons/core",
   "description": "Health Icons for any website: SVG strings, elements, or placeholders replaced with icons. Free, open source health icons from healthicons.org.",
   "version": "1.2.0",
-  "license": "MIT",
+  "license": "CC0-1.0",
   "homepage": "https://healthicons.org",
   "repository": {
     "type": "git",

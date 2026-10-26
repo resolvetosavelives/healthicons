@@ -55,4 +55,4 @@ Any other options (`class`, `style`, `aria-label`...) become attributes of the `
 
 In JavaScript each icon's name is its name on [healthicons.org](https://healthicons.org) in PascalCase: `blood-bag` is `BloodBag`. Names that can't start a JavaScript name use their title: `0`–`9` are `Number0`–`Number9`, `!` is `ExclamationPoint` and `4x4` is `SUV`.
 
-Health Icons are in the public domain ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)); the code is MIT licensed.
+Health Icons and this package's code are in the public domain ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)).

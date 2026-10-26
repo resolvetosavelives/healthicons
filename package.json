@@ -1,7 +1,23 @@
 {
   "name": "healthicons",
-  "version": "2.0.0",
-  "license": "MIT",
+  "version": "3.0.0",
+  "description": "Free, open source health icons as SVG and PNG files, in outline and filled styles",
+  "homepage": "https://healthicons.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resolvetosavelives/healthicons.git"
+  },
+  "bugs": "https://github.com/resolvetosavelives/healthicons/issues",
+  "keywords": [
+    "icons",
+    "health",
+    "healthcare",
+    "medical",
+    "svg",
+    "png",
+    "public-health"
+  ],
+  "license": "CC0-1.0",
   "scripts": {
     "dev": "next dev -p 3005",
     "prebuild": "yarn generate-site-map",
