@@ -18,7 +18,9 @@
   color: var(--text-color);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
 
   &:link,
   &:visited {
@@ -143,12 +145,9 @@
   display: inline-block;
   flex-shrink: 0;
   vertical-align: -0.125em;
-  background: currentColor;
-  -webkit-mask-size: contain;
+  background: currentcolor;
   mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-position: center;
   mask-position: center;
 }
 
@@ -267,7 +266,7 @@
   font-size: 0.8rem;
   font-weight: bold;
   color: var(--link-color);
-  background: #fff url(/ui/copy.svg) 0.6rem 50% / 14px no-repeat;
+  background: #fff url('/ui/copy.svg') 0.6rem 50% / 14px no-repeat;
   border: none;
   border-radius: 999px;
   box-shadow: inset 0 0 0 1px var(--link-decoration-color);
@@ -275,7 +274,8 @@
   transition: box-shadow ease-in-out 0.15s;
 
   &:hover {
-    box-shadow: inset 0 0 0 1px var(--link-color),
+    box-shadow:
+      inset 0 0 0 1px var(--link-color),
       0 1px 4px rgba(102, 102, 255, 0.3);
   }
 
@@ -286,7 +286,7 @@
 }
 
 .promptCopied {
-  background-image: url(/ui/check.svg);
+  background-image: url('/ui/check.svg');
 }
 
 /* the AI prompt: in a box in the side column on desktop, like How to
