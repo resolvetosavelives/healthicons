@@ -5,6 +5,21 @@
     <loc>https://healthicons.org/</loc>
   </url>
   <url>
+    <loc>https://healthicons.org/packages</loc>
+  </url>
+  <url>
+    <loc>https://healthicons.org/packages/react</loc>
+  </url>
+  <url>
+    <loc>https://healthicons.org/packages/vue</loc>
+  </url>
+  <url>
+    <loc>https://healthicons.org/packages/svelte</loc>
+  </url>
+  <url>
+    <loc>https://healthicons.org/packages/javascript</loc>
+  </url>
+  <url>
     <loc>https://healthicons.org/about</loc>
   </url>
   <url>
