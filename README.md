@@ -18,6 +18,18 @@ Icons can be downloaded:
 - Together as [a ZIP file](https://healthicons.org/icons.zip)
 - Via [NPM](https://www.npmjs.com/package/healthicons): `npm i healthicons` or `yarn add healthicons`
 
+### The npm package
+
+The `healthicons` package holds the icon files, at `healthicons/public/icons/{svg,png}/{style}/{category}/{icon}.{svg,png}`. The styles are `outline`, `filled`, `outline-24px` and `filled-24px`, and PNGs come at 48px (`{icon}.png`) and 96px (`{icon}@2x.png`). For example:
+
+```
+node_modules/healthicons/public/icons/svg/outline/blood/blood-bag.svg
+```
+
+`public/icons/meta-data.json` lists every icon with its category, title, tags and formats.
+
+Version 3 renamed icon files to use hyphens (`blood_bag.svg` is now `blood-bag.svg`) and moved some icons to new names or categories, so check your paths when upgrading from version 2. [healthicons.org](https://healthicons.org) shows every icon's current name.
+
 ## Request a new icon
 
 Need an icon for your project? Submit a request with an [Issue on GitHub](https://github.com/resolvetosavelives/healthicons/issues/new?assignees=&labels=icon+request&template=icon-request.md&title=Icon+Request%3A+%5Bname+of+icon%5D) using the title `"Icon Request: [name of icon]"` and we will do our best to respond.
@@ -66,7 +78,7 @@ To pull the latest icon information from Figma, update the open-graph images, an
 5. Export as PNG: Select all of the icons and export all as `1x PNG` and `2x PNG`
 6. Export as SVG: Select all of the icons and export all as `SVG`
 7. In your terminal, type: `yarn update-icons`
-8. Test the website locally at `localhost:3000`
+8. Test the website locally at `localhost:3005`
 9. Commit your changes to a new branch on Github
 10. Raise a PR and request a review from another volunteer via Slack
 11. Wait for review

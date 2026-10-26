@@ -1,15 +1,32 @@
 {
   "name": "healthicons",
-  "version": "2.0.0",
-  "license": "MIT",
+  "version": "3.0.0",
+  "description": "Free, open source health icons as SVG and PNG files, in outline and filled styles",
+  "homepage": "https://healthicons.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resolvetosavelives/healthicons.git"
+  },
+  "bugs": "https://github.com/resolvetosavelives/healthicons/issues",
+  "keywords": [
+    "icons",
+    "health",
+    "healthcare",
+    "medical",
+    "svg",
+    "png",
+    "public-health"
+  ],
+  "license": "CC0-1.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3005",
     "prebuild": "yarn generate-site-map",
     "build": "next build",
     "update-icons": "yarn import-meta-data && yarn clean-svgs && yarn generate-icon-og-images && yarn generate-site-map",
     "import-meta-data": "NODE_ENV=local ts-node-dev ./src/scripts/importMetaData.ts",
     "generate-icon-og-images": "NODE_ENV=local ts-node-dev ./src/scripts/generateIconOgImages.ts",
     "generate-site-map": "NODE_ENV=local ts-node-dev ./src/scripts/generateSiteMap.ts",
+    "build-packages": "NODE_ENV=local ts-node-dev ./src/scripts/buildPackages.ts",
     "clean-svgs": "NODE_ENV=local ts-node-dev ./src/scripts/cleanSvgs.ts",
     "lint": "eslint '{src/components,src/lib,src/pages}/**/*.{js,jsx,ts,tsx}'",
     "lint:style": "stylelint '{src,styles}/**/*.{css,scss}'",

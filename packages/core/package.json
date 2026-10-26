@@ -1,0 +1,39 @@
+{
+  "name": "@healthicons/core",
+  "description": "Health Icons for any website: SVG strings, elements, or placeholders replaced with icons. Free, open source health icons from healthicons.org.",
+  "version": "1.2.0",
+  "license": "CC0-1.0",
+  "homepage": "https://healthicons.org",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resolvetosavelives/healthicons.git",
+    "directory": "packages/core"
+  },
+  "bugs": "https://github.com/resolvetosavelives/healthicons/issues",
+  "keywords": [
+    "icons",
+    "health",
+    "healthicons",
+    "svg",
+    "medical"
+  ],
+  "type": "commonjs",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
