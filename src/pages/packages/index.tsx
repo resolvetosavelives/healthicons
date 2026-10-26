@@ -115,7 +115,7 @@ export default function Packages() {
           </li>
           <li>
             Find and add them in Figma with the{' '}
-            <Link href="/about#figma">Health icons Figma plugin</Link>
+            <a href="#figma">Health icons Figma plugin</a>
           </li>
           <li>
             For React Native, there’s a community-made{' '}
@@ -125,6 +125,25 @@ export default function Packages() {
             package (not made by the Health icons team)
           </li>
         </ul>
+
+        <h2 id="figma">Figma plugin</h2>
+        <p>
+          <a href="https://www.figma.com/community/plugin/992844281461869440/Health-Icons-Figma-Plugin">
+            <img
+              src="/ui/figma-plugin.png"
+              alt="Figma plugin demo graphic"
+              width="800"
+              height="400"
+              className={styles.figmaPlugin}
+            />
+          </a>
+          Want to use Health Icons on your next design project?{' '}
+          <a href="https://twitter.com/tkmadeit">Tekeste Kidanu</a> has made a{' '}
+          <a href="https://www.figma.com/community/plugin/992844281461869440/Health-Icons-Figma-Plugin">
+            very slick Figma plugin
+          </a>{' '}
+          to make them super easy to find and include.
+        </p>
       </ContentPage>
     </>
   );

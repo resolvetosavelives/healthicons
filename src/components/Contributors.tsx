@@ -1,6 +1,13 @@
 import styles from './Contributors.module.scss';
 
-const contributors = [
+interface Contributor {
+  name: string;
+  link?: string;
+  avatar: string;
+  maintainer?: boolean;
+}
+
+const contributors: Contributor[] = [
   {
     name: 'Agrata Patel',
     link: 'https://twitter.com/b0urnvita',
@@ -24,7 +31,8 @@ const contributors = [
   {
     name: 'Daniel Burka',
     link: 'https://twitter.com/dburka',
-    avatar: 'https://unavatar.io/twitter/dburka'
+    avatar: 'https://unavatar.io/twitter/dburka',
+    maintainer: true
   },
   {
     name: 'Gershon Paul',
@@ -139,7 +147,8 @@ const contributors = [
   {
     name: 'Jahanvi Singh',
     link: 'https://twitter.com/me_Jahanvi',
-    avatar: 'https://unavatar.io/twitter/me_Jahanvi'
+    avatar: 'https://unavatar.io/twitter/me_Jahanvi',
+    maintainer: true
   },
   {
     name: 'Swetha Ramaswamy',
@@ -197,6 +206,9 @@ export function Contributors() {
               />
               {contributor.name}
             </>
+          )}
+          {contributor.maintainer && (
+            <span className={styles.maintainerBadge}>Maintainer</span>
           )}
         </div>
       ))}

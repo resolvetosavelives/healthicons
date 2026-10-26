@@ -66,31 +66,14 @@ export default function About() {
           <Contribute hasTopMargin={true} />
         </div>
 
-        <h2 id="figma">Figma plugin</h2>
-        <p>
-          <a href="https://www.figma.com/community/plugin/992844281461869440/Health-Icons-Figma-Plugin">
-            <img
-              src="/ui/figma-plugin.png"
-              alt="Figma plugin demo graphic"
-              width="800"
-              height="400"
-              className={styles.figmaPlugin}
-            />
-          </a>
-          Want to use Health Icons on your next design project?{' '}
-          <a href="https://twitter.com/tkmadeit">Tekeste Kidanu</a> has made a{' '}
-          <a href="https://www.figma.com/community/plugin/992844281461869440/Health-Icons-Figma-Plugin">
-            very slick Figma plugin
-          </a>{' '}
-          to make them super easy to find and include.
-        </p>
-
-        <h2 id="react">Packages for React, Vue, Svelte and JavaScript</h2>
+        <h2 id="react">Packages and Figma plugin</h2>
         <p>
           Using Health Icons in your website or app? Our{' '}
           <Link href="/packages">packages</Link> for React, Vue, Svelte and
           plain JavaScript let you import just the icons you need, in either
-          style, at any size and in any color.
+          style, at any size and in any color. Designing in Figma? The{' '}
+          <Link href="/packages#figma">Health Icons Figma plugin</Link> lets you
+          find icons and add them to your designs without leaving Figma.
         </p>
 
         <h2 id="license">Icons license</h2>
