@@ -213,11 +213,16 @@ async function writeModule(dist: string, file: string, source: string) {
   await write(path.join(dist, 'cjs', file), commonJs);
 }
 
+// bundlers read sideEffects from the nearest package.json, so these repeat
+// the package's "sideEffects": false: without it esbuild keeps every icon
 async function writeModuleTypes(dist: string) {
-  await write(path.join(dist, 'esm', 'package.json'), '{ "type": "module" }\n');
+  await write(
+    path.join(dist, 'esm', 'package.json'),
+    '{ "type": "module", "sideEffects": false }\n'
+  );
   await write(
     path.join(dist, 'cjs', 'package.json'),
-    '{ "type": "commonjs" }\n'
+    '{ "type": "commonjs", "sideEffects": false }\n'
   );
 }
 
@@ -307,7 +312,7 @@ async function buildFrameworkPackage(
     await writeModule(
       dist,
       `icons/${icon.componentName}.js`,
-      `import { createIcon } from '../runtime.js';\nexport default createIcon(${JSON.stringify(
+      `import { createIcon } from '../runtime.js';\nexport default /*#__PURE__*/ createIcon(${JSON.stringify(
         icon.componentName
       )}, ${JSON.stringify(icon.data)});\n`
     );
