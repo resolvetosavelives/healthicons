@@ -1,10 +1,14 @@
+/* as tall as the Download all button beside it (its line height plus
+   padding, see TopBar.module.scss), and round */
 .toggle {
+  --size: calc(0.75rem * 1.4 + 0.7rem);
+
   display: inline-flex;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  width: 34px;
-  height: 34px;
+  width: var(--size);
+  height: var(--size);
   padding: 0;
   color: var(--heading-color);
   background: transparent;
@@ -23,6 +27,23 @@
   &:focus-visible {
     outline: 2px solid var(--link-color);
     outline-offset: 2px;
+  }
+}
+
+/* the icon to suit the smaller button on mobile */
+.toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 60rem) {
+  .toggle {
+    --size: calc(0.85rem * 1.4 + 0.8rem);
+  }
+
+  .toggle svg {
+    width: 18px;
+    height: 18px;
   }
 }
 
