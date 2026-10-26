@@ -147,7 +147,9 @@ Project maintainers who do not follow or enforce the Code of Conduct in good fai
 
 This Code of Conduct is adapted from the Contributor Covenant, version 1.4, [available here](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html). For answers to common questions about this code of conduct, see [this FAQ](https://www.contributor-covenant.org/faq).
 
-## MIT License
+## License
+
+The icons and the npm packages are in the public domain ([CC0](https://creativecommons.org/publicdomain/zero/1.0/)). The code for this website is under the MIT License:
 
 Copyright © 2021 Resolve to Save Lives
 

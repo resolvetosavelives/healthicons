@@ -19,3 +19,16 @@
     border: 1px solid var(--muted-text-color);
   }
 }
+
+.maintainerBadge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 7px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--link-color);
+  vertical-align: 1px;
+  background: var(--selected-color);
+  border-radius: 999px;
+}
