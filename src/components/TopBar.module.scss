@@ -123,13 +123,6 @@
   }
 }
 
-/* closer together on the narrowest phones, so all five links fit */
-@media (max-width: 359px) {
-  .topbarLinks {
-    gap: 0.6rem;
-  }
-}
-
 /* some links use a shorter label on mobile */
 .fullLabel {
   display: none;
@@ -156,6 +149,136 @@
     text-decoration: none;
     background-color: var(--button-hover-color);
   }
+}
+
+/* On the narrowest phones, where the five links would be cut off (they need
+   about 336px), Packages, GitHub and Download all move from the links row and
+   the top right into the More menu (see TopBar.tsx) */
+@media (max-width: 379.98px) {
+  .wideOnly {
+    display: none;
+  }
+}
+
+/* the last item in the links row, as tall as the links so the menu opens
+   below the row and an underline can mark it like the active link */
+.moreLinksItem,
+.moreMenu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.moreMenu {
+  position: relative;
+}
+
+/* from 380px up, everything fits without it */
+@media (min-width: 380px) {
+  .moreLinksItem {
+    display: none;
+  }
+}
+
+/* just the dots, like a link in the row; a round tint on hover */
+.moreButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  color: var(--heading-color);
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease-in-out,
+    color 0.15s ease-in-out;
+
+  &:hover,
+  &[aria-expanded='true'] {
+    color: var(--link-color);
+    background: var(--selected-color);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 2px;
+  }
+}
+
+/* on a page that's in the menu (Packages), it's marked like the active link */
+.moreButtonActive {
+  color: var(--link-color);
+}
+
+.moreMenu:has(.moreButtonActive)::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  background: var(--link-color);
+}
+
+.moreList {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 40;
+  min-width: 11rem;
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+  font-size: 14px;
+  background: var(--page-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px var(--shadow-color);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+/* the doubled class beats the global a:link colors */
+.moreList .moreItem {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.75rem;
+  color: var(--heading-color);
+  text-decoration: none;
+  border-radius: 6px;
+
+  &:hover {
+    color: var(--link-color);
+    background: var(--hover-color);
+  }
+
+  &:focus-visible {
+    color: var(--link-color);
+    background: none;
+    outline: 2px solid var(--link-color);
+    outline-offset: -2px;
+  }
+}
+
+.moreList .moreItemActive {
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+/* the download icon in the text color, so it follows night mode */
+.moreList .moreDownload::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5rem;
+  background: currentcolor;
+  mask: url('/ui/folder-download-line.svg') center / contain no-repeat;
 }
 
 /* Keyboard focus in the header: a purple outline, with each element keeping

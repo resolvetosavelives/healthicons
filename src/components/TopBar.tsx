@@ -9,11 +9,14 @@ import { ThemeToggle } from './ThemeToggle';
 const isIconsPage = (path: string) => path === '/' || path.startsWith('/icon/');
 
 // the site's own pages; `active` says which paths count as being on that page,
-// and `shortLabel` (if any) replaces the label on mobile
+// `shortLabel` (if any) replaces the label on mobile, and `inMoreMenu` moves
+// the link into the More menu on the narrowest phones, where the links row
+// would be cut off
 const NAV_LINKS: Array<{
   href: string;
   label: string;
   shortLabel?: string;
+  inMoreMenu?: boolean;
   active: (path: string) => boolean;
 }> = [
   {
@@ -35,9 +38,166 @@ const NAV_LINKS: Array<{
   {
     href: '/packages',
     label: 'Packages',
+    inMoreMenu: true,
     active: (path: string) => path.startsWith('/packages')
   }
 ];
+
+const GITHUB_URL = 'https://github.com/resolvetosavelives/healthicons';
+
+// Lucide's arrow-up-right, marking a link to another site
+function ExternalIcon() {
+  return (
+    <svg
+      className={styles.externalIcon}
+      viewBox="0 0 24 24"
+      width="12"
+      height="12"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.25"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M7 7h10v10" />
+      <path d="M7 17 17 7" />
+    </svg>
+  );
+}
+
+// On the narrowest phones (under 380px), the links that don't fit in the
+// links row (Packages, GitHub) and Download all are in a menu behind a
+// three-dots button at the end of that row.
+// It closes on picking a link, Escape, a click elsewhere, changing pages, or
+// the header sliding away.
+function MoreMenu({
+  pathname,
+  headerHidden
+}: {
+  pathname: string;
+  headerHidden: boolean;
+}) {
+  const [open, setOpen] = useState(false);
+  const container = useRef<HTMLDivElement>(null);
+  const button = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => setOpen(false), [pathname, headerHidden]);
+
+  useEffect(() => {
+    if (!open) {
+      return;
+    }
+    // a tap elsewhere only closes the menu: the click it makes is stopped
+    // before it reaches what's under it (an icon, a link)
+    const onPointerDown = (event: PointerEvent) => {
+      if (!container.current?.contains(event.target as Node)) {
+        setOpen(false);
+        const swallow = (click: MouseEvent) => {
+          click.preventDefault();
+          click.stopPropagation();
+        };
+        document.addEventListener('click', swallow, {
+          capture: true,
+          once: true
+        });
+        // a drag or scroll that started the tap ends without a click
+        setTimeout(
+          () =>
+            document.removeEventListener('click', swallow, { capture: true }),
+          500
+        );
+      }
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+        button.current?.focus();
+      }
+    };
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('keydown', onKeyDown);
+    };
+  }, [open]);
+
+  const close = () => setOpen(false);
+
+  // on a page that's in the menu (Packages), the button shows it, as the
+  // links row shows the others
+  const menuPageActive = NAV_LINKS.some(
+    ({ inMoreMenu, active }) => inMoreMenu && active(pathname)
+  );
+
+  return (
+    <div className={styles.moreMenu} ref={container}>
+      <button
+        ref={button}
+        type="button"
+        className={classnames(styles.moreButton, {
+          [styles.moreButtonActive]: menuPageActive
+        })}
+        aria-label="More"
+        aria-expanded={open}
+        aria-controls="more-menu"
+        onClick={() => setOpen(!open)}
+      >
+        {/* Lucide's ellipsis-vertical */}
+        <svg
+          viewBox="0 0 24 24"
+          width="16"
+          height="16"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="5" r="2" />
+          <circle cx="12" cy="12" r="2" />
+          <circle cx="12" cy="19" r="2" />
+        </svg>
+      </button>
+      <ul id="more-menu" className={styles.moreList} hidden={!open}>
+        {NAV_LINKS.filter(({ inMoreMenu }) => inMoreMenu).map(
+          ({ href, label, active }) => {
+            const isActive = active(pathname);
+            return (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className={classnames(styles.moreItem, {
+                    [styles.moreItemActive]: isActive
+                  })}
+                  aria-current={isActive ? 'page' : undefined}
+                  onClick={close}
+                >
+                  {label}
+                </Link>
+              </li>
+            );
+          }
+        )}
+        <li>
+          <a href={GITHUB_URL} className={styles.moreItem} onClick={close}>
+            GitHub
+            <ExternalIcon />
+          </a>
+        </li>
+        {isIconsPage(pathname) && (
+          <li>
+            <a
+              href="/icons.zip"
+              className={classnames(styles.moreItem, styles.moreDownload)}
+              onClick={close}
+            >
+              Download all
+            </a>
+          </li>
+        )}
+      </ul>
+    </div>
+  );
+}
 
 export function TopBar() {
   // the route's pathname (e.g. "/icon/[style]/[category]/[icon]") is the same
@@ -137,10 +297,13 @@ export function TopBar() {
           </Link>
         </div>
         <ul className={styles.topbarLinks}>
-          {NAV_LINKS.map(({ href, label, shortLabel, active }) => {
+          {NAV_LINKS.map(({ href, label, shortLabel, inMoreMenu, active }) => {
             const isActive = active(pathname);
             return (
-              <li key={href}>
+              <li
+                key={href}
+                className={classnames({ [styles.wideOnly]: inMoreMenu })}
+              >
                 <Link
                   href={href}
                   className={classnames(styles.link, {
@@ -160,37 +323,24 @@ export function TopBar() {
               </li>
             );
           })}
-          <li>
-            <a
-              href="https://github.com/resolvetosavelives/healthicons"
-              className={styles.link}
-            >
+          <li className={styles.wideOnly}>
+            <a href={GITHUB_URL} className={styles.link}>
               GitHub
-              {/* Lucide's arrow-up-right, marking a link to another site */}
-              <svg
-                className={styles.externalIcon}
-                viewBox="0 0 24 24"
-                width="12"
-                height="12"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.25"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M7 7h10v10" />
-
-                <path d="M7 17 17 7" />
-              </svg>
+              <ExternalIcon />
             </a>
+          </li>
+          <li className={styles.moreLinksItem}>
+            <MoreMenu pathname={pathname} headerHidden={mode === 'hidden'} />
           </li>
         </ul>
         <div className={styles.topbarDownload}>
           <ThemeToggle />
           {/* only offered alongside the icons themselves */}
           {isIconsPage(pathname) && (
-            <a href="/icons.zip" className={styles.buttonLink}>
+            <a
+              href="/icons.zip"
+              className={classnames(styles.buttonLink, styles.wideOnly)}
+            >
               Download all
             </a>
           )}
