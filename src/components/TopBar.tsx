@@ -67,9 +67,11 @@ function ExternalIcon() {
   );
 }
 
-// On the narrowest phones (under 380px), the links that don't fit in the
-// links row (Packages, GitHub) and Download all are in a menu behind a
-// three-dots button at the end of that row.
+// On mobile, a menu behind a three-dots button at the end of the links row
+// has the About pages (which have their own menu column on desktop), apart
+// from the main one, which is About in the row. On the narrowest phones
+// (under 430px) it also has the links that don't fit in the row (Packages,
+// GitHub) and Download all.
 // It closes on picking a link, Escape, a click elsewhere, changing pages, or
 // the header sliding away.
 function MoreMenu({
@@ -126,8 +128,9 @@ function MoreMenu({
 
   const close = () => setOpen(false);
 
-  // on a page that's in the menu (Packages), the button shows it, as the
-  // links row shows the others
+  // on a page that's only in the menu on the narrowest phones (Packages), the
+  // button shows it there, as the links row shows the others; the About
+  // pages are already shown by About in the row
   const menuPageActive = NAV_LINKS.some(
     ({ inMoreMenu, active }) => inMoreMenu && active(pathname)
   );
@@ -159,9 +162,9 @@ function MoreMenu({
         </svg>
       </button>
       <ul id="more-menu" className={styles.moreList} hidden={!open}>
-        {NAV_LINKS.filter(({ inMoreMenu }) => inMoreMenu).map(
-          ({ href, label, active }) => {
-            const isActive = active(pathname);
+        {ABOUT_PAGES.filter(({ href }) => href !== '/about').map(
+          ({ href, label }) => {
+            const isActive = pathname === href;
             return (
               <li key={href}>
                 <Link
@@ -178,14 +181,38 @@ function MoreMenu({
             );
           }
         )}
-        <li>
+        {NAV_LINKS.filter(({ inMoreMenu }) => inMoreMenu).map(
+          ({ href, label, active }, index) => {
+            const isActive = active(pathname);
+            return (
+              <li
+                key={href}
+                className={classnames(styles.narrowOnly, {
+                  [styles.moreDivider]: index === 0
+                })}
+              >
+                <Link
+                  href={href}
+                  className={classnames(styles.moreItem, {
+                    [styles.moreItemActive]: isActive
+                  })}
+                  aria-current={isActive ? 'page' : undefined}
+                  onClick={close}
+                >
+                  {label}
+                </Link>
+              </li>
+            );
+          }
+        )}
+        <li className={styles.narrowOnly}>
           <a href={GITHUB_URL} className={styles.moreItem} onClick={close}>
             GitHub
             <ExternalIcon />
           </a>
         </li>
         {isIconsPage(pathname) && (
-          <li>
+          <li className={styles.narrowOnly}>
             <a
               href="/icons.zip"
               className={classnames(styles.moreItem, styles.moreDownload)}

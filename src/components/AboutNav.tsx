@@ -21,8 +21,8 @@ const ABOUT_SECTIONS = [
 
 export const ABOUT_PAGES = ABOUT_SECTIONS.flatMap((section) => section.pages);
 
-// The menu for the About pages: a column on the left on desktop (like
-// Lucide's guide), and a row of links above the title on mobile.
+// The About pages' menu on desktop: a column on the left (like
+// Lucide's guide). On mobile they're in the top bar's More menu instead.
 export function AboutNav() {
   const { pathname } = useRouter();
 
