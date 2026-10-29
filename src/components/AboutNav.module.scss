@@ -1,22 +1,11 @@
-/* mobile: all the links in one row above the page's title */
+/* mobile: hidden, as the About pages are in the top bar's More menu (see
+   TopBar.tsx) */
 .nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-  margin-top: 1rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.section,
-.links {
-  display: contents;
-}
-
-/* only shown in the left column; styled like the icons page's sidebar
-   headings (e.g. Categories) */
-.heading {
   display: none;
+}
+
+/* styled like the icons page's sidebar headings (e.g. Categories) */
+.heading {
   margin: 0 0 0.5rem;
   font-size: 0.65rem;
   font-weight: 700;
@@ -26,9 +15,17 @@
 }
 
 .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/* spaced like the icons page's sidebar sections */
+.section + .section {
+  margin-top: 1.75rem;
 }
 
 /* like the icons page's categories: a soft purple highlight on the current
@@ -62,29 +59,8 @@
     display: block;
     position: sticky;
     top: 2rem;
-    margin-top: 0;
 
     /* the same space from the divider line as the icons page's sidebar */
     padding: 2rem 2rem 0 0;
-    border-bottom: 0;
-  }
-
-  /* spaced like the icons page's sidebar sections */
-  .section {
-    display: block;
-
-    & + & {
-      margin-top: 1.75rem;
-    }
-  }
-
-  .heading {
-    display: block;
-  }
-
-  .links {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
   }
 }

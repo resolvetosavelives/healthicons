@@ -151,17 +151,23 @@
   }
 }
 
-/* On the narrowest phones, where the five links would be cut off (they need
-   about 336px), Packages, GitHub and Download all move from the links row and
-   the top right into the More menu (see TopBar.tsx) */
-@media (max-width: 379.98px) {
+/* On the narrowest phones, where the links and the More button would be cut
+   off (they need about 380px), Packages, GitHub and Download all move from
+   the links row and the top right into the More menu (see TopBar.tsx) */
+@media (max-width: 429.98px) {
   .wideOnly {
     display: none;
   }
 }
 
+@media (min-width: 430px) {
+  .narrowOnly {
+    display: none;
+  }
+}
+
 /* the last item in the links row, as tall as the links so the menu opens
-   below the row and an underline can mark it like the active link */
+   below the row */
 .moreLinksItem,
 .moreMenu {
   display: flex;
@@ -173,8 +179,9 @@
   position: relative;
 }
 
-/* from 380px up, everything fits without it */
-@media (min-width: 380px) {
+/* desktop has the About pages' own menu column, and room for everything
+   else in the top bar */
+@media (min-width: 60rem) {
   .moreLinksItem {
     display: none;
   }
@@ -209,19 +216,12 @@
   }
 }
 
-/* on a page that's in the menu (Packages), it's marked like the active link */
-.moreButtonActive {
-  color: var(--link-color);
-}
-
-.moreMenu:has(.moreButtonActive)::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 3px;
-  background: var(--link-color);
+/* on a page that's in the menu on the narrowest phones (Packages), the dots
+   are purple like the active link's text (without its underline) */
+@media (max-width: 429.98px) {
+  .moreButtonActive {
+    color: var(--link-color);
+  }
 }
 
 .moreList {
@@ -242,6 +242,13 @@
   &[hidden] {
     display: none;
   }
+}
+
+/* between the About pages and the other links */
+.moreDivider {
+  margin-top: 0.25rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--border-color);
 }
 
 /* the doubled class beats the global a:link colors */

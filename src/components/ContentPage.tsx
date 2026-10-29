@@ -15,7 +15,7 @@ interface ContentPageProps {
   // optional side column: beside the text on desktop, below it on mobile
   aside?: ReactNode;
   // optional menu for a group of pages (like the About pages): a column on
-  // the left on desktop, above the title on mobile
+  // the left on desktop (it hides itself on mobile)
   nav?: ReactNode;
   children: ReactNode;
 }
