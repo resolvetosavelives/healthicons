@@ -242,11 +242,11 @@ export default function LandingPage({
 
           <footer className={styles.footer}>
             All icons are open source, licensed under a{' '}
-            <a href="/about#license" className={styles.link}>
+            <a href="/licenses#license" className={styles.link}>
               Creative Commons CC0 License
             </a>
             . This website is also open source, under an{' '}
-            <a href="/about#license" className={styles.link}>
+            <a href="/licenses#weblicense" className={styles.link}>
               MIT license
             </a>
             .

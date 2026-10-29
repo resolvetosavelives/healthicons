@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import styles from './TopBar.module.scss';
 import { AnnouncementBar } from './AnnouncementBar';
 import { ThemeToggle } from './ThemeToggle';
+import { ABOUT_PAGES } from './AboutNav';
 
 const isIconsPage = (path: string) => path === '/' || path.startsWith('/icon/');
 
@@ -27,7 +28,7 @@ const NAV_LINKS: Array<{
   {
     href: '/about',
     label: 'About',
-    active: (path: string) => path === '/about'
+    active: (path: string) => ABOUT_PAGES.some((page) => page.href === path)
   },
   {
     href: '/request-icon',

@@ -1,0 +1,90 @@
+/* mobile: all the links in one row above the page's title */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section,
+.links {
+  display: contents;
+}
+
+/* only shown in the left column; styled like the icons page's sidebar
+   headings (e.g. Categories) */
+.heading {
+  display: none;
+  margin: 0 0 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-text-color);
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* like the icons page's categories: a soft purple highlight on the current
+   page, a grey one on hover. The doubled class beats the global a:link
+   colors */
+.link.link {
+  display: flex;
+  align-items: center;
+  min-height: 28px;
+  padding: calc(0.15rem - 1px) 0.75rem;
+  font-size: 0.825rem;
+  color: var(--secondary-text-color);
+  border-radius: 7px;
+
+  &:hover:not(.active) {
+    color: var(--text-color);
+    background: var(--hover-color);
+  }
+}
+
+.link.active {
+  font-weight: 600;
+  color: var(--link-color);
+  background: var(--selected-color);
+}
+
+/* desktop: a column on the left that stays in view while the page
+   scrolls, like Lucide's guide */
+@media (min-width: 60rem) {
+  .nav {
+    display: block;
+    position: sticky;
+    top: 2rem;
+    margin-top: 0;
+
+    /* the same space from the divider line as the icons page's sidebar */
+    padding: 2rem 2rem 0 0;
+    border-bottom: 0;
+  }
+
+  /* spaced like the icons page's sidebar sections */
+  .section {
+    display: block;
+
+    & + & {
+      margin-top: 1.75rem;
+    }
+  }
+
+  .heading {
+    display: block;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+}

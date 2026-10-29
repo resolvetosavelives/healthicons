@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import classnames from 'classnames';
 import { TopBar } from './TopBar';
 import styles from './ContentPage.module.scss';
 
@@ -13,6 +14,9 @@ interface ContentPageProps {
   intro: ReactNode;
   // optional side column: beside the text on desktop, below it on mobile
   aside?: ReactNode;
+  // optional menu for a group of pages (like the About pages): a column on
+  // the left on desktop, above the title on mobile
+  nav?: ReactNode;
   children: ReactNode;
 }
 
@@ -25,27 +29,31 @@ export function ContentPage({
   topLinks,
   intro,
   aside,
+  nav,
   children
 }: ContentPageProps) {
   return (
-    <div className="container">
+    <div className={classnames('container', { [styles.hasNav]: nav })}>
       <TopBar />
-      <main id="main" className={styles.page}>
-        <article className={styles.main}>
-          <header className={styles.header}>
-            {topLinks && <nav className={styles.topLinks}>{topLinks}</nav>}
-            <h1 id={titleId} className={styles.title}>
-              {title}
-              {titleIcon && (
-                <span className={styles.titleIcon}>{titleIcon}</span>
-              )}
-            </h1>
-            <div className={styles.intro}>{intro}</div>
-          </header>
-          <div className={styles.body}>{children}</div>
-        </article>
-        {aside && <aside className={styles.aside}>{aside}</aside>}
-      </main>
+      <div className={nav ? styles.withNav : undefined}>
+        {nav}
+        <main id="main" className={styles.page}>
+          <article className={styles.main}>
+            <header className={styles.header}>
+              {topLinks && <nav className={styles.topLinks}>{topLinks}</nav>}
+              <h1 id={titleId} className={styles.title}>
+                {title}
+                {titleIcon && (
+                  <span className={styles.titleIcon}>{titleIcon}</span>
+                )}
+              </h1>
+              <div className={styles.intro}>{intro}</div>
+            </header>
+            <div className={styles.body}>{children}</div>
+          </article>
+          {aside && <aside className={styles.aside}>{aside}</aside>}
+        </main>
+      </div>
     </div>
   );
 }
