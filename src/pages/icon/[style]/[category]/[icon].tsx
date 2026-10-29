@@ -52,7 +52,7 @@ export default function IconPage({
           keywords: iconObj.tags.join(', '),
           // public domain: lets image search show the icon as free to use
           license: 'https://creativecommons.org/publicdomain/zero/1.0/',
-          acquireLicensePage: `${SITE_URL}/about#license`,
+          acquireLicensePage: `${SITE_URL}/licenses#license`,
           creditText: 'Health Icons',
           creator: {
             '@type': 'Organization',

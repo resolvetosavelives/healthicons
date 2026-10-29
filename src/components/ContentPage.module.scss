@@ -103,3 +103,32 @@
     margin-top: 0;
   }
 }
+
+/* with a menu (see AboutNav), it gets a column on the left on desktop, the
+   same width as the icons page's sidebar (so the text lines up with the top
+   bar's links), with the same divider line beside it */
+@media (min-width: 60rem) {
+  .withNav {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+    column-gap: 2rem;
+    align-items: start;
+  }
+
+  /* running from the very top of the page (through the body padding and top
+     bar) to the bottom, like the icons page's */
+  .hasNav {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2rem;
+      bottom: -2rem;
+      left: calc(var(--sidebar-width) - 1px);
+      width: 1px;
+      background: var(--border-color);
+      pointer-events: none;
+    }
+  }
+}

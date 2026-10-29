@@ -54,7 +54,10 @@ async function generateSiteMap() {
     '/packages/svelte',
     '/packages/javascript',
     '/about',
+    '/contribute',
     '/history',
+    '/icon-log',
+    '/licenses',
     '/request-icon'
   ].map((p) => urlEntry(p));
 

@@ -1,0 +1,68 @@
+.dateGroup {
+  margin-top: 2rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+/* .dateGroup too, to beat the content pages' own h2 style */
+.dateGroup .dateHeading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+}
+
+.date {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.count {
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: var(--muted-text-color);
+}
+
+.iconList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* the icon's name shows on hover (its title) and to screen readers (alt) */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  border-radius: 10px;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color ease-in-out 0.15s;
+
+  &:hover {
+    background: var(--tile-hover-color);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--link-color);
+    outline-offset: 1px;
+    background: var(--tile-hover-color);
+  }
+}
+
+/* drawn in the link purple (lighter in night mode) */
+.iconImage {
+  --icon-color: var(--link-color);
+
+  display: block;
+  width: 36px;
+  height: 36px;
+}

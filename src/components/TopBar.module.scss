@@ -326,6 +326,16 @@
     border-bottom: 1px solid var(--border-color);
   }
 
+  /* on the About pages the pinned header continues the menu's divider line */
+  :global(body:has(#about-nav)) .topBarPinned {
+    background: linear-gradient(
+      to right,
+      var(--page-color) calc(2rem + var(--sidebar-width) - 1px),
+      var(--border-color) 0 calc(2rem + var(--sidebar-width)),
+      var(--page-color) 0
+    );
+  }
+
   /* on the icons page the pinned header continues the sidebar's tint and
      divider line, which sit behind it when it's in its normal place */
   :global(body:has(#icon-results)) .topBarPinned {
