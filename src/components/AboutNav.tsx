@@ -9,6 +9,7 @@ const ABOUT_SECTIONS = [
     pages: [
       { href: '/about', label: 'About us' },
       { href: '/contribute', label: 'How to contribute' },
+      { href: '/code-of-conduct', label: 'Code of conduct' },
       { href: '/history', label: 'Project history' },
       { href: '/icon-log', label: 'Icon log' }
     ]

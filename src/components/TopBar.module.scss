@@ -123,6 +123,17 @@
   }
 }
 
+/* marked as active on desktop only (About, on the other About pages) */
+@media (max-width: 59.98rem) {
+  .topbarLinks .desktopActiveLink {
+    color: var(--heading-color);
+
+    &::after {
+      content: none;
+    }
+  }
+}
+
 /* some links use a shorter label on mobile */
 .fullLabel {
   display: none;
@@ -152,8 +163,8 @@
 }
 
 /* On the narrowest phones, where the links and the More button would be cut
-   off (they need about 380px), Packages, GitHub and Download all move from
-   the links row and the top right into the More menu (see TopBar.tsx) */
+   off (they need about 380px), Packages and GitHub move from the links row
+   into the More menu (see TopBar.tsx) */
 @media (max-width: 429.98px) {
   .wideOnly {
     display: none;
@@ -162,6 +173,13 @@
 
 @media (min-width: 430px) {
   .narrowOnly {
+    display: none;
+  }
+}
+
+/* on mobile, Download all is in the More menu instead */
+@media (max-width: 59.98rem) {
+  .desktopOnly {
     display: none;
   }
 }
@@ -244,7 +262,7 @@
   }
 }
 
-/* between the About pages and the other links */
+/* between the menu's groups: the About pages, the other links, Download all */
 .moreDivider {
   margin-top: 0.25rem;
   padding-top: 0.35rem;

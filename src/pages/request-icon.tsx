@@ -26,6 +26,7 @@ export default function RequestIcon() {
         <p>
           This is an all-volunteer effort, so please be patient. If you need
           general user interface icons, we really like the{' '}
+          <a href="https://lucide.dev/">Lucide</a>,{' '}
           <a href="https://feathericons.com/">Feather</a> and{' '}
           <a href="https://remixicon.com/">Remix</a> open source icon sets,
           which match Health Icons pretty well.

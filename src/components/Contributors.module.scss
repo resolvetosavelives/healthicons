@@ -1,5 +1,5 @@
 .contributorItem {
-  padding-left: 56px;
+  padding-left: 46px;
   position: relative;
   margin: 12px 0;
   padding-top: 7px;
@@ -14,10 +14,12 @@
   top: 4px;
   border-radius: 50%;
   border: 1px solid var(--border-color);
+  transition: border-color 0.15s ease-in-out;
+}
 
-  &:hover {
-    border: 1px solid var(--muted-text-color);
-  }
+/* purple when hovering the photo or the name (they're one link) */
+a:hover .contributorAvatarImage {
+  border-color: var(--link-color);
 }
 
 .maintainerBadge {

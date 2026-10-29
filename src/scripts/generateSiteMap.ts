@@ -55,6 +55,7 @@ async function generateSiteMap() {
     '/packages/javascript',
     '/about',
     '/contribute',
+    '/code-of-conduct',
     '/history',
     '/icon-log',
     '/licenses',

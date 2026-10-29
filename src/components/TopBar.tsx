@@ -69,9 +69,9 @@ function ExternalIcon() {
 
 // On mobile, a menu behind a three-dots button at the end of the links row
 // has the About pages (which have their own menu column on desktop), apart
-// from the main one, which is About in the row. On the narrowest phones
-// (under 430px) it also has the links that don't fit in the row (Packages,
-// GitHub) and Download all.
+// from the main one, which is About in the row, and Download all. On the
+// narrowest phones (under 430px) it also has the links that don't fit in the
+// row (Packages, GitHub).
 // It closes on picking a link, Escape, a click elsewhere, changing pages, or
 // the header sliding away.
 function MoreMenu({
@@ -211,17 +211,15 @@ function MoreMenu({
             <ExternalIcon />
           </a>
         </li>
-        {isIconsPage(pathname) && (
-          <li className={styles.narrowOnly}>
-            <a
-              href="/icons.zip"
-              className={classnames(styles.moreItem, styles.moreDownload)}
-              onClick={close}
-            >
-              Download all
-            </a>
-          </li>
-        )}
+        <li className={styles.moreDivider}>
+          <a
+            href="/icons.zip"
+            className={classnames(styles.moreItem, styles.moreDownload)}
+            onClick={close}
+          >
+            Download all
+          </a>
+        </li>
       </ul>
     </div>
   );
@@ -335,7 +333,11 @@ export function TopBar() {
                 <Link
                   href={href}
                   className={classnames(styles.link, {
-                    [styles.activeLink]: isActive
+                    [styles.activeLink]: isActive,
+                    // on mobile, the other About pages are in the More menu,
+                    // so About is only marked on its own page there
+                    [styles.desktopActiveLink]:
+                      href === '/about' && isActive && pathname !== href
                   })}
                   aria-current={isActive ? 'page' : undefined}
                 >
@@ -363,11 +365,12 @@ export function TopBar() {
         </ul>
         <div className={styles.topbarDownload}>
           <ThemeToggle />
-          {/* only offered alongside the icons themselves */}
+          {/* on desktop, only offered alongside the icons themselves (on
+              mobile it's in the More menu on every page) */}
           {isIconsPage(pathname) && (
             <a
               href="/icons.zip"
-              className={classnames(styles.buttonLink, styles.wideOnly)}
+              className={classnames(styles.buttonLink, styles.desktopOnly)}
             >
               Download all
             </a>
