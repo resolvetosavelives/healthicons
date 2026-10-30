@@ -68,7 +68,7 @@ export default function About() {
           <Link href="/packages">packages</Link> for React, Vue, Svelte and
           plain JavaScript let you import just the icons you need, in either
           style, at any size and in any color. Designing in Figma? The{' '}
-          <Link href="/packages#figma">Health Icons Figma plugin</Link> lets you
+          <Link href="/figma-plugin">Health Icons Figma plugin</Link> lets you
           find icons and add them to your designs without leaving Figma.
         </p>
 
