@@ -10,7 +10,14 @@ const ABOUT_SECTIONS = [
       { href: '/about', label: 'About us' },
       { href: '/contribute', label: 'How to contribute' },
       { href: '/code-of-conduct', label: 'Code of conduct' },
-      { href: '/history', label: 'Project history' },
+      { href: '/history', label: 'Project history' }
+    ]
+  },
+  {
+    heading: 'Icons',
+    pages: [
+      { href: '/how-to-use', label: 'How to use icons' },
+      { href: '/figma-plugin', label: 'Figma plugin' },
       { href: '/icon-log', label: 'Icon log' }
     ]
   },

@@ -33,6 +33,11 @@ export default function Packages() {
   // links to #ai (from the package pages) land on the AI prompt that's
   // showing: the browser only knows the main text's copy, hidden on desktop
   useEffect(() => {
+    // the Figma plugin used to be on this page
+    if (window.location.hash === '#figma') {
+      window.location.replace('/figma-plugin');
+      return;
+    }
     const scrollToPrompt = () => {
       if (window.location.hash !== '#ai') {
         return;
@@ -115,7 +120,7 @@ export default function Packages() {
           </li>
           <li>
             Find and add them in Figma with the{' '}
-            <a href="#figma">Health icons Figma plugin</a>
+            <Link href="/figma-plugin">Health icons Figma plugin</Link>
           </li>
           <li>
             For React Native, there’s a community-made{' '}
@@ -125,25 +130,6 @@ export default function Packages() {
             package (not made by the Health icons team)
           </li>
         </ul>
-
-        <h2 id="figma">Figma plugin</h2>
-        <p>
-          <a href="https://www.figma.com/community/plugin/992844281461869440/Health-Icons-Figma-Plugin">
-            <img
-              src="/ui/figma-plugin.png"
-              alt="Figma plugin demo graphic"
-              width="800"
-              height="400"
-              className={styles.figmaPlugin}
-            />
-          </a>
-          Want to use Health Icons on your next design project?{' '}
-          <a href="https://twitter.com/tkmadeit">Tekeste Kidanu</a> has made a{' '}
-          <a href="https://www.figma.com/community/plugin/992844281461869440/Health-Icons-Figma-Plugin">
-            very slick Figma plugin
-          </a>{' '}
-          to make them super easy to find and include.
-        </p>
       </ContentPage>
     </>
   );
