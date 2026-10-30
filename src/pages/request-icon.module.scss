@@ -9,3 +9,30 @@
 .exampleTitle {
   margin-top: 0;
 }
+
+/* the icons added in the last year, in a box in the side column (like the AI
+   prompt on Packages) */
+.recent {
+  padding: 1rem 2rem 2rem;
+  border: 2px solid #ebecff;
+  border-radius: 10px;
+}
+
+/* the first day's 2rem top margin spaces it from the icons */
+.recentTitle {
+  margin: 1rem 0 0;
+}
+
+/* centered under a divider line */
+.recentMore {
+  margin: 2rem 0 0;
+  padding-top: 1.5rem;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.recentLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
