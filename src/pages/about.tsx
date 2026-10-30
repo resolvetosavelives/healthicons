@@ -11,7 +11,7 @@ const MOVED_SECTIONS: Record<string, string> = {
   license: '/licenses#license',
   weblicense: '/licenses#weblicense',
   contribute: '/contribute',
-  conduct: '/contribute#conduct'
+  conduct: '/code-of-conduct'
 };
 
 export default function About() {
