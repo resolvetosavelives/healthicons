@@ -23,7 +23,25 @@
     <loc>https://healthicons.org/about</loc>
   </url>
   <url>
+    <loc>https://healthicons.org/contribute</loc>
+  </url>
+  <url>
+    <loc>https://healthicons.org/code-of-conduct</loc>
+  </url>
+  <url>
     <loc>https://healthicons.org/history</loc>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon-log</loc>
+  </url>
+  <url>
+    <loc>https://healthicons.org/how-to-use</loc>
+  </url>
+  <url>
+    <loc>https://healthicons.org/figma-plugin</loc>
+  </url>
+  <url>
+    <loc>https://healthicons.org/licenses</loc>
   </url>
   <url>
     <loc>https://healthicons.org/request-icon</loc>
@@ -626,14 +644,14 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/contraceptives/oral-contraception_pillsx28.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/contraceptives/sperm</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/contraceptives/sperm.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/contraceptives/sperm.svg</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://healthicons.org/icon/outline/contraceptives/sayana-press</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/contraceptives/sayana-press.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/contraceptives/sayana-press.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/contraceptives/sperm</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/contraceptives/sperm.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/contraceptives/sperm.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/devices/llin</loc>
@@ -839,12 +857,12 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/patient-band_alt.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/devices/ppe-santizer_alt</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/ppe-santizer_alt.svg</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://healthicons.org/icon/outline/devices/virus-sanitizer-spray</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/virus-sanitizer-spray.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/devices/ppe-santizer_alt</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/ppe-santizer_alt.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/devices/pulse-oximeter_alt</loc>
@@ -1140,6 +1158,10 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-expectorate.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/emotions/face-vomitting</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-vomitting.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/emotions/face-fever</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-fever.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-fever.svg</image:loc></image:image>
@@ -1217,11 +1239,6 @@
     <loc>https://healthicons.org/icon/outline/emotions/face-tongue</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-tongue.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-tongue.svg</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://healthicons.org/icon/outline/emotions/face-vomitting</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/emotions/face-vomitting.svg</image:loc></image:image>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/emotions/face-vomitting.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/emotions/face-woozy</loc>
@@ -1600,16 +1617,16 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/people/baby-0306m.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/people/baby-female_0609m</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/people/baby-female_0609m.svg</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://healthicons.org/icon/outline/people/baby-female_0203m_alt</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/people/baby-female_0203m_alt.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/people/baby-female_0306m</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/people/baby-female_0306m.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/people/baby-female_0609m</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/people/baby-female_0609m.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/people/baby-male_0609m</loc>
@@ -3069,12 +3086,12 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/virus-mutation.svg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://healthicons.org/icon/outline/symbols/virus-research_alt</loc>
-    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/virus-research_alt.svg</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://healthicons.org/icon/outline/symbols/virus-research</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/virus-research.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/symbols/virus-research_alt</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/virus-research_alt.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/symbols/waist-circumference</loc>

@@ -4775,8 +4775,7 @@
    "Human Papillomavirus",
    "Infection",
    "Infectious Disease",
-   "Virus",
-   "dhis2:vih"
+   "Virus"
   ],
   "title": "HPV",
   "formats": [
@@ -5215,9 +5214,9 @@
   ]
  },
  {
-  "id": "face-vomitting",
+  "id": "face-vomiting",
   "category": "emotions",
-  "path": "emotions/face-vomitting",
+  "path": "emotions/face-vomiting",
   "tags": [
    "Emoji",
    "Emoticon",
@@ -6148,7 +6147,7 @@
    "Boy",
    "Diaper",
    "Infant",
-   "dhis2:baby_male_0203m"
+   "dhis2:baby_male_0609m"
   ],
   "title": "Baby Male 2-3 Months",
   "formats": [
@@ -6179,9 +6178,9 @@
    "Diaper",
    "Girl",
    "Infant",
-   "dhis2:baby_male_0203m"
+   "dhis2:baby_male_0609m"
   ],
-  "title": "Baby Female 2-3 Months",
+  "title": "Baby Female 6-9 Months",
   "formats": [
    "48px"
   ]
@@ -6515,8 +6514,7 @@
   "tags": [
    "Diaper",
    "Girl",
-   "Infant",
-   "dhis2:baby_male_0203m"
+   "Infant"
   ],
   "title": "Baby Female 2-3 Months ALT",
   "formats": [
@@ -6658,7 +6656,7 @@
    "Prostitute",
    "Woman",
    "Worker",
-   "dhis2:sex_worker_male"
+   "dhis2:sex_worker_female"
   ],
   "title": "Sex Worker Female",
   "formats": [
@@ -6706,7 +6704,7 @@
    "MD",
    "Man",
    "Stethoscope",
-   "dhis2:doctor_female"
+   "dhis2:doctor_male"
   ],
   "title": "Person Male Doctor",
   "formats": [
@@ -7360,9 +7358,9 @@
   "tags": [
    "Contraceptive",
    "Family Planning",
-   "dhis2:syana_press"
+   "dhis2:sayana_press"
   ],
-  "title": "Syana Press",
+  "title": "Sayana Press",
   "formats": [
    "24px",
    "48px"
@@ -7872,9 +7870,9 @@
   ]
  },
  {
-  "id": "ppe-santizer_alt",
+  "id": "ppe-sanitizer_alt",
   "category": "devices",
-  "path": "devices/ppe-santizer_alt",
+  "path": "devices/ppe-sanitizer_alt",
   "tags": [
    "Infection Control",
    "PPE"
@@ -8176,7 +8174,7 @@
    "Viral",
    "Virus"
   ],
-  "title": "Virus Research ALT",
+  "title": "Virus Research",
   "formats": [
    "48px"
   ]
@@ -8194,7 +8192,7 @@
    "Viral",
    "Virus"
   ],
-  "title": "Virus Research",
+  "title": "Virus Research Lab",
   "formats": [
    "48px"
   ]
