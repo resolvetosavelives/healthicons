@@ -1,8 +1,20 @@
+import { GetStaticProps } from 'next';
+import Link from 'next/link';
 import HeadTags from '../components/HeadTags';
 import { ContentPage } from '../components/ContentPage';
+import { IconLogGroups } from '../components/IconLogGroups';
+import { IconsAdded, getRecentlyAdded } from '../lib/iconLog';
 import styles from './request-icon.module.scss';
 
-export default function RequestIcon() {
+interface RequestIconProps {
+  recentlyAdded: IconsAdded[];
+}
+
+export const getStaticProps: GetStaticProps<RequestIconProps> = async () => {
+  return { props: { recentlyAdded: getRecentlyAdded() } };
+};
+
+export default function RequestIcon({ recentlyAdded }: RequestIconProps) {
   return (
     <>
       <HeadTags
@@ -13,11 +25,37 @@ export default function RequestIcon() {
       <ContentPage
         title="Request an icon"
         titleId="request"
+        aside={
+          <div className={styles.recent}>
+            <h2 className={styles.recentTitle}>Recently added icons</h2>
+            <IconLogGroups iconsAdded={recentlyAdded} />
+            <p className={styles.recentMore}>
+              <Link href="/icon-log" className={styles.recentLink}>
+                See icon log
+                {/* Lucide's arrow-right */}
+                <svg
+                  viewBox="0 0 24 24"
+                  width="14"
+                  height="14"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.25"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </Link>
+            </p>
+          </div>
+        }
         intro={
           <p>
             Need an icon for your project?{' '}
             <a href="https://github.com/resolvetosavelives/healthicons/issues/new?assignees=&amp;labels=icon+request&amp;template=icon-request.md&amp;title=Icon+Request%3A+%5Bname+of+icon%5D">
-              Submit a request through GitHub
+              Submit a request on GitHub
             </a>{' '}
             and we will do our best to respond.
           </p>
