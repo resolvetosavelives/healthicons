@@ -1,7 +1,7 @@
 {
   "name": "@healthicons/react",
   "description": "Health Icons as React components. Free, open source health icons from healthicons.org.",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "license": "CC0-1.0",
   "homepage": "https://healthicons.org",
   "repository": {
