@@ -198,6 +198,11 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/body/female-reproductive_system.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/body/fingernail</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/fingernail.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/body/fingernail.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/body/foot</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/foot.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/body/foot.svg</image:loc></image:image>
@@ -206,6 +211,10 @@
     <loc>https://healthicons.org/icon/outline/body/gallbladder</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/gallbladder.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/body/gallbladder.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/body/hair</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/body/hair.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/body/head</loc>
@@ -410,6 +419,10 @@
   <url>
     <loc>https://healthicons.org/icon/outline/conditions/colorectal-cancer</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/conditions/colorectal-cancer.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/conditions/constipation</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/conditions/constipation.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/conditions/coughing-alt</loc>
@@ -879,6 +892,10 @@
   <url>
     <loc>https://healthicons.org/icon/outline/devices/sonogram</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/sonogram.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/devices/spray</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/devices/spray.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/devices/staples</loc>
@@ -1374,6 +1391,10 @@
   <url>
     <loc>https://healthicons.org/icon/outline/medications/blister-pills_round_x4</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/medications/blister-pills_round_x4.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/medications/drop-medicine</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/medications/drop-medicine.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/medications/liquid-medicine</loc>
@@ -2555,6 +2576,11 @@
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/eco-care.svg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://healthicons.org/icon/outline/symbols/egg-cell</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/egg-cell.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/egg-cell.svg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://healthicons.org/icon/outline/symbols/electricity</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/electricity.svg</image:loc></image:image>
   </url>
@@ -2780,6 +2806,11 @@
     <loc>https://healthicons.org/icon/outline/symbols/male</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/male.svg</image:loc></image:image>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/male.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/symbols/mammogram</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/symbols/mammogram.svg</image:loc></image:image>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline-24px/symbols/mammogram.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/symbols/medical-advice</loc>
@@ -3373,6 +3404,10 @@
   <url>
     <loc>https://healthicons.org/icon/outline/zoonoses/animal-donkey</loc>
     <image:image><image:loc>https://healthicons.org/icons/svg/outline/zoonoses/animal-donkey.svg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://healthicons.org/icon/outline/zoonoses/duck</loc>
+    <image:image><image:loc>https://healthicons.org/icons/svg/outline/zoonoses/duck.svg</image:loc></image:image>
   </url>
   <url>
     <loc>https://healthicons.org/icon/outline/zoonoses/mosquito</loc>
