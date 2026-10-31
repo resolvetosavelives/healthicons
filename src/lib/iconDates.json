@@ -766,5 +766,13 @@
   "symbols/acupuncture-1": "2026-10-26",
   "symbols/acupuncture-4": "2026-10-25",
   "symbols/acupuncture-2": "2026-10-26",
-  "symbols/acupuncture-3": "2026-10-25"
+  "symbols/acupuncture-3": "2026-10-25",
+  "body/fingernail": "2026-10-31",
+  "body/hair": "2026-10-31",
+  "conditions/constipation": "2026-10-31",
+  "devices/spray": "2026-10-31",
+  "medications/drop-medicine": "2026-10-31",
+  "symbols/egg-cell": "2026-10-31",
+  "symbols/mammogram": "2026-10-31",
+  "zoonoses/duck": "2026-10-31"
 }

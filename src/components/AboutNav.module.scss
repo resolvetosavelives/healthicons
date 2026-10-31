@@ -60,7 +60,8 @@
     position: sticky;
     top: 2rem;
 
-    /* the same space from the divider line as the icons page's sidebar */
-    padding: 2rem 2rem 0 0;
+    /* the same space from the divider line as the icons page's sidebar, and
+       starting at the same height as its filters */
+    padding: 0.5rem 2rem 0 0;
   }
 }
