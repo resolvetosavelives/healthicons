@@ -13020,5 +13020,161 @@
   "formats": [
    "48px"
   ]
+ },
+ {
+  "id": "fingernail",
+  "category": "body",
+  "path": "body/fingernail",
+  "tags": [
+   "Dermatology",
+   "Finger",
+   "Fingertip",
+   "Manicure",
+   "Nail",
+   "Nail Anatomy",
+   "Nail Care",
+   "Nail Health"
+  ],
+  "title": "Fingernail",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "hair",
+  "category": "body",
+  "path": "body/hair",
+  "tags": [
+   "Dermatology",
+   "Hair Anatomy",
+   "Hair Care",
+   "Hair Follicle",
+   "Hair Growth",
+   "Hair Loss",
+   "Scalp",
+   "Trichology"
+  ],
+  "title": "Hair",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "constipation",
+  "category": "conditions",
+  "path": "conditions/constipation",
+  "tags": [
+   "Bloating",
+   "Bowel Movement",
+   "Defecation",
+   "Digestive Health",
+   "Gastroenterology",
+   "Gut Health",
+   "Intestinal Health",
+   "Stool"
+  ],
+  "title": "Constipation",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "spray",
+  "category": "devices",
+  "path": "devices/spray",
+  "tags": [
+   "Aerosol",
+   "Atomizer",
+   "Disinfectant",
+   "Gas",
+   "Insecticide",
+   "Liquid Application",
+   "Mist",
+   "Spray"
+  ],
+  "title": "Spray Bottle",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "drop-medicine",
+  "category": "medications",
+  "path": "medications/drop-medicine",
+  "tags": [
+   "Ear Drops",
+   "Eye Drops",
+   "Medicine Dropper",
+   "Ophthalmology",
+   "Oral Drops",
+   "Otology",
+   "Pharmacy",
+   "Prescription"
+  ],
+  "title": "Drop Medicine",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "egg-cell",
+  "category": "symbols",
+  "path": "symbols/egg-cell",
+  "tags": [
+   "Female Reproduction",
+   "Fertility",
+   "Fertilization",
+   "Human Biology",
+   "IVF",
+   "Ovary",
+   "Ovum",
+   "Reproductive System"
+  ],
+  "title": "Egg Cell",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "mammogram",
+  "category": "symbols",
+  "path": "symbols/mammogram",
+  "tags": [
+   "Breast Cancer",
+   "Breast Imaging",
+   "Breast Screening",
+   "Early Detection",
+   "Mammography",
+   "Radiology",
+   "Women's Health"
+  ],
+  "title": "Mammogram",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "duck",
+  "category": "zoonoses",
+  "path": "zoonoses/duck",
+  "tags": [
+   "Animal",
+   "Avian Influenza",
+   "Bird",
+   "Eggs",
+   "Farm Animal",
+   "Meat",
+   "Poultry",
+   "Waterfowl",
+   "Zoonoses",
+   "Zoonotic Diseases"
+  ],
+  "title": "Duck",
+  "formats": [
+   "48px"
+  ]
  }
 ]
