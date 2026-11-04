@@ -23,7 +23,10 @@ const ABOUT_SECTIONS = [
   },
   {
     heading: 'Legal',
-    pages: [{ href: '/licenses', label: 'Licenses' }]
+    pages: [
+      { href: '/licenses', label: 'Licenses' },
+      { href: '/privacy', label: 'Privacy' }
+    ]
   }
 ];
 

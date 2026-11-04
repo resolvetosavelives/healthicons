@@ -13,6 +13,7 @@ import { IconImage } from './IconImage';
 import { DEFAULT_ICON_COLOR, useTheme } from './ThemeToggle';
 import { colorizeSvg, downloadSvgAsPng, svgDataUrl } from '../lib/iconColor';
 import { filtersToQueryString } from '../lib/filterQuery';
+import { trackIcon } from '../lib/analytics';
 
 // line icons drawn like Lucide's (arrow-left, arrow-right, x)
 function LineIcon({ d }: { d: string[] }) {
@@ -113,11 +114,23 @@ export function IconTileModal(props: IconTileModalProps) {
   const coloredCode24 = iconCode24 && colorizeSvg(iconCode24, downloadColor);
   const coloredCode48 = iconCode48 && colorizeSvg(iconCode48, downloadColor);
 
+  // what someone did with this icon, for counting the most popular icons
+  const track = (
+    event: 'icon_downloaded' | 'icon_copied',
+    details: Record<string, string | number | boolean>
+  ) =>
+    trackIcon(event, props.icon, props.iconType, {
+      ...details,
+      colored: !!color
+    });
+
   // copy buttons: on the code boxes (desktop) and beside Download (mobile)
-  const copy48 = useCopyButton(coloredCode48);
-  const copy24 = useCopyButton(coloredCode24);
-  const mobileCopy48 = useCopyButton(coloredCode48);
-  const mobileCopy24 = useCopyButton(coloredCode24);
+  const copySvg = (size: number) => () =>
+    track('icon_copied', { copied: 'svg', size });
+  const copy48 = useCopyButton(coloredCode48, copySvg(48));
+  const copy24 = useCopyButton(coloredCode24, copySvg(24));
+  const mobileCopy48 = useCopyButton(coloredCode48, copySvg(48));
+  const mobileCopy24 = useCopyButton(coloredCode24, copySvg(24));
   // the icon's name in the packages (BloodBag for blood-bag). If an icon's
   // name can't be turned into one, the package build reports it; here the
   // name is just left out.
@@ -127,7 +140,17 @@ export function IconTileModal(props: IconTileModalProps) {
   } catch {
     // no code name
   }
-  const copyCodeName = useCopyButton(codeName);
+  const copyCodeName = useCopyButton(codeName, () =>
+    track('icon_copied', { copied: 'code_name' })
+  );
+
+  // counted once per icon (and style) shown, including moving between icons
+  // with the arrows
+  const { icon, iconType } = props;
+  useEffect(() => {
+    trackIcon('icon_viewed', icon, iconType);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- once per icon, not when its details object is recreated
+  }, [icon.category, icon.id, iconType]);
 
   // on mobile each section's download options are behind a Download button;
   // this is which one is open, closed again when moving to another icon
@@ -152,9 +175,15 @@ export function IconTileModal(props: IconTileModalProps) {
 
   // download links point at the static files unless a color is chosen, in
   // which case the SVG/PNG is generated in the browser in that color
-  const svgLink = (path: string, svg: string, filename: string) => ({
+  const svgLink = (
+    path: string,
+    svg: string,
+    size: number,
+    filename: string
+  ) => ({
     href: downloadColor && svg ? svgDataUrl(svg) : path,
-    download: filename
+    download: filename,
+    onClick: () => track('icon_downloaded', { format: 'svg', size })
   });
   const pngLink = (
     path: string,
@@ -164,13 +193,13 @@ export function IconTileModal(props: IconTileModalProps) {
   ) => ({
     href: path,
     download: filename,
-    onClick:
-      downloadColor && svg
-        ? (e: React.MouseEvent) => {
-            e.preventDefault();
-            downloadSvgAsPng(svg, size, filename);
-          }
-        : undefined
+    onClick: (e: React.MouseEvent) => {
+      track('icon_downloaded', { format: 'png', size });
+      if (downloadColor && svg) {
+        e.preventDefault();
+        downloadSvgAsPng(svg, size, filename);
+      }
+    }
   });
 
   const currentIndex = props.allIcons.map((i) => i.id).indexOf(props.icon.id);
@@ -328,6 +357,7 @@ export function IconTileModal(props: IconTileModalProps) {
                       {...svgLink(
                         `/icons/svg/${props.iconType}/${props.icon.category}/${props.icon.id}.svg`,
                         coloredCode48,
+                        48,
                         `${props.icon.id}.svg`
                       )}
                       className={styles.modalButton}
@@ -437,6 +467,7 @@ export function IconTileModal(props: IconTileModalProps) {
                         {...svgLink(
                           `/icons/svg/${props.iconType}-24px/${props.icon.category}/${props.icon.id}.svg`,
                           coloredCode24,
+                          24,
                           `${props.icon.id}-24px.svg`
                         )}
                         className={styles.modalButton}
