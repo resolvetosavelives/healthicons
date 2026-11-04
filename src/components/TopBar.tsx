@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import styles from './TopBar.module.scss';
 import { AnnouncementBar } from './AnnouncementBar';
 import { ThemeToggle } from './ThemeToggle';
+import { track } from '../lib/analytics';
 import { ABOUT_PAGES } from './AboutNav';
 
 const isIconsPage = (path: string) => path === '/' || path.startsWith('/icon/');
@@ -215,7 +216,10 @@ function MoreMenu({
           <a
             href="/icons.zip"
             className={classnames(styles.moreItem, styles.moreDownload)}
-            onClick={close}
+            onClick={() => {
+              track('download_all', { from: 'menu' });
+              close();
+            }}
           >
             Download all
           </a>
@@ -371,6 +375,7 @@ export function TopBar() {
             <a
               href="/icons.zip"
               className={classnames(styles.buttonLink, styles.desktopOnly)}
+              onClick={() => track('download_all', { from: 'header' })}
             >
               Download all
             </a>

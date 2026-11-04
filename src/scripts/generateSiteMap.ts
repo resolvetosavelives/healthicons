@@ -61,6 +61,7 @@ async function generateSiteMap() {
     '/how-to-use',
     '/figma-plugin',
     '/licenses',
+    '/privacy',
     '/request-icon'
   ].map((p) => urlEntry(p));
 

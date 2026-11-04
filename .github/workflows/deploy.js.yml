@@ -20,6 +20,11 @@ jobs:
         run: yarn install
       - name: Build my App
         run: yarn build && touch ./out/.nojekyll
+        env:
+          # PostHog analytics (see src/lib/analytics.ts), from the repository's
+          # Actions variables; without a key the site is built without it
+          NEXT_PUBLIC_POSTHOG_KEY: ${{ vars.POSTHOG_KEY }}
+          NEXT_PUBLIC_POSTHOG_HOST: ${{ vars.POSTHOG_HOST }}
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:

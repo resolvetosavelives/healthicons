@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import classnames from 'classnames';
@@ -9,6 +9,7 @@ import { searchKeywords } from '../lib/searchKeywords';
 import { TopBar } from './TopBar';
 import { FilterUrlSync } from './FilterUrlSync';
 import { filtersToQueryString } from '../lib/filterQuery';
+import { track } from '../lib/analytics';
 import { FilterSidebar, formatCategoryTitle } from './FilterSidebar';
 import { SearchBar } from './SearchBar';
 import { CategoryHeading } from './CategoryHeading';
@@ -129,6 +130,27 @@ export default function LandingPage({
     (counter, c) => counter + c.icons.length,
     0
   );
+
+  // searches that find nothing (at the chosen size, in any category), to show
+  // which icons people want but can't find. Sent once someone has stopped
+  // typing for a moment, so half-typed words aren't counted, and once per
+  // search per visit.
+  const reportedSearches = useRef(new Set<string>());
+  useEffect(() => {
+    const query = searchKeywordsValue.trim().toLowerCase().slice(0, 100);
+    if (
+      query.length < 2 ||
+      allCategoriesCount > 0 ||
+      reportedSearches.current.has(query)
+    ) {
+      return;
+    }
+    const timer = setTimeout(() => {
+      reportedSearches.current.add(query);
+      track('search_no_results', { query, size: searchFormatValue });
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, [searchKeywordsValue, allCategoriesCount, searchFormatValue]);
 
   const flatIcons = categoriesToRender.flatMap((c) => c.icons);
   // if searching by keyword, show all icons without categories and sorted A-Z

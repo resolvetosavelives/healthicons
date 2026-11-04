@@ -2,6 +2,7 @@ import Link from 'next/link';
 import HeadTags from '../components/HeadTags';
 import { AboutNav } from '../components/AboutNav';
 import { ContentPage } from '../components/ContentPage';
+import { track } from '../lib/analytics';
 
 export default function HowToUse() {
   return (
@@ -72,7 +73,12 @@ export default function HowToUse() {
         <ul>
           <li>
             Download every icon as SVG and PNG files in{' '}
-            <a href="/icons.zip">a ZIP file</a>
+            <a
+              href="/icons.zip"
+              onClick={() => track('download_all', { from: 'how_to_use' })}
+            >
+              a ZIP file
+            </a>
           </li>
           <li>
             The{' '}
