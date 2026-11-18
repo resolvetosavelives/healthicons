@@ -6,6 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta name="hideandseek" content="b91afae43c" />
         {/* night mode or not, before the page is drawn (no flash) */}
         <script
           // eslint-disable-next-line @typescript-eslint/naming-convention
