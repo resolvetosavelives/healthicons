@@ -68,11 +68,11 @@ function ExternalIcon() {
   );
 }
 
-// On mobile, a menu behind a three-dots button at the end of the links row
+// On mobile, a menu behind a More button at the end of the links row
 // has the About pages (which have their own menu column on desktop), apart
-// from the main one, which is About in the row, and Download all. On the
-// narrowest phones (under 430px) it also has the links that don't fit in the
-// row (Packages, GitHub).
+// from the main one, which is About in the row, GitHub and Download all. On
+// the narrowest phones (under 430px) it also has Packages, which doesn't fit
+// in the row there.
 // It closes on picking a link, Escape, a click elsewhere, changing pages, or
 // the header sliding away.
 function MoreMenu({
@@ -144,22 +144,25 @@ function MoreMenu({
         className={classnames(styles.moreButton, {
           [styles.moreButtonActive]: menuPageActive
         })}
-        aria-label="More"
         aria-expanded={open}
         aria-controls="more-menu"
         onClick={() => setOpen(!open)}
       >
-        {/* Lucide's ellipsis-vertical */}
+        More
+        {/* Lucide's chevron-down, turned over while the menu is open */}
         <svg
+          className={styles.moreChevron}
           viewBox="0 0 24 24"
-          width="16"
-          height="16"
-          fill="currentColor"
+          width="14"
+          height="14"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.25"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           aria-hidden="true"
         >
-          <circle cx="12" cy="5" r="2" />
-          <circle cx="12" cy="12" r="2" />
-          <circle cx="12" cy="19" r="2" />
+          <path d="m6 9 6 6 6-6" />
         </svg>
       </button>
       <ul id="more-menu" className={styles.moreList} hidden={!open}>
@@ -206,7 +209,9 @@ function MoreMenu({
             );
           }
         )}
-        <li className={styles.narrowOnly}>
+        {/* always in the menu; it starts the group (with a line above it)
+            when Packages above it isn't */}
+        <li className={styles.wideDivider}>
           <a href={GITHUB_URL} className={styles.moreItem} onClick={close}>
             GitHub
             <ExternalIcon />
@@ -357,7 +362,8 @@ export function TopBar() {
               </li>
             );
           })}
-          <li className={styles.wideOnly}>
+          {/* on mobile, GitHub is in the More menu instead */}
+          <li className={styles.desktopOnly}>
             <a href={GITHUB_URL} className={styles.link}>
               GitHub
               <ExternalIcon />

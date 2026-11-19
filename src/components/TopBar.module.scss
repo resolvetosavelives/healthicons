@@ -163,8 +163,8 @@
 }
 
 /* On the narrowest phones, where the links and the More button would be cut
-   off (they need about 380px), Packages and GitHub move from the links row
-   into the More menu (see TopBar.tsx) */
+   off, Packages moves from the links row into the More menu (see
+   TopBar.tsx) */
 @media (max-width: 429.98px) {
   .wideOnly {
     display: none;
@@ -177,7 +177,7 @@
   }
 }
 
-/* on mobile, Download all is in the More menu instead */
+/* on mobile, Download all and GitHub are in the More menu instead */
 @media (max-width: 59.98rem) {
   .desktopOnly {
     display: none;
@@ -205,27 +205,23 @@
   }
 }
 
-/* just the dots, like a link in the row; a round tint on hover */
+/* like a link in the row, with an arrow saying it opens a menu */
 .moreButton {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  padding: 0;
+  gap: 2px;
+  height: 100%;
+  padding: 0.75rem 0;
+  font: inherit;
   color: var(--heading-color);
   background: transparent;
   border: none;
-  border-radius: 50%;
   cursor: pointer;
-  transition:
-    background-color 0.15s ease-in-out,
-    color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
 
   &:hover,
   &[aria-expanded='true'] {
     color: var(--link-color);
-    background: var(--selected-color);
   }
 
   &:focus-visible {
@@ -234,8 +230,17 @@
   }
 }
 
-/* on a page that's in the menu on the narrowest phones (Packages), the dots
-   are purple like the active link's text (without its underline) */
+.moreChevron {
+  flex-shrink: 0;
+  transition: transform 0.15s ease-in-out;
+
+  [aria-expanded='true'] > & {
+    transform: rotate(180deg);
+  }
+}
+
+/* on a page that's in the menu on the narrowest phones (Packages), the
+   button is purple like the active link's text (without its underline) */
 @media (max-width: 429.98px) {
   .moreButtonActive {
     color: var(--link-color);
@@ -267,6 +272,15 @@
   margin-top: 0.25rem;
   padding-top: 0.35rem;
   border-top: 1px solid var(--border-color);
+}
+
+/* GitHub starts the other links' group when Packages isn't in the menu */
+@media (min-width: 430px) {
+  .wideDivider {
+    margin-top: 0.25rem;
+    padding-top: 0.35rem;
+    border-top: 1px solid var(--border-color);
+  }
 }
 
 /* the doubled class beats the global a:link colors */
