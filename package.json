@@ -89,7 +89,6 @@
     "public/icons"
   ],
   "dependencies": {
-    "clipboard": "^2.0.11",
     "posthog-js": "^1.445.5"
   }
 }
