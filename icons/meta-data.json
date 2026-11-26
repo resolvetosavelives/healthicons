@@ -1272,6 +1272,7 @@
    "Lab",
    "Nutrition",
    "Obese",
+   "Obesity",
    "Overweight",
    "Science",
    "Vitals",
@@ -6709,6 +6710,7 @@
   "tags": [
    "Nutrition",
    "Obese",
+   "Obesity",
    "Overweight",
    "Patient",
    "People",
@@ -8214,6 +8216,7 @@
    "Digestive System",
    "Intestine",
    "Pain",
+   "Small Intestine",
    "Stomach",
    "Symptom"
   ],
@@ -8380,6 +8383,7 @@
   "tags": [
    "Department",
    "Ear",
+   "Nasal",
    "Nose",
    "Speciality",
    "Specialty",
@@ -8452,6 +8456,7 @@
    "Nerve",
    "Nervous System",
    "Neurology",
+   "Neuron",
    "Pain"
   ],
   "title": "Nerve",
@@ -8515,6 +8520,7 @@
   "category": "body",
   "path": "body/nose",
   "tags": [
+   "Nasal",
    "Nose",
    "Nostril",
    "Smell"
@@ -8531,6 +8537,7 @@
   "path": "conditions/loss-smell",
   "tags": [
    "Covid",
+   "Nasal",
    "Nose",
    "Smell",
    "Symptom"
@@ -8765,7 +8772,8 @@
   "tags": [
    "Body",
    "Digestive System",
-   "Intestine"
+   "Intestine",
+   "Small Intestine"
   ],
   "title": "Intestine",
   "formats": [
@@ -10751,13 +10759,17 @@
   "path": "body/breasts",
   "tags": [
    "Body",
+   "Boob",
+   "Boobs",
    "Breast",
    "Breastfeeding",
    "Chest",
    "Mammary",
    "Mammogram",
    "Mother",
-   "Nipple"
+   "Nipple",
+   "Nipples",
+   "Tits"
   ],
   "title": "Breasts",
   "formats": [
@@ -11829,6 +11841,7 @@
    "Measure",
    "Nutrition",
    "Obese",
+   "Obesity",
    "Patient",
    "Thin",
    "Underweight",
@@ -11904,6 +11917,7 @@
    "Measure",
    "Nutrition",
    "Obese",
+   "Obesity",
    "Thin",
    "Underweight",
    "Waist",
@@ -12985,6 +12999,7 @@
    "Ear",
    "Head",
    "Hearing",
+   "Nasal",
    "Neck",
    "Nose",
    "Respiratory",
@@ -13184,10 +13199,14 @@
   "category": "conditions",
   "path": "conditions/breast-cancer",
   "tags": [
+   "Boob",
+   "Boobs",
    "Breast Health",
    "Cancer",
    "Mammogram",
+   "Nipples",
    "Oncology",
+   "Tits",
    "Tumor",
    "Tumour",
    "Women's Health"
@@ -13207,10 +13226,14 @@
    "Antenatal",
    "Antenatal Care",
    "Baby",
+   "Boob",
+   "Boobs",
    "Breast Health",
    "Chest",
    "Mammary Gland",
-   "Nursing"
+   "Nipples",
+   "Nursing",
+   "Tits"
   ],
   "title": "Breast",
   "formats": [
