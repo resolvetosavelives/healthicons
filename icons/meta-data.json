@@ -2245,19 +2245,6 @@
   ]
  },
  {
-  "id": "imm",
-  "category": "symbols",
-  "path": "symbols/imm",
-  "tags": [
-   "IMM",
-   "dhis2:imm"
-  ],
-  "title": "IMM",
-  "formats": [
-   "48px"
-  ]
- },
- {
   "id": "i-exam_qualification",
   "category": "symbols",
   "path": "symbols/i-exam_qualification",
