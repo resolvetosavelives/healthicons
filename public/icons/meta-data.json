@@ -22,8 +22,12 @@
   "category": "vehicles",
   "path": "vehicles/vespa-motorcycle",
   "tags": [
+   "Moped",
    "Motorbike",
    "Motorcycle",
+   "Scooter",
+   "Transport",
+   "Vehicle",
    "dhis2:vespa_motorcycle"
   ],
   "title": "Motor Scooter",
@@ -87,9 +91,13 @@
   "category": "vehicles",
   "path": "vehicles/helicopter",
   "tags": [
+   "Air Ambulance",
+   "Aircraft",
    "Chopper",
+   "Emergency",
    "Medevac",
-   "Medivac",
+   "Transport",
+   "Vehicle",
    "dhis2:helicopter"
   ],
   "title": "Helicopter",
@@ -134,8 +142,12 @@
   "category": "vehicles",
   "path": "vehicles/basic-motorcycle",
   "tags": [
-   "Dirtbike dhis2:motorcycle",
-   "Motorbike"
+   "Dirt Bike",
+   "Motorbike",
+   "Motorcycle",
+   "Transport",
+   "Vehicle",
+   "dhis2:motorcycle"
   ],
   "title": "Motorcycle",
   "formats": [
@@ -166,7 +178,6 @@
   "path": "vehicles/4x4",
   "tags": [
    "4x4",
-   "4×4",
    "Jeep",
    "Off-Road",
    "Sport Utility Vehicle",
@@ -437,6 +448,7 @@
   "category": "places",
   "path": "places/home-alt",
   "tags": [
+   "Accommodation",
    "Building",
    "Door",
    "House",
@@ -455,7 +467,7 @@
   "tags": [
    "Nature",
    "Park",
-   "Trees",
+   "Tree",
    "Woods",
    "dhis2:forest"
   ],
@@ -471,7 +483,7 @@
   "tags": [
    "Nature",
    "Park",
-   "Trees",
+   "Tree",
    "Woods",
    "dhis2:forest-persons"
   ],
@@ -486,7 +498,6 @@
   "path": "places/city",
   "tags": [
    "Building",
-   "Buildings",
    "Downtown",
    "Highrise",
    "Metro",
@@ -521,8 +532,14 @@
   "category": "symbols",
   "path": "symbols/virus",
   "tags": [
+   "Covid",
+   "Epidemic",
    "Infection",
+   "Infectious",
    "Infectious Disease",
+   "Pandemic",
+   "Virology",
+   "Virus",
    "dhis2:virus"
   ],
   "title": "Virus",
@@ -587,6 +604,7 @@
    "Pharmacy",
    "Pill",
    "Round",
+   "Tablet",
    "dhis2:pill_4"
   ],
   "title": "Pill 4",
@@ -606,6 +624,7 @@
    "Pharmacy",
    "Pill",
    "Round",
+   "Tablet",
    "dhis2:pill_3"
   ],
   "title": "Pill 3",
@@ -625,6 +644,7 @@
    "Pharmacy",
    "Pill",
    "Round",
+   "Tablet",
    "dhis2:pill_2"
   ],
   "title": "Pill 2",
@@ -644,6 +664,7 @@
    "Pharmacy",
    "Pill",
    "Round",
+   "Tablet",
    "dhis2:pill_1"
   ],
   "title": "Pill 1",
@@ -659,7 +680,11 @@
   "tags": [
    "Birth Control Pills",
    "Contraception",
+   "Contraceptive",
+   "Family Planning",
    "Female Contraception",
+   "RMNCH",
+   "Tablet",
    "dhis2:oral_contraception_pillsx28"
   ],
   "title": "Oral Contraceptive 28",
@@ -674,7 +699,11 @@
   "tags": [
    "Birth Control Pills",
    "Contraception",
+   "Contraceptive",
+   "Family Planning",
    "Female Contraception",
+   "RMNCH",
+   "Tablet",
    "dhis2:oral_contraception_pillsx21"
   ],
   "title": "Oral Contraceptive 21",
@@ -688,11 +717,12 @@
   "category": "medications",
   "path": "medications/medicines",
   "tags": [
-   "Drugs",
-   "Medications",
+   "Drug",
+   "Medication",
    "Meds",
    "Pharmacy",
-   "Pills",
+   "Pill",
+   "Tablet",
    "dhis2:Medicines"
   ],
   "title": "Medicines",
@@ -714,6 +744,7 @@
    "Pharmacy",
    "Pill",
    "Round",
+   "Tablet",
    "dhis2:blister_pills_round_x16"
   ],
   "title": "Blister Pills Round x16",
@@ -735,6 +766,7 @@
    "Pharmacy",
    "Pill",
    "Round",
+   "Tablet",
    "dhis2:blister_pills_round_x14"
   ],
   "title": "Blister Pills Round x14",
@@ -755,6 +787,7 @@
    "Pharmacy",
    "Pill",
    "Round",
+   "Tablet",
    "dhis2:blister_pills_round_x4"
   ],
   "title": "Blister Pills Round x4",
@@ -775,6 +808,7 @@
    "Pharmacy",
    "Pill",
    "Round",
+   "Tablet",
    "dhis2:blister_pills_round_x1"
   ],
   "title": "Blister Pills Round x1",
@@ -795,6 +829,7 @@
    "Oval",
    "Pharmacy",
    "Pill",
+   "Tablet",
    "dhis2:blister_pills_oval_x16"
   ],
   "title": "Blister Pills Oval x16",
@@ -815,6 +850,7 @@
    "Oval",
    "Pharmacy",
    "Pill",
+   "Tablet",
    "dhis2:blister_pills_oval_x14"
   ],
   "title": "Blister Pills Oval x14",
@@ -835,6 +871,7 @@
    "Oval",
    "Pharmacy",
    "Pill",
+   "Tablet",
    "dhis2:blister_pills_oval_x4"
   ],
   "title": "Blister Pills Oval x4",
@@ -855,6 +892,7 @@
    "Oval",
    "Pharmacy",
    "Pill",
+   "Tablet",
    "dhis2:blister_pills_oval_x1"
   ],
   "title": "Blister Pills Oval x1",
@@ -867,8 +905,14 @@
   "category": "diagnostics",
   "path": "diagnostics/synergist-insecticide_bioassays",
   "tags": [
+   "Bioassay",
+   "Diagnostic",
+   "Entomology",
+   "Insecticide",
    "Malaria",
    "Mosquito",
+   "Testing",
+   "Vector Control",
    "dhis2:synergist_insecticide_bioassays"
   ],
   "title": "Synergist Insecticide Bioassays",
@@ -1061,8 +1105,13 @@
   "category": "diagnostics",
   "path": "diagnostics/mosquito-collection",
   "tags": [
+   "Diagnostic",
+   "Entomology",
+   "Insect",
    "Malaria",
    "Mosquito",
+   "Surveillance",
+   "Vector Control",
    "dhis2:mosquito_collection"
   ],
   "title": "Mosquito Collection",
@@ -1075,8 +1124,10 @@
   "category": "diagnostics",
   "path": "diagnostics/malaria-testing",
   "tags": [
+   "Diagnostic",
    "Malaria",
    "Mosquito",
+   "Testing",
    "dhis2:malaria_testing"
   ],
   "title": "Malaria Testing",
@@ -1092,6 +1143,7 @@
    "Diagnostic",
    "Malaria",
    "Microscopic",
+   "Testing",
    "dhis2:malaria_pv_microscope"
   ],
   "title": "Malaria PV",
@@ -1107,6 +1159,7 @@
    "Diagnostic",
    "Malaria",
    "Microscopic",
+   "Testing",
    "dhis2:malaria_pf_microscope"
   ],
   "title": "Malaria PF",
@@ -1122,6 +1175,7 @@
    "Diagnostic",
    "Malaria",
    "Microscopic",
+   "Testing",
    "dhis2:malaria_mixed_microscope"
   ],
   "title": "Malaria Mixed",
@@ -1137,6 +1191,7 @@
    "Diagnostic",
    "Malaria",
    "Microscopic",
+   "Testing",
    "dhis2:malaria_negative_microscope"
   ],
   "title": "Malaria Negative",
@@ -1154,6 +1209,11 @@
    "Diagnostic",
    "HIV",
    "Hand",
+   "STD",
+   "STI",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection",
+   "Testing",
    "dhis2:hiv_self_test"
   ],
   "title": "HIV Self Test",
@@ -1166,8 +1226,15 @@
   "category": "diagnostics",
   "path": "diagnostics/cone-test_on_walls",
   "tags": [
+   "Bioassay",
    "Diagnostic",
+   "Entomology",
+   "Insecticide",
+   "Malaria",
+   "Mosquito",
    "Testing",
+   "Vector Control",
+   "Wall",
    "dhis2:cone_test_on_walls"
   ],
   "title": "Cone Test on Walls",
@@ -1180,8 +1247,15 @@
   "category": "diagnostics",
   "path": "diagnostics/cone-test_on_nets",
   "tags": [
+   "Bed Net",
+   "Bioassay",
    "Diagnostic",
+   "Entomology",
+   "Insecticide",
+   "Malaria",
+   "Mosquito",
    "Testing",
+   "Vector Control",
    "dhis2:cone_test_on_nets"
   ],
   "title": "Cone Test on Nets",
@@ -1196,10 +1270,12 @@
   "tags": [
    "Diagnostic",
    "Lab",
+   "Nutrition",
    "Obese",
    "Overweight",
    "Science",
    "Vitals",
+   "Weight",
    "dhis2:weight"
   ],
   "title": "Weight Scale",
@@ -1286,10 +1362,11 @@
   "category": "devices",
   "path": "devices/oxygen-tank",
   "tags": [
-   "02",
    "Air",
-   "Breath dhis2:oxygen_tank",
-   "Canister"
+   "Breath",
+   "Canister",
+   "O2",
+   "dhis2:oxygen_tank"
   ],
   "title": "Oxygen Tank",
   "formats": [
@@ -1302,7 +1379,12 @@
   "category": "devices",
   "path": "devices/odontology-implant",
   "tags": [
+   "Dental",
+   "Dental Implant",
    "Dentist",
+   "Dentistry",
+   "Oral Health",
+   "Teeth",
    "Tooth",
    "dhis2:odontology_implant"
   ],
@@ -1316,7 +1398,11 @@
   "category": "devices",
   "path": "devices/odontology",
   "tags": [
+   "Dental",
    "Dentist",
+   "Dentistry",
+   "Oral Health",
+   "Teeth",
    "Tooth",
    "dhis2:odontology"
   ],
@@ -1352,6 +1438,7 @@
    "Application",
    "Phone",
    "Smartphone",
+   "Tablet",
    "dhis2:mobile_app",
    "eHealth"
   ],
@@ -1386,6 +1473,12 @@
    "Condom",
    "Contraceptive",
    "Family Planning",
+   "Male",
+   "RMNCH",
+   "STD",
+   "STI",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection",
    "dhis2:male_condom"
   ],
   "title": "Male Condom",
@@ -1403,6 +1496,7 @@
    "Family Planning",
    "IUD",
    "Intrauterine Device",
+   "RMNCH",
    "dhis2:iud"
   ],
   "title": "Intrauterine Device",
@@ -1433,7 +1527,13 @@
   "category": "contraceptives",
   "path": "contraceptives/implant",
   "tags": [
+   "Arm",
+   "Contraceptive",
    "Device",
+   "Family Planning",
+   "Hormonal",
+   "Implant",
+   "RMNCH",
    "dhis2:implant"
   ],
   "title": "Implant",
@@ -1449,7 +1549,7 @@
   "tags": [
    "Bed",
    "Hospital",
-   "IV drip",
+   "IV Drip",
    "Inpatient",
    "Intravenous Drip",
    "Treatment",
@@ -1468,6 +1568,7 @@
   "tags": [
    "Contraceptive",
    "Family Planning",
+   "RMNCH",
    "dhis2:hormonal_ring"
   ],
   "title": "Hormonal Ring",
@@ -1484,6 +1585,12 @@
    "Condom",
    "Contraceptive",
    "Family Planning",
+   "Female",
+   "RMNCH",
+   "STD",
+   "STI",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection",
    "dhis2:female_condom"
   ],
   "title": "Female Condom",
@@ -1501,7 +1608,8 @@
    "Contraceptive",
    "Family Planning",
    "IUD",
-   "Pills",
+   "Pill",
+   "RMNCH",
    "dhis2:family_planning"
   ],
   "title": "Family Planning",
@@ -1518,6 +1626,7 @@
    "Contraceptive",
    "Family Planning",
    "Patch",
+   "RMNCH",
    "dhis2:contraceptive_patch"
   ],
   "title": "Contraceptive Patch",
@@ -1534,6 +1643,7 @@
    "Contraceptive",
    "Diaphragm",
    "Family Planning",
+   "RMNCH",
    "dhis2:contraceptive_diaphragm"
   ],
   "title": "Contraceptive Diaphragm",
@@ -1548,11 +1658,14 @@
   "path": "devices/blood-pressure",
   "tags": [
    "BP",
-   "Blood pressure",
+   "Blood Pressure",
    "Cardiology",
+   "Device",
    "Diagnosis",
    "Heart",
    "Hypertension",
+   "dhis2:blood_pressure_2",
+   "dhis2:blood_pressure_monitor",
    "dhis2:blood_pressure_positive"
   ],
   "title": "Hypertension",
@@ -1567,6 +1680,7 @@
   "tags": [
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "Transfusion"
   ],
@@ -1635,8 +1749,14 @@
   "category": "body",
   "path": "body/lungs",
   "tags": [
+   "Anatomy",
+   "Body",
+   "Breathing",
+   "Lung",
    "Organ",
-   "Pulmonary dhis2:lungs"
+   "Pulmonary",
+   "Respiratory System",
+   "dhis2:lungs"
   ],
   "title": "Lungs",
   "formats": [
@@ -1649,7 +1769,12 @@
   "category": "body",
   "path": "body/kidneys",
   "tags": [
+   "Anatomy",
+   "Body",
+   "Kidney",
+   "Nephrology",
    "Organ",
+   "Renal",
    "Urinary",
    "dhis2:kidney"
   ],
@@ -1664,7 +1789,7 @@
   "category": "body",
   "path": "body/dna",
   "tags": [
-   "Chomosome",
+   "Chromosome",
    "Deoxyribonucleic Acid",
    "Double Helix"
   ],
@@ -1698,7 +1823,9 @@
    "Banned",
    "Cessation",
    "Smoking",
-   "Tobacco"
+   "Stop",
+   "Tobacco",
+   "Unhealthy"
   ],
   "title": "No Smoking ALT",
   "formats": [
@@ -1711,8 +1838,12 @@
   "category": "symbols",
   "path": "symbols/smoking",
   "tags": [
+   "Addiction",
+   "Cigarette",
+   "Lung",
    "Smoking",
-   "Tobacco"
+   "Tobacco",
+   "Unhealthy"
   ],
   "title": "Smoking",
   "formats": [
@@ -1743,6 +1874,7 @@
    "Appliance",
    "Plumbing",
    "Running Water",
+   "WASH",
    "Water"
   ],
   "title": "Water Tap",
@@ -1856,7 +1988,7 @@
   "path": "symbols/polygon",
   "tags": [
    "Design",
-   "Nodes",
+   "Node",
    "Pentagon",
    "Shape",
    "dhis2:polygon"
@@ -1888,6 +2020,7 @@
   "category": "symbols",
   "path": "symbols/peace",
   "tags": [
+   "Peace Sign",
    "Symbol",
    "dhis2:peace"
   ],
@@ -1903,7 +2036,10 @@
   "path": "symbols/paved-road_alt",
   "tags": [
    "Curve",
+   "Infrastructure",
    "Road",
+   "Street",
+   "Transport",
    "dhis2:paved_road_alt"
   ],
   "title": "Paved Road Alt",
@@ -1918,7 +2054,10 @@
   "path": "symbols/paved-road",
   "tags": [
    "Curve",
+   "Infrastructure",
    "Road",
+   "Street",
+   "Transport",
    "dhis2:paved_road"
   ],
   "title": "Paved Road",
@@ -2045,7 +2184,7 @@
    "Call Center",
    "Information",
    "Phone",
-   "Phone line",
+   "Phone Line",
    "dhis2:medical_advice"
   ],
   "title": "Medical Advice Hotline",
@@ -2243,7 +2382,7 @@
   "category": "symbols",
   "path": "symbols/health-data_sync",
   "tags": [
-   "Data flow",
+   "Data Flow",
    "Flow",
    "Synchronization",
    "dhis2:health_data_sync"
@@ -2311,7 +2450,7 @@
   "path": "symbols/electricity",
   "tags": [
    "Bulb",
-   "Light bulb",
+   "Light Bulb",
    "Lightning",
    "Zap",
    "dhis2:electricity"
@@ -2396,7 +2535,10 @@
   "category": "symbols",
   "path": "symbols/dhis2-logo",
   "tags": [
+   "DHIS2",
    "Layers",
+   "Logo",
+   "Software",
    "Squares",
    "dhis2:dhis2_logo"
   ],
@@ -2529,6 +2671,7 @@
   "tags": [
    "Disease",
    "Tap",
+   "WASH",
    "Water",
    "Water Borne Disease",
    "dhis2:cholera"
@@ -2686,6 +2829,10 @@
   "category": "symbols",
   "path": "symbols/alert-circle",
   "tags": [
+   "Alert",
+   "Attention",
+   "Circle",
+   "Exclamation Mark",
    "Exclamation Point",
    "Warning",
    "dhis2:alert_circle"
@@ -2718,7 +2865,7 @@
    "Activism",
    "Environment",
    "Globe",
-   "Hands",
+   "Hand",
    "dhis2:world_care"
   ],
   "title": "Environmental",
@@ -2732,10 +2879,12 @@
   "path": "people/water-sanitation",
   "tags": [
    "Clean",
-   "Fingers",
+   "Finger",
    "Hand",
    "Hygiene",
    "Sanitation",
+   "WASH",
+   "Water",
    "dhis2:wash_hands"
   ],
   "title": "Water Sanitation",
@@ -2750,10 +2899,11 @@
   "path": "people/wash-hands",
   "tags": [
    "Clean",
-   "Fingers",
+   "Finger",
    "Hand",
    "Hygiene",
    "Sanitation",
+   "WASH",
    "dhis2:wash_hands"
   ],
   "title": "Wash Hands",
@@ -2766,7 +2916,7 @@
   "category": "conditions",
   "path": "conditions/tb",
   "tags": [
-   "Lungs",
+   "Lung",
    "Organ",
    "TB",
    "dhis2:tb"
@@ -2782,7 +2932,7 @@
   "category": "people",
   "path": "people/refused",
   "tags": [
-   "Fingers",
+   "Finger",
    "Five",
    "Palm",
    "Refused",
@@ -2800,12 +2950,12 @@
   "category": "people",
   "path": "people/people",
   "tags": [
-   "Avatars",
+   "Avatar",
    "Group",
    "Parent",
    "Person",
    "Two People",
-   "Users",
+   "User",
    "dhis2:people"
   ],
   "title": "People",
@@ -2888,10 +3038,12 @@
   "path": "conditions/diarrhea",
   "tags": [
    "Diarrhea",
+   "Diarrhoea",
    "Feces",
    "Person",
    "Sick",
    "Symptom",
+   "WASH",
    "dhis2:diarrhea"
   ],
   "title": "Diarrhea",
@@ -2906,7 +3058,11 @@
   "path": "people/diabetes",
   "tags": [
    "Blood",
-   "Blood Test Hand"
+   "Blood Sugar",
+   "Blood Test Hand",
+   "Diabetes",
+   "Finger Prick",
+   "Glucose"
   ],
   "title": "Diabetes",
   "formats": [
@@ -2935,10 +3091,11 @@
   "path": "people/clean-hands",
   "tags": [
    "Clean",
-   "Fingers",
+   "Finger",
    "Hand",
    "Hygiene",
    "Sanitation",
+   "WASH",
    "dhis2:clean_hands"
   ],
   "title": "Clean Hands",
@@ -2973,7 +3130,7 @@
   "path": "people/asthma",
   "tags": [
    "Inhaler",
-   "Lungs",
+   "Lung",
    "Mouth",
    "Respiratory"
   ],
@@ -2987,8 +3144,12 @@
   "category": "conditions",
   "path": "conditions/allergies",
   "tags": [
+   "Allergy",
+   "Dermatology",
    "Hand",
+   "Itchy",
    "Rash",
+   "Skin",
    "dhis2:allergies"
   ],
   "title": "Allergies",
@@ -3020,10 +3181,10 @@
    "Computer",
    "Desktop",
    "Icons",
-   "MacOS",
    "Monitor",
    "Operating System",
-   "Windows"
+   "Windows",
+   "macOS"
   ],
   "title": "Desktop App",
   "formats": [
@@ -3037,9 +3198,9 @@
   "tags": [
    "Building",
    "Camp",
-   "Houses",
-   "Huts",
-   "Tents",
+   "House",
+   "Hut",
+   "Tent",
    "Town",
    "dhis2:village"
   ],
@@ -3076,7 +3237,8 @@
    "Building",
    "Door",
    "House",
-   "Roof"
+   "Roof",
+   "dhis2:home"
   ],
   "title": "Home",
   "formats": [
@@ -3103,7 +3265,11 @@
   "category": "devices",
   "path": "devices/wheelchair-alt",
   "tags": [
-   "Transport"
+   "Accessibility",
+   "Disability",
+   "Disabled",
+   "Transport",
+   "Wheelchair"
   ],
   "title": "Wheelchair ALT",
   "formats": [
@@ -3119,6 +3285,7 @@
    "Bag",
    "Blood",
    "Drip",
+   "Hospitalised",
    "Hospitalized",
    "IV",
    "Inpatient",
@@ -3564,7 +3731,8 @@
    "Department",
    "Emergency",
    "Light",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Accident and Emergency",
   "formats": [
@@ -3576,7 +3744,7 @@
   "category": "specialties",
   "path": "specialties/admissions",
   "tags": [
-   "Admissions",
+   "Admission",
    "Department",
    "Door",
    "Entrance",
@@ -3584,7 +3752,8 @@
    "Open",
    "Outpatient",
    "Registration",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Admissions",
   "formats": [
@@ -3601,7 +3770,8 @@
    "Department",
    "Heart",
    "Pulse",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Coronary Care",
   "formats": [
@@ -3622,7 +3792,8 @@
    "Monitor",
    "NICU",
    "Pulse",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Critical Care",
   "formats": [
@@ -3640,7 +3811,8 @@
    "Exit",
    "Leave",
    "Lounge",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Discharge Lounge",
   "formats": [
@@ -3657,7 +3829,8 @@
    "Department",
    "Heart",
    "Organ",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Cardiology",
   "formats": [
@@ -3689,7 +3862,10 @@
   "tags": [
    "Blood",
    "Department",
-   "Speciality"
+   "Haematology",
+   "Hematology",
+   "Speciality",
+   "Specialty"
   ],
   "title": "Hematology",
   "formats": [
@@ -3702,8 +3878,9 @@
   "path": "specialties/nephrology",
   "tags": [
    "Department",
-   "Kidneys",
-   "Speciality"
+   "Kidney",
+   "Speciality",
+   "Specialty"
   ],
   "title": "Nephrology",
   "formats": [
@@ -3715,16 +3892,22 @@
   "category": "specialties",
   "path": "specialties/obstetricsmonia",
   "tags": [
+   "ANC",
+   "Antenatal",
+   "Antenatal Care",
    "Baby",
    "Birth",
    "Childbirth",
    "Department",
+   "Gynaecology",
    "Gynecology",
-   "Obgyn",
+   "OBGYN",
    "Obstetrics",
-   "Speciality"
+   "RMNCH",
+   "Speciality",
+   "Specialty"
   ],
-  "title": "Obstetricsmonia",
+  "title": "Obstetrics",
   "formats": [
    "48px"
   ]
@@ -3738,6 +3921,7 @@
    "Eye",
    "Sight",
    "Speciality",
+   "Specialty",
    "Vision"
   ],
   "title": "Ophthalmology",
@@ -3752,8 +3936,9 @@
   "tags": [
    "Breathing",
    "Department",
-   "Lungs",
+   "Lung",
    "Pulmonary",
+   "Speciality",
    "Specialty"
   ],
   "title": "Respirology",
@@ -3770,6 +3955,7 @@
    "Department",
    "Psych",
    "Psychiatry",
+   "Speciality",
    "Specialty"
   ],
   "title": "Psychology",
@@ -3788,7 +3974,8 @@
    "PHI",
    "Patient Chart",
    "Records",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Medical Records",
   "formats": [
@@ -3803,7 +3990,8 @@
    "Cancer",
    "Chemotherapy",
    "Department",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Oncology",
   "formats": [
@@ -3815,10 +4003,12 @@
   "category": "specialties",
   "path": "specialties/orthopaedics",
   "tags": [
-   "Bones",
+   "Bone",
    "Department",
-   "Joints",
+   "Joint",
    "Ortho",
+   "Speciality",
+   "Specialty",
    "Spine"
   ],
   "title": "Orthopaedics",
@@ -3833,7 +4023,9 @@
   "tags": [
    "Department",
    "Radiology",
+   "Speciality",
    "Specialty",
+   "X-Ray",
    "Xray"
   ],
   "title": "Radiology",
@@ -3850,6 +4042,7 @@
    "Language",
    "Pathology",
    "SLP",
+   "Speciality",
    "Specialty",
    "Speech",
    "Therapy"
@@ -3866,12 +4059,13 @@
   "tags": [
    "Department",
    "Female",
+   "RMNCH",
    "Reproduction",
    "Sex Organs",
    "Speciality",
+   "Specialty",
    "Uterus",
-   "Woman Health",
-   "Womens Health"
+   "Women's Health"
   ],
   "title": "Gynecology",
   "formats": [
@@ -3886,6 +4080,7 @@
    "Department",
    "GI",
    "Speciality",
+   "Specialty",
    "Stomach"
   ],
   "title": "Gastroenterology",
@@ -3903,8 +4098,9 @@
    "Department",
    "Finance",
    "Heart",
-   "Payments",
-   "Speciality"
+   "Payment",
+   "Speciality",
+   "Specialty"
   ],
   "title": "Finance",
   "formats": [
@@ -3918,9 +4114,12 @@
   "tags": [
    "Blood",
    "Department",
+   "Haematology",
+   "Hematology",
    "Lab",
    "Laboratory",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Hematology Lab",
   "formats": [
@@ -3938,6 +4137,7 @@
    "Hiring",
    "People",
    "Speciality",
+   "Specialty",
    "Team"
   ],
   "title": "Human Resources",
@@ -4080,10 +4280,13 @@
   "category": "body",
   "path": "body/female-reproductive_system",
   "tags": [
+   "Female",
+   "Gynaecology",
    "Gynecology",
    "Health",
    "Organ",
    "Ovary",
+   "RMNCH",
    "Uterus",
    "Vagina",
    "Woman"
@@ -4153,6 +4356,7 @@
    "Cross",
    "Hospital",
    "Medicine",
+   "Protect",
    "Symbol"
   ],
   "title": "Health ALT",
@@ -4205,6 +4409,7 @@
    "A Negative",
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "Transfusion",
    "dhis2:blood_a_n"
@@ -4223,6 +4428,7 @@
    "A Positive",
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "Transfusion",
    "dhis2:blood_a_p"
@@ -4241,6 +4447,7 @@
    "AB Negative",
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "Transfusion",
    "dhis2:blood_ab_n"
@@ -4259,6 +4466,7 @@
    "AB Positive",
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "Transfusion",
    "dhis2:blood_ab_p"
@@ -4277,6 +4485,7 @@
    "B Negative",
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "Transfusion",
    "dhis2:blood_b_n"
@@ -4295,6 +4504,7 @@
    "B Positive",
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "Transfusion",
    "dhis2:blood_b_p"
@@ -4312,6 +4522,7 @@
   "tags": [
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "O Negative",
    "Transfusion",
@@ -4330,6 +4541,7 @@
   "tags": [
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "O Positive",
    "Transfusion",
@@ -4348,6 +4560,7 @@
   "tags": [
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "RH Negative",
    "Transfusion",
@@ -4366,6 +4579,7 @@
   "tags": [
    "Bag",
    "Blood",
+   "Haematology",
    "Hematology",
    "RH Positive",
    "Transfusion",
@@ -4387,7 +4601,7 @@
    "Group",
    "Person",
    "Three People",
-   "Users",
+   "User",
    "dhis2:i_groups_perspective_crowd"
   ],
   "title": "Group",
@@ -4532,6 +4746,7 @@
    "Privy",
    "Thunderbox",
    "Toilet",
+   "WASH",
    "WC",
    "Water Closet",
    "dhis2:letrina"
@@ -4561,6 +4776,7 @@
    "Privy",
    "Thunderbox",
    "Toilet",
+   "WASH",
    "WC",
    "Water Closet"
   ],
@@ -4640,9 +4856,14 @@
   "path": "places/rural-post",
   "tags": [
    "Building",
+   "Clinic",
    "Hospital",
+   "Local",
+   "PHC",
+   "Primary Care",
    "Rural Post",
    "Small Hospital",
+   "Village",
    "dhis2:rural_post"
   ],
   "title": "Rural Clinic",
@@ -4758,8 +4979,9 @@
    "Female",
    "Gender",
    "Male",
+   "RMNCH",
    "Sex",
-   "Symbols",
+   "Symbol",
    "dhis2:sexual_reproductive_health"
   ],
   "title": "Gender Symbols",
@@ -4775,6 +4997,10 @@
    "Human Papillomavirus",
    "Infection",
    "Infectious Disease",
+   "STD",
+   "STI",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection",
    "Virus"
   ],
   "title": "HPV",
@@ -4791,6 +5017,10 @@
    "HIV",
    "Infection",
    "Infectious Disease",
+   "STD",
+   "STI",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection",
    "Virus",
    "dhis2:vih"
   ],
@@ -4922,6 +5152,8 @@
    "Drinking Water",
    "Running Water",
    "Sanitation",
+   "WASH",
+   "Water",
    "dhis2:running_water"
   ],
   "title": "Water Tap",
@@ -4937,7 +5169,6 @@
   "tags": [
    "Aerosol",
    "Cough",
-   "Emoji",
    "Emoji",
    "Emoticon",
    "Emotion",
@@ -5001,7 +5232,6 @@
   "path": "emotions/face-measles",
   "tags": [
    "Disease",
-   "Emoji",
    "Emoji",
    "Emoticon",
    "Emotion",
@@ -5261,7 +5491,6 @@
    "Emoticon",
    "Emotion",
    "Eyeglasses",
-   "Eyeglasses",
    "Face",
    "Optometry",
    "Spectacles"
@@ -5443,8 +5672,10 @@
   "path": "specialties/endocrinology",
   "tags": [
    "Department",
-   "Endocrine glands",
-   "Hormones"
+   "Endocrine Gland",
+   "Hormones",
+   "Speciality",
+   "Specialty"
   ],
   "title": "Endocrinology",
   "formats": [
@@ -5491,7 +5722,11 @@
   "path": "specialties/hepatology",
   "tags": [
    "Department",
-   "Liver"
+   "Gastroenterology",
+   "Hepatitis",
+   "Liver",
+   "Speciality",
+   "Specialty"
   ],
   "title": "Hepatology",
   "formats": [
@@ -5504,10 +5739,12 @@
   "path": "specialties/pharmacy-dept",
   "tags": [
    "Department",
-   "Drugs",
+   "Drug",
    "Medication",
-   "Medicines",
-   "Pharmacy"
+   "Medicine",
+   "Pharmacy",
+   "Speciality",
+   "Specialty"
   ],
   "title": "Pharmacy",
   "formats": [
@@ -5522,6 +5759,7 @@
    "Accessibility",
    "Disability",
    "Disabled",
+   "Transport",
    "Wheelchair"
   ],
   "title": "Wheelchair",
@@ -5568,7 +5806,8 @@
    "Broom",
    "Cache",
    "Cleaning",
-   "Sanitation"
+   "Sanitation",
+   "WASH"
   ],
   "title": "Cleaning",
   "formats": [
@@ -5613,8 +5852,7 @@
   "path": "conditions/low-vision",
   "tags": [
    "Eye",
-   "Eyes",
-   "Opthamology",
+   "Ophthalmology",
    "Optometry",
    "Sight",
    "Vision"
@@ -5650,6 +5888,7 @@
    "Chest",
    "Exam",
    "Radiology",
+   "X-Ray",
    "Xray"
   ],
   "title": "X-ray",
@@ -5681,8 +5920,10 @@
   "tags": [
    "Bone",
    "Department",
-   "Joints",
+   "Joint",
    "Ortho",
+   "Speciality",
+   "Specialty",
    "Spine"
   ],
   "title": "Rheumatology",
@@ -5695,10 +5936,11 @@
   "category": "body",
   "path": "body/joints",
   "tags": [
-   "Bones",
-   "Joints",
+   "Bone",
+   "Joint",
    "Ortho",
-   "Orthopaedics"
+   "Orthopaedics",
+   "Orthopedics"
   ],
   "title": "Joints",
   "formats": [
@@ -5717,7 +5959,10 @@
    "Local",
    "PHC",
    "Primary Care",
-   "Village"
+   "Rural Post",
+   "Small Hospital",
+   "Village",
+   "dhis2:rural_post"
   ],
   "title": "Rural Post ALT",
   "formats": [
@@ -5730,7 +5975,12 @@
   "category": "objects",
   "path": "objects/umbrella",
   "tags": [
-   "Transgender"
+   "Protection",
+   "Rain",
+   "Trans",
+   "Transgender",
+   "Umbrella",
+   "Weather"
   ],
   "title": "Umbrella",
   "formats": [
@@ -5759,7 +6009,11 @@
   "path": "objects/rdt-result_out_stock",
   "tags": [
    "Empty Box",
-   "Retroviral",
+   "Inventory",
+   "RDT",
+   "Rapid Diagnostic Test",
+   "Stock Out",
+   "Supply",
    "dhis2:rdt_result_out_stock"
   ],
   "title": "Stock Out RDT",
@@ -5773,7 +6027,11 @@
   "path": "objects/stock-out",
   "tags": [
    "Empty Box",
-   "Medicines",
+   "Inventory",
+   "Medicine",
+   "Pharmacy",
+   "Stock Out",
+   "Supply",
    "dhis2:stock_out"
   ],
   "title": "Stock Out",
@@ -5789,7 +6047,7 @@
    "Office",
    "Pen",
    "Ruler",
-   "Tools",
+   "Tool",
    "dhis2:i_utensils"
   ],
   "title": "Utensils",
@@ -5809,7 +6067,8 @@
    "Examination",
    "OPD",
    "Outpatient Department",
-   "Triage",
+   "Speciality",
+   "Specialty",
    "Triage"
   ],
   "title": "Outpatient",
@@ -5839,7 +6098,11 @@
   "category": "symbols",
   "path": "symbols/insecticide-resistance",
   "tags": [
+   "Insecticide",
+   "Malaria",
    "Mosquito",
+   "Resistance",
+   "Vector Control",
    "dhis2:insecticide_resistance"
   ],
   "title": "Insecticide Resistant",
@@ -5854,6 +6117,12 @@
   "tags": [
    "AIDS",
    "HIV",
+   "Inconclusive",
+   "STD",
+   "STI",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection",
+   "Test Result",
    "dhis2:hiv_ind"
   ],
   "title": "HIV Inconclusive",
@@ -5868,6 +6137,12 @@
   "tags": [
    "AIDS",
    "HIV",
+   "Negative",
+   "STD",
+   "STI",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection",
+   "Test Result",
    "dhis2:hiv_neg"
   ],
   "title": "HIV Negative",
@@ -5882,6 +6157,12 @@
   "tags": [
    "AIDS",
    "HIV",
+   "Positive",
+   "STD",
+   "STI",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection",
+   "Test Result",
    "dhis2:hiv_pos"
   ],
   "title": "HIV Positive",
@@ -5917,7 +6198,11 @@
    "Campaign",
    "Cancer",
    "HIV",
-   "Ribbon"
+   "Ribbon",
+   "STD",
+   "STI",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection"
   ],
   "title": "HIV",
   "formats": [
@@ -5948,7 +6233,7 @@
   "tags": [
    "Body",
    "Human",
-   "Limbs"
+   "Limb"
   ],
   "title": "Body",
   "formats": [
@@ -5983,8 +6268,11 @@
    "STI",
    "Sex",
    "Sexual",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection",
    "Sick",
-   "Symptom dhis2:sti"
+   "Symptom",
+   "dhis2:sti"
   ],
   "title": "Sexually Transmitted Infection",
   "formats": [
@@ -5999,6 +6287,7 @@
    "Boy",
    "Child",
    "Male",
+   "RMNCH",
    "Toddler",
    "dhis2:boy_0105y"
   ],
@@ -6021,6 +6310,7 @@
    "Girl",
    "Kids",
    "Male",
+   "RMNCH",
    "Siblings",
    "Young",
    "Youth",
@@ -6039,6 +6329,7 @@
    "Child",
    "Female",
    "Girl",
+   "RMNCH",
    "Toddler",
    "dhis2:girl_0105y"
   ],
@@ -6070,6 +6361,8 @@
   "path": "people/male-and_female",
   "tags": [
    "Couple",
+   "Female",
+   "Male",
    "Man",
    "People",
    "Woman",
@@ -6087,6 +6380,8 @@
   "path": "people/female-and_male",
   "tags": [
    "Couple",
+   "Female",
+   "Male",
    "Man",
    "People",
    "Woman",
@@ -6144,9 +6439,12 @@
   "category": "people",
   "path": "people/baby-male_0609m",
   "tags": [
+   "Baby",
    "Boy",
    "Diaper",
    "Infant",
+   "Male",
+   "RMNCH",
    "dhis2:baby_male_0609m"
   ],
   "title": "Baby Male 2-3 Months",
@@ -6159,10 +6457,12 @@
   "category": "people",
   "path": "people/baby-0203m",
   "tags": [
+   "Baby",
    "Boy",
    "Diaper",
    "Girl",
-   "Infant"
+   "Infant",
+   "RMNCH"
   ],
   "title": "Baby 2-3 Months",
   "formats": [
@@ -6175,9 +6475,12 @@
   "category": "people",
   "path": "people/baby-female_0609m",
   "tags": [
+   "Baby",
    "Diaper",
+   "Female",
    "Girl",
    "Infant",
+   "RMNCH",
    "dhis2:baby_male_0609m"
   ],
   "title": "Baby Female 6-9 Months",
@@ -6223,6 +6526,7 @@
   "tags": [
    "Cleaner",
    "Labor",
+   "Labour",
    "Plumber",
    "dhis2:domestic_worker"
   ],
@@ -6319,6 +6623,7 @@
   "tags": [
    "Cleaner",
    "Labor",
+   "Labour",
    "Plumber",
    "dhis2:domestic_worker"
   ],
@@ -6366,6 +6671,7 @@
   "path": "people/miner-worker",
   "tags": [
    "Helmet",
+   "Industry",
    "Miner",
    "Worker",
    "dhis2:miner_worker"
@@ -6381,11 +6687,13 @@
   "path": "people/pregnant",
   "tags": [
    "ANC",
+   "Antenatal",
+   "Antenatal Care",
    "Mother",
    "Person",
    "Pregnancy",
+   "RMNCH",
    "Woman",
-   "antenatal",
    "dhis2:pregnant"
   ],
   "title": "Pregnant",
@@ -6399,11 +6707,13 @@
   "category": "conditions",
   "path": "conditions/overweight",
   "tags": [
+   "Nutrition",
    "Obese",
    "Overweight",
    "Patient",
    "People",
    "Vitals",
+   "Weight",
    "dhis2:overweight"
   ],
   "title": "Overweight",
@@ -6425,6 +6735,7 @@
    "Nursing",
    "Postnatal",
    "Pregnant",
+   "RMNCH",
    "dhis2:lactation"
   ],
   "title": "Nursing Mother",
@@ -6459,11 +6770,13 @@
   "category": "people",
   "path": "people/baby-female_0306m",
   "tags": [
+   "Baby",
    "Crawl",
    "Diaper",
    "Female",
    "Girl",
    "Infant",
+   "RMNCH",
    "dhis2:baby_female"
   ],
   "title": "Baby Female 3-6 Months",
@@ -6476,11 +6789,14 @@
   "category": "people",
   "path": "people/baby-male_0306m",
   "tags": [
+   "Baby",
    "Boy",
    "Crawl",
    "Diaper",
    "Girl",
    "Infant",
+   "Male",
+   "RMNCH",
    "dhis2:baby_male"
   ],
   "title": "Baby Male 3-6 Months",
@@ -6493,13 +6809,15 @@
   "category": "people",
   "path": "people/baby-0306m",
   "tags": [
+   "Baby",
    "Boy",
    "Crawl",
    "Diaper",
    "Female",
    "Girl",
    "Infant",
-   "Male"
+   "Male",
+   "RMNCH"
   ],
   "title": "Baby 3-6 months",
   "formats": [
@@ -6512,9 +6830,12 @@
   "category": "people",
   "path": "people/baby-female_0203m_alt",
   "tags": [
+   "Baby",
    "Diaper",
+   "Female",
    "Girl",
-   "Infant"
+   "Infant",
+   "RMNCH"
   ],
   "title": "Baby Female 2-3 Months ALT",
   "formats": [
@@ -6526,9 +6847,12 @@
   "category": "people",
   "path": "people/baby-male_0203m_alt",
   "tags": [
+   "Baby",
    "Boy",
    "Diaper",
    "Infant",
+   "Male",
+   "RMNCH",
    "dhis2:baby_male_0203m"
   ],
   "title": "Baby Male 2-3 Months ALT",
@@ -6541,10 +6865,12 @@
   "category": "people",
   "path": "people/baby-0203_alt",
   "tags": [
+   "Baby",
    "Boy",
    "Diaper",
    "Girl",
-   "Infant"
+   "Infant",
+   "RMNCH"
   ],
   "title": "Baby 2-3 Months ALT",
   "formats": [
@@ -6576,7 +6902,7 @@
   "tags": [
    "Ecology",
    "Environment",
-   "Hands",
+   "Hand",
    "Leaf",
    "Plant",
    "Seed",
@@ -6612,11 +6938,14 @@
   "category": "people",
   "path": "people/rmnh",
   "tags": [
+   "ANC",
    "Antenatal",
+   "Antenatal Care",
    "Baby",
    "Child",
    "Mother",
    "Postnatal",
+   "RMNCH",
    "RMNH",
    "dhis2:rmnh"
   ],
@@ -6654,6 +6983,7 @@
    "Female",
    "Person",
    "Prostitute",
+   "Sex Worker",
    "Woman",
    "Worker",
    "dhis2:sex_worker_female"
@@ -6671,6 +7001,7 @@
    "Male",
    "Person",
    "Prostitute",
+   "Sex Worker",
    "Worker",
    "dhis2:sex_worker_male"
   ],
@@ -6702,6 +7033,7 @@
   "tags": [
    "Doctor",
    "MD",
+   "Male",
    "Man",
    "Stethoscope",
    "dhis2:doctor_male"
@@ -6717,6 +7049,7 @@
   "path": "people/doctor-female",
   "tags": [
    "Doctor",
+   "Female",
    "MD",
    "Stethoscope",
    "Woman",
@@ -6786,6 +7119,7 @@
    "Baby",
    "Childcare",
    "Parent",
+   "RMNCH",
    "dhis2:child_care"
   ],
   "title": "Child care",
@@ -6818,7 +7152,7 @@
   "path": "people/pwid",
   "tags": [
    "Arm",
-   "Drugs",
+   "Drug",
    "IV",
    "Intravenous",
    "Narcotics",
@@ -6838,11 +7172,13 @@
   "tags": [
    "ANC",
    "Antenatal",
+   "Antenatal Care",
    "Baby",
+   "Embryo",
    "Placenta",
+   "RMNCH",
    "Umbilical Cord",
-   "dhis2:fetus",
-   "embryo"
+   "dhis2:fetus"
   ],
   "title": "Fetus",
   "formats": [
@@ -6857,9 +7193,11 @@
   "tags": [
    "ANC",
    "Antenatal",
+   "Antenatal Care",
    "Mother",
    "Person",
    "Pregnancy",
+   "RMNCH",
    "Woman",
    "dhis2:pregnant_32w"
   ],
@@ -6875,9 +7213,11 @@
   "tags": [
    "ANC",
    "Antenatal",
+   "Antenatal Care",
    "Mother",
    "Person",
    "Pregnancy",
+   "RMNCH",
    "Woman",
    "dhis2:pregnant_0812w"
   ],
@@ -6893,9 +7233,11 @@
   "tags": [
    "ANC",
    "Antenatal",
+   "Antenatal Care",
    "Mother",
    "Person",
    "Pregnancy",
+   "RMNCH",
    "Woman",
    "dhis2:pregnant_2426w"
   ],
@@ -6911,9 +7253,11 @@
   "tags": [
    "ANC",
    "Antenatal",
+   "Antenatal Care",
    "Mother",
    "Person",
    "Pregnancy",
+   "RMNCH",
    "Woman",
    "dhis2:pregnant_3638w"
   ],
@@ -6985,8 +7329,9 @@
    "Illness",
    "Person",
    "Sick",
-   "Symptom dhis2:sweating",
-   "Temperature"
+   "Symptom",
+   "Temperature",
+   "dhis2:sweating"
   ],
   "title": "Sweating",
   "formats": [
@@ -7002,7 +7347,7 @@
    "Body",
    "Diagnosis",
    "Exam",
-   "Symptoms",
+   "Symptom",
    "Triage"
   ],
   "title": "Symptoms",
@@ -7017,11 +7362,13 @@
   "path": "conditions/underweight",
   "tags": [
    "Malnutrition",
+   "Nutrition",
    "Patient",
    "People",
    "Thin",
    "Underweight",
    "Vitals",
+   "Weight",
    "dhis2:underweight"
   ],
   "title": "Underweight",
@@ -7074,9 +7421,12 @@
   "path": "people/ancv",
   "tags": [
    "ANC",
+   "Antenatal",
+   "Antenatal Care",
    "Mother",
    "Pregnancy",
    "Pregnant",
+   "RMNCH",
    "dhis2:ancv"
   ],
   "title": "Antenatal Care Visit",
@@ -7189,7 +7539,8 @@
    "Illness",
    "Person",
    "Sick",
-   "Symptom dhis2:headache"
+   "Symptom",
+   "dhis2:headache"
   ],
   "title": "Headache",
   "formats": [
@@ -7238,6 +7589,7 @@
    "Contraceptive",
    "Family Planning",
    "Injection",
+   "RMNCH",
    "dhis2:contraceptive_injection"
   ],
   "title": "Contraceptive Injection",
@@ -7252,11 +7604,15 @@
   "path": "devices/blood-pressure_2",
   "tags": [
    "BP",
+   "Blood Pressure",
    "Cardiology",
    "Device",
+   "Diagnosis",
    "Heart",
    "Hypertension",
-   "dhis2:blood_pressure_2"
+   "dhis2:blood_pressure_2",
+   "dhis2:blood_pressure_monitor",
+   "dhis2:blood_pressure_positive"
   ],
   "title": "Blood Pressure Monitor ALT",
   "formats": [
@@ -7269,11 +7625,15 @@
   "path": "devices/blood-pressure_monitor",
   "tags": [
    "BP",
+   "Blood Pressure",
    "Cardiology",
    "Device",
+   "Diagnosis",
    "Heart",
    "Hypertension",
-   "dhis2:blood_pressure_monitor"
+   "dhis2:blood_pressure_2",
+   "dhis2:blood_pressure_monitor",
+   "dhis2:blood_pressure_positive"
   ],
   "title": "Blood Pressure Monitor",
   "formats": [
@@ -7290,6 +7650,7 @@
    "Family Planning",
    "IUD",
    "Intrauterine Device",
+   "RMNCH",
    "dhis2:copper_iud"
   ],
   "title": "Copper Intrauterine Device",
@@ -7358,6 +7719,7 @@
   "tags": [
    "Contraceptive",
    "Family Planning",
+   "RMNCH",
    "dhis2:sayana_press"
   ],
   "title": "Sayana Press",
@@ -7373,7 +7735,9 @@
   "tags": [
    "Clean Water",
    "Drinking Water",
-   "Hygeine",
+   "Hygiene",
+   "WASH",
+   "Water",
    "dhis2:treated_water"
   ],
   "title": "Treated Water",
@@ -7403,9 +7767,14 @@
   "category": "diagnostics",
   "path": "diagnostics/intensity-concentration_bioassays",
   "tags": [
+   "Bioassay",
    "Diagnostic",
+   "Entomology",
+   "Insecticide",
    "Malaria",
    "Mosquito",
+   "Testing",
+   "Vector Control",
    "dhis2:intensity_concentration_bioassays"
   ],
   "title": "Intensity Concentration Bioassays",
@@ -7418,8 +7787,15 @@
   "category": "diagnostics",
   "path": "diagnostics/discriminating-concentration_bioassays",
   "tags": [
+   "Bioassay",
+   "Diagnostic",
+   "Entomology",
+   "Insecticide",
+   "Malaria",
    "Mosquito",
    "Test",
+   "Testing",
+   "Vector Control",
    "dhis2:discriminating_concentration_bioassays"
   ],
   "title": "Discriminating Concentration Bioassays",
@@ -7554,6 +7930,9 @@
   "tags": [
    "Condom",
    "Contraception",
+   "Contraceptive",
+   "Family Planning",
+   "RMNCH",
    "Sperm",
    "dhis2:contraceptive_voucher"
   ],
@@ -7569,7 +7948,6 @@
   "path": "conditions/pneumonia",
   "tags": [
    "Lung",
-   "Lungs",
    "Organ",
    "Pneumonia",
    "dhis2:pneumonia"
@@ -7589,7 +7967,7 @@
    "Human",
    "Immune System",
    "Lymphatic System",
-   "Organs",
+   "Organ",
    "Spleen"
   ],
   "title": "Spleen",
@@ -7605,7 +7983,7 @@
   "tags": [
    "Breathing",
    "Device",
-   "Lungs"
+   "Lung"
   ],
   "title": "Ventilator",
   "formats": [
@@ -7620,7 +7998,7 @@
   "tags": [
    "Breathing",
    "Device",
-   "Lungs"
+   "Lung"
   ],
   "title": "Ventilator ALT",
   "formats": [
@@ -7635,10 +8013,11 @@
   "tags": [
    "Care",
    "Department",
-   "Hands",
+   "Hand",
    "Heart",
    "Social Worker",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Social Work",
   "formats": [
@@ -7653,7 +8032,8 @@
    "Department",
    "ICU",
    "NICU",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Intensive Care Unit",
   "formats": [
@@ -7668,8 +8048,11 @@
    "Baby",
    "Child",
    "Department",
+   "Paediatrician",
    "Pediatrician",
-   "Speciality"
+   "RMNCH",
+   "Speciality",
+   "Specialty"
   ],
   "title": "Pediatrics",
   "formats": [
@@ -7685,6 +8068,7 @@
    "Exercise",
    "Gymnasium",
    "Speciality",
+   "Specialty",
    "Weights"
   ],
   "title": "Gym",
@@ -7700,7 +8084,8 @@
    "Assisted Walking",
    "Department",
    "PT",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Physical Therapy",
   "formats": [
@@ -7712,9 +8097,9 @@
   "category": "people",
   "path": "people/pediatric-surgery",
   "tags": [
-   "Antenatal Care",
    "Baby",
    "Child",
+   "Paediatrics",
    "Pediatrics",
    "Surgery"
   ],
@@ -7746,7 +8131,8 @@
    "Cane",
    "Department",
    "Elderly",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Geriatrics",
   "formats": [
@@ -7796,6 +8182,7 @@
    "Prayer",
    "Religion",
    "Speciality",
+   "Specialty",
    "Spirituality"
   ],
   "title": "Chaplaincy",
@@ -7875,7 +8262,8 @@
   "path": "devices/ppe-sanitizer_alt",
   "tags": [
    "Infection Control",
-   "PPE"
+   "PPE",
+   "WASH"
   ],
   "title": "PPE Sanitizer ALT",
   "formats": [
@@ -7959,8 +8347,11 @@
   "path": "specialties/biochemistry-laboratory",
   "tags": [
    "DNA",
+   "Department",
    "Laboratory",
-   "Science"
+   "Science",
+   "Speciality",
+   "Specialty"
   ],
   "title": "Biochemistry Lab",
   "formats": [
@@ -7987,8 +8378,11 @@
   "category": "specialties",
   "path": "specialties/ears-nose_and_throat",
   "tags": [
+   "Department",
    "Ear",
    "Nose",
+   "Speciality",
+   "Specialty",
    "Throat"
   ],
   "title": "Ear Nose and Throat",
@@ -8018,6 +8412,10 @@
   "category": "body",
   "path": "body/gallbladder",
   "tags": [
+   "Anatomy",
+   "Body",
+   "Digestive System",
+   "Gallbladder",
    "Gallstone",
    "Organ"
   ],
@@ -8032,6 +8430,10 @@
   "category": "body",
   "path": "body/lymph-nodes",
   "tags": [
+   "Anatomy",
+   "Body",
+   "Immune System",
+   "Lymph Node",
    "Lymphatic System",
    "Organ"
   ],
@@ -8045,7 +8447,11 @@
   "category": "body",
   "path": "body/nerve",
   "tags": [
+   "Anatomy",
+   "Body",
+   "Nerve",
    "Nervous System",
+   "Neurology",
    "Pain"
   ],
   "title": "Nerve",
@@ -8077,6 +8483,7 @@
   "tags": [
    "Family Planning",
    "Pregnancy",
+   "RMNCH",
    "Reproductive System"
   ],
   "title": "Sperm",
@@ -8090,7 +8497,13 @@
   "category": "specialties",
   "path": "specialties/urology",
   "tags": [
-   "Specialty"
+   "Bladder",
+   "Department",
+   "Kidney",
+   "Speciality",
+   "Specialty",
+   "Urinary Tract",
+   "Urologist"
   ],
   "title": "Urology",
   "formats": [
@@ -8155,7 +8568,8 @@
    "PPE",
    "Protection",
    "Safety",
-   "Sanitizer"
+   "Sanitizer",
+   "WASH"
   ],
   "title": "PPE Virus Sanitizer Spray",
   "formats": [
@@ -8171,6 +8585,7 @@
    "Diagnostic",
    "Lab",
    "Magnify",
+   "Microscope",
    "Viral",
    "Virus"
   ],
@@ -8232,6 +8647,8 @@
   "category": "body",
   "path": "body/liver-alt",
   "tags": [
+   "Hepatology",
+   "Liver",
    "Organ"
   ],
   "title": "Liver ALT",
@@ -8249,7 +8666,7 @@
    "Finance",
    "Financial",
    "Income",
-   "Low income",
+   "Low Income",
    "Money",
    "Poor",
    "Poverty"
@@ -8266,8 +8683,8 @@
   "path": "devices/eyeglasses",
   "tags": [
    "Corrective Lens",
+   "Eye",
    "Eyeglasses",
-   "Eyes",
    "Glasses",
    "Optometrist",
    "Optometry"
@@ -8314,6 +8731,7 @@
   "tags": [
    "Blood",
    "Body",
+   "Haematology",
    "Hematology",
    "Vessel"
   ],
@@ -8330,7 +8748,6 @@
    "Apple",
    "Food",
    "Fruit",
-   "Fruits",
    "Grape",
    "Health",
    "Healthy",
@@ -8382,6 +8799,7 @@
   "category": "conditions",
   "path": "conditions/varicose-vein",
   "tags": [
+   "Ageing",
    "Aging",
    "Blood",
    "Body",
@@ -8402,13 +8820,19 @@
   "category": "specialties",
   "path": "specialties/sonography",
   "tags": [
+   "ANC",
    "Antenatal",
+   "Antenatal Care",
    "Baby",
+   "Department",
    "Fetus",
+   "Foetus",
    "Prenatal",
+   "RMNCH",
    "Scan",
    "Sonogram",
    "Sonograph",
+   "Speciality",
    "Specialty",
    "Test",
    "Testing"
@@ -8423,12 +8847,16 @@
   "category": "devices",
   "path": "devices/sonogram",
   "tags": [
+   "ANC",
    "Antenatal",
+   "Antenatal Care",
    "Baby",
    "Birth",
    "Device",
    "Fetus",
+   "Foetus",
    "Prenatal",
+   "RMNCH",
    "Scan",
    "Sonogram",
    "Sonograph",
@@ -8450,6 +8878,7 @@
    "Room",
    "Scalpel",
    "Speciality",
+   "Specialty",
    "Surgery",
    "Surgical"
   ],
@@ -8502,6 +8931,7 @@
   "tags": [
    "Infection Control",
    "PPE",
+   "WASH",
    "dhis2:sanitizer"
   ],
   "title": "PPE Sanitizer",
@@ -8515,8 +8945,13 @@
   "category": "ppe",
   "path": "ppe/ppe-mask_n95",
   "tags": [
+   "Covid",
+   "Face",
    "Infection Control",
+   "Mask",
+   "N95",
    "PPE",
+   "Respirator",
    "dhis2:ppe_mask_n95"
   ],
   "title": "PPE Mask N95",
@@ -8531,7 +8966,10 @@
   "path": "ppe/ppe-gown",
   "tags": [
    "Clothes",
+   "Gown",
    "Infection Control",
+   "PPE",
+   "Surgical",
    "dhis2:ppe_gown"
   ],
   "title": "PPE Gown",
@@ -8545,7 +8983,7 @@
   "path": "ppe/ppe-gloves",
   "tags": [
    "Glove",
-   "Hands",
+   "Hand",
    "Infection Control",
    "PPE",
    "dhis2:ppe_gloves"
@@ -8561,7 +8999,10 @@
   "category": "ppe",
   "path": "ppe/ppe-face_mask",
   "tags": [
+   "Covid",
+   "Face",
    "Infection Control",
+   "Mask",
    "PPE",
    "dhis2:ppe_face_mask"
   ],
@@ -8576,8 +9017,12 @@
   "category": "ppe",
   "path": "ppe/ppe-mask",
   "tags": [
+   "Covid",
+   "Face",
    "Infection Control",
+   "Mask",
    "PPE",
+   "Surgical Mask",
    "dhis2:ppe_mask"
   ],
   "title": "PPE Surgical Mask",
@@ -8626,6 +9071,7 @@
   "tags": [
    "Hazardous Materials",
    "Hazmat",
+   "PPE",
    "Protection",
    "Safety"
   ],
@@ -8661,7 +9107,8 @@
    "Antibacterial",
    "Cleaning",
    "PPE",
-   "Sanitation"
+   "Sanitation",
+   "WASH"
   ],
   "title": "PPE Disinfecting Wipes",
   "formats": [
@@ -8697,6 +9144,7 @@
    "Paper",
    "Sanitation",
    "Towel",
+   "WASH",
    "Wipe"
   ],
   "title": "Hand Wipe Paper",
@@ -8956,8 +9404,11 @@
   "category": "nutrition",
   "path": "nutrition/hot-meal",
   "tags": [
+   "Cooking",
+   "Dish",
    "Food",
    "Meal",
+   "Nutrition",
    "dhis2:hot_meal"
   ],
   "title": "Hot Meal",
@@ -9015,7 +9466,6 @@
    "Lifestyle",
    "Patient",
    "People",
-   "Physio",
    "Physio",
    "Physiotherapy",
    "Walk"
@@ -9098,8 +9548,8 @@
    "Paper",
    "Poop",
    "Sanitation",
-   "Sanitation",
-   "Toilet"
+   "Toilet",
+   "WASH"
   ],
   "title": "Toilet Paper",
   "formats": [
@@ -9111,15 +9561,20 @@
   "category": "devices",
   "path": "devices/ultrasound-scanner",
   "tags": [
+   "ANC",
+   "Antenatal",
+   "Antenatal Care",
    "Baby",
    "Childbirth",
    "Device",
    "Fetus",
+   "Foetus",
    "Maternity",
    "Neonatal",
-   "Obgyn",
+   "OBGYN",
    "Obstetrics",
    "Prenatal",
+   "RMNCH",
    "Scan",
    "Ultrasound"
   ],
@@ -9140,7 +9595,7 @@
    "Laboratory",
    "Sample",
    "Test",
-   "Test tube"
+   "Test Tube"
   ],
   "title": "Medical Sample",
   "formats": [
@@ -9155,14 +9610,15 @@
    "Baby",
    "Birth",
    "Birthing",
-   "Breastfeed",
+   "Breastfeeding",
    "Chest",
    "Milk",
    "Mother",
-   "Obgyn",
+   "OBGYN",
    "Obstetrics",
    "Parent",
-   "Postnatal"
+   "Postnatal",
+   "RMNCH"
   ],
   "title": "Breast Pump",
   "formats": [
@@ -9213,7 +9669,8 @@
    "Hurt",
    "Lightning",
    "Pain",
-   "Speciality"
+   "Speciality",
+   "Specialty"
   ],
   "title": "Pain Management",
   "formats": [
@@ -9264,6 +9721,7 @@
   "path": "specialties/burn-unit",
   "tags": [
    "Burn",
+   "Department",
    "Emergency",
    "Fire",
    "Flame",
@@ -9271,6 +9729,7 @@
    "Hospital",
    "Injury",
    "Speciality",
+   "Specialty",
    "Unit"
   ],
   "title": "Burn Unit",
@@ -9368,7 +9827,8 @@
    "Milk Substitute",
    "Mother",
    "Nutrition",
-   "Postnatal"
+   "Postnatal",
+   "RMNCH"
   ],
   "title": "Baby Formula",
   "formats": [
@@ -9401,6 +9861,7 @@
   "tags": [
    "Anatomy",
    "Body",
+   "Clitoris",
    "Female",
    "Genitals",
    "Organ",
@@ -9441,6 +9902,7 @@
    "Body",
    "Genitals",
    "Male",
+   "Organ",
    "Reproductive System"
   ],
   "title": "Penis",
@@ -9478,7 +9940,6 @@
    "Burn",
    "Chemical",
    "Condition",
-   "Flame",
    "Flame",
    "Hand",
    "Injury",
@@ -9566,8 +10027,6 @@
   "tags": [
    "Food",
    "Nutrition",
-   "Salt",
-   "Sodium",
    "Spoon",
    "Sucrose",
    "Sugar",
@@ -9620,7 +10079,6 @@
    "Food",
    "Liquor",
    "Nutrition",
-   "Nutrition",
    "Reduction",
    "Wine"
   ],
@@ -9669,11 +10127,11 @@
   "path": "people/crisis-response_center_person",
   "tags": [
    "Alert",
-   "Computers",
+   "Computer",
    "Emergency",
    "Epidemiology",
    "Headquarters",
-   "Monitors",
+   "Monitor",
    "Operations",
    "Response",
    "Statistics",
@@ -9713,7 +10171,7 @@
    "Insect",
    "Poison",
    "Zoonoses",
-   "Zoonotic Diseases"
+   "Zoonotic Disease"
   ],
   "title": "Spider",
   "formats": [
@@ -9728,7 +10186,7 @@
    "Animal",
    "Disease",
    "Insect",
-   "Zoonotic Diseases"
+   "Zoonotic Disease"
   ],
   "title": "Tick",
   "formats": [
@@ -9743,6 +10201,7 @@
    "Bird Flu",
    "Chicken",
    "Chicken Pox",
+   "Chickenpox",
    "Farm",
    "Poultry",
    "Zoonoses",
@@ -9857,7 +10316,6 @@
    "Physiotherapy",
    "Staff",
    "Stick",
-   "Stick",
    "Support",
    "Walker",
    "Walking"
@@ -9906,12 +10364,13 @@
   "category": "specialties",
   "path": "specialties/vascular-surgery",
   "tags": [
-   "Blood vessel",
+   "Blood Vessel",
    "Department",
    "Scalpel",
+   "Speciality",
    "Specialty",
    "Surgery",
-   "Vascular system"
+   "Vascular System"
   ],
   "title": "Vascular Surgery",
   "formats": [
@@ -9924,10 +10383,10 @@
   "path": "devices/stent",
   "tags": [
    "Artery",
-   "Blood vessel",
+   "Blood Vessel",
    "Device",
    "Heart",
-   "Heart attack",
+   "Heart Attack",
    "Stent",
    "Stroke",
    "Surgery",
@@ -9971,7 +10430,8 @@
    "Malignant",
    "Organ",
    "Pancreatic",
-   "Tumor"
+   "Tumor",
+   "Tumour"
   ],
   "title": "Pancreatic Cancer",
   "formats": [
@@ -10006,7 +10466,8 @@
    "Growth",
    "Malignant",
    "Prostate",
-   "Tumor"
+   "Tumor",
+   "Tumour"
   ],
   "title": "Prostate Cancer",
   "formats": [
@@ -10041,7 +10502,8 @@
    "Intestine",
    "Malignant",
    "Organ",
-   "Tumor"
+   "Tumor",
+   "Tumour"
   ],
   "title": "Stomach Cancer",
   "formats": [
@@ -10073,7 +10535,8 @@
    "Cell",
    "Malignant",
    "Nucleus",
-   "Tumor"
+   "Tumor",
+   "Tumour"
   ],
   "title": "Cancerous Cell Nuclei",
   "formats": [
@@ -10255,7 +10718,7 @@
    "Device",
    "Health",
    "IT",
-   "Information technology",
+   "Information Technology",
    "Laptop",
    "Medicine",
    "Technology"
@@ -10275,7 +10738,7 @@
    "Farm Animal",
    "Milk",
    "Zoonoses",
-   "Zoonotic Diseases"
+   "Zoonotic Disease"
   ],
   "title": "Cow",
   "formats": [
@@ -10289,7 +10752,7 @@
   "tags": [
    "Body",
    "Breast",
-   "Breast feeding",
+   "Breastfeeding",
    "Chest",
    "Mammary",
    "Mammogram",
@@ -10314,7 +10777,7 @@
    "Oxygen",
    "Throat",
    "Trachea",
-   "Vocal cords"
+   "Vocal Cords"
   ],
   "title": "Endotracheal Tube",
   "formats": [
@@ -10333,7 +10796,7 @@
    "Larynx",
    "Throat",
    "Video",
-   "Vocal cords"
+   "Vocal Cords"
   ],
   "title": "Laryngoscope",
   "formats": [
@@ -10392,7 +10855,7 @@
   "category": "symbols",
   "path": "symbols/stop",
   "tags": [
-   "Fingers",
+   "Finger",
    "Halt",
    "Hand",
    "Warning",
@@ -10437,8 +10900,9 @@
   "category": "symbols",
   "path": "symbols/water-treatment",
   "tags": [
-   "Arrows",
+   "Arrow",
    "Drop",
+   "WASH",
    "Water",
    "dhis2:water_treatment"
   ],
@@ -10453,7 +10917,7 @@
   "path": "symbols/social-distancing",
   "tags": [
    "Apart",
-   "Arrows",
+   "Arrow",
    "Between",
    "Social Distance",
    "Space",
@@ -10485,11 +10949,11 @@
   "path": "symbols/pharmacy",
   "tags": [
    "Department",
-   "Drugs",
-   "Medications",
+   "Drug",
+   "Medication",
    "Pharmacist",
    "Pharmacy",
-   "Pills"
+   "Pill"
   ],
   "title": "Pharmacy",
   "formats": [
@@ -10503,11 +10967,11 @@
   "path": "symbols/pharmacy-alt",
   "tags": [
    "Department",
-   "Drugs",
-   "Medications",
+   "Drug",
+   "Medication",
    "Pharmacist",
    "Pharmacy",
-   "Pills"
+   "Pill"
   ],
   "title": "Pharmacy",
   "formats": [
@@ -10697,6 +11161,8 @@
   "category": "symbols",
   "path": "symbols/ui-menu",
   "tags": [
+   "Hamburger Menu",
+   "Menu",
    "Navigation",
    "User Interface"
   ],
@@ -10710,6 +11176,9 @@
   "category": "symbols",
   "path": "symbols/ui-menu_grid",
   "tags": [
+   "Apps",
+   "Grid",
+   "Menu",
    "Navigation",
    "User Interface"
   ],
@@ -10738,7 +11207,11 @@
   "category": "symbols",
   "path": "symbols/ui-user_profile",
   "tags": [
+   "Account",
+   "Avatar",
    "Navigation",
+   "Profile",
+   "User",
    "User Interface"
   ],
   "title": "UI User Profile",
@@ -10905,7 +11378,7 @@
   "path": "symbols/social-distancing_alt",
   "tags": [
    "Apart",
-   "Arrows",
+   "Arrow",
    "Between",
    "Social Distance",
    "Space"
@@ -10939,9 +11412,11 @@
    "Epidemic",
    "Infection",
    "Infectious",
+   "Infectious Disease",
    "Pandemic",
    "Virology",
-   "Virus"
+   "Virus",
+   "dhis2:virus"
   ],
   "title": "Virus ALT",
   "formats": [
@@ -11029,8 +11504,8 @@
    "Fingerprint",
    "Human",
    "ID",
-   "Scan",
-   "identification"
+   "Identification",
+   "Scan"
   ],
   "title": "Fingerprint",
   "formats": [
@@ -11043,8 +11518,10 @@
   "category": "symbols",
   "path": "symbols/palliative-care",
   "tags": [
+   "Comfort Care",
+   "End of Life",
    "Heart",
-   "Hearts",
+   "Hospice Care",
    "Palliative Care"
   ],
   "title": "Palliative Care",
@@ -11078,7 +11555,7 @@
    "Informatics",
    "Interoperability",
    "Logo",
-   "Standards"
+   "Standard"
   ],
   "title": "FHIR",
   "formats": [
@@ -11094,7 +11571,7 @@
    "IT",
    "Informatics",
    "Interoperability",
-   "Standards",
+   "Standard",
    "Tech",
    "Technology",
    "Terminology"
@@ -11135,7 +11612,7 @@
    "Medical",
    "Sample",
    "Search",
-   "Test tube"
+   "Test Tube"
   ],
   "title": "Lab Search",
   "formats": [
@@ -11224,7 +11701,7 @@
    "Device",
    "Electrical",
    "Heart",
-   "Heart attack",
+   "Heart Attack",
    "Heartbeat",
    "Stroke",
    "Symbol"
@@ -11240,7 +11717,6 @@
   "category": "symbols",
   "path": "symbols/qr-code",
   "tags": [
-   "Bar code",
    "Barcode",
    "Code",
    "ID",
@@ -11351,11 +11827,13 @@
    "Diagnostic",
    "Mass",
    "Measure",
+   "Nutrition",
    "Obese",
    "Patient",
    "Thin",
    "Underweight",
-   "Waist"
+   "Waist",
+   "Weight"
   ],
   "title": "Waist Circumference",
   "formats": [
@@ -11404,7 +11882,7 @@
    "Device",
    "Health",
    "IT",
-   "Information technology",
+   "Information Technology",
    "Laptop",
    "Medicine",
    "Technology"
@@ -11420,15 +11898,16 @@
   "path": "symbols/body-mass_index",
   "tags": [
    "BMI",
-   "BMI",
    "Diagnostic",
    "Height",
    "Mass",
    "Measure",
+   "Nutrition",
    "Obese",
    "Thin",
    "Underweight",
-   "Waist"
+   "Waist",
+   "Weight"
   ],
   "title": "Body Mass Index",
   "formats": [
@@ -11512,7 +11991,7 @@
   "path": "symbols/artificial-intelligence",
   "tags": [
    "AI",
-   "Artificial intelligence",
+   "Artificial Intelligence",
    "Automation",
    "Bot",
    "Improve",
@@ -11532,7 +12011,7 @@
   "path": "symbols/magic-wand",
   "tags": [
    "AI",
-   "Artificial intelligence",
+   "Artificial Intelligence",
    "Automation",
    "Bot",
    "Improve",
@@ -11553,7 +12032,7 @@
   "path": "shapes/triangle-inverted_small",
   "tags": [
    "Bullet",
-   "Medication monitoring",
+   "Medication Monitoring",
    "Shape",
    "Triangle"
   ],
@@ -11568,7 +12047,7 @@
   "path": "shapes/triangle-inverted_medium",
   "tags": [
    "Bullet",
-   "Medication monitoring",
+   "Medication Monitoring",
    "Shape",
    "Triangle"
   ],
@@ -11583,7 +12062,7 @@
   "path": "shapes/triangle-inverted_large",
   "tags": [
    "Bullet",
-   "Medication monitoring",
+   "Medication Monitoring",
    "Shape",
    "Triangle"
   ],
@@ -11598,7 +12077,10 @@
   "path": "body/blood-drop",
   "tags": [
    "Blood",
-   "Circulatory System"
+   "Circulatory System",
+   "Drop",
+   "Haematology",
+   "Hematology"
   ],
   "title": "Blood Drop",
   "formats": [
@@ -11614,6 +12096,7 @@
    "Department",
    "Hospital",
    "Occupational",
+   "Speciality",
    "Specialty",
    "Therapy"
   ],
@@ -11627,17 +12110,17 @@
   "category": "conditions",
   "path": "conditions/gonorrhea",
   "tags": [
+   "Bacteria",
+   "Clap",
+   "Disease",
+   "Gonorrhea",
+   "Infection",
    "STD",
    "STI",
-   "bacteria",
-   "clap",
-   "disease",
-   "gonorrhea",
-   "infection",
-   "sex",
-   "sexual",
-   "sexually transmitted disease",
-   "sexually transmitted infection"
+   "Sex",
+   "Sexual",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection"
   ],
   "title": "Gonorrhea",
   "formats": [
@@ -11650,17 +12133,17 @@
   "category": "conditions",
   "path": "conditions/gonorrhea-alt",
   "tags": [
+   "Bacteria",
+   "Clap",
+   "Disease",
+   "Gonorrhea",
+   "Infection",
    "STD",
    "STI",
-   "bacteria",
-   "clap",
-   "disease",
-   "gonorrhea",
-   "infection",
-   "sex",
-   "sexual",
-   "sexually transmitted disease",
-   "sexually transmitted infection"
+   "Sex",
+   "Sexual",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection"
   ],
   "title": "Gonorrhea",
   "formats": [
@@ -11672,16 +12155,16 @@
   "category": "conditions",
   "path": "conditions/chlamydia",
   "tags": [
+   "Bacteria",
+   "Chlamydia",
+   "Disease",
+   "Infection",
    "STD",
    "STI",
-   "bacteria",
-   "chlamydia",
-   "disease",
-   "infection",
-   "sex",
-   "sexual",
-   "sexually transmitted disease",
-   "sexually transmitted infection"
+   "Sex",
+   "Sexual",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection"
   ],
   "title": "Chlamydia",
   "formats": [
@@ -11693,16 +12176,16 @@
   "category": "conditions",
   "path": "conditions/chlamydia-alt",
   "tags": [
+   "Bacteria",
+   "Chlamydia",
+   "Disease",
+   "Infection",
    "STD",
    "STI",
-   "bacteria",
-   "chlamydia",
-   "disease",
-   "infection",
-   "sex",
-   "sexual",
-   "sexually transmitted disease",
-   "sexually transmitted infection"
+   "Sex",
+   "Sexual",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection"
   ],
   "title": "Chlamydia",
   "formats": [
@@ -11714,16 +12197,16 @@
   "category": "conditions",
   "path": "conditions/syphilis-alt",
   "tags": [
+   "Bacteria",
+   "Disease",
+   "Infection",
    "STD",
    "STI",
-   "bacteria",
-   "disease",
-   "infection",
-   "sex",
-   "sexual",
-   "sexually transmitted disease",
-   "sexually transmitted infection",
-   "syphilis"
+   "Sex",
+   "Sexual",
+   "Sexually Transmitted Disease",
+   "Sexually Transmitted Infection",
+   "Syphilis"
   ],
   "title": "Syphilis",
   "formats": [
@@ -11765,7 +12248,8 @@
    "Intestine",
    "Malignant",
    "Organ",
-   "Tumor"
+   "Tumor",
+   "Tumour"
   ],
   "title": "Colorectal Cancer",
   "formats": [
@@ -11797,7 +12281,9 @@
    "Breastfeeding",
    "Maternal",
    "Motherhood",
-   "Nursing"
+   "Nursing",
+   "Postnatal",
+   "RMNCH"
   ],
   "title": "Lactation",
   "formats": [
@@ -11840,6 +12326,7 @@
    "Organ",
    "Rectum",
    "Tumor",
+   "Tumour",
    "Urinary Tract"
   ],
   "title": "Bladder Cancer",
@@ -11860,7 +12347,8 @@
    "Melanoma",
    "Organ",
    "Skin Cancer",
-   "Tumor"
+   "Tumor",
+   "Tumour"
   ],
   "title": "Skin Cancer",
   "formats": [
@@ -11890,15 +12378,18 @@
   "path": "conditions/oesophagus-cancer",
   "tags": [
    "Cancer",
-   "Digestive system",
+   "Digestive System",
    "Esophageal",
    "Esophagus",
-   "Food pipe",
+   "Food Pipe",
    "Growth",
    "Gullet",
    "Malignant",
+   "Oesophageal",
+   "Oesophagus",
    "Organ",
-   "Tumor"
+   "Tumor",
+   "Tumour"
   ],
   "title": "Oesophagus Cancer",
   "formats": [
@@ -11931,12 +12422,13 @@
   "tags": [
    "Cancer",
    "Growth",
-   "Hodgkin lymphoma",
+   "Hodgkin Lymphoma",
    "Lymphatic System",
    "Malignant",
-   "Non-Hodgkin lymphoma",
+   "Non-Hodgkin Lymphoma",
    "Organ",
-   "Tumor"
+   "Tumor",
+   "Tumour"
   ],
   "title": "Lymphoma",
   "formats": [
@@ -11953,7 +12445,6 @@
    "Staples",
    "Stitch",
    "Suture",
-   "Wound",
    "Wound"
   ],
   "title": "Staples",
@@ -11972,7 +12463,6 @@
    "Staples",
    "Stitch",
    "Suture",
-   "Wound",
    "Wound"
   ],
   "title": "Stitches",
@@ -11987,11 +12477,13 @@
   "path": "conditions/malnutrition",
   "tags": [
    "Malnourished",
+   "Nutrition",
    "Patient",
    "People",
    "Thin",
    "Underweight",
-   "Vitals"
+   "Vitals",
+   "Weight"
   ],
   "title": "Malnutrition",
   "formats": [
@@ -12009,7 +12501,8 @@
    "Malignant",
    "Organ",
    "Thyroid",
-   "Tumor"
+   "Tumor",
+   "Tumour"
   ],
   "title": "Thyroid Cancer",
   "formats": [
@@ -12060,7 +12553,7 @@
   "tags": [
    "Doctor",
    "Epidemiologist",
-   "Offiical",
+   "Official",
    "Quality Improvement",
    "Surveillance"
   ],
@@ -12075,7 +12568,7 @@
   "category": "symbols",
   "path": "symbols/mental-health",
   "tags": [
-   "Emotional health",
+   "Emotional Health",
    "Mind",
    "Psychology",
    "Wellbeing"
@@ -12093,10 +12586,10 @@
   "tags": [
    "Critical Care",
    "Device",
-   "Extracorporeal membrane oxygenation",
+   "Extracorporeal Membrane Oxygenation",
    "ICU",
    "Life Support",
-   "Lungs",
+   "Lung",
    "Oxygen",
    "Pump"
   ],
@@ -12137,8 +12630,8 @@
    "Disease",
    "Endocrine",
    "Nervous System",
-   "Organs",
-   "Tissues"
+   "Organ",
+   "Tissue"
   ],
   "title": "Autoimmune disease",
   "formats": [
@@ -12154,7 +12647,7 @@
    "Alert",
    "CDSS",
    "Clinical",
-   "Clinical decision support",
+   "Clinical Decision Support",
    "Risk",
    "Warning"
   ],
@@ -12171,8 +12664,8 @@
   "tags": [
    "Causes",
    "Community",
-   "Health vulnerability",
-   "Root causes",
+   "Health Vulnerability",
+   "Root Cause",
    "Social",
    "Welfare"
   ],
@@ -12189,8 +12682,8 @@
   "tags": [
    "Adaptable",
    "Environment",
-   "Hands",
-   "Health system",
+   "Hand",
+   "Health System",
    "Heart",
    "Plant",
    "Resilience"
@@ -12207,7 +12700,7 @@
   "path": "symbols/close-policy_gaps",
   "tags": [
    "Government",
-   "Health policy",
+   "Health Policy",
    "Interoperability",
    "Policy",
    "Puzzle",
@@ -12225,7 +12718,7 @@
   "path": "symbols/close-policy_gaps_alt",
   "tags": [
    "Government",
-   "Health policy",
+   "Health Policy",
    "Interoperability",
    "Policy",
    "Puzzle",
@@ -12244,15 +12737,17 @@
   "tags": [
    "Biopsy",
    "Cancer",
-   "Cells",
+   "Cell",
    "Device",
    "Diagnostic",
    "Lab",
    "Laboratory",
    "Sample",
    "Test",
+   "Testing",
    "Tissue",
-   "Tumor"
+   "Tumor",
+   "Tumour"
   ],
   "title": "Biopsy",
   "formats": [
@@ -12290,7 +12785,7 @@
    "Regular",
    "Repeat"
   ],
-  "title": "Regular patient",
+  "title": "Regular Patient",
   "formats": [
    "48px"
   ]
@@ -12304,7 +12799,7 @@
    "Disease Detection",
    "Health Check",
    "Lab Analysis",
-   "Medical test",
+   "Medical Test",
    "Report"
   ],
   "title": "Diagnostics",
@@ -12319,7 +12814,7 @@
   "path": "devices/cpap-machine",
   "tags": [
    "Breathing",
-   "Continuous positive airway pressure",
+   "Continuous Positive Airway Pressure",
    "Device",
    "Mask",
    "Sleep Apnea"
@@ -12390,7 +12885,7 @@
   "category": "body",
   "path": "body/tumour",
   "tags": [
-   "Abnormal mass",
+   "Abnormal Mass",
    "Cancer",
    "Tissue",
    "Tumor",
@@ -12408,11 +12903,11 @@
   "path": "devices/cpap-tubes",
   "tags": [
    "Breathing",
-   "Continuous positive airway pressure",
+   "Continuous Positive Airway Pressure",
    "Device",
    "Mask",
    "Sleep Apnea",
-   "Tubes"
+   "Tube"
   ],
   "title": "CPAP Mask",
   "formats": [
@@ -12427,7 +12922,7 @@
   "tags": [
    "Bag",
    "Device",
-   "Fluids",
+   "Fluid",
    "IV",
    "Infusion",
    "Liquid",
@@ -12448,10 +12943,11 @@
    "FHIR",
    "FHIR2",
    "HL7",
+   "HL7v2",
    "Informatics",
    "Interoperability",
    "Logo",
-   "Standards"
+   "Standard"
   ],
   "title": "FHIR2",
   "formats": [
@@ -12465,11 +12961,11 @@
   "path": "devices/cpap-masks",
   "tags": [
    "Breathing",
-   "Continuous positive airway pressure",
+   "Continuous Positive Airway Pressure",
    "Device",
    "Mask",
    "Sleep Apnea",
-   "Tubes"
+   "Tube"
   ],
   "title": "CPAP Mask ALT",
   "formats": [
@@ -12492,6 +12988,7 @@
    "Neck",
    "Nose",
    "Respiratory",
+   "Speciality",
    "Specialty",
    "Throat"
   ],
@@ -12514,6 +13011,7 @@
    "Nappy",
    "Newborn",
    "Poop",
+   "RMNCH",
    "Undergarment"
   ],
   "title": "Diaper",
@@ -12667,11 +13165,14 @@
   "tags": [
    "Blood Filtration",
    "Device",
+   "Haemodialysis",
    "Healthcare",
    "Hemodialysis",
    "Kidney",
    "Medical",
-   "Renal Care"
+   "Medical Equipment",
+   "Renal Care",
+   "Renal Therapy"
   ],
   "title": "Dialysis",
   "formats": [
@@ -12688,6 +13189,7 @@
    "Mammogram",
    "Oncology",
    "Tumor",
+   "Tumour",
    "Women's Health"
   ],
   "title": "Breast Cancer",
@@ -12703,6 +13205,7 @@
    "ANC",
    "Anatomy",
    "Antenatal",
+   "Antenatal Care",
    "Baby",
    "Breast Health",
    "Chest",
@@ -12740,7 +13243,7 @@
    "Dermatologist",
    "Dermis",
    "Skin Care",
-   "Skin Conditions",
+   "Skin Condition",
    "Skin Health",
    "Skin Treatment"
   ],
@@ -12755,8 +13258,12 @@
   "path": "devices/dialysis-alt",
   "tags": [
    "Blood Filtration",
+   "Device",
+   "Haemodialysis",
+   "Healthcare",
    "Hemodialysis",
    "Kidney",
+   "Medical",
    "Medical Equipment",
    "Renal Care",
    "Renal Therapy"
@@ -12789,12 +13296,15 @@
   "category": "specialties",
   "path": "specialties/dermatology",
   "tags": [
+   "Department",
    "Dermatologist",
    "Medical Specialty",
-   "Skin Diseases",
+   "Skin Disease",
    "Skin Examination",
    "Skin Specialist",
-   "Skin Treatment"
+   "Skin Treatment",
+   "Speciality",
+   "Specialty"
   ],
   "title": "Dermatology",
   "formats": [
@@ -12842,10 +13352,12 @@
   "path": "specialties/maxillofacial",
   "tags": [
    "Dentistry",
+   "Department",
    "Face",
    "Jaw",
    "Oral Health",
    "Oral Surgery",
+   "Speciality",
    "Specialty"
   ],
   "title": "Maxillofacial",
@@ -12863,7 +13375,9 @@
    "Gel",
    "Lotion",
    "Medication",
+   "Medicine",
    "Ointment",
+   "Pharmacy",
    "Skin Treatment",
    "Tube"
   ],
@@ -12880,6 +13394,7 @@
    "Dose",
    "Liquid Dosage",
    "Medication",
+   "Medicine",
    "Medicine Bottle",
    "Oral Medication",
    "Pharmacy",
@@ -12918,6 +13433,7 @@
    "Anatomy",
    "Femur",
    "Fibula",
+   "Orthopaedics",
    "Orthopedics",
    "Skeleton",
    "Tibia"
@@ -12936,6 +13452,7 @@
    "Anatomy",
    "Body Structure",
    "Calcium",
+   "Orthopaedics",
    "Orthopedics",
    "Skeletal System",
    "Skeleton"
@@ -12970,8 +13487,8 @@
   "path": "symbols/acupuncture-4",
   "tags": [
    "Acupressure",
-   "Fingers",
-   "Hands",
+   "Finger",
+   "Hand",
    "Pain Relief",
    "Palm",
    "Traditional Medicine",
@@ -12990,7 +13507,7 @@
    "Acupressure",
    "Auricular Therapy",
    "Auriculotherapy",
-   "Ears",
+   "Ear",
    "Hearing",
    "Pain Relief",
    "Traditional Medicine"
@@ -13020,59 +13537,22 @@
   ]
  },
  {
-  "id": "fingernail",
-  "category": "body",
-  "path": "body/fingernail",
+  "id": "duck",
+  "category": "zoonoses",
+  "path": "zoonoses/duck",
   "tags": [
-   "Dermatology",
-   "Finger",
-   "Fingertip",
-   "Manicure",
-   "Nail",
-   "Nail Anatomy",
-   "Nail Care",
-   "Nail Health"
+   "Animal",
+   "Avian Influenza",
+   "Bird",
+   "Eggs",
+   "Farm Animal",
+   "Meat",
+   "Poultry",
+   "Waterfowl",
+   "Zoonoses",
+   "Zoonotic Disease"
   ],
-  "title": "Fingernail",
-  "formats": [
-   "24px",
-   "48px"
-  ]
- },
- {
-  "id": "hair",
-  "category": "body",
-  "path": "body/hair",
-  "tags": [
-   "Dermatology",
-   "Hair Anatomy",
-   "Hair Care",
-   "Hair Follicle",
-   "Hair Growth",
-   "Hair Loss",
-   "Scalp",
-   "Trichology"
-  ],
-  "title": "Hair",
-  "formats": [
-   "48px"
-  ]
- },
- {
-  "id": "constipation",
-  "category": "conditions",
-  "path": "conditions/constipation",
-  "tags": [
-   "Bloating",
-   "Bowel Movement",
-   "Defecation",
-   "Digestive Health",
-   "Gastroenterology",
-   "Gut Health",
-   "Intestinal Health",
-   "Stool"
-  ],
-  "title": "Constipation",
+  "title": "Duck",
   "formats": [
    "48px"
   ]
@@ -13097,45 +13577,6 @@
   ]
  },
  {
-  "id": "drop-medicine",
-  "category": "medications",
-  "path": "medications/drop-medicine",
-  "tags": [
-   "Ear Drops",
-   "Eye Drops",
-   "Medicine Dropper",
-   "Ophthalmology",
-   "Oral Drops",
-   "Otology",
-   "Pharmacy",
-   "Prescription"
-  ],
-  "title": "Drop Medicine",
-  "formats": [
-   "48px"
-  ]
- },
- {
-  "id": "egg-cell",
-  "category": "symbols",
-  "path": "symbols/egg-cell",
-  "tags": [
-   "Female Reproduction",
-   "Fertility",
-   "Fertilization",
-   "Human Biology",
-   "IVF",
-   "Ovary",
-   "Ovum",
-   "Reproductive System"
-  ],
-  "title": "Egg Cell",
-  "formats": [
-   "24px",
-   "48px"
-  ]
- },
- {
   "id": "mammogram",
   "category": "symbols",
   "path": "symbols/mammogram",
@@ -13155,22 +13596,101 @@
   ]
  },
  {
-  "id": "duck",
-  "category": "zoonoses",
-  "path": "zoonoses/duck",
+  "id": "fingernail",
+  "category": "body",
+  "path": "body/fingernail",
   "tags": [
-   "Animal",
-   "Avian Influenza",
-   "Bird",
-   "Eggs",
-   "Farm Animal",
-   "Meat",
-   "Poultry",
-   "Waterfowl",
-   "Zoonoses",
-   "Zoonotic Diseases"
+   "Dermatology",
+   "Finger",
+   "Fingertip",
+   "Manicure",
+   "Nail",
+   "Nail Anatomy",
+   "Nail Care",
+   "Nail Health"
   ],
-  "title": "Duck",
+  "title": "Fingernail",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "drop-medicine",
+  "category": "medications",
+  "path": "medications/drop-medicine",
+  "tags": [
+   "Ear Drops",
+   "Eye Drops",
+   "Medication",
+   "Medicine",
+   "Medicine Dropper",
+   "Ophthalmology",
+   "Oral Drops",
+   "Otology",
+   "Pharmacy",
+   "Prescription"
+  ],
+  "title": "Drop Medicine",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "hair",
+  "category": "body",
+  "path": "body/hair",
+  "tags": [
+   "Dermatology",
+   "Hair Anatomy",
+   "Hair Care",
+   "Hair Follicle",
+   "Hair Growth",
+   "Hair Loss",
+   "Scalp",
+   "Trichology"
+  ],
+  "title": "Hair",
+  "formats": [
+   "48px"
+  ]
+ },
+ {
+  "id": "egg-cell",
+  "category": "symbols",
+  "path": "symbols/egg-cell",
+  "tags": [
+   "Female Reproduction",
+   "Fertility",
+   "Fertilization",
+   "Human Biology",
+   "IVF",
+   "Ovary",
+   "Ovum",
+   "RMNCH",
+   "Reproductive System"
+  ],
+  "title": "Egg Cell",
+  "formats": [
+   "24px",
+   "48px"
+  ]
+ },
+ {
+  "id": "constipation",
+  "category": "conditions",
+  "path": "conditions/constipation",
+  "tags": [
+   "Bloating",
+   "Bowel Movement",
+   "Defecation",
+   "Digestive Health",
+   "Gastroenterology",
+   "Gut Health",
+   "Intestinal Health",
+   "Stool"
+  ],
+  "title": "Constipation",
   "formats": [
    "48px"
   ]
